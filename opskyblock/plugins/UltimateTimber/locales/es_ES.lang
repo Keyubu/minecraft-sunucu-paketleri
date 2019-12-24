@@ -1,0 +1,13 @@
+# Mensaje Generales
+
+prefix: '&8[&6UltimateTimber&8] '
+no-permission: '&c¡No tienes permiso para eso!'
+command-reload-description: '&8 - &a/ut reload &7 - Recarga la configuracion.'
+command-reload-reloaded: '&7Los archivos de configuración y lenguaje han sido recargados.'
+command-toggle-description: '&8 - &a/ut toggle &7 - Activa la tala de árboles.'
+command-toggle-enabled: '&7Modo de tala: &aActivado'
+command-toggle-disabled: '&7Modo de tala: &cDesactivado'
+on-cooldown: '&eEstás en tiempo de reutilización y no puedes derribar árboles en este momento.'
+
+# Mensaje de comandos
+# Misc

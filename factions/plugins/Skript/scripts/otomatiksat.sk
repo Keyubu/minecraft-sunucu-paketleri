@@ -1,0 +1,122 @@
+options:
+	Prefix: &aSat &8»
+	
+	lapisfiyat: 25000
+	lapisadet: 640
+	lapisblockfiyat: 250000
+	
+# Elmas
+
+	elmasadet: 64
+	elmasfiyat: 192000
+	elmasblockfiyat: 1920000
+	
+# Zümrüt
+	
+	zumrutadet: 64
+	zumrutfiyat: 192000
+	zumrutblockfiyat: 1920000
+	
+# Altın
+	
+	altinadet: 64
+	altinfiyat: 144000
+	altinblockfiyat: 1440000
+	
+# Demir
+	
+	demiradet: 64
+	demirfiyat: 144000
+	demirblockfiyat: 1440000
+			
+on quit:
+	delete {otosat::%player%}
+	
+on load:
+	delete {otosat::*}
+			
+command /otosat:
+	trigger:
+		if {otosat::%player%} is not set:
+			set {otosat::%player%} to 1
+			send player title "" with subtitle "&9Otomatik satış &fkullanıma açıldı" for 3 seconds
+		else if {otosat::%player%} is set:
+			send player title "" with subtitle "&9Otomatik satış &fkullanıma kapatıldı" for 3 seconds
+			delete {otosat::%player%}		
+			
+on break lapis ore:
+	if {otosat::%player%} is set:
+		if player has {@lapisadet} lapis lazuli:
+			remove {@lapisadet} lapis lazuli from player
+			add {@lapisfiyat} to player's balance
+			set action bar of player to "&9&l» &fEnvanterinizdeki lapisler &a{@lapisfiyat} &ffiyatına satıldı!"
+			stop
+		if player has 64 lapis block:
+			remove 64 lapis block from player
+			add {@lapisblockfiyat} to player's balance
+			set action bar of player to "&9&l» &fEnvanterinizdeki lapis bloklar &a{@lapisblockfiyat} &ffiyatına satıldı!"
+			stop
+
+on break lapis ore or diamond block or emerald block or gold block or iron block:
+	if {otosat::%player%} is set:
+		if player has {@elmasadet} diamond block:
+			remove {@elmasadet} diamond block from player
+			add {@elmasblockfiyat} to player's balance
+			set action bar of player to "&9&l» &fEnvanterinizdeki elmas bloklar &a{@elmasblockfiyat} &ffiyatına satıldı!"
+			stop
+			
+on break lapis ore or diamond ore or emerald ore or gold ore or iron ore:
+	if {otosat::%player%} is set:
+		if player has {@elmasadet} diamond:
+			remove {@elmasadet} diamond from player
+			add {@elmasfiyat} to player's balance
+			set action bar of player to "&9&l» &fEnvanterinizdeki elmaslar &a{@elmasfiyat} &ffiyatına satıldı!"
+			stop
+
+on break lapis ore or diamond block or emerald block or gold block or iron block:
+	if {otosat::%player%} is set:
+		if player has {@demiradet} iron block:
+			remove {@demiradet} iron block from player
+			add {@demirblockfiyat} to player's balance
+			set action bar of player to "&9&l» &fEnvanterinizdeki demir bloklar &a{@demirblockfiyat} &ffiyatına satıldı!"
+			stop
+				
+on break lapis ore or diamond ore or emerald ore or gold ore or iron ore:
+	if {otosat::%player%} is set:
+		if player has {@demiradet} iron ingot:
+			remove {@demiradet} iron ingot from player
+			add {@demirfiyat} to player's balance
+			set action bar of player to "&9&l» &fEnvanterinizdeki demirler &a{@demirfiyat} &ffiyatına satıldı!"
+			stop
+				
+on break lapis ore or diamond block or emerald block or gold block or iron block:
+	if {otosat::%player%} is set:
+		if player has {@altinadet} gold block:
+			remove {@altinadet} gold block from player
+			add {@altinblockfiyat} to player's balance
+			set action bar of player to "&9&l» &fEnvanterinizdeki altın bloklar &a{@altinblockfiyat} &ffiyatına satıldı!"
+			stop
+			
+on break lapis ore or diamond ore or emerald ore or gold ore or iron ore:
+	if {otosat::%player%} is set:
+		if player has {@altinadet} gold ingot:
+			remove {@altinadet} gold ingot from player
+			add {@altinfiyat} to player's balance
+			set action bar of player to "&9&l» &fEnvanterinizdeki altınlar &a{@altinfiyat} &ffiyatına satıldı!"
+			stop
+			
+on break lapis ore or diamond ore or emerald ore or gold ore or iron ore:
+	if {otosat::%player%} is set:
+		if player has {@zumrutadet} emerald:
+			remove {@zumrutadet} emerald from player
+			add {@zumrutfiyat} to player's balance
+			set action bar of player to "&9&l» &fEnvanterinizdeki zümrütler &a{@zumrutfiyat} &ffiyatına satıldı!"
+			stop
+			
+on break lapis ore or diamond block or emerald block or gold block or iron block:
+	if {otosat::%player%} is set:
+		if player has {@zumrutadet} emerald block:
+			remove {@zumrutadet} emerald block from player
+			add {@zumrutblockfiyat} to player's balance
+			set action bar of player to "&9&l» &fEnvanterinizdeki zümrüt bloklar &a{@zumrutblockfiyat} &ffiyatına satıldı!"
+			stop

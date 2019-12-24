@@ -1,0 +1,52 @@
+SR_LINE: '&7&m----------------------------------------'
+HELP_PLAYER: |2-
+    &2&lSkinsRestorer &7- &f&lv%ver%
+     &2/skin <skinname> &7-&f Görünümü değiştirir
+      &2/skin update &7-&f Görünümü günceller
+      &2/skin clear &7-&f Görünümü siler
+HELP_SKIN_CLEAR: Görünümü siler.
+HELP_SKIN_CLEAR_OTHER: Oyuncunun görünümünü siler.
+HELP_SKIN_UPDATE: Görünümü günceller.
+HELP_SKIN_UPDATE_OTHER: Oyuncunun görünümünü günceller.
+HELP_SKIN_SET: Görünümü belirler.
+HELP_SKIN_SET_OTHER: Oyuncunun görünümünü belirler.
+HELP_SR_RELOAD: Yapılandırma dosyalarını yeniler.
+HELP_SR_STATUS: Eklentinin çalışması için gereken API servislerini kontrol eder.
+HELP_SR_DROP: Kostüm verilerini düşürür.
+HELP_SR_PROPS: Displays the players actual skin as properties.
+PLAYER_HAS_NO_PERMISSION_SKIN: '&cGörünümünüzü belirlemek için yetkiniz yok.'
+SKIN_DISABLED: '&cSkin yönetici tarafından deaktif edildi.'
+NOT_PREMIUM: '&cBu isimde bir premium hesap bulunamadı.'
+INVALID_PLAYER: '&c%player geçersiz bir kullanıcı adı.'
+SKIN_COOLDOWN_NEW: '&cGörünümünü %s &csaniye sonra değiştirebilirsin.'
+SKIN_CHANGE_SUCCESS: '&aGörünüm değiştirildi.'
+SKIN_CLEAR_SUCCESS: '&aGörünüm sıfırlandı.'
+SKIN_CLEAR_ISSUER: '&a%player adlı kişinin görünümü sıfırlandı.'
+SUCCESS_UPDATING_SKIN: '&aGörünümün güncellendi.'
+SUCCESS_UPDATING_SKIN_OTHER: '&a%player adlı kişinin görünümü güncellendi.'
+ERROR_UPDATING_SKIN: '&cGörünüm güncellenirken bir hata meydana geldi.'
+GENERIC_ERROR: '&cSkin verileri ayrıştırılırken bir hata meydana geldi.'
+WAIT_A_MINUTE: '&cSkin verileri ayrıştırılırken bir dakika bekleyin (Rate Limited)'
+MENU_OPEN: '&aSkin menüsü açılıyor...'
+NEXT_PAGE: '&a&l»&7 Sonraki Sayfa&a&l »'
+PREVIOUS_PAGE: '&e&l«&7 Önceki Sayfa&e&l «'
+REMOVE_SKIN: '&c&l»&7 Skin Çıkar&c&l «'
+SELECT_SKIN: '&aTıkla ve görünümü seç'
+ADMIN_SET_SKIN: '&a%player adlı kişinin görünümüne geçtin.'
+SKIN_DATA_DROPPED: '&a%player adlı kişinin skin verisi silindi.'
+STATUS_OK: '&e[&2SkinsRestorer&e] &aMojang API bağlandı!'
+ALT_API_FAILED: '&e[&2SkinsRestorer&e] &4Error&8: &cSkin Data API is overloaded, please
+  try again later!'
+NO_SKIN_DATA: '&e[&2SkinsRestorer&e] &4Error&8: &cNo skin data acquired! Does this
+  player have a skin?'
+RELOAD: '&e[&2SkinsRestorer&e] &aConfig ve Locale yenilendi.'
+OUTDATED: "&e[&2SkinsRestorer&e] &cSkinsRestorer eski bir sürümünü kullanıyorsunuz!\n\
+  &cLütfen Spigot üzerinden son sürüme güncelleyin: \n&ehttps://www.spigotmc.org/resources/skinsrestorer.2124/"
+PLAYER_HAS_NO_PERMISSION_URL: '&e[&2SkinsRestorer&e] &4Error&8: &cYou don''t have
+  permission to set skins by URL.'
+MS_UPDATING_SKIN: '&e[&2SkinsRestorer&e] &2Uploading skin, please wait...'
+ERROR_MS_FULL: '&e[&2SkinsRestorer&e] &4MS Error&8: &cAPI timed out while uploading
+  your skin. Please try again later. (MineSkin)'
+ERROR_MS_GENERIC: '&e[&2SkinsRestorer&e] &4MS Error&8: &c%error%'
+MS_API_FAILED: '&e[&2SkinsRestorer&e] &4Error&8: &cMineSkin API is overloaded, please
+  try again later!'

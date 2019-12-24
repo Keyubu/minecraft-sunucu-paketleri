@@ -1,0 +1,143 @@
+# EssentialsX new Kit configuration.
+# If you don't have any kits defined in this file, the plugin will try to copy them from the config.yml
+# 
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - itemID[:DataValue/Durability] Amount [Enchantment:Level].. [itemmeta:value]...
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
+# For more information, visit http://wiki.ess3.net/wiki/Kits 86400
+kits:
+  Hediye:
+    delay: 1800
+    items:
+    - 276 1 sharpness:2 smite:1 unbreaking:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - 310 1 protection:3 unbreaking:2 name:&bKeyubu.com_&8[&7Hediye&8]
+    - 311 1 protection:3 unbreaking:2 name:&bKeyubu.com_&8[&7Hediye&8]
+    - 312 1 protection:3 unbreaking:2 name:&bKeyubu.com_&8[&7Hediye&8]
+    - 313 1 protection:3 unbreaking:2 name:&bKeyubu.com_&8[&7Hediye&8]
+    - 278 1 efficiency:3 unbreaking:2 fortune:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - 277 1 efficiency:2 unbreaking:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - 279 1 efficiency:2 unbreaking:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - 322 16 name:&bKeyubu.com_&8[&7Hediye&8]
+  Oyuncu:
+    delay: 1800
+    items:
+    - 276 1 sharpness:3 smite:2 unbreaking:2 name:&eOyuncu_Kiti
+    - 310 1 protection:4 unbreaking:3 name:&eOyuncu_Kiti
+    - 311 1 protection:4 unbreaking:3 name:&eOyuncu_Kiti
+    - 312 1 protection:4 unbreaking:3 name:&eOyuncu_Kiti
+    - 313 1 protection:4 unbreaking:3 name:&eOyuncu_Kiti
+    - 278 1 efficiency:4 unbreaking:3 fortune:2 name:&eOyuncu_Kiti
+    - 277 1 efficiency:3 unbreaking:2 name:&eOyuncu_Kiti
+    - 279 1 efficiency:3 unbreaking:2 name:&eOyuncu_Kiti
+    - 322 32 name:&eOyuncu_Kiti
+  SkyLord:
+    delay: 1800
+    items:
+    - 276 1 sharpness:4 smite:2 unbreaking:2 name:&bSkyLord_Kiti
+    - 310 1 protection:5 unbreaking:4 name:&bSkyLord_Kiti
+    - 311 1 protection:5 unbreaking:4 name:&bSkyLord_Kiti
+    - 312 1 protection:5 unbreaking:4 name:&bSkyLord_Kiti
+    - 313 1 protection:5 unbreaking:4 name:&bSkyLord_Kiti
+    - 278 1 efficiency:4 unbreaking:3 fortune:2 name:&bSkyLord_Kiti
+    - 277 1 efficiency:4 unbreaking:3 name:&bSkyLord_Kiti
+    - 279 1 efficiency:4 unbreaking:3 name:&bSkyLord_Kiti
+    - 322 32 name:&bSkyLord_Kiti
+  SkyKing:
+    delay: 1800
+    items:
+    - 276 1 sharpness:5 smite:3 unbreaking:3 name:&3SkyKing_Kiti
+    - 310 1 protection:5 unbreaking:4 name:&3SkyKing_Kiti
+    - 311 1 protection:5 unbreaking:4 name:&3SkyKing_Kiti
+    - 312 1 protection:5 unbreaking:4 name:&3SkyKing_Kiti
+    - 313 1 protection:5 unbreaking:4 name:&3SkyKing_Kiti
+    - 278 1 efficiency:5 unbreaking:4 fortune:3 name:&3SkyKing_Kiti
+    - 277 1 efficiency:4 unbreaking:3 name:&3SkyKing_Kiti
+    - 279 1 efficiency:4 unbreaking:3 name:&3SkyKing_Kiti
+    - 322 32 name:&3SkyKing_Kiti
+  SkyZeus:
+    delay: 1800
+    items:
+    - 276 1 sharpness:6 smite:4 unbreaking:4 name:&6SkyZeus_Kiti
+    - 310 1 protection:6 unbreaking:4 name:&6SkyZeus_Kiti
+    - 311 1 protection:6 unbreaking:4 name:&6SkyZeus_Kiti
+    - 312 1 protection:6 unbreaking:4 name:&6SkyZeus_Kiti
+    - 313 1 protection:6 unbreaking:4 name:&6SkyZeus_Kiti
+    - 278 1 efficiency:5 unbreaking:4 fortune:3 name:&6SkyZeus_Kiti
+    - 277 1 efficiency:5 unbreaking:4 name:&6SkyZeus_Kiti
+    - 279 1 efficiency:5 unbreaking:4 name:&6SkyZeus_Kiti
+    - 322 32 name:&6SkyZeus_Kiti
+  SkyLegend:
+    delay: 1800
+    items:
+    - 276 1 sharpness:7 smite:4 unbreaking:4 name:&aSkyLegend_Kiti
+    - 310 1 protection:6 unbreaking:4 name:&aSkyLegend_Kiti
+    - 311 1 protection:6 unbreaking:4 name:&aSkyLegend_Kiti
+    - 312 1 protection:6 unbreaking:4 name:&aSkyLegend_Kiti
+    - 313 1 protection:6 unbreaking:4 name:&aSkyLegend_Kiti
+    - 278 1 efficiency:7 unbreaking:4 fortune:3 name:&aSkyLegend_Kiti
+    - 277 1 efficiency:6 unbreaking:4 name:&aSkyLegend_Kiti
+    - 279 1 efficiency:6 unbreaking:4 name:&aSkyLegend_Kiti
+    - 322 32 name:&aSkyLegend_Kiti
+  Rehber:
+    delay: 5400
+    items:
+    - 276 1 sharpness:7 smite:4 unbreaking:4 name:&aRehber_Kiti
+    - 310 1 protection:7 unbreaking:5 name:&aRehber_Kiti
+    - 311 1 protection:7 unbreaking:5 name:&aRehber_Kiti
+    - 312 1 protection:7 unbreaking:5 name:&aRehber_Kiti
+    - 313 1 protection:7 unbreaking:5 name:&aRehber_Kiti
+    - 278 1 efficiency:7 unbreaking:4 fortune:3 name:&aRehber_Kiti
+    - 277 1 efficiency:6 unbreaking:4 name:&aRehber_Kiti
+    - 279 1 efficiency:6 unbreaking:4 name:&aRehber_Kiti
+    - 322 32 name:&aRehber_Kiti
+  vip:
+    delay: 7200
+    items:
+    - 276 1 sharpness:7 fireaspect:4 unbreaking:4 looting:2 name:&eVIP_Kiti
+    - 310 1 protection:7 unbreaking:5 respiration:2 blastprotection:2 name:&eVIP_Kiti
+    - 311 1 protection:7 unbreaking:5 projectileprotection:2 fireprotection:2 name:&eVIP_Kiti
+    - 312 1 protection:7 unbreaking:5 fireprotection:2 projectileprotection:2 name:&eVIP_Kiti
+    - 313 1 protection:7 unbreaking:5 featherfalling:2 fireprotection:2 name:&eVIP _Kiti
+    - 278 1 efficiency:7 unbreaking:5 fortune:4 name:&eVIP_Kiti
+    - 277 1 efficiency:7 unbreaking:5 fortune:4 name:&eVIP_Kiti
+    - 279 1 efficiency:7 unbreaking:5 fortune:4 name:&eVIP_Kiti
+    - 322:1 16 name:&eVIP_Kiti
+  vip+:
+    delay: 7200
+    items:
+    - 276 1 sharpness:8 fireaspect:4 unbreaking:4 looting:3 name:&6VIP+_Kiti
+    - 310 1 protection:8 unbreaking:6 respiration:3 blastprotection:3 name:&6VIP+_Kiti
+    - 311 1 protection:8 unbreaking:6 projectileprotection:3 fireprotection:3 name:&6VIP+_Kiti
+    - 312 1 protection:8 unbreaking:6 fireprotection:3 projectileprotection:3 name:&6VIP+_Kiti
+    - 313 1 protection:8 unbreaking:6 featherfalling:3 fireprotection:3 name:&6VIP+_Kiti
+    - 278 1 efficiency:8 unbreaking:5 fortune:4 name:&6VIP+_Kiti
+    - 277 1 efficiency:7 unbreaking:5 fortune:4 name:&6VIP+_Kiti
+    - 279 1 efficiency:7 unbreaking:5 fortune:4 name:&6VIP+_Kiti
+    - 322:1 24 name:&6VIP+_Kiti
+  mvip:
+    delay: 7200
+    items:
+    - 276 1 sharpness:8 fireaspect:4 unbreaking:4 looting:3 name:&bMVIP_Kiti
+    - 310 1 protection:8 unbreaking:6 respiration:3 blastprotection:3 name:&bMVIP_Kiti
+    - 311 1 protection:8 unbreaking:6 projectileprotection:3 fireprotection:3 name:&bMVIP_Kiti
+    - 312 1 protection:8 unbreaking:6 fireprotection:3 projectileprotection:3 name:&bMVIP_Kiti
+    - 313 1 protection:8 unbreaking:6 featherfalling:3 fireprotection:3 name:&bMVIP_Kiti
+    - 278 1 efficiency:8 unbreaking:5 fortune:4 name:&bMVIP_Kiti
+    - 277 1 efficiency:7 unbreaking:5 fortune:4 name:&bMVIP_Kiti
+    - 279 1 efficiency:7 unbreaking:5 fortune:4 name:&bMVIP_Kiti
+    - 322:1 24 name:&bMVIP_Kiti
+  mvip+:
+    delay: 7200
+    items:
+    - 276 1 sharpness:8 fireaspect:4 unbreaking:4 looting:3 name:&aMVIP+_Kiti
+    - 310 1 protection:8 unbreaking:6 respiration:3 blastprotection:3 name:&aMVIP+_Kiti
+    - 311 1 protection:8 unbreaking:6 projectileprotection:3 fireprotection:3 name:&aMVIP+_Kiti
+    - 312 1 protection:8 unbreaking:6 fireprotection:3 projectileprotection:3 name:&aMVIP+_Kiti
+    - 313 1 protection:8 unbreaking:6 featherfalling:3 fireprotection:3 name:&aMVIP+_Kiti
+    - 278 1 efficiency:8 unbreaking:5 fortune:4 name:&aMVIP+_Kiti
+    - 277 1 efficiency:7 unbreaking:5 fortune:4 name:&aMVIP+_Kiti
+    - 279 1 efficiency:7 unbreaking:5 fortune:4 name:&aMVIP+_Kiti
+    - 322:1 24 name:&aMVIP+_Kiti

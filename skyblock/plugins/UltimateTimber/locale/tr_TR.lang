@@ -1,0 +1,17 @@
+# General Messages
+
+prefix: "&8[&6UltimateTimber&8] "
+no-permission: "&cBunu yapmaya yetkin yok!"
+
+# Command Messages
+
+command-reload-description: "&8 - &a/ut reload &7 - Ayarları yenile."
+command-reload-reloaded: "&7Ayarlar ve yerel dosyalar yenilendi."
+
+command-toggle-description: "&8 - &a/ut toggle &7 - Kesme moduna geçiş."
+command-toggle-enabled: "&7Kesme modu: &aAktif"
+command-toggle-disabled: "&7Kesme Modu: &cKapalı"
+
+# Misc
+
+on-cooldown: "&eŞu anda ağaçları kesemezsin, biraz bekle."

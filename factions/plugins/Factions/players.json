@@ -1,0 +1,32 @@
+{
+  "faecf30e-5dc9-3eab-bea1-c90ca2e33865": {
+    "inVault": false,
+    "factionId": "1",
+    "role": "LEADER",
+    "title": "",
+    "power": 2.8243533333333337,
+    "powerBoost": 0.0,
+    "lastPowerUpdateTime": 1576544390179,
+    "lastLoginTime": 1576544390179,
+    "chatMode": "PUBLIC",
+    "ignoreAllianceChat": false,
+    "id": "faecf30e-5dc9-3eab-bea1-c90ca2e33865",
+    "name": "beeboy07",
+    "monitorJoins": false,
+    "spyingChat": false,
+    "showScoreboard": false,
+    "warmupTask": 0,
+    "isAdminBypassing": false,
+    "kills": 0,
+    "deaths": 0,
+    "willAutoLeave": false,
+    "mapHeight": 17,
+    "isFlying": true,
+    "enteringPassword": false,
+    "enteringPasswordWarp": "",
+    "isAlt": false,
+    "isStealthEnabled": false,
+    "playerAlerts": false,
+    "inspectMode": false
+  }
+}

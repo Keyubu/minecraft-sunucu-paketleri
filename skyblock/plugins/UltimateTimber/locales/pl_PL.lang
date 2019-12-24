@@ -1,0 +1,13 @@
+# General Messages
+
+prefix: '&8[&6UltimateTimber&8] '
+no-permission: '&cNie masz uprawnień aby użyć tej komendy!'
+command-reload-description: '&8 - &a/ut reload &7 - Przeladowanie plików konfiguracyjnych.'
+command-reload-reloaded: '&7Pliki konfiguracyjne oraz lokalne zostały przeładowane.'
+command-toggle-description: '&8 - &a/ut toggle &7 - Tryb szybkiego ścinania włączony/wyłączony'
+command-toggle-enabled: '&7Chopping Mode: &aWłączony'
+command-toggle-disabled: '&7Chopping Mode: &cWyłączony'
+on-cooldown: '&eNie możesz tak często scinać drzew, odczekaj jeszcze chwile ....'
+
+# Command Messages
+# Misc

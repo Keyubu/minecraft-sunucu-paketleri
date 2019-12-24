@@ -1,0 +1,8 @@
+messages:
+  usage: |-
+    &aCleanMotD komutları:
+    &e/cleanmotd reload &7- &bEklentiyi yeniler!
+
+  reload: "&aEklenti CleanMotD yenilendi!"
+  unknowncommand: "&cBilinmeyen komut. /cleanmotd help komutunu kullanarak tüm komutları görün!"
+  nopermission: "&cBu komutu kullanmak için yetkiniz yok!"

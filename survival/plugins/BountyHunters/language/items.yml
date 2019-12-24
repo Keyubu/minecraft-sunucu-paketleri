@@ -1,0 +1,64 @@
+NEXT_PAGE:
+  name: Sonraki Sayfa
+  lore: []
+PREVIOUS_PAGE:
+  name: Önceki Sayfa
+  lore: []
+PLAYER_HEAD:
+  name: '%name%'
+  lore: []
+GUI_PLAYER_HEAD:
+  name: '%name%'
+  lore:
+  - '&8&m--------------------------------'
+  - '%bounty-creator%'
+  - '%bounty-reward%'
+  - '%bounty-hunters%'
+  - ''
+  - '%bounty-instruction%'
+  - '%compass-instruction%'
+  - '&8&m--------------------------------'
+LB_PLAYER_DATA:
+  name: '[%rank%] %name%'
+  lore:
+  - '&8&m--------------------------------'
+  - 'Avlanan oyuncular: &f%claimed-bounties%'
+  - 'Kelle koleksiyonu: &f%successful-bounties%'
+  - 'Mevcut ünvan: &f%current-title%'
+  - ''
+  - Ünvan düzenlemek için &f/bounties titles
+  - Söz düzenlemek için &f/bounties quotes
+  - '&8&m--------------------------------'
+PROFILE:
+  name: '[%level%] %name%'
+  lore:
+  - '&8&m--------------------------------'
+  - 'Avlanan oyuncular: &f%claimed-bounties%'
+  - 'Kelle koleksiyonu: &f%successful-bounties%'
+  - 'Seviye: &f%level%'
+  - 'Düzey: %lvl-progress%'
+  - ''
+  - 'Mevcut ünvan: &f%current-title%'
+  - ''
+  - Ünvan düzenlemek için &f/bounties titles
+  - Söz düzenlemek için &f/bounties quotes
+  - '&8&m--------------------------------'
+SET_BOUNTY:
+  name: '&eBiraz sistemi öğrenelim...'
+  lore:
+  - ''
+  - '&7Birinin başına ödül koymak için'
+  - '&f/bounty <oyuncu> <ödül> &7yazılır'
+  - ''
+  - '&7Bir ödül nasıl arttırılır?'
+  - Birinin ödülünü arttırmak için
+  - '&f/bounty <oyuncu> <miktar> &7yazın'
+  - ''
+  - '&7Koyulan ödül nasıl kaldırılır?'
+  - Menüden sağ tıklayarak koyduğunuz
+  - ödülü kaldırabilirsiniz.
+BOUNTY_COMPASS:
+  name: Hedef Cihazı
+  lore:
+  - Hedeflediğiniz oyuncular ile
+  - aranızdaki mesafeyi gösterir.

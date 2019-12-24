@@ -1,0 +1,24 @@
+kasa-standart:
+  location: world, -126.166, 75.033, 154.261
+  lines:
+  - '&3Standart Kasa'
+  - '&fYeniler için ideal,'
+  - '&faz verir ama yetinir'
+  - ''
+  - '{ext:open}'
+kasa-mega:
+  location: world, -126.166, 75.033, 154.261
+  lines:
+  - '&6Mega Kasa'
+  - '&fDaha geniş kapaklı ve'
+  - '&fbüyük ama sizi şok etmez'
+  - ''
+  - '{ext:open}'
+kasa-ultra:
+  location: world, -126.166, 75.033, 154.261
+  lines:
+  - '&bUltra Kasa'
+  - '&fŞaşırtır mı bilemeyiz fakat'
+  - '&fiçeriği kabarık, itemler uçuk!'
+  - ''
+  - '{ext:open}'

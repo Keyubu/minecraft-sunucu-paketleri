@@ -1,0 +1,7 @@
+# Use & for color codes. List of color can be found here: http://goo.gl/VCscSk
+# Language for the messages. Now there is only "it" and "en".
+Locale: en
+# %player is the player name.
+Command: 'kick %player &4&lWorldDownloader is forbidden here!'
+# Set to true to receive information on players trying to enter with World Downloader.
+Debug: true

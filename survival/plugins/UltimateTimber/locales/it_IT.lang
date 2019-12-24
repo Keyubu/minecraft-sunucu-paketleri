@@ -1,0 +1,13 @@
+# General Messages
+
+prefix: '&8[&6UltimateTimber&8] '
+no-permission: '&cNon hai i permessi per fare questo!'
+command-reload-description: '&8 - &a/ut reload &7 - Ricarica il file di configurazione.'
+command-reload-reloaded: '&7I file di configurazione e lingue sono stati ricaricati.'
+command-toggle-description: '&8 - &a/ut toggle &7 - Attiva o disattiva la modalità di taglio'
+command-toggle-enabled: '&7Modalità di taglio: &aAttivata'
+command-toggle-disabled: '&7Modalità di taglio: &cDisattivata'
+on-cooldown: '&eSei in attesa e non puoi abbatere alberti adesso.'
+
+# Command Messages
+# Misc

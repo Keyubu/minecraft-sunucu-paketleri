@@ -1,0 +1,6 @@
+# The command that is going to be executed when player is detected with flood
+# By default is set to do nothing, use %name% to specify exploiters nickname (for example, 'ban %name%')
+dispatchCommand: ~
+
+# The reason why player was kicked
+kickMessage: 'You tried to exploit CustomPayload packet'

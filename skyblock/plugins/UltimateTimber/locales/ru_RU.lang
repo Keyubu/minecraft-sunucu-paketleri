@@ -1,0 +1,13 @@
+# Основные сообщения
+
+prefix: '&8[&6UltimateTimber&8] '
+no-permission: '&cУ вас недостаточно прав.'
+command-reload-description: '&8 - &a/ut reload &7 - Перезагрузка конфигурации.'
+command-reload-reloaded: '&7Конфигурация и локальные файлы были перезагружены.'
+command-toggle-description: '&8 - &a/ut toggle &7 - Включить/выключить режим измельчения.'
+command-toggle-enabled: '&7Режим измельчения: &aВключен'
+command-toggle-disabled: '&7Режим измельчения: &cВыключен'
+on-cooldown: '&eСработал кулдаун, вы не можете срубить дерево прямо сейчас.'
+
+# Ответы на команды(при использовании команд)
+# Разное

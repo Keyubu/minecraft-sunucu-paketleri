@@ -1,0 +1,32 @@
+playerName: beeboy07
+hasIsland: false
+islandLocation: ''
+hasTeam: false
+teamLeader: ''
+teamIslandLocation: ''
+islandLevel: 0
+members: []
+resetsLeft: -1
+deaths: 0
+locale: ''
+startIslandRating: 50
+useControlPanel: true
+challenges:
+  status:
+    skyking: false
+    skylegend: false
+    rütbe: false
+    skylord: false
+    skyzeus: false
+  times:
+    skyking: 0
+    skylegend: 0
+    rütbe: 0
+    skylord: 0
+    skyzeus: 0
+  timestamp:
+    skyking: 0
+    skylegend: 0
+    rütbe: 0
+    skylord: 0
+    skyzeus: 0

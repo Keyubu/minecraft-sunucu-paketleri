@@ -1,0 +1,154 @@
+Crate:
+  CrateType: Wheel
+  CrateName: '&3Standart Kasa'
+  Preview-Name: '&8Standart Kasa Içeriği'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 21
+  OpeningBroadCast: true
+  BroadCast: '%Prefix%&e%Player% &7adlı kişi &3Standart &7kasayı açtı.'
+  Item: 'CHEST'
+  Glowing: false
+  Name: '&3Standart'
+  Lore:
+  - '&8Sıradan şeyler'
+  - ''
+  - '&7Kasayı açmak için &fsol &7tıklayın'
+  - '&7Görüntülemek için &fsağ &7tıklayın'
+  - ''
+  Preview:
+    Toggle: true
+    ChestLines: 5
+    Glass:
+      Toggle: true
+      Item: 'STAINED_GLASS_PANE:7'
+  PhysicalKey:
+    Name: '&3Standart Anahtar'
+    Lore:
+    - '&8Kasa anahtarı'
+    - ''
+    - '&7Bu anahtarla Standart'
+    - '&7kasasını açabilirsiniz'
+    Item: 'TRIPWIRE_HOOK'
+    Glowing: true
+  Prizes:
+    '1':
+      DisplayName: '&e3,000 bakiye'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%30'
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 3000
+    '2':
+      DisplayName: '&e8,000 bakiye'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%15'
+      MaxRange: 100
+      Chance: 15
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 8000
+    '3':
+      DisplayName: '&e10,000 bakiye'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%13'
+      MaxRange: 100
+      Chance: 13
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 10000
+    '4':
+      DisplayName: '&e12,000 bakiye'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%11'
+      MaxRange: 100
+      Chance: 11
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 12000
+    '5':
+      DisplayName: '&e14,000 bakiye'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%9'
+      MaxRange: 100
+      Chance: 9
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 14000
+    '6':
+      DisplayName: '&eKılıç'
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%20'
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Glowing: false
+      Items:
+      - 'Item:267, Amount:1, DAMAGE_All:1, DURABILITY:1' 
+    '7':
+      DisplayName: '&eKazma'
+      DisplayItem: '278'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%20'
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Glowing: false
+      Items:
+      - 'Item:257, Amount:1, DIG_SPEED:2, DURABILITY:1' 
+    '8':
+      DisplayName: '&eSet'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%10'
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Items:
+      - 'Item:298, Amount:1, PROTECTION:1, DURABILITY:1'
+      - 'Item:307, Amount:1, PROTECTION:1, DURABILITY:1' 
+      - 'Item:308, Amount:1, PROTECTION:1, DURABILITY:1' 
+      - 'Item:301, Amount:1, PROTECTION:1, DURABILITY:1' 
+    '9':
+      DisplayName: '&e1 Ultra Kasa Anahtarı'
+      DisplayItem: '131'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%10'
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Commands:
+      - crazycrates give physical ultra 1 %Player%

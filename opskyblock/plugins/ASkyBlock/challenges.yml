@@ -1,0 +1,103 @@
+﻿challenges:
+  # Challenge levels - list as many as you like. If a challenge's level is '' it can
+  # be done anytime. You cannot name a challenge the same as a level.
+  levels: 'Rütbe'
+    
+  # The number of undone tasks that can be left on a level before unlocking next level
+  waiveramount: 1
+  
+  # Free levels - which levels above should be auto done when reached, therefore unlocking next level.
+  # Example:
+  # freelevels: 'Novice' will immediately put player onto Competent level challenges 
+  # freelevels: 'Novice Competent' will make all Novice, Competent and Uzman challenges available immediately.
+  # freelevels: 'Competent' will open Competent and Uzman levels once Novice is complete
+  freelevels: ''
+  
+  # This section determines what happens when a player unlocks a new level
+  # The subname should correspond to the levels listed above
+  # Note that there is no section for the first level as it is automatically unlocked
+  levelUnlock:
+    Rütbe:
+      # What additional message to send player
+      message: '&aTebrikler, Rütbe başarımı kazanıldı!'
+      rewardDesc: 'Elmaslar!'
+      itemReward: 'DIAMOND:32'
+      moneyReward: 100000
+      expReward: 1000
+      # List permissions separated by spaces
+      permissionReward: ''
+      # Commands to run on this player. Use [player] for their name.
+      commands:
+  challengeList:
+    skylord:
+      friendlyname: 'Skylord Başarımı'
+      description: 'Adanı 250 bin seviyeye ulaştır!'
+      icon: REDSTONE_BLOCK
+      level: 'Rütbe'
+      type: level
+      requiredItems: 250000
+      takeItems: false
+      itemReward: 'DIAMOND:64'
+      rewardText: '64 elmas!'
+      moneyReward: 1000000
+      expReward: 25000
+      permissionReward: 'skylord.ol'
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    skyking:
+      friendlyname: 'Skyking Başarımı'
+      description: 'Adanı 1 milyon seviyeye ulaştır!'
+      icon: IRON_BLOCK
+      level: 'Rütbe'
+      type: level
+      requiredItems: 1000000
+      takeItems: false
+      itemReward: 'DIAMOND:64'
+      rewardText: '64 elmas!'
+      moneyReward: 5000000
+      expReward: 25000
+      permissionReward: 'skyking.ol'
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    skyzeus:
+      friendlyname: 'SkyZeus Başarımı'
+      description: 'Adanı 2 milyon seviyeye ulaştır!'
+      icon: DIAMOND_BLOCK
+      level: 'Rütbe'
+      type: level
+      requiredItems: 2000000
+      takeItems: false
+      itemReward: 'DIAMOND:64'
+      rewardText: '64 elmas!'
+      moneyReward: 8000000
+      expReward: 25000
+      permissionReward: 'skyzeus.ol'
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0
+    skylegend:
+      friendlyname: 'SkyLegend Başarımı'
+      description: 'Adanı 5 milyon seviyeye ulaştır!'
+      icon: EMERALD_BLOCK
+      level: 'Rütbe'
+      type: level
+      requiredItems: 5000000
+      takeItems: false
+      itemReward: 'DIAMOND:64'
+      rewardText: '64 elmas!'
+      moneyReward: 10000000
+      expReward: 25000
+      permissionReward: 'skylegend.ol'
+      repeatable: false
+      repeatItemReward: ''
+      repeatRewardText: ''
+      repeatMoneyReward: 0
+      repeatExpReward: 0

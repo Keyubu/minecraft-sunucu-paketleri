@@ -1,0 +1,13 @@
+# Generelle Beskjeder
+
+prefix: '&8[&6UltimateTimber&8] '
+no-permission: '&cDu har ikke tillatelse til det!'
+command-reload-description: '&8 - &a/ut reload &7 - Restarter konfigurasjonen.'
+command-reload-reloaded: '&7Konfigurasjon og språk filer har blitt restartet.'
+command-toggle-description: '&8 - &a/ut toggle &7 - Bytter om fellmetoden.'
+command-toggle-enabled: '&7Fellmodus: &aEnabled'
+command-toggle-disabled: '&7Fellmodus: &cDisabled'
+on-cooldown: '&edu er på en nedtelling og kan ikke felle trær akkuratt nå.'
+
+# Kommando meldinger
+# Diverse

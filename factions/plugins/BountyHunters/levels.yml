@@ -1,0 +1,73 @@
+# Rewards given to players when they level up.
+# Names in caps do not matter since they will not be
+# displayed in-game, just make sure they're all different.
+
+# Level max: 50
+
+reward:
+
+    # The player title is displayed in the bounty
+    # leaderboard as well as when the player claims a bounty.
+    # It can also be obtained using a placeholder.
+    title:
+        HEAD_HUNTER:
+            format: Kelle Avcısı
+            unlock: 1
+        HEAD_COLLECTOR:
+            format: Kafa Toplayıcısı
+            unlock: 2
+        EXPERIENCED_HUNTER:
+            format: Tecrübeli Katil
+            unlock: 3
+        GREEDY_HUNTER:
+            format: Açgözlü Avcı
+            unlock: 4
+        DEAD_OR_ALIVE:
+            format: Ölü veya Diri
+            unlock: 5
+        BLOODTHIRSTY:
+            format: Kanasusamış
+            unlock: 6
+        BOUNTY_HUNTER:
+            format: '%star% Kelle Avcısı %star%'
+            unlock: 8
+        LEGENDARY_HUNTER:
+            format: '%star% Kelle Avcısı %star%'
+            unlock: 15
+        THE_LEGEND:
+            format: '%diamond% Efsane %diamond%'
+            unlock: 25
+            
+    # 'Death quotes' are displayed in the chat
+    # and on the title when a player claims a bounty.
+    # It can also be obtained with a placeholder.
+    quote:
+        MAY_DEATH:
+            format: 'Ölüm seni karşılayabilir...'
+            unlock: 3
+        DIAMOND:
+            format: 'O elması tekrar çalmasan iyi edersin.'
+            unlock: 6
+        TRY_ME:
+            format: 'Dene beni'
+            unlock: 10
+        GIT_GUD:
+            format: 'Git gud'
+            unlock: 15
+        GET_REKT:
+            format: 'G3t r3kt'
+            unlock: 20
+  
+    # Commands sent when leveling up.
+    commands:
+        '1':
+        - "say %player% seviye 1'e ulaştı!"
+        
+    # Currency earned when leveling up.
+    # cash earned = <base> + ( <per-level> * <player level> )
+    money:
+        base: 50
+        per-level: 6
+        
+# Bounties players need to claim to level up.
+bounties-per-level: 5

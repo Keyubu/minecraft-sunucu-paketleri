@@ -1,0 +1,205 @@
+# EssentialsX new Kit configuration.
+# If you don't have any kits defined in this file, the plugin will try to copy them from the config.yml
+# 
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - itemID[:DataValue/Durability] Amount [Enchantment:Level].. [itemmeta:value]...
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
+# For more information, visit http://wiki.ess3.net/wiki/Kits
+kits:
+   Caylak:
+    delay: 1800
+    items:
+    - 276 1 sharpness:2 smite:1 name:&eÇaylak_Kiti
+    - 310 1 protection:1 name:&eÇaylak_Kiti
+    - 311 1 protection:1 name:&eÇaylak_Kiti
+    - 312 1 protection:1 name:&eÇaylak_Kiti
+    - 313 1 protection:1 name:&eÇaylak_Kiti
+    - 278 1 efficiency:2 fortune:1 name:&eÇaylak_Kiti
+    - 277 1 efficiency:1 name:&eÇaylak_Kiti
+    - 279 1 efficiency:1 name:&eÇaylak_Kiti
+    - 322 32 name:&eÇaylak_Kiti
+    
+   Maceraci:
+    delay: 1800
+    items:
+    - 276 1 sharpness:2 unbreaking:1 name:&eMaceracı_Kiti
+    - 310 1 protection:1 unbreaking:1 name:&eMaceracı_Kiti
+    - 311 1 protection:1 unbreaking:1 name:&eMaceracı_Kiti
+    - 312 1 protection:1 unbreaking:1 name:&eMaceracı_Kiti
+    - 313 1 protection:2 unbreaking:1 name:&eMaceracı_Kiti
+    - 278 1 efficiency:1 unbreaking:1 name:&eMaceracı_Kiti
+    - 277 1 efficiency:1 unbreaking:1 name:&eMaceracı_Kiti
+    - 279 1 efficiency:1 unbreaking:1 name:&eMaceracı_Kiti
+    - 322 32 name:&eMaceracı_Kiti
+
+   Bilgin:
+    delay: 1800
+    items:
+    - 276 1 sharpness:2 smite:1 unbreaking:1 name:&eBilgin_Kiti
+    - 310 1 protection:1 unbreaking:1 name:&eBilgin_Kiti
+    - 311 1 protection:1 unbreaking:1 name:&eBilgin_Kiti
+    - 312 1 protection:1 unbreaking:1 name:&eBilgin_Kiti
+    - 313 1 protection:2 unbreaking:1 name:&eBilgin_Kiti
+    - 278 1 efficiency:2 unbreaking:1 fortune:1 name:&eBilgin_Kiti
+    - 277 1 efficiency:2 unbreaking:1 name:&eBilgin_Kiti
+    - 279 1 efficiency:2 unbreaking:1 name:&eBilgin_Kiti
+    - 322 32 name:&eBilgin_Kiti
+
+   Uzman:
+    delay: 1800
+    items:
+    - 276 1 sharpness:2 smite:1 unbreaking:1 name:&eUzman_Kiti
+    - 310 1 protection:2 unbreaking:1 name:&eUzman_Kiti
+    - 311 1 protection:2 unbreaking:1 name:&eUzman_Kiti
+    - 312 1 protection:2 unbreaking:1 name:&eUzman_Kiti
+    - 313 1 protection:2 unbreaking:1 name:&eUzman_Kiti
+    - 278 1 efficiency:2 unbreaking:1 fortune:1 name:&eUzman_Kiti
+    - 277 1 efficiency:2 unbreaking:1 name:&eUzman_Kiti
+    - 279 1 efficiency:2 unbreaking:1 name:&eUzman_Kiti
+    - 322 32 name:&eUzman_Kiti
+
+   Usta:
+    delay: 1800
+    items:
+    - 276 1 sharpness:3 smite:1 unbreaking:2 name:&eUsta_Kiti
+    - 310 1 protection:2 unbreaking:2 name:&eUsta_Kiti
+    - 311 1 protection:2 unbreaking:2 name:&eUsta_Kiti
+    - 312 1 protection:2 unbreaking:2 name:&eUsta_Kiti
+    - 313 1 protection:2 unbreaking:2 name:&eUsta_Kiti
+    - 278 1 efficiency:3 unbreaking:2 fortune:1 name:&eUsta_Kiti
+    - 277 1 efficiency:2 unbreaking:2 name:&eUsta_Kiti
+    - 279 1 efficiency:2 unbreaking:2 name:&eUsta_Kiti
+    - 322 32 name:&eUsta_Kiti
+  
+   Ustad:
+    delay: 1800
+    items:
+    - 276 1 sharpness:3 smite:1 unbreaking:2 name:&eÜstad_Kiti
+    - 310 1 protection:3 unbreaking:2 name:&eÜstad_Kiti
+    - 311 1 protection:3 unbreaking:2 name:&eÜstad_Kiti
+    - 312 1 protection:3 unbreaking:2 name:&eÜstad_Kiti
+    - 313 1 protection:3 unbreaking:2 name:&eÜstad_Kiti
+    - 278 1 efficiency:3 unbreaking:2 fortune:1 name:&eÜstad_Kiti
+    - 277 1 efficiency:3 unbreaking:2 name:&eÜstad_Kiti
+    - 279 1 efficiency:3 unbreaking:2 name:&eÜstad_Kiti
+    - 322 32 name:&eÜstad_Kiti 
+    
+   Soylu:
+    delay: 1800
+    items:
+    - 276 1 sharpness:4 smite:2 unbreaking:3 name:&eSoylu_Kiti
+    - 310 1 protection:3 unbreaking:2 name:&eSoylu_Kiti
+    - 311 1 protection:3 unbreaking:2 name:&eSoylu_Kiti
+    - 312 1 protection:3 unbreaking:2 name:&eSoylu_Kiti
+    - 313 1 protection:3 unbreaking:2 name:&eSoylu_Kiti
+    - 278 1 efficiency:4 unbreaking:2 fortune:2 name:&eSoylu_Kiti
+    - 277 1 efficiency:3 unbreaking:2 name:&eSoylu_Kiti
+    - 279 1 efficiency:3 unbreaking:2 name:&eSoylu_Kiti
+    - 322 32 name:&eSoylu_Kiti 
+    
+   Asil:
+    delay: 1800
+    items:
+    - 276 1 sharpness:4 smite:2 unbreaking:3 name:&eAsil_Kiti
+    - 310 1 protection:4 unbreaking:2 name:&eAsil_Kiti
+    - 311 1 protection:4 unbreaking:2 name:&eAsil_Kiti
+    - 312 1 protection:4 unbreaking:2 name:&eAsil_Kiti
+    - 313 1 protection:4 unbreaking:2 name:&eAsil_Kiti
+    - 278 1 efficiency:4 unbreaking:3 fortune:2 name:&eAsil_Kiti
+    - 277 1 efficiency:4 unbreaking:2 name:&eAsil_Kiti
+    - 279 1 efficiency:4 unbreaking:2 name:&eAsil_Kiti
+    - 322 32 name:&eAsil_Kiti
+    
+   Kahraman:
+    delay: 1800
+    items:
+    - 276 1 sharpness:4 smite:2 unbreaking:3 name:&eKahraman_Kiti
+    - 310 1 protection:4 unbreaking:3 name:&eKahraman_Kiti
+    - 311 1 protection:4 unbreaking:3 name:&eKahraman_Kiti
+    - 312 1 protection:4 unbreaking:3 name:&eKahraman_Kiti
+    - 313 1 protection:4 unbreaking:3 name:&eKahraman_Kiti
+    - 278 1 efficiency:4 unbreaking:3 fortune:2 name:&eKahraman_Kiti
+    - 277 1 efficiency:4 unbreaking:3 name:&eKahraman_Kiti
+    - 279 1 efficiency:4 unbreaking:3 name:&eKahraman_Kiti
+    - 322 32 name:&eKahraman_Kiti
+    
+   Efsane:
+    delay: 3600
+    items:
+    - 276 1 sharpness:5 smite:2 unbreaking:4 name:&eEfsane_Kiti
+    - 310 1 protection:5 unbreaking:4 name:&eEfsane_Kiti
+    - 311 1 protection:5 unbreaking:4 name:&eEfsane_Kiti
+    - 312 1 protection:5 unbreaking:4 name:&eEfsane_Kiti
+    - 313 1 protection:5 unbreaking:4 name:&eEfsane_Kiti
+    - 278 1 efficiency:5 unbreaking:4 fortune:3 name:&eEfsane_Kiti
+    - 277 1 efficiency:5 unbreaking:4 name:&eEfsane_Kiti
+    - 279 1 efficiency:5 unbreaking:4 name:&eEfsane_Kiti
+    - 322 32 name:&eEfsane_Kiti
+    
+   Rehber:
+    delay: 5400
+    items:
+    - 276 1 sharpness:5 smite:3 unbreaking:4 fireaspect:1 name:&aRehber_Kiti
+    - 310 1 protection:5 unbreaking:4 name:&aRehber_Kiti
+    - 311 1 protection:5 unbreaking:4 name:&aRehber_Kiti
+    - 312 1 protection:5 unbreaking:4 name:&aRehber_Kiti
+    - 313 1 protection:5 unbreaking:4 name:&aRehber_Kiti
+    - 278 1 efficiency:5 unbreaking:4 fortune:3 name:&aRehber_Kiti
+    - 277 1 efficiency:5 unbreaking:4 name:&aRehber_Kiti
+    - 279 1 efficiency:5 unbreaking:4 name:&aRehber_Kiti
+    - 322 32 name:&aRehber_Kiti
+    
+   VIP:
+    delay: 7200
+    items:
+    - 276 1 sharpness:5 smite:4 unbreaking:4 fireaspect:1 name:&eVIP_Kiti
+    - 310 1 protection:5 unbreaking:4 name:&eVIP_Kiti
+    - 311 1 protection:5 unbreaking:4 name:&eVIP_Kiti
+    - 312 1 protection:5 unbreaking:4 name:&eVIP_Kiti
+    - 313 1 protection:5 unbreaking:4 name:&eVIP_Kiti
+    - 278 1 efficiency:5 unbreaking:4 fortune:4 name:&eVIP_Kiti
+    - 277 1 efficiency:5 unbreaking:4 name:&eVIP_Kiti
+    - 279 1 efficiency:5 unbreaking:4 name:&eVIP_Kiti
+    - 322 64 name:&eVIP_Kiti
+ 
+   VIP+:
+    delay: 7200
+    items:
+    - 276 1 sharpness:6 smite:4 unbreaking:4 fireaspect:2 name:&6VIP+_Kiti
+    - 310 1 protection:5 unbreaking:4 name:&6VIP+_Kiti
+    - 311 1 protection:5 unbreaking:4 name:&6VIP+_Kiti
+    - 312 1 protection:5 unbreaking:4 name:&6VIP+_Kiti
+    - 313 1 protection:5 unbreaking:4 name:&6VIP+_Kiti
+    - 278 1 efficiency:6 unbreaking:4 fortune:4 name:&6VIP+_Kiti
+    - 277 1 efficiency:5 unbreaking:4 name:&6VIP+_Kiti
+    - 279 1 efficiency:5 unbreaking:4 name:&6VIP+_Kiti
+    - 322 64 name:&6VIP+_Kiti
+
+   MVIP:
+    delay: 7200
+    items:
+    - 276 1 sharpness:6 smite:4 unbreaking:4 fireaspect:2 name:&bMVIP_Kiti
+    - 310 1 protection:6 unbreaking:4 name:&bMVIP_Kiti
+    - 311 1 protection:6 unbreaking:4 name:&bMVIP_Kiti
+    - 312 1 protection:6 unbreaking:4 name:&bMVIP_Kiti
+    - 313 1 protection:6 unbreaking:4 name:&bMVIP_Kiti
+    - 278 1 efficiency:6 unbreaking:4 fortune:4 name:&bMVIP_Kiti
+    - 277 1 efficiency:6 unbreaking:4 name:&bMVIP_Kiti
+    - 279 1 efficiency:6 unbreaking:4 name:&bMVIP_Kiti
+    - 322 64 name:&bMVIP_Kiti
+
+   MVIP+:
+    delay: 8000
+    items:
+    - 276 1 sharpness:7 smite:5 unbreaking:4 fireaspect:3 name:&aMVIP+_Kiti
+    - 310 1 protection:7 unbreaking:5 name:&aMVIP+_Kiti
+    - 311 1 protection:7 unbreaking:5 name:&aMVIP+_Kiti
+    - 312 1 protection:7 unbreaking:5 name:&aMVIP+_Kiti
+    - 313 1 protection:7 unbreaking:5 name:&aMVIP+_Kiti
+    - 278 1 efficiency:7 unbreaking:5 fortune:5 name:&aMVIP+_Kiti
+    - 277 1 efficiency:7 unbreaking:4 name:&aMVIP+_Kiti
+    - 279 1 efficiency:7 unbreaking:4 name:&aMVIP+_Kiti
+    - 322 64 name:&aMVIP+_Kiti

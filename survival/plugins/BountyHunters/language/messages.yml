@@ -1,0 +1,65 @@
+set-by: '&7Ödül koyan: &f%creator%'
+set-by-yourself: Ödülü koydun.
+reward-is: '&7Para ödülü: &f%reward%'
+kill-him-claim-bounty: Öldür ve ödülü al
+dont-let-them-kill-u: Seni öldürmelerine izin verme
+thug-player: Bu oyuncu bir haydut!
+right-click-remove-bounty: Sağ tıkla ve ödülü kaldır
+click-buy-compass: Tıkla ve pusulayı %price% ile satın al
+click-target: Tıkla ve hedefle
+click-untarget: Tıkla ve hedefi kaldır
+click-up-bounty: <sağ tık> ile ödülü arttır.
+current-hunters: '&f%hunters% &7oyuncunun hedefinde'
+no-title: '&cBulunmuyor'
+no-player: '&c- Oyuncu Yok -'
+gui-name: Kelle Avcılığı &8(%page%/%max-page%)
+leaderboard-gui-name: Avcı Sıralaması
+chat-bar: '&m--------------------------------------------------'
+bounty-created: '&c%target% &eadlı kişinin başına ödül koydun!'
+bounty-explain: '&eBu oyuncuyu öldüren ilk kişi &a%reward%TL &epara ödülünü alacak.'
+new-bounty-on-you: '&6%creator% &7adlı kişi öldürülmen için &a%reward%TL &7para ödülü
+  koydu.'
+new-bounty-on-you-illegal: Oyuncuyu illegal bir şekilde öldürdün! &a%reward%TL &7para ödülü senin üzerine geçti.
+new-bounty-on-you-undefined: Biri senin para ödülünü &a%reward%TL &7olarak ayarladı.
+new-bounty-on-player: '&6%creator% &7adlı kişi &e%target% &7adlı kişinin üzerine para
+  ödülü koydu! Öldürün ve &a%reward%TL &7kazanın!'
+new-bounty-on-player-illegal: '&e%target% &7oyuncuyu illegal bir şekilde öldürdü:
+  onu öldürün ve &a%reward%TL &7kazanın!'
+new-bounty-on-player-undefined: Biri &e%target% &7adlı kişiye para ödülü koydu! Öldürün ve &a%reward%TL &7kazanın!
+bounty-change: '&e%player% &7adlı kişinin ödülü artık &a%reward%TL'
+bounty-claimed: '&6%killer% &7adlı kişi &e%target% &7adlı kişiyi öldürdü ve &a%reward%TL
+  &7kazandı!'
+bounty-claimed-by-you: Başarıyla &e%target% &7adlı kişinin &a%reward%TL &7değerindeki para ödülünü aldın.
+error-player: '&f%arg% &7adında bir oyuncu bulunamadı.'
+not-valid-number: '&f%arg% &7geçersiz bir sayı.'
+new-hunter-alert: '&c%hunter% &7seni hedefledi.'
+empty-inv-first: Lütfen önce envanterinizde boş yer açın.
+not-enough-perms: Bunu yapmak için yetkiniz yok.
+command-usage: 'Kullanım: %command%'
+bounty-imun: Bir oyuncuya para ödülü koyamazsın.
+track-imun: Bu oyuncuyu takip edemezsiniz.
+target-cooldown: Başka bir oyuncuyu hedeflemek için &f%remain% &csaniye bekleyin.
+cant-set-bounty-on-yourself: Kendine para ödülü koyamazsın :)
+bounty-expired: '&e%target% &7adlı oyuncudaki para ödülünün süresi bitti.'
+reward-must-be-higher: '&7Ödül &a%min%TL&7''den yüksek olmalıdır.'
+reward-must-be-lower: '&7Ödül &a%max%TL&7''den küçük olmalıdır.'
+not-enough-money: Yeterince paranız yok.
+bounty-set-restriction: Başka bir para ödülü koymak için &f%left% &csaniye bekleyin.
+target-set: Hedef belirlendi.
+target-removed: Hedef kaldırıldı.
+bought-compass: Başarıyla &ftakip cihazı &esatın alındı.
+tax-explain: '&a%price%TL&7''nin &f%%percent% &7oranı vergi olarak alındı.'
+player-must-be-connected: Oyuncunun izlenebilmesi için oyunda olması gerekir.
+level-up: '&aTebrikler! &7Artık &f%level% &7seviyesin!'
+level-up-2: '&f%bounties% &7ödül alındı. Daha fazla ödül, daha iyi seviye...'
+level-up-rewards: Ödüllerinizi görmek için imlecinizi bu mesajın üzerine getirin!
+level-up-reward: '- &f%reward%'
+click-select: Tıkla ve seç
+successfully-selected: '&eBaşarıyla &f%item% &eadlı ünvanı seçtin.'
+unlocked-titles: 'Açılan ünvanlar:'
+unlocked-quotes: 'Açılan sözler:'
+tracking-compass-reset: Takip cihazı sıfırlandı.
+console: konsol
+compass-in-another-world: Başka dünya
+compass-blocks: '%blocks% blok'
+compass-format: '&7&l[ &6&l%format% &7&l]'

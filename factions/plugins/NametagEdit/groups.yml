@@ -1,0 +1,66 @@
+Groups:
+  default:
+    Permission: tab.oyuncu
+    Prefix: '&7'
+    Suffix: ''
+    SortPriority: 13
+  drehber:
+    Permission: tab.drehber
+    Prefix: '&dD. Rehber &7'
+    Suffix: ''
+    SortPriority: 12
+  rehber:
+    Permission: tab.rehber
+    Prefix: '&eRehber &7'
+    Suffix: ''
+    SortPriority: 11
+  ustarehber:
+    Permission: tab.ustarehber
+    Prefix: '&aU. Rehber &7'
+    Suffix: ''
+    SortPriority: 10
+  vip:
+    Permission: tab.vip
+    Prefix: '&eVIP &7'
+    Suffix: ''
+    SortPriority: 9
+  vip+:
+    Permission: tab.vip+
+    Prefix: '&6VIP+ &7'
+    Suffix: ''
+    SortPriority: 8
+  mvip:
+    Permission: tab.mvip
+    Prefix: '&bMVIP &7'
+    Suffix: ''
+    SortPriority: 7
+  mvip+:
+    Permission: tab.mvip+
+    Prefix: '&aMVIP+ &7'
+    Suffix: ''
+    SortPriority: 6
+  moderator:
+    Permission: tab.moderator
+    Prefix: '&bModerator &e'
+    Suffix: ''
+    SortPriority: 5
+  mimar:
+    Permission: tab.mimar
+    Prefix: '&6Mimar &e'
+    Suffix: ''
+    SortPriority: 4
+  yapimci:
+    Permission: tab.yapimci
+    Prefix: '&6Yapımcı &e'
+    Suffix: ''
+    SortPriority: 3
+  yonetici:
+    Permission: tab.yonetici
+    Prefix: '&cYönetici &e'
+    Suffix: ''
+    SortPriority: 2
+  kurucu:
+    Permission: tab.kurucu
+    Prefix: '&cKurucu &e'
+    Suffix: ''
+    SortPriority: 1

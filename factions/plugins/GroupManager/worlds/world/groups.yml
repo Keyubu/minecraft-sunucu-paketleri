@@ -1,0 +1,625 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Maceraci:
+    default: false
+    permissions:
+    - essentials.kits.maceraci
+    - ezranks.autorankup
+    - ezranks.rank.Maceraci
+    - tab.oyuncu
+    inheritance:
+    - default
+    info:
+      build: true
+      prefix: '&9Maceracı &7'
+      suffix: '&7'
+  Soylu:
+    default: false
+    permissions:
+    - CustomEnderChest.level.2
+    - essentials.kits.soylu
+    - ezranks.autorankup
+    - ezranks.rank.Soylu
+    - tab.oyuncu
+    inheritance:
+    - default
+    info:
+      build: true
+      prefix: '&eSoylu &7'
+      suffix: '&7'
+  Usta:
+    default: false
+    permissions:
+    - CustomEnderChest.level.1
+    - essentials.kits.usta
+    - ezranks.autorankup
+    - ezranks.rank.Usta
+    - tab.oyuncu
+    inheritance:
+    - default
+    info:
+      build: true
+      prefix: '&6Usta &7'
+      suffix: '&7'
+  VIP+:
+    default: false
+    permissions:
+    - chestcommands.open.tamir.yml
+    - CustomEnderChest.level.4
+    - essentails.hat
+    - essentials.afk
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.joinfullserver
+    - essentials.kits.vip+
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.hand
+    - essentials.sethome.multiple.VIP+
+    - essentials.teleport.timer.bypass
+    - nte.vip+
+    - plotme.limit.5
+    - sohbet.bypass
+    - sohbet.renk
+    - sohbetgardiyani.flood-izin
+    - tab.vip+
+    - vip.ates
+    - vip.direnc
+    - vip.gorunmezlik
+    - vip.guc
+    - vip.hiz
+    - vipzero.user
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&6&lVIP+ &7'
+      suffix: ''
+  Asil:
+    default: false
+    permissions:
+    - CustomEnderChest.level.2
+    - essentials.kits.asil
+    - ezranks.autorankup
+    - ezranks.rank.Asil
+    - tab.oyuncu
+    inheritance:
+    - default
+    info:
+      build: true
+      prefix: '&dAsil &7'
+      suffix: '&7'
+  Mimar:
+    default: false
+    permissions:
+    - chestcommands.open.tamir.yml
+    - essentails.hat
+    - essentials.afk
+    - essentials.feed
+    - essentials.fly
+    - essentials.gamemode
+    - essentials.gm
+    - essentials.gm.creative
+    - essentials.gm.survival
+    - essentials.hat
+    - essentials.heal
+    - essentials.joinfullserver
+    - essentials.mute
+    - essentials.nocommandcost.all
+    - essentials.oversizedstacks
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.armor
+    - essentials.repair.enchanted
+    - essentials.sethome.multiple.unlimited
+    - essentials.teleport.timer.bypass
+    - essentials.tp
+    - essentials.tptoggle
+    - nte.mimar
+    - plotme.limit.7
+    - sohbet.renk
+    - sohbet.sil
+    - sohbetgardiyani.flood-izin
+    - tab.mimar
+    - voxelsniper.*
+    - voxelsniper.litesniper
+    - voxelsniper.sniper
+    - worldedit.*
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&6Mimar &e'
+      suffix: ''
+  DenemeRehber:
+    default: false
+    permissions:
+    - essentials.afk
+    - essentials.kits.denemerehber
+    - essentials.mute
+    - nte.denemerehber
+    - sohbet.bypass
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&dD. Rehber &e'
+      suffix: ''
+  Moderator:
+    default: false
+    permissions:
+    - essentails.hat
+    - essentials.afk
+    - essentials.ban
+    - essentials.feed
+    - essentials.fly
+    - essentials.gamemode
+    - essentials.gm
+    - essentials.gm.creative
+    - essentials.gm.survival
+    - essentials.hat
+    - essentials.heal
+    - essentials.jail
+    - essentials.joinfullserver
+    - essentials.kick
+    - essentials.mute
+    - essentials.nocommandcost.all
+    - essentials.oversizedstacks
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.armor
+    - essentials.repair.enchanted
+    - essentials.sethome.multiple.unlimited
+    - essentials.teleport.timer.bypass
+    - essentials.tp
+    - essentials.tptoggle
+    - um.moderate
+    - um.vanish
+    - um.invsee
+    - um.spy
+    - um.tickets
+    - um.templates
+    - um.warning
+    - um.kick
+    - um.mute
+    - um.ban
+    - um.commandspy
+    - um.templates.use
+    - um.notes
+    - um.notes.create
+    - um.notes.delete
+    - um.punish
+    - um.tickets
+    - um.tickets.respond
+    - um.punishments
+    - um.moderation
+    - nte.moderator
+    - plotme.limit.7
+    - sohbet.renk
+    - sohbet.sil
+    - sohbetgardiyani.flood-izin
+    - tab.moderator
+    - voxelsniper.*
+    - voxelsniper.litesniper
+    - voxelsniper.sniper
+    - worldedit.*
+    - yetkili.sohbet
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&bModeratör &e'
+      suffix: ''
+  default:
+    default: false
+    permissions:
+    - bountyhunters.add
+    - bountyhunters.claim
+    - bountyhunters.leaderboard
+    - bountyhunters.list
+    - bountyhunters.quote
+    - bountyhunters.title
+    - crazyauctions.access
+    - crazyauctions.bid
+    - crazyauctions.sell
+    - crazyauctions.view
+    - crazycrates.access
+    - crazycrates.menu
+    - CustomEnderChest.commands
+    - CustomEnderChest.level.0
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.build
+    - essentials.clearinventory
+    - essentials.compass
+    - essentials.delhome
+    - essentials.depth
+    - essentials.getpos
+    - essentials.home
+    - essentials.ignore
+    - essentials.info
+    - essentials.itemdb
+    - essentials.kit
+    - essentials.listessentials.list.hidden
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.msg
+    - essentials.pay
+    - essentials.ping
+    - essentials.protect
+    - essentials.recipe
+    - essentials.sell
+    - essentials.sethome
+    - essentials.signs.enchant.allowunsafe
+    - essentials.signs.use.balance
+    - essentials.signs.use.buy
+    - essentials.signs.use.enchant
+    - essentials.signs.use.free
+    - essentials.signs.use.heal
+    - essentials.signs.use.info
+    - essentials.signs.use.kit
+    - essentials.signs.use.mail
+    - essentials.signs.use.protection
+    - essentials.signs.use.repair
+    - essentials.signs.use.sell
+    - essentials.signs.use.time
+    - essentials.signs.use.trade
+    - essentials.signs.use.warp
+    - essentials.spawn
+    - essentials.time
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.world
+    - essentials.worth
+    - lockette.user.*
+    - multiverse.access.*
+    - nte.default
+    - playershopguiplus.playershop
+    - playershopguiplus.playershop.sell
+    - plotme.limit.3
+    - plotme.use
+    - plotme.use.add
+    - plotme.use.auto
+    - plotme.use.buy
+    - plotme.use.claim
+    - plotme.use.dispose
+    - plotme.use.done
+    - plotme.use.home
+    - plotme.use.remove
+    - plotme.use.sell
+    - rankup.rankup
+    - shopchest.buy
+    - shopchest.create
+    - shopchest.create.buy
+    - shopchest.create.sell
+    - shopchest.create.protected
+    - shopchest.sell
+    - shopguiplus.buymore
+    - shopguiplus.others
+    - shopguiplus.sell.all
+    - shopguiplus.sell.hand.all
+    - shopguiplus.sellmore
+    - shopguiplus.shop
+    - shopguiplus.shop.dyes
+    - shopguiplus.shop.miscellanous
+    - shopguiplus.shop.tools
+    - shopguiplus.shops.*
+    - shopguiplus.shops.armor
+    - shopguiplus.shops.blocks
+    - shopguiplus.shops.drops
+    - shopguiplus.shops.farming
+    - shopguiplus.shops.food
+    - shopguiplus.shops.miscellanous
+    - shopguiplus.shops.ores
+    - shopguiplus.shops.tools
+    - shopkeeper.player
+    - trading.trade
+    inheritance: []
+    info:
+      build: true
+      prefix: '&7'
+      suffix: '&7'
+  Uzman:
+    default: false
+    permissions:
+    - CustomEnderChest.level.1
+    - essentials.kits.uzman
+    - ezranks.autorankup
+    - ezranks.rank.Uzman
+    - tab.oyuncu
+    inheritance:
+    - default
+    info:
+      build: true
+      prefix: '&6Uzman &7'
+      suffix: '&7'
+  MVIP:
+    default: false
+    permissions:
+    - chestcommands.open.tamir.yml
+    - CustomEnderChest.level.5
+    - essentails.hat
+    - essentials.afk
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.joinfullserver
+    - essentials.kits.mvip
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.hand
+    - essentials.sethome.multiple.MVIP
+    - essentials.teleport.timer.bypass
+    - nte.mvip
+    - plotme.limit.6
+    - sohbet.bypass
+    - sohbet.renk
+    - sohbetgardiyani.flood-izin
+    - tab.mvip
+    - vip.ates
+    - vip.direnc
+    - vip.gorunmezlik
+    - vip.guc
+    - vip.hiz
+    - vip.yenilenme
+    - vipzero.user
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&b&lMVIP &7'
+      suffix: ''
+  Efsane:
+    default: false
+    permissions:
+    - CustomEnderChest.level.3
+    - essentials.kits.efsane
+    - ezranks.autorankup
+    - ezranks.rank.Efsane
+    - tab.oyuncu
+    inheritance:
+    - default
+    info:
+      build: true
+      prefix: '&dEfsane &7'
+      suffix: '&7'
+  Rehber:
+    default: false
+    permissions:
+    - CustomEnderChest.level.4
+    - essentials.afk
+    - essentials.feed
+    - essentials.feed.cooldown.bypass
+    - essentials.hat
+    - essentials.heal
+    - essentials.heal.cooldown.bypass
+    - essentials.kits.rehber
+    - essentials.mute
+    - essentials.sethome.multiple.rehber
+    - nte.rehber
+    - sohbet.admin
+    - sohbet.bypass
+    - yetkili.sohbet
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&aRehber &e'
+      suffix: ''
+  UstaRehber:
+    default: false
+    permissions:
+    - essentials.afk
+    - essentials.feed
+    - essentials.feed.cooldown.bypass
+    - essentials.fly
+    - essentials.hat
+    - essentials.heal
+    - essentials.heal.cooldown.bypass
+    - essentials.kits.rehber
+    - essentials.mute
+    - essentials.sethome.multiple.rehber
+    - nte.ustarehber
+    - plotme.limit.4
+    - sohbet.admin
+    - sohbet.bypass
+    - sohbet.renk
+    - sohbet.sil
+    - sohbetgardiyani.sohbetitemizle
+    - tab.ustarehber
+    - yetkili.sohbet
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&bU. Rehber &e'
+      suffix: ''
+  Kahraman:
+    default: false
+    permissions:
+    - CustomEnderChest.level.2
+    - essentials.kits.kahraman
+    - ezranks.autorankup
+    - ezranks.rank.Kahraman
+    - tab.oyuncu
+    inheritance:
+    - default
+    info:
+      build: true
+      prefix: '&9Kahraman &7'
+      suffix: '&7'
+  Ustad:
+    default: false
+    permissions:
+    - CustomEnderChest.level.1
+    - essentials.kits.ustad
+    - ezranks.autorankup
+    - ezranks.rank.Ustad
+    - tab.oyuncu
+    inheritance:
+    - default
+    info:
+      build: true
+      prefix: '&aÜstad &7'
+      suffix: '&7'
+  VIP:
+    default: false
+    permissions:
+    - chestcommands.open.tamir.yml
+    - CustomEnderChest.level.4
+    - essentails.hat
+    - essentials.afk
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.joinfullserver
+    - essentials.kits.vip
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.hand
+    - essentials.sethome.multiple.VIP
+    - essentials.teleport.timer.bypass
+    - nte.vip
+    - plotme.limit.4
+    - sohbet.bypass
+    - sohbet.renk
+    - sohbetgardiyani.flood-izin
+    - tab.vip
+    - vip.ates
+    - vip.gorunmezlik
+    - vip.guc
+    - vip.hiz
+    - vipzero.user
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&e&lVIP &7'
+      suffix: ''
+  Bilgin:
+    default: false
+    permissions:
+    - essentials.kits.bilgin
+    - ezranks.autorankup
+    - ezranks.rank.Bilgin
+    - tab.oyuncu
+    inheritance:
+    - default
+    info:
+      build: true
+      prefix: '&aBilgin &7'
+      suffix: '&7'
+  Yapimci:
+    default: false
+    permissions:
+    - '*'
+    - essentials.*
+    - nte.oyuncu
+    - sohbet.sil
+    - tab.yapimci
+    - worldedit.*
+    - yetkili.sohbet
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&6Yapımcı &e'
+      suffix: ''
+  Kurucu:
+    default: false
+    permissions:
+    - '*'
+    - essentials.*
+    - sohbet.sil
+    - tab.kurucu
+    - voxelsniper.*
+    - worldedit.*
+    - yetkili.sohbet
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&9&lKURUCU &e'
+      suffix: ''
+  MVIP+:
+    default: false
+    permissions:
+    - chestcommands.open.tamir.yml
+    - CustomEnderChest.level.5
+    - essentails.hat
+    - essentials.afk
+    - essentials.feed
+    - essentials.hat
+    - essentials.heal
+    - essentials.joinfullserver
+    - essentials.kits.mvip+
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.hand
+    - essentials.sethome.multiple.MVIP+
+    - essentials.teleport.timer.bypass
+    - nte.MVIP+
+    - plotme.limit.7
+    - sohbet.bypass
+    - sohbet.renk
+    - sohbetgardiyani.flood-izin
+    - tab.mvip+
+    - vip.ates
+    - vip.direnc
+    - vip.gorunmezlik
+    - vip.guc
+    - vip.hiz
+    - vip.su
+    - vip.yenilenme
+    - vipzero.user
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&a&lMVIP+ &7'
+      suffix: ''
+  Yonetici:
+    default: false
+    permissions:
+    - '*'
+    - essentials.*
+    - nte.yonetici
+    - sohbet.sil
+    - tab.yonetici
+    - worldedit.*
+    - yetkili.sohbet
+    inheritance:
+    - default
+    info:
+      build: false
+      prefix: '&c&lYÖNETICI &e'
+      suffix: ''
+  Caylak:
+    default: true
+    permissions:
+    - essentials.kits.caylak
+    - ezranks.autorankup
+    - ezranks.rank.Caylak
+    - tab.oyuncu
+    inheritance:
+    - default
+    info:
+      build: true
+      prefix: '&fÇaylak &7'
+      suffix: '&7'

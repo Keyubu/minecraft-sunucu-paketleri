@@ -1,0 +1,197 @@
+Spawner_Tipleri:
+  tas:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 5
+    Spawner_CalismaMesafesi: 10
+    Spawner_Ismi: '&eTaş &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '1'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  cimen:
+    Spawner_CikacakMiktar: 1 
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 5
+    Spawner_CalismaMesafesi: 10
+    Spawner_Ismi: '&eTaş &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '2'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  elmasblok:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&eElmas Blok &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '57'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  demirblok:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&eDemir Blok &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '42'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+    - '.'
+  demir:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&eDemir &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '265'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  altinblok:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&eAltın Blok &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '41'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  altin:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&eAltın &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '266'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  elmas:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&eElmas &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '264'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  zumrut:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&eZümrüt &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '388'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  prizmarin:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&aPrizmarin &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '168'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  endtasi:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&7End Taşı &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '121'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  zumrutblok:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&aZümrüt Blok &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '133'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  kumtasi:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 3
+    Spawner_CalismaMesafesi: 32
+    Spawner_Ismi: '&eKumtaşı &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '24'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'      
+  komur:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 5
+    Spawner_CalismaMesafesi: 10
+    Spawner_Ismi: '&eKömür &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '263'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'
+  komurblok:
+    Spawner_CikacakMiktar: 1
+    Spawner_CikacakMesafe: 1
+    Spawner_MinHizi: 3
+    Spawner_MaxHizi: 5
+    Spawner_CalismaMesafesi: 10
+    Spawner_Ismi: '&eKömür Blok &7&lSPAWNER'
+    Spawner_Aciklamasi:
+      - '&7Özel spawner, ipeksi ile kırılır'
+    Dusen_Esya_ID: '173'
+    Dusen_Esya_Ismi: '.'
+    Dusen_Esya_Aciklamasi:
+    - '.'   

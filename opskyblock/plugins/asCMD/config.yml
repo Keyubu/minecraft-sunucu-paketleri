@@ -1,0 +1,4 @@
+format-version: '2'
+config:
+  msgToConsole: false
+  enableLeftClick: false

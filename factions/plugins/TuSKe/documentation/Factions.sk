@@ -1,0 +1,31 @@
+Expressions:
+	PlayerFactionExpression:
+		ID: PlayerFactionExpression
+		Return type: Text
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] faction of %player%
+			[the] %player%['s] faction
+	PlayerPowerExpression:
+		ID: PlayerPowerExpression
+		Return type: Number
+		Changers:
+			add
+			remove
+			reset
+		Patterns:
+			[the] power of %player%
+			[the] %player%['s] power
+	PlayerRoleExpression:
+		ID: PlayerRoleExpression
+		Return type: Text
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] role of %player%
+			[the] %player%['s] role

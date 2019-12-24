@@ -1,0 +1,13 @@
+# General Messages
+
+prefix: '&8[&6UltimateTimber&8] '
+no-permission: '&cJe hebt geen toestemming om dat te doen!'
+command-reload-description: '&8 - &a/ut reload &7 - Herlaadt de config.'
+command-reload-reloaded: '&7Configuratie en vertalingen zijn herladen.'
+command-toggle-description: '&8 - &a/ut toggle &7 - verandert je hak modus'
+command-toggle-enabled: '&7Hak Modus: &aIngeschakeld'
+command-toggle-disabled: '&7Hak Modus: &cUitgeschakeld'
+on-cooldown: '&eJe cooldown is nog niet afgelopen dus je kunt op dit moment geen bomen omhakken.'
+
+# Command Messages
+# Misc

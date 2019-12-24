@@ -1,0 +1,63 @@
+#############################################################################################################
+#                                              Bilgi Mesajları                                              #
+
+#Plugin main prefix, %Prefix%
+Plugin_Prefix: '&3Spawner &8»'
+
+#Help Menu (/itemsp)
+Yardim_Prefix: '&8&m------------------&b&l ITEMSPAWNER &8&m------------------'
+Yardim_Reload: '&e/%Ana_Komut% %Reload_Arg% &8▸ &7Eklentiyi yeniler'
+Yardim_Dagit: '&e/%Ana_Komut% %Dagit_Arg% <spawner> <adet> &8▸ &7Herkese spawner verir'
+Yardim_Ver: '&e/%Ana_Komut% %Ver_Arg% <oyuncu> <spawner> <adet> &8▸ &7Spawner verir'
+Yardim_List: '&e/%Ana_Komut% %List_Arg% &8▸ &7Spawner listesini görüntüler'
+
+Spawner_List: '&aSpawner listesi: &f%Spawner_List%'
+
+#                                              Bilgi Mesajları                                              #
+#############################################################################################################
+
+###############################################
+#                Genel Ayarlar                #
+
+ItemSpawner_Kirmak_Icin_Gerekli_SilkTouch_Seviyesi: 1
+Patlayinca_Oldugu_Yerde_Kalsın: true
+
+#                Genel Ayarlar                #
+###############################################
+
+###############################################
+#                   Eşyalar                   #
+Kazma_Esyasi:
+  Kazma_ID: '278'
+  Kazma_Ismi: '.'
+  Kazma_Aciklamasi:
+  - '.'
+#                   Eşyalar                   #
+###############################################
+
+#############################################################################################
+#                                       Genel Mesajlar                                      #
+
+Dosyalar_Yeniden_Yuklendi: '%Prefix% &aDosyalar yeniden yüklendi'
+
+Spawner_Dagit: '%Prefix% &aDağıtılan spawnerlardan aldın'
+Spawner_Ver: '%Prefix% &aSpawner aldın'
+Spawner_Verildi: '%Prefix% &e%Target_Name% &7adlı oyuncuya spawner verildi'
+
+#                                       Genel Mesajlar                                      #
+#############################################################################################
+
+########################################
+#            Hata Mesajları            #
+
+Oyuncu_Bulunamadi: '%Prefix% &e%Player_Name% &7adlı oyuncu bulunamadı'
+Oyuncu_Yardim_Mesaji: '%Prefix% &7Oyunculara özel komut yoktur'
+Yanlis_ID: '%Prefix% &cBöyle bir spawner yok'
+Envanter_Dolu: '%Prefix% &cEnvanterin dolu'
+Oyuncunun_Envanteri_Dolu: '%Prefix% &e%Player_Name% &7adlı oyuncunun envanteri dolu'
+Yetersiz_SilkTouch_Seviyesi: '%Prefix% &7Spawner kırmak için &f%Required%. &7seviye ipeksi kazman olması gerekiyor'
+Yalnizca_Ozel_Kazma_Ile_Kilir: '%Prefix% &7Spawner sadece ipeksi kazma ile kırılır'
+Desteklenmeyen_Surum: '%Prefix% &cDesteklenmeyen sunucu sürümü, desteklenen sürümler: &f1.8-1.14'
+
+#            Hata Mesajları            #
+########################################

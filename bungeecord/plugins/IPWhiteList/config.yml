@@ -1,0 +1,99 @@
+#| |---\ |    | |   | | ----- |---- |     | /---\ -----
+#| |   | |    | |   | |   |   |     |     | |       |
+#| |---/ |    | |---| |   |   |---- |     | \---\   |
+#| |     | /\ | |   | |   |   |     |     |     |   |
+#| |     |/  \| |   | |   |   |---- |---- | \---/   |
+#Plugin made by davidcubesvk.
+#
+#Updates:
+updates:
+  #Enable checking for updates:
+  check: true
+  #Messages, {latest_version} for latest released version, {current_version} for currently running plugin version:
+  messages:
+    #If there is new update available:
+    update: "&7[&bIPWhiteList&7] ► New update of &bIPWhiteList plugin &7has been released (&b{latest_version}&7). You are using &b{current_version}&7."
+    #If using latest version:
+    latest: "&7[&bIPWhiteList&7] ► You are using latest version of &bIPWhiteList plugin &7(&b{current_version}&7)."
+#Connection with extension IPWhiteListBukkit:
+connect:
+  #Type of the connection (YML - for connecting through files as it's been till now, SOCKET - using sockets):
+  type: SOCKET
+  #Socket port (if type is SOCKET):
+  socketPort: 4444
+#Setup mode (toggleable using /ipwl setup):
+#(set this to false when you set up whitelisted IPs, to make them working. If true, plugin ignores whitelisted IPs)
+setup: true
+#WhiteListed IPs:
+#INFO: 1. To enable all hostnames, insert *. prefix before the whitelisted IP, e.g. *.yourserver.com will allow players connecting with
+#         abc.yourserver.com, xyz.yourserver.com..., (useful for servers with AntiDDoS service).
+#      2. To apply whitelisted IP without hostnames, insert only the IP without any prefix, e.g. yourserver.com will allow only players
+#         connecting with yourserver.com.
+#      3. If your server has dynamic IP, use {ip} placeholder as the server's IP (useful for dynamic IP servers).
+#      4. To allow not case-sensitive hostname comparing for the current IP, insert "[NOT_CASE_SENSITIVE]" or "[CASE_SENSITIVE]"
+#         (for case-sensitive comparing) right before the IP as shown in example whitelisted IPs list. If not inserted, the default
+#         setting is case-sensitive.
+#NOTE: You don't need to write ports there. IPWhiteList will automatically obtain port where is BungeeCord server hosted on.
+#      However, if you write port there, BungeeCord port will be overridden by specified port.
+whitelisted:
+  - 'yourserver.com'
+  - 'localhost'
+  - '[NOT_CASE_SENSITIVE]abc.yourserver.com'
+#Website for obtaining the {ip} placeholder (any website with only one line displayed - your IP):
+ipWebsite: "https://checkip.amazonaws.com/"
+#If IP that player tried to connect to the server with is not corresponding with any of whitelisted IPs, disconnect with message:
+#(use \n for new line)
+disconnect: "&7[&bIPWhiteList&7] &cPlease connect with IP: yourserver.com!"
+#Command messages:
+command:
+  #If player has not permission:
+  noPermission: "&7[&bIPWhiteList&7] ► You do not have permission."
+  #If sender used invalid format of command:
+  invalidFormat: "&7[&bIPWhiteList&7] ► Invalid format! Please use &b/ipwl help &7to display list of commands."
+  #If new IP is being added to whitelisted (/ipwl add <ip>):
+  #Placeholders: {ip} - IP to be added
+  add:
+    #If successfully added:
+    added: "&7[&bIPWhiteList&7] ► New IP &b{ip} &7added to whitelist!"
+    #If IP already exists:
+    exists: "&7[&bIPWhiteList&7] ► IP &b{ip} &7already exists."
+  #If IP is being removed from whitelisted (/ipwl remove <ip>):
+  #Placeholders: {ip} - IP to be removed:
+  remove:
+    #If successfully removed:
+    removed: "&7[&bIPWhiteList&7] ► IP &b{ip} &7has been removed from whitelist!"
+    #If IP is not in whitelisted IPs:
+    notFound: "&7[&bIPWhiteList&7] ► IP &b{ip} &7not found."
+  #If all whitelisted IPs are being listed (/ipwl list <page>):
+  #Placeholders: {total} - amount of IPs
+  #              {page} - page to be displayed
+  #              {pages} - pages available
+  list:
+    #How many IPs to be displayed per page:
+    perPage: 20
+    #Header of the displaying:
+    header: "&7[&bIPWhiteList&7] ► &7Total IPs: &b{total} &7(page {page}/{pages})."
+    #IP display line:
+    #Placeholders: {ip} - whitelisted IP
+    line: "&7[&bIPWhiteList&7] ► &7- &b{ip}"
+    #Footer of displaying:
+    footer: ""
+    #When sender specified not existing page:
+    pageNotFound: "&7[&bIPWhiteList&7] ► &7Page &b{page} &7not found. There are &b{pages} &7pages available."
+  #If plugin configuration is being reloaded (/ipwl reload):
+  reload: "&7[&bIPWhiteList&7] ► Plugin successfully reloaded! Please note that &bconnect.type &7was not reloaded since it can cause internal errors."
+  #If the setup mode is being toggled (/ipwl setup):
+  setup:
+    #If setup mode has been toggled on:
+    true: "&7[&bIPWhiteList&7] ► Setup mode toggled on!"
+    #If setup mode has been toggled off:
+    false: "&7[&bIPWhiteList&7] ► Setup mode toggled off!"
+  #Help page (/ipwl help):
+  help:
+    - "&7[&bIPWhiteList&7] &b&lHelp page &7- plugin by &bdavidcubesvk"
+    - "&b/ipwl add <ip> &7- adds IP to whitelist"
+    - "&b/ipwl remove <ip> &7- removes IP from whitelist"
+    - "&b/ipwl list <page> &7- lists whitelisted IPs"
+    - "&b/ipwl reload &7- reloads plugin"
+    - "&b/ipwl setup &7- toggles setup mode"
+    - "&b/ipwl help&7- displays this help page"

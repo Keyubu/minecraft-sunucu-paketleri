@@ -1,0 +1,49 @@
+#Tips
+#1. Make sure to use the %prefix% to add the prefix in front of messages.
+#2. If you wish to use more then one line for a message just go from a line to a list.
+#Examples:
+#  Line:
+#    No-Permission: '%prefix%&cYou do not have permission to use that command.'
+#  List:
+#    No-Permission:
+#      - '%prefix%&cYou do not have permission'
+#      - '&cto use that command. Please try another.'
+Messages:
+  No-Permission: '%prefix%&cBunu komutu kullanmak için yetkiniz yok.'
+  Players-Only: '%prefix%&cSadece oyuncular bu komutu kullanabilir.'
+  Not-Online: '%prefix%&cBu oyuncu şu an çevrim içi değil.'
+  Not-A-Number: '%prefix%&cBu bir rakam değil.'
+  Reloaded: '%prefix%&7Tüm dosyaları yenilediniz.'
+  Already-Started: '%prefix%&cZaten bir crazyevent yapılmakta. Lütfen kapatıp tekrar başlatın.'
+  Force-Start: '%prefix%&7Crazyeventi başlattınız.'
+  Not-Started: '%prefix%&cŞu anda bir crazyeventi yapılmamakta.'
+  Force-Ended: '%prefix%&cCrazyeventi kapattınız.'
+  Warning: '%prefix%&c[UYARI] &6%time% &7zamanında sandık eventi olmaktadır.'
+  Started: '%prefix%&7Sandık eventi başladı. &6%amount% &7sandık 5 dakika boyunca düşmeye başladı.'
+  Left: '%prefix%&6%player% &7bir sandık kaptı. Geriye &6%amount% &7tane kaldı.'
+  Ended: '%prefix%&cSandık eventi bitti. Oynadığınız için teşekkürler.'
+  Not-Enough-Players: '%prefix%&7Sandık eventinin başlaması için gereken oyuncu yok. Sadece &6%amount% &7oyuncu çevrim içi.'
+  Enter-Editor-Mode: '%prefix%&7Şu anda editör modundasınız.'
+  Leave-Editor-Mode: '%prefix%&7Şu anda editör modundan çıktınız.'
+  Kicked-From-Editor-Mode: '%prefix%&cÜzgünüz ama bir event aktif. Lütfen durdur ya da bitene kadar bekle.'
+  Add-Location: '%prefix%&7Spawn noktası eklediniz.'
+  Remove-Location: '%prefix%&cSpawn noktasını kaldırdınız.'
+  Time-Left: '%prefix%&7Şu anki sandık eventine &6%time%&7 kaldı.'
+  Time-Till-Event: '%prefix%&7Sonraki sandık eventi &6%time%&7 sonra başlayacak.'
+  Used-Flare: '%prefix%&7Başlatma fişeğiyle bir sandık eventi başlattınız.'
+  Cant-Use-Flares: '%prefix%&cBaşlatma fişeğini kullanma yetkiniz yok.'
+  Give-Flare: '%prefix%&6%player% &7adlı kişiye %amount% &7başlatma fişeği verdiniz.'
+  Given-Flare: '%prefix%&6%amount% &7başlatma fişeği verdiniz.'
+  New-Center: '%prefix%&7Rastgele düşen sandıklar için yeni bir merkez noktası belirlediniz.'
+  Not-In-World-Guard-Region: '%prefix%&cBaşlatma fişeğini kullanmak için WarZone alanında olmalısınız.'
+  Start-Ignoring-Messages: '%prefix%&7Şu an sandık toplama mesajlarını engellediniz.'
+  Stop-Ignoring-Messages: '%prefix%&7Şu an sandık toplama mesajlarını görüyorsunuz.'
+  Cooldown-Left: '%prefix%&7Başka bir sandık kapmak için &6%time% &7vaktiniz kaldı.'
+  Drops-Available: '%prefix%&7Tüm sandıkların listesi.'
+  Drops-Possibilities: '%prefix%&7Sandıkların düşebileceği lokasyonlar.'
+  Drops-Page: '%prefix%&7Daha fazla görmek için /crazyenvoy drops [sayfa]'
+  Drops-Format: '&7[&6%id%&7]: %world%, %x%, %y%, %z%'
+  No-Spawn-Locations-Found: '%prefix%&cSpawnlanma yeri bulunamadı ve bu nedenle etkinlik iptal edildi ve bekleme süresi sıfırlandı.'
+  Hologram-Placeholders:
+    On-Going: 'Yapılıyor'
+    Not-Running: 'Yapılmıyor'

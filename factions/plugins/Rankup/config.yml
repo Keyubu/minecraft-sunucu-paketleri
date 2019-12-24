@@ -1,0 +1,93 @@
+# Rankup configuration file.
+# - Okx
+
+ranks: # Defines ranks and their prices
+- Caylak:0
+- Maceraci:50000
+- Bilgin:90000
+- Uzman:150000
+- Usta:250000
+- Ustad:500000
+- Soylu:780000
+- Asil:1500000
+- Kahraman:2900000
+- Efsane:5000000
+prestige: # Defines prestige ranks and their prices
+- P1:100000
+- P2:200000
+messages:
+  noMoneyToRankup: |- # Message to send when player doesn't have enough money to rankup
+    &7Rütbe atlamak için hesabınızda yeterli para yok, &a%AMOUNTTOTAL% &7paranız olması gerekmektedir.
+  highestRank: '&7En yüksek rütbe olan &e%RANK% &7rütbesine ulaştın!' # Sent when the player cannot rankup anymore and prestiging is off or they are at max prestige
+  highestRankToPrestige: '&7Zaten en son rütbedesiniz.' # Sent when the player cannot rankup but can prestige
+  successfullRankupPrivate: '&7Başarıyla &e%RANK% &7rütbesine terfi edildiniz!' # Sent to the player when the player successfully runs /rankup
+  successfullRankupPublic: '&e%PLAYER% &7adlı kişi &e%RANK% &7rütbesine terfi edildi.' # Sent to everyone on the server when someone ranks up (configurable)
+  successfullPrestigePrivate: '&7Başarıyla prestijli rütbe atladın: &e%RANK%' # Sent to the player when the player successfully runs /prestige
+  successfullPrestigePublic: '&e%PLAYER% &7prestijli olarak rütbe atladı: &e%RANK%' # Sent to everyone on the server when someone prestiges (configurable)
+  notInLadder: '&7Yapılandırmada bulunan rütbe gruplarından birinde değilsiniz.' # Sent to the player when they are not in a group specified in ranks
+  listRanks: # Configures how ranks are listed
+    default: "&r%OLDRANK% &e\xbb &r%RANK% &r%AMOUNT%"
+    complete: "&7%OLDRANK% &8\xbb &7%RANK% &7%AMOUNT%"
+    inProgress: "&e%OLDRANK% &e\xbb &e%RANK% &e%AMOUNT% &e(%PERCENTDONE%%)"
+    custom: # This section should only be needed for very advanced configurations (this can be used for headers)
+      A: "&rA &e\xbb &r%RANK% &efor &r%AMOUNT%"
+      options:
+        overrideComplete: false
+        overrideInProgress: false
+        overrideDefault: true
+  rankTooLowToPrestige: '&e%RANK% &7rütbesine prestij veremezsin, rütben yeterince yüksek değil' # Sent to a player when they cannot prestige
+  noMoneyToPrestige: '&e%RANK% &7rütbesine prestij veremezsin, &a%AMOUNTTOTAL% &7paraya ihtiyacın var.' # Sent to the player when they don't have enough moolah to prestige
+  highestPrestigeGroup: '&aIyi iş! &7En yüksek prestij rütbe olan &e%RANK% &7rütbesine ulaştın!' # Sent to the player when they attempt to prestige but cannot
+  publicMessage: true # Should we send the message successfullRankupPublic?
+  publicPrestigeMessage: false # Should we send the message successfullPrestigePublic?
+options:
+  removePointZero: true # Should we remove the .0 at the end of prices?
+  prestigeDisabled: true # Should we disable prestiging?
+  prestigeToRank: A # When someone prestiges, what rank should we set them to. Case sensitive!
+  prestigeAtRanks: D # At what rank can someone prestige? (can be multiple ranks, eg if you write D,E). Case sensitive!
+  prestigeRankMultiplier: 1.5 # Multiply the rankup prices by this when someone prestiges (set to 1 to disable) (do not set to less than 1)
+
+runCommands: # These are some examples of what you can do with runCommands.
+#- CONSOLE:RANKUP:say console rankup (this will make the console run this command when a player ranks up)
+#- PLAYER:RANKUP:say player rankup (this will make the player run this command when that player ranks up)
+#- CONSOLE:PRESTIGE:say console prestige (this will make the console run this command when a player prestiges)
+#- PLAYER:PRESTIGE:say player prestige (this will make the player run this command when that player prestiges)
+#- PLAYER:B:say I ranked up to rank B (this will make the player run this command when they rank up to rank B)
+#- CONSOLE:P2:say %PLAYER% prestiged to P2 (this will make the console run this command when a player prestiges to P2)
+
+gui: # How should the GUI be made 
+  size: 9 # The size of the GUI. Must be a multiple of nine.
+  'yes': # Options specifying the 'yes i want to rankup' block
+    material: STAINED_GLASS_PANE:5
+    lore: '&7Tıklayarak rütbe atla'
+    index: 0-3
+    name: '&aRütbe atla'
+  'no': # Options specifying the 'no i don't want to rankup - cancel' block
+    material: STAINED_GLASS_PANE:6
+    lore: '&7Rütbe atlamaktan vazgeç'
+    index: 5-8
+    name: '&cVazgeç'
+  fill: # What block we should use to fill the spaces in the GUI
+    name: '&eKararını ver'
+    lore: '&7&m<--->&r'
+    material: STAINED_GLASS_PANE:15
+  name: '%RANK% rütbesi: &0%AMOUNT%' # The name of the GUI. If it is too long it will be shortened.
+  enabled: true # if set to false players will /rankup without confirmation
+placeholders:
+  # See the following for more information about these formats
+  # https://docs.oracle.com/javase/8/docs/api/index.html?java/text/DecimalFormat.html
+
+  rankCostFormat: '0.00'
+  useShortening: true # Whether we should shorten rank prices (eg turn $1000 into $1k)
+  # These do not have to be single characters
+  shortened:
+  - 'k'
+  - 'M'
+  - 'B'
+  - 'T'
+  percentDoneFormat: '#.##'
+  percentLeftFormat: '#.##'
+  allowNegativePercent: false
+  highestRank: 'None' # What should be used as a placeholder for ranks above the highest rank
+  notInLadder: 'None' # Placeholder to use if the player is not in any of the Rankup groups
+  noPrestigeRank: 'None' # Placeholder for when a player hasn't prestiged

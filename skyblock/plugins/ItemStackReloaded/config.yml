@@ -1,0 +1,32 @@
+# Thank you for using my plugin Item Stack Reloaded
+# - Xiztence
+#
+# Permissions: Give players "itemstackreloaded.use" to allow use of the command.
+# 
+# Per player permissions allow you to let some players stack certain items.
+# Give a player the permission "itemstackreloaded.stack.<item>", e.g "itemstackreloaded.stack.LAVA_BUCKET" will allow stacking of lava buckets.
+# A full list of item names can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# OBS! For per player permissions to work, the player also needs the "itemstackreloaded.use" permission.
+# Per player permissions:
+per_item_perms: false
+
+# How many items should a stack contain?
+# WARNING - Do not set this number above 127.
+# Use "stack-size: 0" for the default stack size of the respective item.
+stack_size: 64
+
+# A full list of item names can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# Use the following format to define new items
+special_size:
+  'WATER_BUCKET': '16'
+  'LAVA_BUCKET': '16'
+
+# Optional - change the chat formatting
+# Use <PERM> for permission node, e.g "You do not have the <PERM> permission to use this command"
+# Use <TYPE> for itemtype, e.g "You have stacked all <TYPE> items."
+message_formats:
+  'no_perm': '&7[&eItemStackReloaded&7]&c You are not permitted to use this command.'
+  'no_itemperm': '&7[&eItemStackReloaded&7]&c You are not permitted to stack this item.'
+  'no_player': '&7[&eItemStackReloaded&7]&c Only players can use this command.'
+  'no_item': '&7[&eItemStackReloaded&7]&c You need to have the item you want to stack in your hand.'
+  'stacked': '&7[&eItemStackReloaded&7]&7 All &a<TYPE>&7 items have been stacked.'

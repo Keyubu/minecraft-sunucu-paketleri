@@ -1,0 +1,41 @@
+RutbeAtlamaMesaji: '&6Rütbe &8» &7Tebrikler &e<player> &7yeni rütben &f<rank>'
+YetersizKosulMesaji: '&6Rütbe &8» &f<rank> &crütbesi için ada seviyen yetersiz'
+MaksimumRutbe: '&6Rütbe &8» &cDaha fazla rütbe atlayamazsınız'
+VarsayilanGrup: Oyuncu
+ranklar:
+  SkyLord:
+    adaLeveli: 25000
+    grupAdi: SkyLord
+    GUIEsya: COAL:&3SkyLord_Rütbe
+    GUILore:
+    - ''
+    - '&8Gereksinimler:'
+    - '&725k ada seviyesi'
+    - '&750k oyun parası'
+  SkyKing:
+    adaLeveli: 50000
+    grupAdi: SkyKing
+    GUIEsya: IRON_INGOT:&3SkyKing_Rütbe
+    GUILore:
+    - ''
+    - '&8Gereksinimler:'
+    - '&750k ada seviyesi'
+    - '&775k oyun parası'
+  SkyZeus:
+    adaLeveli: 75000
+    grupAdi: SkyZeus
+    GUIEsya: GOLD_INGOT:&3SkyZeus_Rütbe
+    GUILore:
+    - ''
+    - '&8Gereksinimler:'
+    - '&775k ada seviyesi'
+    - '&7100k oyun parası'
+  SkyLegend:
+    adaLeveli: 100000
+    grupAdi: SkyLegend
+    GUIEsya: DIAMOND:&3SkyLegend_Rütbe
+    GUILore:
+    - ''
+    - '&8Gereksinimler:'
+    - '&7100k ada seviyesi'
+    - '&7125k oyun parası'

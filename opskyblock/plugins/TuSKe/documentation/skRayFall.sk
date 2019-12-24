@@ -1,0 +1,857 @@
+Events:
+	On Crafting Click:
+		ID: crafting_click
+		Patterns:
+			[on] crafting click in slot %number%
+		Event values:
+			event-clicktype
+			event-player
+			event-inventoryaction
+			event-itemstack
+			event-inventory
+			event-slot
+			event-recipe
+			event-world
+		Cancellable: true
+Conditions:
+	Check if Hologram Exists:
+		ID: CondHologramExists
+		Description:
+			Check to see if a Hologram/Holo Object exists by ID
+		Patterns:
+			(holo object|hologram) %string% exists
+	Citizen is:
+		ID: CondIsNpcId
+		Description:
+			Checks if a citizen has a certain ID.
+		Patterns:
+			(NPC|Citizen) is %number%
+	Citizen is:
+		ID: CondIsNpcIdGeneral
+		Description:
+			Checks if a citizen has a certain ID.
+		Patterns:
+			%entity% is (citizen|npc) %number%
+	Citizen is:
+		ID: CondIsNpc
+		Description:
+			Checks if a citizen has a certain ID.
+		Patterns:
+			%entity% is [a] (npc|citizen)
+	Citizen is named:
+		ID: CondIsNpcNamed
+		Description:
+			Check citizen by:
+			* Name
+			A conditional check using citizens names over id numbers
+		Patterns:
+			(NPC|Citizen)['s] [is] name[d] [is] %string%
+	Sidebar Is Set:
+		ID: CondIsScoreboardSet
+		Description:
+			Check if sidebar:
+			* Is set
+			* For player
+			This will check if a sidebar is being displayed to a player
+		Patterns:
+			side bar is set for %player%
+Effects:
+	Add/Remove Players from Group Scores:
+		ID: EffAddPlayerToGroupId
+		Description:
+			Add or removed a players group based score.
+		Patterns:
+			add %player% to group score [with id] %string%
+	Add/Remove Players from Group Scores:
+		ID: EffRemovePlayerFromIdScore
+		Description:
+			Add or removed a players group based score.
+		Patterns:
+			(delete|remove) %player% from group [id based] score %string%
+	Animated Ball Effect:
+		ID: EffEffectLibAnimatedBallEffect
+		Description:
+			Creates an EffectLib animated ball effect.
+		Patterns:
+			(spawn|create|apply) (a|the|an) animated ball (effect|formation) (at|on|for|to) %entity/location% with id %string% [with particle %-effectlibparticle%] [offset by %number%, %number%(,| and) %number%]
+	Arc Effect:
+		ID: EffEffectLibArc
+		Description:
+			Creates an EffectLib arc effect.
+		Patterns:
+			(spawn|create|apply) (a|the|an) arc (effect|formation) from %entity/location% to %entity/location% with id %string% [with particle[s] %-effectlibparticle%] [%number% high] [and %number% particles]
+	Atom Effect:
+		ID: EffEffectLibAtom
+		Description:
+			Creates an EffectLib atom effect.
+		Patterns:
+			(spawn|create|apply) (a|the|an) atom (effect|formation) (at|on|for|to) %entity/location% with id %string%
+	Bind Hologram:
+		ID: EffTimedBindedHolo
+		Description:
+			Bind Hologram by:
+			* Entity
+			* Timespan
+			* Offset x, y & z
+			Create floating text that follows an entity
+		Patterns:
+			bind hologram %string% to %entity% for %timespan% [offset by %number%, %number%( and|,) %number%]
+	Bleed Effect:
+		ID: EffEffectLibBleed
+		Description:
+			Creates an EffectLib bleed effect.
+		Examples:
+			command /bleedtest:
+				trigger:
+					create a bleed effect to player with id "test"
+					wait 10 seconds
+					message "&cDelete"
+					delete effect "test"
+		Patterns:
+			(spawn|create|apply) (a|the|an) bleed (effect|formation) (at|on|for|to) %entity/location% with id %string%
+	Change Citizen Skin:
+		ID: EffCitizenSetSkin
+		Description:
+			Change the skin of a citizen by:
+			* ID
+			* Minecraft Username
+			This will change the skin of an NPC to a given Minecraft username
+		Examples:
+			command /npcskin:
+				trigger:
+					create a citizen named "notch" at location of player
+					change citizen last created citizen skin to "eyesniper2"
+		Patterns:
+			change citizen %number% skin to %string%
+	Circle Effect:
+		ID: EffEffectLibCircle
+		Description:
+			Creates an EffectLib circle effect.
+		Patterns:
+			(spawn|create|apply) (a|the|an) circle (effect|formation) (at|on|for) %entity/location% with id %string% [with particle[s] %-effectlibparticle%] [(and|with) radius %-number%]
+	Citizen Hold:
+		ID: EffCitizenHold
+		Description:
+			This will make a Citizen hold an object in their hand.
+		Examples:
+			command /npcholdsword:
+				trigger:
+					make citizen last created citizen id hold iron sword
+		Patterns:
+			make citizen %number% hold [an] %itemstack%
+	Citizen Invulnerability:
+		ID: EffCitizenVulnerability
+		Description:
+			Change if a citizen takes damage by:
+			* ID
+			* Invulnerable
+			* Vulnerable
+			This will allow you to choose if an NPC can receive damage
+		Patterns:
+			make citizen %number% (1¦invulnerable|0¦vulnerable)
+	Citizen Look Targeting:
+		ID: EffCitizenLookTarget
+		Description:
+			Change the view of a citizen by:
+			* ID
+			* Location
+			Pick a location for an NPC to look at
+		Patterns:
+			make citizen %number% look at %location%
+	Citizen Max Health:
+		ID: EffCitizenSetMaxHealth
+		Description:
+			Modify citizens max health by:
+			* ID
+			* Number
+			Will allow you to modify the maximum amount of health an NPC can have. 0.5 = half a heart, 1 = a heart, etc...
+		Patterns:
+			(set|make) citizen[s] %number% max health [to] %number%
+	Citizen Nametag Visibility:
+		ID: EffCitizenNameVisible
+		Description:
+			Modify citizen nametags by:
+			* ID
+			* Invisibility
+			* Visibility
+			For if you want to toggle the visibility of names above the NPC's head
+		Patterns:
+			(set|make) citizen[s] %number% nametag (1¦invisible|0¦visible)
+	Citizens Look Close Trait:
+		ID: EffGiveLookCloseTrait
+		Description:
+			Allow citizens to look at the closest player automatically. This effect is toggleable, so to disable this trait for a citizen run this effect again.
+		Patterns:
+			(give|set) npc %number% the look close trait
+	Citizens Look Close Trait:
+		ID: EffRemoveLookCloseTrait
+		Description:
+			Allow citizens to look at the closest player automatically. This effect is toggleable, so to disable this trait for a citizen run this effect again.
+		Patterns:
+			remove npc %number%['s] look close trait
+	Create Citizen:
+		ID: EffCreateCitizen
+		Description:
+			Create citizens with:
+			* Name
+			* Direction
+			* Location
+			* Entity Type
+			This will place an NPC in your world that can be modified
+		Examples:
+			command /createwolf <text>:
+				trigger:
+					create a citizen named "%arg 1%" at location of player as a wolf
+		Patterns:
+			create [a] citizen named %string% (at|%direction%) %location% [as (a|an) %entitytypes%]
+	Create Clientside Particles:
+		ID: EffClientsideStaticParticles
+		Description:
+			skRayFall's new particle system powered by EffectLib. Color's and ItemStacks can only be assigned to certain EffectLibParticle types. Please see this [list](https://gist.github.com/eyesniper2/07f5c0955af05c0782ad) for the details of which effects are supported.
+		Patterns:
+			(create|display|show) %number% [of] %effectlibparticle% particle[s] at %location% for %player% [with data of %-itemstack%] [offset by %number%, %number%(,| and) %number%] [(with|at) speed %number%]
+	Create Dynamic Object Based Holograms:
+		ID: EffBoundHoloObject
+		Description:
+			Create dynamic holograms that can be bound to entity's through an id based system.
+		Patterns:
+			create bound holo object %string% with id %string% to %entity% [offset by %number%, %number%( and|,) %number%]
+	Create Group Based Score:
+		ID: EffCreateGroupIdScore
+		Description:
+			Create a group ID based score and assign it to a player or multiple players.
+		Patterns:
+			(set|create) group id [based] score %string% in sidebar for %players% to %number% with id %string%
+	Create Particles:
+		ID: EffStaticParticles
+		Description:
+			skRayFall's new particle system powered by EffectLib. Color's and ItemStacks can only be assigned to certain EffectLibParticle types. Please see this [list](https://gist.github.com/eyesniper2/07f5c0955af05c0782ad) for the details of which effects are supported.
+		Patterns:
+			(create|display|show) %number% [of] %effectlibparticle% particle[s] at %location% [(with data of %-itemstack%|with color %number%, %number%(,| and) %number%)] [offset by %number%, %number%(,| and) %number%] [(with|at) speed %number%]
+	Create Static Object Based Holograms:
+		ID: EffCreateStaticHoloObject
+		Patterns:
+			create holo object %string% with id %string% at %location%
+	Create Static Object Based Holograms:
+		ID: EffCreateInteractiveStaticHolograms
+		Patterns:
+			create interactive holo object %string% with id %string% at %location%
+	Create Static Object Based Holograms:
+		ID: EffCreateInteractiveStaticClientSideHolograms
+		Patterns:
+			create interactive client side holo object %string% with id %string% at %location% to %player%
+	Create Static Object Based Holograms:
+		ID: EffCreateStaticClientHoloObject
+		Patterns:
+			create client side holo object %string% with id %string% at %location% to %player%
+	Create Static Object Based Holograms:
+		ID: EffBoundClientSideHoloObject
+		Patterns:
+			create client side bound holo object %string% with id %string% to %entity% for %player% [offset by %number%, %number%( and|,) %number%]
+	Create Timed Hologram:
+		ID: EffTimedHologram
+		Description:
+			[NOTE] Client-side holograms require ProtocolLib
+			Set hologram by:
+			* Text
+			* Lines
+			* Floating Item
+			* Timespan
+			* Location
+			* Clientside
+			Create floating text at a location
+		Patterns:
+			create hologram %string% at %location% for %timespan%
+	Create Timed Hologram:
+		ID: EffTimedClientSideHolo
+		Description:
+			[NOTE] Client-side holograms require ProtocolLib
+			Set hologram by:
+			* Text
+			* Lines
+			* Floating Item
+			* Timespan
+			* Location
+			* Clientside
+			Create floating text at a location
+		Patterns:
+			display hologram %string% at %location% to %player% for %timespan%
+	Delete Group Score:
+		ID: EffDeleteIdScore
+		Description:
+			Deletes a group score.
+		Patterns:
+			(delete|remove) score [with] id %string%
+	Delete Group Score:
+		ID: RemoveGroupIdScore
+		Description:
+			Deletes a group score.
+		Patterns:
+			(delete|remove) score[s] [with] group id %string%
+	Delete Hologram Line:
+		ID: EffDeleteHoloObjectLine
+		Description:
+			Delete a single line in a object based hologram.
+		Patterns:
+			(delete|remove) line %number% in holo object %string%
+	Delete Object Based Holograms:
+		ID: EffDeleteHoloObject
+		Description:
+			Delete object based holograms by id.
+		Patterns:
+			delete holo object %string%
+	Delete Object Based Holograms:
+		ID: EffDeleteHoloObject
+		Description:
+			Delete object based holograms by id.
+		Patterns:
+			delete holo object %string%
+	Delete Sidebar Score:
+		ID: EffDeleteScore
+		Description:
+			Delete a sidebar score by:
+			* Name
+			* Player
+			This will delete a specified score from a specified player
+		Patterns:
+			delete score %string% in sidebar of %player%
+	Delete/Stop Effect:
+		ID: EffDeleteEffect
+		Description:
+			Stops a EffectLib effect that matches the id value.
+		Examples:
+			command /bleedtest:
+				trigger:
+					create a bleed effect to player with id "bleedtest"
+					wait 10 seconds
+					message "&cDelete"
+					delete effect "bleedtest"
+		Patterns:
+			(delete|stop) (effect|formation) %string%
+	Despawn Citizen:
+		ID: EffDespawnCitizen
+		Description:
+			Despawn citizens by:
+			* ID
+			Unlike delete a citizen this will just kill the NPC you can respawnit back at the created location with the respawn citizen effect.
+		Patterns:
+			despawn citizen %number%
+	Edit ID based score:
+		ID: EffEditIdScore
+		Description:
+			Edit an ID based score.
+		Patterns:
+			(edit|update) score [with] id %string% to %string% and %number%
+	Edit Object Based Holograms:
+		ID: EffEditHoloObject
+		Description:
+			Edit object based holograms. The first string is the id of the hologram to be changed and the second string is the new content of the hologram. By default the interactivity is false.
+		Patterns:
+			edit holo object %string% to %string% [and set interactivity to %-boolean%]
+	Edit Object Based Holograms:
+		ID: EffEditHoloObjectLine
+		Description:
+			Edit object based holograms. The first string is the id of the hologram to be changed and the second string is the new content of the hologram. By default the interactivity is false.
+		Patterns:
+			edit holo object %string% [with] line [number] %number% to %string% [and set interactivity to %-boolean%]
+	EffCitizenSleep:
+		ID: EffCitizenSleep
+		Patterns:
+			(make|force) (npc|citizen) with id %number% to sleep
+			(make|force) (npc|citizen) with id %number% to wake [up]
+	Equip Citizen:
+		ID: EffEquipCitizen
+		Description:
+			Give citizens:
+			* Tools
+			* Armo(u)r
+			Give citizens things to hold in their hands and wear
+		Patterns:
+			(equip|give) citizen %number% with [an] %itemstack%
+	Fake Lightning (No Sound):
+		ID: EffFakeFakeLightning
+		Description:
+			Creates a silent fake lightning strike at a location.
+		Examples:
+			command /fakelightningtest:
+				trigger:
+					create fake fake lightning at location of player
+		Patterns:
+			(create|strike) (fake|ultra|no sound) fake lightning at %location%
+	Line Effect:
+		ID: EffEffectLibLine
+		Description:
+			Creates a EffectLib line effect.
+		Patterns:
+			(spawn|create|apply) (a|the|an) line (effect|formation) from %entity/location% to %entity/location% with id %string% [with particle[s] %-effectlibparticle%]
+	Make Citizen Attack:
+		ID: EffCitizenAttack
+		Description:
+			Make citizens attack with:
+			* ID
+			* Mobs
+			* Players
+			Makes a citizen attack a living entity. The entity must be close enough to the NPC
+		Examples:
+			command /attack <integer>:
+				trigger:
+					make citizen arg 1 attack player
+					make citizen arg 1 vulnerable
+		Patterns:
+			make citizen %number% (attack|fight) %entity%
+	Make Citizen Crouch/Uncrouch/Stand:
+		ID: EffCitizenSetCrouch
+		Description:
+			Make a NPC/Citizen Crouch, Uncrouch or stand.
+		Patterns:
+			(set|make) citizen %number% [to] [be] crouch[ed]
+			(set|make) citizen %number% [to] [be] (uncrouch[ed]|standing)
+	Make Citizen Crouch/Uncrouch/Stand:
+		ID: EffCitizenToggleCrouch
+		Description:
+			Make a NPC/Citizen Crouch, Uncrouch or stand.
+		Patterns:
+			toggle citizen %number%['s] crouch
+	Make Citizen Swing:
+		ID: EffCitizenSwing
+		Description:
+			Force a citizens to play the arm swing animation
+		Examples:
+			command /npcarmswing:
+				trigger:
+					make citizen last created citizen swing arm    
+		Patterns:
+			make citizen %number% swing [arm]
+	Make Citizen Talk:
+		ID: EffCitizenSpeak
+		Description:
+			Make citizens communicate with:
+			* ID
+			* Messages
+			* Players
+			This will make an NPC speak to a player with a custom message
+		Examples:
+			command /npcspeak <integer> <text>:
+				trigger:
+					make citizen arg 1 say "%arg 2%" to player
+		Patterns:
+			make citizen %number% (say|communicate) %string% to %livingentities%
+	Max Health:
+		ID: EffMaxHealth
+		Description:
+			Set max health by:
+			* Entity
+			* Value
+			This will change the maximum health of an entity
+		Patterns:
+			set rf max[imum] h(p|ealth) of %livingentities% to %number%
+	Move Citizen:
+		ID: EffCitizenMove
+		Description:
+			Move citizens by:
+			* ID
+			* Location
+			* Speed
+			This will make a given NPC pathfind to a location
+		Examples:
+			command /movenpc:
+				trigger:
+					move citizen 1 to location of player at speed 2
+		Patterns:
+			move citizen %number% to %location% [at speed %number%]
+	Play Resource Pack Sound:
+		ID: EffPlayResourcePackSound
+		Description:
+			Play a sound from a resource pack.
+		Patterns:
+			play (resource|[custom ]sound) [sound] pack %string% to %player% [at %-location%] [(and|with) volume %number%] [(and|with) pitch %number%]
+	Play Sound:
+		ID: EffPlaySoundPacket
+		Patterns:
+			play %string% to %players% [at volume %number%]
+	Players Tab Name:
+		ID: EffSetPlayerListName
+		Description:
+			Lets you customize a players name within the tab menu.
+		Patterns:
+			set %player% tab name to %string%
+	Remove Citizen:
+		ID: EffDeleteCitizen
+		Description:
+			Remove citizens by:
+			* ID
+			This will permanently remove a citizen
+		Examples:
+			command /removelastnpc:
+				trigger:
+					destroy citizen last created citizen
+		Patterns:
+			(remove|destroy) citizen %number%
+	Respawn Citizen:
+		ID: EffRespawnCitizen
+		Description:
+			Respawn citizens by:
+			* ID
+			* Direction
+			* Location
+			This will force an NPC to come back to life if it was previously killed or despawned by the despawn citizen effect. This will not work if the citizen is already alive so it can't be used to duplicate citizens
+		Examples:
+			command /npcrespawn:
+				trigger:
+
+					respawn citizen 0 at location of player
+		Patterns:
+			respawn citizen %number% (at|%direction%) %location%
+	Send Title:
+		ID: EffTitleV1_8_4
+		Description:
+			Set title by:
+			* Name
+			* Subtitle
+			* Player
+			* Time
+			* Fadein
+			* Fadeout
+			This will send a title to a player with an optional subtitle and display time
+		Patterns:
+			send %players% title %string% [with subtitle %-string%] [for %-timespan%] [with %-timespan% fade in and %-timespan% fade out]
+	Set Action Bar:
+		ID: EffActionBarV1_8_4
+		Description:
+			Display Action Bar by:
+			* Player
+			* Text
+			This will display text above the player's hotbar for a few seconds. This is like the text you receive when changing the item in your hand
+		Patterns:
+			set action bar of %players% to %string%
+			set %player%['s] action bar to %string%
+	Set Below Name Score:
+		ID: EffSetScoreBelowName
+		Description:
+			Set score of a sidebar by:
+			* Name
+			* Value
+			* Player
+			* Target
+			This will change the name and score below a player's name
+		Patterns:
+			set score %string% below %player% to %number% for %players%
+	Set Citizens Name:
+		ID: EffSetCitizenName
+		Description:
+			Set the name of a citizen/npc using their ID number.
+		Examples:
+			set citizen 1 name to "eyesniper2"
+		Patterns:
+			(set|make) citizen[s] %number% name to %string%
+	Set ID based Score:
+		ID: EffSetIdBasedScore
+		Description:
+			Make an ID based score in a players scoreboard. This method is ideal for creating complex text based scoreboards.
+		Patterns:
+			(set|create) id [based] score %string% in sidebar of %player% to %number% with id %string%
+	Set Meta Data:
+		ID: EffSetMetaData
+		Description:
+			Set a meta data on an entity to a value
+		Patterns:
+			set meta %string% for %entity% to %string%
+	Set Sidebar Name:
+		ID: EffNameOfScore
+		Description:
+			Change the sidebar name by:
+			* Scoreboard
+			* Name
+			* Players
+			This will change the name of a player's sidebar. The sidebar of the player must have at least one score in order for it to show on the sidebar
+		Patterns:
+			set name of sidebar (of|for) %players% to %string%
+	Set Sidebar Score:
+		ID: EffSetScore
+		Description:
+			Set score of a sidebar by:
+			* Scoreboard
+			* Name
+			* Value
+			* Player
+			This will change the score of a score in a player's sidebar or create a new score if it does not exist
+		Patterns:
+			set score %string% in sidebar of %player% to %number%
+	Set Tab Header & Footer:
+		ID: EffTabTitlesV1_8_4
+		Description:
+			Modify Tab by:
+			* Header
+			* Footer
+			* Player
+			This will display a client side header and footer for a player
+		Patterns:
+			set tab header to %string% and footer to %string% for %player%
+	Set Tablist Score:
+		ID: EffSetScoreTab
+		Description:
+			Set the tablist score by:
+			* Scoreboard
+			* Value
+			* Player
+			* Target
+			This will change the score for a player in the tablist
+		Patterns:
+			set tab[list] score of %player% to %number% for %player%
+	Show Particle:
+		ID: EffParticlesV1_8_4
+		Description:
+			Show particle by:
+			* Player
+			* Location
+			* Amount
+			* Particle Type
+			This will display a particle at a given location for a player. This is client side!
+			[List of particles](https://gist.github.com/eyesniper2/935315532ef05fc56656)
+		Patterns:
+			show %number% %string% particle[s] at %location% for %player% [offset by %number%, %number%( and|,) %number%]
+	Text Effect:
+		ID: EffEffectLibText
+		Description:
+			Creates an EffectLib text effect.
+		Examples:
+			command /texteffect:
+				trigger:
+					apply the text effect with text "Text Effect" as Redstone to player with id "texteffecttest"
+		Patterns:
+			(spawn|create|apply) (a|the|an) text (effect|formation) with text %string% as %effectlibparticle% (at|on|for|to) %entities/location% with id %string%[(,| and) %number% large]
+	Tornado Effect:
+		ID: EffEffectTornado
+		Description:
+			Creates an EffectLib tornado effect.
+		Patterns:
+			(spawn|create|apply) (a|the|an) tornado (effect|formation) at %entity/location% with id %string% [with tornado particle[s] %-effectlibparticle% and cloud particle[s] %-effectlibparticle%] [(set|and) radius %number%] [(set|and) max height %number%]
+	Update Group Score:
+		ID: EffEditGroupIdScore
+		Description:
+			Updates a group based score.
+		Patterns:
+			(edit|update) score [with][in] group [id] %string% to %string% and %number%
+	Wave Effect:
+		ID: EffEffectLibWave
+		Description:
+			Creates an EffectLib wave effect.
+		Patterns:
+			(spawn|create|apply) (a|the|an) wave (effect|formation) at %entity/location% with id %string% [with particle[s] %-effectlibparticle%]
+	Wipe Below Name:
+		ID: EffRemoveScoreBelowName
+		Description:
+			Wipe score below player by:
+			* Scoreboard
+			* Player
+			This will wipe the score below the player
+		Patterns:
+			(wipe|erase) below score[s] for %player%
+	Wipe Tablist Score:
+		ID: EffRemoveScoreTab
+		Description:
+			Wipe tablist score by:
+			* Scoreboard
+			* Player
+			This will remove the score from a player in the tablist
+		Patterns:
+			(wipe|erase|delete) %player%['s] tab[list]
+	Wipe/Delete/Remove Sidebar:
+		ID: EffRemoveScoreboard
+		Description:
+			Delete a sidebar by:
+			* Scoreboard
+			* Player
+			This will completely wipe a specified player's sidebar deleting all scores and the name of the sidebar.
+		Patterns:
+			(wipe|erase|delete) %player%['s] sidebar
+Expressions:
+	Absolute Amount of Items:
+		ID: ExprAbsoluteInventoryCount
+		Description:
+			Get the number of items in a player’s inventory that are an absolute match to a sample item. To match they must have the same enchants, name and lore.
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			(absolute|complex|abs) number of %itemstack% in %player%['s] (inventory|inv)
+	Armor Value:
+		ID: ExprArmorValue
+		Description:
+			Get a players armor value.
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			%player%['s] armo[u]r value
+	Citizen ID:
+		ID: ExprCitizenIdFromEntity
+		Description:
+			Get the id number of a citizen from an entity.
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			citizen id of %entity%
+	Citizen Owner:
+		ID: ExprOwnerOfCitizen
+		Description:
+			Gets the owner of a citizen.
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			owner of (citizen|npc) %number%
+	Convert Text to Location:
+		ID: ExprTextToLocation
+		Description:
+			Convert a comma separated string of x, y and z cords into a location. eg. "1.3,4.5,1.5" to a location
+		Return type: Location
+		Changers:
+			none
+		Patterns:
+			%string% converted to location
+	General Citizen:
+		ID: ExprGeneralCitizen
+		Description:
+			Get the general entity for a citizen
+		Return type: Entity
+		Changers:
+			add
+			remove
+			remove all
+		Patterns:
+			citizen %number%
+	Group Score Value:
+		ID: ExprScoreValueFromGroupId
+		Description:
+			These expressions will get either the name or value of a group based score.
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			group score (value|number) (of|from) id %string%
+	Group Score Value:
+		ID: ExprScoreNameFromGroupId
+		Description:
+			These expressions will get either the name or value of a group based score.
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			group score (name|title) (of|from) id %string%
+	Hologram Line:
+		ID: ExprGetHoloLine
+		Description:
+			Get the text in the line of a holo object
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			text in line %number% of holo[gram] [object] %string%
+	Info of Enchantment:
+		ID: ExprSpecificEnchantIndex
+		Description:
+			Get the presentable info of a specific enchantment number of an item.
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			info of enchant[ment] %number% (of|on) %itemstack%
+	Last Created Citizen ID:
+		ID: ExprLastCitizen
+		Description:
+			Checks for:
+			* The last created citizen
+			You can use this to check the ID of the last created citizen good for if you want to check the unique ID of a citizen you just created
+		Examples:
+			command /npctest <text>:
+				trigger:
+					create a citizen named "%arg 1%" at location of player as a player
+					message "%last created citizen%"
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			last created citizen [id]
+	Meta Data:
+		ID: ExprMetaData
+		Description:
+			Get the meta data value for an entity
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			meta %string% for %entity%
+	Name of Citizen:
+		ID: ExprNameOfCitizen
+		Description:
+			Used for:
+			* Checking citizen names
+			* Changing citizen names
+			This will allow you to check and set an NPC's name
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			name of citizen %number%
+	Name/Title of Sidebar:
+		ID: ExprScoreBoardTitle
+		Description:
+			Get the name/title of a players side bar.
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			sidebar (title|name) for %player%
+	No NBT:
+		ID: ExprNoNbt
+		Description:
+			Removes all NBT tags by:
+			Item Stack
+			Using this expression will remove all vanilla minecraft lore from an item. For example a diamond sword would not show the vanilla +7 damage in the lore anymore
+		Return type: Item / Material
+		Changers:
+			none
+		Patterns:
+			%itemstacks% with no nbt
+	Number of Enchantments:
+		ID: ExprNumberOfEnchants
+		Description:
+			Get the number of enchantments on an item.
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			number of enchant[ment]s on %itemstack%
+	Shiny Item:
+		ID: ExprShinyItem
+		Description:
+			Show Items by:
+			* Glow
+			Makes an item glow as an enchanted item but without the lore
+		Examples:
+			give player shiny diamond
+		Return type: Item / Material
+		Changers:
+			none
+		Patterns:
+			shiny %itemstacks%
+	Single ID Score Value:
+		ID: ExprScoreValueFromId
+		Description:
+			These expressions will get either the name or value of a ID based score.
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			score (value|number) (of|from) id %string%
+	Single ID Score Value:
+		ID: ExprScoreNameFromId
+		Description:
+			These expressions will get either the name or value of a ID based score.
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			score (name|title) (of|from) id %string%

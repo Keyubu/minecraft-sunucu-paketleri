@@ -1,0 +1,196 @@
+# These first 7 aren't configurable
+issues: "https://github.com/IntellectualSites/PlotSquared/issues"
+suggestion: "https://github.com/IntellectualSites/PlotSquaredSuggestions"
+wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
+date: "30 Nov 2019 21:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared/786"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/7539f6d"
+platform: "Bukkit"
+# Show additional information in console
+debug: true
+# The big annoying text that appears when you enter a plot
+# For a single plot: `/plot flag set titles false`
+# For just you: `/plot toggle titles`
+titles: true
+
+# Enable or disable part of the plugin
+# Note: A cache will use some memory if enabled
+enabled-components:
+  # The database stores all the plots
+  database: true
+  # Events are needed to track a lot of things
+  events: true
+  # Commands are used to interact with the plugin
+  commands: true
+  # The UUID cacher is used to resolve player names
+  uuid-cache: true
+  # The plugin auto updater
+  updater: true
+  # Stores user metadata in a database
+  persistent-meta: true
+  # Optimizes permission checks
+  permission-cache: true
+  # Optimizes block changing code
+  block-cache: true
+  # Getting a rating won't need the database
+  rating-cache: true
+  # The converter will attempt to convert the PlotMe database
+  plotme-converter: true
+  # Allow WorldEdit to be restricted to plots
+  worldedit-restrictions: true
+  # Allow economy to be used
+  economy: true
+  # Send anonymous usage statistics. Bukkit only setting.
+  metrics: true
+  # Expiry will clear old or simplistic plots
+  plot-expiry: false
+  # Processes chunks (trimming, or entity/tile limits) 
+  chunk-processor: false
+  # Kill mobs on roads
+  kill-road-mobs: false
+  # Kill items on roads
+  kill-road-items: false
+  # Kill vehicles on roads
+  kill-road-vehicles: false
+  # Notify a player of any missed comments upon plot entry
+  comment-notifier: false
+  # Let player's claim entire worlds with PlotSquared
+  worlds: false
+  # Actively purge invalid database entries
+  database-purger: false
+  # Delete plots when a player is banned
+  ban-deleter: false
+  # Disable FAWE optimizations for P2
+  #   !!Do not set to true if using P2 worlds and instructed to do so
+  disable-fawe-optimization: false
+
+ratings:
+  categories: []
+
+claim:
+  # The max plots claimed in a single `/plot auto <size>` command
+  max-auto-area: 4
+  # Teleport upon claiming a plot
+  teleport-on-claim: true
+
+redstone:
+  # Disable redstone in unoccupied plots
+  disable-unoccupied: false
+  # Disable redstone when all owners/trusted/members are offline
+  disable-offline: false
+  # Detect and cancel invalid pistons on the edge of plots (e.g. placed with WorldEdit)
+  detect-invalid-edge-pistons: false
+
+teleport:
+  # Teleport to your plot on death
+  on-death: false
+  # Teleport to your plot on login
+  on-login: false
+  # Add a teleportation delay to all commands
+  delay: 0
+  # The visit command is ordered by world instead of globally
+  per-world-visit: false
+
+confirmation:
+  # Teleport to your plot on death
+  confirmation-timeout-seconds: 20
+
+# Switching from PlotMe?
+plotme:
+  # Cache the uuids from the PlotMe database
+  cache-uuds: false
+
+# Relating to how many plots someone can claim  
+limit:
+  # Should the limit be global (over multiple worlds)
+  global: false
+  # The range of permissions to check e.g. plots.plot.127
+  max-plots: 127
+
+chat:
+  # Sometimes console color doesn't work, you can disable it here
+  console-color: true
+  # Should chat be interactive
+  interactive: true
+
+done:
+  # Require a done plot to download
+  required-for-download: false
+  # Only done plots can be rated
+  required-for-ratings: false
+  # Restrict building when a plot is done
+  restrict-building: false
+  # The limit being how many plots a player can claim
+  counts-towards-limit: true
+
+web:
+  # The web interface for schematics
+  #  - All schematics are anonymous and private
+  #  - Downloads can be deleted by the user
+  #  - Supports plot uploads, downloads and saves
+  url: "https://empcraft.com/plots/"
+  # The web interface for assets
+  #  - All schematics are organized and public
+  #  - Assets can be searched, selected and downloaded
+  assets: "https://empcraft.com/assetpack/"
+
+# Configure the paths that will be used
+paths:
+  schematics: "schematics"
+  bo3: "bo3"
+  scripts: "scripts"
+  templates: "templates"
+  translations: "translations"
+
+# Schematic Settings
+schematics:
+  # Whether schematic based generation should paste schematic on top of plots, or from Y=1
+  paste-on-top: true
+
+# General settings
+general:
+  # Display scientific numbers (4.2E8)
+  scientific: false
+  # Replace wall when merging
+  merge-replace-wall: true
+
+uuid:
+  # Force using offline UUIDs (it usually detects the right mode)
+  offline: false
+  # Force using lowercase UUIDs
+  force-lowercase: false
+  # Use a database to store UUID/name info
+  use-sqluuidhandler: false
+
+chunk-processor:
+  # Auto trim will not save chunks which aren't claimed
+  auto-trim: false
+  # Max tile entities per chunk
+  max-tiles: 4096
+  # Max entities per chunk
+  max-entities: 512
+  # Disable block physics
+  disable-physics: false
+
+# This is an auto clearing task called `task1`
+auto-clear:
+  task1:
+    threshold: 1
+    required-plots: -1
+    confirmation: true
+    days: 7
+    skip-account-age-days: -1
+    worlds: 
+    - "*"
+    # See: https://github.com/IntellectualSites/PlotSquared/wiki/Plot-analysis
+    calibration:
+      variety: 0
+      variety-sd: 0
+      changes: 0
+      changes-sd: 1
+      faces: 0
+      faces-sd: 0
+      data-sd: 0
+      air: 0
+      air-sd: 0
+      data: 0

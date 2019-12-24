@@ -1,0 +1,54 @@
+worlds:
+  arsalar:
+    plot:
+      height: 64
+      biome: FOREST
+      size: 61
+      filling:
+      - '1:0'
+      auto_merge: false
+      bedrock: true
+      create_signs: true
+      floor:
+      - '2:0'
+    wall:
+      filling: '1:0'
+      block_claimed: '126:3'
+      height: 64
+      block: '126:1'
+    misc_spawn_unowned: false
+    road:
+      block: '5:0'
+      height: 64
+      width: 7
+    home:
+      nonmembers: side
+      default: side
+    schematic:
+      specify_on_claim: false
+      on_claim: false
+      file: 'null'
+      schematics: []
+    economy:
+      prices:
+        merge: 100
+        sell: 100
+        claim: 100
+      use: false
+    chat:
+      enabled: false
+    limits:
+      max-members: 128
+    world:
+      max_height: 256
+      gamemode: creative
+      min_height: 1
+      border: false
+    event:
+      spawn:
+        egg: false
+        breeding: false
+        custom: true
+    natural_mob_spawning: false
+    mob_spawner_spawning: false
+    flags: {}

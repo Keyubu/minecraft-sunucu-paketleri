@@ -1,0 +1,37 @@
+#usage: %animation:NAME%  or  {animation:NAME}
+animations:
+  line:
+    #in MILLISECONDS
+    change-interval: 50
+    texts:
+      - "     &8&m-------------------------------------------------------------&r     "
+  title:
+    change-interval: 200
+    texts:
+      - "&eKeyubu Survival"
+      - "&aKeyubu Survival"
+      - "&bKeyubu Survival"
+      - "&dKeyubu Survival"
+      - "&6Keyubu Survival"
+  site:
+    change-interval: 200
+    texts:
+      - "&7www.keyubu.com"
+      - "&ew&7ww.keyubu.com"
+      - "&eww&7w.keyubu.com"
+      - "&ewww.&7keyubu.com"
+      - "&ewww.k&7eyubu.com"
+      - "&ewww.ke&7yubu.com"
+      - "&ewww.key&7ubu.com"
+      - "&ewww.keyu&7bu.com"
+      - "&ewww.keyub&7u.com"
+      - "&ewww.keyubu&7.com"
+      - "&ewww.keyubu.c&7om"
+      - "&ewww.keyubu.co&7m"
+      - "&ewww.keyubu.com"
+  info:
+    change-interval: 1500
+    texts:
+      - "&7Tarih: &f%date%"
+      - "&7Saat: &f%time%"
+      - "&7Yetki: &f%rank%"

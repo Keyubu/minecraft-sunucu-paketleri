@@ -1,0 +1,43 @@
+motd:
+  # Do you want to enable this module?
+  enabled: true
+
+  # Değişkenler: %onlineplayers% %maxplayers%
+  # %newline% kullanarak yeni satıra geçin.
+  motds:
+    - "&6        Keyubu HUB &awww.keyubu.com &c[1.8-1.14]&r%newline%&e&l              YENI GUNCELLEME &ev3"
+    - "&6        Keyubu HUB &awww.keyubu.com &c[1.8-1.14]&r%newline%&e&l                %onlineplayers% &eoyuncu oyunda!"
+
+# Caches requests to only send favicon to the first ping packet of a player.
+# This can prevent crashes with bot attacks and improves performance.
+# Only for BungeeCord as Spigot already seems to cache Favicons.
+cache:
+  # Do you want to enable this module?
+  enabled: true
+
+  # Time in milliseconds after cache is cleared.
+  time: 30000
+
+maxplayers:
+  # Do you want to enable this module?
+  enabled: true
+
+  # Changes the max players value.
+  maxplayers: 120
+
+  # Changes the max player value depending on your onlineplayers.
+  # Example: 12/13 players online.
+  justonemore: false
+
+# Only works for BungeeCord because there is no method to modify this on Ping Event.
+fakeplayers:
+  # Do you want to enable this module?
+  enabled: false
+
+  # Sets the amount of fakeplayers.
+  amount: 3
+
+  # "STATIC": Adds the value of fakeplayers to the amount of players online.
+  # "RANDOM": Adds a random amount of players between 1 and the fakeplayers value.
+  # "DIVISION": Adds the amount of players online divided by the fakeplayers value.
+  mode: "DIVISION"

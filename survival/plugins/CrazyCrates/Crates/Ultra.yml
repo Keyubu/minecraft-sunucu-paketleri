@@ -1,0 +1,177 @@
+Crate:
+  CrateType: Wheel
+  CrateName: '&bUltra Kasa'
+  Preview-Name: '&8Ultra Kasa Içeriği'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 25
+  OpeningBroadCast: true
+  BroadCast: '%Prefix%&e%Player% &7adlı kişi &bUltra &7kasayı açtı.'
+  Item: 'CHEST'
+  Glowing: false
+  Name: '&bUltra'
+  Lore:
+  - '&8Fena şeyler'
+  - ''
+  - '&7Kasayı açmak için &fsol &7tıklayın'
+  - '&7Görüntülemek için &fsağ &7tıklayın'
+  - ''
+  Preview:
+    Toggle: true
+    ChestLines: 5
+    Glass:
+      Toggle: true
+      Item: 'STAINED_GLASS_PANE:7'
+  PhysicalKey:
+    Name: '&bUltra Anahtar'
+    Lore:
+    - '&8Kasa anahtarı'
+    - ''
+    - '&7Bu anahtarla Ultra'
+    - '&7kasasını açabilirsiniz'
+    Item: 'TRIPWIRE_HOOK'
+    Glowing: true
+  Prizes:
+    '1':
+      DisplayName: '&e7,000 bakiye'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%30'
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 7000
+    '2':
+      DisplayName: '&e15,000 bakiye'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%15'
+      MaxRange: 100
+      Chance: 15
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 15000
+    '3':
+      DisplayName: '&e17,000 bakiye'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%13'
+      MaxRange: 100
+      Chance: 13
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 17000
+    '4':
+      DisplayName: '&e20,000 bakiye'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%11'
+      MaxRange: 100
+      Chance: 11
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 20000
+    '5':
+      DisplayName: '&e30,000 bakiye'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%9'
+      MaxRange: 100
+      Chance: 9
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 30000
+    '6':
+      DisplayName: '&eKılıç+'
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%10'
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Items:
+      - 'Item:267, Amount:1, DAMAGE_All:2, DURABILITY:1' 
+    '7':
+      DisplayName: '&eKılıç++'
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%10'
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Items:
+      - 'Item:267, Amount:1, DAMAGE_All:2, DURABILITY:1, IMPALING:2, LOOT_BONUS_MOBS:2'
+    '8':
+      DisplayName: '&eKazma+'
+      DisplayItem: '278'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%10'
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Items:
+      - 'Item:278, Amount:1, DIG_SPEED:1, DURABILITY:1' 
+    '9':
+      DisplayName: '&eKazma++'
+      DisplayItem: '278'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%20'
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Glowing: false
+      Items:
+      - 'Item:278, Amount:1, DIG_SPEED:4, DURABILITY:2, LOOT_BONUS_BLOCKS:2'  
+    '10':
+      DisplayName: '&e3 Standart Kasa Anahtarı'
+      DisplayItem: '131'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%10'
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Commands:
+      - crazycrates give physical standart 3 %Player%
+    '11':
+      DisplayName: '&e2 Mega Kasa Anahtarı'
+      DisplayItem: '131'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%10'
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: false
+      Commands:
+      - crazycrates give physical mega 2 %Player%

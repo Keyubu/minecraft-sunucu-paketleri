@@ -1,0 +1,236 @@
+options:
+	yasak: &cHata &7» &fBilinmeyen komut girdin, tekrar dene.
+	
+on join:
+	if player's name contains "McStorm":
+		kick player	
+	
+on command "/I?Ia":
+		message "{@yasak}" to the player
+		cancel event
+on command "/r I?Ia":
+		message "{@yasak}" to the player
+		cancel event	
+		
+on command:
+	if command contains "minecraft:":
+		cancel event
+			
+on command "/bukkit:me":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event  
+on command "//eval":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event  
+on command "//calcuate":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event  
+on command "//solve":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event  
+on command "/minecraft:tell":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event  
+on command "//evaluate":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event  
+on command "//calc":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event  
+on command "/bukkit:tell":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event    		
+on command "/bukkit:achievement":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event     
+on command "/bukkit:ban":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event        
+on command "/bukkit:ban-ip":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event
+on command "/bukkit:banlist":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:clear":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event      
+on command "/bukkit:deop":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event      
+on command "/bukkit:difficulty":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event       
+on command "/bukkit:effect":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event          
+on command "/bukkit:enchant":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event    
+on command "/bukkit:gamerule":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event          
+on command "/bukkit:give":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event        
+on command "/bukkit:kick":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event        
+on command "/bukkit:op":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event  
+on command "/bukkit:pardon":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event          
+on command "/bukkit:pardon-ip":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event          
+on command "/bukkit:playsound":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event         
+on command "/bukkit:plugins":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event           
+on command "/bukkit:reload":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:save-all":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event          
+on command "/bukkit:save-off":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event           
+on command "/bukkit:save-on":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:say":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event           
+on command "/bukkit:seed":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:setidletimeout":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:setworldspawn":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:spawnpoint":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:spreadplayers":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:stop":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:testfor":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:time":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event        
+on command "/bukkit:timings":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event            
+on command "/bukkit:toggledownfall":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event     
+on command "/bukkit:tp":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event 
+on command "/bukkit:version":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event       
+on command "/bukkit:weather":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event       
+on command "/bukkit:whitelist":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event         
+on command "/bukkit:exp":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event       
+on command "/help":
+	send "&eYardım almak için &a&l/bilgi &eyazın!" to the player
+	cancel event      
+on command "/bukkit:me":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event
+on command "/bukkit:help":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event
+on command "/?":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event
+on command "/bukkit:?":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event
+on command "/erepairall":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event
+on command "/efix all":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event
+on command "/essentials:help":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event
+on command "/essentials:ehelp":
+	if player don't have permissions "illegal.yetkiler":
+		send "{@yasak}" to the player
+		cancel event
+on command "/crash":
+	send "{@yasak}" to the player
+	cancel event

@@ -1,0 +1,10 @@
+# Language file of UUID Spoof - Fix
+
+# Kick message
+kick-message: "&cHata n&7&nUUID'nizin Sahte Olduğunu Görünüyor! Belki bu bir hatadır, lütfen müşterinizi yeniden başlatmayı deneyin veya sürümünüzü değiştirin"
+
+# Success message for UUID-check
+uuidcheck-success: "&aUUID kontrolünden başarıyla geçtiniz!\n&7Sizin UUID: &f&o%uuid%"
+
+# Debug broadcast message
+debug-message: "%name% (%ip%) &cUUID'sini kandırmaya çalıştı! &9(%uuid%/%fakeuuid%)"

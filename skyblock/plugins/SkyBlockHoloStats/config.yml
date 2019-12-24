@@ -1,0 +1,4 @@
+topline: '&a&lSkyblock Sıralaması'
+format: '&6#%rank% &e%nickname% &fada seviyesi &b&l%level%'
+update interval: 15
+boards: {}

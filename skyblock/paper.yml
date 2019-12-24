@@ -1,0 +1,97 @@
+# This is the main configuration file for PaperSpigot.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# 
+# If you need help with the configuration or have any questions related to PaperSpigot,
+# join us at the IRC.
+# 
+# IRC: #paperspigot @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=PaperSpigot )
+
+config-version: 9
+effect-modifiers:
+  strength: 1.3
+  weakness: -0.5
+stackable-buckets:
+  lava: false
+  water: false
+  milk: false
+settings:
+  limit-player-interactions: true
+  baby-zombie-movement-speed: 0.5
+warnWhenSettingExcessiveVelocity: true
+data-value-allowed-items: []
+world-settings:
+  default:
+    verbose: true
+    use-hopper-check: false
+    disable-explosion-knockback: false
+    fix-cannons: false
+    tnt-entity-height-nerf: 0
+    water-over-lava-flow-speed: 5
+    allow-block-location-tab-completion: true
+    generator-settings:
+      canyon: true
+      caves: true
+      dungeon: true
+      fortress: true
+      mineshaft: true
+      monument: true
+      stronghold: true
+      temple: true
+      village: true
+      flat-bedrock: false
+    cache-chunk-maps: false
+    use-async-lighting: false
+    tick-next-tick-list-cap: 10000
+    tick-next-tick-list-cap-ignores-redstone: false
+    disable-thunder: false
+    all-chunks-are-slime-chunks: false
+    allow-undead-horse-leashing: false
+    container-update-tick-rate: 3
+    keep-spawn-loaded: true
+    falling-blocks-collide-with-signs: false
+    game-mechanics:
+      disable-end-credits: false
+      boats-drop-boats: false
+      disable-player-crits: false
+      disable-chest-cat-detection: true
+    portal-search-radius: 128
+    disable-mood-sounds: false
+    disable-ice-and-snow: false
+    mob-spawner-tick-rate: 2
+    nether-ceiling-void-damage: false
+    falling-block-height-nerf: 0
+    optimize-explosions: true
+    player-blocking-damage-multiplier: 0.5
+    tnt-explosion-volume: 4.0
+    max-growth-height:
+      cactus: 3
+      reeds: 3
+    fishing-time-range:
+      MinimumTicks: 100
+      MaximumTicks: 900
+    squid-spawn-height:
+      minimum: 45.0
+      maximum: 63.0
+    fast-drain:
+      lava: false
+      water: false
+    player-exhaustion:
+      block-break: 0.02500000037252903
+      swimming: 0.014999999664723873
+    lava-flow-speed:
+      normal: 30
+      nether: 10
+    remove-unloaded:
+      enderpearls: true
+      tnt-entities: true
+      falling-blocks: true
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
+    despawn-ranges:
+      soft: 28
+      hard: 96
+    remove-invalid-mob-spawner-tile-entities: true
+    disable-teleportation-suffocation-check: false

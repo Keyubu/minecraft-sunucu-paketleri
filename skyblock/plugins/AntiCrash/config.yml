@@ -1,0 +1,9 @@
+Messages:
+  Prefix: '&6Koruma &8▸ &r'
+  Reload-Config: '&aYapılandırma dosyaları yenilendi.'
+  No-Permission: '&cBu komutu kullanmak için yetkin yok.'
+  Chat-Crash: '&cUygunsuz bir mesaj yazdın.'
+  Sign-Crash: '&cUygunsuz bir satır girdin.'
+  Crash-With-Command: '&cUygunsuz bir mesaj yazdın.'
+  Illegal-Items: '&cEnvanterindeki uygunsuz itemler silindi.'
+  Inventory-Crash: '&cUygunsuz bir item adı yazdın.'

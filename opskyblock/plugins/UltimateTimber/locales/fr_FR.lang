@@ -1,0 +1,13 @@
+# General Messages
+
+prefix: '&8[&6UltimateTimber&8] '
+no-permission: '&cVous n''avez pas les permissions requises pour ceci!'
+command-reload-description: '&8 - &a/ut reload &7 - Recharge la config.'
+command-reload-reloaded: '&7Les fichiers de config et de langage ont été rechargés.'
+command-toggle-description: '&8 - &a/ut toggle &7 - Activation du mode Bûcheron'
+command-toggle-enabled: '&7Mode Bûcheron: &aActivé'
+command-toggle-disabled: '&7Mode Bûcheron: &cDésactivé'
+on-cooldown: '&eVous êtes en cooldown, vous ne pouvez pas faire tomber d''arbres maintenant.'
+
+# Command Messages
+# Misc

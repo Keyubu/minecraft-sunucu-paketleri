@@ -1,0 +1,112 @@
+# default config.yml for CustomEnderChest
+# config version 1.10.3
+
+#Database settings
+database:
+    #Type of database, Options: FlatFile or MySQL
+    typeOfDatabase: FlatFile
+    #MySQL database type connection details.
+    mysql:
+        host: 127.0.0.1
+        port: 3306
+        databaseName: 'mydatabase'
+        tableName: 'cec_enderchests'
+        user: 'admin'
+        password: 'cheesecake'
+        ssl: false
+        #This task will scan the mysql database for inactive players and remove them.
+        #The scanning takes place after server starts with a 2min delay. Runs on a async thread so server performance will not be affected.
+        removeOldUsers:
+            #Enable or disable mysql database maintenance. | (true or false)
+            enabled: false
+            #Inactivity in days. Default 60 days.
+            inactive: 60
+            
+
+#Extra plugin settings.            
+settings:
+    #Add NBT data support for modded items. Requires MySQL storage and ProtocolLib dependency installed.
+    #NOTE!!! - Changes to this setting needs a server restart!
+    modded-NBT-data-support: false
+    #Disable click the enderchest to open the custom enderchest. (Useful if you only want to open it with the command)
+    disable-enderchest-click: false
+    #Disable all sounds triggered by this plugin.
+    disable-sounds: false
+
+#Customize Ender Chest Title
+enderChestTitle:
+    #EnderChest folder name. Supports color and format codes.
+    #Minecraft Color and Format Codes: http://minecraft.gamepedia.com/Formatting_codes
+    #WARNING! Max size is 32 characters including color, format codes.
+    enderChestName: 'Sandık &r%level'
+    #The place holder  %player  will be replaced by player's name.
+    #The  %level  place holder replace text below. So you can customize each enderchest title by enderchest size.
+   
+    #For 9 slots enderchest.
+    level0: '&8Seviye 0'
+    #For 18 slots enderchest.
+    level1: '&8Seviye 1'
+    #For 27 slots enderchest.
+    level2: '&8Seviye 2'
+    #For 36 slots enderchest.
+    level3: '&8Seviye 3'
+    #For 45 slots enderchest.
+    level4: '&8Seviye 4'
+    #For 54 slots enderchest.
+    level5: '&8Seviye 5'
+
+#Chat messages. Supports color and format codes. 
+chatMessages:
+    #Chat messages prefix.
+    #To disable the prefix set it to '' ; Example: prefix: ''
+    prefix: '&6Sandık &8▸ '
+    
+    #Disable any chat message by setting it to '' | Example: noPermission: ''
+    #Chat messages.
+    noPermission: '&cBunu yapmak için yetkiniz yok.'
+    openCmdUsage: '&7Depo açmak için &f/customec open <nick> &7veya &f/customec open <UUID>'
+    noEnderchest: '&cBu oyuncunun bir deposu yok.'
+    openUuidFail: '&7Oyuncunun deposu yok veya yanlış bir UUID girdiniz!'
+    openNameOffline: '&7Oyuncu çevrimdışı veya yanlış bir UUID girdiniz, kullanım &f/customec open <UUID>'
+    deleteNameOffline: '&7Oyuncu çevrimdışı veya yanlış bir UUID girdiniz, kullanım &f/customec delete <UUID>'
+    deleteCmdUsage: '&7Depo silmek için &f/customec delete <oyuncu> &7veya &f/customec delete <UUID>'
+    delete: '&cOyuncunun depo verileri silindi.'
+    reloadFail: '&cYapılandırma (config.yml) dosyası yenilenemedi, kayıtları kontrol et.'
+    reload: '&aEklenti başarıyla yenilendi!'
+    flatfileImport-mysql: '&cChange database type from flatfile to mysql first!'
+    flatfileImport-connection: '&cVeritabanı bağlantısı bulunamadı! Kayıtları kontrol et ve eklentinin mysql veritabanına bağlandığından emin ol.'
+    flatfileImport-started: '&aAktarma görevi başladı! Konsola bak ve ilerlemeyi izle.'
+    flatfileImport-datafolder: '&cPlayerData klasörü bulunamadı.'
+    reloadCmdWarning: '&cCustomEnderChest eklentisi sunucuya reload atılmasını önermez. Bu komutu çalıştırdıktan sonra sorun yaşarsanız, kullanmayı bırakın.'
+    
+    #Help command with multi line support.
+    Help:
+        header:
+        - ' '
+        - '&8&m--------------------&e Depo Yardım &8&m--------------------'
+        admin:
+        - ' '
+        - ' &7Çevrimiçi olanların deposunu açar &f/customec open <oyuncu>'
+        - ' &7Çevrimdışı olanların deposunu açar &f/customec open <UUID>'
+        - ' '
+        - ' &7Çevrimiçi olanların deposunu siler &f/customec delete <oyuncu>'
+        - ' &7Çevrimdışı olanların deposunu siler &f/customec delete <UUID>'
+        - ''
+        - ' &7Eklentiyi yeniden yükler &f/customec reload'
+        - ' '
+        - '&8&m-----------------------------------------------------'
+        - ''
+        user:
+        - ' '
+        - ' &7Deponuzu açmak için &f/depo &7yazabilirsiniz. Rütbe'
+        - ' &7atladıkça daha geniş bir sandığa sahip olursunuz.'
+        - ' '
+        command:
+        - ''
+        - ' &7Deponuzu açmak için &f/depo &7yazabilirsiniz.'
+        - ' '
+        userFooter:
+        - '&8&m---------------------------------------------------'
+        - ' '
+        
+        

@@ -1,0 +1,54 @@
+# Control panel file
+# For colors in panel name use &. Note client must restart if changes made as it caches inventory.
+# [island] refers to the island command, e.g., /island
+# material format is MATERIAL:DURABILITY where DURABILITY is optional
+# description can include color codes using & and new lines using |
+
+default:
+  panelname: 'Ada Paneli'
+  buttons:
+    0:
+      material: GRASS
+      description: '&7Adana gitmek için tıkla!'
+      command: '[island] go'
+      nextsection: ''
+    1:
+      material: SKULL_ITEM
+      description: '&7Takımdakileri görmek için tıkla!'
+      command: '[island] team'
+      nextsection:
+    2:
+      material: BED
+      description: '&7Ada sethome noktasını ayarlamak için tıkla!'
+      command: '[island] sethome'
+      nextsection:
+    3:
+      material: ACACIA_STAIRS
+      description: '&7Ada seviyeni görmek için tıkla'
+      command: '[island] level'
+      nextsection:
+    4:
+      material: BOOK
+      description: '&7Sunucuda oynayanların ilk 10 görmek için tıkla'
+      command: '[island] top'
+      nextsection:
+    5:
+      material: SIGN
+      description: '&7Ada warpları'
+      command: '[island] warps'
+      nextsection:
+    6:
+      material: BEDROCK
+      description: '&7Spawna geri dönmek için tıkla!'
+      command: 'spawn'
+      nextsection:
+    7:
+      material: SAPLING
+      description: '&7Ada biyomunu değiştirmek için tıkla!'
+      command: '[island] biomes'
+      nextsection: ''
+    8:
+      material: ENCHANTMENT_TABLE
+      description: '&7Ada görevlerini görmek için tıkla!'
+      command: 'asc'
+      nextsection: ''

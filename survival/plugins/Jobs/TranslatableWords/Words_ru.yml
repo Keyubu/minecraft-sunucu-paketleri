@@ -1,0 +1,956 @@
+ItemList:
+  NONE: Воздух
+  ACACIA_BUTTON: Воздух
+  ACACIA_DOOR: Acacia Door
+  ACACIA_FENCE: Акациевый забор
+  ACACIA_FENCE_GATE: Акациевые ворота
+  ACACIA_LEAVES: Листва тёмного дуба
+  ACACIA_LOG: Древесина тёмного дуба
+  ACACIA_PLANKS: Еловые доски
+  ACACIA_PRESSURE_PLATE: Воздух
+  ACACIA_SAPLING: Еловый саженец
+  ACACIA_SLAB: Хвойная плита
+  ACACIA_STAIRS: Ступени из акации
+  ACACIA_TRAPDOOR: Воздух
+  ACACIA_WOOD: Воздух
+  ACTIVATOR_RAIL: Активирующие рельсы
+  AIR: Воздух
+  ALLIUM: Белый тюльпан
+  ANDESITE: Камень
+  ANVIL: Наковальня
+  APPLE: Яблоко
+  ARMOR_STAND: Стойка для брони
+  ARROW: Стрела
+  ATTACHED_MELON_STEM: Воздух
+  ATTACHED_PUMPKIN_STEM: Воздух
+  AZURE_BLUET: Белый тюльпан
+  BAKED_POTATO: Печёный картофель
+  BARRIER: Барьер
+  BAT_SPAWN_EGG: Яйцо призыва зомби
+  BEACON: Маяк
+  BEDROCK: Коренная порода
+  BEEF: Сырая говядина
+  BIRCH_BUTTON: Воздух
+  BIRCH_DOOR: Birch Door
+  BIRCH_FENCE: Берёзовый забор
+  BIRCH_FENCE_GATE: Берёзовые ворота
+  BIRCH_LEAVES: Хвойная листва
+  BIRCH_LOG: Хвойная древесина
+  BIRCH_PLANKS: Еловые доски
+  BIRCH_PRESSURE_PLATE: Воздух
+  BIRCH_SAPLING: Еловый саженец
+  BIRCH_SLAB: Хвойная плита
+  BIRCH_STAIRS: Берёзовые ступени
+  BIRCH_TRAPDOOR: Воздух
+  BIRCH_WOOD: Воздух
+  BLACK_BANNER: Флаг
+  BLACK_BED: Кровать
+  BLACK_CARPET: Жёлтый Ковёр
+  BLACK_STAINED_GLASS: Жёлтое окрашенное стекло
+  BLACK_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  BLACK_TERRACOTTA: Жёлтая обожжённая глина
+  BLACK_WALL_BANNER: Настенный флаг
+  BLACK_WOOL: Жёлтая шерсть
+  BLAZE_POWDER: Огненный порошок
+  BLAZE_ROD: Огненный стержень
+  BLAZE_SPAWN_EGG: Яйцо призыва зомби
+  BLUE_BED: Кровать
+  BLUE_CARPET: Жёлтый Ковёр
+  BLUE_ICE: Воздух
+  BLUE_ORCHID: Белый тюльпан
+  BLUE_STAINED_GLASS: Жёлтое окрашенное стекло
+  BLUE_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  BLUE_TERRACOTTA: Жёлтая обожжённая глина
+  BLUE_WALL_BANNER: Настенный флаг
+  BLUE_WOOL: Жёлтая шерсть
+  BONE: Кость
+  BONE_MEAL: Красный краситель
+  BOOK: Книга
+  BOOKSHELF: Книжный шкаф
+  BOW: Лук
+  BOWL: Миска
+  BRAIN_CORAL: Воздух
+  BRAIN_CORAL_BLOCK: Воздух
+  BRAIN_CORAL_FAN: Воздух
+  BRAIN_CORAL_WALL_FAN: Воздух
+  BREAD: Хлеб
+  BREWING_STAND: Brewing Stand
+  BRICK: Brick
+  BRICKS: Кирпичный блок
+  BRICK_SLAB: Каменная плита
+  BRICK_STAIRS: Кирпичные ступени
+  BROWN_BANNER: Флаг
+  BROWN_BED: Кровать
+  BROWN_CARPET: Жёлтый Ковёр
+  BROWN_MUSHROOM: Коричневый гриб
+  BROWN_MUSHROOM_BLOCK: Блок коричневого гриба
+  BROWN_STAINED_GLASS: Жёлтое окрашенное стекло
+  BROWN_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  BROWN_TERRACOTTA: Жёлтая обожжённая глина
+  BROWN_WALL_BANNER: Настенный флаг
+  BROWN_WOOL: Жёлтая шерсть
+  BUBBLE_COLUMN: Воздух
+  BUBBLE_CORAL: Воздух
+  BUBBLE_CORAL_BLOCK: Воздух
+  BUBBLE_CORAL_FAN: Воздух
+  BUBBLE_CORAL_WALL_FAN: Воздух
+  BUCKET: Ведро
+  CACTUS: Кактус
+  CACTUS_GREEN: Красный краситель
+  CAKE: Торт
+  CARROT: Carrot
+  CARROTS: Морковь
+  CARROT_ON_A_STICK: Удочка с морковью
+  CARVED_PUMPKIN: Воздух
+  CAULDRON: Cauldron
+  CAVE_AIR: Воздух
+  CAVE_SPIDER_SPAWN_EGG: Яйцо призыва зомби
+  CHAINMAIL_BOOTS: Кольчужные ботинки
+  CHAINMAIL_CHESTPLATE: Кольчужная кираса
+  CHAINMAIL_HELMET: Кольчужный шлем
+  CHAINMAIL_LEGGINGS: Кольчужные поножи
+  CHAIN_COMMAND_BLOCK: Воздух
+  CHARCOAL: Уголь
+  CHEST: Сундук
+  CHEST_MINECART: Вагонетка с сундуком
+  CHICKEN: Сырая курятина
+  CHICKEN_SPAWN_EGG: Яйцо призыва зомби
+  CHIPPED_ANVIL: Наковальня
+  CHISELED_QUARTZ_BLOCK: Кварцевый пилон
+  CHISELED_RED_SANDSTONE: Гладкий красный песчаник
+  CHISELED_SANDSTONE: Гладкий песчаник
+  CHISELED_STONE_BRICKS: Каменный кирпич
+  CLAY: Глиняный блок
+  CLAY_BALL: Глина
+  CLOCK: Часы
+  COAL: Уголь
+  COAL_BLOCK: Угольный блок
+  COAL_ORE: Угольная руда
+  COARSE_DIRT: Подзол
+  COBBLESTONE: Булыжник
+  COBBLESTONE_SLAB: Каменная плита
+  COBBLESTONE_STAIRS: Булыжниковые ступени
+  COBBLESTONE_WALL: Замшелая булыжниковая стена
+  COBWEB: Паутина
+  COCOA: Плод какао
+  COCOA_BEANS: Красный краситель
+  COD: Воздух
+  COD_BUCKET: Воздух
+  COD_SPAWN_EGG: Воздух
+  COMMAND_BLOCK: Командный блок
+  COMMAND_BLOCK_MINECART: Вагонетка с командным блоком
+  COMPARATOR: Компаратор
+  COMPASS: Компас
+  CONDUIT: Воздух
+  COOKED_BEEF: Жареная говядина
+  COOKED_CHICKEN: Жареная курятина
+  COOKED_COD: Жареный лосось
+  COOKED_MUTTON: Жареная баранина
+  COOKED_PORKCHOP: Жареная свинина
+  COOKED_RABBIT: Жареная крольчатина
+  COOKED_SALMON: Жареный лосось
+  COOKIE: Печенье
+  COW_SPAWN_EGG: Яйцо призыва зомби
+  CRACKED_STONE_BRICKS: Каменный кирпич
+  CRAFTING_TABLE: Верстак
+  CREEPER_HEAD: Голова (Зомби)
+  CREEPER_SPAWN_EGG: Яйцо призыва зомби
+  CREEPER_WALL_HEAD: Голова
+  CUT_RED_SANDSTONE: Воздух
+  CUT_SANDSTONE: Воздух
+  CYAN_BANNER: Флаг
+  CYAN_BED: Кровать
+  CYAN_CARPET: Жёлтый Ковёр
+  CYAN_DYE: Красный краситель
+  CYAN_STAINED_GLASS: Жёлтое окрашенное стекло
+  CYAN_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  CYAN_TERRACOTTA: Жёлтая обожжённая глина
+  CYAN_WALL_BANNER: Настенный флаг
+  CYAN_WOOL: Жёлтая шерсть
+  DAMAGED_ANVIL: Наковальня
+  DANDELION: Одуванчик
+  DANDELION_YELLOW: Красный краситель
+  DARK_OAK_BUTTON: Воздух
+  DARK_OAK_DOOR: Dark Oak Door
+  DARK_OAK_FENCE: Забор из тёмного дуба
+  DARK_OAK_FENCE_GATE: Ворота из тёмного дуба
+  DARK_OAK_LEAVES: Листва тёмного дуба
+  DARK_OAK_LOG: Древесина тёмного дуба
+  DARK_OAK_PLANKS: Еловые доски
+  DARK_OAK_PRESSURE_PLATE: Воздух
+  DARK_OAK_SAPLING: Еловый саженец
+  DARK_OAK_SLAB: Хвойная плита
+  DARK_OAK_STAIRS: Ступени из тёмного дуба
+  DARK_OAK_TRAPDOOR: Воздух
+  DARK_OAK_WOOD: Воздух
+  DARK_PRISMARINE: Призмариновый кирпич
+  DARK_PRISMARINE_SLAB: Воздух
+  DARK_PRISMARINE_STAIRS: Воздух
+  DAYLIGHT_DETECTOR: Датчик дневного света
+  DEAD_BRAIN_CORAL: Воздух
+  DEAD_BRAIN_CORAL_BLOCK: Воздух
+  DEAD_BRAIN_CORAL_FAN: Воздух
+  DEAD_BRAIN_CORAL_WALL_FAN: Воздух
+  DEAD_BUBBLE_CORAL: Воздух
+  DEAD_BUBBLE_CORAL_BLOCK: Воздух
+  DEAD_BUBBLE_CORAL_FAN: Воздух
+  DEAD_BUBBLE_CORAL_WALL_FAN: Воздух
+  DEAD_BUSH: Сухой куст
+  DEAD_FIRE_CORAL: Воздух
+  DEAD_FIRE_CORAL_BLOCK: Воздух
+  DEAD_FIRE_CORAL_FAN: Воздух
+  DEAD_FIRE_CORAL_WALL_FAN: Воздух
+  DEAD_HORN_CORAL: Воздух
+  DEAD_HORN_CORAL_BLOCK: Воздух
+  DEAD_HORN_CORAL_FAN: Воздух
+  DEAD_HORN_CORAL_WALL_FAN: Воздух
+  DEAD_TUBE_CORAL: Воздух
+  DEAD_TUBE_CORAL_BLOCK: Воздух
+  DEAD_TUBE_CORAL_FAN: Воздух
+  DEAD_TUBE_CORAL_WALL_FAN: Воздух
+  DEBUG_STICK: Воздух
+  DETECTOR_RAIL: Нажимные рельсы
+  DIAMOND: Алмаз
+  DIAMOND_AXE: Алмазный топор
+  DIAMOND_BLOCK: Алмазный блок
+  DIAMOND_BOOTS: Алмазные ботинки
+  DIAMOND_CHESTPLATE: Алмазная кираса
+  DIAMOND_HELMET: Алмазный шлем
+  DIAMOND_HOE: Алмазная мотыга
+  DIAMOND_HORSE_ARMOR: Алмазная конская броня
+  DIAMOND_LEGGINGS: Алмазные поножи
+  DIAMOND_ORE: Алмазная руда
+  DIAMOND_PICKAXE: Алмазная кирка
+  DIAMOND_SHOVEL: Алмазная лопата
+  DIAMOND_SWORD: Алмазный меч
+  DIORITE: Камень
+  DIRT: Подзол
+  DISPENSER: Раздатчик
+  DOLPHIN_SPAWN_EGG: Воздух
+  DONKEY_SPAWN_EGG: Яйцо призыва зомби
+  DRAGON_EGG: Яйцо дракона
+  DRAGON_HEAD: Голова (Зомби)
+  DRAGON_WALL_HEAD: Голова
+  DRIED_KELP: Воздух
+  DRIED_KELP_BLOCK: Воздух
+  DROPPER: Выбрасыватель
+  DROWNED_SPAWN_EGG: Воздух
+  EGG: Яйцо
+  ELDER_GUARDIAN_SPAWN_EGG: Яйцо призыва зомби
+  EMERALD: Изумруд
+  EMERALD_BLOCK: Изумрудный блок
+  EMERALD_ORE: Изумрудная руда
+  ENCHANTED_BOOK: Зачарованная книга
+  ENCHANTED_GOLDEN_APPLE: Золотое яблоко
+  ENCHANTING_TABLE: Стол зачаровывания
+  ENDERMAN_SPAWN_EGG: Яйцо призыва зомби
+  ENDERMITE_SPAWN_EGG: Яйцо призыва зомби
+  ENDER_CHEST: Сундук Края
+  ENDER_EYE: Око Края
+  ENDER_PEARL: Жемчуг Края
+  END_PORTAL: Блок портала Края
+  END_PORTAL_FRAME: Рамка портала Края
+  END_STONE: Камень Края
+  EVOKER_SPAWN_EGG: Яйцо призыва зомби
+  EXPERIENCE_BOTTLE: Зелье опыта
+  FARMLAND: Грядка
+  FEATHER: Перо
+  FERMENTED_SPIDER_EYE: Приготовленный паучий глаз
+  FERN: Высокая трава
+  FILLED_MAP: Карта
+  FIRE: Огонь
+  FIREWORK_ROCKET: Ракета
+  FIREWORK_STAR: Звёздочка
+  FIRE_CHARGE: Огненный шар
+  FIRE_CORAL: Воздух
+  FIRE_CORAL_BLOCK: Воздух
+  FIRE_CORAL_FAN: Воздух
+  FIRE_CORAL_WALL_FAN: Воздух
+  FISHING_ROD: Удочка
+  FLINT: Кремень
+  FLINT_AND_STEEL: Огниво
+  FLOWER_POT: Flower Pot
+  FURNACE: Печь
+  FURNACE_MINECART: Вагонетка с печью
+  GHAST_SPAWN_EGG: Яйцо призыва зомби
+  GHAST_TEAR: Слеза гаста
+  GLASS: Стекло
+  GLASS_BOTTLE: Колба
+  GLASS_PANE: Стеклянная панель
+  GLISTERING_MELON_SLICE: Сверкающий ломтик арбуза
+  GLOWSTONE: Светокамень
+  GLOWSTONE_DUST: Светопыль
+  GOLDEN_APPLE: Золотое яблоко
+  GOLDEN_AXE: Золотой топор
+  GOLDEN_BOOTS: Золотые ботинки
+  GOLDEN_CARROT: Золотая морковь
+  GOLDEN_CHESTPLATE: Золотая кираса
+  GOLDEN_HELMET: Золотой шлем
+  GOLDEN_HOE: Золотая мотыга
+  GOLDEN_HORSE_ARMOR: Золотая конская броня
+  GOLDEN_LEGGINGS: Золотые поножи
+  GOLDEN_PICKAXE: Золотая кирка
+  GOLDEN_SHOVEL: Золотая лопата
+  GOLDEN_SWORD: Золотой меч
+  GOLD_BLOCK: Золотой блок
+  GOLD_INGOT: Золотой слиток
+  GOLD_NUGGET: Золотой самородок
+  GOLD_ORE: Золотая руда
+  GRANITE: Камень
+  GRASS: Grass
+  GRASS_BLOCK: Трава
+  GRAVEL: Гравий
+  GRAY_BANNER: Флаг
+  GRAY_BED: Кровать
+  GRAY_CARPET: Жёлтый Ковёр
+  GRAY_DYE: Красный краситель
+  GRAY_STAINED_GLASS: Жёлтое окрашенное стекло
+  GRAY_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  GRAY_TERRACOTTA: Жёлтая обожжённая глина
+  GRAY_WALL_BANNER: Настенный флаг
+  GRAY_WOOL: Жёлтая шерсть
+  GREEN_BANNER: Флаг
+  GREEN_BED: Кровать
+  GREEN_CARPET: Жёлтый Ковёр
+  GREEN_STAINED_GLASS: Жёлтое окрашенное стекло
+  GREEN_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  GREEN_TERRACOTTA: Жёлтая обожжённая глина
+  GREEN_WALL_BANNER: Настенный флаг
+  GREEN_WOOL: Жёлтая шерсть
+  GUARDIAN_SPAWN_EGG: Яйцо призыва зомби
+  GUNPOWDER: Порох
+  HAY_BLOCK: Сноп сена
+  HEART_OF_THE_SEA: Воздух
+  HEAVY_WEIGHTED_PRESSURE_PLATE: Утяжелённая нажимная пластина (Тяжёлая)
+  HOPPER: Загрузочная воронка
+  HOPPER_MINECART: Вагонетка с воронкой
+  HORN_CORAL: Воздух
+  HORN_CORAL_BLOCK: Воздух
+  HORN_CORAL_FAN: Воздух
+  HORN_CORAL_WALL_FAN: Воздух
+  HORSE_SPAWN_EGG: Яйцо призыва зомби
+  HUSK_SPAWN_EGG: Яйцо призыва зомби
+  ICE: Лёд
+  INFESTED_CHISELED_STONE_BRICKS: Stone Brick Monster Egg
+  INFESTED_COBBLESTONE: Stone Brick Monster Egg
+  INFESTED_CRACKED_STONE_BRICKS: Stone Brick Monster Egg
+  INFESTED_MOSSY_STONE_BRICKS: Stone Brick Monster Egg
+  INFESTED_STONE: Stone Brick Monster Egg
+  INFESTED_STONE_BRICKS: Stone Brick Monster Egg
+  INK_SAC: Красный краситель
+  IRON_AXE: Железный топор
+  IRON_BARS: Железная решётка
+  IRON_BLOCK: Железный блок
+  IRON_BOOTS: Железные ботинки
+  IRON_CHESTPLATE: Железная кираса
+  IRON_DOOR: Железная дверь
+  IRON_HELMET: Железный шлем
+  IRON_HOE: Железная мотыга
+  IRON_HORSE_ARMOR: Железная конская броня
+  IRON_INGOT: Железный слиток
+  IRON_LEGGINGS: Железные поножи
+  IRON_ORE: Железная руда
+  IRON_PICKAXE: Железная кирка
+  IRON_SHOVEL: Железная лопата
+  IRON_SWORD: Железный меч
+  IRON_TRAPDOOR: Железный люк
+  ITEM_FRAME: Рамка
+  JACK_O_LANTERN: Светильник Джека
+  JUKEBOX: Проигрыватель
+  JUNGLE_BUTTON: Воздух
+  JUNGLE_DOOR: Jungle Door
+  JUNGLE_FENCE: Джунглевый забор
+  JUNGLE_FENCE_GATE: Джунглевые ворота
+  JUNGLE_LEAVES: Хвойная листва
+  JUNGLE_LOG: Хвойная древесина
+  JUNGLE_PLANKS: Еловые доски
+  JUNGLE_PRESSURE_PLATE: Воздух
+  JUNGLE_SAPLING: Еловый саженец
+  JUNGLE_SLAB: Двойная каменная плита
+  JUNGLE_STAIRS: Ступени из дерева джунглей
+  JUNGLE_TRAPDOOR: Воздух
+  JUNGLE_WOOD: Воздух
+  KELP: Воздух
+  KELP_PLANT: Воздух
+  LADDER: Лестница
+  LAPIS_BLOCK: Лазуритовый блок
+  LAPIS_LAZULI: Красный краситель
+  LAPIS_ORE: Лазуритовая руда
+  LARGE_FERN: Подсолнечник
+  LAVA: Лава
+  LAVA_BUCKET: Ведро лавы
+  LEAD: Поводок
+  LEATHER: Кожа
+  LEATHER_BOOTS: Кожаные ботинки
+  LEATHER_CHESTPLATE: Кожаная кираса
+  LEATHER_HELMET: Кожаный шлем
+  LEATHER_LEGGINGS: Кожаные поножи
+  LEVER: Рычаг
+  LIGHT_BLUE_BANNER: Флаг
+  LIGHT_BLUE_BED: Кровать
+  LIGHT_BLUE_CARPET: Жёлтый Ковёр
+  LIGHT_BLUE_DYE: Красный краситель
+  LIGHT_BLUE_STAINED_GLASS: Жёлтое окрашенное стекло
+  LIGHT_BLUE_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  LIGHT_BLUE_TERRACOTTA: Жёлтая обожжённая глина
+  LIGHT_BLUE_WALL_BANNER: Настенный флаг
+  LIGHT_BLUE_WOOL: Жёлтая шерсть
+  LIGHT_GRAY_BANNER: Флаг
+  LIGHT_GRAY_BED: Кровать
+  LIGHT_GRAY_CARPET: Жёлтый Ковёр
+  LIGHT_GRAY_DYE: Красный краситель
+  LIGHT_GRAY_STAINED_GLASS: Жёлтое окрашенное стекло
+  LIGHT_GRAY_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  LIGHT_GRAY_TERRACOTTA: Жёлтая обожжённая глина
+  LIGHT_GRAY_WALL_BANNER: Настенный флаг
+  LIGHT_GRAY_WOOL: Жёлтая шерсть
+  LIGHT_WEIGHTED_PRESSURE_PLATE: Утяжелённая нажимная пластина (Лёгкая)
+  LILAC: Подсолнечник
+  LILY_PAD: Кувшинка
+  LIME_BANNER: Флаг
+  LIME_BED: Кровать
+  LIME_CARPET: Жёлтый Ковёр
+  LIME_DYE: Красный краситель
+  LIME_STAINED_GLASS: Жёлтое окрашенное стекло
+  LIME_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  LIME_TERRACOTTA: Жёлтая обожжённая глина
+  LIME_WALL_BANNER: Настенный флаг
+  LIME_WOOL: Жёлтая шерсть
+  LLAMA_SPAWN_EGG: Яйцо призыва зомби
+  MAGENTA_BANNER: Флаг
+  MAGENTA_BED: Кровать
+  MAGENTA_CARPET: Жёлтый Ковёр
+  MAGENTA_DYE: Красный краситель
+  MAGENTA_STAINED_GLASS: Жёлтое окрашенное стекло
+  MAGENTA_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  MAGENTA_TERRACOTTA: Жёлтая обожжённая глина
+  MAGENTA_WALL_BANNER: Настенный флаг
+  MAGENTA_WOOL: Жёлтая шерсть
+  MAGMA_CREAM: Лавовый крем
+  MAGMA_CUBE_SPAWN_EGG: Яйцо призыва зомби
+  MAP: Empty Map
+  MELON: Melonblock
+  MELON_SEEDS: Семена арбуза
+  MELON_SLICE: Ломтик арбуза
+  MELON_STEM: Melon Stem
+  MILK_BUCKET: Молоко
+  MINECART: Вагонетка
+  MOOSHROOM_SPAWN_EGG: Яйцо призыва зомби
+  MOSSY_COBBLESTONE: Замшелый булыжник
+  MOSSY_COBBLESTONE_WALL: Замшелая булыжниковая стена
+  MOSSY_STONE_BRICKS: Каменный кирпич
+  MOVING_PISTON: Piston Moving Piece
+  MULE_SPAWN_EGG: Яйцо призыва зомби
+  MUSHROOM_STEM: Воздух
+  MUSHROOM_STEW: Тушёные грибы
+  MUSIC_DISC_11: 11 Disc
+  MUSIC_DISC_13: 13 Disc
+  MUSIC_DISC_BLOCKS: Blocks Disc
+  MUSIC_DISC_CAT: Cat Disc
+  MUSIC_DISC_CHIRP: Chirp Disc
+  MUSIC_DISC_FAR: Far Disc
+  MUSIC_DISC_MALL: Mall Disc
+  MUSIC_DISC_MELLOHI: Mellohi Disc
+  MUSIC_DISC_STAL: Stal Disc
+  MUSIC_DISC_STRAD: Strad Disc
+  MUSIC_DISC_WAIT: Wait Disc
+  MUSIC_DISC_WARD: Ward Disc
+  MUTTON: Сырая баранина
+  MYCELIUM: Мицелий
+  NAME_TAG: Бирка
+  NAUTILUS_SHELL: Воздух
+  NETHERRACK: Адский камень
+  NETHER_BRICK: Nether Brick
+  NETHER_BRICKS: Блок адского кирпича
+  NETHER_BRICK_FENCE: Адский забор
+  NETHER_BRICK_SLAB: Каменная плита
+  NETHER_BRICK_STAIRS: Ступени из адского кирпича
+  NETHER_PORTAL: Блок портала Нижнего мира
+  NETHER_QUARTZ_ORE: Кварцевая руда Нижнего мира
+  NETHER_STAR: Звезда Нижнего мира
+  NETHER_WART: Семена адского нароста
+  NOTE_BLOCK: Музыкальный блок
+  OAK_BOAT: Дубовая лодка
+  OAK_BUTTON: Деревянная кнопка
+  OAK_DOOR: Wooden Door
+  OAK_FENCE: Забор
+  OAK_FENCE_GATE: Ворота
+  OAK_LEAVES: Хвойная листва
+  OAK_LOG: Хвойная древесина
+  OAK_PLANKS: Еловые доски
+  OAK_PRESSURE_PLATE: Деревянная нажимная пластина
+  OAK_SAPLING: Еловый саженец
+  OAK_SLAB: Хвойная плита
+  OAK_STAIRS: Дубовые ступени
+  OAK_TRAPDOOR: Люк
+  OAK_WOOD: Воздух
+  OBSIDIAN: Обсидиан
+  OCELOT_SPAWN_EGG: Яйцо призыва зомби
+  ORANGE_BANNER: Флаг
+  ORANGE_BED: Кровать
+  ORANGE_CARPET: Жёлтый Ковёр
+  ORANGE_DYE: Красный краситель
+  ORANGE_STAINED_GLASS: Жёлтое окрашенное стекло
+  ORANGE_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  ORANGE_TERRACOTTA: Жёлтая обожжённая глина
+  ORANGE_TULIP: Белый тюльпан
+  ORANGE_WALL_BANNER: Настенный флаг
+  ORANGE_WOOL: Жёлтая шерсть
+  OXEYE_DAISY: Белый тюльпан
+  PACKED_ICE: Плотный лёд
+  PAINTING: Картина
+  PAPER: Бумага
+  PARROT_SPAWN_EGG: Яйцо призыва зомби
+  PEONY: Подсолнечник
+  PETRIFIED_OAK_SLAB: Воздух
+  PHANTOM_MEMBRANE: Воздух
+  PHANTOM_SPAWN_EGG: Воздух
+  PIG_SPAWN_EGG: Яйцо призыва зомби
+  PINK_BANNER: Флаг
+  PINK_BED: Кровать
+  PINK_CARPET: Жёлтый Ковёр
+  PINK_DYE: Красный краситель
+  PINK_STAINED_GLASS: Жёлтое окрашенное стекло
+  PINK_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  PINK_TERRACOTTA: Жёлтая обожжённая глина
+  PINK_TULIP: Белый тюльпан
+  PINK_WALL_BANNER: Настенный флаг
+  PINK_WOOL: Жёлтая шерсть
+  PISTON: Поршень
+  PISTON_HEAD: Головка поршня
+  PLAYER_HEAD: Голова (Зомби)
+  PLAYER_WALL_HEAD: Голова
+  PODZOL: Подзол
+  POISONOUS_POTATO: Ядовитый картофель
+  POLAR_BEAR_SPAWN_EGG: Яйцо призыва зомби
+  POLISHED_ANDESITE: Камень
+  POLISHED_DIORITE: Камень
+  POLISHED_GRANITE: Камень
+  POPPY: Белый тюльпан
+  PORKCHOP: Сырая свинина
+  POTATO: Potato
+  POTATOES: Картофель
+  POTION: Potion
+  POTTED_ACACIA_SAPLING: Воздух
+  POTTED_ALLIUM: Воздух
+  POTTED_AZURE_BLUET: Воздух
+  POTTED_BIRCH_SAPLING: Воздух
+  POTTED_BLUE_ORCHID: Воздух
+  POTTED_BROWN_MUSHROOM: Воздух
+  POTTED_CACTUS: Воздух
+  POTTED_DANDELION: Воздух
+  POTTED_DARK_OAK_SAPLING: Воздух
+  POTTED_DEAD_BUSH: Воздух
+  POTTED_FERN: Воздух
+  POTTED_JUNGLE_SAPLING: Воздух
+  POTTED_OAK_SAPLING: Воздух
+  POTTED_ORANGE_TULIP: Воздух
+  POTTED_OXEYE_DAISY: Воздух
+  POTTED_PINK_TULIP: Воздух
+  POTTED_POPPY: Воздух
+  POTTED_RED_MUSHROOM: Воздух
+  POTTED_RED_TULIP: Воздух
+  POTTED_SPRUCE_SAPLING: Воздух
+  POTTED_WHITE_TULIP: Воздух
+  POWERED_RAIL: Электрические рельсы
+  PRISMARINE: Призмариновый кирпич
+  PRISMARINE_BRICKS: Призмариновый кирпич
+  PRISMARINE_BRICK_SLAB: Воздух
+  PRISMARINE_BRICK_STAIRS: Воздух
+  PRISMARINE_CRYSTALS: Призмариновый кристалл
+  PRISMARINE_SHARD: Призмариновый осколок
+  PRISMARINE_SLAB: Воздух
+  PRISMARINE_STAIRS: Воздух
+  PUFFERFISH: Сырая рыба
+  PUFFERFISH_BUCKET: Воздух
+  PUFFERFISH_SPAWN_EGG: Воздух
+  PUMPKIN: Тыква
+  PUMPKIN_PIE: Тыквенный пирог
+  PUMPKIN_SEEDS: Семена тыквы
+  PUMPKIN_STEM: Pumpkin Stem
+  PURPLE_BANNER: Флаг
+  PURPLE_BED: Кровать
+  PURPLE_CARPET: Жёлтый Ковёр
+  PURPLE_DYE: Красный краситель
+  PURPLE_STAINED_GLASS: Жёлтое окрашенное стекло
+  PURPLE_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  PURPLE_TERRACOTTA: Жёлтая обожжённая глина
+  PURPLE_WALL_BANNER: Настенный флаг
+  PURPLE_WOOL: Жёлтая шерсть
+  QUARTZ: Кварц Нижнего мира
+  QUARTZ_BLOCK: Кварцевый пилон
+  QUARTZ_PILLAR: Кварцевый пилон
+  QUARTZ_SLAB: Каменная плита
+  QUARTZ_STAIRS: Кварцевые ступени
+  RABBIT: Сырая крольчатина
+  RABBIT_FOOT: Кроличья лапка
+  RABBIT_HIDE: Кроличья шкурка
+  RABBIT_SPAWN_EGG: Яйцо призыва зомби
+  RABBIT_STEW: Тушёный кролик
+  RAIL: Рельсы
+  REDSTONE: Красная пыль
+  REDSTONE_BLOCK: Блок красного камня
+  REDSTONE_LAMP: Лампа (выкл.)
+  REDSTONE_ORE: Красная руда
+  REDSTONE_TORCH: Красный факел (вкл)
+  REDSTONE_WALL_TORCH: Красный факел (вкл)
+  REDSTONE_WIRE: Красный провод
+  RED_BANNER: Флаг
+  RED_BED: Кровать
+  RED_CARPET: Жёлтый Ковёр
+  RED_MUSHROOM: Красный гриб
+  RED_MUSHROOM_BLOCK: Блок красного гриба
+  RED_SAND: Песок
+  RED_SANDSTONE: Гладкий красный песчаник
+  RED_SANDSTONE_SLAB: Плита из красного песчаника
+  RED_SANDSTONE_STAIRS: Ступени из красного песчаника
+  RED_STAINED_GLASS: Жёлтое окрашенное стекло
+  RED_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  RED_TERRACOTTA: Жёлтая обожжённая глина
+  RED_TULIP: Белый тюльпан
+  RED_WALL_BANNER: Настенный флаг
+  RED_WOOL: Жёлтая шерсть
+  REPEATER: Красный повторитель
+  REPEATING_COMMAND_BLOCK: Воздух
+  ROSE_BUSH: Подсолнечник
+  ROSE_RED: Красный краситель
+  ROTTEN_FLESH: Гнилая плоть
+  SADDLE: Седло
+  SALMON: Сырая рыба
+  SALMON_BUCKET: Воздух
+  SALMON_SPAWN_EGG: Воздух
+  SAND: Песок
+  SANDSTONE: Гладкий песчаник
+  SANDSTONE_SLAB: Каменная плита
+  SANDSTONE_STAIRS: Песчаниковые ступени
+  SCUTE: Воздух
+  SEAGRASS: Воздух
+  SEA_LANTERN: Морской фонарь
+  SEA_PICKLE: Воздух
+  SHEARS: Ножницы
+  SHEEP_SPAWN_EGG: Яйцо призыва зомби
+  SHULKER_SPAWN_EGG: Яйцо призыва зомби
+  SIGN: Табличка
+  SILVERFISH_SPAWN_EGG: Яйцо призыва зомби
+  SKELETON_HORSE_SPAWN_EGG: Яйцо призыва зомби
+  SKELETON_SKULL: Голова (Зомби)
+  SKELETON_SPAWN_EGG: Яйцо призыва зомби
+  SKELETON_WALL_SKULL: Голова
+  SLIME_BALL: Слизь
+  SLIME_BLOCK: Блок слизи
+  SLIME_SPAWN_EGG: Яйцо призыва зомби
+  SMOOTH_QUARTZ: Воздух
+  SMOOTH_RED_SANDSTONE: Гладкий красный песчаник
+  SMOOTH_SANDSTONE: Гладкий песчаник
+  SMOOTH_STONE: Воздух
+  SNOW: Снег
+  SNOWBALL: Снежок
+  SNOW_BLOCK: Блок снега
+  SOUL_SAND: Песок душ
+  SPAWNER: Спаунер мобов
+  SPIDER_EYE: Паучий глаз
+  SPIDER_SPAWN_EGG: Яйцо призыва зомби
+  SPONGE: Влажная губка
+  SPRUCE_BUTTON: Воздух
+  SPRUCE_DOOR: Spruce Door
+  SPRUCE_FENCE: Еловый забор
+  SPRUCE_FENCE_GATE: Еловые ворота
+  SPRUCE_LEAVES: Хвойная листва
+  SPRUCE_LOG: Хвойная древесина
+  SPRUCE_PLANKS: Еловые доски
+  SPRUCE_PRESSURE_PLATE: Воздух
+  SPRUCE_SAPLING: Еловый саженец
+  SPRUCE_SLAB: Хвойная плита
+  SPRUCE_STAIRS: Еловые ступени
+  SPRUCE_TRAPDOOR: Воздух
+  SPRUCE_WOOD: Воздух
+  SQUID_SPAWN_EGG: Яйцо призыва зомби
+  STICK: Палка
+  STICKY_PISTON: Липкий поршень
+  STONE: Камень
+  STONE_AXE: Каменный топор
+  STONE_BRICKS: Каменный кирпич
+  STONE_BRICK_SLAB: Каменная плита
+  STONE_BRICK_STAIRS: Каменнокирпичные ступени
+  STONE_BUTTON: Каменная кнопка
+  STONE_HOE: Каменная мотыга
+  STONE_PICKAXE: Каменная кирка
+  STONE_PRESSURE_PLATE: Каменная нажимная пластина
+  STONE_SHOVEL: Каменная лопата
+  STONE_SLAB: Каменная плита
+  STONE_SWORD: Каменный меч
+  STRAY_SPAWN_EGG: Яйцо призыва зомби
+  STRING: Нить
+  STRIPPED_ACACIA_LOG: Воздух
+  STRIPPED_ACACIA_WOOD: Воздух
+  STRIPPED_BIRCH_LOG: Воздух
+  STRIPPED_BIRCH_WOOD: Воздух
+  STRIPPED_DARK_OAK_LOG: Воздух
+  STRIPPED_DARK_OAK_WOOD: Воздух
+  STRIPPED_JUNGLE_LOG: Воздух
+  STRIPPED_JUNGLE_WOOD: Воздух
+  STRIPPED_OAK_LOG: Воздух
+  STRIPPED_OAK_WOOD: Воздух
+  STRIPPED_SPRUCE_LOG: Воздух
+  STRIPPED_SPRUCE_WOOD: Воздух
+  SUGAR: Сахар
+  SUGAR_CANE: Сахарный тростник
+  SUNFLOWER: Подсолнечник
+  TALL_GRASS: Высокая трава
+  TALL_SEAGRASS: Воздух
+  TERRACOTTA: Обожжённая глина
+  TNT: ТНТ
+  TNT_MINECART: Вагонетка с ТНТ
+  TORCH: Факел
+  TRAPPED_CHEST: Сундук-ловушка
+  TRIDENT: Воздух
+  TRIPWIRE: Растяжка
+  TRIPWIRE_HOOK: Натяжной датчик
+  TROPICAL_FISH: Сырая рыба
+  TROPICAL_FISH_BUCKET: Воздух
+  TROPICAL_FISH_SPAWN_EGG: Воздух
+  TUBE_CORAL: Воздух
+  TUBE_CORAL_BLOCK: Воздух
+  TUBE_CORAL_FAN: Воздух
+  TUBE_CORAL_WALL_FAN: Воздух
+  TURTLE_EGG: Воздух
+  TURTLE_HELMET: Воздух
+  TURTLE_SPAWN_EGG: Воздух
+  VEX_SPAWN_EGG: Яйцо призыва зомби
+  VILLAGER_SPAWN_EGG: Яйцо призыва зомби
+  VINDICATOR_SPAWN_EGG: Яйцо призыва зомби
+  VINE: Лианы
+  VOID_AIR: Воздух
+  WALL_SIGN: Настенная табличка
+  WALL_TORCH: Факел
+  WATER: Вода
+  WATER_BUCKET: Ведро воды
+  WET_SPONGE: Влажная губка
+  WHEAT: Пшеница
+  WHEAT_SEEDS: Семена пшеницы
+  WHITE_BANNER: Флаг
+  WHITE_BED: Кровать
+  WHITE_CARPET: Жёлтый Ковёр
+  WHITE_STAINED_GLASS: Жёлтое окрашенное стекло
+  WHITE_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  WHITE_TERRACOTTA: Жёлтая обожжённая глина
+  WHITE_TULIP: Белый тюльпан
+  WHITE_WALL_BANNER: Настенный флаг
+  WHITE_WOOL: Жёлтая шерсть
+  WITCH_SPAWN_EGG: Яйцо призыва зомби
+  WITHER_SKELETON_SKULL: Голова (Зомби)
+  WITHER_SKELETON_SPAWN_EGG: Яйцо призыва зомби
+  WITHER_SKELETON_WALL_SKULL: Голова
+  WOLF_SPAWN_EGG: Яйцо призыва зомби
+  WOODEN_AXE: Деревянный топор
+  WOODEN_HOE: Деревянная мотыга
+  WOODEN_PICKAXE: Деревянная кирка
+  WOODEN_SHOVEL: Деревянная лопата
+  WOODEN_SWORD: Деревянный меч
+  WRITABLE_BOOK: Book and Quill
+  WRITTEN_BOOK: Written Book
+  YELLOW_BANNER: Флаг
+  YELLOW_BED: Кровать
+  YELLOW_CARPET: Жёлтый Ковёр
+  YELLOW_STAINED_GLASS: Жёлтое окрашенное стекло
+  YELLOW_STAINED_GLASS_PANE: Жёлтая стеклянная панель
+  YELLOW_TERRACOTTA: Жёлтая обожжённая глина
+  YELLOW_WALL_BANNER: Настенный флаг
+  YELLOW_WOOL: Жёлтая шерсть
+  ZOMBIE_HEAD: Голова (Зомби)
+  ZOMBIE_HORSE_SPAWN_EGG: Яйцо призыва зомби
+  ZOMBIE_PIGMAN_SPAWN_EGG: Яйцо призыва зомби
+  ZOMBIE_SPAWN_EGG: Яйцо призыва зомби
+  ZOMBIE_VILLAGER_SPAWN_EGG: Яйцо призыва зомби
+  ZOMBIE_WALL_HEAD: Голова
+  ACACIA_SIGN: Воздух
+  ACACIA_WALL_SIGN: Воздух
+  ANDESITE_SLAB: Воздух
+  ANDESITE_STAIRS: Воздух
+  ANDESITE_WALL: Воздух
+  BAMBOO: Воздух
+  BAMBOO_SAPLING: Воздух
+  BARREL: Воздух
+  BELL: Воздух
+  BIRCH_SIGN: Воздух
+  BIRCH_WALL_SIGN: Воздух
+  BLACK_DYE: Воздух
+  BLAST_FURNACE: Воздух
+  BLUE_DYE: Воздух
+  BRICK_WALL: Воздух
+  BROWN_DYE: Воздух
+  CAMPFIRE: Воздух
+  CARTOGRAPHY_TABLE: Воздух
+  CAT_SPAWN_EGG: Воздух
+  CORNFLOWER: Воздух
+  CREEPER_BANNER_PATTERN: Воздух
+  CROSSBOW: Воздух
+  CUT_RED_SANDSTONE_SLAB: Воздух
+  CUT_SANDSTONE_SLAB: Воздух
+  DARK_OAK_SIGN: Воздух
+  DARK_OAK_WALL_SIGN: Воздух
+  DIORITE_SLAB: Воздух
+  DIORITE_STAIRS: Воздух
+  DIORITE_WALL: Воздух
+  END_STONE_BRICK_SLAB: Воздух
+  END_STONE_BRICK_STAIRS: Воздух
+  END_STONE_BRICK_WALL: Воздух
+  FLETCHING_TABLE: Воздух
+  FLOWER_BANNER_PATTERN: Воздух
+  FOX_SPAWN_EGG: Воздух
+  GLOBE_BANNER_PATTERN: Воздух
+  GRANITE_SLAB: Воздух
+  GRANITE_STAIRS: Воздух
+  GRANITE_WALL: Воздух
+  GREEN_DYE: Воздух
+  GRINDSTONE: Воздух
+  JIGSAW: Воздух
+  JUNGLE_SIGN: Воздух
+  JUNGLE_WALL_SIGN: Воздух
+  LANTERN: Воздух
+  LEATHER_HORSE_ARMOR: Воздух
+  LECTERN: Воздух
+  LILY_OF_THE_VALLEY: Воздух
+  LOOM: Воздух
+  MOJANG_BANNER_PATTERN: Воздух
+  MOSSY_COBBLESTONE_SLAB: Воздух
+  MOSSY_COBBLESTONE_STAIRS: Воздух
+  MOSSY_STONE_BRICK_SLAB: Воздух
+  MOSSY_STONE_BRICK_STAIRS: Воздух
+  MOSSY_STONE_BRICK_WALL: Воздух
+  NETHER_BRICK_WALL: Воздух
+  OAK_SIGN: Воздух
+  OAK_WALL_SIGN: Воздух
+  PANDA_SPAWN_EGG: Воздух
+  PILLAGER_SPAWN_EGG: Воздух
+  POLISHED_ANDESITE_STAIRS: Воздух
+  POLISHED_ANDESITE_SLAB: Воздух
+  POLISHED_DIORITE_SLAB: Воздух
+  POLISHED_DIORITE_STAIRS: Воздух
+  POLISHED_GRANITE_SLAB: Воздух
+  POLISHED_GRANITE_STAIRS: Воздух
+  POTTED_BAMBOO: Воздух
+  POTTED_CORNFLOWER: Воздух
+  POTTED_LILY_OF_THE_VALLEY: Воздух
+  POTTED_WITHER_ROSE: Воздух
+  PRISMARINE_WALL: Воздух
+  RAVAGER_SPAWN_EGG: Воздух
+  RED_DYE: Воздух
+  RED_NETHER_BRICK_SLAB: Воздух
+  RED_NETHER_BRICK_STAIRS: Воздух
+  RED_NETHER_BRICK_WALL: Воздух
+  RED_SANDSTONE_WALL: Воздух
+  SANDSTONE_WALL: Воздух
+  SCAFFOLDING: Воздух
+  SKULL_BANNER_PATTERN: Воздух
+  SMITHING_TABLE: Воздух
+  SMOKER: Воздух
+  SMOOTH_QUARTZ_SLAB: Воздух
+  SMOOTH_QUARTZ_STAIRS: Воздух
+  SMOOTH_RED_SANDSTONE_SLAB: Воздух
+  SMOOTH_RED_SANDSTONE_STAIRS: Воздух
+  SMOOTH_SANDSTONE_SLAB: Воздух
+  SMOOTH_SANDSTONE_STAIRS: Воздух
+  SMOOTH_STONE_SLAB: Воздух
+  SPRUCE_SIGN: Воздух
+  SPRUCE_WALL_SIGN: Воздух
+  STONECUTTER: Воздух
+  STONE_BRICK_WALL: Воздух
+  STONE_STAIRS: Воздух
+  SUSPICIOUS_STEW: Воздух
+  SWEET_BERRIES: Воздух
+  SWEET_BERRY_BUSH: Воздух
+  TRADER_LLAMA_SPAWN_EGG: Воздух
+  WANDERING_TRADER_SPAWN_EGG: Воздух
+  WHITE_DYE: Воздух
+  WITHER_ROSE: Воздух
+  YELLOW_DYE: Воздух
+  COMPOSTER: Воздух
+  LEGACY_STATIONARY_WATER: Неподвижная вода
+  LEGACY_STATIONARY_LAVA: Неподвижная лава
+  LEGACY_BURNING_FURNACE: Горящая печь
+  LEGACY_NETHER_WARTS: Адский нарост
+  LEGACY_IRON_DOOR_BLOCK: Железная дверь
+  LEGACY_GLOWING_REDSTONE_ORE: Светящаяся красная руда
+  LEGACY_SUGAR_CANE_BLOCK: Сахарный тростник
+  LEGACY_RAW_FISH: Сырая рыба
+  LEGACY_SKULL: Голова
+  LEGACY_SIGN_POST: Напольная табличка
+  LEGACY_BED_BLOCK: Кровать
+  LEGACY_REDSTONE_TORCH_OFF: Красный факел (выкл)
+  LEGACY_REDSTONE_TORCH_ON: Красный факел (вкл)
+  LEGACY_CAKE_BLOCK: Торт
+  LEGACY_DIODE_BLOCK_OFF: Красный повторитель (выкл)
+  LEGACY_DIODE_BLOCK_ON: Красный повторитель (вкл)
+  LEGACY_BREWING_STAND: Варочная стойка
+  LEGACY_REDSTONE_LAMP_ON: LEGACY_REDSTONE_LAMP_ON
+  LEGACY_REDSTONE_COMPARATOR_OFF: Компаратор (неактивный)
+  LEGACY_REDSTONE_COMPARATOR_ON: Компаратор (активный)
+  LEGACY_WOODEN_DOOR_BLOCK: Деревянная дверь
+  LEGACY_SPRUCE_DOOR: Еловая дверь
+  LEGACY_BIRCH_DOOR: Берёзовая дверь
+  LEGACY_JUNGLE_DOOR: Джунглевая дверь
+  LEGACY_ACACIA_DOOR: Дверь из акации
+  LEGACY_DARK_OAK_DOOR: Дверь из тёмного дуба
+  LEGACY_WHEAT: Пшеница
+EntityList:
+  30-ARMOR_STAND: Armor Stand
+  50-CREEPER: Крипер
+  51-SKELETON: Скелет
+  52-SPIDER: Паук
+  53-GIANT: Гигант
+  54-ZOMBIE: Зомби
+  55-SLIME: Слизень
+  56-GHAST: Гаст
+  57-PIG_ZOMBIE: Зомби-свиночеловек
+  58-ENDERMAN: Странник Края
+  59-CAVE_SPIDER: Пещерный паук
+  60-SILVERFISH: Чешуйница
+  61-BLAZE: Ифрит
+  62-MAGMA_CUBE: Лавовый куб
+  63-ENDER_DRAGON: Дракон Края
+  64-WITHER: Иссушитель
+  65-BAT: Летучая мышь
+  66-WITCH: Ведьма
+  67-ENDERMITE: Чешуйница Края
+  68-GUARDIAN: Страж
+  90-PIG: Свинья
+  91-SHEEP: Овца
+  92-COW: Корова
+  93-CHICKEN: Курица
+  94-SQUID: Спрут
+  95-WOLF: Волк
+  96-MUSHROOM_COW: Грибная корова
+  97-SNOWMAN: Снежный голем
+  98-OCELOT: Оцелот
+  99-IRON_GOLEM: Железный голем
+  100-HORSE: Лошадь
+  101-RABBIT: Кролик
+  120-VILLAGER: Деревенский житель
+  914-PLAYER: Player
+EnchantList:
+  Protection: Protection
+  Unknown: Unknown
+  Thorns: Thorns
+  Depth strider: Depth strider
+  Knockback: Knockback
+  Fire aspect: Fire aspect
+  Silk touch: Silk touch
+  Lure: Lure
+ColorList:
+  0-white: '&fWhite'
+  1-orange: '&6Orange'
+  2-magenta: '&dMagenta'
+  3-light_blue: '&9Light Blue'
+  4-yellow: '&eYellow'
+  5-lime: '&aLime'
+  6-pink: '&dPink'
+  7-gray: '&8Gray'
+  8-light_gray: '&7Light Gray'
+  9-cyan: '&3Cyan'
+  10-purple: '&5Purple'
+  11-blue: '&1Blue'
+  12-brown: '&4Brown'
+  13-green: '&2Green'
+  14-red: '&cRed'
+  15-black: '&0Black'

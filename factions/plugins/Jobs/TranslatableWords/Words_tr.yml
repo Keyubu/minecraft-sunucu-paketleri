@@ -1,0 +1,598 @@
+ItemList:
+  447-BOAT_ACACIA: Acacia Boat
+  430-ACACIA_DOOR_ITEM: Acacia Door
+  192-ACACIA_FENCE: Acacia Fence
+  187-ACACIA_FENCE_GATE: Acacia Fence Gate
+  161-LEAVES_2: Acacia Leaves
+  162-LOG_2: Acacia Log
+  5-WOOD: Acacia Wood Plank
+  6-SAPLING: Acacia Sapling
+  126-WOOD_STEP: Acacia Wood Slab
+  163-ACACIA_STAIRS: Acacia Stairs
+  157-ACTIVATOR_RAIL: Activator Rail
+  0-AIR: Air
+  38-RED_ROSE: Allium
+  1-STONE: Andesite
+  145-ANVIL: Anvil
+  260-APPLE: Apple
+  416-ARMOR_STAND: Armor Stand
+  262-ARROW: Arrow
+  393-BAKED_POTATO: Baked Potato
+  166-BARRIER: Barrier
+  383-MONSTER_EGG: Spawn Bat
+  138-BEACON: Beacon
+  7-BEDROCK: Bedrock
+  363-RAW_BEEF: Raw Beef
+  434-BEETROOT: Beetroot
+  207-BEETROOT_BLOCK: Beetroots
+  435-BEETROOT_SEEDS: Beetroot Seeds
+  436-BEETROOT_SOUP: Beetroot Soup
+  445-BOAT_BIRCH: Birch Boat
+  428-BIRCH_DOOR_ITEM: Birch Door
+  189-BIRCH_FENCE: Birch Fence
+  184-BIRCH_FENCE_GATE: Birch Fence Gate
+  18-LEAVES: Birch Leaves
+  17-LOG: Birch Log
+  135-BIRCH_WOOD_STAIRS: Birch Wood Stairs
+  425-BANNER: Banner
+  355-BED: Black Bed
+  171-CARPET: Black Carpet
+  251-CONCRETE: Black Concrete
+  252-CONCRETE_POWDER: Black Concrete Powder
+  250-BLACK_GLAZED_TERRACOTTA: Black Glazed Terracotta
+  234-BLACK_SHULKER_BOX: Black Shulker Box
+  95-STAINED_GLASS: Black Stained Glass
+  160-STAINED_GLASS_PANE: Black Stained Glass Pane
+  159-STAINED_CLAY: Black Terracotta
+  177-WALL_BANNER: Black Banner
+  35-WOOL: Black Wool
+  377-BLAZE_POWDER: Blaze Powder
+  369-BLAZE_ROD: Blaze Rod
+  245-PURPLE_GLAZED_TERRACOTTA: Blue Banner
+  246-BLUE_GLAZED_TERRACOTTA: Blue Glazed Terracotta
+  230-BLUE_SHULKER_BOX: Blue Shulker Box
+  352-BONE: Bone
+  216-BONE_BLOCK: Bone Block
+  351-INK_SACK: Bone Meal
+  340-BOOK: Book
+  47-BOOKSHELF: Bookshelf
+  261-BOW: Bow
+  281-BOWL: Bowl
+  297-BREAD: Bread
+  379-BREWING_STAND_ITEM: Brewing Stand
+  336-CLAY_BRICK: Brick
+  45-BRICK: Bricks
+  44-STEP: Brick Slab
+  108-BRICK_STAIRS: Brick Stairs
+  247-BROWN_GLAZED_TERRACOTTA: Brown Glazed Terracotta
+  39-BROWN_MUSHROOM: Brown Mushroom
+  99-HUGE_MUSHROOM_1: Brown Mushroom Block
+  231-BROWN_SHULKER_BOX: Brown Shulker Box
+  325-BUCKET: Bucket
+  81-CACTUS: Cactus
+  354-CAKE: Cake
+  391-CARROT_ITEM: Carrot
+  141-CARROT: Carrots
+  398-CARROT_STICK: Carrot on a Stick
+  380-CAULDRON_ITEM: Cauldron
+  305-CHAINMAIL_BOOTS: Chainmail Boots
+  303-CHAINMAIL_CHESTPLATE: Chainmail Chestplate
+  302-CHAINMAIL_HELMET: Chainmail Helmet
+  304-CHAINMAIL_LEGGINGS: Chainmail Leggings
+  263-COAL: Charcoal
+  54-CHEST: Chest
+  342-STORAGE_MINECART: Minecart with Chest
+  365-RAW_CHICKEN: Raw Chicken
+  155-QUARTZ_BLOCK: Chiseled Quartz Block
+  179-RED_SANDSTONE: Chiseled Red Sandstone
+  24-SANDSTONE: Chiseled Sandstone
+  98-SMOOTH_BRICK: Chiseled Stone Bricks
+  200-CHORUS_FLOWER: Chorus Flower
+  432-CHORUS_FRUIT: Chorus Fruit
+  199-CHORUS_PLANT: Chorus Plant
+  82-CLAY: Clay
+  337-CLAY_BALL: Clay Ball
+  347-WATCH: Clock
+  173-COAL_BLOCK: Block of Coal
+  16-COAL_ORE: Coal Ore
+  3-DIRT: Coarse Dirt
+  4-COBBLESTONE: Cobblestone
+  67-COBBLESTONE_STAIRS: Cobblestone Stairs
+  139-COBBLE_WALL: Cobblestone Wall
+  30-WEB: Cobweb
+  127-COCOA: Cocoa
+  137-COMMAND: Command Block
+  422-COMMAND_MINECART: Minecart with Command Block
+  404-REDSTONE_COMPARATOR: Redstone Comparator
+  345-COMPASS: Compass
+  364-COOKED_BEEF: Steak
+  366-COOKED_CHICKEN: Cooked Chicken
+  350-COOKED_FISH: Cooked Fish
+  424-COOKED_MUTTON: Cooked Mutton
+  320-GRILLED_PORK: Cooked Porkchop
+  412-COOKED_RABBIT: Cooked Rabbit
+  357-COOKIE: Cookie
+  58-WORKBENCH: Crafting Table
+  397-SKULL_ITEM: Mob Head (Creeper)
+  144-SKULL: Creeper Wall Head
+  244-CYAN_GLAZED_TERRACOTTA: Cyan Glazed Terracotta
+  228-CYAN_SHULKER_BOX: Cyan Shulker Box
+  37-YELLOW_FLOWER: Dandelion
+  448-BOAT_DARK_OAK: Dark Oak Boat
+  431-DARK_OAK_DOOR_ITEM: Dark Oak Door
+  191-DARK_OAK_FENCE: Dark Oak Fence
+  186-DARK_OAK_FENCE_GATE: Dark Oak Fence Gate
+  164-DARK_OAK_STAIRS: Dark Oak Stairs
+  168-PRISMARINE: Dark Prismarine
+  151-DAYLIGHT_DETECTOR: Daylight Detector
+  32-DEAD_BUSH: Dead Bush
+  28-DETECTOR_RAIL: Detector Rail
+  264-DIAMOND: Diamond
+  279-DIAMOND_AXE: Diamond Axe
+  57-DIAMOND_BLOCK: Block of Diamond
+  313-DIAMOND_BOOTS: Diamond Boots
+  311-DIAMOND_CHESTPLATE: Diamond Chestplate
+  310-DIAMOND_HELMET: Diamond Helmet
+  293-DIAMOND_HOE: Diamond Hoe
+  419-DIAMOND_BARDING: Diamond Horse Armor
+  312-DIAMOND_LEGGINGS: Diamond Leggings
+  56-DIAMOND_ORE: Diamond Ore
+  278-DIAMOND_PICKAXE: Diamond Pickaxe
+  277-DIAMOND_SPADE: Diamond Shovel
+  276-DIAMOND_SWORD: Diamond Sword
+  23-DISPENSER: Dispenser
+  437-DRAGONS_BREATH: Dragon's Breath
+  122-DRAGON_EGG: Dragon Egg
+  158-DROPPER: Dropper
+  175-DOUBLE_PLANT: Double Tall Grass
+  344-EGG: Egg
+  443-ELYTRA: Elytra
+  388-EMERALD: Emerald
+  133-EMERALD_BLOCK: Emerald Block
+  129-EMERALD_ORE: Emerald Ore
+  403-ENCHANTED_BOOK: Enchanted Book
+  322-GOLDEN_APPLE: Enchanted Golden Apple
+  116-ENCHANTMENT_TABLE: Enchanting Table
+  130-ENDER_CHEST: Ender Chest
+  381-EYE_OF_ENDER: Eye of Ender
+  368-ENDER_PEARL: Ender Pearl
+  426-END_CRYSTAL: End Crystal
+  209-END_GATEWAY: End Gateway
+  119-ENDER_PORTAL: End Portal
+  120-ENDER_PORTAL_FRAME: End Portal Frame
+  198-END_ROD: End Rod
+  121-ENDER_STONE: End Stone
+  206-END_BRICKS: End Stone Bricks
+  384-EXP_BOTTLE: Bottle o' Enchanting
+  60-SOIL: Farmland
+  288-FEATHER: Feather
+  376-FERMENTED_SPIDER_EYE: Fermented Spider Eye
+  31-LONG_GRASS: Fern
+  358-MAP: Map
+  51-FIRE: Fire
+  401-FIREWORK: Firework Rocket
+  402-FIREWORK_CHARGE: Firework Star
+  385-FIREBALL: Fire Charge
+  346-FISHING_ROD: Fishing Rod
+  318-FLINT: Flint
+  259-FLINT_AND_STEEL: Flint and Steel
+  390-FLOWER_POT_ITEM: Flower Pot
+  212-FROSTED_ICE: Frosted Ice
+  61-FURNACE: Furnace
+  343-POWERED_MINECART: Minecart with Furnace
+  370-GHAST_TEAR: Ghast Tear
+  20-GLASS: Glass
+  374-GLASS_BOTTLE: Glass Bottle
+  102-THIN_GLASS: Glass Pane
+  382-SPECKLED_MELON: Glistering Melon
+  89-GLOWSTONE: Glowstone
+  348-GLOWSTONE_DUST: Glowstone Dust
+  286-GOLD_AXE: Golden Axe
+  317-GOLD_BOOTS: Golden Boots
+  396-GOLDEN_CARROT: Golden Carrot
+  315-GOLD_CHESTPLATE: Golden Chestplate
+  314-GOLD_HELMET: Golden Helmet
+  294-GOLD_HOE: Golden Hoe
+  418-GOLD_BARDING: Golden Horse Armor
+  316-GOLD_LEGGINGS: Golden Leggings
+  285-GOLD_PICKAXE: Golden Pickaxe
+  284-GOLD_SPADE: Golden Shovel
+  283-GOLD_SWORD: Golden Sword
+  41-GOLD_BLOCK: Block of Gold
+  266-GOLD_INGOT: Gold Ingot
+  371-GOLD_NUGGET: Gold Nugget
+  14-GOLD_ORE: Gold Ore
+  2-GRASS: Grass Block
+  208-GRASS_PATH: Grass Path
+  13-GRAVEL: Gravel
+  242-GRAY_GLAZED_TERRACOTTA: Gray Glazed Terracotta
+  226-GRAY_SHULKER_BOX: Gray Shulker Box
+  248-GREEN_GLAZED_TERRACOTTA: Green Glazed Terracotta
+  232-GREEN_SHULKER_BOX: Green Shulker Box
+  289-SULPHUR: Gunpowder
+  170-HAY_BLOCK: Hay Bale
+  148-IRON_PLATE: Heavy Weighted Pressure Plate
+  154-HOPPER: Hopper
+  408-HOPPER_MINECART: Minecart with Hopper
+  79-ICE: Ice
+  97-MONSTER_EGGS: Infested Chiseled Stone Bricks
+  258-IRON_AXE: Iron Axe
+  101-IRON_FENCE: Iron Bars
+  42-IRON_BLOCK: Block of Iron
+  309-IRON_BOOTS: Iron Boots
+  307-IRON_CHESTPLATE: Iron Chestplate
+  330-IRON_DOOR: Iron Door
+  306-IRON_HELMET: Iron Helmet
+  292-IRON_HOE: Iron Hoe
+  417-IRON_BARDING: Iron Horse Armor
+  265-IRON_INGOT: Iron Ingot
+  308-IRON_LEGGINGS: Iron Leggings
+  452-IRON_NUGGET: Iron Nugget
+  15-IRON_ORE: Iron Ore
+  257-IRON_PICKAXE: Iron Pickaxe
+  256-IRON_SPADE: Iron Shovel
+  267-IRON_SWORD: Iron Sword
+  167-IRON_TRAPDOOR: Iron Trapdoor
+  389-ITEM_FRAME: Item Frame
+  91-JACK_O_LANTERN: Jack o'Lantern
+  84-JUKEBOX: Jukebox
+  446-BOAT_JUNGLE: Jungle Boat
+  429-JUNGLE_DOOR_ITEM: Jungle Door
+  190-JUNGLE_FENCE: Jungle Fence
+  185-JUNGLE_FENCE_GATE: Jungle Fence Gate
+  43-DOUBLE_STEP: Double Stone Slab
+  136-JUNGLE_WOOD_STAIRS: Jungle Wood Stairs
+  453-KNOWLEDGE_BOOK: Knowledge Book
+  65-LADDER: Ladder
+  22-LAPIS_BLOCK: Lapis Lazuli Block
+  21-LAPIS_ORE: Lapis Lazuli Ore
+  10-LAVA: Flowing Lava
+  327-LAVA_BUCKET: Lava Bucket
+  420-LEASH: Lead
+  334-LEATHER: Leather
+  301-LEATHER_BOOTS: Leather Boots
+  299-LEATHER_CHESTPLATE: Leather Tunic
+  298-LEATHER_HELMET: Leather Cap
+  300-LEATHER_LEGGINGS: Leather Pants
+  69-LEVER: Lever
+  238-LIGHT_BLUE_GLAZED_TERRACOTTA: Light Blue Glazed Terracotta
+  222-LIGHT_BLUE_SHULKER_BOX: Light Blue Shulker Box
+  243-SILVER_GLAZED_TERRACOTTA: Light Gray Glazed Terracotta
+  227-SILVER_SHULKER_BOX: Light Gray Shulker Box
+  147-GOLD_PLATE: Light Weighted Pressure Plate
+  111-WATER_LILY: Lily Pad
+  240-LIME_GLAZED_TERRACOTTA: Lime Glazed Terracotta
+  224-LIME_SHULKER_BOX: Lime Shulker Box
+  441-LINGERING_POTION: Lingering Potion
+  237-MAGENTA_GLAZED_TERRACOTTA: Magenta Glazed Terracotta
+  221-MAGENTA_SHULKER_BOX: Magenta Shulker Box
+  213-MAGMA: Magma Block
+  378-MAGMA_CREAM: Magma Cream
+  395-EMPTY_MAP: Empty Map
+  103-MELON_BLOCK: Melon
+  362-MELON_SEEDS: Melon Seeds
+  360-MELON: Melon Slice
+  105-MELON_STEM: Melon Stem
+  335-MILK_BUCKET: Milk Bucket
+  328-MINECART: Minecart
+  48-MOSSY_COBBLESTONE: Mossy Cobblestone
+  36-PISTON_MOVING_PIECE: Piston Moving Piece
+  282-MUSHROOM_SOUP: Mushroom Stew
+  2266-RECORD_11: 11 Disc
+  2256-GOLD_RECORD: 13 Disc
+  2258-RECORD_3: Blocks Disc
+  2257-GREEN_RECORD: Cat Disc
+  2259-RECORD_4: Chirp Disc
+  2260-RECORD_5: Far Disc
+  2261-RECORD_6: Mall Disc
+  2262-RECORD_7: Mellohi Disc
+  2263-RECORD_8: Stal Disc
+  2264-RECORD_9: Strad Disc
+  2267-RECORD_12: Wait Disc
+  2265-RECORD_10: Ward Disc
+  423-MUTTON: Raw Mutton
+  110-MYCEL: Mycelium
+  421-NAME_TAG: Name Tag
+  87-NETHERRACK: Netherrack
+  112-NETHER_BRICK: Nether Brick
+  405-NETHER_BRICK_ITEM: Nether Bricks
+  113-NETHER_FENCE: Nether Brick Fence
+  114-NETHER_BRICK_STAIRS: Nether Brick Stairs
+  90-PORTAL: Nether Portal
+  153-QUARTZ_ORE: Nether Quartz Ore
+  399-NETHER_STAR: Nether Star
+  372-NETHER_STALK: Nether Wart
+  214-NETHER_WART_BLOCK: Nether Wart Block
+  25-NOTE_BLOCK: Note Block
+  333-BOAT: Boat
+  143-WOOD_BUTTON: Oak Button
+  324-WOOD_DOOR: Wooden Door
+  85-FENCE: Oak Fence
+  107-FENCE_GATE: Oak Fence Gate
+  72-WOOD_PLATE: Oak Pressure Plate
+  53-WOOD_STAIRS: Oak Stairs
+  96-TRAP_DOOR: Oak Trapdoor
+  218-OBSERVER: Observer
+  49-OBSIDIAN: Obsidian
+  236-ORANGE_GLAZED_TERRACOTTA: Orange Glazed Terracotta
+  220-ORANGE_SHULKER_BOX: Orange Shulker Box
+  174-PACKED_ICE: Packed Ice
+  321-PAINTING: Painting
+  339-PAPER: Paper
+  241-PINK_GLAZED_TERRACOTTA: Pink Glazed Terracotta
+  225-PINK_SHULKER_BOX: Pink Shulker Box
+  33-PISTON_BASE: Piston
+  34-PISTON_EXTENSION: Piston Head
+  394-POISONOUS_POTATO: Poisonous Potato
+  433-CHORUS_FRUIT_POPPED: Popped Chorus Fruit
+  319-PORK: Raw Porkchop
+  392-POTATO_ITEM: Potato
+  142-POTATO: Potatoes
+  27-POWERED_RAIL: Powered Rail
+  410-PRISMARINE_CRYSTALS: Prismarine Crystals
+  409-PRISMARINE_SHARD: Prismarine Shard
+  349-RAW_FISH: Pufferfish
+  86-PUMPKIN: Pumpkin
+  400-PUMPKIN_PIE: Pumpkin Pie
+  361-PUMPKIN_SEEDS: Pumpkin Seeds
+  104-PUMPKIN_STEM: Pumpkin Stem
+  229-PURPLE_SHULKER_BOX: Purple Shulker Box
+  201-PURPUR_BLOCK: Purpur Block
+  202-PURPUR_PILLAR: Purpur Pillar
+  205-PURPUR_SLAB: Purpur Slab
+  203-PURPUR_STAIRS: Purpur Stairs
+  406-QUARTZ: Nether Quartz
+  156-QUARTZ_STAIRS: Quartz Stairs
+  411-RABBIT: Raw Rabbit
+  414-RABBIT_FOOT: Rabbit's Foot
+  415-RABBIT_HIDE: Rabbit Hide
+  413-RABBIT_STEW: Rabbit Stew
+  66-RAILS: Rail
+  331-REDSTONE: Redstone
+  152-REDSTONE_BLOCK: Block of Redstone
+  123-REDSTONE_LAMP_OFF: Redstone Lamp
+  73-REDSTONE_ORE: Redstone Ore
+  76-REDSTONE_TORCH_ON: Redstone Torch(on)
+  55-REDSTONE_WIRE: Redstone Dust
+  249-RED_GLAZED_TERRACOTTA: Red Glazed Terracotta
+  40-RED_MUSHROOM: Red Mushroom
+  100-HUGE_MUSHROOM_2: Red Mushroom Block
+  215-RED_NETHER_BRICK: Red Nether Bricks
+  12-SAND: Red Sand
+  182-STONE_SLAB2: Red Sandstone Slab
+  180-RED_SANDSTONE_STAIRS: Red Sandstone Stairs
+  233-RED_SHULKER_BOX: Red Shulker Box
+  356-DIODE: Redstone Repeater
+  367-ROTTEN_FLESH: Rotten Flesh
+  329-SADDLE: Saddle
+  128-SANDSTONE_STAIRS: Sandstone Stairs
+  169-SEA_LANTERN: Sea Lantern
+  359-SHEARS: Shears
+  442-SHIELD: Shield
+  450-SHULKER_SHELL: Shulker Shell
+  323-SIGN: Sign
+  341-SLIME_BALL: Slimeball
+  165-SLIME_BLOCK: Slime Block
+  78-SNOW: Snow
+  332-SNOW_BALL: Snowball
+  80-SNOW_BLOCK: Snow Block
+  88-SOUL_SAND: Soul Sand
+  52-MOB_SPAWNER: Spawner
+  439-SPECTRAL_ARROW: Spectral Arrow
+  375-SPIDER_EYE: Spider Eye
+  438-SPLASH_POTION: Splash Potion
+  19-SPONGE: Sponge
+  444-BOAT_SPRUCE: Spruce Boat
+  427-SPRUCE_DOOR_ITEM: Spruce Door
+  188-SPRUCE_FENCE: Spruce Fence
+  183-SPRUCE_FENCE_GATE: Spruce Fence Gate
+  134-SPRUCE_WOOD_STAIRS: Spruce Wood Stairs
+  280-STICK: Stick
+  29-PISTON_STICKY_BASE: Sticky Piston
+  275-STONE_AXE: Stone Axe
+  109-SMOOTH_STAIRS: Stone Brick Stairs
+  77-STONE_BUTTON: Stone Button
+  291-STONE_HOE: Stone Hoe
+  274-STONE_PICKAXE: Stone Pickaxe
+  70-STONE_PLATE: Stone Pressure Plate
+  273-STONE_SPADE: Stone Shovel
+  272-STONE_SWORD: Stone Sword
+  287-STRING: String
+  255-STRUCTURE_BLOCK: Structure Block
+  217-STRUCTURE_VOID: Structure Void
+  353-SUGAR: Sugar
+  338-SUGAR_CANE: Sugar Canes
+  172-HARD_CLAY: Terracotta
+  440-TIPPED_ARROW: Tipped Arrow
+  46-TNT: TNT
+  407-EXPLOSIVE_MINECART: Minecart with TNT
+  50-TORCH: Torch
+  449-TOTEM: Totem Of Undying
+  146-TRAPPED_CHEST: Trapped Chest
+  132-TRIPWIRE: Tripwire
+  131-TRIPWIRE_HOOK: Tripwire Hook
+  106-VINE: Vines
+  68-WALL_SIGN: Wall Sign
+  8-WATER: Flowing Water
+  326-WATER_BUCKET: Water Bucket
+  296-WHEAT: Wheat
+  295-SEEDS: Wheat Seeds
+  235-WHITE_GLAZED_TERRACOTTA: White Glazed Terracotta
+  219-WHITE_SHULKER_BOX: White Shulker Box
+  271-WOOD_AXE: Wooden Axe
+  290-WOOD_HOE: Wooden Hoe
+  270-WOOD_PICKAXE: Wooden Pickaxe
+  269-WOOD_SPADE: Wooden Shovel
+  268-WOOD_SWORD: Wooden Sword
+  386-BOOK_AND_QUILL: Book and Quill
+  387-WRITTEN_BOOK: Written Book
+  239-YELLOW_GLAZED_TERRACOTTA: Yellow Glazed Terracotta
+  223-YELLOW_SHULKER_BOX: Yellow Shulker Box
+  9-STATIONARY_WATER: Stationary Water
+  11-STATIONARY_LAVA: Stationary Lava
+  62-BURNING_FURNACE: Burning Furnace
+  115-NETHER_WARTS: Nether Warts
+  71-IRON_DOOR_BLOCK: Iron Door Block
+  74-GLOWING_REDSTONE_ORE: Glowing Redstone Ore
+  83-SUGAR_CANE_BLOCK: Sugar Cane Block
+  63-SIGN_POST: Sign Post
+  26-BED_BLOCK: Bed Block
+  75-REDSTONE_TORCH_OFF: Redstone Torch Off
+  92-CAKE_BLOCK: Cake Block
+  93-DIODE_BLOCK_OFF: Diode Block Off
+  94-DIODE_BLOCK_ON: Diode Block On
+  117-BREWING_STAND: Brewing Stand
+  149-REDSTONE_COMPARATOR_OFF: Redstone Comparator Off
+  150-REDSTONE_COMPARATOR_ON: Redstone Comparator On
+  64-WOODEN_DOOR: Wooden Door Block
+  193-SPRUCE_DOOR: Spruce Door Block
+  194-BIRCH_DOOR: Birch Door Block
+  195-JUNGLE_DOOR: Jungle Door Block
+  196-ACACIA_DOOR: Acacia Door Block
+  197-DARK_OAK_DOOR: Dark Oak Door Block
+  59-CROPS: Wheat Block
+EntityList:
+  -1-PLAYER: Player
+  4-ELDER_GUARDIAN: Elder Guardian
+  5-WITHER_SKELETON: Wither Skeleton
+  6-STRAY: Stray
+  23-HUSK: Husk
+  27-ZOMBIE_VILLAGER: Zombie Villager
+  28-SKELETON_HORSE: Skeleton Horse
+  29-ZOMBIE_HORSE: Zombie Horse
+  30-ARMOR_STAND: Armor Stand
+  31-DONKEY: Donkey
+  32-MULE: Mule
+  34-EVOKER: Evoker
+  35-VEX: Vex
+  36-VINDICATOR: Vindicator
+  37-ILLUSIONER: Illusioner
+  50-CREEPER: Creeper
+  51-SKELETON: Skeleton
+  52-SPIDER: Spider
+  53-GIANT: Giant
+  54-ZOMBIE: Zombie
+  55-SLIME: Slime
+  56-GHAST: Ghast
+  57-PIG_ZOMBIE: Zombie Pigman
+  58-ENDERMAN: Enderman
+  59-CAVE_SPIDER: Cave Spider
+  60-SILVERFISH: Silverfish
+  61-BLAZE: Blaze
+  62-MAGMA_CUBE: Magma Cube
+  63-ENDER_DRAGON: Ender Dragon
+  64-WITHER: Wither
+  65-BAT: Bat
+  66-WITCH: Witch
+  67-ENDERMITE: Endermite
+  68-GUARDIAN: Guardian
+  69-SHULKER: Shulker
+  90-PIG: Pig
+  91-SHEEP: Sheep
+  92-COW: Cow
+  93-CHICKEN: Chicken
+  94-SQUID: Squid
+  95-WOLF: Wolf
+  96-MUSHROOM_COW: Mushroom Cow
+  97-SNOWMAN: Snowman
+  98-OCELOT: Ocelot
+  99-IRON_GOLEM: Iron Golem
+  100-HORSE: Horse
+  101-RABBIT: Rabbit
+  102-POLAR_BEAR: Polar Bear
+  103-LLAMA: Llama
+  105-PARROT: Parrot
+  120-VILLAGER: Villager
+EnchantList:
+  PROTECTION_ENVIRONMENTAL: Protection environmental
+  PROTECTION_FIRE: Protection fire
+  PROTECTION_FALL: Protection fall
+  PROTECTION_EXPLOSIONS: Protection explosions
+  PROTECTION_PROJECTILE: Protection projectile
+  OXYGEN: Oxygen
+  WATER_WORKER: Water worker
+  MENDING: Mending
+  THORNS: Thorns
+  VANISHING_CURSE: Vanishing curse
+  DEPTH_STRIDER: Depth strider
+  FROST_WALKER: Frost walker
+  BINDING_CURSE: Binding curse
+  DAMAGE_ALL: Damage all
+  DAMAGE_UNDEAD: Damage undead
+  DAMAGE_ARTHROPODS: Damage arthropods
+  KNOCKBACK: Knockback
+  FIRE_ASPECT: Fire aspect
+  LOOT_BONUS_MOBS: Loot bonus mobs
+  SWEEPING_EDGE: Sweeping edge
+  DIG_SPEED: Dig speed
+  SILK_TOUCH: Silk touch
+  DURABILITY: Durability
+  LOOT_BONUS_BLOCKS: Loot bonus blocks
+  ARROW_DAMAGE: Arrow damage
+  ARROW_KNOCKBACK: Arrow knockback
+  ARROW_FIRE: Arrow fire
+  ARROW_INFINITE: Arrow infinite
+  LUCK: Luck
+  LURE: Lure
+ColorList:
+  0-white: '&fWhite'
+  1-orange: '&6Orange'
+  2-magenta: '&dMagenta'
+  3-navy: '&9Navy'
+  4-yellow: '&eYellow'
+  5-lime: '&aLime'
+  6-pink: '&dPink'
+  7-gray: '&8Gray'
+  8-silver: '&7Silver'
+  9-cyan: '&3Cyan'
+  10-purple: '&5Purple'
+  11-blue: '&1Blue'
+  12-brown: '&4Brown'
+  13-green: '&2Green'
+  14-red: '&cRed'
+  15-black: '&0Black'
+PotionNamesList:
+  16-Awkward: Awkard Potion
+  8195-Fire_Resistance_1: Fire Resistance Potion
+  8259-Fire_Resistance_2: Fire Resistance potion 2
+  8204-Harming_1: Harming Potion
+  8236-Harming_2: Harming Potion 2
+  8197-Healing_1: Healing Potion
+  8229-Healing_2: Healing Potion 2
+  8206-Invisibility_1: Invisibility Potion
+  8270-Invisibility_2: Invisibility Potion 2
+  8267-Leaping_1: Leaping Potion
+  8235-Leaping_2: Leaping Potion 2
+  -1-Luck: Luck Potion
+  64-Mundane: Mundane Potion
+  8198-Night_Vision_1: Night Vision Potion
+  8262-Night_Vision_2: Night Vision Potion 2
+  8196-Poison_1: Poison Potion
+  8228-Poison_2: Poison Potion 2
+  8260-Poison_3: Poison Potion 3
+  8292-Poison_4: Poison Potion 4
+  8193-Regeneration_1: Regeneration Potion
+  8225-Regeneration_2: Regeneration Potion 2
+  8257-Regeneration_3: Regeneration Potion 3
+  8289-Regeneration_4: Regeneration Potion 4
+  -1-Slow_Falling_1: Slow Falling Potion
+  -1-Slow_Falling_2: Slow Falling Potion 2
+  8202-Slowness_1: Slowness Potion
+  8266-Slowness_2: Slowness Potion 2
+  8201-Strength_1: Strength Potion
+  8233-Strength_2: Strength Potion 2
+  8265-Strength_3: Strength Potion 3
+  8297-Strength_4: Strength Potion 4
+  8194-Swiftness_1: Swiftness Potion
+  8226-Swiftness_2: Swiftness Potion 2
+  8258-Swiftness_3: Swiftness Potion 3
+  8290-Swiftness_4: Swiftness Potion 4
+  32-Thick: Thick Potion
+  -1-Turtle_Master_1: Turtle Master Potion
+  -1-Turtle_Master_2: Turtle Master Potion 2
+  -1-Turtle_Master_3: Turtle Master Potion 3
+  8205-Water_Breathing_1: Water Breathing Potion
+  8269-Water_Breathing_2: Water Breathing Potion 2
+  8200-Weakness_1: Weakness Potion
+  8264-Weakness_2: Weakness Potion 2
+  0-Water: Water Potion

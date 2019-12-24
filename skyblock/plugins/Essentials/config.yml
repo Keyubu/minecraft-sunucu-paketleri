@@ -1,0 +1,390 @@
+ops-name-color: ''
+nickname-prefix: ''
+max-nick-length: 15
+ignore-colors-in-max-nick-length: false
+change-displayname: true
+#change-playerlist: true
+#add-prefix-suffix: false
+#add-prefix-in-playerlist: true
+#add-suffix-in-playerlist: true
+teleport-safety: true
+force-disable-teleport-safety: false
+teleport-cooldown: 3
+teleport-delay: 2
+teleport-invulnerability: 0
+teleport-to-center: true
+heal-cooldown: 60
+near-radius: 200
+item-spawn-blacklist:
+# Set this to true if you want permission based item spawn rules.
+# Note: The blacklist above will be ignored then.
+# Example permissions (these go in your permissions manager):
+#  - essentials.itemspawn.item-all
+#  - essentials.itemspawn.item-[itemname]
+#  - essentials.itemspawn.item-[itemid]
+#  - essentials.give.item-all
+#  - essentials.give.item-[itemname]
+#  - essentials.give.item-[itemid]
+#  - essentials.unlimited.item-all
+#  - essentials.unlimited.item-[itemname]
+#  - essentials.unlimited.item-[itemid]
+#  - essentials.unlimited.item-bucket # Unlimited liquid placing
+permission-based-item-spawn: false
+spawnmob-limit: 10
+warn-on-smite: true
+drop-items-if-full: false
+notify-no-new-mail: false
+notify-player-of-mail-cooldown: 60
+overridden-commands:
+#  - god
+#  - info
+disabled-commands:
+#  - nick
+#  - clear
+socialspy-commands:
+  - msg
+  - w
+  - r
+  - mail
+  - m
+  - t
+  - whisper
+  - emsg
+  - tell
+  - er
+  - reply
+  - ereply
+  - email
+  - action
+  - describe
+  - eme
+  - eaction
+  - edescribe
+  - etell
+  - ewhisper
+  - pm
+socialspy-listen-muted-players: true
+mute-commands:
+  - msg
+  - m
+  - tell
+  - emsg
+ # - '*'
+player-commands:
+  - afk
+  - afk.auto
+  - back
+  - back.ondeath
+  - balance
+  - balance.others
+  - balancetop
+  - build
+  - chat.color
+  - chat.format
+  - chat.shout
+  - chat.question
+  - clearinventory
+  - compass
+  - depth
+  - delhome
+  - getpos
+  - geoip.show
+  - help
+  - helpop
+  - home
+  - home.others
+  - ignore
+  - info
+  - itemdb
+  - kit
+  - kits.tools
+  - list
+  - mail
+  - mail.send
+  - me
+  - motd
+  - msg
+  - msg.color
+  - nick
+  - near
+  - pay
+  - ping
+  - protect
+  - r
+  - rules
+  - realname
+  - seen
+  - sell
+  - sethome
+  - setxmpp
+  - signs.create.protection
+  - signs.create.trade
+  - signs.break.protection
+  - signs.break.trade
+  - signs.use.balance
+  - signs.use.buy
+  - signs.use.disposal
+  - signs.use.enchant
+  - signs.use.free
+  - signs.use.gamemode
+  - signs.use.heal
+  - signs.use.info
+  - signs.use.kit
+  - signs.use.mail
+  - signs.use.protection
+  - signs.use.repair
+  - signs.use.sell
+  - signs.use.time
+  - signs.use.trade
+  - signs.use.warp
+  - signs.use.weather
+  - spawn
+  - suicide
+  - time
+  - tpa
+  - tpaccept
+  - tpahere
+  - tpdeny
+  - warp
+  - warp.list
+  - world
+  - worth
+  - xmpp
+skip-used-one-time-kits-from-kit-list: false
+pastebin-createkit: false
+enabledSigns:
+  - color
+  #- balance
+  #- buy
+  #- sell
+  #- trade
+  #- free
+  #- disposal
+  #- warp
+  #- kit
+  #- mail
+  #- enchant
+  #- gamemode
+  #- heal
+  #- info
+  #- spawnmob
+  #- repair
+  #- time
+  #- weather
+sign-use-per-second: 4
+unprotected-sign-names:
+  #- kit
+backup:
+  interval: 30
+per-warp-permission: false
+list:
+    Yetkililer: Kurucu, Yonetici, Moderator
+    VIP üyeler: VIP, VIP+, MVIP, MVIP+
+debug: false
+locale: tr
+remove-god-on-disconnect: false
+auto-afk: 300
+auto-afk-kick: -1
+freeze-afk-players: false
+disable-item-pickup-while-afk: false
+cancel-afk-on-interact: true
+cancel-afk-on-move: true
+afk-list-name: "none"
+death-messages: false
+allow-silent-join-quit: false
+custom-join-message: "none"
+custom-quit-message: "none"
+no-god-in-worlds:
+#  - world_nether
+world-teleport-permissions: false
+default-stack-size: -1
+oversized-stacksize: 64
+repair-enchanted: true
+unsafe-enchantments: true
+register-back-in-listener: false
+login-attack-delay: 5
+max-fly-speed: 0.8
+max-walk-speed: 0.8
+mails-per-minute: 1000
+max-tempban-time: -1
+last-message-reply-recipient: true
+last-message-reply-recipient-timeout: 180
+milk-bucket-easter-egg: true
+send-fly-enable-on-join: true
+world-time-permissions: false
+command-cooldowns:
+  tpahere: 2
+  tell: 2
+  emsg: 2
+  msg: 2
+  tpa: 2
+  etpa: 2
+#  '*': 2
+command-cooldown-persistence: true
+npcs-in-balance-ranking: false
+allow-bulk-buy-sell: true
+delay-motd: 0
+default-enabled-confirm-commands:
+- pay
+- clearinventory
+- clear
+- eclear
+- eclearinventory
+update-bed-at-daytime: true
+world-home-permissions: false
+sethome-multiple:
+  oyuncu: 3
+  rehber: 4
+  vip: 5
+  vip+: 6
+  mvip: 7
+  mvip+: 8
+tpa-accept-cancellation: 20
+allow-direct-hat: true
+starting-balance: 50
+command-costs:
+currency-symbol: 'tl'
+max-money: 10000000000000
+min-money: 0
+economy-log-enabled: false
+use-bukkit-permissions: true
+minimum-pay-amount: 1
+
+# The format of currency, excluding symbols. See currency-symbol-format-locale for symbol configuration.
+#
+# "#,##0.00" is how the majority of countries display currency.
+#currency-format: "#,##0.00"
+
+# Format currency symbols. Some locales use , and . interchangeably.
+# Some formats do not display properly in-game due to faulty Minecraft font rendering.
+#
+# For 1.234,50 use de-DE
+# For 1,234.50 use en-US
+# For 1'234,50 use fr-ch
+#currency-symbol-format-locale: en-US
+
+############################################################
+non-ess-in-help: false
+hide-permissionless-help: false
+chat:
+  radius: 0
+  format: ' {DISPLAYNAME} &8» &f{MESSAGE}'
+  group-formats:
+    Oyuncu: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &f{MESSAGE}'
+    Skylord: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &f{MESSAGE}'
+    Skyking: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &f{MESSAGE}'
+    Skyzeus: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &f{MESSAGE}'
+    Skylegend: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &f{MESSAGE}'
+    VIP: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &a{MESSAGE}'
+    VIP+: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &a{MESSAGE}'
+    MVIP: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &a{MESSAGE}'
+    MVIP+: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &a{MESSAGE}'
+    Rehber: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &3{MESSAGE}'
+    UstaRehber: '&8[&f{ISLAND_LEVEL}&8] {DISPLAYNAME} &8» &3{MESSAGE}'
+    Moderator: '{DISPLAYNAME} &8» &e{MESSAGE}'
+    Mimar: ' {DISPLAYNAME} &8» &a{MESSAGE}'
+    Yapimci: ' {DISPLAYNAME} &8» &a{MESSAGE}'
+    Yonetici: ' {DISPLAYNAME} &8» &e{MESSAGE}'
+    Kurucu: ' {DISPLAYNAME} &8» &c{MESSAGE}'
+    
+protect:
+  prevent:
+    lava-flow: false
+    water-flow: false
+    water-bucket-flow: false
+    fire-spread: true
+    lava-fire-spread: true
+    flint-fire: false
+    lightning-fire-spread: true
+    portal-creation: false
+    tnt-explosion: false
+    tnt-playerdamage: false
+    tnt-minecart-explosion: false
+    tnt-minecart-playerdamage: false
+    fireball-explosion: false
+    fireball-fire: false
+    fireball-playerdamage: false
+    witherskull-explosion: false
+    witherskull-playerdamage: false
+    wither-spawnexplosion: false
+    wither-blockreplace: false
+    creeper-explosion: false
+    creeper-playerdamage: false
+    creeper-blockdamage: false
+    enderdragon-blockdamage: true
+    enderman-pickup: false
+    villager-death: false
+    # permission essentials.protect.entitytarget.bypass disables this.
+    entitytarget: false
+    spawn:
+      creeper: false
+      skeleton: false
+      spider: false
+      giant: false
+      zombie: false
+      slime: false
+      ghast: false
+      pig_zombie: false
+      enderman: false
+      cave_spider: false
+      silverfish: false
+      blaze: false
+      magma_cube: false
+      ender_dragon: false
+      pig: false
+      sheep: false
+      cow: false
+      chicken: false
+      squid: false
+      wolf: false
+      mushroom_cow: false
+      snowman: false
+      ocelot: false
+      iron_golem: false
+      villager: false
+      wither: false
+      bat: false
+      witch: false
+      horse: false
+  creeper:
+    max-height: -1
+  disable:
+    fall: false
+    pvp: false
+    drown: false
+    suffocate: false
+    lavadmg: false
+    projectiles: false
+    contactdmg: false
+    firedmg: false
+    lightning: false
+    wither: false
+    weather:
+      storm: false
+      thunder: false
+      lightning: false
+    build: true
+    use: true
+    warn-on-build-disallow: true
+  alert:
+    on-placement: 10,11,46,327
+    on-use: 327
+    on-break:
+  blacklist:
+    placement: 10,11,46,327
+    usage: 327
+    break:
+    piston:
+    dispenser:
+newbies:
+  announce-format: ''
+  spawnpoint: newbies
+  kit: hediye
+respawn-listener-priority: high
+spawn-join-listener-priority: high
+respawn-at-home: false
+spawn-on-join: false
+#spawn-on-join: guests
+#spawn-on-join:
+#- guests
+#- admin

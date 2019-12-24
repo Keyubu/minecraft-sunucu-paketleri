@@ -1,0 +1,44 @@
+MySQL:
+  use: false
+  Host: localhost
+  Port: 3306
+  Username: test
+  Password: '123'
+  Database: minecraft
+language: en
+server_name: ''
+check_for_updates: false
+case_sensitive_for_flatfile: false
+key_length: 10
+one_vip_change: false
+usekey_global: false
+rvip_unlisted: true
+use_vault_for_permissions: true
+check_time: 10
+pagseguro:
+  use: false
+  email: suporte@lojamodelo.com.br
+  token: 95112EE828D94278BD394E91C4388F20
+  mode: 1
+  mysql_log: false
+paypal:
+  use: false
+  username: username
+  password: password
+  signature: signature
+  mode: 1
+  mysql_log: false
+logging:
+  usekey: false
+vip_groups:
+- vip
+- vip+
+- mvip
+- mvip+
+default_group: Caylak
+vip_items:
+- vip,0,$,1000000,none
+- vip+,0,$,1400000,none
+- mvip,0,$,1800000,none
+- mvip+,0,$,2000000,none
+vips:

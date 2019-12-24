@@ -1,0 +1,1074 @@
+Events:
+	On Anvil Combine:
+		ID: anvil_combine
+		Patterns:
+			[on] anvil [item] (combine|merge)
+		Event values:
+			event-inventory
+			event-player
+		Cancellable: true
+	On Anvil Rename:
+		ID: anvil_rename
+		Patterns:
+			[on] anvil [item] rename
+		Event values:
+			event-itemstack
+			event-string
+			event-inventory
+			event-player
+		Cancellable: true
+	On GUI click:
+		ID: gui_click
+		Patterns:
+			[on] gui (action|click)
+		Event values:
+			event-itemstack
+			event-string
+			event-inventory
+			event-clicktype
+			event-player
+			event-integer
+		Cancellable: true
+	On Inventory drag:
+		ID: inventory_drag
+		Patterns:
+			[on] inventory drag
+		Event values:
+			event-itemstack
+			event-string
+			event-inventory
+			event-player
+		Cancellable: true
+	On Inventory move:
+		ID: inventory_move
+		Patterns:
+			[on] inventory move
+		Event values:
+			event-itemstack
+			event-string
+			event-player
+		Cancellable: true
+	On Item craft:
+		ID: item_craft
+		Patterns:
+			[on] [tuske] prepare item craft
+		Event values:
+			event-itemstack
+			event-inventory
+			event-player
+			event-recipe
+			event-slot
+		Cancellable: false
+	On Item damage:
+		ID: item_damage
+		Patterns:
+			[on] [player] item damage
+		Event values:
+			event-itemstack
+			event-player
+			event-world
+		Cancellable: true
+	On Spawner spawn:
+		ID: spawner_spawn
+		Patterns:
+			[on] [mob] spawner spawn
+		Event values:
+			event-entity
+			event-block
+			event-world
+		Cancellable: true
+Conditions:
+	CondCanEat:
+		ID: CondCanEat
+		Patterns:
+			%itemtypes% is edible
+			%itemtypes% is(n't| not) edible
+	CondHasCustom:
+		ID: CondHasCustom
+		Patterns:
+			%itemstack% has [a] custom enchantment [%-customenchantment%]
+			%itemstack% has(n't| not) [a] custom enchantment [%-customenchantment%]
+	CondHasGUI:
+		ID: CondHasGUI
+		Patterns:
+			%player% has [a] gui
+			slot %number% of %player% is a gui
+			%player% does(n't| not) have [a] gui
+			slot %number% of %player% is(n't| not) [a] gui
+	CondHasGravity:
+		ID: CondHasGravity
+		Patterns:
+			%itemtypes% has gravity
+			%itemtypes% has(n't| not) gravity
+	CondIsAgeable:
+		ID: CondIsAgeable
+		Patterns:
+			%entities% ((is|are) ageable|can grow up)
+			%entities% ((is|are)(n't| not) ageable|can(n't| not) grow up)
+	CondIsBlockType:
+		ID: CondIsBlockType
+		Patterns:
+			%itemtypes% is [a] (solid|transparent|flammable|occluding) block
+			%itemtypes% is(n't| not) [a] (solid|transparent|flammable|occluding) block
+	CondIsMobType:
+		ID: CondIsMobType
+		Patterns:
+			%livingentities% (is|are) [a] (hostile|neutral|passive) [mob]
+			%livingentities% (is|are)(n't| not) [a] (hostile|neutral|passive) [mob]
+	CondIsTameable:
+		ID: CondIsTameable
+		Patterns:
+			%entities% (is|are) tameable
+			%entities% (is|are)(n't| not) tameable
+	CondRegexMatch:
+		ID: CondRegexMatch
+		Patterns:
+			%strings% [regex] matches %string%
+			%strings% [regex] does(n't| not) match %string%
+Effects:
+	Cancel Drops:
+		ID: EffCancelDrop
+		Description:
+			Cancels the drops of items, experiences or both in death events, where it won't drop the **player** items (like gamerule KeepInventory), or cancel the item drop of break block event (for minecraft 1.12+ only).
+		Examples:
+			on death of player:
+				cancel the drops #It won't drop the experience and items.
+			 
+			on break of diamond ore:
+				cancel the drops of items #It won't drop the items only.
+		Since:
+			1.0, 1.8.1 (block break event)
+		Patterns:
+			cancel [the] drops
+			cancel [the] drops of [e]xp[perience][s]
+			cancel [the] drops of (inventory|items)
+	Close GUI:
+		ID: EffOnCloseGUI
+		Description:
+			It should be used in {{effects|CreateEditGUI|creating or editting a gui}}, it is just an extra option to run a code before it closes. This is optinal.
+		Examples:
+			create new gui with id "Backpack.%player%" with virtual chest:
+				run when close:
+					saveInventoryItems(player, gui-inventory)
+			open last gui to player
+		Since:
+			1.7.5
+		Patterns:
+			run (when|while) clos(e|ing) [[the] gui]
+	Command with Permission:
+		ID: EffExecutePermission
+		Description:
+			Make the player execute a command with a temporary permission, when the player finishes executing the command, the permission is removed.
+		Examples:
+			make all players execute command "example" with permissions "permission.one" and "permission.two"
+		Since:
+			1.6.9.7
+		Patterns:
+			[execute] [the] command %strings% by %players% with perm[ission][s] %strings%
+			[execute] [the] %players% command %strings% with perm[ission][s] %strings%
+			(let|make) %players% execute [[the] command] %strings% with perm[ission][s] %strings%
+	Create a GUI:
+		ID: EffCreateGUI
+		Description:
+			It creates a new gui with a given id (optional), using a base inventory, and a shape (optional)
+			For more info, read the [here](https://github.com/Tuke-Nuke/TuSKe/wiki/GUI-Manager)
+		Examples:
+			on skript load:
+				create a gui with id "LobbySelector" with virtual chest with 4 rows named "&4Lobby Selector":
+					make gui slot 2 with diamond sword named "PVP":
+						execute player command "/server pvp" #'on skript load' event doesn't have a 'player', but it will recognize it as it does have.
+					make gui slot 4 with grass named "SkyBlock":
+						execute player command "/server skyblock"
+			 
+			command /lobby:
+				trigger:
+					open gui "LobbySelector" to player
+		Since:
+			1.7.5
+		Patterns:
+			create [a] [new] gui [[with id] %-string%] with %inventory% [and shape %-strings%]
+			(change|edit) %guiinventory%
+	EffEjectRecord:
+		ID: EffEjectRecord
+		Patterns:
+			eject record (of|from|) %block%
+	EffEvaluateFunction:
+		ID: EffEvaluateFunction
+		Patterns:
+			evaluate function %strings% [with <.+?>]
+			evaluate function %strings%(<.+?>)
+	EffFormatGUI:
+		ID: EffFormatGUI
+		Patterns:
+			(format|create|make) [a] gui slot [%-numbers%] of %players% with %itemstack% [to [do] nothing]
+			(format|create|make) [a] gui slot [%-numbers%] of %players% with %itemstack% to close [(using|with) %-string/clicktype% [(button|click|action)]]
+			(format|create|make) [a] gui slot [%-numbers%] of %players% with %itemstack% to (run|exe[cute]) [(using|with) %-string/clicktype% [(button|click|action)]]
+			(format|create|make) [a] gui slot [%-numbers%] of %players% with %itemstack% to [close then] (run|exe[cute]) %commandsender% command %string% [(using|with) perm[ission] %-string%][[(,| and)] (using|with) %-string/clicktype% [(button|click|action)]][[(,| and)] (using|with) cursor [item] %-itemstack%]
+			(format|create|make) [a] gui slot [%-numbers%] of %players% with %itemstack% to [close then] (run|exe[cute]) function <(.+)>([<.*?>])[[(,| and)] (using|with) %-string/clicktype% [(button|click|action)]][[(,| and)] (using|with) cursor [item] %-itemstack%]
+			(format|create|make) [a] gui slot [%-numbers%] of %players% with %itemstack% to (run|exe[cute]) [gui [click]] event
+	EffGuiProperties:
+		ID: EffGuiProperties
+		Patterns:
+			change gui inventory to name %string% and size %number%
+			change gui shape [of (items|actions)] to %strings%
+			change gui properties of inventory to name %string% [with %-number% row[s]] and shape [of (items|actions)] to %strings%
+	EffMakeDrop:
+		ID: EffMakeDrop
+		Patterns:
+			(make|force) %player% drop[s] %itemstack% [from (%-slot%|his inventory)]
+	EffPushBlock:
+		ID: EffPushBlock
+		Patterns:
+			move %block% to %direction%
+	EffRegisterEnchantment:
+		ID: EffRegisterEnchantment
+		Patterns:
+			(register|create) [a] [new] [custom] enchantment with id [name] %string%
+	EffRegisterPermission:
+		ID: EffRegisterPermission
+		Patterns:
+			(register|create) master permission %string%
+	EffRegisterRecipe:
+		ID: EffRegisterRecipe
+		Patterns:
+			(create|register) [new] [custom] shaped recipe with (return|result) %itemstack% using [ingredients] %itemstacks% [with shape %-strings%]
+			(create|register) [new] [custom] shapeless recipe with (return|result) %itemstack% using [ingredients] %itemstacks%
+			(create|register) [new] [custom] furnace recipe with (return|result) %itemstack% using [source] %itemstack% [[and] with experience %-number%]
+	EffSaveData:
+		ID: EffSaveData
+		Patterns:
+			save [player] data of %player%
+	EffUnformatGUI:
+		ID: EffUnformatGUI
+		Patterns:
+			(unformat|remove|clear|reset) [the] gui slot %numbers% of %players%
+			(unformat|remove|clear|reset) [all] [the] gui slots of %players%
+	EffUnregisterEnchantment:
+		ID: EffUnregisterEnchantment
+		Patterns:
+			unregister [the] [custom] enchantment %customenchantment%
+	Evaluate:
+		ID: EffEvaluate
+		Description:
+			This effect will run any Skript effect/condition from a given string or piece of code. The difference between {{effects|EvaluateInputEffect|SkQuery effect}} and this is basically it returns all syntaxes errors instead of send them to the console, It can evaluate a long amount of code and see them easily instead of beeing in one line. 
+For example, you can run a effect from a string, from a piece of code (without beeing quoted) or the entiry section of code.
+Starting from 1.8, you can disallow some syntaxes when evaluating. Read more about it at config file (`TuSKe/config.yml`).
+		Examples:
+			set {_effect} to "send"
+			evaluate:
+				%{_effect}% "This message will be sent to a player."
+			#Before parsing the code, it will convert all variables
+			#To string, basically it will interpret the code above as it
+			#was a whole string: "%{_effect}% ""This message will be sent to a player."""
+			#where Skript will replace '%{_effect}%' with the variable value and then it will parse
+			#The code. It is the same concept of Skript Options.
+			 
+			evaluate: kill all players #Not really needed for this but just an example
+			evaluate: "broadcast ""Hi everyone"""
+			evaluate:
+				if true is true:
+					give a diamond sword of %{Enchantment}% 1 to all players
+			evaluate logging in {_errors::*}: this is not a valid effect
+			if {_errors::*} is set:
+				loop {_errors::*}: #If there is something wrong, it will add the errors here
+					send loop-value
+			#It will send a string in Skript default error format:
+			<Error message>: <wrong expression> (TuSKe/evaluate.sk, line <line of code>, '<whole line>')
+			'TuSKe/evaluate.sk' is a fictitious file, it doesn't exist.
+		Since:
+			1.7.5, 1.8 (filtering syntaxes)
+		Patterns:
+			eval[uate][ logging [[the] error[s]] in %-objects%][ with safety]: (%-strings%|<.+?>)
+			eval[uate][ logging [[the] error[s]] in %-objects%][ with safety] dont run: (%-strings%|<.+?>)
+	Make GUI:
+		ID: EffMakeGUI
+		Description:
+			Used to format a gui slot inside of gui creation/editing section
+		Patterns:
+			(make|format) next gui [slot] (with|to) %itemstack%
+			(make|format) gui [slot] %strings/numbers% (with|to) %itemstack%
+			(un(make|format)|remove) next gui [slot]
+			(un(make|format)|remove) gui [slot] %strings/numbers%
+			(un(make|format)|remove) all gui [slot]
+Expressions:
+	All Recipes:
+		ID: ExprAllRecipes
+		Description:
+			Returns all server recipes. You can get the {{expressions|RecipeIngredients|ingredients}} and the {{expressions|RecipeResult|result item}}.
+		Examples:
+			command /recipes <integer=1>:
+				usage: /recipes <page>
+				trigger:
+					set {_list::*} to page arg of all recipes with 10 lines
+					loop {_list::*}:
+						send "Ingredients to create %result item of loop-value%: %ingredients of loop-value%"
+		Since:
+			1.6.8, 1.7.5 (recipe type list)
+		Return type: Recipe
+		Changers:
+			remove
+			delete
+			reset
+		Patterns:
+			[all] [registred] (shaped|shapeless|furnace|) recipes
+	All commands:
+		ID: ExprAllCommand
+		Description:
+			Returns a list containing all registered commands or scripts commands only.
+		Examples:
+			send "Current amount of script commands: %size of all script commands%
+			send "Current amount of non script commands: %size of commansd - size of script commands%
+			send "Total: %size of all commands%"
+		Since:
+			1.6.9.7
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[all] [registered] [script] commands
+	Alphabetical Order:
+		ID: ExprAlphabetOrder
+		Description:
+			Will return a list of {{types|Objects|objects}} organized in alphabetic order.
+		Examples:
+			loop alphabetical order of all players:
+				send "%loop-object%"
+		Since:
+			1.0
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			alphabetical order of %objects%
+	Command Info:
+		ID: ExprCommandInfo
+		Description:
+			Get informations about a command.
+		Examples:
+			if co
+		Since:
+			1.6.9.6, 1.6.9.7
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] description of command %string%
+			command %string%'[s] description
+			[the] main [command] of command %string%
+			command %string%'[s] main [command]
+			[the] permission of command %string%
+			command %string%'[s] permission
+			[the] permission message of command %string%
+			command %string%'[s] permission message
+			[the] plugin [owner] of command %string%
+			command %string%'[s] plugin [owner]
+			[the] usage of command %string%
+			command %string%'[s] usage
+			[the] aliases of command %string%
+			command %string%'[s] aliases
+			[the] file [location] of command %string%
+			command %string%'[s] file location
+	ExprAcceptedItems:
+		ID: ExprAcceptedItems
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			accepted items for %customenchantment%
+	ExprAllCustomEnchants:
+		ID: ExprAllCustomEnchants
+		Return type: Custom Enchantment
+		Changers:
+			add
+			set
+			remove
+			remove all
+			delete
+			reset
+		Patterns:
+			[the] [all] custom enchantments of %itemstack%
+			%itemstack%'[s] [all] custom enchantments
+	ExprCEConflicts:
+		ID: ExprCEConflicts
+		Return type: Custom Enchantment
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			conflicts for %customenchantment%
+	ExprCatType:
+		ID: ExprCatType
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			[the] (cat|ocelot) type of %entity%
+			%entity%'[s] (cat|ocelot) type
+	ExprDraggedItem:
+		ID: ExprDraggedItem
+		Return type: Item / Material
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[event-][old(-| )]dragged(-| )item
+	ExprDraggedSlots:
+		ID: ExprDraggedSlots
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			[event-]dragged(-| )(top|bottom)(-| )slots
+	ExprDroppedExp:
+		ID: ExprDroppedExp
+		Return type: Experience
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[the] dropped [e]xp[erience] [orb[s]]
+	ExprDropsOfBlock:
+		ID: ExprDropsOfBlock
+		Return type: Item / Material
+		Changers:
+			none
+		Patterns:
+			drops of %block% [(with|using) %-itemstack%]
+			%block%'[s] drops [(with|using) %-itemstack%]
+	ExprEnabled:
+		ID: ExprEnabled
+		Return type: Boolean
+		Changers:
+			set
+		Patterns:
+			enabled for %customenchantment%
+	ExprEvaluateFunction:
+		ID: ExprEvaluateFunction
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			result of function %string% [with <.+?>]
+			result of function %string(<.+?>)
+	ExprExpOf:
+		ID: ExprExpOf
+		Return type: integer
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[the] [total] [e]xp of %player%
+			%player%'[s] [total] [e]xp
+	ExprFirstLogin:
+		ID: ExprFirstLogin
+		Return type: Date
+		Changers:
+			none
+		Patterns:
+			[the] first login of %offlineplayer%
+			%offlineplayer%'[s] first login
+	ExprFurnaceRecipeLevel:
+		ID: ExprFurnaceRecipeLevel
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] furnace level of %recipe%
+			%recipe%'[s] furnace level
+	ExprGUIValue:
+		ID: ExprGUIValue
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			gui-slot
+			gui-raw-slot
+			gui-hotbar-slot
+			gui-inventory
+			gui-inventory-action
+			gui-click-(type|action)
+			gui-cursor[-item]
+			gui-[(clicked|current)-]item
+			gui-slot-type
+			gui-player
+			gui-players
+			gui-inventory-name
+			gui-slot-id
+			gui
+	ExprHighiestBlock:
+		ID: ExprHighiestBlock
+		Return type: Block
+		Changers:
+			add
+			set
+			remove
+			remove all
+			delete
+		Patterns:
+			highest block at %location%
+	ExprHorseColor:
+		ID: ExprHorseColor
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			[the] horse color of %entity%
+			%entity%'[s] horse color
+	ExprHorseStyle:
+		ID: ExprHorseStyle
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			[the] horse style of %entity%
+			%entity%'[s] horse style
+	ExprHorseVariant:
+		ID: ExprHorseVariant
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			[the] horse variant of %entity%
+			%entity%'[s] horse variant
+	ExprInventoryMoveInv:
+		ID: ExprInventoryMoveInv
+		Return type: Inventory
+		Changers:
+			add
+			set
+			remove
+			remove all
+			delete
+		Patterns:
+			[event-]inventory-(one|two)
+	ExprInventoryMoveSlot:
+		ID: ExprInventoryMoveSlot
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			[event-]slot-(one|two)
+	ExprItemCustomEnchant:
+		ID: ExprItemCustomEnchant
+		Return type: Item / Material
+		Changers:
+			none
+		Patterns:
+			%itemstack% with custom enchantment[s] %customenchantments%
+	ExprItemDamage:
+		ID: ExprItemDamage
+		Return type: integer
+		Changers:
+			delete
+		Patterns:
+			item damage
+	ExprItemsOfRecipe:
+		ID: ExprItemsOfRecipe
+		Return type: Item / Material
+		Changers:
+			none
+		Patterns:
+			[the] [all] ingredients of %recipe%
+			%recipe%'[s] [all] ingredients
+	ExprJukeboxRecord:
+		ID: ExprJukeboxRecord
+		Return type: Item / Material
+		Changers:
+			set
+		Patterns:
+			[the] [jukebox] record of %block%
+			%block%'[s] [jukebox] record
+	ExprLanguage:
+		ID: ExprLanguage
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] (locale|language) of %player%
+			%player%'[s] (locale|language)
+	ExprLastAttacker:
+		ID: ExprLastAttacker
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			[the] last attacker of %entity%
+			%entity%'[s] last attacker
+	ExprLastColor:
+		ID: ExprLastColor
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] last color of %string%
+			%string%'[s] last color
+	ExprLastDamage:
+		ID: ExprLastDamage
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] last damage of %livingentity%
+			%livingentity%'[s] last damage
+	ExprLastDamageCause:
+		ID: ExprLastDamageCause
+		Return type: Damage Cause
+		Changers:
+			none
+		Patterns:
+			[the] last damage cause of %livingentity%
+			%livingentity%'[s] last damage cause
+	ExprLastLogin:
+		ID: ExprLastLogin
+		Return type: Date
+		Changers:
+			none
+		Patterns:
+			[the] last login of %offlineplayer%
+			%offlineplayer%'[s] last login
+	ExprLeatherColor:
+		ID: ExprLeatherColor
+		Return type: integer
+		Changers:
+			add
+			set
+			remove
+		Patterns:
+			[the] [leather] (red|green|blue) colo[u]r of %-itemstacks/colors%
+			%-itemstacks/colors%'[s] [leather] (red|green|blue) colo[u]r
+	ExprLevelOfCustomEnchant:
+		ID: ExprLevelOfCustomEnchant
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			level of [custom enchantment] %customenchantment% of %itemstack%
+	ExprListPaged:
+		ID: ExprListPaged
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			page %number% of %objects% with %number% lines
+	ExprLocalNameOf:
+		ID: ExprLocalNameOf
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] [json] client id of %object%
+			%object%'[s] [json] client id
+	ExprLoreName:
+		ID: ExprLoreName
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			[the] lore name of %customenchantment%
+			%customenchantment%'[s] lore name
+	ExprMaxLevel:
+		ID: ExprMaxLevel
+		Return type: Number
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[the] max level of %customenchantment%
+			%customenchantment%'[s] max level
+	ExprRarity:
+		ID: ExprRarity
+		Return type: Number
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[the] rarity of %customenchantment%
+			%customenchantment%'[s] rarity
+	ExprRecipeFromItems:
+		ID: ExprRecipeFromItems
+		Return type: Recipe
+		Changers:
+			none
+		Patterns:
+			recipe from ingredients %itemstacks%
+	ExprRecipesOf:
+		ID: ExprRecipesOf
+		Return type: Recipe
+		Changers:
+			none
+		Patterns:
+			[the] [all] recipes of %itemstack%
+			%itemstack%'[s] [all] recipes
+	ExprRegex:
+		ID: ExprRegex
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			/<.+>/
+	ExprRegexRandom:
+		ID: ExprRegexRandom
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			(first|random) string matching [pattern] %regex/string%
+			random strings matching [pattern] %regex/string%
+	ExprRegexReplace:
+		ID: ExprRegexReplace
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			regex replace (all|every|first|) [pattern] %regex/string% with [group[s]] %string% in %string%
+	ExprRegexSplit:
+		ID: ExprRegexSplit
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			regex split %string% (with|using) [pattern] %regex/string%
+	ExprResultOfRecipe:
+		ID: ExprResultOfRecipe
+		Return type: Item / Material
+		Changers:
+			none
+		Patterns:
+			[the] result item of %itemstacks/recipe%
+			%itemstacks/recipe%'[s] result item
+	ExprShapeOfRecipe:
+		ID: ExprShapeOfRecipe
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] shape of %recipe%
+			%recipe%'[s] shape
+	ExprVirtualInv:
+		ID: ExprVirtualInv
+		Return type: Inventory
+		Changers:
+			add
+			set
+			remove
+			remove all
+			delete
+		Patterns:
+			virtual <.+?> [inventory] [with size %-number%] [(named|with (name|title)) %-string%]
+			virtual <.+?> [inventory] [with %-number% row[s]] [(named|with (name|title)) %-string%]
+			virtual <.+?> [inventory] [(named|with (name|title)) %-string%] with size %-number%
+			virtual <.+?> [inventory] [(named|with (name|title)) %-string%] with %-number% row[s]
+	Last GUI/GUI from id:
+		ID: ExprGUI
+		Description:
+			It is used to return the last created gui or a gui from a string id.
+		Examples:
+			on skript load:
+				create new gui with id "HUB" with virtual chest:
+					make gui slot 1 with diamond named "Server 1":
+						execute player command "/server server1"
+					make gui slot 2 with paper named "Server 2":
+						execute player command "/server server2"
+			 
+			command /hub [<text>]:
+				trigger:
+					open gui "HUB" to player
+		Since:
+			1.7.5
+		Return type: GUI
+		Changers:
+			delete
+		Patterns:
+			last[ly] [created] gui
+			gui [with id] %string%
+	Max Durability:
+		ID: ExprMaxDurability
+		Description:
+			Returns the max durability of {{types|ItemStack|item stack}}. i.e. 1561 for diamond sword. You can cancel it.
+		Examples:
+			on item damage:
+				if durability of event-item is more than (max durability of event-item - item damage):
+					send "Your %event-item% is almost breaking!"
+		Since:
+			1.1
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			[the] max durability of %itemstack%
+			%itemstack%'[s] max durability
+	Minecraft Version:
+		ID: ExprPlayerVersion
+		Description:
+			Returns the minecraft version of {{types|Player|player}}.
+		Examples:
+			on join:
+			if minecraft version of player is "1.9":
+			send "You're joining with version %mc version of player%!"
+		Since:
+			1.0 (ProtocolSupport), 1.0.5 (ViaVersion)
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] (mc|minecraft) version of %player%
+			%player%'[s] (mc|minecraft) version
+	Offline Player from UUID:
+		ID: ExprUUIDOfflinePlayer
+		Description:
+			It get a player from a UUID. If you have Bensku's fork dev23+, you can just use {{expressions|Parse|parse expression}} using the uuid.
+			Also, the uuid needs to be from a player that already played on your server, else it will return null value.
+		Examples:
+			set {_player} to offline player from "4580682b-ad69-41e5-a979-6b1b3b2cf9c1"
+		Since:
+			1.7.1
+		Return type: Offlineplayer
+		Changers:
+			none
+		Patterns:
+			offline player from [uuid] %string%
+	Online Time:
+		ID: ExprOnlineTime
+		Description:
+			Returns a {{types|Timespan|timespan}} of online time of {{types|Player|player}} or of the server. Only the online time of player can be edited.
+		Examples:
+			command /online:
+				trigger:
+					send "You're online for %online time of player% and the server is online for %online time of server%"
+		Since:
+			1.0 (player), 1.5.8 (server)
+		Return type: Timespan
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[the] online time of %player%
+			%player%'[s] online time
+	Player Data:
+		ID: ExprOfflineData
+		Description:
+			Returns a {{types|OfflinePlayer|offline player}} as it was a player, which means that you can get some values like money, inventory, enderchest,etc. Maybe all values doesn't work. If you want to change these values, you will have to {{effects|SavePlayerData|save player data}}.
+		Examples:
+			command /money <offlineplayer>:
+				trigger:
+					if arg is not online:
+			send "%money of player data of arg%"
+		Since:
+			1.1
+		Return type: Player
+		Changers:
+			add
+			remove
+			remove all
+		Patterns:
+			[the] player data of %offlineplayer%
+			%offlineplayer%'[s] player data
+	RGB Color:
+		ID: ExprRGBColor
+		Description:
+			Returns the rgb color of {{types|ItemStack|item stack}} or {{types|Color|color}}. You can set these values only for item stacks, in this case, leather armors.
+			The RGB color returns a list with 3 numbers and the other expressions returns which one separated.
+		Examples:
+			set {_PlayerEquipaments::*} to player's helmet, player's chestplate, player's leggings and player's boots #Must be leather armor
+			 
+			set rgb color of {_PlayerEquipaments::*} to rgb of color red
+			add 1 to red color of {_PlayerEquipaments::*}
+			remove 1 from green color of {_PlayerEquipaments::*}
+			set blue color of {_PlayerEquipaments::*} to 30
+		Since:
+			1.5.3 (single value of items), 1.6 (list values of items and color)
+		Return type: integer
+		Changers:
+			set
+		Patterns:
+			[the] R[ed, ]G[reen and ]B[blue] [colo[u]r[s]] of %-itemstacks/colors%
+			%-itemstacks/colors%'[s] R[ed, ]G[reen and ]B[blue] [colo[u]r[s]]
+	Rabbit Type:
+		ID: ExprRabbitType
+		Description:
+			Returns the type of rabbit. e.g. `black`, `black and white`, `brown`, `gold`, `salt and pepper`, `the killer bunny` and `white`.
+		Examples:
+			on spawn of rabbit:
+				if rabbit type of event-entity is "the killer bunny":
+					broadcast "Run, everyone, run! The Killer Bunny was spawned!"
+		Since:
+			1.0
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			[the] rabbit type of %entity%
+			%entity%'[s] rabbit type
+	Recipe ID:
+		ID: ExprRecipeID
+		Description:
+			Starting from minecraft 1.12, the recipes now has a unique id. Recipes registered by minecraft will have a id `minecraft:%the result item's name%`, an old recipe plugin will be `bukkit:%random uuid%`, while TuSKe will have its id as `tuske:%last recipe id + 1%`. Other plugins may have a different format, but always following `<plugin>:<key>`.**Only for Shaped and Shapeless recipes**
+		Examples:
+			loop recipes of held item:
+				add "{recipeBook:{recipes:["%recipe id of loop-recipe%"]}}" to player's nbt
+		Since:
+			1.8
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] recipe (id|name|key) of %recipes%
+			%recipes%'[s] recipe (id|name|key)
+	Recipe Owner:
+		ID: ExprRecipeOwner
+		Description:
+			Starting from minecraft 1.12, recipes have now the register plugin. If it is a minecraft recipe, it will return as `Minecraft`, if it is an old recipe plugin, it will return as `Bukkit` and everything else will return the plugin's name. **Only for Shaped and Shapeless recipes**
+		Examples:
+			loop recipes of held item:
+				if recipe owner of loop-recipe is "Minecraft":
+					send "That's a vanilla recipe!"
+		Since:
+			1.8
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] recipe owner of %recipes%
+			%recipes%'[s] recipe owner
+	Regex Error:
+		ID: ExprParseRegexError
+		Description:
+			It contains the last error of a regex. It is setted when there is a error while parsing a string as regex, {{effects|RegexReplace|replacing}}/{{effects|RegexSplit|spliting}} a string or checking in the {{conditions|RegexMatches|condition}}
+		Examples:
+			set {_regex} to "(\d+(\.\d+)*" parsed as regex
+			if regex error is set: #It will case there is a missing parentheses at the end.
+				send "A error occurred with the regex pattern. Details:"
+				send last regex parser error
+				#It will send a formatted strings like showing the errors. For example:
+				#Unclosed group near index 12
+				#(\d+(\.\d+)*
+				#             ^
+		Since:
+			1.7.1
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[last] regex [parser] error
+	Regex Pattern:
+		ID: ExprRegexPattern
+		Description:
+			This expression returns some regex patterns that Skript or Bukkit uses most.
+		Examples:
+			player's uuid regex matches uuid pattern #It will be always true.
+			"{MyVariable}" regex matches variable pattern
+			set {_list::*} to regex split "%{VariableList::*}%" with list pattern
+		Since:
+			1.7.5
+		Return type: Regex
+		Changers:
+			none
+		Patterns:
+			<.+> [regex] pattern
+	Split Characters:
+		ID: ExprSplitCharacter
+		Description:
+			Split a text with {{types|Number|number}} amount of characters. It is used to split the message in chat (the default is 60) and to item's lore.
+		Examples:
+			set {_s::*} to split "Hi, this text will be splitted in 3 lines" by 10 characters
+		Since:
+			1.6.8
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			split %string% (with|by|using) %number% [char[acter][s]]
+			%string% [split] (with|by|using) %number% [char[acter][s]]
+Types:
+	Custom Enchantment:
+		ID: CEnchant
+		Description:
+			It represents a custom enchantment. The values depends of the id name of {{effects|RegisterEnchantment|registered enchantment}}.
+		Examples:
+			if "Soulbound" parsed as custom enchantment is set: #checks if the custom enchantment exists.
+		Since:
+			1.5.1
+		Patterns:
+			custom[ ]enchantment[s]
+	GUI:
+		ID: GUIInventory
+		Description:
+			It represents a gui inventory, where the player can take items away from the inventory. It can be created only with {{effects|MakeGUI|advanced gui effect}}.
+		Examples:
+			/command gui:
+				trigger:
+					create new gui with virtual chest named "Hub" with 3 rows: #Create a new gui based in a inventory
+						make gui slot 13 with cake named "&e&lLobby": #Format slot with a given item
+							make player execute command "server Lobby" #Code to be executed when the player clicks on gui
+					open last gui to player #Open the last created gui to the player
+		Since:
+			1.7.5
+		Patterns:
+			gui[ ]inventor(y|ies)
+	Recipe:
+		ID: Recipe
+		Description:
+			A recipe contains the the ingredients list and the result item. Can only be get by {{expressions|Recipes|recipes's expression}}.
+		Examples:
+			loop recipes of {_item}:
+				if "%loop-recipe%" is "furnace recipe":
+					send "You have to make this recipe in a furnace."
+		Since:
+			1.0.7
+		Patterns:
+			recipe[s]
+	Regex:
+		ID: Pattern
+		Description:
+			Represents a regex object. For now, it won't have any usage but only for test the pattern. It will have more usage in future versions.
+		Examples:
+			set {_regex} to "(\d+(\.\d+)*" parsed as regex
+			if regex error is set: #It will case there is a missing parentheses at the end.
+				send "A error occurred with the regex pattern. Details:"
+				send last regex parser error
+				#It will send a formatted strings like showing the errors. For example:
+				#Unclosed group near index 12
+				#(\d+(\.\d+)*
+				#             ^
+		Since:
+			1.7.1
+		Patterns:
+			reg[ular ]ex[pression[s]|es]
+	Slot Type:
+		ID: SlotType
+		Description:
+			It represents a type of a inventory slot
+		Examples:
+			command /gui:
+				trigger:
+					create new gui with virtual workbench: #TuSKe
+						make gui slot 0 with diamond sword:
+							if gui-slot-type is result slot:
+								set gui-clicked-item to air
+					open last created gui to player
+		Usage: result slot, crafting slot, armor slot, container slot, quickbar slot, outside slot, fuel slot
+		Since:
+			1.7.5
+		Patterns:
+			slot[ ]type[s]

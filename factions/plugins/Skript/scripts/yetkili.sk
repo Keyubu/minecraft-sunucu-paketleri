@@ -1,0 +1,55 @@
+﻿options:
+	p: &6Yetkililer &8»
+
+command /yetkili [<text>] [<offlineplayer>] [<text>] [<text>]:
+	permission: yetkili.*
+	trigger:
+		if arg-1 isn't set:
+			send "{@p} &e/yetkili <ekle/sil/reset> <isim> <yetki> <yaş>"
+		if arg-1 is "ekle":
+			arg-2 is set:
+				arg-3 is set:
+					if arg 4 is set:
+						set {yetkililer::%arg-2%} to arg-2
+						set {yetki.%arg-2%} to colored arg-3
+						set {yas.%arg-2%} to colored arg-4
+						send "{@p} &e%arg-2% &aadlı oyuncu yetkililer arasına %arg 4% yaşıyla &e%colored arg-3% &ayetkisi ile eklendi."
+					else:
+						send "{@p} &cBir yaş gir."
+				else:
+					send "{@p} &cBir yetki gir."
+			else:
+				send "{@p} &cBir oyuncu ismi gir."
+		if arg-1 is "sil":
+			arg-2 is set:
+				{yetkililer::%arg-2%} is set:
+					delete {yetkililer::%arg-2%}
+					delete {yetki.%arg-2%}
+					delete {sonaktif.%arg 2%}
+					send "{@p} &e%arg-2% &aadlı oyuncunun yetkisi alındı."
+				else:
+					send "{@p} &cBu oyuncu bir yetkili değil."
+			else:
+				send "{@p} &cBir oyuncu ismi gir."
+		if arg-1 is "reset":
+			loop {yetkililer::*}:
+				delete {yetki.%loop-value%}
+				delete {yetkililer::%loop-value%}
+			send "{@p} &aTüm yetkililer silindi."
+			
+command /yetkililer:
+    trigger:
+        {yetkililer::*} is set:
+            open virtual chest inventory with 1 rows named "Yetkililer" to player
+            set {_c.slot} to -1
+            loop {yetkililer::*}:
+                add 1 to {_c.slot}
+                loop-value is online:
+                    format gui slot {_c.slot} of player with skull of loop-value named "&e&l%{yetki.%loop-value%}% &7%loop-value%" with lore "||&7Yaş: &f%{yas.%loop-value%}%||&7Aktiflik: &aÇevrimiçi" to nothing
+                else:
+                    format gui slot {_c.slot} of player with skull of loop-value named "&e&l%{yetki.%loop-value%}% &7%loop-value%" with lore "||&7Yaş: &f%{yas.%loop-value%}%||&7Aktiflik: &cÇevrimdışı||&7En son aktiflik: &f%{sonaktif.%loop-value%}%" to nothing
+        else:
+            send "&7Menü açılırken bir hata oluştu, lütfen kurucuya bildir."
+quit:
+    {yetkililer::%player%} is set:
+        set {sonaktif.%player%} to now

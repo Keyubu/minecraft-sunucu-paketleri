@@ -1,0 +1,197 @@
+change-nametag-prefix-suffix: true
+change-tablist-prefix-suffix: true
+enable-header-footer: true
+
+#20 ticks = 1 second
+nametag-refresh-interval-ticks: 20
+tablist-refresh-interval-ticks: 10
+header-footer-refresh-interval-ticks: 1
+#VERY EXPERIMENTAL !
+#IF YOU EXPERIENCE ANY ISSUES CONTACT ME
+unlimited-nametag-prefix-suffix-mode:
+  enabled: true
+  #modifying names of NPCs to avoid empty names on NPCs of online players
+  #this blocks any other attemps to change the name visibility or anything, so you need to disable it if you are using some citizens addon that changes their name
+  #needs relog to see the change
+  modify-npc-names: false
+header:
+- ''
+- '%animation:title%'
+- ''
+- '&e%online% &7oyuncu oynuyor!'
+- ''
+- '%animation:info%'
+- '%animation:line%'
+- ''
+footer:
+- ''
+- '%animation:line%'
+- ''
+- '&fVIP satın almak için sitemize gidin!'
+- '%animation:site%'
+- ''
+
+#servers and clients 1.9+
+enable-collision: true
+#the yellow number in tablist
+#options: PING, HEARTS, NONE (to disable it), CUSTOM (any placeholder defined below)
+tablist-objective: NONE
+tablist-objective-custom-value: '%some_placeholderapi_placeholder%'
+
+#preventing players in spectator gamemode from appearing at the bottom of tablist with transparent name FOR OTHER PLAYERS
+do-not-move-spectators: false
+#NOT case sensitive
+group-sorting-priority-list:
+- Kurucu
+- Yonetici
+- Yapimci
+- Moderator
+- Mimar
+- UstaRehber
+- Rehber
+- DenemeRehber
+- MVIP+
+- MVIP
+- VIP+
+- VIP
+- SkyLegend
+- SkyZeus
+- SkyKing
+- SkyLord
+- Oyuncu
+staff-groups:
+- Kurucu
+- Yonetici
+- Yapimci
+- Moderator
+- Mimar
+- UstaRehber
+- Rehber
+- DenemeRehber
+
+#better showing of %rank% placeholder
+rank-aliases:
+  Admin: '&cYönetici'
+  Mod: '&bModeratör'
+  #any other group not defined above
+  _OTHER_: '%vault_rank%'
+#properties: tabprefix, tabsuffix, tagprefix (in name tag), tagsuffix, customtabname (modifying the name itself), header, footer
+#extra ones which need unlimited nametag mode enabled: abovename (line of text above name tag), belowname (below name tag), customtagname
+Groups:
+  Kurucu:
+    tabprefix: '&cKurucu &e'
+    tagprefix: '&cKurucu &e'
+  Yonetici:
+    tabprefix: '&cYönetici &e'
+    tagprefix: '&cYönetici &e'
+  Yapimci:
+    tabprefix: '&6Yapımcı &e'
+    tagprefix: '&6Yapımcı &e'
+  Moderator:
+    tabprefix: '&bModeratör &e'
+    tagprefix: '&bModeratör &e'
+  UstaRehber:
+    tabprefix: '&bU. Rehber &e'
+    tagprefix: '&bU. Rehber &e'
+  Rehber:
+    tabprefix: '&aRehber &e'
+    tagprefix: '&aRehber &e'
+  DenemeRehber:
+    tabprefix: '&dD. Rehber &e'
+    tagprefix: '&dD. Rehber &e'
+  MVIP+:
+    tabprefix: '&aMVIP&c+ &7'
+    tagprefix: '&aMVIP&c+ &7'
+  MVIP:
+    tabprefix: '&aMVIP &7'
+    tagprefix: '&aMVIP &7'
+  VIP+:
+    tabprefix: '&6VIP&c+ &7'
+    tagprefix: '&6VIP&c+ &7'
+  VIP:
+    tabprefix: '&eVIP &7'
+    tagprefix: '&eVIP &7'
+  #any other group not defined above
+  _OTHER_:
+    tabprefix: '&7'
+    tagprefix: '&7'
+
+#personal settings, override group settings
+Users:
+  md_5:
+    tabprefix: '&6&lSpigot &a'
+    tagprefix: '&6&lDev &a'
+    tabsuffix: ''
+    tagsuffix: ''
+    abovename: Hi
+    belowname: There
+    customtabname: MessageDigest5
+    customtagname: MessageDigest5
+
+#list of worlds with different settings than default, other worlds will use settings from above
+per-world-settings:
+  otherworld:
+    header:
+    - an example of world with custom
+    footer:
+    - header/footer and prefix/suffix
+    Groups:
+      Owner:
+        tabprefix: '&0&l[&a&lOwner&0&l] &a'
+        tagprefix: '&2&lOwner &a'
+        header:
+        - ur server man
+        footer:
+        - welcome
+      Admin:
+        tabprefix: '&2&lAdmin &1&l'
+        tagprefix: '&2&lAdmin &1&l'
+      Player:
+        tabprefix: '&5&lPlayer &3&l'
+        tagprefix: '&5&lPlayer &3&l'
+    Users:
+      Player1:
+        tabprefix: ''
+        tagprefix: ''
+        tabsuffix: ''
+        tagsuffix: ''
+#setting output of some placeholders
+placeholders:
+  deluxetag-yes: < %value% >
+  deluxetag-no: '&oNo Tag :('
+  faction-yes: '%value%'
+  faction-no: '&cYok'
+  afk-yes: ' &8AFK'
+  afk-no: ''
+  date-format: dd.MM.yyyy
+  time-format: HH:mm:ss
+  #if time doesn't show correctly, you can change the time it shows
+  #setting to -1 will make it show 1 hour less than it does currently, 1 makes it show one hour more than currently, 0 does nothing
+  time-offset: 0
+  #remove these strings from everywhere. Typically an empty output when using some clan/faction related plugin but player isn't in any
+  #so players won't have empty brackets before their names
+  remove-strings:
+  - '[] '
+  - '< > '
+
+disable-features-in-worlds:
+  header-footer:
+  - disabledworld
+  tablist-names:
+  - disabledworld
+  nametag:
+  - disabledworld
+  tablist-objective:
+  - disabledworld
+  bossbar:
+  - disabledworld
+  belowname:
+  - disabledworld
+
+#the vanilla belowname feature
+#doesn't support player placeholders (faction, prefix), only server placeholders (time, date, animations) and static text
+belowname:
+  refresh-interval-ticks: 5
+  number: '%health%'
+  text: Health
+  enabled: true

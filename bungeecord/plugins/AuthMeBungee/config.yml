@@ -1,0 +1,28 @@
+# List of servers which required to be authenticated
+authServers: 
+- lobby
+# Consider every server as an auth server
+allServersAreAuthServers: false
+commands:
+    # Allows or not commands to be performed if user is not logged in
+    requireAuth: true
+    # List of commands allowed to be perform without being authenticated
+    whitelist: 
+    - /login
+    - /register
+    - /l
+    - /reg
+    - /email
+    - /captcha
+# Allows or not user to talk in chat if he is not logged in
+chatRequiresAuth: true
+serverSwitch:
+    # Kick all players who switch servers without being authenticated (eg. plugin teleport)
+    requiresAuth: true
+    kickMessage: Authentication required.
+# Enable auto-login between servers
+autoLogin: false
+# If enabled, unlogged users will be sent to the unloggedUserServer server!
+sendOnLogout: false
+# If sendOnLogout is enabled, unlogged users will be sent to this server!
+unloggedUserServer: ''

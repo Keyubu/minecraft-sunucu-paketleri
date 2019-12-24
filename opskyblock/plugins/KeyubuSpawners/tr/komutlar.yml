@@ -1,0 +1,6 @@
+Ana_Komut: 'itemsp'
+Args:
+  Reload_Arg: 'reload'
+  Dagit_Arg: 'herkesever'
+  Ver_Arg: 'ver'
+  List_Arg: 'liste'

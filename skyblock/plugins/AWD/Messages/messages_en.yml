@@ -1,0 +1,11 @@
+# Use & for color codes. List of color can be found here: http://goo.gl/VCscSk
+# When the command added in config.yml doesn't exists.
+Unknown command: '&cThe command in config.yml doesn''t exists.'
+# If debug (in config.yml) was setted to true, console will receive informations when players with World Downloader trying to join.
+# %player is the player name.
+Player joined: '&e%player has been authorized to enter with World Downloader.'
+Player rejected: '&e%player tried to enter with World Downloader.'
+# When the reload of the plugin has been made with success.
+AWD reload: '&3AWD reloaded!'
+# When player hasn't permission.
+No permission: '&cYou don''t have permission!'

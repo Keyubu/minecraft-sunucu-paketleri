@@ -1,0 +1,17 @@
+# General Messages
+
+prefix: "&8[&6UltimateTimber&8] "
+no-permission: "&cليس لديك الإذن لاقيام بذلك"
+
+# Command Messages
+
+command-reload-description: "&8 - &a/ut reload &7 - تحديث الإعدادات."
+command-reload-reloaded: "&7 تمت إعادة تحميل الإعدادات والملفات المحلية"
+
+command-toggle-description: "&8 - &a/ut toggle &7 - تبديل وضع التقطيع الخاص بك"
+command-toggle-enabled: " &aمفعل&f :&7 وضع التقطيع"
+command-toggle-disabled: "&aمطفأ&f :&7 وضع التقطيع"
+
+# Misc
+
+on-cooldown: "&eأنت في حالة انتظار ولا يمكنك إسقاط الأشجار في الوقت الحاليي."

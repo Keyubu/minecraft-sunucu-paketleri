@@ -1,0 +1,442 @@
+options:
+	p: &3Sunucu &8»
+	
+# VIP VERME
+	
+command /vipver [<text>] [<text>] [<text>]:
+	trigger:
+		if arg 1 is set:
+			if arg 2 is set:
+				if arg 3 is set:
+					execute player command "manuadd %arg 1% Caylak" # VIP vermeden önce kişiyi Çaylak yapmak gerekir çünkü VipZero'da varsayılan gruptur.
+					execute player command "givevip %arg 1% %arg 2% %arg 3%" # Daha sonra kişiye VipZero aracılığıyla VIP verilir.
+					# Bu işlemler yapılmasaydı VipZero kişiye VIP grubunu ekleyecekti. Yani oyuncunun iki grubu olacaktı (grup eklemek yerine grubunu değiştirmiş olduk)
+				else:
+					send "&3Kullanım &8» &7VIP vermek için &e/vipver <oyuncu> <vip> <gün>"
+			else:
+				send "&3Kullanım &8» &7VIP vermek için &e/vipver <oyuncu> <vip> <gün>"
+		else:
+			send "&3Kullanım &8» &7VIP vermek için &e/vipver <oyuncu> <vip> <gün>"	
+	
+# GİRİŞ ÇIKIŞ MESAJLARI
+	
+on join:
+	set join message to "&a(!) &6%player% &eoyuna katıldı &f(%number of players%/120)"
+	
+on quit:
+	set quit message to "&c(!) &6%player% &eoyundan çıktı &f(%number of players-1%/120)"
+	
+# YAĞMURU KAPATMA
+		
+on weather change to rain or thunder:
+	cancel event
+		
+# DISCORD
+
+command /discord:
+	trigger:
+		message ""
+		message "&9▇▇▇▇▇▇▇▇"
+		message "&9▇&f▇▇&9▇▇&f▇▇&9▇"
+		message "&9▇&f▇▇▇▇▇▇&9▇                   &bKeyubu Discord"
+		message "&9▇&f▇&9▇&f▇▇&9▇&f▇&9▇"
+		message "&9▇&f▇▇▇▇▇▇&9▇            &ahttps://discord.gg/Ffvgrm5"
+		message "&9▇&f▇&9▇▇▇▇&f▇&9▇"
+		message "&9▇&f▇▇&9▇▇&f▇▇&9▇"
+		message "&9▇▇&9▇▇▇▇▇▇"	
+		message ""
+		
+# HERKESE PARA VERME
+	
+command /herkeseparaver [<integer>]:
+	permission: op
+	permission message: §cHata §8» §fBu komutu girmek için yetkiniz yok.
+	trigger:
+		if arg 1 isn't set:
+			message "&3Kullanım &8» &7Herkese para vermek için &e/herkeseparaver <miktar>"
+		else:
+			send "{@p} &7Herkesin hesabına &a%arg 1% &7para yatırıldı!" to players
+			add arg 1 to balance of players
+			
+			
+# YETKİLİ SOHBETİ
+		
+command /yetkilisohbet:
+	permission: yetkili.sohbet
+	permission message: §cHata §8» §fBu komutu girmek için yetkiniz yok.
+	aliases: ys
+	trigger:
+		if {ys::%player%} isn't set:
+			set {ys::%player%} to true
+			send "{@p} &7Artık yazdığın mesajlar yetkili sohbete gidecek."
+		else:
+			delete {ys::%player%}
+			send "{@p} &7Artık yazdığın mesajlar yetkili sohbete gitmeyecek."
+		
+chat:
+	if {ys::%player%} is set:
+		cancel event
+		send "&6(YS) &e%player% &8» &a%colored message%" to all players where [player input has permission "sktop"]
+					
+# DUYURU
+
+command /duyuru [<text>] [<text>]:
+	permission: duyuru.yap
+	permission message: §cHata §8» §fBu komutu girmek için yetkiniz yok.
+	trigger:
+		if arg 1 is set:
+			if arg 2 is set:
+				if arg 1 is "normal" or "n":
+					send "&7%colored arg 2%" to players
+				if arg 1 is "action" or "a":
+					set action bar of players to "&7%colored arg 2%"
+				if arg 1 is "title" or "t":
+					send players title "&7%colored arg 2%" for 3 seconds
+			else:
+				send "&3Kullanım &8» &7Duyuru yapmak için &e/duyuru <normal/action/title> <mesaj>" to player
+		else:
+			send "&3Kullanım &8» &7Duyuru yapmak için &e/duyuru <normal/action/title> <mesaj>" to player
+	
+			
+# Aşağı düşmeme
+		
+on damage:
+	if damage cause is void:
+		cancel event
+		teleport victim to {spawn}
+		send "{@p} &7Dunyadan düştün!" to victim
+		stop
+	
+# SpawnTP Skript
+		
+on join:
+	teleport the player to {spawn}
+
+on first join:
+	teleport the player to {spawn}	
+	
+on respawn:
+	teleport the player to {spawn}
+	
+command /spawnyap:
+	permission: op
+	permission message: §cHata §8» §fBu komutu girmek için yetkiniz yok.
+	trigger:
+		set {spawn} to location of the player 
+		send "{@p} &7Spawn yeri ayarlandı." to player
+			
+command /spawngit:
+	permission: op
+	permission message: §cHata §8» §fBu komutu girmek için yetkiniz yok.
+	trigger:
+		teleport the player to {spawn}
+		send "{@p} &7Spawna gittin!" to player
+		
+# SOHBET TEMIZLEME
+
+command /st:
+	permission: sohbet.sil
+	permission message: §cHata §8» §fBu komutu girmek için yetkiniz yok.
+	trigger:
+		loop 40 times:
+			send "" to players
+		send "" to players
+		send "         &eSohbet &a%player% &etarafından temizleniyor." to players
+		send "                        &6www.keyubu.com" to players
+		send "" to players
+	
+# OYLAMA
+
+command /oylama [<text>] [<int>]:
+	permission: op
+	permission message: §cHata §8» §fBu komutu girmek için yetkiniz yok.
+	trigger:
+		if arg 1 is set:
+			if arg 2 is set:
+				set {oylama.sureci} to true
+				send "&6Oylama &8» &e%arg 1%" to players
+				send "&7Kabul etmek için &a/evet&7, reddetmek için ise &c/hayır &7yazın." to players
+				send "&7Oylamanın bitmesine &e%arg 2% &7saniye kaldı." to players
+				loop arg 2 times:
+					wait a second
+				delete {oylama.sureci}
+				send "&6Oylama &8» &eOylama sunuluyor!" to players
+				wait 1 second
+				if {evet} is not set:
+					send "&aEvet &7sayısı &8» &f0" to players
+				else:
+					send "&aEvet &7sayısı &8» &f%{evet}%" to players
+				if {hayir} is not set:
+					send "&cHayır &7sayısı &8» &f0" to players
+				else:
+					send "&cHayır &7sayısı &8» &f%{hayir}%" to players
+				delete {oykullandi::*}
+				delete {evet}
+				delete {hayir}
+			else:
+				send "&6Oylama &8» &7/oylama <konu> <süre>" to player
+		else:
+			send "&6Oylama &8» &7/oylama <konu> <süre>" to player
+				
+command /evet:
+	trigger:
+		if {oylama.sureci} is set:
+			if {oykullandi::%player%} is not set:
+				set {oykullandi::%player%} to 1
+				add 1 to {evet}
+				send "&6Oylama &8» &7Oyunuzu &aevet &7olarak kullandınız." to player
+			else:
+				send "&6Oylama &8» &7Oyunuzu zaten kullanmışsınız." to player
+		else:
+			send "&6Oylama &8» &7Yürürlükte bir oylama yok!" to player
+			
+command /hayır:
+	aliases: hayir
+	trigger:
+		if {oylama.sureci} is set:
+			if {oykullandi::%player%} is not set:
+				set {oykullandi::%player%} to 1
+				add 1 to {hayir}
+				send "&6Oylama &8» &7Oyunuzu &chayır &7olarak kullandınız." to player
+			else:
+				send "&6Oylama &8» &7Oyunuzu zaten kullanmışsınız." to player
+		else:
+			send "&6Oylama &8» &7Yürürlükte bir oylama yok!" to player
+			
+on skript load:
+	delete {oykullandi::*}
+	delete {evet}
+	delete {hayir}
+
+# ÇEKILIŞ			
+			
+command /çekilişyap:
+	permission: cekilis.yap
+	permission message: §cHata §8» §fBu komutu girmek için yetkiniz yok.
+	trigger:
+		if {cekilis} is true:
+			send "{@p} &7Şu an zaten çekiliş yapılıyor."
+			stop
+		else:
+			set {cekilis} to true
+			loop all players:
+				add loop-player to {_ly::list::*}
+			send all players title "&3Çekiliş başlıyor!" for 3 seconds
+			play LEVEL_UP at players with pitch 1
+			wait 3 seconds
+			set {çekiliş::%player%} to 10
+			loop 10 times:
+				send all players title "&eÇektim gitti!" with subtitle "&f%{çekiliş::%player%}%" for 1 seconds
+				play CLICK at players with pitch 1
+				remove 1 from {çekiliş::%player%}
+				wait a second
+			wait 1 seconds
+			send all players title "&e&kkkkkkkkkkkkkkkk"
+			wait 3 seconds
+			set {_ly::winner} to random element out of {_ly::list::*}
+			play FIREWORK LARGE BLAST at players with pitch 1
+			send all players title "&d%{_ly::winner}%" with subtitle "&fO bal suratlı olan şanslı kişi!" for 3 seconds
+			wait 3 second
+			delete {cekilis}
+			delete {çekiliş::%player%}
+			
+on load:
+	delete {cekilis}
+	delete {çekiliş::*}
+	
+# ARSA FLY	
+	
+command /arsafly:
+	trigger:
+		world is "arsalar":
+			send "{@p} &aUçma modu aktif!" to player
+			play "ENDERDRAGON_WINGS" to player
+			set player's fly mode to true
+		else:
+			send "{@p} &7Sadece arsalarda uçmana izin verilir." to player	
+			
+# SUNUCU MESAJLARI
+	
+on death:
+	victim is a player 
+	attacker is a player
+	send "&c%victim% &7adlı kişi &a%attacker% &7tarafından katledildi!" to players
+	
+# ARENAYA IŞINLANMA
+		
+command /arenayap:
+	permission: op
+	permission message: §cHata §8» §fBu komutu girmek için yetkiniz yok.
+	trigger:
+		set {arena} to location of player
+		send "&7Giriş koordinatları &f%location of player% &7olarak belirlendi!"
+
+on sign change:
+	if line 1 is "[Arena]":
+		if player have permission "genel.perm":
+			if line 2 is "gir":
+				set line 1 to "&4Arena"
+				set line 3 to "Girmek için" 
+				set line 4 to "&ltıkla"
+
+on rightclick on sign:
+	if line 1 of clicked block is "&4Arena":
+		if line 4 of clicked block is "&ltıkla":
+			teleport player to {arena} 
+			
+# SOHBET KAPAMA
+		
+command /sohbet <text>:
+	permission: sohbet.kilit
+	permission message: §cHata §8» §fBu komutu girmek için yetkiniz yok.
+	trigger:
+		if arg 1 is "kapat":
+			set {kilitli} to true
+			send "{@p} &cSohbet kapatıldı." to players
+		else:
+			if arg 1 is "aç":
+				set {kilitli} to false
+				send "{@p} &aSohbet açıldı." to players
+
+on chat:
+	{kilitli} is true:
+		if player doesn't have permission "sohbet.bypass":
+			cancel event
+			send "{@p} &7Sohbet kapalı, sadece yetkiye sahip olanlar konuşabilir!" to player
+		else:
+			uncancel event
+
+# EVENT			
+			
+command /eventyap [<text>]:
+	permission: event.yap
+	permission message: &cHata &7» &fBilinmeyen bir komut girdin, tekrar dene.
+	trigger:
+		send "&3Event &8» &7Event &e2 &7saniye sonra yapılacak!" to players
+		wait 2 second
+		give 16 diamond block to players
+		give 16 emerald block to players
+		give 32 gold block to players
+		give 32 iron block to players
+		execute console command "cc giveall physical mega 1"
+
+# TÜRKÇE KOMUTLAR	
+	
+command /kasa:
+	trigger:
+		execute player command "cc"
+		
+command /geri:
+	trigger:
+		execute player command "back"
+		
+command /sandık:
+	aliases: chest
+	trigger:
+		execute player command "customec open"
+		
+# HOLOGRAM SOHBET		
+
+command /hsohbet:
+	permission: hologram.sohbet
+	trigger:
+		if {holochat.%player%} is true:
+			set {holochat.%player%} to false
+			send player title "&eHologram Sohbet" with subtitle "&c&lKAPALI" for 3 seconds
+			stop trigger
+		if {holochat.%player%} is not set:
+			set {holochat.%player%.} to true
+		set {holochat.%player%} to true
+		send player title "&eHologram Sohbet" with subtitle "&a&lAÇIK" for 3 seconds
+
+on chat:
+	if {holochat.%player%} is true:
+		if player has permissions "hologram.sohbet":
+			bind hologram "%player's displayname%;&f%message%" to player for 2 seconds offset by 0.0, 3.0, 0.
+			
+on damage:
+	attacker is a player
+	victim is a player
+	if {holochat.%attacker%} is true:
+		set {holochat.%attacker%} to false
+		send "&eSavaşta olduğunuz için &dHologram Sohbeti &eotomatik olarak &ckapandı" to attacker
+		
+# VIP EFEKTLERI		
+		
+command /viphız:
+	permission: vip.hiz
+	permission message: §cBu özelliği kullanmak için yetkiniz yok.
+	cooldown: 5 minutes
+	cooldown message: &cVIP efektlerini &e5 &cdakikada bir kullanabilirsiniz.
+	cooldown storage: {vipefekt::%player%}
+	trigger:
+		apply potion of speed 2 to the player for 2 minutes
+		message "&eVIP &8» &aEfekt başarıyla aktif edildi."
+command /vipgüç:
+	permission: vip.guc
+	permission message: §cBu özelliği kullanmak için yetkiniz yok.
+	cooldown: 5 minutes
+	cooldown message: &cVIP efektlerini &e5 &cdakikada bir kullanabilirsiniz.
+	cooldown storage: {vipefekt::%player%}
+	trigger:
+		apply potion of strength 2 to the player for 2 minutes
+		message "&eVIP &8» &aEfekt başarıyla aktif edildi."
+command /vipgörünmezlik:
+	permission: vip.gorunmezlik
+	permission message: §cBu özelliği kullanmak için yetkiniz yok.
+	cooldown: 5 minutes
+	cooldown message: &cVIP efektlerini &e5 &cdakikada bir kullanabilirsiniz.
+	cooldown storage: {vipefekt::%player%}
+	trigger:
+		apply potion of invisibility 1 to the player for 2 minutes
+		message "&eVIP &8» &aEfekt başarıyla aktif edildi."
+command /vipateş:
+	permission: vip.ates
+	permission message: §cBu özelliği kullanmak için yetkiniz yok.
+	cooldown: 5 minutes
+	cooldown message: &cVIP efektlerini &e5 &cdakikada bir kullanabilirsiniz.
+	cooldown storage: {vipefekt::%player%}
+	trigger:
+		apply potion of fire resistance 2 to the player for 2 minutes
+		message "&eVIP &8» &aEfekt başarıyla aktif edildi."
+command /vipdirenç:
+	permission: vip.direnc
+	permission message: §cBu özelliği kullanmak için yetkiniz yok.
+	cooldown: 5 minutes
+	cooldown message: &cVIP efektlerini &e5 &cdakikada bir kullanabilirsiniz.
+	cooldown storage: {vipefekt::%player%}
+	trigger:
+		apply potion of resistance 2 to the player for 2 minutes
+		message "&eVIP &8» &aEfekt başarıyla aktif edildi."
+command /vipyenilenme:
+	permission: vip.yenilenme
+	permission message: §cBu özelliği kullanmak için yetkiniz yok.
+	cooldown: 5 minutes
+	cooldown message: &cVIP efektlerini &e5 &cdakikada bir kullanabilirsiniz.
+	cooldown storage: {vipefekt::%player%}
+	trigger:
+		apply potion of regeneration 2 to the player for 2 minutes
+		message "&eVIP &8» &aEfekt başarıyla aktif edildi."
+command /vipsu:
+	permission: vip.su
+	permission message: §cBu özelliği kullanmak için yetkiniz yok.
+	cooldown: 5 minutes
+	cooldown message: &cVIP efektlerini &e5 &cdakikada bir kullanabilirsiniz.
+	cooldown storage: {vipefekt::%player%}
+	trigger:
+		apply potion of water breathing 2 to the player for 2 minutes
+		message "&eVIP &8» &aEfekt başarıyla aktif edildi."       
+command /vipefekt:
+	trigger:
+		message ""
+		message " &aKullanabileceğiniz efektler" 
+		message " &fVIP hız &6/viphız"
+		message " &fVIP güç &6/vipgüç"
+		message " &fVIP görünmezlik &6/vipgörünmezlik"
+		message " &fVIP ateş direnci &6/vipateş"
+		message " &fVIP direnç &6/vipdirenç"
+		message " &fVIP yenilenme &6/vipyenilenme"
+		message " &fVIP su altında nefes &6/vipsu"
+		message ""
+			
+	

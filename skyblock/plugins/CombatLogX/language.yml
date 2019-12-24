@@ -1,0 +1,156 @@
+# Default messages for CombatLogX
+# DO NOT set a message to `false` or null
+# DO NOT delete any messages
+# 
+# To remove a message, set it to "" or ''
+messages:
+  plugin prefix: "&cPvP &8▸ &r"
+  expansion prefix: "&6[CombatLogX {expansion}]&r"
+
+  loading expansion: "Addon yükleniyor '{name} v{version}'"
+  loaded expansions: "Toplam {amount} adet addon yüklendi{s}"
+
+  enabling expansion: "Addon açılıyor '{name} v{version}'"
+  enabled expansions: "Başarıyla açıldı {amount} addon{s}"
+  
+  unknown entity name: "bilinmeyen canlı"
+
+  broadcasts:
+    on load: "§cCombatLogX is preloading expansions this is W.I.P, report any issues!"
+    on enable: "&aCombatLogX açık."
+    on disable: "&cCombatLogX kapalı."
+
+  commands:
+    no permission: "&cYetkiniz bulunmamakta '{permission}'."
+    invalid target: "&cGeçersiz hedef '{target}'."
+
+    combatlogx:
+      reloaded: "&aTüm yapılandırma dosyaları yenilendi."
+      tag: "&a&oYou just forced &f{target}&a&o into combat. This may cause issues!"
+      untag: "&a&oYou just forced &f{target}&a&o out of combat. This may cause issues!"
+      not in combat: "&c&oThat player is not in combat."
+
+    combattime:
+      not in combat: "&cSavaşa girdiniz! Savaş sırasında oyundan çıkmayın."
+      not in combat other: "&c{target} şu an savaşta."
+      time left: "&a&oYou have &c{time} seconds &a&oremaining."
+      time left other: "&f{target}&a&o has &c{time} seconds &a&oremaining"
+
+  combat:
+    expire: "&aArtık savaşta değilsiniz."
+    enemy death: "&aDüşmanın öldü!"
+    tagged:
+      attacked by player: "&e{name} &ctarafından saldırıya uğradın. Oyundan çıkma!"
+      attacker of player: "&e{name} &cadlı kişiye saldırdın. Oyundan çıkma!"
+      attacked by mob: "&c&oYou were attacked by a(n) &f{mob_type}&c&o. Please do not log out!"
+      attacker of mob: "&c&oYou attacked a(n) &f{mob_type}&c&o. Please do not log out!"
+      unknown: "&cŞu anda savaştasın. Oyundan çıkma!"
+
+  expansions:
+    cheat prevention:
+      gamemode:
+        change: "&c&oYour gamemode was changed to &f{gamemode}&c&o because you were tagged."
+        not allowed: "&c&oYou cannot switch gamemodes during combat."
+
+      flight:
+        disabled: "&cFLY kapandı çünkü savaşa girdin."
+        not allowed: "&cSavaştayken uçamazsın."
+
+      elytra:
+        disabled: "&cElytra kapatıldı çünkü savaşa girdin."
+        not allowed: "&cSavaştayken elytra kullanamazsın."
+        
+      riptide not allowed: "&c&oYou cannot use riptide during combat."
+
+      command:
+        not allowed: "&cSavaştayken {command} komutunu kullanamazsın."
+
+      teleport:
+        enderpearl:
+          not allowed: "&cSavaştayken enderpearl kullanamazsın."
+        other:
+          not allowed: "&cSavaştayken ışınlanamazsın."
+
+      inventory:
+        closed: "&cEnvanterin kapatıldı çünkü savaşa girdin."
+        not allowed: "&cSavaştyken envaterini açamazsın."
+
+      chat:
+        not allowed: "&cSavaştayken sohbet edemezsin."
+        
+      blocks:
+        breaking not allowed: "&c&oYou cannot break blocks during combat."
+        placing not allowed: "&c&oYou cannot place blocks during combat."
+        
+      items:
+        pick up not allowed: "&c&oYou cannot pick up items during combat."
+        dropping not allowed: "&c&oYou cannot drop items during combat."
+        
+      entities:
+        interaction not allowed: "&c&oYou cannot interact with that during combat."
+
+
+    notcombatlogx:
+      all damage: "&cHasar aldın, oyundan çıkma!"
+      damage tag:
+        contact: "&c&oYou were pricked by a cactus. Do not log out!"
+        suffocation: "&c&oYou are suffocating in a wall. Do not log out!"
+        fall: "&c&oYou fell down. Do not log out!"
+        fire: "&c&oYou walked into fire. Do not log out!"
+        fire tick: "&c&oYou are burning. Do not log out!"
+        lava: "&c&oYou are boiling in lava. Do not log out!"
+        drowning: "&c&oYou are drowning. Do not log out!"
+        block explosion: "&c&oYou were exploded by tnt. Do not log out!"
+        lightning: "&c&oZeus hates you. Do not log out!"
+        starvation: "&c&oYou are starving to death. Do not log out!"
+        poison: "&c&oYou are poisoned. Do not log out!"
+        magic: "&c&oSomeone threw a potion at you. Do not log out!"
+        wither: "&c&oYou are withering away. Do not log out!"
+        falling block: "&c&oA block fell on you. Do not log out!"
+        custom: "&c&oYou took damage from an unknown source. Do not log out!"
+        fly into wall: "&c&oYou hit a wall. Do not log out!"
+        hot floor: "&c&oThe floor is lava! Do not log out!"
+        cramming: "&c&oYou are being squished. Do not log out!"
+
+    factions compatibility:
+      no entry: "You cannot enter a no-pvp area during combat"
+
+    towny compatibility:
+      no entry: "You cannot enter a no-pvp area during combat"
+      
+    residence compatibility:
+      no entry: "You cannot enter a no-pvp area during combat"
+      
+    lands compatibility:
+      no entry: "You cannot enter a no-pvp area during combat"
+      
+    red protect compatibility:
+      no entry: "You cannot enter a no-pvp area during combat"
+
+    worldguard compatibility:
+      no entry:
+        pvp: "You cannot enter a no-pvp area during combat"
+        mob: "You cannot enter a non-mob area while tagged with a mob"
+
+    placeholder compatibility:
+      zero time left: "Savaşda değil"
+      unknown: "Bilinmiyor"
+      status:
+        fighting: "&cSavaşta"
+        idling: "&aBoşta"
+        in combat: "&aEvet"
+        not in combat: "&cHayır"
+        
+    citizens compatibility:
+      kick message: "&cYou are not allowed to log back in until your clone is killed or removed."
+      
+    newbie helper:
+      pvp:
+        enabled: "&7&lPVP: &aEnabled"
+        disabled: "&7&lPVP: &cDisabled"
+      no pvp:
+        self: "&c&oYou cannot hit that player while your PVP is disabled."
+        other: "&c&oThat player doesn't have pvp enabled."
+      disabled:
+        attacker: "You attacked someone so your newbie protection was disabled."
+        expired: "Your newbie protection has expired."

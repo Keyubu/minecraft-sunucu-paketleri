@@ -1,0 +1,23 @@
+punishment: kick <player> &cYou're not allowed to join with cheats installed in your Minecraft folder. \n&cTry removing cheat files from:\n\n&e.minecraft\n.minecraft/versions
+blacklist:
+   # Some cheats that creates config files in ".minecraft"
+   - 'Jigsaw/settings.json'
+   - 'Jigsaw 1.12/settings.json'
+   - 'LiquidBounce-1.8/modules.json'
+   - 'Wolfram/windowData.wolfram'
+   - 'Akrien/modules.txt'
+   - 'Snow/Modules/Fly.json'
+   - 'Metro/settings.properties'
+   - 'wurst/options.json'
+
+   # Jar files in ".minecraft/versions"
+   - 'versions/Jigsaw/Jigsaw.jar'
+   - 'versions/Jigsaw 1.12.2/Jigsaw 1.12.2.jar'
+   - 'versions/LiquidBounce1.8/LiquidBounce1.8.jar'
+   - 'versions/Wolfram/Wolfram.jar'
+   - 'versions/Akrien/Akrien.jar'
+   - 'versions/Snow/Snow.jar'
+   - 'versions/Metro6.0/Metro6.0.jar'
+   - 'versions/Wurst/Wurst.jar'
+   - 'versions/Wurst MC 1.8 OF/Wurst MC 1.8 OF.jar'
+config_version: 1

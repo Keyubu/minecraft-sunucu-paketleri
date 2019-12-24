@@ -1,0 +1,77 @@
+#Use metrics to send anonymous data about your server. The data that
+#is sent are:
+#
+#Players currently online (not max player count)
+#Version of the server (the same version you see in /version)
+#Version of this plugin
+#
+#If you don't agree with this, you can set it to false freely.
+#These values will be used only for statistic for this plugin.
+use_metrics: true
+updater:
+  
+  #It will check for new update everytime the server starts or
+  #when someone use the command /tuske update check
+  check_for_new_update: false
+  
+  #It will auto update the plugin. When there is a new version,
+  #the plugin will download it and update when the server restarts.
+  #Warning: I can't guarantee that the plugin is free of bugs that
+  #can come in newest updates. I don't recommend to use in your main
+  #server.
+  #You can still download/update your plugin by command, see more in
+  #/tuske update
+  auto_update: false
+  
+  #Download pre-releases.
+  #Note: pre-releases versions shoudln't be used in your main server.
+  #It's just to test new incomming features only!!
+  download_pre_releases: false
+
+#This option will be for future things of TuSKe.
+#It will be used when there is some features that isn't available
+#or uncompatible with your version. For now, it doesn't do nothing
+#but it tends to disable some crashing expression or lagging event
+#
+#true if you want to disable. (not implemented yet)
+disable:
+  SomeExample: true
+
+#This option will be for future things of TuSKe.
+#It will just show some debug messages if needed.
+#So far, it doesn't do nothing, only prevent some testing debug messages
+#that can be accidentaly forgot inside the code.
+debug_mode: false
+
+#It will be used to warn about expressions that may have risk to your server,
+#The warn is sent when reloading a script and it won't prevent the expression to work.
+#An example is the expression 'random strings matching %regex%'.
+warn_unsafe_expressions: true
+
+#This is only needed in case of conflict with Skript or another addon
+#It will make some types, that is registered by TuSKe and if the type is a Enum,
+#to accept the form as '<Enum type>.<Enum name>'
+#For example, TuSKe register the type 'InventoryType' for the expression to create inventories
+#So, in case the value 'chest' is conflicting with something else, just enable it and
+#it will only accept if used like 'InventoryType.CHEST'
+#Example:
+#	open virtual InventoryType.CHEST inventory with size 1 named "Hi" to player
+#Don't need to worry about it, is just in case.
+use_only_enum_names: false
+
+#A documentation that will be generated at 'plugins/TuSKe/documentation/'
+#for all addons
+documentation:
+  
+  #Should documentation be generated?
+  enabled: true
+  
+  #What type of file the documentation should be generated?
+  #By default, it uses a format to be easier to see which ends with '.sk'.
+  #In case you want to use this documentation externally, there are few options:
+  #  json: Generates a file with json format.
+  #  raw json: Generates a file with raw json format (single line only).
+  #  yaml: Generates a file in yaml format.
+  #  markdown: Generates in Markdown format, useful to github's wiki.
+  #  default: The default format described above.
+  file_type: default
