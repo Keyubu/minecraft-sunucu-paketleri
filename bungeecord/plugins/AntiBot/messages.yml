@@ -2,7 +2,7 @@
 #          Messages          #
 ##############################
 
-reload: '&aPlugin AntiBot reloaded!'
+reload: '&aPlugin AntiBot reloaded! |Fatih ÇELİK'
 
 help: |-
   &aAntiBot commands:
