@@ -1,16 +1,17 @@
 # [![keyubu-yazi-beyaz](https://user-images.githubusercontent.com/47111280/164741112-6fddad44-e229-4429-b27b-0b955aa3ca0b.png)](https://keyubu.com)
 
-# 2020 paketleri
-> Bu eklenti paketlerine artık destek verilmemektedir.
+# 2022 paketleri
 
-## Plugin Paketleri Hakkında Bilgilendirme
-Paketler sadece 1.8 sürümünü destekler. Üst sürümlerden girişler aktiftir. Güncel üst sürümlerden giriş yapılabilmesi için `ViaVersion` eklentisini güncelleyiniz. Dilerseniz ViaVersion/config.yml "block-protocols" kısmından gerekli protokolleri kaldırabilirsiniz. Sunucular __2020 yılının__ "Minecraft Exploit, Crash" eklentileri ile korunmaktadır. 
+## Eklenti paketleri hakkında bilgilendirme
+Bu paketler her daim son sürümü destekleyecek şekilde güncellenecektir. Paketler profesyonel seviyede olmayıp, sunucu açma işine yeni girecek arkadaşlarımız için giriş seviyede, ihtiyaçlarını karşılayacağı şekilde hazırlanmıştır.
 
-Sunucunuzun kullanacağı minimum ve maksimum ram miktarını belirlemek için **başlat.bat** dosyasını editör uygulamasıyla açın:
-- `min_ram=256M`
-- `max_ram=2G`
+Linux veya Windows işletim sistemlerinde kullanabilirsiniz.
+Java sürümü 17 olmalıdır, önerilen sürüm için [tıklayın.](https://www.azul.com/downloads/?version=java-17-lts&architecture=x86-64-bit&package=jre)
 
-Değerlerini kendinize göre ayarlayın. "min_ram" minimum ram kullanımı, "max_ram" maksimum ram kullanımı anlamına gelmektedir. Megabyte belirtmek için sayının sonuna "M", gigabyte belirtmek için ise "G" koyun.
+Sunucunuzun kullanacağı RAM miktarını ayarlamak için;
+- Windows ise **start.bat** dosyasını editör uygulamasıyla açın,
+- Linux ise **start.sh** açın,
+Ardından RAM kapasitesini sunucunuzun sahip olduğu RAM kapasitesinin bir altı olarak ayarlayın,
+Örnek: 5GB'lık cihaza sahipseniz, `-Xmx4G -Xms4G`olarak ayarlayın.
 
-Eğer BungeeCord kullanacaksanız `server.properties` dosyasındaki "network-compression-threshold" değerini "-1", kullanmayacaksanız "256" yapınız. 
-
+> 2020 eklenti paketlerinin desteği ve geliştirilmesi durdurulmuştur.
