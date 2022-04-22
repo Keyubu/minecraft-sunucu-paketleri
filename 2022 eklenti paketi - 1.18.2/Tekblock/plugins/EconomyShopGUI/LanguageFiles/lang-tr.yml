@@ -1,0 +1,240 @@
+#This is the Turkish language file, set "language-file" in the config.yml to "lang-tr.yml" to use this file!
+#You can see this site for all color codes ----> https://minecraft.tools/en/color-code.php
+#All variables you can use;
+#!!Please note that all variables only work in the current line they are located!!
+#%shopsection%       = the shopsection that has to be called
+#%amounttopay%       = the amount that the item will cost
+#%playername%        = the player's name
+#%amount%            = the amount of an item
+#%material%          = the material from a item
+#%amounttogive%      = the amount of money that a player received from another player
+#%minimumamount%     = the minimum amount of money you need to pay someone if you use the command
+#%amountofmoney%     = the amount of money that you have on you
+#%location%          = the location of the current item that is called inside shops.yml/sections.yml configuration file
+#%languagefile%      = the current languagefile that's being called
+#%version%           = the version of minecraft that the plugin uses
+#%spawner-type%      = the spawner type that the spawner item has
+#%bought/sold%       = if the item is sold or bought
+#%buy/sell-method%   = the way a player bought/sold an item Ex: Buy-screen or sellall command
+#%fileName%          = the name of the file that's being called
+#%key%               = the name of the key
+#%keys%              = all available keys, do not confuse with %key%
+#%itemLoc%           = the location of the item in a section inside the shops config
+#%price%             = amount of money
+#%action%            = the name of the action
+#%actions%           = the available actions
+#%balance%           = the balance of the player
+#%permsGroup%        = the permissions group
+#%maxInvSize%        = the max size of a inventory screen
+#StartUp/Reload
+shops,yml-not-found: shops.yml bulunamadı, bir tane oluştur...
+shops,yml-created: Shops.yml başarıyla oluşturuldu!
+shops,yml-found: Shops.yml bulundu!
+sections,yml-not-found: Sections.yml bulunamadı, bir tane oluştur...
+sections,yml-created: Sections.yml başarıyla oluşturuldu!
+sections,yml-found: Sections.yml bulundu!
+updating-shop-settings: Mağaza ayarları güncelleniyor...
+adding-new-shop-shops,yml: Mağazalara %shopsection% adlı yeni bir mağaza eklemek.
+adding-new-shop-sections,yml: Bölümlere %shopsection% adlı yeni bir bölüm eklemek
+disabled-due-no-vault: Apps Kasası bağımlılığı bulunamadığı için devre dışı bırakıldı!
+disabled-due-no-economy: Ekonomi eklentisi bulunamadığı için devre dışı bırakıldı, lütfen EssentialsX gibi bir eklenti yükleyin!
+update-available: Bir güncelleme var!
+done: Tamamlandı!
+updating-sections-config: Bölüm yapılandırması güncelleniyor...
+debug-mode-enabled: Hata ayıklama modu etkinleştirildi!
+economy-provider-null: Ekonomi Sağlayıcısı boş.
+successfully-hooked-into-vault: Başarıyla Vault'a bağlandı.
+language-file-using: '%languagefile% dil dosyasını dil dosyası olarak kullan.'
+cannot-find-language-file: Dil dosyası bulunamıyor!
+minecraft-version-using: Minecraft sürümü %version% kullanılıyor...
+checking-each-item: Her öğede yanlış / eksik değerler kontrol ediliyor...
+loading-items: Tüm öğeler yükleniyor...
+could-not-find-valid-version: Bu sunucu sürümü için geçerli bir uygulama bulunamadı. Eklentinin kullanılacak bir sürümü olmamasına ve birçok öğenin/yöntemin çalışmamasına neden olur. Lütfen desteklenen bir minecraft sürümü kullanın.
+updating-configs: Daha yeni bir sürüm bulunduğu için konfigürasyonları güncelleme...
+creating-backup: Eski %fileName% dosyasından bir yedekleme oluşturulduğunda, dosya EconomyShopGUI eklentisinin içindeki yedekleme klasöründe bulunabilir.
+discounts-feature-unavailable: Bir yetki eklentisi bulunamadığından indirim özelliği etkinleştirilemiyor.
+#Main Shop Inventory
+inventory-main-shop-title: Sunucu Mağazası
+profile: '&aProfil'
+name: '&6İsim'
+money: '&6Para'
+level: '&6Seviye'
+#Buystacks Inventory title
+inventory-buystacks-title: '&8Ürün miktarını seçin &lstack'
+#HowMuchSell/HowMuchBuy Inventory
+inventory-howmuchsell-title: '&8Öğe miktarını seçin &lsatış'
+inventory-howmuchbuy-title: '&8Öğe miktarını seçin &lalış'
+plus-one: '&b+1'
+min-one: '&5-1'
+plus-sixteen: '&b+16'
+min-sixteen: '&5-16'
+plus-thirty-two: '&b+32'
+min-thirty-two: '&5-32'
+sell: '&aSat?'
+sell-all: '&cHepsini satmak ister misin?'
+buy: '&aSatın al?'
+buy-stacks: '&cYığın satın al?'
+#All Inventory's
+back: '&4Geri'
+cancel: '&4İptal'
+#Previous/Next/Current page
+previous-page: '&dÖnceki Sayfa'
+next-page: '&bSonraki Sayfa'
+current-page: '&7Sayfa:'
+#Shop item lore
+left-click-buy: '&aSol Tık: Alış: &c%amounttopay%'
+right-click-sell: '&6Sağ Tık: Satış: &c%amounttopay%'
+item-location-in-shop: '&8Bölüm: %shopsection%, Dizin: %itemLoc%'
+#Buy/Sell Messages
+pay-confirmation: '&aBaşarıyla satın aldın &1%amount% x &b%material% &aiçin &c%amounttopay%'
+sell-confirmation: '&aBaşarıyla sattın &1%amount% x &b%material% &aiçin &c%amounttopay%'
+sell-confirmation-multiple-items: '&dBaşarıyla sattın &1%amount% &aitems için &c%amounttopay%'
+no-item-to-be-sold: '&cEnvanterinizde bu öğelerin hiçbirine sahip değilsiniz.'
+item-cannot-be-bought: '&cÜrün satın alınamıyor.'
+item-cannot-be-sold: '&cÜrün satılamıyor.'
+player-made-transaction: '%playername% %bought/sold% %amount% x %material% için %amountofmoney% ile %buy/sell-method%.'
+buy-screen: alış ekranı
+sell-screen: satış ekranı
+buystacks-screen: stack satın alma ekranı
+sellall-screen: tümünü satma ekranı
+sellall-command: tümünü satma komudu
+bought: satın alındı
+sold: satıldı
+#CurrencySymbol
+currencysymbol: $%price%
+#All commands
+command-disabled-in-world: '&cBu komut, bu dünyanın içinde devre dışı bırakılmıştır.'
+#Edit-shop subcommand descriptions
+editshop-add-item-subcommand-desc: '&aMağazaya bir öğe ekleyin.'
+editshop-edit-item-subcommand-desc: '&aMağazanın mevcut bir öğesini düzenleyin.'
+editshop-remove-item-subcommand-desc: '&aMağazadan bir öğe silin.'
+editshop-add-hand-item-subcommand-desc: '&aMagazaya elinizden bir eşya ekleyin.'
+#Edit-shop subcommand syntaxes
+editshop-add-item-subcommand-syntax: '&a/editshop additem <bölüm> <malzeme> <satın alma fiyatı> <satış fiyatı> [görünen ad]'
+editshop-edit-item-subcommand-syntax: '&a/editshop edititem <bölüm> <öge> <eylem> <anahtar> <deger>'
+editshop-remove-item-subcommand-syntax: '&a/editshop deleteitem <bölüm> <öge>'
+editshop-add-hand-item-subcommand-syntax: '&a/editshop addhanditem <bölüm> <alış fiyatı> <satış fiyatı>'
+#Edit-shop command messages
+editshop-adding-item: '&aYeni ürün mağazaya ekleniyor...'
+editshop-add-item-successful: '&aÖge, ''%itemPath%'' altındaki mağazaya başarıyla eklendi.'
+editshop-editing-item: '&aÖğe güncelleniyor...'
+editshop-edit-item-successful: '''%itemPath%'' başarıyla güncellendi.'
+editshop-removing-item: '&aÜrün mağazadan kaldırılıyor...'
+editshop-remove-item-successful: '''%itemPath%'' mağazadan başarıyla kaldırıldı.'
+editshop-reload-shop-to-see-changes: '&aDeğişiklikleri mağazanın içine yüklemek için /sreload komutunu kullanın.'
+#Edit-shop command errors
+section-does-not-contain-item: '&c''%shopsection%'' bölümü ''%itemLoc%'' ögesini içermiyor.'
+no-valid-action: '&cGeçerli bir eylem ''%action%'' değil. Kullanılabilir eylemler: %actions%.'
+no-valid-key: '&cGeçerli bir anahtar ''%key%'' değil. Kullanılabilir tuşlar: %keys%.'
+action-not-valid-on-key: '&c''%key%'' anahtarı ''%action%'' işlemini gerçekleştiremiyor.'
+edit-item-material-invalid: '&cDüzenlemeye çalıştığınız öğenin malzemesi geçersiz. ''%material%'''
+key-already-defined: '&c''%key%'' anahtarı zaten öğe üzerinde tanımlanmış, bunu iki kez ekleyemezsiniz.'
+key-is-not-found: '&c''%key%'' anahtarı bulunamadığı için ögeden kaldırılamıyor.'
+no-valid-slot-for-item: '&cÖge, ''%slot%'' yuvasına yerleştirilemedi. Yuvanın 1 - %maxShopSize% olması gerekir.'
+#Reload Command
+configs-reloaded: '&aTüm yapılandırmalar yeniden yüklendi.'
+#Balance Command
+check-balance: '&bŞu anda sahipsin &c%amountofmoney%&b.'
+check-balance-other-player: '&b%playername% &aşu anda &c%amountofmoney%&a.'
+#Givemoney Command
+givemoneycommand-example: '&9/paraver <player> <amount>'
+givemoney-complete: '&aPara verme tamamlandı.'
+#Pay Command
+minimum-amount: '&cBir oyuncu için ödenecek minimum miktar %minimumamount%.'
+payment-complete: '&aÖdeme tamamlandı'
+player-received-money: '&2%playername%&aAdlı kişiden &c%amounttogive% &aAldınız'
+need-player-and-amount: '&9Bir oyuncuya ve bir miktar paraya ihtiyacın var.'
+need-amount: '&9Bir miktar paraya ihtiyacın var.'
+paycommand-example: '&9/pay <oyuncu> <miktar>'
+#Player breaks spawner
+default-spawner-name: '&9&l%spawner-type% &rSpawner'
+spawner-broke-and-applied-to-inventory: '&aBaşarılı bir şekilde kırdınız, &9%spawner-type% &aspawner envanterinize taşındı.'
+need-silk-touch: '&cBunu kırmak için ipeksi dokunuşlu kazma kullanmalısın!'
+#JoinMessage
+join-message: '&2Hoş geldiniz, bakiyeniz &c%balance%!'
+#Level event
+level-event-message: '&2[Levels] &5Buyurun, &c%amount% &5hesabınıza eklendi!'
+#Item error's
+displayname-null: Görünen ad alınamadı.
+item-name-null: Öğenin adı alınamadı.
+need-item-material: Malzeme değeri boş olan öğe oluşturulamıyor.
+item-material-null: Öğe malzemesi alınamadı. Bunun bir hata olduğunu düşünüyorsanız lütfen eklenti sayfasında bulabileceğiniz discord destek sunucumuza bildirin. %material%
+item-enchantment-null: Öğenin büyüsü alınamadı.
+need-item-enchantment: Boş bir değerle büyü oluşturulamaz.
+item-enchantment-not-supported: Bu büyüleme, bu minecraft sürümünde desteklenmiyor.
+enchantment-cannot-apply-to-item: Öğeye bir büyü uygulamak için, malzemenin büyülü bir kitap veya büyüye uyan bir araç olması gerekir.
+item-spawnertype-null: Öğenin spawner türü alınamadı.
+need-item-spawnertype: Boş bir spawner türü olan spawner oluşturulamaz.
+material-needs-to-be-spawner: Öğeye bir Spawner-Tipi (Varlık Tipi) uygulamak için öğenin malzemesinin bir spawner olması gerekir.
+item-potiontype-null: Öğenin iksir türü alınamadı.
+need-item-potiontype: Boş değerli bir iksir türü oluşturulamaz.
+potiontype-not-supported: Bu iksir türü bu minecraft sürümünde desteklenmiyor.
+material-needs-to-be-potion: İksir efekti uygulamak için, malzemenin bir tür iksir veya uçlu bir ok olması gerekir.
+cant-bind-multiple-applyments: Büyüleme/spawner/iksir efekti türleri, gibi birden fazla uygulama içeren bir öğe oluşturulamaz.
+item-error: '&cÖğe Hatası, konsola bakın.'
+material-not-supported: Bu öğe malzemesi bu minecraft sürümünde desteklenmiyor.
+item-needs-buy-and-sell-value: Dükkandaki her ürünün bir alış / satış değerine sahip olması gerekir.
+sell-value-wrong: Satış değerinin ondalık sayı veya sayı olması gerekir.
+buy-value-wrong: Satın alma değerinin ondalık sayı veya sayı olması gerekir.
+option-type-changed: Mağazada bir spawner oluşturmak için lütfen 'tür' seçeneğini 'spawner türü' olarak değiştirin. Seçeneğin adı, netlik sağlamak için 2.2 sürümünde değişmiştir.
+option-meta-changed: Mağazada görünen adı olan bir öğe oluşturmak için lütfen 'meta' seçeneğini 'displayname' seçeneğiyle değiştirin. Seçeneğin adı, netlik sağlamak için 2.2 sürümünde değişmiştir.
+cannot-display-shopsection: Öge yerinin 0 - %maxInvSize% aralığında olması gerektiğinden '%shopsection%' mağaza bölümü oluşturulamıyor.
+need-recipe-material: Uygun fiyatlı tarif malzemesi oluşturulamıyor.
+cannot-get-recipe-material: Tarif malzemesi oluşturulamıyor, lütfen malzeme adında yazım hataları olup olmadığını ve varsa malzeme adını kontrol edin.
+recipe-material-not-supported: Verilen tarif malzemesi bu Minecraft versiyonunda desteklenmiyor.
+material-needs-to-be-book: Ürüne bir tarif uygulamak için öğenin malzemesinin bir bilgi kitabı olması gerekir.
+need-skullowner: Belirli bir oyuncu olmadan Oyuncu Kafatası oluşturulamıyor (Skull Owner).
+material-needs-to-be-skull: Öğeye kafatası kaplaması (Skull Owner) uygulamak için, öğenin malzemesinin bir Oyuncu Kafatası olması gerekir.
+material-needs-to-be-leather-armor: Bir zırh parçasına renk uygulamak için malzemenin deri zırh olması gerekir.
+#Item path
+items-path-in-shops-config: 'Shops.yml dosyasındaki öge yolu yapılandırması: %location%'
+items-path-in-sections-config: 'Sections.yml dosyasındaki öge yolu yapılandırması: %location%'
+items-path-in-config: 'Config.yml dosyasındaki öge yolu yapılandırması: %location%'
+#Compatibility
+ultimatestacker-compatibility-enabled: Spawner sağlayıcısı yapılandırmada UltimateStacker olarak ayarlandı
+ultimatestacker-not-found: UltimateStacker bulunamadı
+could-not-integrate-with-ultimatestacker: UltimateStacker ile entegre edilemedi
+ultimatestacker-found: UltimateStacker bulundu, entegre ediliyor...
+using-ultimatestacker-spawners: UltimateStacker'ı spawner sağlayıcısı olarak kullanma...
+wildstacker-compatibility-enabled: Spawner sağlayıcısı yapılandırmada WildStacker olarak ayarlandı
+wildstacker-not-found: WildStacker bulunamadı
+wildstacker-found: WildStacker bulundu, entegre ediliyor...
+could-not-integrate-with-wildstacker: WildStacker ile entegre edilemedi
+using-wildstacker-spawners: WildStacker'ı spawner sağlayıcısı olarak kullanma.
+silkspawners-compatibility-enabled: Yapılandırmada SilkSpawners uyumluluğu etkinleştirildi.
+silkspawners-not-found: SilkSpawners bulunamadı
+silkspawners-found: SilkSpawners bulundu, entegre ediliyor...
+could-not-integrate-with-silkspawners: SilkSpawners ile entegre edilemedi.
+using-silkspawners-spawners: Eklentileri varsayılan spawnerlar da kullan...
+using-default-spawners: Eklentinin varsayılan yumurtlayıcılarını kullanma...
+#Error's
+cannot-find-discounted-section: '''%section%'' bölümü için indirim eklenemiyor, mağaza bölümü devre dışı bırakılmış veya bulunamıyor.'
+cannot-find-discounted-group: '''%permsGroup%'' yetki grubu için indirim eklenemiyor, lütfen yazımını ve yetki eklentinizde olup olmadığını kontrol edin.'
+disabling-plugin: Eklenti devre dışı bırakılıyor...
+not-spawn-able: Bu varlık türü doğamaz. '%spawnertype%'
+real-player: Bu komutu kullanabilmek için gerçek bir oyuncu olman gerekiyor.
+player-not-online: '&cBu oyuncu mevcut değil veya çevrimiçi değil.'
+cannot-sell-air: '&cHava satamazsın...'
+no-permissions: '&cBunun için izniniz yok!'
+no-permissions-to-open-shop: '&cBu mağaza bölümünü açmak için gerekli izniniz yok.'
+cannot-do-that: '&4Bunu yapamazsın!!'
+more-space-needed: '&cLütfen envanterinizde daha fazla yer açın ve ardından tekrar deneyin.'
+could-not-store-all-items: '&c%amount% öğe dolu oldugu için envanterinize eklenemedi.'
+not-enough-space-inside-inventory: '&4Envanterinizde ki diğer öğeleri yere bırakmalısınız, yeterli alanınız yok.'
+insufficient-money: '&cYeterli paran yok.'
+canceling-transaction-no-space: '&4Envanterinizde işlemi iptal etmek için yeterli alan yok.\nLütfen envanterinizde daha fazla yer açın ve tekrar deneyin.'
+no-items-in-section: Hiçbir mağaza bulunamadı çünkü mağaza bölümü %shopsection% açılamıyor!
+no-item-found: '&cHiçbir öğe(ler) bulunamadı.'
+item-null: '&cÖğe mevcut değil.'
+item-cannot-be-sold-to-server: '&cÖğe (%material%) içinde bir hata olduğu için sunucuya satılamaz. Lütfen bu sorunu sunucu yöneticilerine veya sahibine bildirin.'
+could-not-save-shops,yml: '&4Shops.yml yapılandırılması kaydedilemedi.'
+could-not-save-sections,yml: '&4Sections.yml yapılandırılması kaydedilemedi.'
+could-not-save-config: '%fileName% yapılandırılması kaydedilemedi.'
+rgb-color-formatted-wrong: 'RGB renkleri şu şekilde formatlanmalıdır: %path% ''0x000000'', ''#000000'' veya ''000000''.'
+no-shop-found: '&cBu isimde bir mağaza bölümü bulunamıyor!'
+no-valid-amount: '&cBu geçerli bir miktar degil.'
+restart-plugin: Mağaza bölümü açılamıyor, eklentiyi yeniden başlatmayı deneyin veya destek için discord sunucusuna katılın.
+could-not-check-for-updates: '&cGüncellemeler kontrol edilemedi.'
+cannot-update-config: '&cConfig.yml yapılandırma dosyası güncellenemiyor.'
+cannot-read-config: Dosya adı %fileName% konfigürasyon okunamıyor çünkü yanlış yapılandırılmış, sorunun nedenini aşağıdaki hata ile bulmak için çevrimiçi bir Yaml ayrıştırıcısı kullanın. Sorunun nedenini kendiniz bulamıyorsanız, EconomyShopGUI'nin ek sayfasında bulabileceğiniz, Discord destek sunucumuza katılın.
+error-occured-while-reloading: '&4Eklenti yeniden yüklenirken bir hata oluştu, lütfen herhangi bir hata mesajı için konsolun içine bakın.'

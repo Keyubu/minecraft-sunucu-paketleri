@@ -1,0 +1,60 @@
+{
+  "uniqueId": "BSkyBlock_animalfarm",
+  "friendlyName": "Animal farm",
+  "deployed": true,
+  "description": [
+    "Create a grass field and wait for animals to spawn."
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GRASS_BLOCK\n",
+  "order": 2,
+  "challengeType": "ISLAND",
+  "environment": [],
+  "removeWhenCompleted": true,
+  "level": "BSkyBlock_competent",
+  "requirements": {
+    "class": "IslandRequirements",
+    "parameters": {
+      "requiredBlocks": {
+        "GRASS_BLOCK": 16
+      },
+      "removeBlocks": false,
+      "requiredEntities": {
+        "PIG": 2,
+        "SHEEP": 2,
+        "COW": 2,
+        "CHICKEN": 2
+      },
+      "removeEntities": false,
+      "searchRadius": 10,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Iron to craft some tools and a couple of cats.",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_ORE\n  amount: 16\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: OCELOT_SPAWN_EGG\n  amount: 2\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": false,
+  "repeatRewardText": "",
+  "maxTimes": 0,
+  "repeatExperienceReward": 0,
+  "repeatItemReward": [],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

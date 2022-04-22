@@ -1,0 +1,32 @@
+# ##########################################################################################
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+# ##########################################################################################
+
+block-limits:
+  hit-limit: '&c[material] 已限制到 [number]!'
+entity-limits:
+  hit-limit: '&c[entity] 生成已限制到 [number]!'
+limits:
+  panel-title: 岛屿限制
+
+
+admin:
+  limits:
+    main:
+      parameters: <player>
+      description: 显示玩家的限制
+    calc:
+      parameters: <player>
+      description: 重新计算玩家的岛屿限制
+      finished: '&a岛屿重计算已完成!'
+
+island:
+  limits:
+    description: 显示您的岛屿限制
+    max-color: '&c'
+    regular-color: '&a'
+    block-limit-syntax: '[number]/[limit]'
+    no-limits: '&c此世界中无限制'
+    recount:
+      description: 重新计数岛屿限制

@@ -1,0 +1,18 @@
+controlpanel:
+  messages:
+    import-count: 'Importiere [number] Controllpanel '
+  errors:
+    no-load: '&4 [file] konnte nicht geladen werden: [message]'
+    no-file: '&4 [file] fehlt'
+    no-valid-panels: '&4Konnte kein gültiges Controllpanel finden.'
+    no-valid-panels-op: '&4Konnte kein gültiges ControllPanel finden. Du solltest
+      versuchen, es mit /[admin] cp import zu importieren'
+  commands:
+    admin:
+      help:
+        description: shows admin help commands
+      import:
+        parameters: '[overwrite]'
+        description: Importiert ControllPanels von [file]
+    help:
+      description: Öffnet das Bedienfeld

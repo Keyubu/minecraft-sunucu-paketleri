@@ -1,0 +1,24 @@
+# Translation by: CZghost
+
+chat:
+  team-chat:
+    description: Přepnout týmový chat zapnuto/vypnuto
+    chat-on: Týmový chat zapnut
+    chat-off: Týmový chat vypnut
+    syntax: '&6[team]&a<[name]>  &f[message]'
+    spy:
+      description: Přepnout šmírování všech týmových chatů
+      spy-on: Šmírování týmových chatů zapnuto
+      spy-off: Šmírování týmových chatů vypnuto
+      syntax: '&c[team-chat-spy] &4[name]: [message]'
+  island-chat:
+    description: Přepnout chat na ostrově zapnuto/vypnuto
+    island-on: Chat na ostrově zapnut
+    island-off: Chat na ostrově vypnut
+    syntax: '&6[island]&a<[name]>  &f[message]'
+    spy:
+      description: Přepnout šmírování chatů na všech ostrovech
+      spy-on: Šmírování chatů na ostrovech zapnuto
+      spy-off: Šmírování chatů na ostrovech vypnuto
+      syntax: '&c[island-chat-spy] &4[name]: [message]'
+

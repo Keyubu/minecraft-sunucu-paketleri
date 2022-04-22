@@ -1,0 +1,73 @@
+﻿Crate:
+  CrateType: Wheel
+  CrateName: '&3Standart Kasa'
+  Preview-Name: '&8Standart Kasa Içeriği'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 21
+  OpeningBroadCast: true
+  BroadCast: '%Prefix%&e%Player% &7adlı kişi &3Standart &7kasayı açtı.'
+  Item: 'CHEST'
+  Glowing: false
+  Name: '&3Standart'
+  Lore:
+  - '&8Sıradan şeyler'
+  - ''
+  - '&7Kasayı açmak için &fsol &7tıklayın'
+  - '&7Görüntülemek için &fsağ &7tıklayın'
+  - ''
+  Preview:
+    Toggle: true
+    ChestLines: 5
+    Glass:
+      Toggle: true
+      Item: 'PINK_STAINED_GLASS_PANE'
+  PhysicalKey:
+    Name: '&3Standart Anahtar'
+    Lore:
+    - '&8Kasa anahtarı'
+    - ''
+    - '&7Bu anahtarla Standart'
+    - '&7kasasını açabilirsiniz'
+    Item: 'TRIPWIRE_HOOK'
+    Glowing: true
+  Prizes:
+    '1':
+      DisplayName: '&e500 bakiye'
+      DisplayItem: 'PAPER'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%50'
+      MaxRange: 100
+      Chance: 50
+      Firework: true
+      Glowing: false
+      Commands:
+      - eco give %Player% 500
+    '2':
+      DisplayName: '&eSünger'
+      DisplayItem: 'SPONGE'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%20'
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Glowing: false
+      Items:
+      - Item:SPONGE, Amount:1
+    '3':
+      DisplayName: '&aAda fly'
+      DisplayItem: 'FEATHER'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - '&7Çıkma şansı: &8%30'
+      MaxRange: 100
+      Chance: 30
+      Firework: true
+      Glowing: false
+      Commands:
+        - 'lp user %Player% permission settemp bskyblock.island.fly 30m accumulate'

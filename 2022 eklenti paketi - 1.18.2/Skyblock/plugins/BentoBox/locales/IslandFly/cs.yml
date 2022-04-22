@@ -1,0 +1,19 @@
+islandfly:
+  cancel-disable: '&aJsi zpět, co? Palivo létání úspěšně doplněno!'
+  command:
+    description: povolí ti létat na tvém ostrově
+    not-allowed-fly: '&c Na tomto ostrově nemáte povoleno létat'
+    only-on-island: '&cMůžeš létat jen na tvém ostrově.'
+  disable-fly: '&cTvůj mód létání byl vypnut.'
+  enable-fly: '&aTvůj mód létání byl zapnut.'
+  fly-outside-alert: '&cJsi mimo svůj ostrov, takže mód létání se vypne za &e[number]&c
+    sekund.'
+  fly-turning-off-alert: '&c Už zde nesmíte létat. Vypnutí letu za &e [number] &c
+    sekundy.'
+  reallowed-fly: '&a Vaše moucha byla reallowed'
+  wrong-world: '&cNejsi ve správném světě herního módu'
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a Přepínač, který může létat na vašem ostrově'
+      name: '&a Prevence letu'

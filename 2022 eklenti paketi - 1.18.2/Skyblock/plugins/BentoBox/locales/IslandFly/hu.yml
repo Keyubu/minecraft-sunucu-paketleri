@@ -1,0 +1,18 @@
+islandfly:
+  fly-outside-alert: '&c Ön a szigeten kívül van, így a repülési mód &e[number] &c
+    másodperc alatt le lesz tiltva.'
+  fly-turning-off-alert: '&c Itt már nem repülhet. A repülés kikapcsolása &e [number]
+    &c másodperc alatt.'
+  disable-fly: '&c Az Ön repülési módja le van tiltva.'
+  reallowed-fly: '&a Az Ön légy újjáéledt'
+  enable-fly: '&a Az Ön repülési módja engedélyezve van.'
+  cancel-disable: '&a Visszatért, huh! Repülő üzemanyag feltöltése sikeresen!'
+  wrong-world: '&c Nem vagy a megfelelő játékmód-világban'
+  command:
+    not-allowed-fly: '&c Ezen a szigeten nem szabad repülni'
+    description: lehetővé teszi repülését a szigeten
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a Váltó, aki repülhet a szigeten'
+      name: '&a Repülés-megelőzés'

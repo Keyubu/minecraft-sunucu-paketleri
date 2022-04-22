@@ -1,0 +1,53 @@
+{
+  "uniqueId": "BSkyBlock_papermaker",
+  "friendlyName": "Paper Maker",
+  "deployed": true,
+  "description": [
+    "Collect sugar canes and craft some paper"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: PAPER\n",
+  "order": 3,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "BSkyBlock_novice",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: PAPER\n  amount: 32\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Magic will transform crafted paper into red sand",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: RED_SAND\n  amount: 4\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "Magic will transform crafted paper into red sand",
+  "maxTimes": 0,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: RED_SAND\n"
+  ],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

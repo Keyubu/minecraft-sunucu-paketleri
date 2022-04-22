@@ -1,0 +1,27 @@
+warp:
+  help:
+    description: teleportuje cię do tabliczki innego gracza
+    parameters: <gracz>
+warps:
+  deactivate: '&c Stary teleport zdezaktywowany!'
+  error:
+    does-not-exist: '&c Ten teleport nie istnieje.'
+    no-permission: '&c Brak uprawnień!'
+    no-remove: '&c Nie możesz usunąć tej tabliczki!'
+    no-warps-yet: '&c Nie ma jeszcze teleportów.'
+    not-enough-level: '&c Twój poziom wyspy nie jest wystarczająco wysoki!'
+    not-on-island: '&c Musisz być na wyspie, by to zrobić.'
+    not-safe: '&c Ten teleport nie jest bezpieczny!'
+    your-level-is: '&c Twój poziom wyspy to [level], a musi wynosić co namniej [required].
+      Użyj komendy /is level.'
+  help:
+    description: otwiera panel warpów
+  next: '&6 Następna strona'
+  player-warped: '&2 [name] teleportował się do twojej tabliczki!'
+  previous: '&6 Poprzednia strona'
+  random: '&4 Losowy teleport'
+  sign-removed: '&c Usunięto tabliczkę!'
+  success: '&a Sukces!'
+  title: Tabliczki teleportacyjne
+  warpTip: '&6 Postaw tabliczkę z napisem [text]'
+  warpToPlayersSign: '&6 Teleportowanie do tabliczki gracza [player]'

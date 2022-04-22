@@ -1,0 +1,21 @@
+chat:
+  team-chat:
+    description: activer/désactiver le chat d'équipe
+    chat-on: '&a Chat d''équipe activé.'
+    chat-off: '&a Chat d''équipe désactivé.'
+    syntax: '&6[team] &a[name]&8: &f[message]'
+    spy:
+      description: activer/désactiver la surveillance de tous les chats d'équipe
+      spy-on: '&a Surveillance des chats d''équipe activée.'
+      spy-off: '&c Surveillance des chats d''équipe désactivée.'
+      syntax: '&c[team-chat-spy] &a[name]&8: [message]'
+  island-chat:
+    description: activer/désactiver le chat d'île
+    island-on: '&a Chat d''île activé.'
+    island-off: '&c Chat d''île désactivé.'
+    syntax: '&6[island] &a[name]&8: &f[message]'
+    spy:
+      description: activer/désactiver la surveillance de tous les chats d'île
+      spy-on: '&a Surveillance des chats d''île activée.'
+      spy-off: '&c Surveillance des chats d''île désactivée.'
+      syntax: '&c [island-chat-spy] &a[name]&8: &f[message]'

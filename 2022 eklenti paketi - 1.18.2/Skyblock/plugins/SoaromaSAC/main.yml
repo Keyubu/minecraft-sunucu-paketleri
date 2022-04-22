@@ -1,0 +1,1079 @@
+# ********************************************** #
+#                                                #
+#    -- SoaromaSAC Configuration File --         #
+#           -- Version 1.0.47 --                 #
+#                                                #
+# ********************************************** #
+
+# ======================= IMPORTANT =============================
+# Don't change any configurations if you do not know what it does
+# If you have any questions, message developer on discord, usually a problem can be
+# fixed in a matter of seconds
+# main.yml is the anti-cheats configuration file!
+# ===============================================================
+ 
+# =========================================================================
+# The meaning "How long or the amount" is 2 PacketPlayInFlying as 1 in this configuration
+# Any config that has the name "timer" is 20 = 1 second
+# The numbers in GUI ban is by hours so 1 = 60 minutes
+# The speed variables of this file is the players "to" position and the "from" position, calculating the distance and multiplying it by 10
+# Only the variables with the name "speed" are doubles, rest are integers
+# =========================================================================
+# IT IS EXTREMELY IMPORTANT WHEN EDITING ANY NON-COMBAT VALUES | THE MEANING "untilFlagging" means CONSISTENT FLAGGING, not STUTTERING FLAGS
+# IF IT STUTTERS THEN IT WILL RESET THE FLAG COUNTER AND NOT FLAG THE PLAYER 
+# MANY OF THOSE VALUES ARE SET TO STOP FALSES FROM OCCURING, meaning if you set one of those variables too high
+# it will certainly not flag the player | THE ENTIRE ANTI-CHEAT RUNS OFF THIS TYPE OF SYSTEM
+# =========================================================================
+
+flag-system:
+
+    # Enabling or disabling All checks. If false, the plugin will not check for any violations (default: true)
+    enableAntiCheat: true
+
+    # Disable anti-cheat for X amount of ticks upon join (20 = 1 second), Stops falses upon joining
+    disablerTimeOnJoin: 170.0
+    
+    # Cancels event if a violation occurs, NOTE If this variable is set to false, the anti-cheat detection system becomes incredibly fast at detecting cheats
+    # As when set to true, it becomes less sensitive (default: true)
+    cancelEventIfHacking: true
+    
+    # Enables violation kicks
+    autoViolationKick: true
+
+    # Use usage for auto kick instead of SAC's kick system
+    useUsageForAutoKick: false
+        
+    # Use this command for kicking if usage for auto kick is set to true
+    usageKick: 'kick {player} Timed Out'
+        
+    # The number of violations occuring before a kick occurs : linked with autoViolationKick
+    violationKickNumUntilKick: 50.0
+
+    # The lower the number the more frequent the teleport occurs when flagging, this is set to 5 so in case someone gets accidently false flagged
+    # then they can still recover, HOWEVER if you decide to trust this anti-cheat with your life (me as the developer sure as hell doesn't) 
+    # you can turn this down to 1 where it goes, "completely screw the people who flagged the anti-cheat"
+    # OR the safest number is 2 if you want to go, "kinda screw people who flagged the anti-cheat"
+    # anything about is playing it safe is >= 2
+    teleportSensitivity: 5.0
+    
+    
+    # Clears all and any violations of any player after X amount of time : linked with clearAllViolationsTimerNum
+    # This is good for falses that slowly build up over time and are erased by the AC, as actual cheaters will get flagged very fast compared
+    # to non-cheaters so you can easily tell the difference
+    clearAllViolationsTimer: true
+
+    # Timer for when to clear any violations after X amount of time | time is in seconds : linked with clearAllViolationsTimer
+    clearAllViolationsTimerNum: 3600.0
+    
+    # Enable warning the flagged player for cheating (default: false)
+    warnFlaggedPlayer: false
+    # Enable auto ban. It will automatically ban players (default: false)
+    enableAutoBan:
+    
+        # Enable auto ban. It will automatically ban players (default: false)
+        enableAutoBan: false
+        
+        # Use the usage command to ban instead of SoaromaSAC's automatic ban system, meaning autoBanTime
+        # is no longer valid if you enable this option and it uses 'usage' to ban
+        useUsageForAutoBan: false
+        
+        # Console command sent if useUsageForAutoBan is set to true
+        usage: 'ban {player}'
+        
+        # The number of kicks occuring before a ban : linked with enableAutoBan
+        numPlayerKickUntilBan: 5.0
+        
+        # Automatic ban time towards flagged players - Time is in hours
+        autoBanTime: 720.0
+        
+    # Option to disable all checks in certain worlds - NOTE DO NOT REMOVE THE FIRST WORLD: linked with all checks
+    blacklisted-worlds:
+      - PutWorldYouDontWantHereEtcEtcEtc
+
+thresholders:
+
+    # just for regen and timer check and stuff and stuff
+    irregularEventCountLow: 3000.0
+    irregularEventCountMedium: 2900.0
+    irregularEventCountHigh: 2800.0
+    
+    # flag the check as "low" "medium" or "high" meaning if the player just barely flagged the check and so far
+    roundedThresholdLow: 1.0
+    roundedThresholdMedium: 2.0
+    roundedThresholdHigh: 3.0
+    
+    high-string: "&4high"
+    low-string: "&alow"
+    medium-string: "&6medium"
+    
+# Spaced violation messages
+spacedViolationMessages:
+    # It sends a message to players with sac.notify each X amount of violations
+    # If disabled, it will message players with sac.notify for each violation 
+    spacedViolationMessages: false
+    
+    # The number of messages occuring, every X amount of violations then send a message to all 
+    spacedViolationNotificationsNum: 4.0
+
+# This are the GUI commands when you open it in game
+# You can adjust display glasses name and time in GUI
+# if usage is set to true, then it will use 'usage' command instead of SAC's tempban system
+GUI:
+  Admin:
+     GUIName: 'SAC Configuration Menu'
+     sectionsItem: 'ENDER_PEARL'
+     keyItem: 'ENDER_EYE'
+  Vio:
+     GUIName: 'SAC Max Recent Violations'
+  Ban:
+    FirstTime:
+      DisplayName: 1D
+      Time: 24.0
+      useUsage: false
+      usage: 'ban {player}'
+    SecondTime:
+      DisplayName: 3D
+      Time: 72.0
+      useUsage: false
+      usage: 'ban {player}'
+    ThirdTime:
+      DisplayName: 7D
+      Time: 168.0
+      useUsage: false
+      usage: 'ban {player}'
+    FourthTime:
+      DisplayName: 30D
+      Time: 720.0
+      useUsage: false
+      usage: 'ban {player}'
+    FifthTime:
+      DisplayName: PERM
+      Time: 10000000.0
+      useUsage: false
+      usage: 'ban {player}'
+    
+
+# All messages
+messages:
+    
+    # Message to show to banned player when trying to enter the server
+    banMessage: 'Blacklisted Client'
+    
+    # Ban message to all ops
+    banMessageInGame: '#15889b/&lSAC&8 &8&l»#06c1ed/ %s has been banned forever due to reaching max violations and kicks'
+
+    # Clears all warnings of a specified player (using GUI)
+    clearWarning: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have cleared any warnings of the specified player'
+    
+    # Message showing that you have frozen a player
+    freezeMessage: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have frozen the player'
+    
+    # Message that player get when he/she has been frozen
+    freezeMessagePlayer: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have been frozen'
+    
+    # Message to a player when a player that has been frozen tries to type in a command
+    frozenPlayerCommandBlocked: '#15889b/&lSAC&8 &8&l»#06c1ed/ Your commands have been blocked as you are frozen'
+    
+    # Message shown if no player name is specified onto the command
+    invalidArguments: '#15889b/&lSAC&8 &8&l»#06c1ed/ invalid arguments, add a player name onto the command'
+    
+    # Message shown if arguments for enabling / disabling notifications are invalid
+    invalidArgumentsNotify: '#15889b/&lSAC&8 &8&l»#06c1ed/ invalid arguments, /sacnotify <enable/disable>'
+    
+    # Message to a player
+    kickMessage: 'Timed out'
+    
+    # Message shown in game to all players with the permission sac.notifykick about a player being kicked by the anti-cheat
+    kickMessageInGame: '#15889b/&lSAC&8 &8&l»#06c1ed/ %s has been kicked due to reaching max violations'
+
+    # Message showing that you muted a player
+    mutedPlayer: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have muted the specified player'
+    
+    # Message shown to muted player
+    mutedPlayerMessage: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have been muted'
+
+    # Message showing that violation notifications are disabled
+    notificationsDisabled: '#15889b/&lSAC&8 &8&l»#06c1ed/ Violation notifications disabled'
+
+    # Message showing that violation notifications are enabled
+    notificationsEnabled: '#15889b/&lSAC&8 &8&l»#06c1ed/ Violation notifications enabled'
+
+    # Showing you a message that the specified player is not online
+    notOnline: '#15889b/&lSAC&8 &8&l»#06c1ed/ Specified player is not online'
+    
+    # Message shown to muted player 
+    playerIsMuted: '#15889b/&lSAC&8 &8&l»#06c1ed/ You are muted'
+
+    # It shows player ping 
+    playerPingMessage: '#15889b/&lSAC&8 &8&l»#06c1ed/ Player ping is {ping}'
+
+    # Message informing that the player is hacking, format is cheat, number of violations and ping
+    violationMessage: '#15889b/&lSAC&8 &8&l»#06c1ed/ {player} flagged {hack} {type} : V [{num}] : P [{ping}] : Severity [{vioType}#06c1ed/]' 
+
+    # Message informing that you warned a specified player
+    warnedPlayer: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have warned the specified player'
+
+    # Message that is sent to the warned player (used in GUI)
+    warnedPlayerMessage: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have been warned'
+
+    # Message that is sent to warned player including the reason (used in console or in-game)
+    warnMessageFormat: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have been warned for {reason}'
+
+    # Warn player for flagging the anti-cheat
+    warnFlaggedPlayerMessage: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have been flagged for cheating, please disable any cheats that are activated'
+
+    # Message showing you that the player has been unbanned
+    unbanMessage: '#15889b/&lSAC&8 &8&l»#06c1ed/ Unbanned player'
+
+    # Message showing that the player is not banned (if trying to unban a no banned player)
+    unbanMessageError: '#15889b/&lSAC&8 &8&l»#06c1ed/ Player is not banned'
+
+    # Message showing that you unfroze the player
+    unfreezeMessage: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have unfrozen the player'
+
+    # Message sent to player informing that he / she has been unfrozen
+    unfreezeMessagePlayer: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have been unfrozen'
+
+    # Message informing that you have unmuted the specified player
+    unmutedPlayer: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have unmuted the specified player'
+
+    # Message sent to player informing that he / she is no longer muted
+    unmutedPlayerMessage: '#15889b/&lSAC&8 &8&l»#06c1ed/ You have been unmuted'
+    
+    # Message showing that there are no permission to perform some actions
+    noPerm: '#15889b/&lSAC&8 &8&l»#06c1ed/ No Permission'
+    
+    # clear hashmaps message
+    clearedHashMaps: '#15889b/&lSAC&8 &8&l»#06c1ed/ Cleared all known hashmaps and set all internal hashmaps to default for every player on the server'
+    
+    # not up to date
+    notUpToDate: '#15889b/&lSAC&8 &8&l»#06c1ed/ SoaromaSAC is not up to date, it is highly recommended you update as this is an anti-cheat!!'
+    
+    reportLog: '#15889b/&lSAC&8 &8&l»#06c1ed/ {player} reported: {report}{date}'
+    
+    wroteReport: '#15889b/&lSAC&8 &8&l»#06c1ed/ Report logged...'
+    
+    recieveReport: '#15889b/&lSAC&8 &8&l»#06c1ed/ {player} has reported: {report}'
+        
+    noReports: '#15889b/&lSAC&8 &8&l»#06c1ed/ No reports'
+
+    cannotSetArray: '#15889b/&lSAC&8 &8&l»#06c1ed/ Setting arrays through the GUI is not supported'
+    # List recent reports
+    reportsListWrongArgument: '#15889b/&lSAC&8 &8&l»#06c1ed/ An integer is required, for example, /sacreports 10'
+    
+    wrongArgsReplay: '#15889b/&lSAC&8 &8&l»#06c1ed/ Proper arguments are, /sacreplay player-uuid DD.MM.YYYY'
+    
+    replayWrongDate: '#15889b/&lSAC&8 &8&l»#06c1ed/ Could not find a local folder with this date'
+    
+    replayWrongUUID: '#15889b/&lSAC&8 &8&l»#06c1ed/ Could not find a player UUID in the date folder specified'
+    
+    replayNotEnabled: '#15889b/&lSAC&8 &8&l»#06c1ed/ this feature is no longer supported within the AC, download the sacaddons [is supported] plugin to properly replay a player movements'
+    
+    replayMade: '#15889b/&lSAC&8 &8&l»#06c1ed/ Created an html page inside the replayer folder, please check the output folder and find the latest index.html'
+    
+    serverTPSNotTrue: '#15889b/&lSAC&8 &8&l»#06c1ed/ checkServerTPS is not set to true, unable to check for server TPS'
+    
+    configMsg: '#15889b/&lSAC&8 &8&l»#06c1ed/ Current value -> {value} | Type -> {type} | Type cancel to cancel or type the new key value'
+    
+    invalidType: '#15889b/&lSAC&8 &8&l»#06c1ed/ Invalid data type for this specific key'
+    
+    cancel: '#15889b/&lSAC&8 &8&l»#06c1ed/ Cancelled operation'
+    
+    onlyDouble: '#15889b/&lSAC&8 &8&l»#06c1ed/ Only doubles may be used'
+    
+    keyChanged: '#15889b/&lSAC&8 &8&l»#06c1ed/ New value inputted for key | Successfully changed key | SoaromaSAC has been automatically re-cached'
+    
+    no-config-id: '#15889b/&lSAC&8 &8&l»#06c1ed/ Proper usage, /sacconfigchoose [ID]'
+    
+    no-config-success: '#15889b/&lSAC&8 &8&l»#06c1ed/ Configuration successfully copied type {type}, restart your server'
+    
+    wrongArgsHistory: '#15889b/&lSAC&8 &8&l»#06c1ed/ Invalid arguments, proper usage: /sachistory {player} {integer}'
+    
+    noFile: '#15889b/&lSAC&8 &8&l»#06c1ed/ No valid player file was found'
+    
+    fileEmpty: '#15889b/&lSAC&8 &8&l»#06c1ed/ Player file empty'
+    
+    no-config:
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ -----'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Hello user with the permission sac.startup.choose!'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Before you start using this anti-cheat please specify a configuration to use!'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ -----'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ So there are a couple of pre-set options to use'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ I will try my best to explain what each configuration does, the pros and cons'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ &2Default Configuration ID = 1'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Pros: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - This is trying to maintain a balance between sensitive and insensitive while still being effective'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Cons: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - Falses sometimes with laggy players / lag spikes'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ &2Insensitive Configuration ID = 2'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Pros: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - Massively reduces falses - spaced out violations'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Cons: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - Makes the anti-cheat more insensitive / might not catch some cheaters using a specific cheat'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ &2Sensitive Configuration ID = 3'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Pros: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - The chances of a cheater being caught are increased exponentially'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Cons: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - The chances of falses happening are highly likely / not suitable for high ping environments'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ &2Insensitive Automated Configuration ID = 4'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Pros: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - A cheater will be banned automatically after a high amount of violations | no violations will appear to ops and the AC will be silent'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - Violations are reset every 30 minutes'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - Uses the insensitive configuration as a base'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Cons: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - Cheaters are not banned instantly, if falses occur, any ops will not know'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ &2Recommended configuration ID = 5'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Pros: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - Exact same thresholds as insensitive config'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - Extra options are enabled in config to stop falses in certain areas'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Cons: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - Makes the anti-cheat more insensitive / might not catch some cheaters using a specific cheat'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - May take up more of the TPS due to tps checking'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ &2Gameratbest9 Configuration ID = 6'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Pros: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - Similar to the sensitive config it is made to catch cheaters faster'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Cons: '
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - The chances of falses happening are highly likely / not suitable for high ping environments'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ -----'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ &2Extra Information Needed'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - TPS checking is not set to true in any of the pre-configured configurations except recommended'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - You can still configure the AC to your own liking, or even configure a pre-configured one'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/   - checkPlayerLag is not set to true in any of the pre-configured configurations'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ -----'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ To choose a configuration, please use the command /sacconfigchoose [ID]'
+        - '#15889b/&lSAC&8 &8&l»#06c1ed/ Please scroll up to the top of this message and read the entire thing'
+                     
+    
+    sacinfo:
+        - '#06c1ed/----- #15889b/{user} Info #06c1ed/-----'
+        - '#06c1ed/IP: #15889b/{player-ip}'
+        - '#06c1ed/Violations: #15889b/{current-vio}'
+        - '#06c1ed/total-violations: #15889b/{total-vio}'
+        - '#06c1ed/Uuid: #15889b/{player-uuid}'
+        - '#06c1ed/Current-speed: #15889b/{player-speed}'
+        - '#06c1ed/Coordinates: #15889b/{coords}'
+        - '#06c1ed/InsideVehicle: #15889b/{is-in-veh}'
+        - '#06c1ed/World: #15889b/{world}'
+        - '#06c1ed/AllowedFlight: #15889b/{flight}'
+        - '#06c1ed/Flying: #15889b/{isflying}'
+        - '#06c1ed/WarnCount: #15889b/{warns}'
+    sacmodified: 
+        - '#06c1ed/----- #15889b/{user} PacketPlayInCustomPayload #06c1ed/-----'
+        - '#06c1ed/data: #15889b/{data}'
+        - '#06c1ed/key: #15889b/{key}' 
+        - '#06c1ed/namespace: #15889b/{namespace}'
+        
+    tps: '#15889b/&lSAC&8 &8&l»#06c1ed/ Server TPS is {tps}'
+        
+    isStaff: '#15889b/&lSAC&8 &8&l»#06c1ed/ This user has the permission sac.punish.bypass you cannot use this command on the specified player'    
+    
+    # Please note that these names must be in exact ORDER, for example it takes the first word for regen
+    # when it flags the regen cheat
+    # etc etc   
+    cheat-names:
+        - 'Regen [Timer]'
+        - 'IrregularEventCount [Timer]'
+        - 'Flight'
+        - 'Irregular pitch'
+        - 'Bunny Hop'
+        - 'Step'
+        - 'Long Jump'
+        - 'PingSpoofing'
+        - 'Glide'
+        - 'Spider'
+        - 'NoFall'
+        - 'NoSlowDown'
+        - 'Speed'
+        - 'Fluid Walk'
+        - 'Fast Climb'
+        - 'BadPackets'
+        - 'Velocity'
+        - 'Irregular Movement'
+        - 'Irregular Placement'
+        - 'Baritone'
+        - 'Elytra Flight'
+        - 'Nuker'       
+        - 'Reach'
+        - 'KillAura'
+        - 'Criticals'
+        - 'Reach place'
+        - 'Reach break'
+        - 'Fast place'
+        - 'Irregular Startup'
+        - 'Median Speed'
+        - 'GhostHand'
+        - 'Semi Prediction'
+        - 'Auto Clicker'
+                
+item-attribute:
+
+   # Only turn this to true if your server uses item attributes, (Potion effects and enchants are NOT item attributes)
+   enableItemAttributeChecking: false
+   
+   
+   # Formula for calculating the increase variables in item generic movement is,    
+   # (AtttributeModifier.getAmount() / divisionAmount) * speedIncrease
+   
+   # For every divisionAmount from attribute modifier get amount
+   # and increase speed L, and speed M, speed H, bHopA and bHopB variables from below
+   speedIncrease: 0.7
+   
+   divisionAmount: 0.05
+
+   # If the player unequips a generic movement attribute
+   # the next X movement packets they send 
+   # they will have their speed limits increased 
+   # to stop falses
+   # even if they don't have a item attribute on them
+   counter: 7.0
+   
+   
+# All Movement Checks
+movement:
+    
+    # When above ice, adjust speed accordingly between bHop and speed checks
+    iceIncrease: 3.5
+    
+    # Check for bHop
+    checkBHop:
+    
+        # Check for bHop
+        checkBHop: true
+        
+        # The max speed a player go be while above a block : linked with bHop
+        speedCheckMidAirA: 3.9
+
+        # The amount of times a player is flagged for speedCheckMidAirA before sending a violation : linked with bHop
+        BhopUntilHackingA: 3.0
+
+        # The amount of times a player is flagged for speedCheckbHopAlternativeB before sending a violation : linked with bHop
+        BhopUntilHackingAlternativeB: 3.0
+        
+        # The max speed a player go be while above a block : linked with bHop
+        speedCheckbHopAlternativeB: 0.1
+        
+    # Check for fastClimb
+    checkFastLadder:
+    
+        # Check for fastClimb
+        checkFastLadder: true
+        
+        # How long the player is on ladders until checking for fastLadder : linked with fastClimb check
+        numUntilCheckingFastClimbA: 10.0
+        
+        # The max speed a player can go while going up ladders, water, lava and vines : Linked with fastClimb check
+        speedMaxClimbingA: 2.7
+
+    # Check semi prediction and stuff
+    checkSemiPred:
+
+        checkSemiPredA: true
+        
+        semiPredYUntilFlagA: 2.0
+        
+        semiPredYLimiterA: 1.0
+        
+        checkSemiPredB: true
+        
+        semiPredYUntilFlagB: 3.0
+        
+        semiPredYLimiterB: 2.0
+        
+    # Check for flight
+    checkFly:
+    
+        # Check for flight
+        checkFly: true
+        
+        # How many jumps a player takes in mid-air until hacking : linked with flight check
+        inAirJumpUntilHackingA: 4.0
+
+        # How long the player is in the air until checking for jumps : linked with flight check
+        inAirUntilCheckJumpB: 2.0
+
+        # How long a player is going up in air until hacking : linked with flight check
+        inAirUpwardUntilHackingB: 11.0
+        
+        # How many times a player is going down with levitiation before hacking : linked with flight check
+        levitationDownUntilHackingC: 25.0
+        
+        # How many times check D for flight flags before flagging for hacking : linked with flight check
+        inAirYCoodD: 5.0
+        
+        # This is pretty much impossible to false
+        checkFlightE: true
+        
+    # Check for irregular pitch
+    checkIrregularPitch:
+    
+        # Check for irregular pitch
+        checkIrregularPitch: true
+        
+        # If the players pitch exceeds this number negatively: linked with irregularPitch check
+        irregularPitchNegativeMaxA: -91
+
+        # If the players pitch exceeds this number positively: linked with irregularPitch check
+        irregularPitchPositiveMaxA: 91
+
+    # noFall
+    checkNoFall:
+    
+        # Check for noFall
+        checkNoFall: true
+    
+        # The height in blocks, a player can fall before checking for noFall : linked with noFall check
+        noFallBlockHeightA: 5.0
+
+        # How long until the player has hit the ground, check for noFall (in ticks) : linked with noFall
+        noFallTimerA: 6.0
+
+    # Glide
+    checkGlide:
+    
+        # Check for glide
+        checkGlide: true
+    
+        # The min speed a player can descend : linked with glide check
+        speedMinimumWhenDescendingA: 1.1
+
+        # How many times a player is flagged for glide until they are flagged for hacking : linked with glide
+        glideUntilHackingA: 5.0
+        
+        # This is pretty much a flight check, if the player goes suddenly slow mid-air
+        speedMinimumWhenDescendingB: 1.4
+        
+        # consecutive flags of speedMinimumWhenDescendingB until flagging
+        glideUntilHackingB: 4.0
+
+
+    checkElytraFlight:
+    
+       checkElytraFlight: true
+       
+       # Pretty much just, if the player didn't use a firework rocket this number for the player
+       # will keep going up ANDDD if it exceeds this threshold then flag the player
+       # aka, packets sent while the player is flying
+       elytraFlightUntilHacking: 180
+       
+       # If the player has the same Y axis for X amount of packets and speed is lower than elytraFlightSpeedMinB
+       elytraFlightLimitB: 4.0
+       
+       elytraFlightSpeedMinB: 1.0
+       
+    # Speed
+    checkSpeed:
+         # Check for speed
+        checkSpeed: true
+        
+        # When a user has the speed affect, increase all speed thresholds by x every speed level
+        speedAmplifierThreshold: 0.6
+        
+        # When a user has the jump affect, increase all speed thresholds by x every jump level
+        jumpAmplifierThreshold: 1.0
+
+        # The max speed a player is in the air when Y coords are the same : linked with speed check
+        speedCheckWhenInAirAlternativeA: 6.0
+
+        # The speed of movements a player takes in the same Y air coord until they start getting flagged : linked with speed check
+        speedCheckWhenInAirAlternativeNumA: 5.0
+        
+        # The max speed of a player under a block : linked with speed check
+        speedMaxUnderBlockB: 6.0
+
+        # The max speed a player can go in the air, the max is 60 : Linked with speed check
+        speedMaxInAirC: 60.0
+
+        # The max speed a player can go when in a vehicle (Exceptions=boat): Linked with speed check
+        speedMaxInVehicleD: 20.0
+
+        # Speed limit when the player is on a block : Linked with speed check
+        speedMaxOnGroundE: 6.5
+
+        # The max speed a player can go when on ice : Linked with speed check
+        speedMaxOnIceF: 20.0
+
+        # The max speed a player can go when on ice : Linked with speed check
+        speedMaxInWaterG: 10.0
+
+        # The max speed a player can ascend : Linked with speed check
+        speedMaxWhenAscendingH: 9.0
+
+        # The max speed a player can descend : Linked with speed check
+        speedMaxWhenDescendingI: 40.0
+        
+        # The max speed a player can go in the air on the same Y axis : linked with speed check
+        speedCheckMidAirAlternativeJ: 5.0
+        
+        # The amount of times speedMaxInWater is flagged before flagging the player as cheating | linked with speed check
+        speedMaxInWaterNumK: 4.0
+        
+        # The max speed a player can go XZ : linked with speed check
+        speedMaxXZL: 3.7
+        
+        # The max speed on a block : linked with speed check
+        speedMaxOnBlockM: 7.8
+        
+        # The amount of flags that needs to occur consistently to flag the player : linked with speed check
+        speedMaxXZMaxL: 2.0
+        
+        # Max speed going up
+        speedMaxYN: 5.11
+        
+        # Max speed with an elytra
+        maxSpeedElytra: 40.0
+        
+        # Max speed going up until flagging
+        speedMaxYNFlag: 1.0
+        
+        # How long the player is on slime until checking for speed : linked with speed check
+        onSlimeTillCheckSpeed: 3.0
+        
+        # Max speed when in a boat when near ICE, otherwise speed (D) will check
+        maxSpeedBoatP: 33.0
+        
+        # Max speed when near WATER otherwise speed (D) will check
+        maxSpeedBoatQ: 13.0
+
+    # Spider Check
+    checkSpider:
+    
+        # Check for spider
+        checkSpider: true
+        
+        # How long a player can be going up before hacking : linked with spiderCheck
+        spiderUpUntilHackingA: 8.0
+
+        # How long a player can be going up before hacking : linked with spiderCheck
+        spiderUpUntilHackingAlternativeB: 3.0
+        
+    checkIrrMovement:
+        # Check for Irr movement (pretty much a speed and bhop check on the ground combined)
+        checkIrrMovement: false
+        
+        # Logs the coords of the first and last packet
+        irrMovementPacketSamples: 5.0
+        
+        # Max distance between both packets
+        irrMaxDistance: 4.5
+        
+        # if first packet and last packet coords are X blocks within eachother then check distance
+        irrYAxisIgnore: 0.1
+        
+        
+        # same as the variables above
+        irrMovementPacketSamplesB: 23.0
+        
+        irrMaxDistanceB: 11.0
+        
+        irrYAxisIgnoreB: 0.1
+        
+    checkIrrStartup:
+       
+       # Check for irrStartup
+       checkIrrStartup: true
+       
+       # Max speed for A
+       speedMaxA: 7.0
+       
+       # Max speed for B
+       speedMaxB: 4.3
+       
+       # consecutive flags for B until a violation 
+       limiterB: 2.0
+    
+    # Check for median speed
+    checkMedianSpeed:
+    
+       # check for median speed
+       checkMedianSpeed: true
+       
+       # sample X amount of packets
+       sample: 20.0
+       
+       # position of first packet and postion of last packet, if the Y is less than X, ignore
+       axisYIgnore: 2.5
+       
+       # max speed distance
+       maxMedianSpeed: 5.0
+       
+       
+    # Check for step
+    checkStep:
+    
+        # Check for step
+        checkStep: true
+        
+        # Step block height until getting flagged : linked with stepCheck
+        stepBlockHeightA: 2.0
+
+        # Enable experimental step B check
+        checkStepB: false
+        
+        # Max speed for step B
+        stepMaxSpeedB: 4.25
+        
+    # Check for noSlowDown
+    noSlowDownCheck:
+    
+        # Check for noSlowDown
+        noSlowDownCheck: true
+    
+        # The max speed a player can go when crouching : Linked with noSlowDown check:
+        speedCheckWhenCrouchingA: 2.5
+        
+        # The amount of times a player is flagged in a slowable block (cobweb or sweet berry bush) : linked with noSlowDown check
+        inSlowableBlockUntilCheckB: 3.0
+        
+        # The max speed a player can go when in webs, and sweetberry bushes : Linked with noSlowDown check
+        noSlowDownSpeedNumB: 1.8
+        
+        # How long the player is shifting until checking for noSlowDown : linked with noSlowDown check
+        shiftUntilCheckingNoSlowA: 5.0
+        
+        # If player is sprinting while food bar is less than 3
+        checkNoSlowDownC: true
+        
+        # max speed of D, this is walking with bows, shields, eating etc etc
+        noSlowDownDMaxSpeed: 2.1
+        
+        # Consistent flags of noSlowDownDMaxSpeed until actually flagging
+        noSlowDownDUntilCheat: 18.0
+
+    # Fluid Walk
+    checkWalkOnFluid:
+    
+        # Check for Jesus, water walking, fluid walk
+        checkWalkOnFluid: true
+        
+        # How long the player is standing above water until flagging : linked with fluidWalk check
+        fluidWalkUntilHackingAlternativeA: 7.0
+
+        # How long the player is above water until hacking : linked with fluidWalk check
+        fluidJumpsOnWaterUntilHackingB: 4.0
+
+        # How fast the player is going above water to be flagged : linked with fluidWalk check
+        fluidWalkIrregularSpeedB: 1.5
+
+        # How long the player is standing above water until flagging : linked with fluidWalk check
+        fluidWalkUntilHackingC: 3.0
+      
+        # Enable fluidWalk D, there are no options for this one as it is hardcoded, the only thing you can change if its enabled or not
+        fluidWalkDCheck: true
+        
+# All combat checks
+combat:
+    # Check for combat if the player is in creative mode, true means don't check, false means check regardless of gamemode : linked with all combat checks
+    checkPlayersGamemodeCombat: true
+
+    # Adjust movement values accordingly when a player is hit by another player to stop falses : linked with all movement checks
+    smartCombatMovementChange: 
+    
+        # Adjust movement values accordingly when a player is hit by another player to stop falses : linked with all movement checks
+        smartCombatMovementChange: true
+        
+        # Timer to adjust when a player is out of combat (20 = 1 second): linked with all movement checks 
+        smartCombatMovementChangeTimer: 60.0
+
+        # increase all movement value threshold flag limits by X: linked with all movement checks 
+        smartCombatMovementChangeNumber: 10.0
+        
+        # When a user is hit with a weapon that has the enchantment punch, the speed (L) and speed (M) check will increase accordingly
+        smartCombatMovementChangeSpeedPunchLM: 4.5
+        
+        # When a user is hit with knockback increase variables speed (L) and speed (M) will increase accordingly
+        smartCombatMovementChangeSpeedKnockbackLM: 2.0
+
+    # Check for critical hits
+    checkCriticals: true
+    
+    
+    checkVelocity:
+        
+        # Check velocity
+        checkVelocity: true
+        
+        # Number of velocity flags before flagging velocity        
+        velocityFlagsUntilFlagging: 2.0
+        
+        # Speed min
+        velocitySpeedMin: 0.5
+        
+    # Check for entity reach
+    checkReach:
+    
+        # Check for entity reach
+        checkReach: true
+        
+        # Entity reach max limit : Linked with entity reach check
+        checkReachNumA: 4.7
+
+        checkReachNumAPingIncrease: true
+
+        reachNumAPingIncrease: 0.2
+        
+        reachNumAPing: 300
+        
+        # Entity reach max limit when in creative: Linked with entity reach check
+        checkReachNumCreativeB: 7.0
+
+# All Timer Checks
+timer-checks:
+    # Check for regen : linked with checkIrregularEvent
+    checkRegen: true
+    
+    # Check for irregularMoveEvents
+    checkIrregularEvent:
+    
+        # Check for irregularMoveEvents
+        checkIrregularEvent: true
+
+        # Gets the player packet count movement count, once reaching this number it samples the time it has taken from the first
+        # and the last packet that was recieved : linked with irregularEventCount check
+        irregularNumSampleNumA: 70.0
+        
+        # Gets the time taken between the first and last packet of irregularNumSampleNum, 
+        # if the time between the two packets is lower than this number then flag (In miliseconds) : linked with irregularEventCount
+        irregularTimeCountA: 3150.0
+        
+        # Gets the player packet count movement count, once reaching this number it samples the time it has taken from the first
+        # and the last packet that was recieved : linked with irregularEventCount check
+        irregularNumSampleNumB: 3.0
+        
+        # Gets the time taken between the first and last packet of irregularNumSampleNum, 
+        # if the time between the two packets is higher than this number then flag (In miliseconds) : linked with irregularEventCount
+        irregularTimeCountB: 200.0
+        
+        # max mili when using an elytra and flying
+        maxElytraMili: 2000
+
+    # Check for fast place
+    checkFastPlace:
+    
+        # Check for fast place
+        checkFastPlace: true
+        
+        # If the users fastPlaceTime is lower than this number then flag (note in miliseconds)| linked with fastPlace
+        fastPlaceFlagNumA: 300.0
+
+        # Takes the time between the amount of blocks placed and takes the time between the two placed | linked with fastPlace
+        fastPlaceSampleNumA: 6.0
+   
+
+# All block interaction checks
+interaction:
+
+    # It checks for auto clicker
+    checkAutoClicker:
+    
+        # It checks for auto clicker
+        checkAutoClickerA: true 
+        
+        # Clicks per second until getting flagged for auto clicker : linked with autoClicker check
+        CPSUntilHackingA: 16.0
+        
+        # Consistent clicks
+        checkAutoClickerB: true
+        
+        # amount of consistent flags needed to flag for autoClickerB
+        autoClickerBLimit: 10.0
+        
+        # approx ms between the before click time and current click time allowed, and increase autoClickeBLimit for the player by 1 else set back to 0
+        autoClickerBms: 6
+        
+    # Check for reach break
+    checkReachBlockBreak:
+    
+        # Ch eck for reach break
+        checkReachBlockBreak: true
+    
+        # If player breaks a block farther than this number, flag player : linked with reach break check
+        reachBlockBreakNumA: 7.0
+
+    # Reach Place
+    checkReachBlockPlace:
+    
+        # Check for reach place
+        checkReachBlockPlace: true
+        
+        # If player places a block farther than this number, flag player : linked with reach place check
+        reachBlockPlaceNumA: 7.0
+        
+    # check for ghost ghost, if the player interacts with a block through a solid block
+    checkGhostHand: false
+    
+    # check if player is placing blocks mid-air
+    irrPlacement: true
+
+
+
+badpackets: 
+    
+    # Checks for ground spoofing
+    checkBadPacketsA: true
+    
+    limiterA: 7
+    
+other:
+
+    # Enables the API
+    enableAPI: false
+    
+    # Specifies the config type
+    config-type: 'nevergonnagiveyouup'
+    
+    # When a report gets submitted, message all online admins
+    enableReportBroadcastToAdmins: true
+    
+    # Disable anti cheat for player for X amount of ticks , 20 = 1 second, upon teleporting (This is for stopping falses upon teleportation)
+    disableAntiCheatXTime: 170.0
+    
+    # When hit by the ender dragon, disable the AC for X amount of time, 20 = 1 second
+    disableACEnderDragon: 150.0
+    
+    # Display PacketPlayInCustomPayload when a player joins
+    enableModifiedClientBroadcast: false
+    
+    checkBaritone:
+    
+       # Checks for baritone
+       # Sadly I cannot explain how this check works due to it being too complicated to type it all out
+       # THIS IS AN EXTREMELY BETA CHECK, MEANING IT WILL TAKE A WHILE TO FLAG OR IT WILL FALSE
+
+       checkBaritone: false
+       
+       # -----------------------------
+       # samples the amount of packets into an array, ONLY CHANGE BY A FEW INTEGERS IF REQUIRED
+       packetSamples: 6.0
+       
+       # until the player gets flagged for cheating (globally, is not consecutive), Not so important but if you set it too high it
+       # becomes useless
+       # USUALLY THIS NUMBER YOU WOULD WANT TO CHANGE IF NEEDED
+       baritoneFlag: 2.0
+       
+       # higher num = more insensitive, THIS IS AN EXTREMELY IMPORTANT NUMBER, ONLY CHANGE BY A FEW INTEGERS IF REQUIRED
+       baritoneLoopThreshold: 3.0
+       
+       # highernum = more insensitive, logs speed, THIS IS AN EXTREMELY IMPORTANT NUMBER, ONLY CHANGE BY A FEW INTEGERS IF REQUIRED
+       substringNum: 4.0
+       
+       # min flag count       
+       minFlagCount: 6.0
+       
+       # -----------------------------
+       
+       # samples the amount of packets into an array, ONLY CHANGE BY A FEW INTEGERS IF REQUIRED
+       packetSamplesB: 5.0
+       
+       # until the player gets flagged for cheating (globally, is not consecutive), Not so important but if you set it too high it
+       # becomes useless
+       # USUALLY THIS NUMBER YOU WOULD WANT TO CHANGE IF NEEDED, NOTHING ELSE
+       baritoneFlagB: 2.0
+       
+       # higher num = more insensitive, THIS IS AN EXTREMELY IMPORTANT NUMBER, ONLY CHANGE BY A FEW INTEGERS IF REQUIRED
+       baritoneLoopThresholdB: 1.0
+       
+       # highernum = more insensitive, logs speed, THIS IS AN EXTREMELY IMPORTANT NUMBER, ONLY CHANGE BY A FEW INTEGERS IF REQUIRED
+       substringNumB: 5.0
+       
+       minFlagCountB: 3.0
+       # -----------------------------
+       
+       # samples the amount of packets into an array, ONLY CHANGE BY A FEW INTEGERS IF REQUIRED
+       packetSamplesC: 5.0
+ 
+       # until the player gets flagged for cheating (globally, is not consecutive), Not so important but if you set it too high it
+       # becomes useless
+       # USUALLY THIS NUMBER YOU WOULD WANT TO CHANGE IF NEEDED
+       baritoneFlagC: 1.0
+       
+       # higher num = more insensitive, THIS IS AN EXTREMELY IMPORTANT NUMBER, ONLY CHANGE BY A FEW INTEGERS IF REQUIRED
+       baritoneLoopThresholdC: 5.0
+       
+       # highernum = more insensitive, logs speed, THIS IS AN EXTREMELY IMPORTANT NUMBER, ONLY CHANGE BY A FEW INTEGERS IF REQUIRED
+       substringNumC: 6.0
+       
+       minFlagCountC: 6.0
+       
+       # -----------------
+       # Optional Best Baritone Configuration, however does false in certain situations
+       # 5
+       # 2
+       # 1
+       # 5
+       # 5
+       # and turning allowedBlockTillFlagNum to 0
+       # -----------------
+       baritoneReset: 50.0
+      
+       # This is a secondary checker for A, B and C internally, its meant to limit falses if a player is acting like a bot
+       # To enable this check, increase the value by X, 0 means don't check for secondary 
+       # 1 or more means check for secondary
+       # making this number higher than 7 makes it useless, making it higher than 3 may as well make it useless depending on doubleBlockNum
+       # default is 0
+       # turn to 1 to enable secondary internal checking
+       allowedBlockTillFlagNum: 0.0
+       
+       # Part of the secondary limit internal check for A, B and C
+       doubleBlockNum: 0.5
+       
+    # Check for ping spoofing
+    checkPingSpoofing:
+    
+        # Check for ping spoofing
+        checkPingSpoofing: false
+    
+        # Ping until ping spoofing : Linked with pingSpoofing check
+        pingUntilPingSpoofingA: 2000.0
+        
+    # Check for nuker
+    checkNuker:
+       
+       checkNuker: true
+       
+       # Max amount of miliseconds between the first and last dig packet sent
+       maxMili: 400.0
+       
+       # sample X amout of packets
+       sample: 20.0
+       
+       
+    # Check for player lag. If false, then ignores players ping regardless, and still continues checking players actions
+    checkPlayerLag:
+
+        # Check for player lag. If false, then ignores players ping regardless, and still continues checking players actions
+        checkPlayerLag: false
+        
+        # If the ping is higher than this number, ignore players irregular activity : linked with CheckPlayerLag check
+        checkPlayerLagNum: 500.0
+    
+    # Server TPS
+    checkServerTPS:
+    
+        # Check For Server TPS
+        checkServerTPS: false
+
+        # If the servers TPS is lower than number, ignore all abnormal activity : linked with checkServerTPS
+        serverTPSTillIgnore: 18.0
+        
+        # If this variable is true then it check if tps is LOWER than serverTPSTillIgnore and only check if its below serverTPSTillIgnore
+        # otherwise ignore tps
+        invertTPS: false
+            
+    
+    # please do not enable this feature I was too lazy to actually remove it
+    # use the sacaddons plugin to use movement replays etc
+    enableMovementReplay: false
+    
+    
+    # Ignore abnormal activites with 0 ping
+    ignoreZeroPing: false
+    
+    # Debug mode is when a violation occurs, and the check that is violated will display the configuration variable
+    # that the player exceeded in chat, note that it messages every player what configuration variable
+    # was exceeded
+    debugMode: false
+    
+    # Whenever a player with the permission sac.notify joins the game, notify the player if the anti cheat is updated or outdated
+    updateNotifications: true
+    
+    versionStringResetter: 1048.0

@@ -1,0 +1,83 @@
+{
+  "uniqueId": "AOneBlock_default",
+  "defaultPanel": true,
+  "gameMode": "AOneBlock",
+  "permissionSuffix": "default",
+  "panelName": "&aAda menüsü",
+  "panelButtons": [
+    {
+      "slot": 0,
+      "material": "GRASS",
+      "descriptionLines": [],
+      "command": "[label] go",
+      "name": "&7- &5Adana ışınlar."
+    },
+    {
+      "slot": 8,
+      "material": "LAVA_BUCKET",
+      "descriptionLines": [],
+      "command": "[label] settings",
+      "name": "&7- &5Ada ayarlarını açar."
+    },
+    {
+      "slot": 3,
+      "descriptionLines": [],
+      "command": "[label] team",
+      "name": "&7- &5Takımını gösterir."
+    },
+    {
+      "slot": 1,
+      "material": "WHITE_BED",
+      "descriptionLines": [],
+      "command": "[label] sethome",
+      "name": "&7- &5Ada başlangıç noktasını ayarlar."
+    },
+    {
+      "slot": 9,
+      "material": "ACACIA_STAIRS",
+      "descriptionLines": [
+        "&7- &a%Level_aoneblock_island_level%"
+      ],
+      "command": "[label] level",
+      "name": "&7- &5Seviyeyi gösterir."
+    },
+    {
+      "slot": 10,
+      "material": "BOOK",
+      "descriptionLines": [],
+      "command": "[label] top",
+      "name": "&7- &5İlk 10 adayı gösterir."
+    },
+    {
+      "slot": 12,
+      "material": "OAK_SIGN",
+      "descriptionLines": [],
+      "command": "[label] visits",
+      "name": "&7- &5Ada bölgelerini gösterir."
+    },
+    {
+      "slot": 14,
+      "material": "OAK_SAPLING",
+      "descriptionLines": [],
+      "command": "[label] limits",
+      "name": "&7- &5Limitleri gösterir."
+    },
+    {
+      "slot": 15,
+      "material": "ENCHANTING_TABLE",
+      "descriptionLines": [],
+      "command": "[label] challenges",
+      "name": "&7- &5Görevler"
+    },
+    {
+      "slot": 17,
+      "material": "TOTEM_OF_UNDYING",
+      "descriptionLines": [
+        "&7- &aSkylord olmak için",
+        "&aada seviyeni 1000 yap görevini bitir."
+      ],
+      "command": "",
+      "name": "&7- &5Skylord"
+    }
+  ]
+}

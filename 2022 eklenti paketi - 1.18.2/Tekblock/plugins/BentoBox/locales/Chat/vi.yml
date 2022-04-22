@@ -1,0 +1,21 @@
+chat:
+  team-chat:
+    description: bật/tắt chat đội
+    chat-on: '&aĐã bật chat đội.'
+    chat-off: '&aĐã tắt chat đội.'
+    syntax: '&6[team] &a[name]&8: &f[message]'
+    spy:
+      description: bật/tắt giám sát chat đội
+      spy-on: '&aĐã bật giám sát chat đội.'
+      spy-off: '&cĐã tắt giám sát chat đội.'
+      syntax: '&c[team-chat-spy] &a[name]&8: [message]'
+  island-chat:
+    description: bật/tắt chat đảo
+    island-on: '&aĐã bật chat đảo.'
+    island-off: '&cĐã tắt chat đảo.'
+    syntax: '&6[island] &a[name]&8: &f[message]'
+    spy:
+      description: bật/tắt giám sát chat đảo
+      spy-on: '&aĐã bật giám sát chat đảo.'
+      spy-off: '&cĐã tắt giám sát chat đảo.'
+      syntax: '&c [island-chat-spy] &a[name]&8: &f[message]'

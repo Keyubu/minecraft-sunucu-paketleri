@@ -1,0 +1,12 @@
+checkXray: false
+# Timer is in ticks, remember 20 ticks = 1 second, so 6000 = 5 minutes
+timer: 6000
+cheat: 'Xray'
+# The first ROW is the material you want to be checked for, the first ROW of numbers is the maximium amount of blocks u can mine for that specific block in the time of 'timer' above
+# The second ROW of numbers is the 'OTHER' amount of blocks needed to mine for the first row of numbers to be exceeded to flag
+# The third ROW of numbers is the Y axis the block has to be mined from, so for example if the number is 30, whatever is below the Y axis of 30
+# Will be added to a list internally and be checked for
+# Note you can add more materials to the list and configure to your hearts desire
+xray-config:
+     - DIAMOND_ORE 25 100 30
+     - DEEPSLATE_DIAMOND_ORE 25 100 30

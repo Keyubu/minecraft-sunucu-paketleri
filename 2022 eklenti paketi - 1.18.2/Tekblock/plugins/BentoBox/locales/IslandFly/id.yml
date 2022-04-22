@@ -1,0 +1,18 @@
+islandfly:
+  fly-outside-alert: '&c Anda di luar pulau Anda sehingga mode terbang akan dinonaktifkan
+    di &e [number] &c detik.'
+  fly-turning-off-alert: '&c Anda tidak lagi diizinkan terbang ke sini. Mematikan
+    terbang dalam &e [number] &c detik.'
+  disable-fly: '&c Mode terbang Anda telah dinonaktifkan.'
+  reallowed-fly: '&a Lalat Anda telah diluncurkan kembali'
+  enable-fly: '&a Mode terbang Anda telah diaktifkan.'
+  cancel-disable: '&a Anda kembali, ya! Bahan bakar terbang berhasil diisi ulang!'
+  wrong-world: '&c Anda tidak berada di dunia gamemode yang tepat'
+  command:
+    not-allowed-fly: '&c Anda tidak diizinkan terbang di pulau ini'
+    description: memungkinkan Anda untuk terbang di pulau Anda
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a Toggle yang bisa terbang di pulau Anda'
+      name: '&a Pencegahan lalat'

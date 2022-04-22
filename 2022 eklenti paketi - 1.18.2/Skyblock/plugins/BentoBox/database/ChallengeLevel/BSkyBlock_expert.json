@@ -1,0 +1,35 @@
+{
+  "uniqueId": "BSkyBlock_expert",
+  "friendlyName": "Expert",
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GREEN_CONCRETE\n",
+  "world": "bskyblock_world",
+  "order": 3,
+  "waiverAmount": 1,
+  "unlockMessage": "Congratulations - you unlocked the &dExpert level!",
+  "rewardText": "Small reward for completing all Expert challenges.",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_PICKAXE\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DIG_SPEED: 5\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_AXE\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DIG_SPEED: 5\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_SHOVEL\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DIG_SPEED: 5\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_HOE\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DURABILITY: 3\n"
+  ],
+  "rewardExperience": 2920,
+  "rewardMoney": 1000,
+  "rewardCommands": [
+    "effect give [player] resistance 600"
+  ],
+  "challenges": [
+    "BSkyBlock_woolcollector",
+    "BSkyBlock_eggcollector",
+    "BSkyBlock_milkcollector",
+    "BSkyBlock_villagerbreeder",
+    "BSkyBlock_trader",
+    "BSkyBlock_slimeballcollector",
+    "BSkyBlock_expert",
+    "BSkyBlock_flowercollector",
+    "BSkyBlock_ironage",
+    "BSkyBlock_irongolemfarm",
+    "BSkyBlock_slimefarm",
+    "BSkyBlock_snowgolemfarm"
+  ]
+}

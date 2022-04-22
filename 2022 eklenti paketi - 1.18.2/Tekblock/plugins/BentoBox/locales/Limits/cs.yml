@@ -1,0 +1,35 @@
+# ##########################################################################################
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+#                                                                                         #
+# Translation by: CZghost                                                                 #
+# ##########################################################################################
+
+block-limits:
+  hit-limit: '&c[material] omezen na [number]!'
+entity-limits:
+  hit-limit: '&cSpawnování [entity] omezeno na [number]!'
+limits:
+  panel-title: Omezení ostrovů
+
+
+admin:
+  limits:
+    main:
+      parameters: <player>
+      description: ukázat omezení ostrova hráče
+    calc:
+      parameters: <player>
+      description: přepočítat omezení ostrova hráče
+      finished: '&aPřepočítání ostrova úspěšně dokončeno!'
+
+island:
+  limits:
+    description: ukázat omezení tvého ostrova
+    max-color: '&c'
+    regular-color: '&a'
+    block-limit-syntax: '[number]/[limit]'
+    no-limits: '&cTento svět nemá žádné omezení'
+    recount:
+      description: přepočítá omezení tvého ostrova
+

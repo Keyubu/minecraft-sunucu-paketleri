@@ -1,0 +1,63 @@
+{
+  "uniqueId": "AOneBlock_waterzoo",
+  "friendlyName": "Water Zoo",
+  "deployed": true,
+  "description": [
+    "Create a water animal zoo"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BLUE_STAINED_GLASS_PANE\n",
+  "order": 7,
+  "challengeType": "ISLAND",
+  "environment": [
+    "NORMAL"
+  ],
+  "removeWhenCompleted": false,
+  "level": "AOneBlock_advanced",
+  "requirements": {
+    "class": "IslandRequirements",
+    "parameters": {
+      "requiredBlocks": {},
+      "removeBlocks": false,
+      "requiredEntities": {
+        "SQUID": 2,
+        "TURTLE": 2,
+        "COD": 2,
+        "SALMON": 2,
+        "PUFFERFISH": 2,
+        "TROPICAL_FISH": 10,
+        "DOLPHIN": 2
+      },
+      "removeEntities": false,
+      "searchRadius": 20,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Get some extra diamonds and some shulker boxes",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n  amount: 16\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SHULKER_BOX\n  amount: 2\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": false,
+  "repeatRewardText": "",
+  "maxTimes": 0,
+  "repeatExperienceReward": 0,
+  "repeatItemReward": [],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

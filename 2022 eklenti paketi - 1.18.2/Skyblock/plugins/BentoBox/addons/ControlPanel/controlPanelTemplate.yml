@@ -1,0 +1,67 @@
+# Control Panel Template file
+# Command Parser Values:
+#    [player] - [player] in command will be replaced with username,
+#               f.e. 'give [player] diamond' will result in '/give BONNe1704 diamond'
+#    [server] - Command will be run by console, f.e. '[server] op [player]' will result in '/op BONNe1704'
+#    [label]  - [label] in command will be replaced with corresponding GameMode user command,
+#               f.e. '[label] challenges' in BSkyblock will result in 'island challenges'
+# material is used from Matherial.match
+# permission is a suffix that will be added to the end of "[gamemode].controlpanel.panel.[suffix]".
+#    Adding permission means that user will open control panel defined by permission.
+#    If user will have multiple panel permissions, it will open first encountered with default flag.
+#    If user will have '*', it will open first defined panel with default flag.
+# description can include color codes using & and new lines using | and placeholders with with % at the
+#    start and the end. [gamemode] in placeholders will be converted to correct string.
+# number before each button means slot location
+
+panel-list:
+  default:
+    defaultPanel: true
+    panelName: '&aAda menüsü'
+    permission: 'default'
+    buttons:
+      0:
+        name: '&7- &5Adana ışınlar.'
+        material: GRASS
+        command: '[label] go'
+      8:
+        name: '&7- &5Ada ayarlarını açar.'
+        material: LAVA_BUCKET
+        command: '[label] settings'
+      3:
+        name: '&7- &5Takımını gösterir.'
+        material: SKULL_ITEM
+        command: '[label] team'
+      1:
+        name: '&7- &5Ada başlangıç noktasını ayarlar.'
+        material: WHITE_BED
+        command: '[label] sethome'
+      9:
+        name: '&7- &5Seviyeyi gösterir.'
+        material: ACACIA_STAIRS
+        description:
+          - '&7- &a%Level_[gamemode]_island_level%'
+        command: '[label] level'
+      10:
+        name: '&7- &5İlk 10 adayı gösterir.'
+        material: BOOK
+        command: '[label] top'
+      12:
+        name: '&7- &5Ada bölgelerini gösterir.'
+        material: OAK_SIGN
+        command: '[label] visits'
+      14:
+        name: '&7- &5Limitleri gösterir.'
+        material: OAK_SAPLING
+        command: '[label] limits'
+      15:
+        name: '&7- &5Görevler'
+        material: ENCHANTING_TABLE
+        command: '[label] challenges'
+      17:
+        name: '&7- &5Skylord'
+        material: TOTEM_OF_UNDYING
+        description:
+          - '&7- &aSkylord olmak için'
+          - '&aada seviyeni 1000 yap görevini bitir.'
+        command: ''

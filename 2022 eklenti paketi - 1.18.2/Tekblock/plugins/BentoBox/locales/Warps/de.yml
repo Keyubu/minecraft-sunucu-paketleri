@@ -1,0 +1,30 @@
+#
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+warp:
+  help:
+    description: Warpt dich zu dem Warp Schild von dem Spieler
+    parameters: <Spielername>
+warps:
+  deactivate: '&c Altes Warp Schild deaktiviert!'
+  error:
+    does-not-exist: '&c Oh nein! Dieser Warp existiert nicht mehr!'
+    no-permission: '&c Hierfür hast du keine Rechte!'
+    no-remove: '&c Du kannst dieses Schild nicht entfernen!'
+    no-warps-yet: '&c Es sind noch keine Warps verfügbar'
+    not-enough-level: '&c Dein Insel-Level ist nicht hoch gneug!'
+    not-on-island: '&c Dafür musst du auf deiner Insel sein!'
+    not-safe: '&c Dieser Warp ist nicht sicher!'
+    your-level-is: '&c Dein Insel-Level ist erst [level] und muss höher als [required]
+      sein. Nutze das Level Kommando.'
+  help:
+    description: Öffnet das Warps Panel
+  next: '&6 Nächste Seite'
+  player-warped: '&2 [name] hat sich zu deinem Warp Schild gewarpt!'
+  previous: '&6 Vorherige Seite'
+  random: '&4 Zufälliger Warp'
+  sign-removed: '&c Warp Schild entfernt!'
+  success: '&a Erfolg!'
+  title: Warp Schilder
+  warpTip: '&6 Platziere ein Warp Schild mit [text] in der ersten Zeile'
+  warpToPlayersSign: '&6 Warpe zu [player]''s Schild'

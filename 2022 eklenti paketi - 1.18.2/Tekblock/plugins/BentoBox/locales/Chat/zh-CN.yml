@@ -1,0 +1,21 @@
+chat:
+  team-chat:
+    description: 切换团队聊天开闭
+    chat-on: '&a 团队聊天已开启.'
+    chat-off: '&a 团队聊天已关闭.'
+    syntax: '&6[team] &a[name]&8: &f[message]'
+    spy:
+      description: 切换偷听所有团队聊天
+      spy-on: '&a 团队聊天偷听已开启.'
+      spy-off: '&c 团队聊天偷听已关闭.'
+      syntax: '&c[team-chat-spy] &a[name]&8: [message]'
+  island-chat:
+    description: 切换岛屿聊天开闭
+    island-on: '&a 岛屿聊天已开启.'
+    island-off: '&c 岛屿聊天已关闭.'
+    syntax: '&6[island] &a[name]&8: &f[message]'
+    spy:
+      description: 切换偷听所有岛屿聊天
+      spy-on: '&a 岛屿聊天偷听已开启.'
+      spy-off: '&c 岛屿聊天偷听已关闭.'
+      syntax: '&c [island-chat-spy] &a[name]&8: &f[message]'

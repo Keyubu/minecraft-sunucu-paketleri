@@ -1,0 +1,167 @@
+# Registration
+registration:
+    disabled: '&cIn-game registration is disabled!'
+    name_taken: '&b&lKeyubu &8&l» &cBu isimde zaten sunucuya kayıt olmuş!'
+    register_request: |-
+      &b&lKeyubu
+      &f
+      &5● &9Hoş geldin!
+      &5● &9Sunucuya giriş yapmadan önce kimliğine ihtiyacımız var.
+      &5● &9İşte sana yardımcı olacak bir komut &8- &a/register şifre şifre
+      &f
+    command_usage: '&b&lKeyubu &8&l» &cKayıt olman için gereken komut &8- &a/register <şifre> <şifre>'
+    reg_only: '&b&lKeyubu &a&l» &eSadece siteden kayıt olanlar sunucuya giriş yapabilir.'
+    success: |-
+      &b&lKeyubu
+      &9Eşsiz sunucumuza sonunda sende kayıt oldun.
+      &9Kaydını tamamlamak için tekrar giriş yap!
+    kicked_admin_registered: '&b&lKeyubu &8&l» &9Yetkili seni sunucuya kayıt etti. Tekrar giriş yap.'
+# Password errors on registration
+password:
+    match_error: '&b&lKeyubu &8&l» &cYanlış şifre girdin!? Bir dakika hesap mı çalmaya çalışıyorsun?'
+    name_in_password: '&b&lKeyubu &8&l» &cBu şifreyi kullanamazsın. Tekrar dene!'
+    unsafe_password: '&b&lKeyubu &8&l» &cSeçtiğin şifre güveli değil. Dikkat et.'
+    forbidden_characters: '&b&lKeyubu &8&l» &cTürkçe ve illegal karakterler kullanamazsın! &5(İ,ü,ö,ç,ş,I,ğ)'
+    wrong_length: '&b&lKeyubu &8&l» &cŞifren çok kısa veya çok uzun. Başka bir tane dene.'
+# Login
+login:
+    command_usage: '&b&lKeyubu &8&l» &9Giriş yapmak için &8- &a/login <şifre>'
+    wrong_password: |-
+      &b&lKeyubu
+      &cYanlış şifre girdin!?
+      &cBir dakika yoksa hesap mı çalmaya çalışıyorsun?
+    success: '&b&lKeyubu &8&l» &9Vay anasını, nasıl bildin şifreyi yav? Aferin hadi bakalım iyi oyunlar!'
+    login_request: '&b&lKeyubu &8&l» &9Eee, sanırım giriş yapman gerek... &a/login <şifre>'
+    timeout_error: |-
+      &b&lKeyubu
+      &cÇok geç kaldın çook, tekrar dene!
+# Errors
+error:
+    denied_command: '&b&lKeyubu &8&l» &4Giriş yapmadan bu işlemi uygulayamazsın, &a/login <şifre>'
+    denied_chat: '&b&lKeyubu &8&l» &4Giriş yapmadan bu işlemi uygulayamazsın, &a/login <şifre>'
+    unregistered_user: '&b&lKeyubu &8&l» &4Böyle bir kayıtlı oyuncu bulunamadı!'
+    not_logged_in: '&b&lKeyubu &8&l» &4Dur, ilk giriş yap. Ondan sonra napıyorsun yap!'
+    no_permission: '&b&lKeyubu &8&l» &4Bu izni ben sana vermedim hayırdır?'
+    unexpected_error: '&b&lKeyubu &8&l» &4Hata hata hata! Yetkiliye hatayı ilet!'
+    max_registration: '&b&lKeyubu &8&l» &4Çok fazla sayıda giriş yaptın! &7(&5%reg_count&8/&4%max_acc &8- &d%reg_names&7)'
+    logged_in: '&b&lKeyubu &8&l» &4Zaten giriş yaptın, daha ne istiyorsun benden!'
+    kick_for_vip: '&b&lKeyubu &a&l» &eSunucuya dolu olduğundan ve VIP girdiğinden dolayı sunucudan atılmak zorunda kaldın!'
+    kick_unresolved_hostname: '&b&lKeyubu &a&l» &CÇözülemeyen oyuncu sorunu!'
+    tempban_max_logins: '&b&lKeyubu &8&l» &4Çok fazla girişten dolayı belli bir süre banlandın!'
+# AntiBot
+antibot:
+    kick_antibot: '&b&lKeyubu &8&l» &9Anti bot koruması devam ediyor! Birazdan koruma kapanacak!'
+    auto_enabled: '&b&lKeyubu &8&l» &4Dikkat, dikkat! Bot saldırısına uğradık! Tüm korumalar aktifleştirildi!'
+    auto_disabled: '&b&lKeyubu &8&l» &eBot koruması %m dakika sonra kapatıcam!'
+# Unregister
+unregister:
+    success: '&b&lKeyubu &8&l» &4Başarıyla kaydı silindi!'
+    command_usage: '&cUsage: /unregister <password>'
+# Other messages
+misc:
+    account_not_activated: '&cYour account isn''t activated yet, please check your emails!'
+    password_changed: '&b&lKeyubu &8&l» &9Şifreni başarıyla değiştirdin!'
+    logout: '&2Logged out successfully!'
+    reload: '&b&lKeyubu &8&l» &9Her şey yenilendi!'
+    usage_change_password: '&b&lKeyubu &8&l» &4Sanırsam şifreni nasıl değişmen gerektiğini unuttun! Bunu kullanabilirsin: &5/changepassword <oldPassword> <newPassword>'
+    accounts_owned_self: '&b&lKeyubu &8&l» &5%count &9tane hesaba sahipsin: &e'
+    accounts_owned_other: '&b&lKeyubu &8&l» &d%name &5%count tane hesaba sahip:&e'
+# Session messages
+session:
+    valid_session: '&b&lKeyubu &8&l» &5Aynı ip adresinden giriş tespit edildi. Oto giriş yapıldı!'
+    invalid_session: '&b&lKeyubu &8&l» &cIp adresin değiştiğinden dolayı tekrar giriş yapmalısın!'
+# Error messages when joining
+on_join_validation:
+    same_ip_online: |-
+      &b&lKeyubu
+      &cBu IP adresli birisi zaten oyunda,
+      &cYoksa yan hesap mı?! Hiç sevmem.
+    same_nick_online: |-
+      &b&lKeyubu
+      &cBu isimdeki oyuncu zaten oyunda.
+      &cKlonu felan mı çıktı, hayırdır?
+    name_length:  |-
+      &b&lKeyubu
+      &cİsmin çok uzun ya da çok kısa,
+      &cOnu ayarlarsan girme şansını elde edebilirsin...
+    characters_in_name:  |-
+      &b&lKeyubu
+      &cÜzgünüm ama maalesef Türkçe karakterler
+      &cisim içinde kullanılamaz. &5(İ,ü,ö,ç,ş,I,ğ)
+    kick_full_server: '&b&lKeyubu &a&l» &4Sanırsam sunucu dolu dostum, vip alarak girebilirsin!'
+    country_banned: '&b&lKeyubu &a&l» &4Bulunduğun ülke sunucumuzda banlı, üzgünüm ama güvenlik için bu gerekli!'
+    not_owner_error: '&b&lKeyubu &a&l» &4Bu hesap sana ait değil! Başka bir isim seç!'
+    invalid_name_case: |-
+      &b&lKeyubu
+      &cÖnceden &d%valid &cismiyle kayıt veya giriş yapılmış.
+      &cBüyük veya küçük harf değişerek &5%invalid &cismiyle giremezsin!
+    quick_command: 'You used a command too fast! Please, join the server again and wait more before using any command.'
+# Email
+email:
+    add_email_request: '&bPlease add your email to your account with the command: /email add <yourEmail> <confirmEmail>'
+    usage_email_add: '&cUsage: /email add <email> <confirmEmail>'
+    usage_email_change: '&cUsage: /email change <oldEmail> <newEmail>'
+    new_email_invalid: '&cInvalid new email, try again!'
+    old_email_invalid: '&cInvalid old email, try again!'
+    invalid: '&cInvalid email address, try again!'
+    added: '&2Email address successfully added to your account!'
+    add_not_allowed: '&cAdding email was not allowed'
+    request_confirmation: '&cPlease confirm your email address!'
+    changed: '&2Email address changed correctly!'
+    change_not_allowed: '&cChanging email was not allowed'
+    email_show: '&2Your current email address is: &f%email'
+    no_email_for_account: '&2You currently don''t have email address associated with this account.'
+    already_used: '&4The email address is already being used'
+    incomplete_settings: 'Error: not all required settings are set for sending emails. Please contact an admin.'
+    send_failure: 'The email could not be sent. Please contact an administrator.'
+    change_password_expired: 'You cannot change your password using this command anymore.'
+    email_cooldown_error: '&cAn email was already sent recently. You must wait %time before you can send a new one.'
+# Password recovery by email
+recovery:
+    forgot_password_hint: '&bForgot your password? Please use the command: /email recovery <yourEmail>'
+    command_usage: '&cUsage: /email recovery <Email>'
+    email_sent: '&2Recovery email sent successfully! Please check your email inbox!'
+    code:
+        code_sent: 'A recovery code to reset your password has been sent to your email.'
+        incorrect: 'The recovery code is not correct! You have %count tries remaining.'
+        tries_exceeded: 'You have exceeded the maximum number attempts to enter the recovery code. Use "/email recovery [email]" to generate a new one.'
+        correct: 'Recovery code entered correctly!'
+        change_password: 'Please use the command /email setpassword <new password> to change your password immediately.'
+# Captcha
+captcha:
+    usage_captcha: '&bTo login you have to solve a captcha code, please use the command: /captcha %captcha_code'
+    wrong_captcha: '&cWrong captcha, please type "/captcha %captcha_code" into the chat!'
+    valid_captcha: '&2Captcha code solved correctly!'
+    captcha_for_registration: 'To register you have to solve a captcha first, please use the command: /captcha %captcha_code'
+    register_captcha_valid: '&2Valid captcha! You may now register with /register'
+# Verification code
+verification:
+    code_required: '&3This command is sensitive and requires an email verification! Check your inbox and follow the email''s instructions.'
+    command_usage: '&cUsage: /verification <code>'
+    incorrect_code: '&cIncorrect code, please type "/verification <code>" into the chat, using the code you received by email'
+    success: '&2Your identity has been verified! You can now execute all commands within the current session!'
+    already_verified: '&2You can already execute every sensitive command within the current session!'
+    code_expired: '&3Your code has expired! Execute another sensitive command to get a new code!'
+    email_needed: '&3To verify your identity you need to link an email address with your account!!'
+# Time units
+time:
+    second: 'saniye'
+    seconds: 'saniyeler'
+    minute: 'dakika'
+    minutes: 'dakikalar'
+    hour: 'saat'
+    hours: 'saatler'
+    day: 'gun'
+    days: 'gunler'
+# Two-factor authentication
+two_factor:
+    code_created: '&2Your secret code is %code. You can scan it from here %url'
+    confirmation_required: 'Please confirm your code with /2fa confirm <code>'
+    code_required: 'Please submit your two-factor authentication code with /2fa code <code>'
+    already_enabled: 'Two-factor authentication is already enabled for your account!'
+    enable_error_no_code: 'No 2fa key has been generated for you or it has expired. Please run /2fa add'
+    enable_success: 'Successfully enabled two-factor authentication for your account'
+    enable_error_wrong_code: 'Wrong code or code has expired. Please run /2fa add'
+    not_enabled_error: 'Two-factor authentication is not enabled for your account. Run /2fa add'
+    removed_success: 'Successfully removed two-factor auth from your account'
+    invalid_code: 'Invalid code!'

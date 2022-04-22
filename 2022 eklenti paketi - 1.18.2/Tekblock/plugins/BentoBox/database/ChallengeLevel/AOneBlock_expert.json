@@ -1,0 +1,35 @@
+{
+  "uniqueId": "AOneBlock_expert",
+  "friendlyName": "Expert",
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GREEN_CONCRETE\n",
+  "world": "oneblock_world",
+  "order": 3,
+  "waiverAmount": 1,
+  "unlockMessage": "Congratulations - you unlocked the &dExpert level!",
+  "rewardText": "Small reward for completing all Expert challenges.",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_PICKAXE\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DIG_SPEED: 5\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_AXE\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DIG_SPEED: 5\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_SHOVEL\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DIG_SPEED: 5\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_HOE\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DURABILITY: 3\n"
+  ],
+  "rewardExperience": 2920,
+  "rewardMoney": 1000,
+  "rewardCommands": [
+    "effect give [player] resistance 600"
+  ],
+  "challenges": [
+    "AOneBlock_irongolemfarm",
+    "AOneBlock_woolcollector",
+    "AOneBlock_snowgolemfarm",
+    "AOneBlock_ironage",
+    "AOneBlock_eggcollector",
+    "AOneBlock_milkcollector",
+    "AOneBlock_expert",
+    "AOneBlock_flowercollector",
+    "AOneBlock_trader",
+    "AOneBlock_villagerbreeder",
+    "AOneBlock_slimeballcollector",
+    "AOneBlock_slimefarm"
+  ]
+}

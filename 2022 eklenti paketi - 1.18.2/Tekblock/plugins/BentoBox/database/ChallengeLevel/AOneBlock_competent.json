@@ -1,0 +1,30 @@
+{
+  "uniqueId": "AOneBlock_competent",
+  "friendlyName": "Competent",
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: YELLOW_CONCRETE\n",
+  "world": "oneblock_world",
+  "order": 2,
+  "waiverAmount": 2,
+  "unlockMessage": "Congratulations - you unlocked the &dCompetent level!",
+  "rewardText": "Small reward for completing all Competent challenges.",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIRT\n  amount: 16\n"
+  ],
+  "rewardExperience": 1395,
+  "rewardMoney": 500,
+  "rewardCommands": [
+    "effect give [player] strength 600"
+  ],
+  "challenges": [
+    "AOneBlock_angler",
+    "AOneBlock_potatofarm",
+    "AOneBlock_visitnether",
+    "AOneBlock_competent",
+    "AOneBlock_mobfarm",
+    "AOneBlock_fisherman",
+    "AOneBlock_beetrootfarm",
+    "AOneBlock_animalfarm",
+    "AOneBlock_grinder",
+    "AOneBlock_carrotfarm"
+  ]
+}

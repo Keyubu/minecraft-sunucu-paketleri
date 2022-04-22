@@ -1,0 +1,24 @@
+admin:
+  limits:
+    calc:
+      description: Oyuncu için ada limitlerini tekrar hesapla.
+      parameters: <player>
+      finished: '&aAda hesaplaması başarıyla yapıldı.'
+    main:
+      description: Oyuncu için ada limitlerini göster.
+      parameters: <player>
+island:
+  limits:
+    block-limit-syntax: '&5[number]&7/&e[limit]'
+    description: Ada limitlerini gör.
+    max-color: '&c'
+    regular-color: '&9'
+    no-limits: '&4Bu dünyada limitler ayarlı değil!'
+    recount:
+      description: Ada limitlerini tekrardan hesaplar.
+block-limits:
+  hit-limit: '&e[material] &4eşyasından &5[number] &4koyabilirsin!'
+entity-limits:
+  hit-limit: '&e[entity] &4varlığından &5[number] &4tane koyabilirsin!'
+limits:
+  panel-title: '&eAda limiti'

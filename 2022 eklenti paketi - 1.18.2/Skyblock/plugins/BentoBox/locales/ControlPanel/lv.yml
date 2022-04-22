@@ -1,0 +1,18 @@
+controlpanel:
+  messages:
+    import-count: Importēti [number] vadības paneļi
+  errors:
+    no-load: '&4Nevar ielādēt [file] failu: [message]'
+    no-file: '&4Pietrūkst fails [file]'
+    no-valid-panels: '&4Nevarēja atrast derīgu vadības paneli.'
+    no-valid-panels-op: '&4Nevarētja atrast derīgu vadības paneli. Tev vajadzētu tos
+      ielādēt izmantojot /[admin] cp import'
+  commands:
+    admin:
+      import:
+        parameters: '[overwrite]'
+        description: ielādē vadības paneļus no [file]
+      help:
+        description: parāda administratora palīdzības komandas
+    help:
+      description: atver vadības paneli

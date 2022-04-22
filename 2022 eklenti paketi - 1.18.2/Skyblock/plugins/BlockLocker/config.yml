@@ -1,0 +1,155 @@
+# Config file of BlockLocker.
+# This file was originally created by version 1.10.4.
+
+# The language file used by the plugin. This will generate a file
+# with that name in this directory, which you can then customize
+# to edit the messages of this plugin.
+# These pre-made files are available in this plugin:
+# - translations-de.yml (by Robert)
+# - translations-en.yml
+# - translations-es.yml (by TheCiROMG)
+# - translations-fr.yml (by Kervinou)
+# - translations-hu.yml (by Crankiee)
+# - translations-kr.yml (by iLar0213)
+# - translations-nl.yml
+# - translations-tr.yml (by ataturkthemcpro)
+# - translations-zh.yml (by 2125368097)
+# - translations-zh-tw.yml (by Shen-Ta Hsieh)
+# For other languages, you'll get the English translations as a
+# starting point. It is highly appreciated if you submit your
+# translations to the plugin author, so that others can use them
+# too. Danke schön, gracias, dankon and спасибо!
+languageFile: translations-en.yml
+
+# The updater. Possible values:
+# JUST_NOTIFY - check for updates, notify the server admins
+# DISABLED - don't check for updates
+updater: JUST_NOTIFY
+
+# All types of containers that can be protected.
+# All material names can be found here:
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+protectableContainers:
+- anvil
+- barrel
+- beacon
+- black_shulker_box
+- blast_furnace
+- blue_shulker_box
+- brewing_stand
+- brown_shulker_box
+- chest
+- chipped_anvil
+- cyan_shulker_box
+- crafting_table
+- damaged_anvil
+- dispenser
+- dropper
+- enchanting_table
+- furnace
+- gray_shulker_box
+- green_shulker_box
+- hopper
+- jukebox
+- light_blue_shulker_box
+- light_gray_shulker_box
+- lime_shulker_box
+- magenta_shulker_box
+- orange_shulker_box
+- pink_shulker_box
+- purple_shulker_box
+- red_shulker_box
+- shulker_box
+- smoker
+- trapped_chest
+- white_shulker_box
+- yellow_shulker_box
+
+# When set to true, one sign protects all connected nearby blocks of the same
+# type. When false, each container requires a separate sign.
+# Please note that a double chest is one container, so one sign is enough to
+# protect the whole chest, regardless of this setting.
+connectContainers: false
+
+# All types of doors that can be protected. These blocks must follow the data
+# value format as described here:
+# http://minecraft.gamepedia.com/Data_values#Door
+protectableDoors:
+- acacia_door
+- birch_door
+- crimson_door
+- dark_oak_door
+- iron_door
+- jungle_door
+- oak_door
+- spruce_door
+- warped_door
+
+# All protections (except doors) that consist not only of the block listed here,
+# but also of a supporting block. This is normally the block directly below.
+# For example, for fence gates both the gate and the block below are protected,
+# and signs can be attached to both.
+# Note that for some blocks (like trapdoors, but also levers if you would add
+# them here) the supporting block is not the block below, but the block it is
+# attached on.
+protectableAttachables:
+- acacia_fence_gate
+- acacia_trapdoor
+- birch_fence_gate
+- birch_trapdoor
+- crimson_fence_gate
+- crimson_trapdoor
+- dark_oak_fence_gate
+- dark_oak_trapdoor
+- iron_trapdoor
+- jungle_fence_gate
+- jungle_trapdoor
+- oak_fence_gate
+- oak_trapdoor
+- spruce_fence_gate
+- spruce_trapdoor
+- warped_fence_gate
+- warped_trapdoor
+
+
+
+
+# The default amount of seconds a door stays open before closing automatically.
+# Players can override this value by putting a [Timer:X] tag on the sign, where
+# X is a number from 0 to 9.
+# When using 0 or a negative value, the door will never close automatically.
+# When the door was opened using redstone, the door will never close
+# automatically too.
+defaultDoorOpenSeconds: 0
+
+# The amount of days the owner of a chest can be absent before the chest is
+# unlocked. When zero or negative chests never expire.
+#
+# This setting will only work for online mode servers (or offline mode servers
+# behind an online mode Bungee proxy). The reason is as follows. The last login time
+# is stored in the player file. To access this player file, you nowadays need the UUID
+# of the player. In offline mode, the UUID depends on the case-correct username. In
+# other words: if a player (intentionally or not) puts the wrong cases on the sign
+# (like notch instead of Notch), the chest protection would never expire. This behaviour is
+# undesired, so chest expiration has been disabled altogether in offline mode.
+autoExpireDays: 0
+
+# Aside from players breaking protections, this plugin also prevents other things
+# (creepers and TNT for example) from breaking protections. You can add things here
+# if you want those things to destroy protections.
+# For example,  allowDestroyBy: [CREEPER, TNT]  allows creepers and TNT to destroy
+# protections.
+#
+# These are the values you can use, along with how they can destroy protections.
+# BLOCK_EXPLOSION - some blocks like beds can destroy protections by exploding
+#                  Note: TNT is an entity when exploding, so it's not affected by this value
+# CREEPER - creepers can destroy protections by exploding
+# ENDERMAN - endermans can destroy protections by picking up blocks
+# FIRE - fire can burn protections
+# GHAST - ghasts can shoot exploding fireballs
+# PISTON - pistons can remove the protection signs
+# SAPLING - saplings can grow trees, destroying protection signs
+# TNT - TNT can destroy protections by exploding
+# ZOMBIE - zombies can destroy protected doors
+# UNKNOWN - special value for all other unrecognized attacks
+allowDestroyBy: []

@@ -1,0 +1,21 @@
+chat:
+  team-chat:
+    description: チームチャットのオン/オフを切り替えます
+    chat-on: ＆aチームチャット。
+    chat-off: ＆aチームチャットオフ。
+    spy:
+      description: すべてのチームチャットのスパイを切り替えます
+      spy-on: ＆aチームチャットスパイ。
+      spy-off: ＆cチームチャットスパイオフ。
+      syntax: ＆c [team-chat-spy]＆a [name]＆8：[message]
+    syntax: ＆6 [team]＆a [name＆8：＆f [message]
+  island-chat:
+    description: アイランドチャットのオン/オフを切り替えます
+    spy:
+      description: すべての島のチャットのスパイを切り替えます
+      spy-on: ＆a島のチャットスパイ。
+      syntax: ＆c [island-chat-spy]＆a [name]＆8：＆f [message]
+      spy-off: ＆c島のチャットスパイオフ。
+    island-on: '&a島のチャット。'
+    island-off: ＆c島のチャットオフ。
+    syntax: ＆6 [island]＆a [name]＆8：＆f [message]

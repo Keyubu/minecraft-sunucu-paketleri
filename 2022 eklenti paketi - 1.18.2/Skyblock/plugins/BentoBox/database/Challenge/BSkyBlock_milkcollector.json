@@ -1,0 +1,55 @@
+{
+  "uniqueId": "BSkyBlock_milkcollector",
+  "friendlyName": "Milk your cows",
+  "deployed": true,
+  "description": [
+    "Create some buckets and milk your cows"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MILK_BUCKET\n",
+  "order": 2,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "BSkyBlock_expert",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MILK_BUCKET\n  amount: 9\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Exchange milk to mooshrooms",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BUCKET\n  amount: 9\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MOOSHROOM_SPAWN_EGG\n  amount: 2\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "Exchange milk to some iron",
+  "maxTimes": 100,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BUCKET\n  amount: 9\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_INGOT\n  amount: 5\n"
+  ],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

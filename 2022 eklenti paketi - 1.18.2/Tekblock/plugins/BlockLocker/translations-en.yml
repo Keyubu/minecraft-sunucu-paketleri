@@ -1,0 +1,41 @@
+command:
+  cannot_be_used_by_console: This command cannot be used by the console. Sorry!
+  cannot_edit_owner: '&b&lKeyubu &8&l» &4Bu blok sahibini değişemezsin. Bloğu patlatman gerek!'
+  line_number_out_of_bounds: '&b&lKeyubu &8&l» &4Lütfen 2 ile 4 arasında bir rakam yazınız!'
+  no_permission: '&b&lKeyubu &8&l» &4Buna yetkin yok!'
+  no_sign_selected: '&b&lKeyubu &8&l» &9İlk önce korunan bir bloğun tabelasına sağ tıklaman gerek!'
+  player_name_too_long: '&4The player name is over 16 characters, which doesn''t fit
+    on the sign. It is also longer than Mojang allows player names to be.'
+  plugin_reloaded: '&b&lKeyubu &8&l» &9Dosyalar yenilendi!'
+  sign_no_longer_part_of_protection: '&4The selected sign no longer belongs to a protected
+    block.'
+  updated_sign: '&b&lKeyubu &8&l» &9Tabela güncellendi!'
+protection:
+  add_more_users_sign_instead: '&b&lKeyubu &8&l» &e[Kilit] &byazarak kendine özel, &e[Arkadaş] &byazarak herkese açık hale yapabilirsin.'
+  bypassed: '&b&lKeyubu &8&l» &9{0} bloğunda kullanım izni kazandın!'
+  cannot_change_sign: '&4You cannot change a sign nearby a claimed container.'
+  chest_hint: '&b&lKeyubu &8&l» &9Tabela koy ve bloku kilitle!'
+  claimed_container: '&b&lKeyubu &8&l» &9Bu bloğu kitledin. Senden başka kimse açamaz.'
+  claimed_manually: '&6Created a claim. Only the people listed on the sign can access
+    it.'
+  expired: '&6The protection of this block has expired due to inactivity of the owner.'
+  in_wilderness: '&4You cannot create a protection here: you are in the wilderness.'
+  is_claimed_by: '&b&lKeyubu &8&l» &9Bu blokun sahibi artık &9{0}.'
+  no_access: '&b&lKeyubu &8&l» &4Bu blok &d{0} &4oyuncusuna ait.'
+  no_permission_for_claim: '&b&lKeyubu &8&l» &4Bu blokta yetkin yok!'
+  not_nearby: '&b&lKeyubu &8&l» &cYakında korunacak bir blok yok.'
+  selected_sign: '&b&lKeyubu &8&l» &9Tabela seçildi! &e"/kilit <line number> <name>" &byazarak arkadaş ekleyebilirsin!.'
+tag:
+  everyone: Herkes
+  more_users: '[Arkadaş]'
+  private: '[Kilit]'
+  redstone: Redstone
+  timer: Timer
+updater:
+  more_information: '&b&lKeyubu &8&l» &9Daha fazla bilgi: &e{0}'
+  unsupported_server: '&4The latest version of BlockLocker (version {0}) no longer
+    supports this Minecraft version, only Minecraft {1}.'
+  update_available: '&6An update for BlockLocker (version {0}) is available for manual
+    download.'
+  updated_automatically: '&6An update for BlockLocker is available (version {0}).
+    It will automatically be installed when you restart the server.'

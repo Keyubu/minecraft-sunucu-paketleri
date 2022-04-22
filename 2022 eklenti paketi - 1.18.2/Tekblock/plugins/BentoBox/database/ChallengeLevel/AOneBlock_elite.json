@@ -1,0 +1,31 @@
+{
+  "uniqueId": "AOneBlock_elite",
+  "friendlyName": "Elite",
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MAGENTA_CONCRETE\n",
+  "world": "oneblock_world",
+  "order": 5,
+  "waiverAmount": 0,
+  "unlockMessage": "Congratulations - you unlocked the &dElite level!",
+  "rewardText": "Small reward for completing all Elite challenges.",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_SWORD\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      LOOT_BONUS_MOBS: 3\n      DAMAGE_ALL: 5\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BOW\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      ARROW_FIRE: 1\n      ARROW_INFINITE: 1\n      ARROW_DAMAGE: 5\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ELYTRA\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: TRIDENT\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DURABILITY: 3\n"
+  ],
+  "rewardExperience": 8670,
+  "rewardMoney": 0,
+  "rewardCommands": [
+    "effect give [player] luck 600"
+  ],
+  "challenges": [
+    "AOneBlock_diamondage",
+    "AOneBlock_terracottamaker",
+    "AOneBlock_enderkiller",
+    "AOneBlock_elite",
+    "AOneBlock_visitend",
+    "AOneBlock_glassmaker",
+    "AOneBlock_beaconator",
+    "AOneBlock_engineer"
+  ]
+}

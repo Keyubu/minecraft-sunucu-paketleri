@@ -1,0 +1,53 @@
+{
+  "uniqueId": "BSkyBlock_cactuscollector",
+  "friendlyName": "Cactus Exchange",
+  "deployed": true,
+  "description": [
+    "Exchange cactus to some useful materials"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: CACTUS\n",
+  "order": 3,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: CACTUS\n  amount: 64\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Small amount of sand will always be handy",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SAND\n  amount: 4\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 10,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "Small amount of sand will always be handy",
+  "maxTimes": 0,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SAND\n"
+  ],
+  "repeatMoneyReward": 1,
+  "repeatRewardCommands": []
+}

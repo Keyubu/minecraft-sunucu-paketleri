@@ -1,0 +1,65 @@
+{
+  "uniqueId": "BSkyBlock_flowercollector",
+  "friendlyName": "Flower gatherer",
+  "deployed": true,
+  "description": [
+    "Collect all small flowers."
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DANDELION\n",
+  "order": 2,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "BSkyBlock_expert",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DANDELION\n  amount: 8\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POPPY\n  amount: 8\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BLUE_ORCHID\n  amount: 8\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ALLIUM\n  amount: 8\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: AZURE_BLUET\n  amount: 8\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: RED_TULIP\n  amount: 8\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ORANGE_TULIP\n  amount: 8\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: WHITE_TULIP\n  amount: 8\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: PINK_TULIP\n  amount: 8\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: OXEYE_DAISY\n  amount: 8\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Large flowers are always better.",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: COCOA_BEANS\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ROSE_BUSH\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: PEONY\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: LARGE_FERN\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: LILAC\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SUNFLOWER\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 10,
+  "rewardCommands": [],
+  "repeatable": false,
+  "repeatRewardText": "",
+  "maxTimes": 0,
+  "repeatExperienceReward": 0,
+  "repeatItemReward": [],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

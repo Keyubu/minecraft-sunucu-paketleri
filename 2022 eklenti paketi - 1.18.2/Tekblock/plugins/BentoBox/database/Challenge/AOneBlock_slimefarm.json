@@ -1,0 +1,55 @@
+{
+  "uniqueId": "AOneBlock_slimefarm",
+  "friendlyName": "Slime farm",
+  "deployed": true,
+  "description": [
+    "Create a slime farm to get some slime blocks"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SLIME_BLOCK\n",
+  "order": 1,
+  "challengeType": "ISLAND",
+  "environment": [],
+  "removeWhenCompleted": true,
+  "level": "AOneBlock_expert",
+  "requirements": {
+    "class": "IslandRequirements",
+    "parameters": {
+      "requiredBlocks": {},
+      "removeBlocks": false,
+      "requiredEntities": {
+        "SLIME": 5
+      },
+      "removeEntities": false,
+      "searchRadius": 10,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Get some nether quartz ore and an extra mending book",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ENCHANTED_BOOK\n  meta:\n    ==: ItemMeta\n    meta-type: ENCHANTED\n    stored-enchants:\n      MENDING: 1\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: NETHER_QUARTZ_ORE\n  amount: 16\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": false,
+  "repeatRewardText": "",
+  "maxTimes": 0,
+  "repeatExperienceReward": 0,
+  "repeatItemReward": [],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

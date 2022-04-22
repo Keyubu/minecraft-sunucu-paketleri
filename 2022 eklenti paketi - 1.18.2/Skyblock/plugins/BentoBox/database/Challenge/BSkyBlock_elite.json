@@ -1,0 +1,55 @@
+{
+  "uniqueId": "BSkyBlock_elite",
+  "friendlyName": "Elite Island",
+  "deployed": true,
+  "description": [
+    "Reach 1.000th level of island."
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MAGENTA_CONCRETE\n",
+  "order": 10,
+  "challengeType": "OTHER",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "BSkyBlock_elite",
+  "requirements": {
+    "class": "OtherRequirements",
+    "parameters": {
+      "requiredExperience": 0,
+      "takeExperience": false,
+      "requiredMoney": 0.0,
+      "takeMoney": false,
+      "requiredIslandLevel": 1000,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Get some extra diamonds and some shulker boxes",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n  amount: 64\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SHULKER_BOX\n  amount: 5\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [
+    "lp user [player] add skylord"
+  ],
+  "repeatable": false,
+  "repeatRewardText": "",
+  "maxTimes": 0,
+  "repeatExperienceReward": 0,
+  "repeatItemReward": [],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

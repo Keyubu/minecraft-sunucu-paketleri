@@ -1,0 +1,18 @@
+islandfly:
+  fly-outside-alert: '&c Sei fuori dall''isola, quindi la modalità volo sarà disabilitata
+    in &e [number] &c secondi.'
+  fly-turning-off-alert: '&c Non ti è più permesso volare qui. Disattivazione fly
+    in &e [number] &c secondi.'
+  disable-fly: '&c La tua modalità di volo è stata disattivata.'
+  reallowed-fly: '&a La tua mosca è stata riallineata'
+  enable-fly: '&a La tua modalità di volo è stata abilitata.'
+  cancel-disable: '&a Sei tornato, eh! Vola carburante riempito con successo!'
+  wrong-world: '&c Non sei nel mondo di gamemode giusto'
+  command:
+    not-allowed-fly: '&c Non ti è permesso volare su quest''isola'
+    description: ti permette di volare sulla tua isola
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a Toggle che può volare sulla tua isola'
+      name: '&a Prevenzione delle mosche'

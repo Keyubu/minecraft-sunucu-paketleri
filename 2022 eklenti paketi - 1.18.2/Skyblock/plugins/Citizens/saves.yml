@@ -1,0 +1,155 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 2
+npc:
+  '1':
+    name: '&a&lİhale menüsü'
+    uuid: fa608da8-c121-4180-b89a-22f60d82d072
+    traits:
+      type: PLAYER
+      spawned: true
+      skintrait:
+        fetchDefaultSkin: true
+        updateSkins: false
+        signature: pwbSOBjoWXuKWNE1VZGUpzntNwEI3MqEjFJy+arc2gd5xxyi6lo1d57mqmbOsaB6Znij/UqE7NgyKv11AsTrOsJb9eDwoxBs+m+kZN+mWWVyoCKD7XkaTe7gvNP18UYT8Ahpqh7u2ZV/GQMA7cTh0j7pOLOnL48rLqP+VSzwiKp/vRHI7Ng8uVLXJwdDONCKjQ3SP5MRU1KKXPVmwnySLr3z80BaXzq/POSv42xxGt9bH6hAso8fFiwuS2HXJ//iD0NWiDEqUapqwxfh50zlNCOenUSy921aSP/arjqOTxosqE3iEEzzoYocnPrrZmCksOyEZ5MVSn4tHOZcgUOt2BDLRS0zuw9Qp8EFopLHHZFp3fRFDhrMOjnvyz3Gmk7P7keCPRIq9bx2YCjF1dCl8gcYlnjI/FShuY5SFnJnqO2spbt/4YTbewXgomNVcfurTVW7kJd8c7hxNpHwcqVUJn2fbN21Yvnhsb20HTPQ0WryqH1/xTOF7M63k0bE+nWzxR/0tZY93kiiFntTZG7rutU4DT+J+OBMFZoYHz/onZWll7i3um0VayBKrNjZhHr69NdEE/FtPX9x0fEr2wwoAycNQy8craMOPN7DShsSDgfjp65ge9RAzFksUjspavwiXE8SE7Mm+jTs0Jz/aV6EO++O8Dzw5sEr3+xF4t4DSqI=
+        skinName: auction
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY1MDU1MTQyNjEzNCwKICAicHJvZmlsZUlkIiA6ICJhNDdkZjY2NzhiZTk0NzU1YmYyYzk4NWExZmRhOTY0YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJBdWN0aW9uIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M5NTA0N2ExMjI1ZGRhYmQxYjgxMGFhZjIzNjY5NTY3OGQ0MmIxZmY4NDQ3MWM4ODMxOGMyMDRhNTU3YzdjZCIKICAgIH0KICB9Cn0=
+      location:
+        bodyYaw: -90.46359
+        world: world
+        x: '-59.3'
+        y: '92.0'
+        z: '-34.4246'
+        yaw: '-90.4636'
+        pitch: '1.3051'
+      owner:
+        uuid: 079018f5-6389-3a1e-a8b8-f279c1db75fa
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        commands:
+          '0':
+            command: ah
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+      scoreboardtrait:
+        color: GREEN
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+    traitnames: hologramtrait,owner,skintrait,inventory,commandtrait,type,spawned,location,mounttrait,scoreboardtrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      cached-skin-uuid: a47df667-8be9-4755-bf2c-985a1fda964b
+      cached-skin-uuid-name: auction
+      nameplate-visible: 'true'
+      glowing: true
+  '0':
+    metadata:
+      cached-skin-uuid: c8d76c3e-0074-4281-b6b5-d6e92b066432
+      cached-skin-uuid-name: island
+      glowing: true
+    name: '&f&lAda menüsü'
+    uuid: c632ac59-9017-43d4-ac38-8f079a528fec
+    traits:
+      type: PLAYER
+      spawned: true
+      skintrait:
+        fetchDefaultSkin: true
+        signature: FHKfkPGR9JGvnLxhM80izSLEcUwAbvJ+Dps9NWD4KMN2GAb5KhV3P5mgcnVGdrczQGZCM6J1syG3hqAu/3KWHPB/DItXjE5dTo00f5KBYYs+RDbTIQUnEJAlZTqz0tgAF3ulZZdxeubcrQ6y9FeMxRnmTsxHrvJhofbDaTYn8Ndc/UpbmIBRNFWoYNeo6Y1QNFa3fTdyVm1naTZWht/SFpPLLdZcfsbz1WpoFgH1nIn9AoxDTmnl/36c/xB4bwYRWIYwTOkawh6QTo1Tyr9OtntkkxBBS/PSqeztWvSQ5iV9mWhm0Es2Ju6Zjlnh9oBcwNAo67NUZVmqhlQ2D8tSdoQH+swDhZz5CGvL7pSRsXUSRo0ugsjlxSc0Jbop+/ZPPlwnfHnSYgN0mgMGMYFJq8CbOpSCdlXSqfTDSM6UHsx2nKCPizW5sjOYsbHg74A+FrhrzqGth/I7zHMu7lntLjHaEd0kIjo9hUMU6yxLTlEOEaAu4/zmNRzTVarVP7RtfUUqAM1uwvW0ADbY4aW1uYydlynpYzZzODWQIzR3wNbedEGk13XfDk/61uHRrEr/FEH19F7CdaCZ1Mezo4qzVbFapMSG6ZLK94JcYPGSbBwZEb9/J6GEjNGykELNOBAAOMzSM0iC4slf6guLYi77ahBCmlJlSMnETxJkzytZrbI=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY1MDU1MTQ1MTQ0MiwKICAicHJvZmlsZUlkIiA6ICJjOGQ3NmMzZTAwNzQ0MjgxYjZiNWQ2ZTkyYjA2NjQzMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJJc2xhbmQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUzYzg5YTJhZGM0ZWU1YmExZjA1ZTVkNjRlOWI0YmI2YjMyMzJjNzIwMjhlMGNiZTM1ZTFiNzNkMGM1N2RjMSIKICAgIH0KICB9Cn0=
+        updateSkins: false
+        skinName: island
+      location:
+        bodyYaw: -89.56534
+        world: world
+        x: '-60.3001'
+        y: '92.0'
+        z: '-43.4435'
+        yaw: '-89.5653'
+        pitch: '-0.9452'
+      owner:
+        uuid: 079018f5-6389-3a1e-a8b8-f279c1db75fa
+      scoreboardtrait:
+        color: WHITE
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        commands:
+          '0':
+            command: is
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+    traitnames: owner,hologramtrait,skintrait,commandtrait,inventory,type,spawned,location,mounttrait,scoreboardtrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '2':
+    metadata:
+      cached-skin-uuid: 3314ad5c-083e-430c-badd-58152e418f13
+      cached-skin-uuid-name: shop
+      glowing: true
+    name: Market
+    uuid: 3f804240-4766-46e3-a391-d71292b0ba3e
+    traits:
+      skintrait:
+        fetchDefaultSkin: true
+        signature: ciWBig4fbh7b+NlrDK8hOMoCScgK/FtD8yA1QmHyRiL29yvRxM/THYN7hdDAsc8thyStjgRthxPKzg+GhW/pVFaOT3dofHD0PJwmgp0Es/I7M29F+lTJfEei98HzlJKkhgYTYt3Hzubll8ARl3FPYIvUGAZVkm9PUZXOq5VETlHW5ayzDaIhracVrCKZdNC8MLU11gsGJ0PTgewFoGmsKU1cZ8JruL+MvEwGUSq95UsfMTFBDWE1cMFBYMtKMvErsiRsE4HPPcHca4AYX8F+3zCI7+uOJAWN0NuLzr+EUgSeEZJpr/keYG6ikf067ek6ZwZVu4/vtZaJpo+YQnpWvm+5t1oJyV2qokW/nctqTT05El4wE6EKZjZD/gcuR08MoEQ4cahaPIbvuQ5oUu95rW6t9Fej9PddZjr3BSwauFSCn2NfBH7rIVhqxF6i59WmamOT54Wjx1+4s60KgSwJzRwbaJr7bIJgIrhgYmCSvvrCyJYa5PuNhol/lm+Ge5+qXS9wyBpcYjD8g0Ou+RfijMB8UVKtv+5kwmx049libwzTc1MkSwUZji7luKpjGetkv3q6JG1LtwzmYveGt4ac11PepPnbN+YV6fNvxA+ZwyoFgEEqICTS77OvNY3QOgV/fDVJDE5vrqJiEti7mqkDKpAWiFafBrBG/kksB+xmxA4=
+        skinName: shop
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTY1MDU1MTQ2NDQyNiwKICAicHJvZmlsZUlkIiA6ICIzMzE0YWQ1YzA4M2U0MzBjYmFkZDU4MTUyZTQxOGYxMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJTaG9wIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2IwMzZiNjUwNDM5NTZkYjgxY2U4ZGY4NTI4ODE4YTkzNmZhYWQyMmQwODAwMWY5MGUzYjlhNGRiOTdjMzc2NDUiCiAgICB9CiAgfQp9
+        updateSkins: false
+      spawned: true
+      type: PLAYER
+      location:
+        bodyYaw: 92.25483
+        world: world
+        x: '-38.5569'
+        y: '92.0'
+        z: '-5.502'
+        yaw: '92.2548'
+        pitch: '-1.2233'
+      owner:
+        uuid: 079018f5-6389-3a1e-a8b8-f279c1db75fa
+      scoreboardtrait:
+        color: BLUE
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1.0
+        hideErrorMessages: false
+        commands:
+          '0':
+            command: shop
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+    traitnames: owner,skintrait,commandtrait,inventory,type,spawned,location,mounttrait,scoreboardtrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

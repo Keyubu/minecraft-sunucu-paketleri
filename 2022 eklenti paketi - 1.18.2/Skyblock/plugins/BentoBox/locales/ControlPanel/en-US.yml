@@ -1,0 +1,24 @@
+controlpanel:
+  messages:
+    import-count: Imported [number] control panels
+    control-panels-wiped: '&2 All ControlPanels in [gamemode] are removed'
+  errors:
+    no-load: '&4 Cannot load [file] file: [message]'
+    no-file: '&4 Missing [file] file'
+    not-a-gamemode-world: '&4 Could not find a valid gamemode.'
+    no-valid-panels: '&4 Could not find any valid control panel.'
+    no-valid-panels-op: '&4 Could not find any valid control panel. You should try
+      to import it using /[admin] cp import'
+  commands:
+    admin:
+      help:
+        description: shows admin help commands
+      import:
+        parameters: '[file-name] - Name of the file to import. Empty will import default
+          template.'
+        description: imports control panels from [file]
+        confirmation: Please confirm that you want to remove existing control panels
+          from [gamemode] and import control panels from [file]
+    help:
+      parameters: ''
+      description: opens control panel

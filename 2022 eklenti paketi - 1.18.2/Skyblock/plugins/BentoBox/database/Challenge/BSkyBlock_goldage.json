@@ -1,0 +1,61 @@
+{
+  "uniqueId": "BSkyBlock_goldage",
+  "friendlyName": "Gold Age",
+  "deployed": true,
+  "description": [
+    "Craft gold tools and armor"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLD_INGOT\n",
+  "order": 4,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "BSkyBlock_advanced",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLDEN_HOE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLDEN_SHOVEL\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLDEN_PICKAXE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLDEN_BOOTS\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLDEN_HELMET\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLDEN_CHESTPLATE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLDEN_SWORD\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLDEN_LEGGINGS\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLDEN_AXE\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Exchange your gold stuff to some diamond",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n  amount: 16\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "Exchange your gold stuff to diamond",
+  "maxTimes": 100,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n"
+  ],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

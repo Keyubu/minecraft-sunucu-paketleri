@@ -1,0 +1,16 @@
+islandfly:
+  fly-outside-alert: '&c 섬 외부에 있으므로 &e [number] &c 초 후에 플라이 모드가 비활성화됩니다.'
+  fly-turning-off-alert: '&c 더 이상 여기를 비행 할 수 없습니다. &e [number] &c 초 후에 비행을 끕니다.'
+  disable-fly: '&c 플라이 모드가 비활성화되었습니다.'
+  reallowed-fly: '&a 귀하의 비행이 처리되었습니다'
+  enable-fly: '&a 플라이 모드가 활성화되었습니다.'
+  cancel-disable: '&a 당신은 돌아 왔습니다! 연료가 성공적으로 보충되었습니다!'
+  wrong-world: '&c 당신은 올바른 게임 모드 세계에 있지 않습니다'
+  command:
+    not-allowed-fly: '&c 이 섬을 비행 할 수 없습니다'
+    description: 당신은 당신의 섬에 비행 할 수 있습니다
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a 섬을 날 수있는 사람 전환'
+      name: '&a 비행 방지'

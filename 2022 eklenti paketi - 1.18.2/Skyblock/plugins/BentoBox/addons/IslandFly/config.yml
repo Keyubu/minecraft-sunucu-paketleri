@@ -1,0 +1,16 @@
+# IslandFlyAddon Configuration 1.7.0
+# This config file is dynamic and saved when the server is shutdown.
+#
+# This allows to define timeout in seconds on which fly mode will be disabled
+# when player leaves its island. Zero or negative number will result in immediate
+# fly mode disabling.
+fly-timeout: 5
+# 
+# This allows to change if players should lose their fly mode if they quit server.
+logout-disable-fly: true
+# 
+# This list stores GameModes in which islandFly addon should not work.
+# To disable addon it is necessary to write its name in new line that starts with -. Example:
+# disabled-gamemodes:
+#  - BSkyBlock
+disabled-gamemodes: []

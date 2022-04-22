@@ -1,0 +1,104 @@
+Messages:
+  No-Teleporting: '&7Kasayı açarken bir yere ışınlanamazsın.'
+  No-Commands-While-In-Crate: '&7Kasa açarken komutları kullanmazsın.'
+  No-Key: '&7Kasayı açabilmek için elinizde &6%Key% &7olması gerekiyor.'
+  No-Virtual-Key: '&7Kasayı açmak için bir anahtara ihtiyacın var.'
+  Not-On-Block: '&cYou must be standing on a block to use this crate.'
+  Already-Opening-Crate: '&7Zaten bir kasa açıyorsunuz.'
+  Quick-Crate-In-Use: '&7Bu kasa zaten kullanılıyor. Lütfen kasanın açılmasını bekle.'
+  World-Disabled: '&7Üzgünüz ama %world% dünyasında kasa açamazsın.'
+  Reload: '&aConfig ve Data dosyaları yenilendi.'
+  Not-Online: '&e%player% &7adlı kişi çevrim içi değil.'
+  No-Permission: '&7Bu komutu kullanmanız için izniniz yok!'
+  Crate-Already-Opened: '&7Zaten bir kasa açıyorsunuz.'
+  Cant-Be-A-Virtual-Crate: '&7Bu kasa tipi sanal olarak kullanılamaz.'
+  Inventory-Full: '&7Envanteriniz dolu, kasa açmadan önce boşaltın.'
+  To-Close-To-Another-Player: '&7Kasa açan bir oyuncunun çok yakınındasın.'
+  Needs-More-Room: '&7Kasayı açmak için yeterli alan yok.'
+  Out-Of-Time: '&7Kasayı açmak için 5 dakika harcadınız, kapatıldı.'
+  Must-Be-A-Player: '&7Bu komutu kullanmak için bir oyuncu olmalısın.'
+  Must-Be-Looking-At-A-Block: '&7Bir bloğa bakıyor olmalısın.'
+  Not-A-Crate: '&7Böyle bir sandık yok: &6%crate%'
+  Not-A-Number: '&6%number% &7geçersiz sayı.'
+  Given-A-Player-Keys: '&e%player% &7adlı kişiye &6%amount% &7adet anahtar verdiniz.'
+  Obtaining-Keys: '&6%amount% &7adet %key% &7verdiniz.'
+  Given-Everyone-Keys: '&7Herkese &6%amount% &7adet anahtar verdiniz.'
+  Given-Offline-Player-Keys: '&e%player% &7adlı çevrim dışı kişiye &6%amount% &7adet
+    anahtar verdiniz.'
+  Take-A-Player-Keys: '&a%player% &7adlı kişiden &e%amount% &7anahtar aldınız.'
+  Take-Offline-Player-Keys: '&e%player% &7adlı çevrim dışı kişiden &6%amount% &7anahtar
+    aldınız.'
+  Opened-A-Crate: '&e%player% &7oyuncu için &e%crate% &7kasası açtın.'
+  Internal-Error: '&7Hata oluştu consola bakınız.'
+  No-Item-In-Hand: '&7Kasaya eklemek için elinizde bir item olması gerekir.'
+  Added-Item-With-Editor: '&7Item %crate% adlı kasaya #%prize% ödül olarak eklendi.'
+  Preview-Disabled: '&cBu sandık için önizleme şu anda devre dışı.'
+  No-Schematics-Found: '&cŞematik bulunamadı, eğer 1.13+ kullanıyorsanız şema dosyasının
+    .nbt olduğundan emin olun, yoksa oluşturun.'
+  No-Prizes-Found: '&cBu kasa kazanabileceğin ödüller içermiyor.'
+  Created-Physical-Crate:
+  - '%prefix% &7Bakılan blok &e%crate% &7kasası olarak ayarlandı.'
+  - '&7Kaldırmak için yaratıcı modda eğilip kırın.'
+  Keys:
+    Personal:
+      No-Virtual-Keys: '&cŞu anda herhangi bir anahtarınız yok.'
+      Header:
+      - '&7Geçerli anahtar sayınızın listesi.'
+    Other-Player:
+      No-Virtual-Keys: '&a%player% &7oyuncunun herhangi bi anahtarı yok.'
+      Header:
+      - '&6%player% &7Mevcut anahtar sayısı.'
+    Per-Crate: '%crate% &8> &6%keys% anahtar'
+  Help:
+  - '&aCrazy Crates Yardım Sayfası'
+  - '&6/key [oyuncu] &7- Oyuncunun sahip olduğu anahtar sayısı.'
+  - '&6/cc &7- GUI menüsünü açar.'
+  - '&6/cc additem <kasa> <ödül> &7- Itemi kasaya ödül olarak ekler.'
+  - '&6/cc admin &7- Yönetici anahtar GUI menüsünü açar.'
+  - '&6/cc list &7- Tüm kasaları listeler.'
+  - '&6/cc open <kasa> [Player] &7- Oyuncuya bir kasa açar.'
+  - '&6/cc tp <lokasyon> &7- Kasaya ışınlanır.'
+  - '&6/cc give <physical/virtual> <kasa> [adet] [oyuncu] &7- Oyuncuya kasa anahtarı
+    verir.'
+  - '&6/cc giveall <physical/virtual> <kasa> [adet] &7- Tüm çevrim içi oyunculara
+    anahtar verir.'
+  - '&6/cc take <physical/virtual> <kasa> [adet] [oyuncu] &7- Oyuncudan anahtar alır.'
+  - '&6/cc set <kasa> &7- Baktığınız bloğu kasa olarak ayarlar.'
+  - '&6/cc set Menu &7- Baktığınız bloğu kasa GUI menüsünü açması için ayarlar.'
+  - '&6/cc reload &7- Config ve Data dosyalarını yeniler.'
+  - '&6/cc set1/set2 &7- Dörtlü kasaların yeni şematiklerini ayarlamak için pozisyon
+    #1 ve #2 ayarlar. &c1.13+'
+  - '&6/cc save <schematic file name> &7- Şematik klasörüne yeni şematik dosyayı kaydeder.
+    &c1.13+'
+  Removed-Physical-Crate: '%prefix% &7You have removed &6%id%.'
+  Same-Player: '&cYou can''t use this command on yourself.'
+  Not-Enough-Keys: '&cYou do not have enough keys to transfer.'
+  Transferred-Keys: '&7You have transferred %amount% %crate% keys to %player%.'
+  Received-Transferred-Keys: '&7You have received %amount% %crate% keys from %player%.'
+  Files-Converted:
+    No-Files-To-Convert: '&cNo plugins that can be converted were found.'
+    Error-Converting-Files: '&cThere was an error while trying to convert files. Please
+      check console for the error log.'
+  Admin-Help:
+  - '&c&lCrazy Crates Admin Help'
+  - ''
+  - '&6/cc additem <crate> <prize> &7- &eAdd items in-game to a prize in a crate.'
+  - '&6/cc preview <crate> [player] &7- &eOpens the preview of a crate for a player.'
+  - '&6/cc list &7- &eLists all crates.'
+  - '&6/cc open <crate> [player] &7- &eTries to open a crate for a player if they
+    have a key.'
+  - '&6/cc forceopen <crate> [player] &7- &eOpens a crate for a player for free.'
+  - '&6/cc tp <location> &7- &eTeleport to a Crate.'
+  - '&6/cc give <physical/virtual> <crate> [amount] [player] &7- &eAllows you to take
+    keys from a player.'
+  - '&6/cc set <crate> &7- &eSet the block you are looking at as a crate.'
+  - '&6/cc set Menu &7- &eSet the block you are looking at to open the /cc menu.'
+  - '&6/cc reload &7- &eReloads the config/data files.'
+  - '&6/cc set1/set2 &7- &eSets position &c#1 &eor &c#2 for when making a new schematic
+    for QuadCrates.'
+  - '&6/cc save <file name> &7- &eCreate a new nbt file in the schematics folder.'
+  - ' '
+  - '&6/key [player] &7- &eCheck the number of keys a player has.'
+  - '&6/cc &7- &eOpens the menu.'
+  - ' '
+  - '&7You can find a list of permissions @ &ehttps://github.com/badbones69/Crazy-Crates/wiki/Commands-and-Permissions'

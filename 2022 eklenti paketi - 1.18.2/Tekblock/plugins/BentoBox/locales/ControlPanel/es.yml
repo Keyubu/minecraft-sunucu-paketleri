@@ -1,0 +1,18 @@
+controlpanel:
+  messages:
+    import-count: Paneles de control importados [number]
+  errors:
+    no-load: '&4No se puede cargar el archivo [file]: [message]'
+    no-file: '&4Archivo Missing [file]'
+    no-valid-panels: '&4No se pudo encontrar ningún panel de control válido.'
+    no-valid-panels-op: '&4No se pudo encontrar ningún panel de control válido. Deberías
+      intentar importarlo usando / [admin] cp import'
+  commands:
+    admin:
+      help:
+        description: muestra los comandos de ayuda del administrador
+      import:
+        parameters: '[overwrite]'
+        description: importa paneles de control desde [file]
+    help:
+      description: abre el panel de control

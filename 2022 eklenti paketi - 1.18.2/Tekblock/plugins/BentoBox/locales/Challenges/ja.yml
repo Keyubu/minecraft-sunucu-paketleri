@@ -1,0 +1,463 @@
+challenges:
+  commands:
+    admin:
+      complete:
+        description: このコマンドにより、GUIなしでプレーヤーのチャレンジを完了できます。
+        parameters: <player> <challenge_id>
+      defaults:
+        description: このメソッドは、デフォルトのチャレンジをインポート/エクスポートできるサブコマンドを示します。
+        parameters: '[コマンド]'
+      defaults-generate:
+        description: この方法では、既存のチャレンジをdefault.jsonファイルにエクスポートできます。
+        parameters: '[overwrite]-既存のファイルを上書きできます。'
+      defaults-import:
+        description: この方法では、デフォルトのチャレンジをインポートできます。
+      import:
+        description: challenge.yml |パラメータの上書きからチャレンジをインポートすると、同じIDを持つチャレンジまたはレベルが上書きされます。
+        parameters: '[overwrite]'
+      main:
+        description: メイン管理コマンド。 GUIを開きます。
+      migrate:
+        description: この方法では、現在のゲームモードの世界を参照するチャレンジデータを新しい0.8.0ストレージ形式に移行できます。
+      reload:
+        description: データベースからチャレンジをリロードする|パラメータハードは、アドオンがデータベースへの接続をリセットすることを意味します。
+        parameters: '[hard]'
+      reset:
+        description: このコマンドを使用すると、GUIなしでプレーヤーのチャレンジをリセットできます。 「challenge_id」が「all」に設定されている場合、すべてのチャレンジがリセットされます。
+        parameters: <player> <challenge_id>
+      show:
+        description: この方法は、世界に存在するすべての課題をチャットで出力します。
+    user:
+      complete:
+        description: この方法により、GUIなしでチャレンジを完了できます。
+        parameters: <challenge_id> [カウント]
+      main:
+        description: このメソッドは、チャレンジGUIを開きます。
+  errors:
+    cannot-remove-items: ＆c一部のアイテムはインベントリから削除できません！
+    challenge-level-not-available: ＆cこのチャレンジを完了するためにレベルのロックを解除していません。
+    defaults-file-error: ＆c defaults.jsonファイルの作成中にエラーが発生しました！コンソールを確認してください！
+    defaults-file-exist: ＆cdefaults.jsonはすでに存在します。上書きモードを使用して置き換えてください！
+    exist-challenges-or-levels: ＆c世界にはすでに課題が存在します。続行できません！
+    import-no-file: ＆cインポートするchallenges.ymlファイルが見つかりませんでした！
+    incorrect: ＆cチャレンジを完了できません。要件が間違っています。
+    island-level: ＆cこのチャレンジを完了するには、島はレベル[number]でなければなりません！
+    load-error: ＆cエラー：[value]をロードできません。
+    missing-addon: ＆cチャレンジを完了できません。必要なアドオンまたはプラグインがありません。
+    missing-arguments: ＆cコマンドに引数がありません。
+    missing-level: ＆cチャレンジレベル[level]はデータベースで定義されていません。エラーが発生する可能性があります
+    no-challenges: ＆cチャレンジは現在の世界では実装されていません！
+    no-challenges-admin: ＆cチャレンジは現在の世界では実装されていません！それらを追加するには＆5 / [command]＆cを使用する必要があります。
+    no-multiple-permission: ＆cチャレンジを一度に複数回完了する権限がありません。
+    no-name: ＆cチャレンジ名がありません
+    no-rank: ＆cあなたにはそれをするランクがありません。
+    not-a-integer: ＆c値 [value]」は整数ではありません！
+    not-close-enough: ＆c必要なすべてのアイテムの[number]ブロック以内にいる必要があります。
+    not-deployed: ＆cチャレンジはデプロイされていません！
+    not-enough-experience: ＆cチャレンジを完了するには、[value] EXPが必要です。
+    not-enough-items: ＆cこのチャレンジを完了するのに十分な[items]がありません！
+    not-enough-money: ＆cチャレンジを完了するには、アカウントに[value]が必要です。
+    not-on-island: ＆cそのためにはあなたの島にいなければなりません！
+    not-repeatable: ＆cこのチャレンジは再現できません！
+    not-valid-integer: ＆cG整数 [value]」は無効です！|値は[min]から[max]の間でなければなりません。
+    unique-id: ＆c一意のID「[id]」は無効です。
+    unknown-challenge: ＆c不明なチャレンジ
+    wrong-environment: ＆cあなたは間違った環境にいます！
+    wrong-icon: ＆cマテリアル「[value]」は無効であり、アイコンとして使用できません。
+    you-still-need: ＆c [amount] x [item]がまだ必要です
+    no-load: ＆cエラー：challenges.ymlを読み込めませんでした。 [message]
+  gui:
+    buttons:
+      admin:
+        accept: 受け入れる
+        add: 追加する
+        add-challenge: チャレンジを追加
+        broadcast: 放送完了
+        cancel: キャンセル
+        challenge-lore: チャレンジの説明
+        challenges: 課題
+        clear: クリア
+        complete: 完全なユーザーチャレンジ
+        complete-wipe: アドオンデータベースのワイプ
+        create-challenge: 新しいチャレンジを追加
+        create-level: 新しいレベルを追加
+        decline: 低下
+        default-export: 既存の課題をエクスポートする
+        default-import: デフォルトのチャレンジをインポートする
+        default-locked-icon: ロックされたレベルのアイコン
+        delete-challenge: チャレンジを削除
+        delete-level: レベルを削除
+        deployment: 展開
+        description: 説明
+        edit-challenge: チャレンジを編集
+        edit-level: 編集レベル
+        environment: 環境
+        free-at-top: 最初に無料のチャレンジ
+        glow: 完了したらグロー
+        gui-mode: 単一のチャレンジGUI
+        gui-view-mode: すべてのゲームモードを表示
+        history-lifespan: 歴史の寿命
+        history-store: 課題の歴史
+        icon: アイコン
+        import: ASkyblockチャレンジをインポートする
+        increase: +
+        input: 入力
+        input-mode: 入力モードを切り替える
+        island-store: 島ごとの店舗
+        level-lore: レベルの説明
+        library: Webライブラリ
+        line-length: ロアラインの長さ
+        locked-icon: ロックされたアイコン
+        multiply: '*'
+        name: 分かりやすい名前
+        number: '[数]'
+        order: 注文
+        properties: 物性
+        reduce: '-'
+        remove-blocks: ブロックを削除
+        remove-challenge: チャレンジを削除
+        remove-completed: 完了後に削除
+        remove-empty: 空を削除
+        remove-entities: エンティティを殺す
+        remove-experience: エクスペリエンスを削除
+        remove-items: アイテムを削除
+        remove-money: お金を削除
+        remove-on-complete: 完了後に削除
+        remove-selected: 削除選択
+        repeatable: 繰り返し可能
+        repeat-count: 最大時間
+        repeat-reward-commands: 報酬コマンドを繰り返す
+        repeat-reward-experience: 報酬体験を繰り返します
+        repeat-reward-items: 報酬アイテムを繰り返します
+        repeat-reward-money: 報奨金を繰り返す
+        repeat-reward-text: 報酬メッセージを繰り返します
+        required-blocks: 必要なブロック
+        required-entities: 必要なエンティティ
+        required-experience: 必要な経験
+        required-items: 必要なもの
+        required-level: 必要な島レベル
+        required-money: 必要なお金
+        required-permissions: 必要な許可
+        requirements: 必要条件
+        reset: ユーザーチャレンジをリセット
+        reset-on-new: 新しい島でリセット
+        reward-commands: 報酬コマンド
+        reward-experience: 報酬体験
+        reward-items: 報酬アイテム
+        reward-money: 報酬金
+        rewards: 報酬
+        reward-text: 報酬メッセージ
+        save: 保存する
+        search-radius: 検索半径
+        set: =
+        settings: 編集の設定
+        show-eggs: ビューモードの切り替え
+        title-enable: 完成タイトル
+        title-showtime: タイトル上映時間
+        toggle-user-list: ユーザーリスト
+        type: チャレンジタイプ
+        value: 値
+        waiver-amount: 権利放棄額
+        download: ライブラリをダウンロードする
+        challenge-wipe: ワイプチャレンジデータベース
+        players-wipe: ユーザーデータベースのワイプ
+        visibility-mode: チャレンジ表示モード
+      increase: 増加する
+      next: 次
+      previous: 前
+      reduce: 減らす
+      return: 戻る
+      value: コンプリート
+    challenge-description:
+      completed: ＆B完了しました
+      completed-times: 完了[donetimes]
+      completed-times-of: '[maxtimes]のうち[donetimes]を完了しました'
+      environment: 必要な環境：
+      experience-reward: ＆6Exp報酬：[value]
+      level: ＆Fレベル：[level]
+      maxed-reached: '[maxtimes]のうち[donetimes]を完了しました'
+      money-reward: ＆6お金の報酬：$ [value]
+      not-repeatable: ＆cこのチャレンジは再現できません！
+      objects-close-by: ＆c必要なすべてのブロックとエンティティは、あなたの島の近くになければなりません！
+      required-blocks: 必要なブロック：
+      required-entities: 必要なエンティティ：
+      required-experience: ＆6必要なexp：[値]
+      required-island-level: ＆6必要な島レベル：[level]
+      required-items: 必要なアイテム：
+      required-money: ＆6必要な金額：$ [value]
+      reward-commands: ＆6報酬コマンド：
+      reward-items: ＆6報酬アイテム：
+      warning-blocks-remove: このチャレンジを完了すると、必要なブロックはすべて削除されます！
+      warning-entities-kill: このチャレンジを完了すると、必要なすべてのエンティティが削除されます！
+      warning-items-take: このチャレンジを完了すると、必要なすべてのアイテムが取得されます！
+    descriptions:
+      admin:
+        add-challenge: 既存のチャレンジを現在のレベルに追加できます。
+        add-text-line: ＆6新しいテキストメッセージを追加します！
+        broadcast: 初回のチャレンジ完了に関するオンラインプレーヤーへのブロードキャストを有効/無効にします。
+        cancel: 前のGUIに戻ります。変更は保存されません。
+        challenge-lore: チャレンジの説明のどの要素を表示するかを変更できます。
+        challenges: レベルの課題を管理できます（追加/削除）。
+        click-to-edit: ＆4ここをクリックして入力を編集します。
+        complete: すべてのユーザーのチャレンジを完了できます。|ユーザーは完了に対する報酬を受け取りません。
+        complete-wipe: すべてのチャレンジアドオンデータベースを完全にクリアできます。プレイヤーデータが含まれています！
+        create-challenge: 新しいチャレンジを追加できます。|デフォルトでは、無料のチャレンジリストに追加されます。
+        create-level: 新しいレベルを追加できます。
+        default-export: 既存のチャレンジをdefaults.jsonファイルにエクスポートできます。
+        default-import: デフォルトのチャレンジをインポートできます。
+        default-locked-icon: デフォルトのロックレベルアイコンを変更できます。|このオプションは各レベルで上書きできます。
+        delete-challenge: チャレンジを削除できます。
+        delete-level: 任意のレベルを削除できます。
+        deployment: ユーザーがチャレンジを完了（表示）できるようにします。
+        description: 説明を編集できます。
+        edit-challenge: チャレンジ設定を編集できます。
+        edit-level: レベル設定を編集できます。
+        edit-text-line: ＆6テキストメッセージの編集！
+        environment: チャレンジが動作する環境を変更できます。
+        free-at-top: 無料チャレンジの場所を変更できます。真は、挑戦が最初であることを意味し、そうでなければ最後になります。
+        glow: 完了したチャレンジの光る効果を有効/無効にします。
+        gui-mode: シングルチャレンジGUIを有効/無効にすることができます。|＆2サーバーの再起動が必要です。
+        gui-view-mode: / challenges GUIがプレイヤーの世界でGameModeまたはチャレンジを表示するかどうかを設定できます。
+        history-lifespan: 履歴データを保存する日数を変更できます。| 0は無期限を意味します。
+        history-store: チャレンジ履歴の保存を有効/無効にすることができます。
+        icon-challenge: このチャレンジのGUIパネルに表示されるアイコン。
+        icon-level: このレベルのGUIパネルに表示されるアイコン。
+        import: ASkyblockチャレンジをインポートできます。|右クリックで上書きモードを有効/無効にします。| Challenges.ymlを./BentoBox/addons/Challengesフォルダー内に配置します。
+        increase: 操作を増やします。数字をクリックすると、選択した数字だけ値が増えます。
+        input: テキストフィールド入力を開きます。
+        input-mode: チャットとアンビルの入力モードを切り替えます。
+        island-store: 島ごとのチャレンジデータの保存を有効/無効にすることができます。これは、これが有効になっている場合、チャレンジはチーム全体で同じになることを意味します。|クリック時にデータを変換しません。進行は失われます。
+        level-lore: レベルの説明のどの要素を表示するかを変更できます。
+        library: 利用可能なすべての公開チャレンジライブラリを表示するGUIを開きます。
+        library-author: ＆e [author]
+        library-gamemode: ＆a [gamemode]のプライマリ
+        library-lang: ＆aLanguage：[lang]
+        library-version: ＆9Made on Challenges [version]
+        line-length: ロアボックスの最大ライン長を変更できます。保存されたオブジェクトには影響しません。
+        locked-icon: レベルがロックされている場合にGUIパネルに表示されるアイコン。
+        mode-in-world: 世界のゲームモードいるプレイヤー。
+        mode-online: 現在オンラインになっているプレイヤー。
+        mode-with-island: ゲームモードに島があるプレイヤー。
+        multiply: 乗算操作。数字をクリックすると、選択した数字と値が乗算されます。
+        name-challenge: チャレンジ表示名を変更できます。
+        name-level: レベルの表示名を変更できます。
+        order: 注文番号を変更できます。
+        properties: 一般的なプロパティを変更できます
+        reduce: 操作を減らします。数字をクリックすると、選択した数字だけ値が減少します。
+        remove-blocks: チャレンジの完了時にブロックを削除（空気と交換）できます。
+        remove-challenge: 現在のレベルからチャレンジを削除できます。
+        remove-completed: 完了して繰り返せない隠しチャレンジを有効/無効にします。
+        remove-entities: チャレンジの完了時にエンティティを削除（キル）できます。
+        remove-experience: 削除して必要なエクスペリエンスを削除できます。
+        remove-items: チャレンジの完了後に、プレイヤーのインベントリからアイテムを削除できます。
+        remove-money: プレイヤーのアカウントから必要なお金を削除できます。|＆cVaultおよびエコノミープラグインが必要です。
+        remove-on-complete: 完了後、プレーヤーGUIからチャレンジを削除できます。
+        remove-selected: 選択した要素を削除します。|マウスの右ボタンで要素を選択できます。
+        repeatable: チャレンジが繰り返し可能かどうかを定義できます。
+        repeat-count: 最大繰り返し回数を定義できます。値が0以下に設定されている場合、制限はありません。
+        repeat-reward-commands: チャレンジの繰り返し完了後に呼び出されるリワードコマンドを定義できます。| 開始時に「[SELF]」を追加すると、コマンドはプレイヤーによって実行されます。
+          |コマンド：
+        repeat-reward-experience: 繰り返し完了報酬の経験値を変更できます。
+        repeat-reward-items: 繰り返し完了報酬アイテムを変更することができます。|アイテム：
+        repeat-reward-money: 繰り返し完了報酬Moneyを変更できます。|＆c VaultおよびEconomyプラグインが必要です。
+        repeat-reward-text: チャレンジを繰り返し完了した後にプレイヤーに送信されるメッセージを変更できます。
+        required-blocks: 必要なブロックを追加/編集/削除できます。|ブロック：|
+        required-entities: 必要なエンティティを追加/編集/削除できます。|エンティティ：|
+        required-experience: ユーザーがチャレンジを完了するために必要なエクスペリエンスを定義できます。
+        required-items: プレイヤーのインベントリに必要なアイテム。|アイテム：
+        required-level: このチャレンジに必要な島レベルを定義できます。|＆cレベルアドオンが必要です。
+        required-money: プレイヤーのアカウントで必要なお金を定義できます。|＆cVaultおよびエコノミープラグインが必要です。
+        required-permissions: チャレンジを完了するためにプレーヤーに必要な許可。|許可：
+        requirements: 要件を管理できます
+        reset: 完了したユーザーチャレンジをリセットできます。|右クリックすると、すべての機能をリセットできます。
+        reset-on-new: プレイヤーが島を再開したり、島を離れたり、追い出されたりした場合、すべてのプレイヤーのチャレンジをリセットするオプションを有効/無効にします。
+        reward-commands: 初回完了後に呼び出される報酬コマンドを定義できます。| ***開始時に「[SELF]」を追加すると、コマンドはプレイヤーによって実行されることを意味します、例えば
+          "/ kill" | *** String "[player]"はプレイヤー名に置き換えられ、fe"/ kill [player] "は" /
+          kill BONNe1704 "に変換されます|コマンド：
+        reward-experience: 初回完了報酬の経験値を変更できます。
+        reward-items: 初回完了報酬アイテムを変更できます。|アイテム：
+        reward-money: 初回完了報酬Moneyを変更できます。|＆cVaultおよびエコノミープラグインが必要です。
+        rewards: 報酬を管理できます
+        reward-text: チャレンジの完了後にプレーヤーに送信されるメッセージを変更できます。
+        reward-text-level: レベル内のすべてのチャレンジを完了した後にプレイヤーに送信されるメッセージを変更できます。
+        save: 保存して前のGUIに戻ります。
+        search-radius: 必要なエンティティとブロックが検索されるプレーヤーの場所の半径。
+        selected: 選択済み
+        set: セット操作。数字をクリックすると、選択した数字に値が変更されます。
+        settings: アドオンの設定を変更できます。
+        show-eggs: エッグモードまたはヘッドモード間でエンティティビューを切り替えます。
+        title-enable: プレイヤーがチャレンジを完了したときに表示されるタイトルメッセージを有効/無効にすることができます。
+        title-showtime: プレイヤーに表示されるタイトルメッセージの長さを変更できます。
+        toggle-user-list: 別のプレーヤーリストに切り替えます。
+        type: チャレンジタイプを変更できます。各タイプには独自の要件があります。
+        waiver-amount: 次のレベルのロックを解除するために取り消すことができるチャレンジの数を設定できます。
+        lore:
+          description: 説明文字列。 |チャレンジオブジェクトchallenge.descriptionで定義されています。
+          warnings: 警告文字列。 |次の翻訳を表します| 「challenges.gui.challenge-description.warning-items-take」
+            | 「challenges.gui.challenge-description.objects-close-by」 | 「challenges.gui.challenge-description.warning-entities-kill」
+            | 「challenges.gui.challenge-description.warning-blocks-remove」。
+          requirements: 要件文字列。 |次の翻訳を表します| 「challenges.gui.challenge-description.required-level」
+            | 「challenges.gui.challenge-description.required-money」 | 「challenges.gui.challenge-description.required-experience」
+            |およびchallenge.requiredItems、challenge.requiredBlocksまたはchallenge.requiredEntities。
+          reward_other: 他の文字列に報酬を与えます。 |次の翻訳を表します| 「challenges.gui.challenge-description.experience-reward」
+            | 「challenges.gui.challenge-description.money-reward」 | 「challenges.gui.challenge-description.not-repeatable」。
+          level_reward_other: 他の文字列に報酬を与えます。 |次の翻訳を表します| 「challenges.gui.level-description.experience-reward」
+            | 「challenges.gui.level-description.money-reward」。
+          level: レベル文字列。 |翻訳「challenges.gui.challenge-description.level」を表します。
+          status: ステータス文字列。 |翻訳「challenges.gui.challenge-description.completed」を表します。
+          count: 完了カウント文字列。 | 「challenges.gui.challenge-description.completed-times」、「challenges.gui.challenge-description.completed-times-of」、および「challenges.gui.challenge-description.maxed-reached」の翻訳を表します。
+          environment: 環境ストリング。 |チャレンジオブジェクトで定義されている-challenge.environment。
+          reward_text: 報酬の文字列。 | challenge.rewardTextおよびchallenge.repeatRewardTextで定義されています
+          reward_items: 報酬アイテム。 | challenge.rewardItemsおよびchallenge.repeatRewardItemsで定義された報酬が与えられるアイテムのリスト。
+          reward_commands: 報酬コマンド。 | challenge.rewardCommandsおよびchallenge.repeatRewardCommandsで定義されている、報われるコマンドのリスト。
+          level_status: ステータス文字列。 |翻訳「challenges.gui.level-description.completed」を表します。
+          challenge_count: 完成したチャレンジカウント文字列。 | 「challenges.gui.level-description.completed-challenges-of」の翻訳を表します
+          unlock_message: メッセージ文字列のロックを解除します。 |チャレンジレベルオブジェクト-challengeLevel.unlockMessageで定義されています。
+          waiver_amount: 次のレベルの文字列のロックを解除する出荷可能なチャレンジカウント。 | 「challenges.gui.level-description.waver-amount」の翻訳を表します
+          level_reward_text: 報酬の文字列。 | challengeLevel.rewardTextで定義
+          level_reward_items: 報酬アイテム。 | challengeLevel.rewardItemsで定義されている、報酬を受け取るアイテムのリスト。
+          level_reward_commands: 報酬コマンド。 | challengeLevel.rewardCommandsで定義されている、報奨されるコマンドのリスト。
+        download: 利用可能なチャレンジライブラリを手動で更新できます。 |右クリックしてキャッシュのクリアを有効にします。
+        download-disabled: GitHubデータダウンローダーはBentoBoxで無効になっています。それなしでは、ライブラリを使用できません！
+        challenge-wipe: 課題とそのレベルのデータベースを完全にクリアできます！
+        players-wipe: プレイヤーデータベースを完全にクリアできます！
+        visibility-mode: 未デプロイのチャレンジを表示するかどうかを切り替えることができます。
+      block: -[ブロック]：[count]
+      command: -[command]
+      current-value: '|＆6現在の値：[value]。'
+      disabled: 無効
+      enabled: アクティブ
+      entity: -[エンティティ]：[count]
+      increase-by: ＆a [値]だけ完了カウントを増やす
+      item: -[count] x [item]
+      item-enchant: -[enchant] [level]
+      item-meta: （[meta]）
+      level-locked: このレベルのロックを解除するには、[count]個以上の[level]チャレンジを完了してください！
+      level-unlocked: クリックして[level]の課題をご覧ください！
+      nether: -ネザー
+      normal: -オーバーワールド
+      permission: -[permission]
+      reduce-by: ＆c完了カウントを[値]ずつ減らす
+      the-end: '- 終わり'
+      type:
+        inventory: -在庫タイプ：| （プレイヤーのインベントリにアイテムを要求できます）
+        island: -島のタイプ：| （プレイヤーの周りにブロックまたはモブを要求することができます）
+        other: -その他のタイプ：| （他のプラグイン/アドオンからのものを要求することができます）
+      visibility:
+        visible: すべての課題は誰にでも見える
+        hidden: 展開されたチャレンジのみが表示されます。
+        toggleable: 未デプロイのチャレンジを表示するかどうかを切り替えることができます
+    item-description:
+      armor-color: '[color]'
+      book-meta: '[author]による[title]'
+      custom-effects: カスタム効果：
+      egg-meta: '[mob]'
+      fish-meta: '[body-color] と [pattern-color] [pattern]'
+      item: -[count] x [item]
+      item-enchant: -[enchant] [level]
+      item-lore: アイテム伝承：
+      item-meta: （[meta]）
+      item-name: '[name]'
+      potion-effect: '[effect] x [amplifier] [duration] t'
+      potion-type: '[name]'
+      potion-type-extended: 拡張[name]
+      potion-type-extended-upgraded: 拡張およびアップグレードされた[name]
+      potion-type-upgraded: '[name]をアップグレードしました'
+      recipe-count: '[count]レシピ'
+      skull-owner: '[owner]'
+    level-description:
+      completed: ＆B完了しました
+      completed-challenges-of: ＆3このレベルで[max]の[number]のチャレンジを完了しました。
+      experience-reward: ＆6Exp報酬：[value]
+      money-reward: ＆6お金の報酬：$ [value]
+      reward-commands: ＆6報酬コマンド：
+      reward-items: ＆6報酬アイテム：
+      waver-amount: ＆6次のレベルのロックを解除するために[value]チャレンジをスキップできます。
+    questions:
+      admin:
+        challenge-name: 現在のチャレンジのチャット表示名を入力します。
+        level-name: 現在のレベルのチャット表示名を入力します。
+        number: チャットで番号を入力し、Enterキーを押して受け入れてEnterキーを押します。
+        unique-id: オブジェクトの一意の名前を書き、Enterキーを押します。
+      prefix: ＆2 [SERVER]：
+    title:
+      admin:
+        choose-challenge-title: ＆aチャレンジを選択
+        choose-level-title: ＆aレベルを選択
+        choose-user-title: ＆aプレイヤーを選択
+        confirm-title: ＆a確認
+        edit-challenge-title: ＆aEditチャレンジ
+        edit-level-title: ＆aレベルを編集
+        edit-text-fields: ＆aテキストフィールドの編集
+        gui-title: ＆aチャレンジ管理者
+        library-title: '&Aダウンロード可能なライブラリ'
+        manage-blocks: ブロックの管理
+        manage-entities: エンティティの管理
+        manage-items: アイテムの管理
+        manage-numbers: 番号パッド
+        select-block: ＆aブロックを選択
+        select-challenge: ＆aチャレンジを選択
+        select-entity: ＆aエンティティを選択
+        settings-title: 設定の編集
+        toggle-environment: ＆a環境を変える
+        lore-remove: '&aロア要素の削除'
+        lore-edit: ＆aロアを編集する
+        lore-add: ＆aロア要素の追加
+      challenges: ＆6チャレンジ
+      game-modes: ＆6ゲームモードを選択
+      multiple-complete: ＆6何回？
+  messages:
+    admin:
+      already-completed: ＆2このチャレンジはすでに完了しました！
+      challenge-created: '[challenge]＆rが作成されました！'
+      completed: ＆2 [player]のチャレンジ[name]を完了しました！
+      complete-wipe: すべてのChallenges Addonデータベースを空にするだけなので、バックアップがあることを期待してください！
+      hit-things: 必要なもののリストにそれらを追加するには、物事をヒットします。完了したら右クリックします。
+      migrate-end: ＆2チャレンジアドオンデータが新しい形式に更新されます。
+      migrate-not: ＆2すべてのデータが有効です。
+      migrate-start: ＆2チャレンジアドオンデータの移行を開始します。
+      not-completed: ＆2このチャレンジはまだ完了していません！
+      reset: ＆2 [player]のチャレンジ[name]をリセットしました！
+      reset-all: ＆2 [player]のチャレンジはすべてリセットされました！
+      start-downloading: ＆5チャレンジライブラリのダウンロードとインポートを開始しています。
+      you-added: チャレンジに1つの[もの]を追加しました
+      challenge-wipe: データベースからチャレンジとそのレベルを空にするだけなので、バックアップがあることを期待してください！
+      players-wipe: 空のプレーヤーがデータベースからのチャレンジを完了したので、バックアップがあることを期待してください！
+    defaults-file-completed: defaults.jsonファイルには、[world]からのチャレンジが入力されています！
+    defaults-file-overwrite: defaults.jsonが存在します。上書きされます。
+    import-challenges: チャレンジのインポートを開始
+    import-levels: レベルのインポートを開始
+    import-number: インポートされた[number]個のチャレンジ
+    load-add: 新しいオブジェクトの追加：[value]
+    load-overwriting: 「[value]」を上書き
+    load-skipping: 「[value]」は既に存在します-スキップします
+    name-has-completed-challenge: ＆5 [name]は[value]＆r＆5チャレンジ を完了しました！
+    name-has-completed-level: ＆5 [name]は[value]＆r＆5レベルを完了しました！
+    no-levels: 警告：challenge.ymlで定義されたレベルはありません
+    you-completed-challenge: ＆2 [value]&r&2チャレンジを完了しました！
+    you-completed-level: ＆2 [value]&r&2レベルを完了しました！
+    you-repeated-challenge: ＆2 [value]&r&2チャレンジを繰り返しました！
+    you-repeated-challenge-multiple: ＆2 [value]&r&2チャレンジ [count]回繰り返しました！
+  titles:
+    challenge-subtitle: '[friendlyName]'
+    challenge-title: 正常に完了しました
+    level-subtitle: '[friendlyName]'
+    level-title: 正常に完了しました
+meta:
+  authors:
+  - tastybento
+protection:
+  flags:
+    CHALLENGES_ISLAND_PROTECTION:
+      description: |-
+        ＆5＆o誰がチャレンジを完了
+         ＆5＆oできるかを切り替えます
+      name: 課題の保護
+    CHALLENGES_WORLD_PROTECTION:
+      description: |-
+        ＆5＆oチャレンジを完了するには、
+         ＆5＆プレイヤーが島にいる
+         ＆5＆o必要があります。
+      hint: 島の外での挑戦はありません
+      name: チャレンジアイランドの制限
+version: 11

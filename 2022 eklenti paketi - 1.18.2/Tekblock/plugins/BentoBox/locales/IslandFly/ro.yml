@@ -1,0 +1,18 @@
+islandfly:
+  fly-outside-alert: '&c Sunteți în afara insulei dvs., astfel încât modul de zbor
+    va fi dezactivat în &e [number] &c secunde.'
+  fly-turning-off-alert: '&c Nu mai aveți voie să zburați aici. Oprirea zborului în
+    &e [number] &c secunde.'
+  disable-fly: '&c Modul dvs. de zbor este dezactivat.'
+  reallowed-fly: '&a Zbura ta a fost redistribuită'
+  enable-fly: '&a Modul dvs. de zbor a fost activat.'
+  cancel-disable: '&a Te-ai întors, nu! Combustibilul zboară reumplut cu succes!'
+  wrong-world: '&c Nu sunteți în lumea gamemode potrivită'
+  command:
+    not-allowed-fly: '&c Nu aveți voie să zburați pe această insulă'
+    description: vă permite să zburați pe insula voastră
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a Toggle care poate zbura pe insula ta'
+      name: '&a Prevenirea zborului'

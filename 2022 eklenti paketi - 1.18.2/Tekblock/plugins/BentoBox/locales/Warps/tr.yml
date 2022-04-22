@@ -1,0 +1,27 @@
+warp:
+  help:
+    description: Oyuncunun bölge tabelası.
+    parameters: <name>
+warps:
+  deactivate: '&cEski ada warpı silindi!'
+  error:
+    does-not-exist: '&cÜzgünüm. Böyle bir bölge artık yok!'
+    no-permission: '&4Buna yetkin yok!'
+    not-safe: '&4Ada bölgesi güvenli değil!'
+    no-remove: '&4Bu tabelayı kıramazsın!'
+    no-warps-yet: '&4Böyle bir bölge henüz yok.'
+    not-enough-level: '&4Bunu koyman için daha fazla ada leveline ihtiyacın var.'
+    not-on-island: '&4Adanda değilsin.'
+    your-level-is: '&9Ada levelin &e[level] &9ve &e[required]&9''den fazla olması
+      gerek!'
+  help:
+    description: Bölge panelini açar.
+  player-warped: '&d[name] &9ada bölgene ışınlandı!'
+  sign-removed: '&4Ada tabelası kaldırıldı!'
+  success: '&aBaşarılı!'
+  title: '&dOyuncu bölgeleri &8- &5'
+  warpTip: '&6Ada bölgesi açmak için tabelanın en üstüne &a[text] &9yaz!'
+  warpToPlayersSign: '&d[player] &9bölgesine gidiliyor!'
+  next: '&6Sonraki Sayfa'
+  previous: '&6Önceki sayfa'
+  random: '&4Rastgele bölgeye git!'

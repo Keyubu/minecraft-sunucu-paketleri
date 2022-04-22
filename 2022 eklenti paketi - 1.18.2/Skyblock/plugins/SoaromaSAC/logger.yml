@@ -1,0 +1,6 @@
+log-system:
+    enableKickLogger: true
+    enableViolationLogger: true
+    violationLoggerNum: 30
+    enablePlayerViolationLog: true
+    playerViolationLog: 15

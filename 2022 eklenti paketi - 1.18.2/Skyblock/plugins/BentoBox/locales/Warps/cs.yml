@@ -1,0 +1,36 @@
+# ##########################################################################################
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+#                                                                                         #
+# Translation by: CZghost                                                                 #
+# ##########################################################################################
+
+warp:
+  help:
+    description: Teleportovat se na warp ceduli hráče
+    parameters: <player name>
+warps:
+  deactivate: '&c Stará warp cedule deaktivována!'
+  error:
+    does-not-exist: '&c Sakra! Tento warp již neexistuje!'
+    no-permission: '&c Na toto nemáš oprávnění!'
+    no-remove: '&c Nemůžeš odstranit tuto ceduli!'
+    no-warps-yet: '&c Nejsou k dispozici žádné warpy'
+    not-enough-level: '&c Úroveň tvého ostrova není dostatečně vysoká!'
+    not-on-island: '&c K tomuto musíš být na svém ostrově!'
+    not-safe: '&c Tento warp není bezpečný!'
+    your-level-is: '&c Úroveň tvého ostrova je jen [level], musí být vyšší než [required].
+      Spusť příkaz pro úroveň.'
+  help:
+    description: otevřít panel warpů
+  next: '&6 Další stránka'
+  player-warped: '&2 [name] se teleportoval na tvou warp ceduli!'
+  previous: '&6 Předchozí stránka'
+  random: '&4 Náhodný warp'
+  sign-removed: '&c Warp cedule odstraněna!'
+  success: '&a Úspěch!'
+  title: Warp cedule
+  warpTip: '&6 Polož warp ceduli s [text] na vrchu'
+  warpToPlayersSign: '&6 Teleportuji tě na ceduli [player]'
+
+

@@ -1,0 +1,241 @@
+---
+#This is the english language file, set "language-file" in the config.yml to "lang-en.yml" to use this file!
+#You can see this site for all color codes ----> https://minecraft.tools/en/color-code.php
+#All variables you can use;
+#!!Please note that all variables only work in the current line they are located!!
+#%shopsection%       = the shopsection that has to be called
+#%amounttopay%       = the amount that the item will cost
+#%playername%        = the player's name
+#%amount%            = the amount of an item
+#%material%          = the material from a item
+#%amounttogive%      = the amount of money that a player received from another player
+#%minimumamount%     = the minimum amount of money you need to pay someone if you use the command
+#%amountofmoney%     = the amount of money that you have on you
+#%location%          = the location of the current item that is called inside shops.yml/sections.yml configuration file
+#%languagefile%      = the current languagefile that's being called
+#%version%           = the version of minecraft that the plugin uses
+#%spawner-type%      = the spawner type that the spawner item has
+#%bought/sold%       = if the item is sold or bought
+#%buy/sell-method%   = the way a player bought/sold an item Ex: Buy-screen or sellall command
+#%fileName%          = the name of the file that's being called
+#%key%               = the name of the key
+#%keys%              = all available keys, do not confuse with %key%
+#%itemLoc%           = the location of the item in a section inside the shops config
+#%price%             = amount of money
+#%action%            = the name of the action
+#%actions%           = the available actions
+#%balance%           = the balance of the player
+#%permsGroup%        = the permissions group
+#%maxInvSize%        = the max size of a inventory screen
+#StartUp/Reload
+shops,yml-not-found: "Shops.yml est introuvable, en créant un ..."
+shops,yml-created: "Shops.yml créé avec succès!"
+shops,yml-found: "Shops.yml a été trouvé!"
+sections,yml-not-found: "Sections.yml est introuvable, en créant un ..."
+sections,yml-created: "Création réussie de Sections.yml!"
+sections,yml-found: "Sections.yml a été trouvé!"
+updating-shop-settings: "Mise à jour des paramètres de la boutique ..."
+adding-new-shop-shops,yml: "Ajouter un nouveau magasin appelé %shopsection% à shops.yml."
+adding-new-shop-sections,yml: "Ajouter un nouveau magasin appelé %shopsection% à sections.yml."
+disabled-due-no-vault: "Désactivé car aucune dépendance au coffre-fort n'a été trouvée."
+disabled-due-no-economy: "Désactivé car aucun plugin économique n'a été trouvé, veuillez installer un plugin tel que EssentialsX."
+update-available: "Une mise à jour est disponible pour EconomyShopGUI, vous exécutez v%plugin_version% mais avez trouvé v%latest_version%."
+done: "Terminé!"
+updating-sections-config: "Mise à jour de la configuration des sections ..."
+debug-mode-enabled: "Le mode débogage est activé."
+economy-provider-null: "EconomyProvider est null."
+successfully-hooked-into-vault: "Succesvol connecté à Vault."
+language-file-using: "Utilisation de %languagefile% comme fichier de langue..."
+cannot-find-language-file: "Impossible de trouver le fichier de langue!"
+minecraft-version-using: "Utilisation de minecraft version %version%..."
+checking-each-item: "Vérification de chaque élément pour les valeurs incorrectes/manquantes..."
+loading-items: "Chargement de tous les éléments..."
+could-not-find-valid-version: "Cela empêchera le plugin d'avoir une version à utiliser et de nombreux éléments/méthodes ne fonctionneront pas. Veuillez utiliser une version prise en charge de Minecraft."
+updating-configs: "Mise à jour des configurations car une version plus récente a été trouvée..."
+creating-backup: "En créant une sauvegarde à partir de l'ancien %fileName%, le fichier peut être trouvé dans le dossier des sauvegardes dans le dossier du plugin EconomyShopGUI."
+discounts-feature-unavailable: "La fonction de remise ne peut pas être activée car aucun plugin d'autorisations n'a été trouvé."
+#Main Shop Inventory
+inventory-main-shop-title: "&8&lBoutique de serveur"
+profile: "&aProfil"
+name: "&6Prénom"
+money: "&6Argent"
+level: "&6Niveau"
+#Buystacks Inventory title
+inventory-buystacks-title: "&8Choisissez la quantité de &lpiles &r&8d'objets"
+#HowMuchSell/HowMuchBuy Inventory
+inventory-howmuchsell-title: "&8Choisissez montant de l'article &lvendre"
+inventory-howmuchbuy-title: "&8Choisissez montant de l'article &lacheter"
+plus-one: "&b+1"
+min-one: "&5-1"
+plus-sixteen: "&b+16"
+min-sixteen: "&5-16"
+plus-thirty-two: "&b+32"
+min-thirty-two: "&5-32"
+sell: "&aVendre?"
+sell-all: "&cVous voulez tout vendre?"
+buy: "&aAcheter?"
+buy-stacks: "&cAcheter des piles?"
+#All Inventory's
+back: "&4Retour"
+cancel: "&4Annuler"
+#Previous/Next/Current page
+previous-page: "&dPage précédente"
+next-page: "&bPage suivante"
+current-page: "&7Page:"
+#Buy/Sell Controls
+left-click-buy: "&aClic gauche: Acheter: &c%amounttopay%"
+right-click-sell: "&6Clic droit: Vendre: &c%amounttopay%"
+item-location-in-shop: "&8Section: %shopsection%, Index: %itemLoc%"
+#Buy/Sell Messages
+pay-confirmation: "&aVous avez acheté avec succès &1%amount% x &b%material% &apour &c%amounttopay%"
+sell-confirmation: "&aVous avez vendu avec succès &1%amount% x &b%material% &apour &c%amounttopay%"
+sell-confirmation-multiple-items: "&aVous avez vendu avec succès &1%amount% &aarticles pour &c%amounttopay%"
+no-item-to-be-sold: "&cVous n'avez aucun de ces objets dans votre inventaire."
+item-cannot-be-bought: "&cL'article ne peut pas être acheté."
+item-cannot-be-sold: "&cL'article ne peut pas être vendu."
+player-made-transaction: "%playername% %bought/sold% %amount% x %material% pour %amountofmoney% avec la %buy/sell-method%."
+buy-screen: "écran d'achat"
+sell-screen: "écran de vente"
+buystacks-screen: "écran acheter des piles"
+sellall-screen: "vendre tout l'écran"
+sellall-command: "vendre toute commande"
+bought: "acheté"
+sold: "vendu"
+#CurrencySymbol
+currencysymbol: "%price%€"
+#All commands
+command-disabled-in-world: "&cCette commande est désactivée dans ce monde."
+#Edit-shop subcommand descriptions
+editshop-add-item-subcommand-desc: "&aAjoutez un article à la boutique."
+editshop-edit-item-subcommand-desc: "&aModifier un article existant dans la boutique."
+editshop-remove-item-subcommand-desc: "&aSupprimer un article de la boutique."
+editshop-add-hand-item-subcommand-desc: "&aAjoutez un article de votre main à la boutique."
+#Edit-shop subcommand syntaxes
+editshop-add-item-subcommand-syntax: "&a/editshop additem <section> <matériel> <prix d'achat> <prix de vente> [afficher un nom]"
+editshop-edit-item-subcommand-syntax: "&a/editshop edititem <section> <indice> <action> <objet> <valeur>"
+editshop-remove-item-subcommand-syntax: "&a/editshop deleteitem <section> <objet>"
+editshop-add-hand-item-subcommand-syntax: "&a/editshop addhanditem <section> <prix d'achat> <prix de vente>"
+#Edit-shop command messages
+editshop-adding-item: "&aAjout du nouvel article à la boutique..."
+editshop-add-item-successful: "&aAjout réussi de l'article à la boutique sous '%itemPath%'."
+editshop-editing-item: "&aMise à jour de l'élément..."
+editshop-edit-item-successful: "&a'%itemPath%' mis à jour avec succès."
+editshop-removing-item: "&aRetrait de l'article de la boutique..."
+editshop-remove-item-successful: "&a'%itemPath%' a bien été supprimé de la boutique."
+editshop-reload-shop-to-see-changes: "&aUtilisez la commande /sreload pour charger les modifications dans la boutique."
+#Edit-shop command errors
+section-does-not-contain-item: "&cLa section '%shopsection%' ne contient pas l'élément '%itemLoc%'."
+no-valid-action: "&cPas une action valide '%action%'. \nActions disponibles: %actions%."
+no-valid-key: "&cPas une clé valide '%key%'. \nClés disponibles: %keys%."
+action-not-valid-on-key: "&cImpossible de %action% la clé '%key%'."
+edit-item-material-invalid: "&cLe contenu de l'élément que vous essayez de modifier n'est pas valide. '%material%'"
+key-already-defined: "&cLa clé '%key%' est déjà définie sur l'élément, vous ne pouvez pas l'ajouter deux fois."
+key-is-not-found: "&cLa clé '%key%' ne peut pas être supprimée de l'élément car elle est introuvable."
+no-valid-slot-for-item: "&cL'élément n'a pas pu être placé à l'emplacement '%slot%'. L'emplacement doit être 1 - %maxShopSize%."
+#Reload Command
+configs-reloaded: "&aToutes les configurations ont été rechargées."
+#Balance Command
+check-balance: "&bVous avez actuellement &c%amountofmoney%&b."
+check-balance-other-player: "&b%playername% &aactuellement &c%amountofmoney%&a."
+#Givemoney Command
+givemoneycommand-example: "&9/givemoney <joueur> <montant>"
+givemoney-complete: "&aGivemoney terminé."
+#Pay Command
+minimum-amount: "&cLe montant minimum pour payer un joueur est %minimumamount%."
+payment-complete: "&aPaiement terminé."
+player-received-money: "&aTu as reçu &c%amounttogive% &ade &2%playername%&a!"
+need-player-and-amount: "&9Vous devez donner un joueur et une somme d'argent."
+need-amount: "&9Vous devez donner une somme d'argent."
+paycommand-example: "&9/pay <joueur> <montant>"
+#Player breaks spawner
+default-spawner-name: "&9&l%spawner-type% &rSpawner"
+spawner-broke-and-applied-to-inventory: "&aVous avez réussi à extraire un &9%spawner-type%&a, l'objet est appliqué à votre inventaire."
+need-silk-touch: "&cVous devez utiliser une pioche en soie pour exploiter cela!"
+#JoinMessage
+join-message: "&2Bienvenue, votre solde est &c%balance%!"
+#Level event
+level-event-message: "&2[Levels] &c%amount% &5a été ajouté à votre solde!"
+#Item error's
+displayname-null: "Impossible d'obtenir le nom d'affichage."
+item-name-null: "Impossible d'obtenir le nom de l'élément."
+need-item-material: "Impossible de créer un article avec une valeur de matériau vierge."
+item-material-null: "Impossible d'obtenir le matériel de l'article. Si vous pensez qu'il s'agit d'un bogue, veuillez le signaler à notre serveur de support discord que vous pouvez trouver sur la page du plugin. %material%"
+item-enchantment-null: "Impossible d'obtenir l'enchantement de l'objet."
+need-item-enchantment: "Impossible de créer un enchantement avec une valeur vide."
+item-enchantment-not-supported: "Cet enchantement n'est pas pris en charge dans cette version minecraft."
+enchantment-cannot-apply-to-item: "Pour appliquer un enchantement à l'objet, le matériau doit être un livre enchanté ou un outil qui correspond à l'enchantement."
+item-spawnertype-null: "Impossible d'obtenir le type de générateur de l'article."
+need-item-spawnertype: "Impossible de créer un géniteur avec un type de géniteur vide."
+material-needs-to-be-spawner: "Pour appliquer un type de générateur(type d'entité) à l'élément, le matériau de l'élément doit être un générateur."
+item-potiontype-null: "Impossible d'obtenir le type de potion de l'objet."
+need-item-potiontype: "Impossible de créer un type de potion avec une valeur vide."
+potiontype-not-supported: "Ce type de potion n'est pas pris en charge dans cette version de Minecraft."
+material-needs-to-be-potion: "Pour appliquer un effet de potion, le matériau doit être une sorte de potion ou une flèche à pointe."
+cant-bind-multiple-applyments: "Impossible de créer un objet avec plusieurs applications comme des enchantements/types de géniteurs ou des types d'effets de potion."
+item-error: "&cErreur d'article, regardez dans la console."
+material-not-supported: "Ce matériau d'objet n'est pas pris en charge dans cette version minecraft."
+item-needs-buy-and-sell-value: "Chaque article de la boutique doit avoir une valeur d'achat/vente."
+sell-value-wrong: "La valeur de vente doit être une décimale ou un nombre."
+buy-value-wrong: "La valeur d'achat doit être une décimale ou un nombre."
+option-type-changed: "Veuillez changer l'option 'type' en option 'spawnertype' pour créer un géniteur dans la boutique. Le nom de l'option a changé dans la version 2.2 pour plus de clarté."
+option-meta-changed: "Veuillez changer l'option 'meta' en option 'displayname' pour créer un article avec un nom d'affichage dans la boutique. Le nom de l'option a changé dans la version 2.2 pour plus de clarté."
+cannot-display-shopsection: "Impossible de créer la section de boutique '%shopsection%' car l'emplacement de l'article doit être compris entre 0 et %maxInvSize%."
+need-recipe-material: "Impossible de créer le matériau de recette avec une valeur vide."
+cannot-get-recipe-material: "Impossible de créer le matériau de la recette, veuillez vérifier le nom du matériau pour toute faute d'orthographe et s'il existe."
+recipe-material-not-supported: "Le matériel de recette donné n'est pas pris en charge dans cette version minecraft."
+material-needs-to-be-book: "Pour appliquer une recette à l'article, le matériau de l'article doit être un livre KnowLedge."
+need-skullowner: "Impossible de créer le PlayerHead sans un lecteur spécifié (Skull Owner)."
+material-needs-to-be-skull: "Pour appliquer une texture de crâne (Skull Owner) à l'élément, le matériau de l'élément doit être une tête de joueur."
+material-needs-to-be-leather-armor: "Pour appliquer une couleur à une pièce d'armure, le matériau doit être une armure de cuir."
+#Item path
+items-path-in-shops-config: "Emplacement de l'article dans shops.yml: %location%"
+items-path-in-sections-config: "Emplacement de l'article dans sections.yml: %location%"
+items-path-in-config: "Emplacement de l'article dans config.yml: %location%"
+#Compatibility
+ultimatestacker-compatibility-enabled: "Fournisseur de générateur défini sur UltimateStacker dans la configuration"
+ultimatestacker-not-found: "UltimateStacker n'a pas été trouvé"
+could-not-integrate-with-ultimatestacker: "Impossible d'intégrer avec UltimateStacker"
+ultimatestacker-found: "UltimateStacker trouvé, intégrant..."
+using-ultimatestacker-spawners: "Utilisation de UltimateStacker comme fournisseur de spawner..."
+wildstacker-compatibility-enabled: "Fournisseur Spawner défini sur WildStacker dans la configuration"
+wildstacker-not-found: "WildStacker est introuvable"
+wildstacker-found: "WildStacker trouvé, intégrant..."
+could-not-integrate-with-wildstacker: "Impossible d'intégrer avec WildStacker"
+using-wildstacker-spawners: "Utilisation de WildStacker comme fournisseur de spawner."
+silkspawners-compatibility-enabled: "La compatibilité de SilkSpawners a été activée dans la configuration."
+silkspawners-not-found: "SilkSpawners est introuvable"
+silkspawners-found: "SilkSpawners trouvé, intégrant..."
+could-not-integrate-with-silkspawners: "Impossible d'intégrer avec SilkSpawners."
+using-silkspawners-spawners: "Utilisation des générateurs SilkSpawners..."
+using-default-spawners: "Utilisation des générateurs par défaut du plugin..."
+#Error's
+cannot-find-discounted-section: "Impossible d'ajouter des remises pour la section '%section%', soit la section de la boutique est désactivée ou introuvable."
+cannot-find-discounted-group: "Impossible d'ajouter des remises pour le groupe d'autorisations '%permsGroup%', veuillez vérifier l'orthographe et si elle existe dans votre plugin d'autorisations."
+disabling-plugin: "Désactivation du plugin..."
+not-spawn-able: "Ce type d'entité n'est pas capable d'apparaître. '%spawnertype%'"
+real-player: "Vous devez être un vrai joueur pour utiliser cette commande."
+player-not-online: "&cCe joueur n'existe pas ou n'est pas en ligne."
+cannot-sell-air: "&cVous ne pouvez pas vendre de l'air ..."
+no-permissions: "&cVous n'avez pas d'autorisations pour ça!"
+no-permissions-to-open-shop: "&cVous ne disposez pas des autorisations nécessaires pour ouvrir cette section boutique."
+cannot-do-that: "&4Tu ne peux pas faire ça!!"
+more-space-needed: "&cVeuillez faire plus d'espace dans votre inventaire, puis réessayer."
+could-not-store-all-items: "&c%amount% article's n'a pas pu être ajouté à votre inventaire car il est plein."
+not-enough-space-inside-inventory: "&4Vous n'avez pas assez d'espace dans votre inventaire, laissant tomber les objets au sol."
+insufficient-money: "&cVous n'avez pas assez d'argent."
+canceling-transaction-no-space: "&4Vous n'avez pas assez d'espace dans votre inventaire, annulation de la transaction. \nVeuillez faire plus de place dans votre inventaire et réessayer."
+no-items-in-section: "Impossible d'ouvrir la section boutique %shopsection% car aucun article n'a été trouvé!"
+no-item-found: "&cAucun élément trouvé."
+item-null: "&cL'élément n'existe pas."
+item-cannot-be-sold-to-server: "&cL'article (%material%) ne peut pas être vendu au serveur car l'article présente une erreur dans la boutique. Veuillez signaler ce problème aux administrateurs du serveur ou au propriétaire."
+could-not-save-shops,yml: "&4Impossible d'enregistrer la configuration de la boutique."
+could-not-save-sections,yml: "&4Impossible d'enregistrer la configuration des sections."
+could-not-save-config: "Impossible d'enregistrer la configuration de %fileName%."
+rgb-color-formatted-wrong: "Les couleurs RVB doivent être au format: '0x000000', '# 000000' ou '000000' à %path%."
+no-shop-found: "&cImpossible de trouver une section boutique appelée par ce nom!"
+no-valid-amount: "&cPas un montant valide"
+restart-plugin: "Impossible d'ouvrir la section boutique, essayez de redémarrer le plug-in ou rejoignez le serveur Discord pour obtenir de l'aide."
+could-not-check-for-updates: "&cImpossible de vérifier les mises à jour."
+cannot-update-config: "&cImpossible de mettre à jour le fichier de configuration config.yml."
+cannot-read-config: "Impossible de lire la configuration de %fileName% car elle est mal configurée, utilisez un analyseur Yaml en ligne avec l'erreur ci-dessous ici pour trouver la cause du problème et le résoudre. Si vous ne trouvez pas la cause vous-même, rejoignez notre serveur de support Discord qui se trouve sur une page de plugin d'EconomyShopGUI."
+error-occured-while-reloading: "&4Une erreur s'est produite lors du rechargement du plugin, veuillez regarder à l'intérieur de la console pour tout message d'erreur."

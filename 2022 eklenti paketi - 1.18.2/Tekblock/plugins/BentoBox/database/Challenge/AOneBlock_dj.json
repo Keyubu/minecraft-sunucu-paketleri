@@ -1,0 +1,69 @@
+{
+  "uniqueId": "AOneBlock_dj",
+  "friendlyName": "DJ",
+  "deployed": true,
+  "description": [
+    "Craft a jukebox and collect all music discs"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_CHIRP\n",
+  "order": 2,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "AOneBlock_advanced",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: JUKEBOX\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_11\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_13\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_BLOCKS\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_CAT\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_CHIRP\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_FAR\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_MALL\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_MELLOHI\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_STAL\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_STRAD\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_WAIT\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_WARD\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Some diamonds and emeralds for your disks",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n  amount: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: EMERALD\n  amount: 10\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLD_INGOT\n  amount: 5\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "A diamond and some emeralds for your disks",
+  "maxTimes": 100,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: EMERALD\n  amount: 5\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GOLD_INGOT\n  amount: 2\n"
+  ],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

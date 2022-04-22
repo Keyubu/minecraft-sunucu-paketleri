@@ -1,0 +1,175 @@
+#You can see this site for all color codes ----> https://minecraft.tools/en/color-code.php
+#All variables you can use;
+#!!Please note that all variables only work in the current line they are located!!
+#%shopsection%       = the shopsection that has to be called
+#%amounttopay%       = the amount that the item will cost
+#%playername%        = the player's name
+#%amount%            = the amount of an item
+#%material%          = the material from a item
+#%amounttogive%      = the amount of money that a player received from another player
+#%minimumamount%     = the minimum amount of money you need to pay someone if you use the command
+#%amountofmoney%     = the amount of money that you have on you
+#%location%          = the location of the current item that is called inside shops.yml/sections.yml configuration file
+#%languagefile%      = the current languagefile that's being called
+#%version%           = the version of minecraft that the plugin uses
+#%spawner-type%      = the spawner type that the spawner item has
+#%bought/sold%       = if the item is sold or bought
+#%buy/sell-method%   = the way a player bought/sold an item Ex: Buy-screen or sellall command
+#%fileName%          = the name of the file that's being called
+#%key%               = the name of the key
+#%keys%              = all available keys, do not confuse with %key%
+#%itemLoc%           = the location of the item in a section inside the shops config
+#%price%             = amount of money
+#%action%            = the name of the action
+#%actions%           = the available actions
+#%balance%           = the balance of the player
+#%permsGroup%        = the permissions group
+#%maxInvSize%        = the max size of a inventory screen
+#StartUp/Reload
+shops,yml-not-found: "Shops.yml nebyl nalezen a vytvořil jeden..."
+shops,yml-created: "Shops.yml úspěšně vytvořeno!"
+shops,yml-found: "Shops.yml bylo nalezeno!"
+sections,yml-not-found: "Sections.yml nebyl nalezen a vytvořil jeden..."
+sections,yml-created: "Sections.yml úspěšně vytvořeno!"
+sections,yml-found: "Sections.yml bylo nalezeno!"
+updating-shop-settings: "Aktualizace nastavení obchodu..."
+adding-new-shop-shops,yml: "Přidání nového obchodu s názvem %shopsection% do shops.yml."
+adding-new-shop-sections,yml: "Přidání nového obchodu s názvem %shopsection% do sections.yml."
+disabled-due-no-vault: "Zakázáno kvůli nenalezené závislosti na VAULT !"
+disabled-due-no-economy: "Disabled due to no economy plugin was found, please install a plugin such as EssentialsX."
+update-available: "K dispozici je aktualizace!"
+done: "Hotovo!"
+updating-sections-config: "Aktualizace konfigurace sekcí..."
+debug-mode-enabled: "Režim ladění je povolen."
+economy-provider-null: "EconomyProvider je null."
+successfully-hooked-into-vault: "Úspěšně se připojil do Vault."
+language-file-using: "Použito %languagefile% jako jazykový soubor."
+cannot-find-language-file: "Nelze najít jazykový soubor!"
+minecraft-version-using: "Používání minecraft verze %version%..."
+checking-each-item: "Kontrola každé položky, zda neobsahuje nesprávné nebo chybějící hodnoty..."
+could-not-find-valid-version: "Nelze najít platnou implementaci pro tuto verzi serveru."
+#Main Shop Inventory
+inventory-main-shop-title: "[Artemis] Obchod"
+profile: "&aProfil"
+name: "&6Jméno"
+money: "&6Peníze"
+level: "&6Level"
+#Buystacks Inventory title
+inventory-buystacks-title: "&8Kolik &cstacků &8chcete &ckoupit&8?"
+#HowMuchSell/HowMuchBuy Inventory
+inventory-howmuchsell-title: "&8Kolik chcete prodat?"
+inventory-howmuchbuy-title: "&8Kolik chcete koupit?"
+plus-one: "&b+1"
+min-one: "&5-1"
+plus-sixteen: "&b+16"
+min-sixteen: "&5-16"
+plus-thirty-two: "&b+32"
+min-thirty-two: "&5-32"
+sell: "&aProdat?"
+sell-all: "&cChcete prodat vše?"
+buy: "&aKoupit?"
+buy-stacks: "&cKoupit stacky?"
+#All Inventory's
+back: "&4Zpět"
+cancel: "&4Zrušit"
+#Previous/Next/Current page
+previous-page: "&dPředchozí stránka"
+next-page: "&bDalší stránka"
+current-page: "&7Stránka:"
+#Shop item lore
+left-click-buy: "&a[Levé kliknutím] Koupit : &c%amounttopay%"
+right-click-sell: "&6[Pravém kliknutím] Prodat : &c%amounttopay%"
+#Buy/Sell Messages
+pay-confirmation: "&aÚspěšně jste koupili &1%amount% x &b%material% &aza &c%amounttopay%"
+sell-confirmation: "&aÚspěšně jste prodali &1%amount% x &b%material% &aza &c%amounttopay%"
+sell-confirmation-multiple-items: "&aÚspěšně jste prodali &1%amount% &avěcí za &c%amounttopay%"
+no-item-to-be-sold: "&cV inventáři nemáte žádnou z těchto položek."
+item-cannot-be-bought: "&cZboží nelze zakoupit."
+item-cannot-be-sold: "&cZboží nelze prodat."
+player-made-transaction: "%playername% %bought/sold% %amount% x %material% za %amountofmoney% s %buy/sell-method%."
+buy-screen: "koupit obrazovku"
+sell-screen: "prodat obrazovku"
+buystacks-screen: "koupit stacky na obrazovce"
+sellall-screen: "prodat celou vše na obrazovce"
+sellall-command: "prodat veškerý příkaz"
+bought: "koupil"
+sold: "prodáno"
+#CurrencySymbol
+currencysymbol: "$%price%"
+#All commands
+#Edit-shop subcommand descriptions
+#Edit-shop subcommand syntaxes
+#Edit-shop command messages
+#Edit-shop command errors
+#Reload Command
+configs-reloaded: "&aVšechny konfigurace byly znovu načteny."
+#Balance Command
+check-balance: "&bNyní máte &c%amountofmoney%&b."
+check-balance-other-player: "&b%playername% &av současné době má &c%amountofmoney%&a."
+#Givemoney Command
+givemoneycommand-example: "&9/givemoney <hrac> <pocet>"
+givemoney-complete: "&aPeníze připsány hráči na účet."
+#Pay Command
+minimum-amount: "&cMinimální částka k poslání peněz hráči je %minimumamount%."
+payment-complete: "&aPlatba dokončena."
+player-received-money: "&aObdržel jste &c%amounttogive% &aod &2%playername%&a!"
+need-player-and-amount: "&9Musíte mít jako hráč nějaký množství peněz."
+need-amount: "&9Musíte mít nějaké peníze."
+paycommand-example: "&9/pay <hrac> <pocet>"
+#Player breaks spawner
+default-spawner-name: "&9&l%spawner-type% &rSpawner"
+need-silk-touch: "&cMusíte těžit z hedvábného dotyku krumpáčem, abyste to dokázali!"
+#JoinMessage
+#Level event
+#Item error's
+displayname-null: "Zobrazovaný název se nepodařilo získat."
+need-item-material: "Nelze vytvořit položku s prázdnou hodnotou materiálu."
+item-material-null: "Materiál položky se nepodařilo získat."
+item-enchantment-null: "Nelze získat enchant položky."
+need-item-enchantment: "Nelze vytvořit enchant s prázdnou hodnotou."
+item-enchantment-not-supported: "Enchant není v této verzi minecraft podporováno."
+enchantment-cannot-apply-to-item: "K použití enchant na položku musí být materiál enchant knihou nebo nástrojem, který se hodí enchant."
+item-spawnertype-null: "Nepodařilo se získat typ produktu spawner."
+need-item-spawnertype: "Nelze vytvořit spawner s prázdným typem spawner."
+item-potiontype-null: "Nelze získat typ lektvaru položky."
+need-item-potiontype: "Nelze vytvořit typ lektvarů s prázdnou hodnotou."
+potiontype-not-supported: "Tento typ lektvarů není v této verzi minecraft podporován."
+material-needs-to-be-potion: "Pro použití efektu lektvarů musí být materiál jakýmsi lektvarem nebo špičatou šipkou."
+cant-bind-multiple-applyments: "Nelze vytvořit položku s více aplikacemi, jako jsou typy kouzel / spawnerů nebo typy efektů lektvarů."
+item-error: "&cChyba položky, podívejte se do konzoly."
+material-not-supported: "Materiál této položky není v této verzi minecraft podporován."
+item-needs-buy-and-sell-value: "Každá položka v obchodě musí mít hodnotu nákupu / prodeje."
+sell-value-wrong: "Hodnota prodeje musí být desetinná nebo číslo."
+buy-value-wrong: "Kupní hodnota musí být desetinná nebo číselné."
+option-type-changed: "Změňte volbu 'type' na možnost 'spawnertype' a vytvořte spawner v obchodě. Název možnosti se ve verzi 2.2 pro větší přehlednost změnil."
+option-meta-changed: "Chcete-li vytvořit položku s zobrazovaným jménem v obchodě, změňte volbu 'meta' na možnost 'displayname'. Název možnosti se ve verzi 2.2 pro větší přehlednost změnil."
+#Item path
+items-path-in-shops-config: "Cesta položky v konfiguracích obchodů: %location%"
+items-path-in-sections-config: "Cesta položky v sekci sections.yml config: %location%"
+#Compatibility
+silkspawners-compatibility-enabled: "SilkSpawners kompatibilita bylo povoleno v config."
+silkspawners-not-found: "SilkSpawners nebyl nalezen pomocí EconomyShopGUI spawnerů..."
+silkspawners-found: "SilkSpawners nalezen, integrovat ..."
+could-not-integrate-with-silkspawners: "Nelze integrovat s SilkSpawners."
+using-silkspawners-spawners: "Používání potěrů SilkSpawners..."
+using-default-spawners: "Používání výchozích spawnerů pluginu..."
+#Error's
+not-spawn-able: "Tento typ entity nelze vytvořit. '%spawnertype%'"
+real-player: "Abyste mohli tento příkaz používat, musíte být skutečným hráčem."
+player-not-online: "&cTento hráč neexistuje nebo není online."
+cannot-sell-air: "&cNemůžete prodávat vzduch ..."
+no-permissions: "&cK tomu nemáte oprávnění!"
+no-permissions-to-open-shop: "&cK otevření této části obchodu nemáte požadovaná oprávnění."
+cannot-do-that: "&4To nemůžeš udělat!!"
+not-enough-space-inside-inventory: "&4Ve svém inventáři nemáte dostatek místa, takže ostatní položky vyhodíte na zem."
+insufficient-money: "&cNemáš dost peněz."
+no-items-in-section: "Nelze otevřít sekci obchodu %shopsection% protože nebyly nalezeny žádné položky!"
+no-item-found: "&cŽádné předměty nenalezeny."
+item-null: "&cPoložka neexistuje."
+could-not-save-shops,yml: "&4Konfiguraci shop.yml se nepodařilo uložit."
+could-not-save-sections,yml: "&4Nepodařilo se uložit konfiguraci sections.yml."
+no-shop-found: "&cNelze najít sekci obchodu nazvanou tímto jménem!"
+no-valid-amount: "&cToto není platná částka."
+restart-plugin: "Nelze otevřít sekci obchodu, zkuste restartovat plugin nebo se připojit k discord serveru pro podporu."
+could-not-check-for-updates: "&cAktualizace se nepodařilo zkontrolovat."
+cannot-update-config: "&cNelze aktualizovat konfigurační soubor config.yml."

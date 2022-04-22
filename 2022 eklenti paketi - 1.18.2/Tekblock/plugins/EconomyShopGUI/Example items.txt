@@ -1,0 +1,205 @@
+#These are some examples that can help you with making an normal/special items like enchanted, potion or spawner items.
+
+#You will find very handy tips by reading the info here.
+
+#================================================================================#
+#==============All option you can use to create shop sections,===================#
+#===========inside the sections configuration and their meanings=================#
+#================================================================================#
+
+#--------------------------Shop section options---------------------------#
+
+Option 'enable' decides if this shop section is shown inside the main shop. (If set to false, nobody can see it)
+Option 'material' is the item type
+Option 'displayname' is the displayname of the shop section that will be shown inside the shop inventory.
+Option 'place' decides on what slot the item is located inside the main shop menu.
+Option 'lore' is a list with messages that are visible to read when hovering over the item (The lore of an item will be applied to the item when it is bought) (Color codes can be used)
+Option 'potion-glow' enables or disables the Potion Glow on the item shown in the Main Shop (Material of the item needs to be a potion)
+
+All item materials: https://www.digminecraft.com/lists/item_id_list_pc.php
+All color codes: https://www.digminecraft.com/lists/color_list_pc.php
+
+#================================================================================#
+#==================All options you can use to create items,======================#
+#===============in the shops configuration and their meanings====================#
+#================================================================================#
+
+#----------------------------Normal item options---------------------------------#
+
+Option 'material' is the item type
+Option 'displayname' is the displayname of the item from inside the shop when you hover over it (Color codes can be used)
+Option 'name' has the same function as 'displayname' except it will rename the item to the name specified when bought from shop (Color codes can be used)
+Option 'buy' is the price at how much the item will be bought in the shop
+Option 'sell' is the price at how much the item will be sold in the shop
+Option 'lore' is a list with messages that are visible to read when hovering over the item (The lore of an item will be applied to the item when it is bought) (Color codes can be used)
+
+Tip: If the displayname is empty, the item will have the vanilla name. (This option only counts for items inside the shop when you hover over it, items that are bought from the shop will use another name)
+Tip: When only option 'name' is specified and no 'displayname' option, the item will use the name specified in the shop when you hover over it and when the item is bought.
+Tip: When setting the 'sell/buy' option to -1, the item cannot be sold in the shop
+
+All item materials: https://www.digminecraft.com/lists/item_id_list_pc.php
+All color codes: https://www.digminecraft.com/lists/color_list_pc.php
+
+#---------------------------Enchanted item options-------------------------------#
+
+With option 'enchantments' you can create a list of enchantment effects that the item will have
+
+Note: If the option 'allow-unsafe-enchants' in the regular config is disabled (default is enabled), you are not able to set enchantments with a level over the vanilla value
+
+
+All enchantment types that can be used: https://www.digminecraft.com/lists/enchantment_list_pc.php
+
+#-----------------------------Potion item options--------------------------------#
+
+With option 'potiontypes' you can set a list of potion types the potion/spectral arrow has
+
+Note: When creating a potion item in the shop, you need to make sure that the material of the item is a "Potion", "Splash_Potion", "Lingering_Potion", or "Tipped_Arrow" (Depending on the game version you are using)
+
+
+All potion types: https://gpplugins.gitbook.io/economyshopgui/file-configuration/shops.yml#potion-types
+
+#-----------------------------Spawner item option--------------------------------#
+
+With option 'spawnertype' you can set the mob that's being spawned
+
+Note: When creating a spawner item in the shop, you need to make sure that the material of the item is a "Spawner" or the item will not work
+
+
+All entity types that can be used on spawners: https://www.digminecraft.com/mobs/index.php
+
+#-----------------------------Recipe item option---------------------------------#
+
+Option 'recipe' is the recipe item that can be added to a KnowLedge book as a recipe. (The input for this option is a material, the same input as goes in option 'material')
+
+Note: When creating a recipe item in the shop, the material of the item needs to be "knowledge_book".
+
+#-----------------------------Player Head example--------------------------------#
+
+Option 'skullowner' will add the players skin texture to the player head
+
+Note: The item material needs to be a "player_skull" for this option to work.
+
+#================================================================================#
+#-----------------------------------Legend---------------------------------------#
+#================================================================================#
+
+#Item 0 = sections.yml Main Menu example
+
+#Item 1 = shops.yml Normal item example
+#Item 2 = shops.yml Normal item with lore example
+#Item 3 = shops.yml Enchanted item example
+#Item 4 = shops.yml Potion/Tipped Arrow item example
+#Item 5 = shops.yml Spawner item example
+#Item 6 = shops.yml KnowLedge book with recipe example
+#Item 7 = shops.yml Player Head with custom Skull texture example
+
+#================================================================================#
+#-------------Item 0 - Main Menu Item Example (sections.yml)---------------------#
+#================================================================================#
+
+ShopSections:
+
+  Blocks:
+    enable: true
+    material: "GRASS_BLOCK"
+    displayname: "&2&lBlocs"
+    place: 19
+
+#================================================================================#
+#-------------Item 1 - Normal item example (shops.yml)---------------------------#
+#================================================================================#
+
+Shop name, items listed under this name will be sold through this shop. ("Armor" example shop)
+
+Armor:
+
+Note: If a shop is not also added to the sections.yml a default section item will be created.
+Note: All items in the shops.yml configuration are divided by an number, each shop section can hold different numbers of items.
+  1:
+    material: "cooked_beef"
+    displayname: "Got Beef?"
+    name: "&6&lCooked Beef"
+    buy: 200
+    sell: 100
+
+#================================================================================#
+#-------------Item 2 - Normal item with lore example (shops.yml)-----------------#
+#================================================================================#
+
+  2:
+    material: "beacon"
+    displayname: "Beacon"
+    buy: 10000
+    sell: 2500
+    lore:
+    - "&5Hello,"
+    - "&5This is a example lore."
+
+Note: The lore is a list of text, so every message/new-line is separated by a dash and space -
+
+#================================================================================#
+#-------------Item 3 - Enchanted item example (shops.yml)------------------------#
+#================================================================================#
+
+  3:
+    material: "netherite_pickaxe"
+    name: "&bDiamond miner"
+    buy: 200
+    sell: 100
+    enchantments:
+    - "EFFICIENCY:5"
+    - "UNBREAKING:3"
+    - "FORTUNE:3"
+    - "MENDING"
+
+Tip: When no enchantment strength is specified on the enchantment after the colon, it will use level 1.
+
+#================================================================================#
+#-------------Item 4 - Potion/Tipped Arrow item example (shops.yml)--------------#
+#================================================================================#
+
+  4:
+    material: "Splash_Potion"
+    displayname: "&5&lDangerous potion"
+    buy: 500
+    sell: 250
+    potiontypes:
+    - "POISON"
+    - "STRONG_SLOWNESS"
+    - "INSTANT_DAMAGE"
+
+#================================================================================#
+#-------------Item 5 - Spawner item example (shops.yml)--------------------------#
+#================================================================================#
+
+  5:
+    material: "Spawner"
+    displayname: "&2Zombie Spawner"
+    buy: 25000
+    sell: -1
+    spawnertype: "Zombie"
+
+#================================================================================#
+#--------Item 6 - KnowLedge book with recipe example (shops.yml)-----------------#
+#================================================================================#
+
+  6:
+    material: "knowledge_book"
+    displayname: "&bDiamond Pickaxe recipe"
+    buy: 475
+    sell: 2
+    recipe: "diamond_pickaxe"
+
+#================================================================================#
+#----Item 7 - Player Head with custom Skull texture example (shops.yml)----------#
+#================================================================================#
+
+  7:
+    material: "PLAYER_HEAD"
+    displayname: "Notch's skull"
+    buy: 22222.25
+    sell: 17725.75
+    skullowner: "Notch"
+
+If you do not understand the info here, please refer to our wiki and read the info there.
+https://gpplugins.gitbook.io/economyshopgui/

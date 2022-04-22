@@ -1,0 +1,112 @@
+# Customize this file to change all shop items inside the main shop screen
+# For more info about this file, please visit our wiki here: https://gpplugins.gitbook.io/economyshopgui/file-configuration/sections.yml
+
+ShopSections:
+
+  Blocks:
+    enable: true
+    material: "GRASS_BLOCK"
+    displayname: "&2&lBloklar"
+    place: 19
+
+  Decoration:
+    enable: true
+    material: "TUBE_CORAL"
+    displayname: "&9&lDekarasyon"
+    place: 30
+
+  Dyes:
+    enable: true
+    material: "CYAN_DYE"
+    displayname: "&2&lBoyalar"
+    place: 23
+
+  Enchanting:
+    enable: false
+    material: "ENCHANTED_BOOK"
+    displayname: "&d&lBüyüler"
+    place: 22
+    lore:
+    - "&5&lGear up with enchantments!"
+
+  Farming:
+    enable: true
+    material: "WHEAT"
+    displayname: "&a&lTarım"
+    place: 20
+
+  Food:
+    enable: true
+    material: "COOKED_BEEF"
+    displayname: "&6&lYemek"
+    place: 25
+
+  Mobs:
+    enable: true
+    material: "GUNPOWDER"
+    displayname: "&7&lVarlıklar"
+    place: 21
+
+  Music:
+    enable: false
+    material: "MUSIC_DISC_STRAD"
+    displayname: "&6&lMüzik"
+    place: 14
+
+  Ores:
+    enable: true
+    material: "IRON_INGOT"
+    displayname: "&f&lCevherler"
+    place: 13
+
+  Others:
+    enable: true
+    material: "SADDLE"
+    displayname: "&c&lDiğerleri"
+    place: 24
+
+  Potions:
+    enable: false
+    material: "POTION"
+    displayname: "&d&lPotions + Tipped Arrows"
+    potion-glow: true
+    place: 40
+
+  Redstone:
+    enable: true
+    material: "REDSTONE"
+    displayname: "&c&lKızıltaş"
+    place: 32
+
+  Spawners:
+    enable: true
+    material: "SPAWNER"
+    displayname: "&8&lÜreticiler"
+    place: 31
+
+  Workstations:
+    enable: false
+    material: "GRINDSTONE"
+    displayname: "&7&lİş istasyonları"
+    place: 12
+    lore:
+    - "&8&lGive your villager a job,"
+    - "&8&lor use it for your own."
+
+  SpawnEggs:
+    enable: false
+    material: "BAT_SPAWN_EGG"
+    displayname: "&8&lCanlandırma yumurtaları"
+    place: 4
+
+  Z_EverythingElse:
+    enable: false
+    material: "BEDROCK"
+    displayname: "Z_EverythingElse"
+    place: 41
+
+Fill-item:
+  material: "GRAY_STAINED_GLASS_PANE"
+# displayname: "&8Nothing here"
+  #Disable this item by setting this value to false
+  enable: true

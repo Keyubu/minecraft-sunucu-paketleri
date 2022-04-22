@@ -1,0 +1,12 @@
+time:
+  change-interval: 10000
+  texts:
+  - '&f%time%'
+  - '&f%date%'
+barcolors:
+  change-interval: 1000
+  texts:
+    - RED
+    - BLUE
+    - GREEN
+    - YELLOW

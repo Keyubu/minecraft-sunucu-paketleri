@@ -1,0 +1,63 @@
+# ##########################################################################################
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+# ##########################################################################################
+
+admin:
+  level:
+    parameters: <player>
+    description: calculate the island level for player
+    sethandicap:
+      parameters: <player> <handicap>
+      description: set the island handicap, usually the level of the starter island
+      changed: '&a Initial island handicap changed from [number] to [new_number].'
+      invalid-level: '&c Invalid handicap. Use an integer.'
+  levelstatus:
+    description: show how many islands are in the queue for scanning
+    islands-in-queue: '&a Islands in queue: [number]'
+  top:
+    description: show the top ten list
+    unknown-world: '&c Unknown world!'
+    display: '&f[rank]. &a[name] &7- &b[level]'
+    remove:
+      description: remove player from Top Ten
+      parameters: <player>
+
+
+island:
+  level:
+    parameters: '[player]'
+    description: calculate your island level or show the level of [player]
+    calculating: '&a Calculating level...'
+    estimated-wait: '&a Estimated wait: [number] seconds'
+    in-queue: '&a You are number [number] in the queue'
+    island-level-is: '&a Island level is &b[level]'
+    required-points-to-next-level: '&a [points] points required until the next level'
+    deaths: '&c([number] deaths)'
+    cooldown: '&c You must wait &b[time] &c seconds until you can do that again'
+    in-progress: '&6 Island level calculation is in progress...'
+    time-out: '&c The level calculation took too long. Please try again later.'
+  
+  top:
+    description: show the Top Ten
+    gui-title: '&a Top Ten'
+    gui-heading: '&6[name]: &B[rank]'
+    island-level: '&b Level [level]'
+    warp-to: '&A Warping to [name]''s island'
+  
+  level-details:
+    above-sea-level-blocks: Above Sea Level Blocks
+    spawners: Spawners
+    underwater-blocks: Underwater Blocks
+    all-blocks: All Blocks
+    no-island: '&c No island!'
+    names-island: '[name]''s island'
+    syntax: '[name] x [number]'
+    hint: '&c Run level to see the block report'
+  
+  value:
+    description: shows the value of any block
+    success: '&7 The value of this block is: &e[value]'
+    success-underwater: '&7 The value of this block below sea-level: &e[value]'
+    empty-hand: '&c There are no blocks in your hand'
+    no-value: '&c That item has no value.'

@@ -1,0 +1,22 @@
+block-limits:
+  hit-limit: ＆c[material]は[number]に制限されています！
+entity-limits:
+  hit-limit: ＆c[entity]の生成は[number]に制限されています！
+admin:
+  limits:
+    main:
+      parameters: <プレイヤー>
+      description: プレイヤーの島の制限を表示する
+    calc:
+      parameters: <プレイヤー>
+      finished: ＆a島の再計算が正常に完了しました！
+      description: プレイヤーの島の制限を再計算します
+island:
+  limits:
+    block-limit-syntax: '[number]/[limit]'
+    description: 島の限界を示す
+    max-color: ＆c
+    regular-color: ＆a
+    no-limits: ＆cこの世界には制限がありません
+limits:
+  panel-title: 島の制限

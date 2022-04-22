@@ -1,0 +1,633 @@
+challenges:
+  commands:
+    admin:
+      main:
+        description: Hauptadministrationsbefehl. Öffnet GUI.
+      import:
+        parameters: '[overwrite]'
+        description: |-
+          Herausforderungen aus der challenges.yml importieren
+          Parameter überschreiben bedeutet, dass Herausforderungen oder Level mit der gleichen ID überschrieben werden.
+      reload:
+        parameters: '[hard]'
+        description: |-
+          Herausforderungen aus der Datenbank neu laden
+          Parameter hard bedeutet, dass Addon die Verbindung zur Datenbank zurücksetzen wird.
+      defaults:
+        parameters: '[command]'
+        description: Zeigt Unterbefehle zum Importieren/Exportieren der Standardherausforderungen.
+      defaults-generate:
+        parameters: '[overwrite] - Erlaubt es eine bereits existierende Datei zu überschreiben'
+        description: Bestehende Herausforderungen in default.json Datei exportieren.
+      complete:
+        parameters: <player> <challenge_id>
+        description: Eine Herausforderung für einen Spieler abschließen.
+      reset:
+        parameters: <player> <challenge_id>
+        description: Eine Herausforderung für einen Spieler zurücksetzen. Wenn "challenge_id"
+          auf "all" gesetzt ist, werden alle Herausforderungen zurückgesetzt.
+      migrate:
+        description: Migrieren der aktuellen Spielwelt Herausforderungen Daten auf
+          0.8.0 Speicherformat.
+      show:
+        description: Schreibt alle Herausforderungen in den Chat, die es auf dieser
+          Welt gibt.
+      defaults-import:
+        description: Importiert die Standardherausforderungen.
+    user:
+      complete:
+        parameters: <challenge_id> [count]
+        description: Herausforderung abschließen.
+      main:
+        description: Herausforderungen GUI öffnen.
+  gui:
+    title:
+      admin:
+        gui-title: '&aHerausforderungen Admin'
+        edit-challenge-title: '&aBearbeite die Herausforderungen'
+        edit-level-title: '&aEditiere das Level'
+        settings-title: '&aEinstellungen bearbeiten'
+        choose-challenge-title: '&aHerausforderung auswählen'
+        choose-level-title: '&aStufe wählen'
+        choose-user-title: '&aSpieler auswählen'
+        manage-blocks: '&aBlöcke verwalten'
+        manage-entities: '&aObjekte verwalten'
+        confirm-title: '&aBestätigung'
+        manage-items: '&aItems verwalten'
+        manage-numbers: '&aNummernblock'
+        select-block: '&aBlock wählen'
+        select-challenge: '&aHerausforderung auswählen'
+        select-entity: '&aObjekt auswählen'
+        toggle-environment: '&aUmschalten der Umgebung'
+        edit-text-fields: '&aTextfelder bearbeiten'
+        library-title: '&aDownloadbare Bibliotheken'
+        lore-add: '&aHinzufügen von Machtelementen'
+        lore-remove: '&aEntfernen von Überlieferungselement'
+        lore-edit: '&aBearbeiten von Überlieferungen'
+        type-select: '&aHerausforderungstyp wählen'
+      challenges: '&6Herausforderungen'
+      game-modes: '&6Spielmodus wählen'
+      multiple-complete: '&6Wie oft?'
+    buttons:
+      admin:
+        complete: Vollständige Benutzerherausforderung
+        reset: Benutzer-Herausforderung zurücksetzen
+        create-challenge: Hinzufügen einer neuen Herausforderung
+        create-level: Hinzufügen eines neuen Levels
+        edit-challenge: 'Herausforderung bearbeiten '
+        edit-level: Level bearbeiten
+        delete-challenge: Herausforderung entfernen
+        delete-level: Level entfernen
+        properties: Eigenschaften
+        requirements: Anforderungen
+        rewards: Belohnungen
+        challenges: Herausforderungen
+        deployment: Aufstellung
+        icon: Symbol
+        locked-icon: Gesperrtes Icon
+        description: Beschreibung
+        order: Order
+        environment: Umgebung
+        remove-on-complete: Nach Fertigstellung entfernen
+        required-experience: Benötigte Erfahrung
+        remove-experience: Erfahrung entfernen
+        required-level: Benötigtes Insellevel
+        required-money: Benötigtes Geld
+        remove-money: Geld entfernen
+        reward-text: Belohnungsnachricht
+        reward-items: Item Belohnung
+        reward-experience: Erfahrungsbelohnung
+        reward-money: Geld Belohnung
+        reward-commands: Belohnungs-Befehle
+        repeatable: Wiederholbar
+        repeat-count: Max Wiederholung
+        repeat-reward-text: Belohnungsnachricht wiederholen
+        repeat-reward-items: Item Belohnung wiederholen
+        repeat-reward-experience: Erfahrungsbelohnung wiederholen
+        repeat-reward-money: Geld Belohnung wiederholen
+        repeat-reward-commands: Belohnungsbefehle wiederholen
+        remove-completed: Nach Fertigstellung entfernen
+        glow: Leuchtet nach Fertigstellung
+        free-at-top: Freie Herausforderungen zuerst
+        line-length: Länge der Striche
+        add: Hinzufügen
+        accept: Akzeptieren
+        decline: Ablehnen
+        save: speichern
+        cancel: Abbrechen
+        input: Eingabe
+        value: Wert
+        set: =
+        increase: +
+        reduce: '-'
+        multiply: '*'
+        clear: Löschen
+        remove-empty: Leer entfernen
+        number: '[number]'
+        history-lifespan: Übersicht Lebensdauer
+        input-mode: Eingabemodus wechseln
+        title-enable: Fertigstellungstitel
+        library: Webbibliothek
+        download: Download Bibliotheken
+        type:
+          island: '&6Inseltyp'
+          inventory: '&6Inventartyp'
+          other: '&6Anderer Typ'
+        import: ASkyblock-Herausforderungen importieren
+        settings: Einstellungen bearbeiten
+        name: Freundliche Bezeichnung
+        required-entities: Erforderliche Einheiten
+        remove-entities: Töte Einheiten
+        required-blocks: Erforderliche Blöcke
+        remove-blocks: Blöcke entfernen
+        search-radius: Suchradius
+        required-permissions: Erforderliche Berechtigungen
+        required-items: Erforderliche Items
+        remove-items: Items entfernen
+        waiver-amount: Verzichtsmenge
+        add-challenge: Herausforderung hinzufügen
+        remove-challenge: Herausforderung entfernen
+        reset-on-new: Reset auf neuer Insel
+        broadcast: Fertigstellung der Übertragung
+        visibility-mode: Herausforderung Sichtbarkeitsmodus
+        toggle-user-list: Benutzerliste
+        remove-selected: Auswahl entfernen
+        show-eggs: Ansichtsmodus wechseln
+        level-lore: Level-Beschreibung
+        challenge-lore: Beschreibung der Herausforderung
+        gui-view-mode: Alle Spielmodi anzeigen
+        gui-mode: Einzelne Herausforderungen GUI
+        history-store: Herausforderungen Historie
+        island-store: Shop pro Insel
+        default-locked-icon: Symbol für gesperrte Level
+        title-showtime: Titel Anzeigezeit
+        default-import: Importieren von Standardherausforderungen
+        default-export: Bestehende Herausforderungen exportieren
+        complete-wipe: Addon-Datenbanken löschen
+        challenge-wipe: Herausforderungen Datenbank löschen
+        players-wipe: Benutzerdatenbank löschen
+      next: Nächste Seite
+      previous: Vorherige Seite
+      return: Zurück
+      value: Abgeschlossen
+      increase: Erhöhen
+      reduce: Reduzieren
+    descriptions:
+      admin:
+        input: Öffne Textfeldeingabe.
+        deployment: Ermöglicht es den Benutzern, die Herausforderung abzuschließen
+          (anzusehen).
+        icon-challenge: Symbol, das in GUI-Panels für diese Herausforderung angezeigt
+          wird.
+        icon-level: Symbol, das in den GUI-Panels für dieses Level angezeigt wird.
+        remove-completed: Aktiviert/deaktiviert das Ausblenden von Herausforderungen,
+          die abgeschlossen sind und nicht wiederholt werden können.
+        toggle-user-list: Zu einer anderen Spielerliste wechseln.
+        selected: Ausgewählt
+        show-eggs: Wechselt die Ansicht der Objekte zwischen Eimodus oder Kopfmodus.
+        click-to-edit: '&4Hier klicken, um Eingaben zu bearbeiten.'
+        input-mode: Wechsel zwischen Chat- und Amboss-Eingabemodus.
+        library-author: by &e[author]
+        library-lang: '&aSprache: [lang]'
+        library-gamemode: '&aPrimär für [gamemode]'
+        download-disabled: GitHub-Daten-Downloader ist in BentoBox deaktiviert. Ohne
+          ihn können keine Bibliotheken verwendet werden!
+        create-level: Neues Level hinzufügen.
+        edit-challenge: Herausforderung-Einstellungen bearbeiten.
+        edit-level: Level-Einstellungen bearbeiten.
+        delete-challenge: Eine Herausforderung entfernen.
+        delete-level: Ein Level entfernen.
+        settings: Einstellungen ändern.
+        properties: Allgemeine Eigenschaften ändern
+        requirements: Anforderungen verwalten
+        rewards: Belohnungen verwalten
+        description: Beschreibung bearbeiten.
+        order: Auftragsnummer ändern.
+        environment: Herausforderung Umfeld ändern.
+        name-challenge: Herausforderung Anzeigename ändern.
+        name-level: Level Anzeigename ändern.
+        remove-entities: Entferne (töte) Entitäten nach Abschluss der Herausforderung.
+        remove-blocks: Entferne ( ersetze durch Luft ) Blöcke nach Abschluss der Herausforderung.
+        search-radius: Radius um den Standort des Spielers, in dem die benötigten
+          Einheiten und Blöcke gesucht werden.
+        reward-text: Ändere die Nachricht, die dem Spieler nach Abschluss der Herausforderung
+          geschickt wird.
+        repeatable: Definiert, ob die Herausforderung wiederholbar ist oder nicht.
+        free-at-top: Freie Herausforderungen Standort wechseln. True bedeutet, diese
+          Herausforderungen werden die Ersten sein, sonst die Letzten.
+        line-length: Ändern der maximalen Zeilenlänge in der Lore Box. Hat keinen
+          Einfluss auf gespeicherte Objekte.
+        level-lore: Ändern welche Elemente der Levelbeschreibung sichtbar sein sollen.
+        challenge-lore: Ändern welche Elemente der Herausforderungsbeschreibung sichtbar
+          sein sollen.
+        gui-view-mode: Festlegen, ob /challenges GUI die Spielmodi oder Herausforderungen
+          in der Welt des Spielers anzeigen soll.
+        history-store: Aktivieren/Deaktivieren der Historienspeicherung von Herausforderungen.
+        default-import: Importieren von Standardherausforderungen.
+        default-export: Bestehende Herausforderungen in die Datei defaults.json exportieren.
+        complete-wipe: Vollständig alle Herausforderungen Addon-Datenbanken löschen.
+          Inklusive Spielerdaten!
+        challenge-wipe: Vollständig Herausforderungen und deren Leveldatenbanken löschen!
+        players-wipe: Vollständige Spielerdatenbank löschen!
+        library: Öffnet ein GUI, das alle verfügbaren öffentlichen Herausforderungen-Bibliotheken
+          anzeigt.
+        library-version: '&9Gemacht in Herausforderungen [version]'
+        save: Speichern und zur vorherigen GUI zurückkehren.
+        cancel: Rückkehr zur vorherigen GUI. Änderungen werden nicht gesichert.
+        set: Betrieb einstellen. Durch Anklicken der Zahlen wird der Wert auf die
+          ausgewählte Zahl geändert.
+        increase: Betrieb erhöhen. Durch Anklicken der Zahlen wird der Wert um die
+          gewählte Zahl erhöht.
+        reduce: Betrieb reduzieren. Durch Anklicken der Zahlen wird der Wert um die
+          gewählte Zahl reduziert.
+        multiply: Betrieb multiplizieren. Durch Anklicken der Zahlen wird der Wert
+          mit der ausgewählten Zahl multipliziert.
+        challenges: Verwalten von Level-Herausforderungen (hinzufügen/entfernen).
+        locked-icon: Symbol, das in GUI-Panels angezeigt wird, wenn das Level gesperrt
+          ist.
+        remove-on-complete: Entfernen einer Herausforderung aus der GUI eines Spielers,
+          nachdem sie abgeschlossen ist.
+        remove-items: Entfernen von Items aus dem Inventar des Spielers nach Abschluss
+          der Herausforderung.
+        required-experience: Die erforderliche Erfahrung für einen Benutzer festlegen,
+          um die Herausforderung abzuschließen.
+        remove-experience: Erforderliche Erfahrung entfernen.
+        reward-experience: Ändern der Erfahrungsbelohnung für den ersten Abschluss.
+        repeat-count: Maximale Anzahl der Wiederholungen festlegen. Wird der Wert
+          auf 0 gesetzt, gibt es keine Einschränkungen.
+        repeat-reward-text: Ändern der Nachricht, die dem Spieler nach dem wiederholten
+          Abschluss der Herausforderung geschickt wird.
+        repeat-reward-experience: Ändern der Erfahrungsbelohnung für den ersten Abschluss.
+        waiver-amount: Legt die Anzahl der Herausforderungen fest, die ein Spieler
+          auslassen kann, um das nächste Level freizuschalten.
+        reward-text-level: Ändere die Nachricht, die dem Spieler nach Abschluss aller
+          Herausforderungen in einem Level geschickt wird.
+        add-challenge: Fügt dem aktuellen Level eine bestehende Herausforderung hinzu.
+        remove-challenge: Eine Herausforderung aus dem aktuellen Level entfernen.
+        reset-on-new: Aktiviert/deaktiviert die Resets aller Herausforderungen für
+          einen Spieler, wenn er neu startet, die Insel verlässt oder von ihr gekickt
+          wird.
+        broadcast: Aktiviert/Deaktiviert die Übertragung über den Abschluss der ersten
+          Herausforderung für alle Spieler die online sind.
+        glow: Aktiviert/deaktiviert den Leuchteffekt für abgeschlossene Herausforderungen.
+        mode-online: Spieler, die gerade online sind.
+        mode-in-world: Spieler in einer Spielmodus-Welt.
+        mode-with-island: Spieler, die eine Insel in einer Spielmodus-Welt haben.
+        visibility-mode: Ein-/ausblenden von nicht umgesetzten Herausforderungen.
+        edit-text-line: '&6Textnachricht bearbeiten!'
+        add-text-line: '&6Neue Textnachricht hinzufügen!'
+        title-enable: Aktivieren/deaktivieren der Titelnachricht, die den Spielern
+          angezeigt wird, wenn sie eine Herausforderung abschließen.
+        title-showtime: Ändern wie lange Titelmeldungen für den Spieler sichtbar sein
+          sollen.
+        import: |-
+          ASkyblock-Herausforderungen importieren.
+          Bei Rechtsklick wird der Überschreibmodus aktiviert/deaktiviert.
+          Platziere die challenges.yml im Ordner ./BentoBox/addons/Challenges.
+        complete: |-
+          Herausforderung für jeden Benutzer abschließen.
+          Der Benutzer erhält keine Belohnung für den Abschluss.
+        reset: |-
+          Abgeschlossene Benutzerherausforderungen zurücksetzen.
+          Rechtsklick aktiviert/deaktiviert zurücksetzen aller Funktionen.
+        create-challenge: |-
+          Neue Herausforderung hinzufügen.
+          Wird standardmäßig in der Liste der freien Herausforderungen stehen.
+        required-entities: |-
+          Hinzufügen/Bearbeiten/Entfernen von erforderlichen Einheiten.
+          Einheiten:
+        required-blocks: |-
+          Erforderliche Blöcke hinzufügen/bearbeiten/entfernen.
+          Blöcke:
+        required-permissions: |-
+          Benötigte Berechtigungen für den Spieler, um diese Herausforderung abzuschließen.
+          Berechtigung:
+        required-items: |-
+          Benötigte Items im Inventar des Spielers.
+           Items:
+        required-level: |-
+          Legt das für diese Herausforderung erforderliche Insellevel fest.
+          &cBenötigt Level-Addon.'
+        required-money: |-
+          Legt das erforderliche Geld auf dem Spielerkonto fest.
+          &cErfordert Vault und ein Economy-Plugin.'
+        remove-money: |-
+          Entfernt das erforderliche Geld vom Spielerkonto.
+          &cErfordert Vault und ein Economy-Plugin.'
+        reward-items: |-
+          Ändere die Itembelohnungen für den erstmaligen Abschluss.
+          Items:
+        reward-money: |-
+          Ändere die Geldbelohnung für den ersten Abschluss.
+          &cErfordert Vault und Economy-Plugin.
+        reward-commands: |-
+          Legt Belohnungsbefehle fest, die nach der ersten Ausführung aufgerufen werden.
+          ***Das Hinzufügen von "[SELF]" am Anfang bedeutet, dass der Befehl vom Spieler ausgeführt wird, z.B. "/kill".
+          ***Zeichenfolge "[player]" wird durch den Spielernamen ersetzt, z.B. wird "/kill [player]" in "/kill BONNe1704" umgewandelt
+          Befehle:
+        repeat-reward-items: |-
+          Ändert die Itembelohungen für den wiederholten Abschluss.
+          Items:
+        repeat-reward-money: |-
+          Ändert die Geldbelohnung für den wiederholten Abschluss.
+          &cErfordert Vault und ein Economy-Plugin.
+        repeat-reward-commands: |-
+          Legt Belohnungsbefehle fest, die nach wiederholter Ausführung der Herausforderung ausgeführt werden.
+          ***Hinzufügen von "[SELF]" am Anfang bedeutet, dass der Befehl vom Spieler ausgeführt wird, z.B. "/kill".
+          ***Zeichenfolge "[player]" wird durch den Spielernamen ersetzt, z.B. wird "/kill [player]" in "/kill BONNe1704" umgewandelt
+          Befehle:
+        remove-selected: |-
+          Ausgewählte Elemente entfernen.
+          Elemente mit der rechten Maustaste auswählen.
+        history-lifespan: |-
+          Ändern für wie viele Tage die Daten der Historie gespeichert werden sollen.
+          0 bedeutet für immer.
+        island-store: |-
+          Aktivieren/Deaktivieren der Herausforderungen Datenspeicherung pro Insel. Das bedeutet, dass die Herausforderungen für das gesamte Team gleich sind, wenn dies aktiviert ist.
+          &cWird NICHT bei Klick Daten konvertieren. DER FORTSCHRITT GEHT VERLOREN.
+        default-locked-icon: |-
+          Ändert das Standardsymbol des gesperrten Levels.
+          Diese Option kann von jedem Level überschrieben werden.'
+        gui-mode: |-
+          Aktivieren/Deaktivieren einzelner Herausforderungen GUI.
+          &2Erfordert einen Server-Neustart.'
+        download: |-
+          Manuelle Aktualisierung der verfügbaren Herausforderungen-Bibliotheken.
+          Rechtsklick zum Aktivieren der Cache-Leerung.'
+        lore:
+          level: |-
+            Level-Zeichenfolge.
+            Stellt die Übersetzung challenge.gui.challenge-description.level dar.
+          status: |-
+            Status-Zeichenfolge.
+            Stellt die Übersetzung challenge.gui.challenge-description.completed dar.
+          count: |-
+            Zeichenfolge für den Abschluss der Zählung.
+            Stellt die Übersetzung für challenges.gui.challenge-description.completed-times dar.
+            challenges.gui.challenge-description.completed-times-of
+            und challenges.gui.challenge-description.maxed-reached
+          description: |-
+            Beschreibung Zeichenfolge.
+            Festgelegt in Challenge-Objekt - challenge.description.
+          warnings: |-
+            Warnzeichenfolge.
+            Stellt die Übersetzung dar für:
+            challenges.gui.challenge-description.warning-items-take
+            challenges.gui.challenge-description.objects-close-by
+            challenges.gui.challenge-description.warning-entities-kill
+            challenges.gui.challenge-description.warning-blocks-remove
+          environment: |-
+            Umgebung Zeichenkette.
+            Festgelegt in Challenges Objekt - challenge.environment.
+          requirements: |-
+            Anforderungszeichenfolge.
+            Stellt die Übersetzung dar von:
+            challenges.gui.challenge-description.required-level
+            challenges.gui.challenge-description.required-money
+            challenges.gui.challenge-description.required-experience
+            challenge.requiredItems'
+            challenge.requiredBlocks'
+            or challenge.requiredEntities.
+          reward_text: |-
+            Belohnungs-Zeichenfolge.
+            Festgelegt in challenge.rewardText und challenge.repeatRewardText
+          reward_other: |-
+            Belohnung andere Zeichenfolge.
+            Stellt die Übersetzung dar für:
+            challenges.gui.challenge-description.experience-reward
+            challenges.gui.challenge-description.money-reward
+            challenges.gui.challenge-description.not-repeatable
+          reward_items: |-
+            Itembelohnungen.
+            Liste der Items, die zu Belohnungen werden, festgelegt in challenge.rewardItems und challenge.repeatRewardItems.
+          reward_commands: |-
+            Belohnungsbefehle.
+            Liste der Befehle, die Belohnen sollen, festgelegt in challenge.rewardCommands und challenge.repeatRewardCommands.
+          level_status: |-
+            Status-Zeichenfolge.
+            Stellt die Übersetzung von challenges.gui.level-description.completed dar.
+          challenge_count: |-
+            Abgeschlossener Herausforderung Zähl Zeichenfolge
+            Stellt die Übersetzung für challenges.gui.level-description.completed-challenges-of dar.
+          unlock_message: |-
+            Entsperren der Nachricht Zeichenfolge.
+            Festgelegt in Herausforderungen Levelobjekt - challengeLevel.unlockMessage
+          waiver_amount: |-
+            Die Anzahl der versetzbaren Herausforderungen, um die nächste Level-Zeichenkette freizuschalten.
+            Stellt die Übersetzung für challenges.gui.level-description.waver-amount dar
+          level_reward_text: |-
+            Belohnungs-Zeichenfolge.
+            Festgelegt in challengeLevel.rewardText
+          level_reward_other: |-
+            Belohnung anderer Zeichenfolge.
+            Stellt die Übersetzung dar für:
+            challenges.gui. level-description. experience-reward.
+            challenges.gui. level-description. money-reward
+          level_reward_items: |-
+            Itembelohnungen.
+            Liste der Items, die zu Belohnungen werden, festgelegt in challengeLevel.rewardItems
+          level_reward_commands: |-
+            Belohnungsbefehle.
+            Liste der Befehle, die zu Belohnungen führen, festgelegt in challengeLevel.rewardCommands
+      enabled: Aktiv
+      disabled: Deaktiviert
+      the-end: '- End'
+      nether: '- Nether'
+      normal: '- Oberwelt'
+      entity: '- [entity] : [count]'
+      block: '- [block] : [count]'
+      permission: '- [permission]'
+      item: '- [count] x [item]'
+      item-meta: ([meta])
+      item-enchant: '- [enchant] [level]'
+      command: '- [command]'
+      level-unlocked: Klicke, um [level] Herausforderungen zu sehen!
+      level-locked: Schließe [count] weitere [level] Herausforderungen ab, um dieses
+        Level freizuschalten!
+      increase-by: '&aErhöhung der Fertigstellung um [value]'
+      reduce-by: '&cReduzierung  der Fertigstellungen um [value]'
+      visibility:
+        hidden: Nur eingesetzte Herausforderungen sind sichtbar.
+        visible: Alle Herausforderungen sind für jeden sichtbar
+        toggleable: Umschalten, ob nicht verteilte Herausforderungen angezeigt werden
+          sollen
+      type:
+        island: '&aErfordert Blöcke oder Mobs um Spieler'
+        other: '&aErfordert Dinge von anderen Plugins/Addons'
+        inventory: '&aErforderliche Items im Inventar des Spielers'
+      current-value: '&6Aktueller Wert: [value].'
+    challenge-description:
+      completed-times-of: '[donetimes] erledigt aus [maxtimes]'
+      maxed-reached: '[donetimes] erledigt aus [maxtimes]'
+      completed-times: '[donetimes] erledigt'
+      objects-close-by: '&cAlle benötigten Blöcke und Objekte müssen sich in deiner
+        Nähe auf deiner Insel befinden!'
+      warning-entities-kill: '&cAlle erforderlichen Einheiten werden getötet, wenn
+        du diese Herausforderung abschließt!'
+      warning-blocks-remove: '&cAlle benötigten Blöcke werden entfernt, wenn du diese
+        Herausforderung abschließt!'
+      not-repeatable: '&cDiese Herausforderung ist nicht wiederholbar!'
+      experience-reward: '&6Exp Belohnung: [value]'
+      money-reward: '&6Geld Belohnung: $[value]'
+      required-experience: '&6Erforderliche Exp: [value]'
+      required-money: '&6Erforderliches Geld: $[value]'
+      required-island-level: '&6Erforderliches Insellevel: [value]'
+      environment: 'Erforderliche Umgebungen:'
+      reward-items: '&6Item Belohnungen:'
+      reward-commands: '& 6Belohnungsbefehle:'
+      required-items: 'Erforderliche Items:'
+      required-entities: 'Erforderliche Einheiten:'
+      required-blocks: 'Erforderliche Blöcke:'
+      level: '&fLevel: [level]'
+      completed: '&bAbgeschlossen'
+      warning-items-take: '&cAlle erforderlichen Items werden aus deinem Inventar
+        genommen, wenn du diese Herausforderung abschließt!'
+      rewards-title: '& a Belohnungen:'
+    level-description:
+      experience-reward: '&6Exp Belohnung: [value]'
+      money-reward: '&6Geldbelohnung: $[value]'
+      reward-items: '&6Item Belohnungen:'
+      reward-commands: '&6Belohnungsbefehle:'
+      waver-amount: '&6[value] Herausforderungen können übersprungen werden, um das
+        nächste Level freizuschalten.'
+      completed: '&bAbgeschlossen'
+      completed-challenges-of: '&3Du hast [number] aus [max] Herausforderungen in
+        diesem Level abgeschlossen.'
+    item-description:
+      item: '- [count] x [item]'
+      item-meta: ([meta])
+      item-enchant: '- [enchant] [level]'
+      item-name: '[name]'
+      item-lore: 'Item Lore:'
+      book-meta: '[title] von [author]'
+      recipe-count: '[count] Rezepte'
+      armor-color: '[color]'
+      potion-type-extended-upgraded: Erweitert und verbessert [name]
+      potion-type-upgraded: Aktualisiert [name]
+      potion-type-extended: Erweitert [name]
+      potion-type: '[name]'
+      custom-effects: 'Benutzerdefinierte Effekte:'
+      potion-effect: '[effect] x [amplifier] für [duration]t'
+      skull-owner: '[owner]'
+      egg-meta: '[mob]'
+      fish-meta: '[body-color] mit [pattern-color] [pattern]'
+    questions:
+      prefix: '&2[SERVER]:'
+      admin:
+        unique-id: Schreiben Sie die eindeutige ID eines Objekts und drücken Sie die
+          Eingabetaste.
+        number: Schreibe eine Zahl in den Chat und drücke die Eingabetaste.
+        challenge-name: Schreibe den Anzeigenamen für die aktuelle Herausforderung
+          in den Chat.
+        level-name: Schreibe den Anzeigenamen für das aktuelle Level in den Chat.
+  titles:
+    challenge-title: Erfolgreich abgeschlossen
+    challenge-subtitle: '[friendlyName]'
+    level-title: Erfolgreich abgeschlossen
+    level-subtitle: '[friendlyName]'
+  messages:
+    admin:
+      you-added: Du hast der Herausforderung eine [thing] hinzugefügt
+      challenge-created: '[challenge] &r erstellt!'
+      completed: Du hast Herausforderung [name] für [player] abgeschlossen!
+      already-completed: '&2Diese Herausforderung wurde bereits abgeschlossen!'
+      reset: '&2Du setzt Herausforderung [name] für  [player] zurück!'
+      reset-all: '&2Alle [Player] Herausforderungen wurden zurückgesetzt!'
+      not-completed: '&2Diese Herausforderung ist noch nicht abgeschlossen!'
+      migrate-start: '&2Beginne Migration von Herausforderungen Addon-Daten.'
+      migrate-not: '&2Alle Daten sind gültig.'
+      start-downloading: '&5Starten des Downloads und Imports der Herausforderungen-Bibliothek.'
+      migrate-end: '&2Herausforderungen Addon-Daten auf neues Format aktualisiert.'
+      hit-things: Anklicken der Dinge, um sie zur Liste der benötigten Dinge hinzuzufügen.
+        Rechtsklick, wenn du fertig bist.
+      complete-wipe: '&cHoffentlich hast du Backups, denn du hast gerade alle Datenbanken
+        des Challenges Addons gelöscht!'
+      challenge-wipe: '&cHoffentlich hast du Backups, denn du hast gerade alle Herausforderungen
+        und ihre Level gelöscht!'
+      players-wipe: '&cHoffentlich hast du Backups, denn du löschst einfach alle abgeschlossenen
+        Herausforderungen des Spielers!'
+    you-completed-challenge: '&2Du hast die [value] &r&2Herausforderungen abgeschlossen!'
+    you-repeated-challenge: '&2Du hast die [value] &r&2Herausforderung wiederholt!'
+    you-repeated-challenge-multiple: '&2Du hast die [value] &r&2Herausforderungen
+      [count] mal wiederholt!'
+    you-completed-level: '&2Du hast den [value] &r&2level abgeschlossen!'
+    name-has-completed-challenge: '&5[name] hat die [value] &r&5-Herausforderung abgeschlossen!'
+    name-has-completed-level: '&5[name] hat den [value] &r&5Level abgeschlossen!'
+    import-levels: Startet Importieren von Leveln
+    import-challenges: Startet Importieren von Herausforderungen
+    no-levels: 'Warnung: Keine Level in der challenges.yml definiert'
+    import-number: '[number] Herausforderungen importiert'
+    load-skipping: '"[value]" existiert bereits - überspringen'
+    load-overwriting: Überschreibt "[value]"
+    load-add: 'Neues Objekt hinzufügen: [value]'
+    defaults-file-overwrite: defaults.json existiert. Sie wird überschrieben.
+    defaults-file-completed: defaults.json Datei ist mit Herausforderungen von [world]
+      belegt!
+  errors:
+    no-name: '&cFehlender Herausforderungsname'
+    unknown-challenge: '&cUnbekannte Herausforderung'
+    unique-id: '&cEindeutige ID "[id]" ist nicht gültig.'
+    wrong-icon: '&cGegebenes Material "[value]" ist nicht gültig und kann nicht als
+      Symbol verwendet werden.'
+    not-deployed: '&cHerausforderung wird nicht eingesetzt!'
+    not-on-island: '&cDu musst auf deiner Insel sein, um das zu tun!'
+    not-repeatable: '&cDiese Herausforderung ist nicht wiederholbar!'
+    not-enough-items: '&cDu hast nicht genug [items], um diese Herausforderung abzuschließen!'
+    not-close-enough: '&cDu musst innerhalb von [number] Blöcken aller benötigten
+      Positionen stehen.'
+    you-still-need: '&cDu brauchst noch [amount] x [item]'
+    not-enough-money: '&cEs ist notwendig, [value] auf deinem Konto zu haben, um die
+      Herausforderung abzuschließen.'
+    import-no-file: '&cEs konnte keine challenges.yml Datei zum Importieren gefunden
+      werden!'
+    no-load: '&cFehler: Die challenges.yml konnte nicht geladen werden.[message]'
+    load-error: '&cFehler: [value] kann nicht geladen werden.'
+    defaults-file-exist: '&cdefaults.json existiert bereits. Benutze den Überschreibungsmodus,
+      um sie zu ersetzen!'
+    defaults-file-error: '&cBeim Erstellen der Datei defaults.json ist ein Fehler
+      aufgetreten! Konsole überprüfen!'
+    missing-arguments: '&cDem Befehl fehlen Argumente.'
+    wrong-environment: '&cDu bist in der falschen Umgebung!'
+    missing-addon: '&cKann die Herausforderung nicht vollenden: Benötigtes Addon oder
+      Plugin fehlt.'
+    exist-challenges-or-levels: '&cDie Herausforderung existiert bereits in deiner
+      Welt. Kann nicht fortfahren!'
+    no-challenges: '&cDie Herausforderungen sind in dieser Welt noch nicht implementiert!'
+    no-challenges-admin: '&cDie Herausforderungen sind in dieser Welt noch nicht implementiert!
+      Verwende &5/[command] &cum sie hinzuzufügen!'
+    missing-level: '&cHerausforderung Level [level] ist in der Datenbank nicht festgelegt.
+      Dies kann Fehler verursachen!'
+    no-multiple-permission: '&cDu hast keine Berechtigung, diese Herausforderung mehrmals
+      hintereinander auszuführen.'
+    not-a-integer: '&cDer angegebene Wert "[value]" ist keine ganze Zahl!'
+    challenge-level-not-available: '&cDu hast das erforderliche Level nicht freigeschaltet,
+      um diese Herausforderung abzuschließen.'
+    incorrect: '&cKann die Herausforderung nicht abschließen: Anforderungen sind falsch.'
+    not-enough-experience: '&cEs ist notwendig [value] EXP zu haben, um diese Herausforderung
+      abzuschließen.'
+    island-level: '&cDeine Insel muss mindestens Level [number] oder höher sein, um
+      diese Herausforderung abzuschließen!'
+    no-rank: '&cDu hast keinen Rang, der hoch genug ist, um das zu tun.'
+    cannot-remove-items: '&cEinige Items können nicht aus deinem Inventar entfernt
+      werden!'
+    not-valid-integer: |-
+      &cDie Angabe der ganzen Zahl "[value]" ist nicht gültig!
+      Der Wert sollte zwischen [min] und [max] liegen.
+    invalid-level: '& c Level [Level] enthält ungültige Daten. Es wird nicht aus der
+      Datenbank geladen!'
+    invalid-challenge: '& c Challenge [Challenge] enthält ungültige Daten. Sie wird
+      nicht aus der Datenbank geladen!'
+protection:
+  flags:
+    CHALLENGES_ISLAND_PROTECTION:
+      description: '&5&Umschalten, wer  &5&Herausforderungen erledigen kann'
+      name: Herausforderungen Schutz
+    CHALLENGES_WORLD_PROTECTION:
+      name: Herausforderungen Inselbegrenzung
+      hint: Keine Herausforderungen außerhalb der Insel
+      description: "&5&oAktivieren/Deaktivieren von \n&5&oAnforderung für Spieler,\n\
+        &5&oauf ihrer Insel zu sein, um \n&5&oeine Herausforderung abzuschließen."
+version: 11
+meta:
+  authors:
+    '0': xXjojoXx

@@ -1,0 +1,31 @@
+{
+  "uniqueId": "BSkyBlock_elite",
+  "friendlyName": "Elite",
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MAGENTA_CONCRETE\n",
+  "world": "bskyblock_world",
+  "order": 5,
+  "waiverAmount": 0,
+  "unlockMessage": "Congratulations - you unlocked the &dElite level!",
+  "rewardText": "Small reward for completing all Elite challenges.",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_SWORD\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      LOOT_BONUS_MOBS: 3\n      DAMAGE_ALL: 5\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BOW\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      ARROW_FIRE: 1\n      ARROW_INFINITE: 1\n      ARROW_DAMAGE: 5\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ELYTRA\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DURABILITY: 3\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: TRIDENT\n  meta:\n    ==: ItemMeta\n    meta-type: UNSPECIFIC\n    enchants:\n      DURABILITY: 3\n"
+  ],
+  "rewardExperience": 8670,
+  "rewardMoney": 0,
+  "rewardCommands": [
+    "effect give [player] luck 600"
+  ],
+  "challenges": [
+    "BSkyBlock_diamondage",
+    "BSkyBlock_elite",
+    "BSkyBlock_engineer",
+    "BSkyBlock_enderkiller",
+    "BSkyBlock_beaconator",
+    "BSkyBlock_visitend",
+    "BSkyBlock_glassmaker",
+    "BSkyBlock_terracottamaker"
+  ]
+}

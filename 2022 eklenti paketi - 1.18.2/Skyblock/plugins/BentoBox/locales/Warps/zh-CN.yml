@@ -1,0 +1,26 @@
+warp:
+  help:
+    description: 传送到该玩家的传送木牌处
+    parameters: <player name>
+warps:
+  help:
+    description: 打开传送面板
+  title: 传送木牌
+  deactivate: '&c 旧传送牌已停用！'
+  error:
+    does-not-exist: '&c 哦不！那个传送点已经没了！'
+    no-permission: '&c 你无权那样做！'
+    no-remove: '&c 你拿不掉那个牌子的！'
+    no-warps-yet: '&c 暂无可用传送点'
+    not-enough-level: '&c 你的岛等级不够高！'
+    not-on-island: '&c 你得在自己的岛屿上操作！'
+    not-safe: '&c 目标传送点不安全！'
+    your-level-is: '&c 你的岛现在 [level] 级，需要 [required] 级。 试试岛屿等级命令吧。'
+  next: '&6 次页'
+  player-warped: '&2 [name] 传送到了你的传送牌!'
+  previous: '&6 前页'
+  random: '&4 随机传送'
+  sign-removed: '&c 拆掉传送牌了!'
+  success: '&a 成了！'
+  warpTip: '&6 放个牌子第一行写 [text]'
+  warpToPlayersSign: '&6 正传送到 [player] 的牌子'

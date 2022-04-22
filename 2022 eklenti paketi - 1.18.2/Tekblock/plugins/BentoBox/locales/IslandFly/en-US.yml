@@ -1,0 +1,19 @@
+islandfly:
+  fly-outside-alert: '&c You are outside your island so fly mode will be disabled
+    in &e[number] &c seconds.'
+  fly-turning-off-alert: '&c You are not permitted to fly here anymore. Turning fly
+    off in &e[number] &c seconds.'
+  disable-fly: '&c Your fly mode has been disabled.'
+  reallowed-fly: '&a Your fly has been reallowed'
+  enable-fly: '&a Your fly mode has been enabled.'
+  cancel-disable: '&a You are back, huh! Fly fuel successfully refilled!'
+  wrong-world: '&c You are not in the right gamemode world'
+  command:
+    description: allows you to fly on your island
+    not-allowed-fly: '&c You are not allowed to fly on this island'
+
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a Toggle who can fly on your island'
+      name: '&a Fly prevention'

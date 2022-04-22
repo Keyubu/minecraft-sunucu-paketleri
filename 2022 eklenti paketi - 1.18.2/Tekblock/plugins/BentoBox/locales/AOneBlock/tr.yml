@@ -1,0 +1,47 @@
+aoneblock:
+  commands:
+    admin:
+      setcount:
+        parameters: <ad> <sayı>
+        description: oyuncunun blok sayısını ayarlar.
+        set: '&a[name] ''ın sayısı [number] olarak ayarlandı.'
+      setchest:
+        parameters: <faz> <delilik>
+        description: bakılan sandığı nadir görülen bir evreye koyar.
+        unknown-rarity: '&cBilinmeyen nadirlik, bunlardan birini seçin: COMMON, UNCOMMON, RARE veya EPIC'
+        only-single-chest: '&cYalnızca tekli sandık ayarlanabilir.'
+        chest-is-empty: '&cBu sandık boş, bu yüzden eklenemez'
+        unknown-phase: '&cBilinmeyen aşama. Bunları görmek için sekme-tamamlama (TAB) özelliğini
+          kullanın'
+        look-at-chest: '&cAyarlamak için dolu bir sandığa bakın.'
+        success: '&aSandık aşamaya başarıyla eklendi.'
+        failure: '&cSandık aşamaya eklenemedi! Hatalar için konsola bakın.'
+      sanity:
+        parameters: <Faz>
+        description: konsoldaki faz olasılıklarının akıl sağlığını kontrol etmek
+        see-console: '&a Rapor için konsola bakın'
+    count:
+      description: blok sayısını ve fazını göster
+      info: '&5[name] &aaşamasınının &b[number] &asayılı bloğundasınız.'
+    phases:
+      description: tüm aşamaların bir listesini göster.
+      title: '&2TekBlock Aşaması'
+      name-syntax: '&a[name]'
+      description-syntax: '&b[number] blokları'
+    island:
+      setcount:
+        parameters: <sayı>
+        description: blok sayısını önceden tamamlanmış değere ayarlar.
+        set: '&aSayı [number] olarak ayarlandı.'
+        too-high: '&cMaksimum [number] yapabilirsin!'
+  phase:
+    insufficient-level: '&cAda seviyeniz devam etmek için çok düşük! [number] olmalı.'
+    insufficient-funds: '&cParanız devam etmek için çok düşük! [number] olmalı.'
+    insufficient-bank-balance: '&cAda bankası bakiyesi devam etmek için çok düşük! [number] olmalı.'
+    insufficient-permission: '&c[name] iznini alana kadar devam edemezsiniz!'
+  placeholders:
+    infinite: Sınırsız
+  island:
+    starting-hologram: |-
+      &b&lKeyubu Tekblock hoş geldin!
+      &6Başlamak için bloğu kır!

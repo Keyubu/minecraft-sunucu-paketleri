@@ -1,0 +1,469 @@
+# ##########################################################################################
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+# ##########################################################################################
+
+meta:
+  authors:
+  - nivcoo
+
+challenges:
+  commands:
+    admin:
+      main:
+        parameters: ''
+        description: Commande principale Admin. Ouverture du menu.
+      import:
+        description: Importer les challenges du challenges.yml|Ce paramètre écrasera
+          vos anciens challenges et levels !
+        parameters: '[overwrite]'
+      reload:
+        description: Recharger les challenges depuis la base de données|Le paramètre
+          hard réinitialisera la connexion à la base de données.
+        parameters: '[hard]'
+      show:
+        description: Cette méthode écrira dans le chat tous les challenges du monde.
+        parameters: ''
+      defaults:
+        description: Cette méthode permet d'afficher les sous commandes pour importer/exporter
+          les challenges par défauts.
+        parameters: '[command]'
+      defaults-import:
+        description: Cette méthode permet d'importer les challenges par défauts.
+        parameters: ''
+      defaults-generate:
+        description: Cette méthode permet d'exporter les challenges dans un fichier
+          default.json.
+        parameters: '[overwrite] - permet d''écraser le fichier existant.'
+    user:
+      main:
+        description: Cette méthode ouvre le menu des Challenges.
+        parameters: ''
+      complete:
+        description: Cette méthode permet de compléter un challenger sans menu.
+        parameters: <challenge_id> [count]
+  gui:
+    title:
+      admin:
+        gui-title: '&aMenu admin des Challenges'
+        edit-challenge-title: '&aModification Challenge'
+        edit-level-title: '&aModification Niveau'
+        settings-title: '&aModification Paramètre'
+        choose-challenge-title: '&aChoix du Challenge'
+        choose-level-title: '&aChoix du Niveau'
+        choose-user-title: '&aChoix du Joueur'
+        manage-blocks: '&aGestion des Blocs'
+        manage-entities: '&aGestion des Entités'
+        confirm-title: '&aConfirmation'
+        manage-items: '&aGestion des Items'
+        manage-numbers: '&aGestion des chiffres'
+        select-block: '&aSelection du Bloc'
+        select-challenge: '&aSelection du Challenge'
+        select-entity: '&aSelection de l''Entité'
+        toggle-environment: '&aChanger l''Environnement'
+        edit-text-fields: '&aModification du Texte'
+      challenges: '&aListe des challenges'
+      game-modes: '&aChoisissez votre mode de jeux'
+    buttons:
+      admin:
+        complete: Compléter le challenge d'un joueur
+        reset: Réinitialiser le challenge d'un joueur
+        create-challenge: Ajouter un nouveau challenge
+        create-level: Ajouter un nouveau Niveau
+        edit-challenge: Modifier un Challenge
+        edit-level: Modifier un Niveau
+        delete-challenge: Supprimer un Challenge
+        delete-level: Supprimer un Niveau
+        import: Importer les Challenges d'ASkyblock
+        settings: Modifier les paramètres
+        properties: Propriétés
+        requirements: Prérequis
+        rewards: Récompenses
+        challenges: Challenges
+        type: Type de Challenge
+        deployment: Déploiement
+        icon: Icône
+        locked-icon: Icône verrouillée
+        description: Description
+        order: Ordre
+        environment: Environnement
+        remove-on-complete: Supprimer après l'achèvement
+        name: Nom visible
+        required-entities: Entités requises
+        remove-entities: Tuer des entités
+        required-blocks: Blocs requis
+        remove-blocks: Supprimer des blocs
+        search-radius: Rayon de recherche
+        required-permissions: Permissions requises
+        required-items: Items requis
+        remove-items: Supprimer les Items
+        required-experience: Experience requise
+        remove-experience: Supprimer de l'expérience
+        required-level: Niveau d'island requis
+        required-money: Monnaies requises
+        remove-money: Supprimer de la monnaies
+        reward-text: Message de récompense
+        reward-items: Items gagnés
+        reward-experience: Expériences gagnées
+        reward-money: Monnaies gagnées
+        reward-commands: Commandes gagnées
+        repeatable: Répétable
+        repeat-count: Maximum de répétitions
+        repeat-reward-text: Message de récompense(s) lors d'une répétition
+        repeat-reward-items: Récompense(s) lors d'une répétition
+        repeat-reward-experience: Récompense(s) lors d'une répétition
+        repeat-reward-money: Récompense(s) lors d'une répétition
+        repeat-reward-commands: Récompense(s) lors d'une répétition
+        waiver-amount: Montant de la renonciation
+        add-challenge: Ajouter un Challenge
+        remove-challenge: Supprimer un Challenge
+        reset-on-new: Réinitialiser sur nouvelle île
+        broadcast: Message de l'achèvement
+        remove-completed: Supprimer après l'achèvement
+        glow: Brillant lorsque complété
+        free-at-top: Les premiers challenges gratuits
+        line-length: Taille des Lores
+        toggle-user-list: Liste des joueurs
+        remove-selected: Supprimer la sélection
+        add: Ajouter
+        show-eggs: Changer de mode d'affichage
+        accept: Accepter
+        decline: Décliner
+        save: Sauvegarder
+        cancel: Annuler
+        input: Champ d'écriture
+        value: Valeur
+        set: =
+        increase: +
+        reduce: '-'
+        multiply: '*'
+        clear: Vider
+        remove-empty: Supprimer le vide
+        number: '[number]'
+        level-lore: Description du Niveau
+        challenge-lore: Description du Challenge
+        gui-view-mode: Afficher tous les Mode de jeux
+        gui-mode: Menus des Challenges uniquement
+        history-store: Historique des Challenges
+        history-lifespan: Durée d'ancienneté de l'historique
+        island-store: Stockage par île
+        default-locked-icon: Icône de niveau verrouillé
+        input-mode: Changer de mode d'entrée
+        title-enable: Titre d'achèvement
+        title-showtime: Titre affichant l'heure
+        default-import: Importer les Challenges par défaut
+        default-export: Exporter les Challenges existants
+        complete-wipe: Vider entièrement toute les données
+      next: Suivant
+      previous: Précédent
+      return: Retour
+    descriptions:
+      admin:
+        save: Sauvegarder et retourner au Menus précédent.
+        cancel: Retourner au Menus précédent. Les changements ne sont pas sauvegardés.
+        input: Ouvrir l'éditeur de texte.
+        set: En cliquant sur les chiffres, la valeur devient le chiffre sélectionné.
+        increase: Augmenter la valeur. En cliquant sur les nombres, vous augmentez
+          la valeur du chiffre sélectionné.
+        reduce: Réduire la valeur. En cliquant sur les chiffres, vous diminuez la
+          valeur du chiffre sélectionné.
+        multiply: Multiplier la valeur. En cliquant sur les chiffres, vous multiplier
+          la valeur du chiffre sélectionné.
+        import: Permet d'importer des challenges ASkyblock.|Un clic droit sur la souris
+          active/désactive l'écrasement des données|Placez le fichier Challenges.yml
+          dans le dossier ./BentoBox/addons/Challenges.
+        complete: Permet de compléter les Challenges d'un joueur.|Ce joueur ne gagne
+          pas les récompenses.
+        reset: Permet de réinitialiser les Challenges terminés d'un joueur.|Clic droit
+          activer / désactiver, Réinitialiser toutes les fonctionnalités.
+        create-challenge: Permet d'ajouter un nouveau Challenge.|Par défaut il est
+          dans la liste des Challenges gratuits.
+        create-level: Permet d'ajouter un nouveau Niveau.
+        edit-challenge: Permet de modifier les paramètres du Challenge.
+        edit-level: Permet de modifier les paramètres du niveau.
+        delete-challenge: Permet de supprimer un Challenge.
+        delete-level: Permet de supprimer n'importe quel niveau.
+        settings: Permet de changer les paramètres d'un Addon.
+        properties: Permet de modifier les propriétés générales
+        requirements: Permet de gérer les prérequis
+        rewards: Permet de modifier les récompenses
+        challenges: Permet de contrôler le niveau des Challenges (Ajouter / Supprimer).
+        deployment: Permet aux joueurs de compléter (voir) le Challenge.
+        icon-challenge: Icône qui sera affichée dans le menu pour ce Challenge.
+        icon-level: Icône qui sera affichée dans le menu pour ce Niveau.
+        locked-icon: Icône qui sera affichée dans le menu si le niveau est verrouillé.
+        description: Permet de modifier la description.
+        order: Permet de changer le numéro de classification.
+        environment: Permet de changer l'environnement où le Challenge est effectué.
+        type: Permet de changer le type de challenge. Chaque type a ses propres prérequis.
+        remove-on-complete: Permet de supprimer le Challenge dans le menu du joueur
+          une fois celui-ci terminé.
+        name-challenge: Permet de changer le nom d'affichage du Challenge.
+        name-level: Permet de changer le nom d'affichage du Niveau.
+        required-entities: Permet d'ajouter, modifier ou supprimer des entités requises.|Entités:|
+        remove-entities: Permet de supprimer (tuer) des entités à la fin du Challenge.
+        required-blocks: Permet d'ajouter, modifier ou supprimer les blocs requis.|Blocs:|
+        remove-blocks: Permet de supprimer (remplacer par du vide) les blocs à la
+          fin du challenge.
+        search-radius: Rayon autour de l'emplacement du joueur où les entités et les
+          blocs requis seront recherchés.
+        required-permissions: 'Permissions requises pour que le joueur puisse compléter
+          le Challenge.|Permission:'
+        required-items: 'Objets requis dans l''inventaire du joueur.|Items:'
+        remove-items: Permet de supprimer les objets de l'inventaire du joueur après
+          avoir terminé le Challenge.
+        required-experience: Permet de définir l'expérience requise pour que le joueur
+          puisse compléter le Challenge.
+        remove-experience: Permet de supprimer l'expérience requise.
+        required-level: Permet de définir le niveau d'île requis pour ce challenge.|&cNécessite
+          Level addon.
+        required-money: Permet de définir l'argent requis sur le compte du joueur.|&cNécessite
+          Vault ou un plugin d'économie.
+        remove-money: Permet de retirer l'argent requis du compte du joueur.|&cNécessite
+          Vault ou un plugin d'économie.
+        reward-text: Permet de changer le message qui sera envoyé au joueur après
+          la fin du Challenge.
+        reward-items: 'Permet de changer la récompense du premier achèvement.|Items:'
+        reward-experience: Permet de changer la récompense (experience) du premier
+          achèvement.
+        reward-money: Permet de changer la récompense (monnaie) du premier achèvement.|&cNécessite
+          Vault ou un plugin d'économie.
+        reward-commands: 'Permet de changer la récompense (commandes) du premier achèvement.|***Ajouter
+          "[SELF]" signifie que la commande sera exécutée par le joueur. Exemple "/kill"|***Le
+          mot "[player]" sera remplacé par le pseudo du joueur, exemple "/kill [player]"
+          sera remplacé par "/kill BONNe1704"|Commands:'
+        repeatable: Permet de définir si le Challenge est répétable.
+        repeat-count: Permet de définir le nombre maximal de répétitions. Si la valeur
+          est définie sur 0 ou moins, il n'y a pas de limitation.
+        repeat-reward-text: Permet de changer le message qui sera envoyé au joueur
+          suite à la répétition du challenge.
+        repeat-reward-items: 'Permet de changer les récompenses lors d''une répétition|Items:'
+        repeat-reward-experience: Permet de changer les récompenses (Expériences)
+          lors d''une répétition'
+        repeat-reward-money: Permet de changer les récompenses (Monnaies) lors d'une
+          répétition|&cNécessite Vault ou un plugin d'économie.
+        repeat-reward-commands: 'Permet de changer les récompenses (Commandes) lors
+          d''une répétition|***Ajouter "[SELF]" signifie que la commande sera exécutée
+          par le joueur. Exemple "/kill"|***Le mot "[player]" sera remplacé par le
+          pseudo du joueur, exemple "/kill [player]" sera remplacé par "/kill BONNe1704"|Commands:'
+        waiver-amount: Permet de définir le nombre de Challenges non-obligatoire pour
+          changer de Niveau.
+        reward-text-level: Permet de changer le message qui sera envoyé au joueur
+          après avoir complété tous les Challenges du Niveau.
+        add-challenge: Permet d'ajouter un Challenge existant au Niveau actuel.
+        remove-challenge: Permet de supprimer un Challenge du Niveau actuel.
+        reset-on-new: Activer/Désactiver, la réinitialisation de tous les challenges
+          du joueur lorsqu'il recommence son île ou qu'il a quitté/été kické de son
+          île.
+        broadcast: Activer/Désactiver le message global lorsqu'un joueur complète
+          pour la première fois un Challenge.
+        remove-completed: Activer/Désactiver que les challenges complété et non répétable
+          soit cachés.
+        glow: Activer/Désactiver l'effet de brillance sur un Challenge complété.
+        free-at-top: Permet de changer l'emplacement des Challenges gratuits. “True”
+          signifie que les Challenges seront les premiers, sinon ils seront les derniers.
+        line-length: Permet de modifier la longueur maximale (ligne) de la description
+          de l'objet. N'affectera pas les objets stockés.
+        toggle-user-list: Basculer vers une liste de joueurs différente.
+        mode-online: Joueurs actuellement en ligne.
+        mode-in-world: Les joueurs qui sont dans le monde GameMode.
+        mode-with-island: Les joueurs qui ont une île dans GameMode.
+        selected: Sélectionné
+        remove-selected: Supprimer les éléments sélectionnés.|Vous pouvez sélectionner
+          des éléments avec le bouton droit de la souris.
+        show-eggs: Basculer la vue d'entité entre le mode Egg ou le mode Head.
+        level-lore: Permet de modifier quels éléments de la description du Niveau
+          qui doivent être visibles.
+        challenge-lore: Permet de modifier quels éléments de la description du Challenge
+          qui doivent être visibles.
+        gui-view-mode: Permet de définir si le menu du /challenges doit montrer les
+          modes de jeu ou les challenges dans le monde des joueurs.
+        history-store: Permet d'activer / désactiver le stockage de l'historique des
+          Challenges.
+        history-lifespan: Permet de modifier le nombre de jours d'enregistrement de
+          l'historique.|0 signifie pour toujours.
+        island-store: Permet d'activer / désactiver les données stockés des Challenges
+          par île. Cela signifie que les challenges seront les mêmes pour toute l'équipe,
+          si cela est activé.|Cela ne convertira PAS les données au clic. LES PROGRÈS
+          SERONT PERDUS.
+        default-locked-icon: Permet de changer l'icône de niveau verrouillé par défaut.|Cette
+          option peut être enlevé par chaque niveau.
+        gui-mode: Permet d'activer / désactiver le menu de Challenge seul|&2Nécessite
+          un redémarrage du serveur.
+        click-to-edit: '&4Cliquez ici pour modifier l''entrée.'
+        edit-text-line: '&6Modifier le message du texte !'
+        add-text-line: '&6  Ajouter un nouveau message !'
+        input-mode: Basculer entre les modes, chat et enclume (menu).
+        title-enable: Permet d'activer / désactiver le message de titre qui sera affiché
+          lorsque le joueur aura terminé son challenge.
+        title-showtime: Permet de modifier la longueur du message que le joueur pourra
+          voir.
+        default-import: Permet d'importer des challenges par défaut.
+        default-export: Permet d'exporter les Challenges dans le fichier defaults.json.
+        complete-wipe: Permet d'effacer complètement toutes les données des Challenges.
+          Inclut les données du joueur!
+      current-value: '|&6Valeur actuelle: [value].'
+      enabled: Activé
+      disabled: Désactivé
+      type:
+        island: '- Type, île:| (permet d''obliger le joueur à avoir certains blocs/mobs
+          autour de lui)'
+        inventory: '- Type, inventaire:| (permet d''obliger le joueur d''avoir certain
+          items dans son inventaire)'
+        other: '- Autre type:| (permet d''obliger autre chose depuis d''autres plugins/addons)'
+      the-end: '- The End'
+      nether: '- Nether'
+      normal: '- Overworld'
+      entity: '- [entity] : [count]'
+      block: '- [block] : [count]'
+      permission: '- [permission]'
+      item: '- [count] x [item]'
+      item-meta: '  ([meta])'
+      item-enchant: '   - [enchant] [level]'
+      command: '- [command]'
+      level-unlocked: '&fCliquez pour regarder les challenges : [level]'
+      level-locked: '&fComplétez [count] challenges [level]  pour débloquer ce niveau
+        !'
+    challenge-description:
+      level: '&fNiveau: [level]'
+      completed: '&bCompletés'
+      completed-times-of: Complété [donetimes]/[maxtimes] fois
+      maxed-reached: Complété [donetimes]/[maxtimes] fois
+      completed-times: Complété [donetimes] fois
+      warning-items-take: '&cLes objets requis seront enlevés de votre inventaire
+        !'
+      objects-close-by: '&cTous les blocs et entités requis doivent être proches de
+        vous sur votre île !'
+      warning-entities-kill: '&cToutes les entités requises seront tuées lorsque vous
+        aurez terminé ce Challenge !'
+      warning-blocks-remove: '&cTous les blocs requis seront supprimés lorsque vous
+        aurez terminé ce Challenge. !'
+      not-repeatable: '&cCe challenge n''est pas répétable !'
+      experience-reward: '&6Récompense en XP: [value]'
+      money-reward: '&6Récompense: [value]$'
+      required-experience: '&6XP requis: [value]'
+      required-money: '&6Monnaie requise: [value]$'
+      required-island-level: '&6Niveau d''île requis: [value]'
+      environment: 'Environement requis:'
+      reward-items: '&6Récompenses:'
+      reward-commands: '&6Récompenses (commandes):'
+      required-items: 'Items requis:'
+      required-entities: 'Entitiés requises:'
+      required-blocks: 'Blocs requis:'
+    level-description:
+      completed: '&BComplété'
+      completed-challenges-of: '&3Vous avez complété [number] sur [max] Challenges
+        dans ce niveau.'
+      waver-amount: '&6Vous pouvez sauter [value] de ce Challenge pour débloquer le
+        niveau suivant.'
+      experience-reward: '&6Récompense en XP: [value]'
+      money-reward: '&6Récompense: [value]$'
+      reward-items: '&6Récompenses:'
+      reward-commands: '&6Récompenses (commandes):'
+    
+    questions:
+      prefix: '&2[SERVER]: '
+      
+      admin:
+        number: Write a number in chat and press enter to accept it and press enter.
+        unique-id: Write object unique name and press enter.
+        challenge-name: Write in chat display name for current challenge.
+        level-name: Write in chat display name for current level.
+  titles:
+    #       Title and subtitle my contain variable in [] that will be replaced with proper message from challenge object.
+    #       [friendlyName] will be replaced with challenge friendly name.
+    #       [level] will be replaced with level friendly name.
+    #       [rewardText] will be replaced with challenge reward text.
+    challenge-title: Complété avec succès
+    challenge-subtitle: '[friendlyName]'
+    #       Title and subtitle my contain variable in [] that will be replaced with proper message from level object.
+    #       [friendlyName] will be replaced with level friendly name.
+    #       [rewardText] will be replaced with level reward text.
+    level-title: Complété avec succès
+    level-subtitle: '[friendlyName]'
+  messages:
+    admin:
+      hit-things: Taper des choses pour les ajouter à la liste des choses requises.
+        Faites un clic droit lorsque vous avez terminé.
+      you-added: Vous avez ajouter [thing] dans le challenge
+      challenge-created: '[challenge]&r crée !'
+      complete-wipe: '&cJ''espère que vous aurez des sauvegardes, car vous venez de
+        vider toutes les données !'
+    you-completed-challenge: '&2Vous avez complété le challenge: [value] !'
+    you-repeated-challenge: '&2Vous avez répété le challenge: [value] !'
+    you-repeated-challenge-multiple: '&2Vous avez répété le challenge: [value] &r&2
+      [count] fois !'
+    you-completed-level: '&2Vous avez complété le niveau: [value] !'
+    name-has-completed-challenge: '&5[name] a complété le challenge: [value] !'
+    name-has-completed-level: '&5[name] a complété le niveau: [value] !'
+    import-levels: Importer les Niveau
+    import-challenges: Importer les Challenges
+    no-levels: 'Attention: Aucun niveau est défini dans le fichier challenges.yml'
+    import-number: '[number] Challenges ont été importés'
+    load-skipping: '"[value]" existe déjà - ignoré'
+    load-overwriting: Écrasement "[value]"
+    load-add: 'Ajout d''un nouveau objet: [value]'
+    defaults-file-overwrite: defaults.json existe. Il sera écrasé.
+    defaults-file-completed: defaults.json file est rempli de challenges dans [world]
+      !
+  errors:
+    no-name: '&cNom du Challenge manquant'
+    unknown-challenge: '&cChallenge inconnu'
+    unique-id: '&cL''UniqueID "[id]" n''est pas valide.'
+    wrong-icon: '&cLe matériau "[value]" n''est pas valide et ne peut pas être utilisé
+      comme un icône.'
+    not-valid-integer: '&cLa valeur "[value]" n''est pas valide !|Elle doit être comprise
+      entre [min] et [max].'
+    not-a-integer: '&cLa valeur  "[value]" n''est pas un entier!'
+    not-deployed: '&cLe Challenge ne peut pas être réalisé !'
+    not-on-island: '&cVous devez être sur votre île pour faire le Challenge !'
+    challenge-level-not-available: '&cVous n''avez pas débloqué le niveau pour compléter
+      ce Challenge.'
+    not-repeatable: '&cCe Challenge n''est pas répétable !'
+    wrong-environment: '&cVous êtes dans le mauvais environnement !'
+    not-enough-items: '&cVous n''avez pas assez [items] pour relever ce Challenge
+      !'
+    not-close-enough: '&cVous devez vous tenir dans un rayon de [number] blocs autour
+      de tous les éléments requis.'
+    you-still-need: '&cTu as encore besoin [amount] [item]'
+    missing-addon: '&cImpossible de terminer le Challenge. L''addon ou le plugin requis
+      est manquant.'
+    incorrect: '&cImpossible de compléter le challenge. Les nécessités sont incorrects'
+    not-enough-money: '&cIl est nécéssaire d''avoir [value] sur votre compte pour
+      compléter le challenge.'
+    not-enough-experience: '&cIl est nécessaire d''avoir [value] XP pour compléter
+      le challenge.'
+    island-level: '&cVotre île doit être niveau [number] pour compléter le challenge.'
+    import-no-file: '&cLe fichier challenges.yml n''a pas été trouvé !'
+    no-load: '&cErreur: Impossible de charger le fichier challenges.yml. [message]'
+    load-error: '&cErreur: Impossible de charger [value].'
+    no-rank: '&cVous n''''avez pas le rang pour le faire.'
+    cannot-remove-items: '&cCertains items ne peuvent pas être supprimer de votre
+      inventaire !'
+    exist-challenges-or-levels: '&cDans votre monde il existe déjà des challenges.
+      Impossible de continuer !'
+    defaults-file-exist: '&cdefaults.json existe déja. Utilisez le mode écrasement
+      pour le remplacer !'
+    defaults-file-error: '&cIl y a une erreur lors de la création du fichier defaults.json
+      ! Regardez la console !'
+    no-challenges: '&cLes challenges ne sont pas actifs dans le monde actuel !'
+    no-challenges-admin: '&cLes Challenges ne sont pas actifs dans le monde actuel
+      ! Vous devez utiliser &5/[command] &cpour ajouter cela !'
+    missing-level: '&cLe Niveau du Challenge [niveau] n''est pas défini dans la base
+      de données. Il peut y avoir des erreurs !'
+protection:
+  flags:
+    CHALLENGES_ISLAND_PROTECTION:
+      description: |-
+        &5&oChange qui peut
+        &5&ocompléter les Challenges
+      name: Protection de Challenge
+    CHALLENGES_WORLD_PROTECTION:
+      description: |-
+        &5&oCela permet d''activer / désactiver
+        &5&oles prérequis pour les joueurs de
+        &5&oqui doivent être sur leur île pour
+        &5&ocompléter le Challenge.
+      name: 'Limite de Challenge sur l''''île '
+      hint: Aucun Challenge en dehors de l''île
+version: 11

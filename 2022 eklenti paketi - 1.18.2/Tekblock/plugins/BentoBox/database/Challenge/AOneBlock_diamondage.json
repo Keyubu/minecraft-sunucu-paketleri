@@ -1,0 +1,61 @@
+{
+  "uniqueId": "AOneBlock_diamondage",
+  "friendlyName": "Diamond Age",
+  "deployed": true,
+  "description": [
+    "Craft diamond tools and armor"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n",
+  "order": 4,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "AOneBlock_elite",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_AXE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_HOE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_PICKAXE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_SHOVEL\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_SWORD\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_BOOTS\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_LEGGINGS\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_CHESTPLATE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_HELMET\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Exchange your diamond stuff to some shulker boxes",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SHULKER_BOX\n  amount: 3\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "Exchange your diamond stuff to shulker shell",
+  "maxTimes": 100,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SHULKER_SHELL\n"
+  ],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

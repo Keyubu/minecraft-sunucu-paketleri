@@ -1,0 +1,20 @@
+chat:
+  team-chat:
+    description: Team Chat ein- oder ausschalten
+    chat-on: '&a Team Chat an.'
+    chat-off: '&a Team Chat aus.'
+    syntax: '&6[team] &a[name]&8: &f[message]'
+    spy:
+      description: Team Chat Socialspy ein- oder ausschalten
+      spy-on: '&a Team Chat Socialspy an.'
+      spy-off: '&c Team Chat Socialspy aus.'
+      syntax: '&c[team-chat-spy] &a[name]&8: [message]'
+  island-chat:
+    description: Insel Chat ein- oder ausschalten
+    island-on: '&a Insel Chat an.'
+    island-off: '&c Insel Chat aus.'
+    syntax: '&6[island] &a[name]&8: &f[message]'
+    spy:
+      description: Insel Chat Socialspy ein- oder ausschalten
+      spy-on: '&a Insel Chat Socialspy aus.'
+      syntax: '&c [island-chat-spy] &a[name]&8: &f[message]'

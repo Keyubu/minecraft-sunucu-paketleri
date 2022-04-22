@@ -1,0 +1,10 @@
+islandfly:
+  fly-outside-alert: '&cTu esi ārpus savas salas, tāpēc lidošana tiks izslēgta pēc
+    &e[number]&c sekundēm.'
+  disable-fly: '&cTev tika izslēgta lidošana.'
+  enable-fly: '&aTev tika ieslēgta lidošana.'
+  cancel-disable: '&aTu esi atpakaļ! Lidošanas degviela veiksmīgi papildināta!'
+  wrong-world: '&cTu neesi pareizajā spēles režīma pasaulē!'
+  command:
+    description: atļauj tev lidot pa savas salas teritoriju
+    only-on-island: '&cTu vari lidot tikai pa savas salas teritoriju.'

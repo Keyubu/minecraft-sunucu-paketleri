@@ -1,0 +1,24 @@
+block-limits:
+  hit-limit: '&c[material] limitat la [number]!'
+entity-limits:
+  hit-limit: '&c[entity] reproducere limitata la [number]!'
+limits:
+  panel-title: Limitele insulei
+admin:
+  limits:
+    main:
+      parameters: <jucator>
+      description: Arata limitele insulei pentru jucator
+    calc:
+      parameters: <jucator>
+      description: recalculeaza limitele insulei pentru jocator
+      finished: '&aRecalcularea insulei terminata cu succes!'
+island:
+  limits:
+    description: iti arata limitele insulei
+    max-color: '&c'
+    regular-color: '&a'
+    block-limit-syntax: '[number]/[limit]'
+    no-limits: '&cNici o limita setata in aceasta lume'
+    recount:
+      description: renumara limitele insulei tale

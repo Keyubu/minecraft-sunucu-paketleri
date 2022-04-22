@@ -1,0 +1,9 @@
+log-system:
+  enableKickLogger: true
+  enableViolationLogger: true
+  violationLoggerNum: 30
+  enablePlayerViolationLog: true
+  playerViolationLog: 15
+079018f5-6389-3a1e-a8b8-f279c1db75fa:
+  violations: 0
+  warnCount: 0

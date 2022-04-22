@@ -1,0 +1,36 @@
+# ##########################################################################################
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+# ##########################################################################################
+
+block-limits:
+  hit-limit: '&c[material] limited to [number]!'
+entity-limits:
+  hit-limit: '&c[entity] spawning limited to [number]!'
+limits:
+  panel-title: Island limits
+
+
+admin:
+  limits:
+    main:
+      parameters: <player>
+      description: show the island limits for player
+    calc:
+      parameters: <player>
+      description: recalculate the island limits for player
+      finished: '&a Island recalc finished successfully!'
+
+island:
+  limits:
+    description: show your island limits
+    max-color: '&c'
+    regular-color: '&a'
+    block-limit-syntax: '[number]/[limit]'
+    no-limits: '&cNo limits set in this world'
+    recount:
+      description: recounts limits for your island
+      now-recounting: '&b Now recounting. This could take a while, please wait...'
+      in-progress: '&c Island recound is in progress. Please wait...'
+      time-out: '&c Time out when recounting. Is the island really big?'
+

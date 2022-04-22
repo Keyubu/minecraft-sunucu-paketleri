@@ -1,0 +1,295 @@
+Settings:
+  Prefix: '&3Pazar &8▸ '
+  GUIName: 'Pazar' 
+  Players-Current-Items: 'Mevcut Ürünleriniz'
+  Cancelled/Expired-Items: 'Iptal/Geçmiş Ürünleriniz'
+  Buying-Item: 'Satın Al: Emin misiniz?' 
+  Bidding-On-Item: 'Bu Ürüne Teklif Veriyorsunuz'
+  Categories: 'Kategoriler'
+  Sell-Time: 2d 
+  Bid-Time: 2m 30s 
+  Full-Expire-Time: 10d 
+  Bid-Winner-Time: 20d
+  Minimum-Sell-Price: 10
+  Max-Beginning-Sell-Price: 100000000
+  Minimum-Bid-Price: 100
+  Max-Beginning-Bid-Price: 100000000 
+  Allow-Damaged-Items: false
+  Category-Page-Opens-First: False 
+  Feature-Toggle: 
+    Selling: true
+    Bidding: true 
+  Sounds:
+    Toggle: true
+    Sound: 'UI_BUTTON_CLICK' 
+    #1.8 sesleri: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
+    #1.9 sesleri: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  GUISettings: 
+    SellingItemLore: 
+      - 
+      - '&7Fiyat: &e%Price%'
+      - '&7Satıcı: &e%Seller%'
+      - ''
+      - '&aTıkla ve satın al'
+    CurrentLore: 
+      - ''
+      - '&7Fiyat: &e%Price%'
+      - '&7Süre: &e%Time%'
+      - ''
+      - '&cTıkla ve iptal et'
+    Cancelled/ExpiredLore:
+      - ''
+      - '&7Tam süresi: &e%Time%'
+      - ''
+      - '&aTıkla ve geri al'
+    Bidding:
+      - ''
+      - '&7Satıcı: &e%Seller%'
+      - '&7Geçerli teklif: &e%TopBid%'
+      - '&7En iyi eklif: &e%TopBidder%'
+      - '&7Kalan süre: &e%Time%'
+      - ''
+      - '&aTıkla ve teklif ver'
+    Category-Settings:
+      Armor:
+        Item: 'DIAMOND_CHESTPLATE'
+        Toggle: true
+        Slot: 11
+        Name: '&6Zırhlar'
+        Lore:
+          - '&7Bu kategoride pazardaki bütün'
+          - '&7zırhları görüntüleyebilirsiniz.'
+      Weapons:
+        Item: 'IRON_SWORD'
+        Toggle: true
+        Slot: 12
+        Name: '&6Silahlar'
+        Lore:
+          - '&7Bu kategoride pazardaki bütün'
+          - '&7silahları görüntüleyebilirsiniz.'
+      Tools:
+        Item: 'GOLD_PICKAXE'
+        Toggle: true
+        Slot: 13
+        Name: '&6Aletler'
+        Lore:
+          - '&7Bu kategoride pazardaki bütün'
+          - '&7aletleri görüntüleyebilirsiniz.'
+      Food:
+        Item: 'GOLDEN_APPLE'
+        Toggle: true
+        Slot: 14
+        Name: '&6Yemekler'
+        Lore:
+          - '&7Bu kategoride pazardaki bütün'
+          - '&7yemekleri görüntüleyebilirsiniz.'
+      Potions:
+        Item: 'POTION'
+        Toggle: true
+        Slot: 15
+        Name: '&6İksirler'
+        Lore:
+          - '&7Bu kategoride pazardaki bütün'
+          - '&7iksirleri görüntüleyebilirsiniz.'
+      Blocks:
+        Item: 'GRASS'
+        Toggle: true
+        Slot: 16
+        Name: '&6Bloklar'
+        Lore:
+          - '&7Bu kategoride pazardaki bütün'
+          - '&7blokları görüntüleyebilirsiniz.'
+      Other:
+        Item: 'GOLD_NUGGET'
+        Toggle: true
+        Slot: 17
+        Name: '&6Diğerleri'
+        Lore:
+          - '&7Bu kategoride pazardaki diğer'
+          - '&7ürünleri görüntüleyebilirsiniz.'
+      None:
+        Item: 'BARRIER'
+        Toggle: true
+        Slot: 23
+        Name: '&fTüm Ürünler'
+        Lore:
+          - '&7Bu kategoride pazardaki bütün'
+          - '&7ürünleri görüntüleyebilirsiniz.'
+    OtherSettings: 
+      SellingItems: 
+        Item: 'DIAMOND' #The item that this button is.
+        Toggle: true #If the item is in the gui or not.
+        Slot: 46 #The slot it is in. I recommend not changing these. If you do make sure they are still in the bottom row.
+        Name: '&eSatılan Ürünler' #Name of the item.
+        Lore: 
+          - '&7Buraya tıklayarak pazarda sattığınız'
+          - '&7ürünlerinizi görüntüleyebilirsiniz.'
+      Cancelled/ExpiredItems: 
+        Item: 'POISONOUS_POTATO'
+        Toggle: true
+        Slot: 47
+        Name: '&eGeçmiş ve İptal Ürünler'
+        Lore:
+          - '&7Buraya tıklayarak pazarda süresi geçmiş, iptal'
+          - '&7ettiğiniz ürünleriniz görüntüleyebilirsiniz.'
+      PreviousPage: 
+        Item: 'PAPER'
+        Toggle: true
+        Slot: 49
+        Name: '&e< Önceki Sayfa'
+        Lore: {}
+      Refesh: 
+        Item: 'DOUBLE_PLANT'
+        Toggle: true
+        Slot: 50
+        Name: '&aSayfayı Yenile'
+        Lore: {}
+      NextPage: 
+        Item: 'PAPER'
+        Toggle: true
+        Slot: 51
+        Name: '&eSonraki Sayfa >'
+        Lore: {}
+      Category1: 
+        Item: 'CHEST'
+        Toggle: true
+        Slot: 52
+        Name: '&6Kategoriler'
+        Lore:
+          - '&7Şu anki kategori: &f%Category%'
+          - ''
+          - '&7Çeşitli kategorileri görmek mi istiyorsunuz?'
+          - '&7Buraya tıklayın ve aradığınızı hemen bulun!'
+      Category2:
+        Item: 'CHEST'
+        Toggle: true
+        Slot: 48
+        Name: '&6Kategoriler'
+        Lore:
+          - '&7Şu anki kategori: &f%Category%'
+          - ''
+          - '&7Çeşitli kategorileri görmek mi istiyorsunuz?'
+          - '&7Buraya tıklayın ve aradığınızı hemen bulun!'
+      Bidding/Selling: 
+        Selling:
+          Item: 'SLIME_BALL'
+          Toggle: true
+          Slot: 53
+          Name: '&aSatılan ürünlere bakıyorsun'
+          Lore:
+            - '&7Pazarda açık arttırmada olan ürünleri, yani'
+            - '&7teklif verilen ürünleri görmek için tıklayın.'
+            - ''
+            - '&fTıkla ve teklif verilebilecek ürünlere bak'
+        Bidding:
+          Item: 'MAGMA_CREAM'
+          Toggle: true
+          Slot: 53
+          Name: '&aTeklif verilebilecek ürünlere bakıyorsun'
+          Lore:
+            - '&7Pazarda satışta olan ürünleri, yani direkt'
+            - '&7olarak satılan ürünleri görmek için tıklayın.'
+            - ''
+            - '&fTıkla ve şu anda satılan ürünlere bak'
+      WhatIsThis:
+        SellingShop:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6Bu Sayfa Nedir?'
+          Lore:
+            - '&7Burası bir oyuncu pazarı,'
+            - '&7Ürünlerinizi satışa çıkartabilir, ürün'
+            - '&7satın alabilir bune ek olarak da ihale'
+            - '&7başlatabilirsiniz.'
+            - ''
+            - '&7O zaman en iyi teklifi veren kazanır!'
+        BiddingShop:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6Bu Sayfa Nedir?'
+          Lore:
+            - '&7Burası bir oyuncu pazarı,'
+            - '&7Ürünlerinizi satışa çıkartabilir, ürün'
+            - '&7satın alabilir bune ek olarak da ihale'
+            - '&7başlatabilirsiniz.'
+            - ''
+            - '&7O zaman en iyi teklifi veren kazanır!'
+        CurrentItems: 
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6Bu Sayfa Nedir?'
+          Lore:
+            - '&7Burada pazarda sattığınız ürünleri'
+            - '&7görüntüleyebiliyorsunuz. Isterseniz'
+            - '&7ürünleri iptal edebilirsiniz.'
+        Cancelled/ExpiredItems:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6Bu Sayfa Nedir?'
+          Lore:
+            - '&7Burada satıştaki süresi biten ve iptal'
+            - '&7ettiğiniz ürünleri görüntüleyebilir ve'
+            - '&7envanteriniz boşsa geri alabilirsiniz.'
+        Viewing:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 50
+          Name: '&6Bu Sayfa Nedir?'
+          Lore:
+            - '&7Burada bir oyuncunun satışa veya'
+            - '&7ihaleye çıkardığı ürünleri hızlıca'
+            - '&7görüntüleyebilirsiniz.'
+        Categories:
+          Item: 'BOOK'
+          Toggle: true
+          Slot: 54
+          Name: '&6Bu Sayfa Nedir?'
+          Lore:
+            - '&7Burada seçtiğiniz kategoriye göre farklı'
+            - '&7ürünleri görüntüleyebilirsiniz. Böylece'
+            - '&7aradığınızı hızlıca bulursunuz.'
+      Back: 
+        Item: 'ARROW'
+        Slot: 46
+        Name: '&c< Geriye Dön'
+      Return:
+        Item: 'FLOWER_POT'
+        Slot: 50
+        Name: '&eHepsini Al'
+        Lore:
+          - '&7Buraya tıklayarak bütün'
+          - '&7ürünleri alabilirsiniz.'
+      Confirm: 
+        Item: 'LIME_STAINED_GLASS_PANE'
+        Name: '&bOnayla'
+      Cancel:
+        Item: 'RED_STAINED_GLASS_PANE'
+        Name: '&cVazgeç'
+      Your-Item: 
+        Item: 'BARRIER'
+        Name: '&cKendi ürününü satın alamazsın.'
+      Cant-Afford: 
+        Item: 'BARRIER'
+        Name: '&cBu ürünü göremezsiniz..'
+      Top-Bidder:
+        Item: 'BARRIER'
+        Name: '&cZaten en iyi teklifi siz vermişsiniz.'
+      Bidding: #The item in the middle when bidding on an item.
+        Item: 'BLACK_STAINED_GLASS_PANE'
+        Name: '&7Bidding'
+        Lore:
+          - '&8&m<--&a Ekle &cÇıkar &8&m-->&r'
+          - '&7Mevut teklifiniz: &e%Bid%'
+          - '&7Mevcut en iyi teklif: &e%TopBid%'
+      Bid: #The button for when you want to confirm your bid.
+        Item: 'LIGHT_BLUE_STAINED_GLASS_PANE'
+        Name: '&b&lTeklif Ver'
+        Lore:
+          - '&7Teklif vermek için tıklayın.'
+  BlackList:
+    - 'BEDROCK'
+    - 'END_PORTAL_FRAME'

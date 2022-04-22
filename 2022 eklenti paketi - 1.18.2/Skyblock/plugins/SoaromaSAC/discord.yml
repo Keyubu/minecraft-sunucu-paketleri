@@ -1,0 +1,39 @@
+# Enable the plugin checking for a webhook
+enableWebhook: false
+
+# Put the discord webhook inside here
+webhook: ''
+
+# Sends a msg to discord every X amount of violations
+limiter: 15
+
+# Send specific 
+sendMessage:
+   - '```java'
+   - ' '
+   - '---------------------'
+   - ' '
+   - 'Username -> {player}'
+   - ' '
+   - 'Total Violations ->  {total-violations}'
+   - 'Violations during server uptime -> {temp-violations}'
+   - ' '
+   - 'Cheats flagged -> {cheats-flagged}'
+   - ' '
+   - 'Ping -> {ping}'
+   - 'TPS -> {tps}'
+   - 'Inside Vehicle -> {insideVeh} -> {veh-name}'
+   - 'Using elytra -> {elytra}'
+   - 'Using riptide -> {riptide}'
+   - 'Allowed Flight & Flying -> {allow-flight}'
+   - ' '
+   - 'World -> {world}'
+   - 'Location -> {location}'
+   - 'Nearby blocks -> '
+   - 'TOP -> {top}'
+   - 'MID -> {mid}'
+   - 'MID -> {mid2}'
+   - 'BELOW -> {below}'
+   - ' '
+   - '---------------------```'
+   

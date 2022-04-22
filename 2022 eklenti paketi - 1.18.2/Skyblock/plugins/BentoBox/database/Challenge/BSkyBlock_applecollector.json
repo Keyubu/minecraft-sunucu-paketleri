@@ -1,0 +1,61 @@
+{
+  "uniqueId": "BSkyBlock_applecollector",
+  "friendlyName": "Apple Picker",
+  "deployed": true,
+  "description": [
+    "Find and collect some apples from trees"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: APPLE\n",
+  "order": 3,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "BSkyBlock_novice",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: APPLE\n  amount: 5\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "These saplings will help you to get more trees",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SPRUCE_SAPLING\n  amount: 4\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ACACIA_SAPLING\n  amount: 4\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BIRCH_SAPLING\n  amount: 4\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DARK_OAK_SAPLING\n  amount: 4\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: JUNGLE_SAPLING\n  amount: 4\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "These saplings will help you to get more trees",
+  "maxTimes": 100,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SPRUCE_SAPLING\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ACACIA_SAPLING\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BIRCH_SAPLING\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DARK_OAK_SAPLING\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: JUNGLE_SAPLING\n"
+  ],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

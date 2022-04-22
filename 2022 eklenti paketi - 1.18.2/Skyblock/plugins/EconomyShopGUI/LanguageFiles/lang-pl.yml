@@ -1,0 +1,232 @@
+#This is the Polish language file, set "language-file" in the config.yml to "lang-pl.yml" to use this file!
+#You can see this site for all color codes ----> https://minecraft.tools/en/color-code.php
+#All variables you can use;
+#!!Please note that all variables only work in the current line they are located!!
+#%shopsection%       = the shopsection that has to be called
+#%amounttopay%       = the amount that the item will cost
+#%playername%        = the player's name
+#%amount%            = the amount of an item
+#%material%          = the material from a item
+#%amounttogive%      = the amount of money that a player received from another player
+#%minimumamount%     = the minimum amount of money you need to pay someone if you use the command
+#%amountofmoney%     = the amount of money that you have on you
+#%location%          = the location of the current item that is called inside shops.yml/sections.yml configuration file
+#%languagefile%      = the current languagefile that's being called
+#%version%           = the version of minecraft that the plugin uses
+#%spawner-type%      = the spawner type that the spawner item has
+#%bought/sold%       = if the item is sold or bought
+#%buy/sell-method%   = the way a player bought/sold an item Ex: Buy-screen or sellall command
+#%fileName%          = the name of the file that's being called
+#%key%               = the name of the key
+#%keys%              = all available keys, do not confuse with %key%
+#%itemLoc%           = the location of the item in a section inside the shops config
+#%price%             = amount of money
+#%action%            = the name of the action
+#%actions%           = the available actions
+#%balance%           = the balance of the player
+#%permsGroup%        = the permissions group
+#%maxInvSize%        = the max size of a inventory screen
+#StartUp/Reload
+shops,yml-not-found: "Shops.yml nie zostal znaleziony, tworzenie jednego..."
+shops,yml-created: "Shops.yml poprawnie stworzony!"
+shops,yml-found: "Shops.yml zostal znaleziony!"
+sections,yml-not-found: "Sections.yml nie zostal znaleziony, tworzenie jednego..."
+sections,yml-created: "Sections.yml poprawnie stworzony!"
+sections,yml-found: "Sections.yml zostal znaleziony!"
+updating-shop-settings: "Aktualizacja ustawien sklepu..."
+adding-new-shop-shops,yml: "Dodawanie nowego sklepu pod nazwą %shopsection% do pliku shops.yml."
+adding-new-shop-sections,yml: "Dodawanie nowego sklepu pod nazwą %shopsection% do pliku sections.yml."
+disabled-due-no-vault: "Wylaczono poniewaz nie znaleziono pluginu &cVault&r. Zainstaluj go!"
+disabled-due-no-economy: "Wylaczono poniewaz plugin na ekonomie nie zostal znaleziony. Prosze zainstaluj &cEssentialsX&r!"
+update-available: "Jest nowy update pluginu!"
+done: "Gotowe!"
+updating-sections-config: "Aktualizowanie sekcji config..."
+debug-mode-enabled: "Debug mode jest wlaczony."
+economy-provider-null: "EconomyProvider jest null."
+successfully-hooked-into-vault: "Poprawnie podlaczono do Vaulta."
+language-file-using: "Uzywam %languagefile% jako plik jezykowy."
+cannot-find-language-file: "Nie moge znalezc pliku jezykowego!"
+minecraft-version-using: "Uzywana wersja minecraft %version%..."
+checking-each-item: "Sprawdzanie kazdego przedmiotu zeby znalezc bledne/brakujace wartosci..."
+loading-items: "Ladowanie wszystkich przedmiotow..."
+could-not-find-valid-version: "Nie znaleziono zadnej prawidlowej implementacji dla tej wersji serwera. Spowoduje to, ze plugin nie bedzie mial poprawnej wersji i spowoduje, ze wiele przedmiotow / metod nie bedzie dzialac poprawnie. Prosze uzyj wspieranej wersji minecraft przez ten plugin."
+updating-configs: "Aktualizacja konfiguracji poniewaz najnowsza wersja zostala znalezina..."
+creating-backup: "Tworzenie kopii zapasowych ze starego %fileName%, plik mozna znalezc w folderze kopii zapasowych. Kopie znajdziesz w folderze EconomyShopGUI."
+discounts-feature-unavailable: "Nie można włączyć znizek, ponieważ nie znaleziono pluginu z permisjami."
+#Main Shop Inventory
+inventory-main-shop-title: "&b&lEconomyShopGUI"
+profile: "&aProfil"
+name: "&6Nick"
+money: "&6Pieniadze"
+level: "&6Level"
+#Buystacks Inventory title
+inventory-buystacks-title: "&8Wybierz ilosc przedmiotow &lstaki(64)"
+#HowMuchSell/HowMuchBuy Inventory
+inventory-howmuchsell-title: "&8Wybierz ilosc przedmiotow do &lsprzedania"
+inventory-howmuchbuy-title: "&8Wybierz ilosc przedmiotow do &lkupienia"
+plus-one: "&b+1"
+min-one: "&5-1"
+plus-sixteen: "&b+16"
+min-sixteen: "&5-16"
+plus-thirty-two: "&b+32"
+min-thirty-two: "&5-32"
+sell: "&aSprzedac?"
+sell-all: "&cChcesz sprzedac wszystko?"
+buy: "&aKupic?"
+buy-stacks: "&cKupic stak(64)?"
+#All Inventory's
+back: "&4Wroc"
+cancel: "&4Anuluj"
+#Previous/Next/Current page
+previous-page: "&dPoprzednia strona"
+next-page: "&bNastepna strona"
+current-page: "&7Strona:"
+#Buy/Sell Controls
+left-click-buy: "&aLewy przycisk: Kup: &c%amounttopay%"
+right-click-sell: "&6Prawy przycisk: Sprzedaj: &c%amounttopay%"
+#Buy/Sell Messages
+pay-confirmation: "&aPoprawnie kupiles &1%amount% x &b%material% &aza &c%amounttopay%"
+sell-confirmation: "&aPoprawnie sprzedales &1%amount% x &b%material% &aza &c%amounttopay%"
+sell-confirmation-multiple-items: "&aPoprawnie sprzedales &1%amount% &aitems za &c%amounttopay%"
+no-item-to-be-sold: "&cNie posiadasz zadnych przedmiotow w swoim ekwipunku."
+item-cannot-be-bought: "&cPrzedmion nie moze zostac kupiony."
+item-cannot-be-sold: "&cPrzedmion nie moze zostac sprzedany."
+player-made-transaction: "%playername% %Kupil/Sprzedal% %amount% x %material% za %amountofmoney% metoda %buy/sell-method%."
+buy-screen: "Ekran Kup"
+sell-screen: "Ekran sprzedaj"
+buystacks-screen: "Ekran kup stak(64)"
+sellall-screen: "Ekran sprzedaj wszystko"
+sellall-command: "sprzedaj wszystko komenda"
+bought: "Kupiony"
+sold: "Sprzedany"
+#CurrencySymbol
+currencysymbol: "$%price%"
+#All commands
+command-disabled-in-world: "&cTa komenda zostala wylaczona dla tego swiata."
+#Edit-shop subcommand descriptions
+editshop-add-item-subcommand-desc: "&aDodano przedmiot do sklepu."
+editshop-edit-item-subcommand-desc: "&aEdytuj istniejacy przedmiot w sklepie."
+editshop-remove-item-subcommand-desc: "&aUsun przedmiot ze sklepu."
+editshop-add-hand-item-subcommand-desc: "&aDodaj przedmiot z twojej reki do sklepu."
+#Edit-shop subcommand syntaxes
+editshop-add-item-subcommand-syntax: "&a/editshop &7additem <section> <material> <buy price> <sell price> [displayname]"
+editshop-edit-item-subcommand-syntax: "&a/editshop edititem <section> <item> <action> <key> <value>"
+editshop-remove-item-subcommand-syntax: "&a/editshop deleteitem <section> <item>"
+editshop-add-hand-item-subcommand-syntax: "&a/editshop &7addhanditem <section> <buy price> <sell price>"
+#Edit-shop command messages
+editshop-adding-item: "&aDodawanie nowego przedmiotu do sklepu..."
+editshop-add-item-successful: "&aPoprawnie dodano przedmiot do sklepu pod '%itemPath%'."
+editshop-editing-item: "&aAktualizacja przedmiotow..."
+editshop-edit-item-successful: "&aPoprawnie zaktualizowano '%itemPath%'."
+editshop-removing-item: "&aUsuwanie przedmiotu ze sklepu..."
+editshop-remove-item-successful: "&aPoprawnie usunieto '%itemPath%' ze sklepu."
+editshop-reload-shop-to-see-changes: "&aUzyj komendy &a/sreload&r zeby zaladowac zmiany w sklepie."
+#Edit-shop command errors
+section-does-not-contain-item: "&cSekcja '%shopsection%' nie posiada przedmiotu '%itemLoc%'."
+no-valid-action: "&cNiedostepne akcje '%action%'. \nDostepne akcje: %actions%."
+no-valid-key: "&cNiepoprawne klucze '%key%'. \nPoprawne klucze: %keys%."
+action-not-valid-on-key: "&cNie moge %action% '%key%' klucza."
+edit-item-material-invalid: "&cMaterial elementu, ktory probujesz edytowac jest nieprawidlowy. '%material%'"
+key-already-defined: "&cKlucz '%key%' juz jest na twoimi przedmiocie, nie mozesz dodac go ponownie."
+key-is-not-found: "&cKlucz '%key%' nie moze nie moze zostac usuniety poniewaz nie moge go znalezc."
+#Reload Command
+configs-reloaded: "&aConfigi przeladowane."
+#Balance Command
+check-balance: "&bAktualnie posiadasz &c%amountofmoney%&b."
+check-balance-other-player: "&b%playername% &aaktualnie posiada &c%amountofmoney%&a."
+#Givemoney Command
+givemoneycommand-example: "&a/givemoney &7<player> <amount>"
+givemoney-complete: "&aPoprawnie dano pieniadze."
+#Pay Command
+minimum-amount: "&cMinimalna kwotra zeby zaplacic to %minimumamount%."
+payment-complete: "&aZakonczono platnosc."
+player-received-money: "&aOtrzymales &c%amounttogive% &aod gracza &2%playername%&a!"
+need-player-and-amount: "&9Musisz dac graczowi jakas ilosc pieniedzy."
+need-amount: "&9Musisz podac kwote."
+paycommand-example: "&a/pay &7<player> <amount>"
+#Player breaks spawner
+default-spawner-name: "&9&l%spawner-type% &rSpawner"
+spawner-broke-and-applied-to-inventory: "&Pomyslnie wykopales &9%spawner-type%&a, przedmiot zostal dodany do twojego ekwipunku."
+need-silk-touch: "&cPotrzebujesz kilofa z efektem &5&lsilk touch&r zeby wykopac to!"
+#JoinMessage
+join-message: "&2Witamy, twoj stan konta &c%balance%!"
+#Level event
+level-event-message: "&2[Level] &5Prosze bardzo, &c%amount% &5zostalo dodane do twojego konta!"
+#Item error's
+displayname-null: "Nie udalo sie wyswietlic nazwy."
+item-name-null: "Nie udalo sie zdobyc nazwy przedmiotu."
+need-item-material: "Nie udalo sie stowrzyc przedmiotu z wartoscia pustego materialu."
+item-material-null: "Nie udalo sie zdobyc przedmiotu/materialu. Jesli uwazasz to ze to blad, zgłos go na nasz serwer Discord, ktory mozesz znalezc na stronie dc.bestmine.pl (%material%)"
+item-enchantment-null: "Nie udalo sie zdobyc zaklecia na tym przedmiocie."
+need-item-enchantment: "Nie udalo sie stworzyc zaklecia ze stanem twojego konta."
+item-enchantment-not-supported: "To zaklecie nie jest wspierany w tej wersji minecraft."
+enchantment-cannot-apply-to-item: "Zeby nalozyc zaklecia na przedmiot, material potrzebuje ksiazki z zakleciem albo przedmiotu, ktory posiada zaklecie."
+item-spawnertype-null: "Nie udalo sie zdobyc typu spawneru z przedmiotem."
+need-item-spawnertype: "Nie udalo sie stworzyc spawnera z pustym typem spawneru."
+material-needs-to-be-spawner: "Zeby nalozyc typ spawneru(Entity-Type) na przedmiot, material albo przedmiot musi byc spawnerem."
+item-potiontype-null: "Nie udalo sie zdobyc typu mikstury na przedmiot."
+need-item-potiontype: "Nie udalo sie stworzyc typu mikstury ze stanem twojego konta."
+potiontype-not-supported: "Ten typ mikstury nie jest wspierany w tej wersji minecraft."
+material-needs-to-be-potion: "Zeby nalozyc efekt mikstury, materialem ktorego potrzebujesz musi byc jakakolwiek mikstura lub strzala z efektem."
+cant-bind-multiple-applyments: "Nie udalo sie stworzyc przedmiotu z wieloma dodatkami, np zaklecia/typy spawnerow badz typy mikstur."
+item-error: "&cError przedmiotu, zobacz w konsole!"
+material-not-supported: "Ten przedmiot nie jest wspierany w tej wersji minecraft."
+item-needs-buy-and-sell-value: "Kazdy przedmiot w sklepie musi posiadac cene kupna/sprzedazy."
+sell-value-wrong: "Wartosc sprzedazy musi byc liczba."
+buy-value-wrong: "Wartosc kupna musi byc liczba."
+option-type-changed: "Prosze zmien opcje 'typu' do opcji 'spawnertype' zeby stworzyc spawner w sklepie. Nazwa opcji zostala zmieniona w wersji 2.2 dla przejzystosci."
+option-meta-changed: "Prosze zmien opcje 'meta' do opcji 'displayname' zeby stworzyc przedmiot z wyswietlana nazwa w sklepie. Nazwa opcji zostala zmieniona w wersji 2.2 dla przejzystosci."
+cannot-display-shopsection: "Nie można utworzyc sekcji sklepu '%shopsection%' poniewaz miejsce przedmiotu musi byc w zakresie od 0 - %maxInvSize%."
+need-recipe-material: "Nie moge stworzyc receptury materialu ze stanem twojego konta."
+cannot-get-recipe-material: "Nie moge stworzyc receptury materialu. Sprawdz nazwe materialu pod katem bledow ortograficznych i czy jakiekolwiek sa."
+recipe-material-not-supported: "Dana receptura materialu nie jest wspierana w tej wersji minecraft."
+material-needs-to-be-book: "Zeby nalozyc recepture, material tego przedmiotu musi byc ksiazka KnowLedge."
+need-skullowner: "Nie moge stworzyc czaszki gracza bez okreslonego gracza(Wlasciciel czaszki)."
+material-needs-to-be-skull: "Zeby nalozyc tekstre czaszki (Wlasciciel czaszki) na przedmiot, material przedmiotu musi byc czaszka gracza."
+material-needs-to-be-leather-armor: "Zeby nalozyc kolor na czesc zrobi, material musi byc skorzana zrobja."
+#Item path
+items-path-in-shops-config: "Sciezka przedmiotu w shops.yml config: %location%"
+items-path-in-sections-config: "Sciezka przedmiotu w sections.yml config: %location%"
+#Compatibility
+wildstacker-compatibility-enabled: "Dostarczyciel spawneru ustawiony WildStacker w configu"
+wildstacker-not-found: "WildStacker nie zostal znaleziony"
+wildstacker-found: "WildStacker znaleziony, przetwarzanie..."
+could-not-integrate-with-wildstacker: "Nie moge przetworzyc z WildStacker"
+using-wildstacker-spawners: "Uzywanie WildStacker jako dostarczyciela spawnera."
+silkspawners-compatibility-enabled: "SilkSpawners poprawnie zostal wlaczony w configu."
+silkspawners-not-found: "SilkSpawners nie zostal znaleziony"
+silkspawners-found: "SilkSpawners znaleziony, przetwarzanie..."
+could-not-integrate-with-silkspawners: "Nie moge przetowrzyc z SilkSpawners."
+using-silkspawners-spawners: "Uzywanie SilkSpawners..."
+using-default-spawners: "Uzywanie domyslnego pluginu spawnerow..."
+#Error's
+cannot-find-discounted-section: "Nie mozna dodac znizki do sekcji '%section%', sekcja sklepu jest wylaczona albo nie zostala odnaleziona."
+cannot-find-discounted-group: "Nie mozna dodac znizek dla grupy permisji '%permsGroup%', sprawdz pisownie oraz czy istnieje w pluginie z permisjami."
+disabling-plugin: "Wylaczanie pluginu..."
+not-spawn-able: "Ten typ entity nie jest mozliwy do zespawnowania. '%spawnertype%'"
+real-player: "Musisz byc prawdziwym graczem zeby uzyc ten komendy."
+player-not-online: "&cTen gracz nie wystepuje lub nie jest online."
+cannot-sell-air: "&cNie mozesz sprzedac powietrza..."
+no-permissions: "&cNie masz permisji do tego!"
+no-permissions-to-open-shop: "&cNie masz wystarczajacych permisji do tej sekcji sklepu."
+cannot-do-that: "&4Nie mozesz tego zrobic!!"
+more-space-needed: "&cProsze zrob wiecej miejsca w swoim ekwipunku i sprobuj ponownie."
+could-not-store-all-items: "&c%amount% przedmiot(ow) nie mogl zostac dodany do twojego ekwipunku poniewaz jest pelny."
+not-enough-space-inside-inventory: "&4Nie masz wystarczajacego miejsca w ekwipunku, wyrzucanie reszty przedmiotow na ziemie."
+insufficient-money: "&cNie masz wystarczajacej ilosci pieniedzy."
+canceling-transaction-no-space: "&4Nie masz wystarczajacej ilosci miejsc w ekwipunku... Anulowanie transakcji. \nProsze zrob wiecej miejsca w swoim ekwipunku i sprobuj ponownie."
+no-items-in-section: "Nie mozesz otworzyc tej sekcji sklepu %shopsection% poniewaz nie ma tam zadnych przedmiotow!"
+no-item-found: "&cNie znaleziono zadnych przedmiotow."
+item-null: "&cPrzedmiot nie wystepuje."
+item-cannot-be-sold-to-server: "&cPrzedmiot (%material%) nie moze zostac sprzedany... Poniewaz przedmiot ma blad wewnatrz sklepu.  Prosze zglos ten blad do wlasciciela serwera!"
+could-not-save-shops,yml: "&4Nie moge zapisac configu shops.yml"
+could-not-save-sections,yml: "&4Nie moge zapisac configu sections.yml"
+could-not-save-config: "Nie moge zapisac configu %fileName%"
+rgb-color-formatted-wrong: "Kolory RGB musza byc sformatowane jako: '0x000000', '#000000' albo '000000' w %path%."
+no-shop-found: "&cNie moge znalezc sekcji sklepu z taka nazwa!"
+no-valid-amount: "&cNieprawidlowa ilosc"
+restart-plugin: "Nie mozesz otworzyc sekcji sklepu, sprobuj zrestartowac plugin/serwer."
+could-not-check-for-updates: "&cNie moge znalezc zadnych aktualizacji."
+cannot-update-config: "&cNie moge zaktualizowac pliku konfiguracyjnego config.yml."
+cannot-read-config: "Nie moge odczytac configu %fileName% poniewaz jest niepoprawnie skonfigurowany, uzyj internetowego parsera Yaml z bledem ponizej, aby znalezc przyczyne problemu zeby go rozwiazac. Jesli nie mozesz samemu znalezc przyczyny, dolacz do naszego serwera Discord, ktory mozna znalezc na stronie pluginu EconomyShopGUI."
+error-occured-while-reloading: "&4Wystapil blad podczas ponownego ladowania pluginu, poszukaj w konsoli jakiegokolwiek komunikatu o bledzie!"

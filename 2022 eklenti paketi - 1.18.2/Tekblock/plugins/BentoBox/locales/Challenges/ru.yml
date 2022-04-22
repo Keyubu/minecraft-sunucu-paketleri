@@ -1,0 +1,612 @@
+challenges:
+  commands:
+    admin:
+      main:
+        description: Основная команда администратора. Открывает GUI.
+      import:
+        parameters: '[overwrite]'
+        description: |-
+          Импортировать челленджи из challenge.yml
+          Перезапись параметра означает, что челленджи или уровни с одинаковым ID будут перезаписаны.
+      reload:
+        parameters: '[hard]'
+        description: |-
+          Перезагрузить челленджей из базы данных
+          Параметр hard означает, что аддон сбросит соединение с базой данных.
+      defaults:
+        parameters: '[command]'
+        description: Показывает подкоманды для импорта/экспорта челленджей по умолчанию.
+      defaults-generate:
+        parameters: '[overwrite] - позволяет перезаписать существующий файл.'
+        description: Экспортируйте существующие челленджи в файл default.json.
+      complete:
+        parameters: <игрок> <челлендж_id>
+        description: Завершите челлендж для игрока.
+      reset:
+        parameters: <игрок> <челлендж_id>
+        description: Сбросить челлендж для игрока. Если «challenge_id» установлен
+          на «all», он сбросит все челленджи.
+      migrate:
+        description: Миграция текущего игрового мира и данных о заданиях в формат
+          хранения 0.8.0.
+      show:
+        description: Отображает все челленджи в чате, которые существуют в этом мире.
+      defaults-import:
+        description: Импорт челленджей по умолчанию.
+    user:
+      complete:
+        parameters: <челлендж_id> [count]
+        description: Завершить челлендж.
+      main:
+        description: Открытый GUI челленджей.
+  gui:
+    title:
+      admin:
+        gui-title: '&aУправление челленджами и заданиями'
+        edit-challenge-title: '&aРедактировать задание'
+        edit-level-title: '&aРедактировать уровень'
+        settings-title: '&aИзменить настройки'
+        choose-challenge-title: '&aВыберите челлендж'
+        choose-level-title: '&aВыберите уровень'
+        choose-user-title: '&aВыберите игрока'
+        manage-blocks: '&aУправление блоками'
+        manage-entities: '&aУправление сущностями'
+        confirm-title: '&aПодтверждение'
+        manage-items: '&aУправление предметами'
+        manage-numbers: '&aЦифровая панель'
+        select-block: '&aВыберите блок'
+        select-challenge: '&aВыберите челлендж'
+        select-entity: '&aВыберите сущность'
+        toggle-environment: '&aПереключить окружение'
+        edit-text-fields: '&aРедактировать текстовые поля'
+        library-title: '&aЗагружаемые библиотеки'
+        lore-add: '&aДобавить элемент описания'
+        lore-remove: '&aУдалить элемент описания'
+        lore-edit: '&aРедактировать описание'
+        type-select: '&aВыберите тип челленджа'
+      challenges: '&6Челленджи'
+      game-modes: '&6Выберите игровой режим'
+      multiple-complete: '&6Сколько раз?'
+    buttons:
+      admin:
+        complete: Завершить челлендж игрока
+        reset: Сбросить челлендж игрока
+        create-challenge: Добавить новый челлендж
+        create-level: Добавить новый уровень
+        edit-challenge: Редактировать челлендж
+        edit-level: Редактировать уровень
+        delete-challenge: Удалить челлендж
+        delete-level: Удалить уровень
+        properties: Свойства
+        requirements: Требования
+        rewards: Награды
+        challenges: Челленджи
+        deployment: Отображение
+        icon: Иконка
+        locked-icon: Заблокированная иконка
+        description: Описание
+        order: Порядок
+        environment: Окружение
+        remove-on-complete: Удалить после завершения
+        required-experience: Требуемый опыт
+        remove-experience: Удалить опыт
+        required-level: Требуемый уровень острова
+        required-money: Требуемое кол-во денег
+        remove-money: Удалить деньги
+        reward-text: Сообщение награды
+        reward-items: Предметы в награду
+        reward-experience: Награда в виде опыта
+        reward-money: Денежная награда
+        reward-commands: Награда в виде команды
+        repeatable: Повторяемость
+        repeat-count: Макс. Раз
+        repeat-reward-text: Повторное сообщение награды
+        repeat-reward-items: Повторный предмет в награде
+        repeat-reward-experience: Повторный опыт в награде
+        repeat-reward-money: Повторная денежная награда
+        repeat-reward-commands: Повторная команда в награде
+        remove-completed: Удалить после завершения
+        glow: Свечение, когда закончено
+        free-at-top: Сначала свободные челленджи
+        line-length: Длина линии описания
+        add: Добавить
+        accept: Принять
+        decline: Отклонить
+        save: Сохранить
+        cancel: Отменить
+        input: Ввод
+        value: Значение
+        clear: Очистить
+        remove-empty: Удалить пустое
+        history-lifespan: История LifeSpan
+        input-mode: Переключить режим ввода
+        title-enable: Заглавие при завершении
+        library: Веб-библиотека
+        download: Скачать библиотеки
+        type:
+          island: '&6Тип острова'
+          inventory: '&6Тип инвентаря'
+          other: '&6Другой тип'
+        import: Импортировать челленджи из ASkyblock
+        settings: Изменить настройки
+        name: Дружественное имя
+        required-entities: Требуемые сущности
+        remove-entities: Убить сущностей
+        required-blocks: Требуемые блоки
+        remove-blocks: Удалить блоки
+        search-radius: Радиус поиска
+        required-permissions: Требуемые разрешения
+        required-items: Требуемые предметы
+        remove-items: Удалить предметы
+        waiver-amount: Сумма отказа
+        add-challenge: Добавить челлендж
+        remove-challenge: Удалить челлендж
+        reset-on-new: Сбросить на новом острове
+        broadcast: Оповещение о завершении
+        visibility-mode: Режим видимости челленджа
+        toggle-user-list: Список игроков
+        remove-selected: Удалить выбранные
+        show-eggs: Переключить режим просмотра
+        level-lore: Описание уровня
+        challenge-lore: Описание челленджа
+        gui-view-mode: Отображать игровые режимы
+        gui-mode: Единый GUI челленджей
+        history-store: История челленджей
+        island-store: Хранить на острове
+        default-locked-icon: Иконка заблокированного уровня
+        title-showtime: Время показа заглавия
+        default-import: Импорт челленджей по умолчанию
+        default-export: Экспорт челленджей по умолчанию
+        complete-wipe: Очистит базу данных аддона
+        challenge-wipe: Очистит базу данных челленджей
+        players-wipe: Очистит базу данных игроков
+        set: =
+        increase: +
+        reduce: '-'
+        multiply: '*'
+        number: '[number]'
+      next: Следующая
+      previous: Предыдущая
+      return: Назад
+      value: Завершить
+      increase: Увеличить
+      reduce: Уменьшить
+    descriptions:
+      admin:
+        input: Открыть текстовое поле ввода.
+        deployment: Позволяет игрокам завершить (просмотреть) челлендж.
+        icon-challenge: Иконка, который будет отображаться в GUI для этой задачи.
+        icon-level: Иконка, который будет отображаться в GUI для этого уровня.
+        remove-completed: Включает/Отключает скрытие челленджей, которые выполнены
+          и не могут быть повторены.
+        toggle-user-list: Переключиться на другой список игроков.
+        selected: Выбрано
+        show-eggs: Переключить вид сущности между режимом Egg или Head.
+        click-to-edit: '&4Нажмите здесь, чтобы редактировать ввод.'
+        input-mode: Переключайтесь между режимами ввода чата и наковальни.
+        library-lang: '&aЯзык: [lang]'
+        library-gamemode: '&aОсновной для [gamemode]'
+        download-disabled: Загрузчик данных GitHub отключен в BentoBox. Без этого
+          вы не можете использовать библиотеки!
+        create-level: Добавить новый уровень.
+        edit-challenge: Изменить настройки челленджа.
+        edit-level: Изменить настройки уровня.
+        delete-challenge: Удалить челлендж.
+        delete-level: Удалить уровень.
+        settings: Изменить настройки.
+        properties: Изменить общие свойства
+        requirements: Управление требованиями
+        rewards: Управление наградами
+        description: Редактировать описание.
+        order: Изменить номер порядка.
+        environment: Измените окружение челленджа.
+        name-challenge: Изменить отображаемое название челленджа.
+        name-level: Изменить отображаемое название уровня.
+        remove-entities: Удалит (убьет) сущности по завершению челленджа.
+        remove-blocks: Удалит (заменит на воздух) блоки по завершению челленджа.
+        search-radius: Радиус вокруг местоположения игрока, где будут находиться нужные
+          сущности и блоки.
+        reward-text: Изменить сообщение, которое будет отправлено игроку после завершения
+          челленджа.
+        repeatable: Определите, можно ли будет перепройти челлендж или нет.
+        free-at-top: Поменяйте местами челленджи. Истина означает, что вызовы будут
+          первыми, иначе - они будут последними.
+        line-length: Измените максимальную длину строки в поле описания. Не повлияет
+          на хранимые объекты.
+        level-lore: Изменить, какие элементы описания уровня должны быть видны.
+        challenge-lore: Изменить, какие элементы описания челленджа должны быть видимыми.
+        gui-view-mode: Укажите, должен ли /challenge GUI отображать игровые режимы
+          или челленджи в мире игрока.
+        history-store: Включить/Отключить хранение истории челленджей.
+        default-import: Импорт челленджей по умолчанию.
+        default-export: Экспор существующих челленджей в файл defaults.json.
+        complete-wipe: Полностью очистить все проблемы базы данных аддона. Включает
+          в себя данные игрока!
+        challenge-wipe: Полная чистка базы данных челленджей и их уровней!
+        players-wipe: Полностью очищенная база данных игроков!
+        library: Откройте GUI, который показывает все доступные публичные библиотеки.
+        library-version: '&9Сделано в Челленджах [version]'
+        save: Сохраните и вернитесь к предыдущему GUI.
+        cancel: Вернитесь к предыдущему GUI. Изменения не будут сохранены.
+        set: Установить сумму. Нажатие на цифру установит значение на выбранный число.
+        increase: Увеличить сумму. Нажатие на цифру увеличит значение на выбранный
+          число.
+        reduce: Уменьшить сумму. Нажатие на цифру уменьшит значение на выбранный число.
+        multiply: Умножьте сумму. Нажатие на цифру умножит значение на выбранное число.
+        challenges: Управляйте уровнями челленджей (добавляйте/удаляйте).
+        locked-icon: Иконка, который будет отображаться на панелях GUI, если уровень
+          заблокирован.
+        remove-on-complete: Удалить челлендж из GUI игрока после его завершения.
+        remove-items: Удалить предметы из инвентаря игрока после завершения челленджа.
+        required-experience: Определите необходимый опыт для игрока, чтобы выполнить
+          челлендж.
+        remove-experience: Удалить необходимый опыт.
+        reward-experience: Изменить опыт-награду за первое завершение челленджа.
+        repeat-count: Определите максимальное количество повторений. Если значение
+          установлено на 0, ограничений нет.
+        repeat-reward-text: Изменить сообщение, которое будет отправлено игроку после
+          повторного завершения челленджа.
+        repeat-reward-experience: Изменить опыт-награду за повторное завершение челленджа.
+        waiver-amount: Установите количество челленджей, которые игрок сможет пропустить,
+          чтобы разблокировать следующий уровень.
+        reward-text-level: Измените сообщение, которое будет отправлено игроку после
+          завершения всех челленджей на уровне.
+        add-challenge: Добавить существующий челлендж на текущий уровень.
+        remove-challenge: Удалить челлендж  с текущего уровня.
+        reset-on-new: Включает/Отключает сброс всех челленджей для игрока, если он
+          перезайдет, выйдет или будет выгнан с острова.
+        broadcast: Включает/Отключает оповещение на первое прохождения челленджа для
+          всех онлайн игроков.
+        glow: Включает/Отключает эффект свечения для выполненных челленджей.
+        mode-online: Игроки, которые сейчас онлайн.
+        mode-in-world: Игроки в GameMode мире.
+        mode-with-island: Игроки, у которых есть остров в GameMode мире.
+        visibility-mode: Показать/Cкрыть неразрешенные челленджи.
+        edit-text-line: '&6Редактировать текстовое сообщение!'
+        add-text-line: '&6Добавить новое текстовое сообщение!'
+        title-enable: Включите/Отключите заглавное сообщение, которое будет показано
+          игрокам, когда они выполнят челлендж.
+        title-showtime: Измените, как долго заглавные сообщения будут видны игроку.
+        import: |-
+          Импортировать вызовы из ASkyblock.
+          При щелчке правой кнопкой он включает/отключает режим перезаписи.
+          Поместите challenge.yml в папку ./BentoBox/addons/Challenges.
+        complete: |-
+          Выполняйте челленджи для любого пользователя.
+          Пользователь не получит вознаграждение за завершение.
+        reset: |-
+          Сброс завершенных пользовательских челленджей.
+          Правый клик включает/отключает сброс всех функций.
+        create-challenge: |-
+          Добавить новый челлендж.
+          По умолчанию будет в списке свободных челленджей.
+        required-entities: |-
+          Добавить/редактировать/удалить требуемые сущности.
+          Сущности:
+        required-blocks: |-
+          Добавить/редактировать/удалить требуемые блоки.
+          Блоки:
+        required-permissions: |-
+          Требуемые разрешения для игрока, чтобы иметь возможность выполнить этот челлендж.
+          Разрешение:
+        required-items: 'Необходимые предметы в инвентаре игрока. Предметы:'
+        required-level: |-
+          Укажите необходимый уровень острова для этого челленджа.
+          &cТребуется аддон Level.'
+        required-money: |-
+          Укажите необходимое кол-во денег на счету игрока.
+          &cТребуется Vault и любой плагин на экономику.'
+        remove-money: |-
+          Снять необходимое кол-во денег со счета игрока.
+          &cТребуется Vault и любой плагин на экономику.'
+        reward-items: 'Изменить награду в виде предмета за первое завершение челленджа.
+          Предметы:'
+        reward-money: |-
+          Изменить денежное вознаграждение за первое выполнение челленджа.
+          &cТребуется Vault и любой плагин на экономику.
+        reward-commands: |-
+          Установите вознаграждения в виде команд, которые будут выполняться после первого завершения.
+          ***Добавление "[SELF]" в начале, означает, что команда будет запущена игроком, например, "/kill"
+          ***Строка "[player]" будет заменено на имя игрока, например "/kill [player]" будет выполняться как "/kill BONNe1704"
+          Команды:
+        repeat-reward-items: |-
+          Изменить предметы в награде за повторное выполнение челленджа.
+          Предметы:
+        repeat-reward-money: |-
+          Изменить денежное вознаграждение за повторное выполнение челленджа.
+          &cТребуется Vault и любой плагин на экономику.
+        repeat-reward-commands: |-
+          Установите команды в виде награды, которые будут выполняться после повторного выполнения челленджа.
+          ***Добавление "[SELF]" в начале, означает, что команда будет запущена игроком, например, "/kill"
+          ***Строка "[player]" будет заменено на имя игрока, например "/kill [player]" будет выполняться как "/kill BONNe1704"
+          Команды:
+        remove-selected: |-
+          Удалить выбранные элементы.
+          Выделите элементы правой кнопкой мыши.
+        history-lifespan: |-
+          Изменить, сколько дней, данные истории должны храниться.
+          Значение 0 - означает навсегда.
+        island-store: |-
+          Включить/Отключить хранение данных челленджей на каждом острове. Это означает, что челленджи будут одинаковыми для всей команды, если это включено.
+          &cНЕ будет конвертировать данные по клику. Прогресс будет потерян.'
+        default-locked-icon: |-
+          Изменить иконку заблокированного уровня по умолчанию.
+          Эта опция может быть перезаписана каждым уровнем.
+        gui-mode: |-
+          Включить/Отключить одиночный вызов GUI.
+          &2Потребуется перезапустить сервер.'
+        download: |-
+          Обновить вручную доступные библиотеки челленджей.
+          Щелкните правой кнопкой мыши, чтобы включить очистку кэша.'
+        lore:
+          level: |-
+            Строка уровня.
+            Представляет перевод challenges.gui.challenge-description.level
+          status: |-
+            Строка состояния.
+            Представляет перевод challenges.gui.challenge-description.completed
+          count: |-
+            Строка подсчета завершений.
+            Представляет перевод для challenges.gui.challenge-description.completed-times
+            challenges.gui.challenge-description.completed-times-of
+            and challenges.gui.challenge-description.maxed-reached
+          description: |-
+            Строка описания.
+            Определенный в челленджах объект - challenge.description.
+          warnings: |-
+            Строка предупреждения.
+            Представляет перевод для:
+            challenges.gui.challenge-description.warning-items-take
+            challenges.gui.challenge-description.objects-close-by
+            challenges.gui.challenge-description.warning-entities-kill
+            challenges.gui.challenge-description.warning-blocks-remove
+          environment: |-
+            Строка среды.
+            Определенный в задачах объект - challenge.environment.
+          requirements: |-
+            Строка требования.
+            Представляет перевод для:
+            challenges.gui.challenge-description.required-level
+            challenges.gui.challenge-description.required-money
+            challenges.gui.challenge-description.required-experience
+            challenge.requiredItems'
+            challenge.requiredBlocks'
+            or challenge.requiredEntities.
+          reward_text: |-
+            Строка вознаграждения.
+            Определено в challenge.rewardText и challenge.repeatRewardText
+          reward_other: |-
+            Другая строка награды.
+            Представляет перевод для:
+            challenges.gui.challenge-description.experience-reward
+            challenges.gui.challenge-description.money-reward
+            challenges.gui.challenge-description.not-repeatable
+          reward_items: |-
+            Предметы в награду.
+            Список предметов, которые будут выданы в виде награды, определены в challenge.rewardItems and challenge.repeatRewardItems.
+          reward_commands: |-
+            Награда в виде команды.
+            Список команд которые будут выполнены в виде награды, определены в challenge.rewardCommands and challenge.repeatRewardCommands.
+          level_status: |-
+            Строка состояния.
+            Представляет перевод challenges.gui.level-description.completed
+          challenge_count: |-
+            Строка количества завершенных челленджей.
+            Представляет перевод для challenges.gui.level-description.completed-challenges-of
+          unlock_message: |-
+            Строка сообщения разблокировки.
+            Определен в объекте уровня челленджа - challengeLevel.unlockMessage
+          waiver_amount: |-
+            Строка количества выпадающих челленджей, чтобы разблокировать следующий уровень.
+            Представляет перевод для challenges.gui.level-description.waver-amount
+          level_reward_text: |-
+            Строка вознаграждения.
+            Определено в challengeLevel.rewardText
+          level_reward_other: |-
+            Строка с другой наградой.
+            Представляет перевод для:
+            challenges.gui.level-description.experience-reward
+            challenges.gui.level-description.money-reward
+          level_reward_items: |-
+            Предметы в награду.
+            Список предметов, которые будут выданы как награда, определены в challengeLevel.rewardItems
+          level_reward_commands: |-
+            Команды в виде награды.
+            Список команды которые будут выполнены в виде награды, определены в  challengeLevel.rewardCommands
+        library-author: автор &e[автор]
+      enabled: Включено
+      disabled: Отключено
+      the-end: '- Край'
+      nether: '- Ад'
+      normal: '- Верхний мир'
+      entity: '- [entity] : [count]'
+      permission: '- [permission]'
+      level-unlocked: Нажмите, чтобы увидеть [level] челленджей!
+      level-locked: Заверши больше [count] заданий, уровня [level], чтобы открыть
+        этот уровень!
+      increase-by: '&aУвеличьте кол-во завершений на [value]'
+      reduce-by: '&aУменьшите кол-во завершений на [value]'
+      visibility:
+        hidden: Видны только отображаемые челленджи.
+        visible: Все челленджи видны всем
+        toggleable: Переключить, если неиспользуемые челленджи должны отображаться
+      type:
+        island: '&aтребовать блоков или мобов вокруг игрока'
+        other: '&aтребовать предметы  от других плагинов/аддонов'
+        inventory: '&aтребовать предметы в инвентаре игрока'
+      current-value: '&6Текущее значение: [value].'
+      block: '- [block] : [count]'
+      item: '- [count] x [item]'
+      item-meta: ([meta])
+      item-enchant: '- [enchant] [level]'
+      command: '- [command]'
+    challenge-description:
+      completed-times-of: Завершено [donetimes] из [maxtimes]
+      maxed-reached: Завершено [donetimes] из [maxtimes]
+      completed-times: Завершено [donetimes]
+      objects-close-by: '&cВсе необходимые блоки и сущности должны быть рядом с вами,
+        на вашем острове!'
+      warning-entities-kill: '&cВсе необходимые сущности будут убиты, когда вы завершите
+        этот челлендж!'
+      warning-blocks-remove: '&cВсе необходимые блоки будут удалены, когда вы выполните
+        этот челлендж!'
+      not-repeatable: '&cЭтот челлендж нельзя повторить!'
+      experience-reward: '&6Опыта в награде: [value]'
+      money-reward: '&6Денежная награда: $[value]'
+      required-experience: '&6Требуется опыта: [value]'
+      required-money: '&6Требуется денег: $[value]'
+      required-island-level: '&6Требуемый уровень острова: [value]'
+      environment: 'Обязательные условия:'
+      reward-items: '&6Пердметы в награде:'
+      reward-commands: '&6Команды в награде:'
+      required-items: 'Требуемые предметы:'
+      required-entities: 'Требуемые сущности:'
+      required-blocks: 'Требуемые блоки:'
+      level: '&fУровень: [level]'
+      completed: '&bЗавершено'
+      warning-items-take: '&cВсе необходимые предметы будут изъяты из вашего инвентаря,
+        когда вы завершите этот челлендж!'
+    level-description:
+      experience-reward: '&6Опыта в награде: [value]'
+      money-reward: '&6Денежная награда: $[value]'
+      reward-items: '&6Предметы в награде:'
+      reward-commands: '&6Команды в награде:'
+      waver-amount: '&6[value] челленджи могут быть пропущены, чтобы разблокировать
+        следующий уровень.'
+      completed: '&bЗавершено'
+      completed-challenges-of: '&3Вы завершили [number] из [max] челленджей на этом
+        уровне.'
+    item-description:
+      item: '- [count] x [item]'
+      potion-type-extended-upgraded: Расширен и обновлен [name]
+      potion-type-upgraded: Улучшен [name]
+      potion-type-extended: Расширен [name]
+      custom-effects: 'Индивидуальные эффекты:'
+      potion-effect: '[effect] x [amplifier] для [duration]t'
+      fish-meta: '[body-color] с [pattern-color] [pattern]'
+      item-meta: ([meta])
+      item-enchant: '- [enchant] [level]'
+      item-name: '[name]'
+      armor-color: '[color]'
+      potion-type: '[name]'
+      skull-owner: '[owner]'
+      egg-meta: '[mob]'
+      item-lore: 'уздечка:'
+      book-meta: '[title] [author]'
+      recipe-count: '[count] рецептов'
+    questions:
+      prefix: '&2[СЕРВЕР]:'
+      admin:
+        unique-id: Введите уникальное имя объекта и нажмите клавишу ENTER.
+        number: Напишите номер в чате и нажмите ENTER.
+        challenge-name: Напишите отображаемое имя в чате для текущего челленджа.
+        level-name: Напишите отображаемое имя в чате для текущего уровня.
+  titles:
+    challenge-title: Успешно завершено
+    challenge-subtitle: '[friendlyName]'
+    level-title: Успешно завершено
+    level-subtitle: '[friendlyName]'
+  messages:
+    admin:
+      you-added: Вы добавили один [thing] в челлендж
+      challenge-created: '[challenge]&r создан!'
+      completed: '&2Вы завершили челлендж [name] для игрока [player]!'
+      already-completed: '&2Этот челлендж уже был выполнен!'
+      reset: '&2Вы сбрасываете челлендж [name] для игрока [player]!'
+      reset-all: '&2Все [player] челленджи были сброшены!'
+      not-completed: '&2Этот челлендж еще не завершен!'
+      migrate-start: '&2Начать миграцию данных аддона для челленджей.'
+      migrate-not: '&2Все данные действительны.'
+      start-downloading: '&5Начинаем скачивать и импортировать Challenges Library.'
+      migrate-end: '&2Данные аддона челленджей обновлены до нового формата.'
+      hit-things: Нажмите на предметы, чтобы добавить их в список необходимых предметов.
+        Щелкните правой кнопкой мыши, когда закончите.
+      complete-wipe: '&cНадеюсь, у вас есть резервные копии, потому что вы просто
+        стерли все данные из базы аддона Challenges!'
+      challenge-wipe: '&cНадеюсь, у вас есть резервные копии, потому что вы просто
+        стерли все челленджи и их уровни!'
+      players-wipe: '&cНадеюсь, у вас есть резервные копии, потому что вы просто стерли
+        все выполненные игроками челленджи!'
+    you-completed-challenge: '&2Вы завершили [value] &r&2челлендж!'
+    you-repeated-challenge: '&2Ты перепрошел [value] &r&2челлендж!'
+    you-repeated-challenge-multiple: '&2Вы перепрошли [value] &r&2челлендж [count]
+      раз!'
+    you-completed-level: '&2Вы завершили [value] &r&2уровень!'
+    name-has-completed-challenge: '&5[name] завершил [value] &r&5челлендж!'
+    name-has-completed-level: '&5[name] завершил [value] &r&5уровень!'
+    import-levels: Начало импорта уровней
+    import-challenges: Начало импорта челленджей
+    no-levels: 'Предупреждение: Уровни не определены в challenge.yml'
+    import-number: Импортировано [number] челленджей
+    load-skipping: '"[value]" уже существует - пропуск'
+    load-overwriting: Перезапись "[value]"
+    load-add: 'Добавление нового объекта: [value]'
+    defaults-file-overwrite: defaults.json существует. Это будет перезаписано.
+    defaults-file-completed: defaults.json файл заполнен челленджами из [world]!
+  errors:
+    no-name: '&cОтсутствует имя челленджа'
+    unknown-challenge: '&cНеизвестный челлендж'
+    unique-id: '&cУникальный идентификатор "[id]" недействителен.'
+    wrong-icon: '&cДанный материал "[value]" недействителен и не может использоваться
+      в качестве иконки.'
+    not-deployed: '&cЧеллендж не отображается!'
+    not-on-island: '&cВы должны быть на своем острове, чтобы сделать это!'
+    not-repeatable: '&cЭтот челлендж нельзя пройти повторно!'
+    not-enough-items: '&cУ тебя недостаточно [items] чтобы завершить этот челлендж!'
+    not-close-enough: '&cВы должны стоять в пределах [number] блоков от всех необходимых
+      предметов.'
+    you-still-need: '&cВам еще нужно [amount] x [item]'
+    not-enough-money: '&cНеобходимо иметь [value] на вашем аккаунте, чтобы завершить
+      челлендж.'
+    import-no-file: '&cНе могу найти challenges.yml файл для импорта!'
+    no-load: '&cОшибка: Не  смог загрузить challenges.yml. [message]'
+    load-error: '&cОшибка: Не удается загрузить [value].'
+    defaults-file-exist: '&cdefaults.json уже существует. Используйте режим перезаписи,
+      чтобы заменить его!'
+    defaults-file-error: '&cПроизошла ошибка при создании файла defaults.json! Проверьте
+      консоль!'
+    missing-arguments: '&cВ команде отсутствуют аргументы.'
+    wrong-environment: '&cВы находитесь в неправильном окружении!'
+    missing-addon: '&cНевозможно выполнить задание: отсутствует обязательный аддон
+      или плагин.'
+    exist-challenges-or-levels: '&cЧелленджи уже существуют в вашем мире. Не могу
+      продолжить!'
+    no-challenges: '&cЧелленджи еще не реализованы в этом мире!'
+    no-challenges-admin: '&cЧелленджи еще не реализованы в этом мире! Используйте  &5/[command]
+      &cчтобы добавить их!'
+    missing-level: '&cУровень челленджа [level] не определен в базе данных. Это может
+      привести к ошибкам!'
+    no-multiple-permission: '&cУ вас нет разрешения на выполнение этого задания несколько
+      раз одновременно.'
+    not-a-integer: '&cДанное значение "[value]" не является целым числом!'
+    challenge-level-not-available: '&cВы не разблокировали необходимый уровень для
+      выполнения этого челленджа.'
+    incorrect: '&cНевозможно выполнить челлендж: требования неверны.'
+    not-enough-experience: '&cНеобходимо иметь [value] опыта, чтобы завершить этот
+      челлендж.'
+    island-level: '&cВаш остров должен быть [number] уровня или больше, чтобы завершить
+      этот челлендж!'
+    no-rank: '&cУ вас нет достаточно высокого ранга, чтобы сделать это.'
+    cannot-remove-items: '&cНекоторые предметы не могут быть удалены из вашего инвентаря!'
+    not-valid-integer: |-
+      &cЗаданное целое число "[value]" не является действительным!
+      Значение должно быть между [min] и [max].
+protection:
+  flags:
+    CHALLENGES_ISLAND_PROTECTION:
+      description: |-
+        &5&oПереключить, кто может
+        &5&oзавершить челлендж
+      name: Защита челленджа
+    CHALLENGES_WORLD_PROTECTION:
+      name: Ограничения острова челленджей
+      hint: Нет челленджей за пределами острова
+      description: |-
+        &5&oВключить/Выключить
+        &5&oтребование к игрокам
+        &5&oбыть на их острове, чтобы
+        &5&oвыполнить челлендж.
+version: 11
+meta:
+  authors:
+  - BONNe

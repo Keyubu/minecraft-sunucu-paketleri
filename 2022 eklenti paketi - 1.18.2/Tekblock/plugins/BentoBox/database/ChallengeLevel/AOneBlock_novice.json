@@ -1,0 +1,34 @@
+{
+  "uniqueId": "AOneBlock_novice",
+  "friendlyName": "Novice",
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ORANGE_CONCRETE\n",
+  "world": "oneblock_world",
+  "order": 1,
+  "waiverAmount": 3,
+  "unlockMessage": "",
+  "rewardText": "Small reward for completing all Novice challenges.",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GRASS_BLOCK\n"
+  ],
+  "rewardExperience": 1395,
+  "rewardMoney": 100,
+  "rewardCommands": [
+    "effect give [player] speed 600"
+  ],
+  "challenges": [
+    "AOneBlock_mushroomfarm",
+    "AOneBlock_stonesmelter",
+    "AOneBlock_melonfarm",
+    "AOneBlock_pumpkinfarm",
+    "AOneBlock_cobblegenerator",
+    "AOneBlock_applecollector",
+    "AOneBlock_pumpkinmaker",
+    "AOneBlock_papermaker",
+    "AOneBlock_melonmaker",
+    "AOneBlock_sugarcanefarm",
+    "AOneBlock_treefarm",
+    "AOneBlock_crackedmaker",
+    "AOneBlock_chiseledmaker",
+    "AOneBlock_cactusfarm"
+  ]
+}

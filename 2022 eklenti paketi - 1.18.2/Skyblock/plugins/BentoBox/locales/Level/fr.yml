@@ -1,0 +1,36 @@
+admin:
+  level:
+    description: calcule le niveau d'île d'un joueur
+    parameters: <joueur>
+  top:
+    description: affiche le top 10 des îles
+    display: '&f[rank]. &a[name] &7- &b[level]'
+    unknown-world: '&cMonde inconnu.'
+    remove:
+      description: retire le joueur du top 10
+      parameters: <joueur>
+island:
+  level:
+    calculating: '&aCalcul du niveau en cours...'
+    deaths: '&c([number] morts)'
+    description: calcule le niveau de votre île ou affiche le niveau d'un [joueur]
+    island-level-is: '&aLe niveau d''île est &b[level]'
+    parameters: '[joueur]'
+    required-points-to-next-level: '&a[points] points avant le prochain niveau'
+    cooldown: '&cVous devez attendre &b[time] &csecondes avant de pouvoir refaire
+      cette action'
+  top:
+    description: affiche le top 10
+    gui-heading: '&6[name]: &B[rank]'
+    gui-title: '&aTop 10'
+    island-level: '&BNiveau [level]'
+    warp-to: '&ATéléportation vers l''île de [name]'
+  value:
+    description: affiche la valeur d'un bloc
+    success: '&7Valeur de ce bloc : &e[value]'
+    success-underwater: '&7Valeur de ce bloc en dessous du niveau de la mer : &e[value]'
+    empty-hand: '&cIl n''y a aucun bloc dans votre main'
+    no-value: '&cCet objet n''a pas de valeur.'
+meta:
+  authors:
+  - plagoutte

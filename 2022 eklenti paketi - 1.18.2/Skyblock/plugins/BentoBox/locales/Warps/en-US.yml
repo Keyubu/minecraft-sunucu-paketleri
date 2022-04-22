@@ -1,0 +1,34 @@
+# ##########################################################################################
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+# ##########################################################################################
+
+warp:
+  help:
+    description: warp to the player's warp sign
+    parameters: <player name>
+warps:
+  deactivate: '&c Old warp sign deactivated!'
+  error:
+    does-not-exist: '&c Oh snap! That warp no longer exists!'
+    no-permission: '&c You do not have permission to do that!'
+    no-remove: '&c You cannot remove that sign!'
+    no-warps-yet: '&c There are no warps available yet'
+    not-enough-level: '&c Your island level is not high enough!'
+    not-on-island: '&c You must be on your island to do that!'
+    not-safe: '&c That warp is not safe!'
+    your-level-is: '&c Your island level is only [level] and must be higher than [required].
+      Run the level command.'
+  help:
+    description: open the warps panel
+  next: '&6 Next page'
+  player-warped: '&2 [name] warped to your warp sign!'
+  previous: '&6 Previous page'
+  random: '&4 Random Warp'
+  sign-removed: '&c Warp sign removed!'
+  success: '&a Success!'
+  title: Warp Signs
+  warpTip: '&6 Place a warp sign with [text] on the top'
+  warpToPlayersSign: '&6 Warping to [player]''s sign'
+
+

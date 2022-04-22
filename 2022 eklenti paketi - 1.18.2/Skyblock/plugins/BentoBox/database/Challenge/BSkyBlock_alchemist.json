@@ -1,0 +1,66 @@
+{
+  "uniqueId": "BSkyBlock_alchemist",
+  "friendlyName": "Alchemist",
+  "deployed": true,
+  "description": [
+    "Brew some potions"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BREWING_STAND\n",
+  "order": 1,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "BSkyBlock_advanced",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:healing\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:water_breathing\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:swiftness\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:fire_resistance\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:leaping\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:night_vision\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:invisibility\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:slow_falling\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:strength\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:regeneration\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:poison\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:weakness\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:harming\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    potion-type: minecraft:slowness\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "There are never too many diamonds",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_ORE\n  amount: 4\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "",
+  "maxTimes": 0,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND_ORE\n"
+  ],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

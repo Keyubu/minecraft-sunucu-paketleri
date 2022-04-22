@@ -1,0 +1,25 @@
+meta:
+  authors:
+  - Over_Brave
+
+chat:
+  team-chat:
+    description: ada takım sohbetini açar/kapatır
+    chat-on: '&aTakım sohbeti aktifleştirildi.'
+    chat-off: '&cTakım sohbeti kapatıldı.'
+    syntax: '&6[team] &a[name] &8: &f[message]'
+    spy:
+      description: takım sohbetlerini görmeni sağlar
+      spy-on: '&aTakım sohbetlerini artık görebiliyorsun.'
+      spy-off: '&cTakım sohbetlerini artık göremiyorsun.'
+      syntax: '&c[team-chat-spy] &a[name]&8: &f[message]'
+  island-chat:
+    description: ada sohbetini açar/kapatır
+    island-on: '&aAda sohbeti aktifleştirildi.'
+    island-off: '&cAda sohbeti kapatıldı.'
+    syntax: '&6[island] &a[name]&8: &f[message]'
+    spy:
+      description: ada sohbetlerini görmeni sağlar
+      spy-on: '&aAda sohbetlerini artık görebiliyorsun.'
+      spy-off: '&cAda sohbetlerini artık göremiyorsun.'
+      syntax: '&c[island-chat-spy] &a[name]&8: &f[message]'

@@ -1,0 +1,71 @@
+{
+  "uniqueId": "AOneBlock_zoomaker",
+  "friendlyName": "Zoo Maker",
+  "deployed": true,
+  "description": [
+    "Create a peaceful mob zoo"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GLASS_PANE\n",
+  "order": 7,
+  "challengeType": "ISLAND",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "AOneBlock_advanced",
+  "requirements": {
+    "class": "IslandRequirements",
+    "parameters": {
+      "requiredBlocks": {},
+      "removeBlocks": false,
+      "requiredEntities": {
+        "DONKEY": 1,
+        "MULE": 1,
+        "BAT": 1,
+        "PIG": 1,
+        "SHEEP": 1,
+        "COW": 1,
+        "CHICKEN": 1,
+        "WOLF": 1,
+        "MUSHROOM_COW": 1,
+        "SNOWMAN": 1,
+        "OCELOT": 1,
+        "IRON_GOLEM": 1,
+        "HORSE": 1,
+        "RABBIT": 1,
+        "POLAR_BEAR": 1,
+        "LLAMA": 1,
+        "PARROT": 1
+      },
+      "removeEntities": false,
+      "searchRadius": 20,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Get some extra diamonds and some shulker boxes",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n  amount: 32\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SHULKER_BOX\n  amount: 2\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": false,
+  "repeatRewardText": "",
+  "maxTimes": 0,
+  "repeatExperienceReward": 0,
+  "repeatItemReward": [],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

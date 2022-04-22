@@ -1,0 +1,30 @@
+#
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+warp:
+  help:
+    description: đi đến điểm dịch chuyển của người chơi
+    parameters: <tên người chơi>
+warps:
+  deactivate: '&cBảng cũ đã vô hiệu hóa!'
+  error:
+    does-not-exist: '&cUầy! Điểm dịch chuyển đó không tồn tại!'
+    no-permission: '&cBạn không có quyền làm điều đó!'
+    no-remove: '&cBạn không thể xóa bảng đó!'
+    no-warps-yet: '&cChưa có điểm dịch chuyển nào'
+    not-enough-level: '&cCấp đảo của bạn không đủ cao!'
+    not-on-island: '&cBạn phải ở đảo của bạn để làm điều đó!'
+    not-safe: '&cĐiểm dịch chuyển không an toàn!'
+    your-level-is: '&cCấp đảo của bạn là [level] và phải cao hơn [required]. Hãy dùng
+      lệnh xem cấp đảo.'
+  help:
+    description: mở bảng dịch chuyển
+  next: '&6Trang kế'
+  player-warped: '&2[name] đã vào điểm dịch chuyển của bạn!'
+  previous: '&6Trang trước'
+  random: '&4Điểm dịch chuyển ngẫu nhiên'
+  sign-removed: '&cĐã xóa bảng dịch chuyển!'
+  success: '&aThành công!'
+  title: Bảng Dịch Chuyển
+  warpTip: '&6Đặt bảng với dòng chữ [text] ở dòng đầu tiên'
+  warpToPlayersSign: '&6Đang dịch chuyển đến chỗ của [player]'

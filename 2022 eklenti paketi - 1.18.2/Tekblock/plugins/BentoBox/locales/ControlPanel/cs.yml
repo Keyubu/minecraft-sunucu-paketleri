@@ -1,0 +1,20 @@
+controlpanel:
+  messages:
+    import-count: Importováno [number] ovládacích panelů
+  errors:
+    no-load: '&4Nelze načíst soubor [file]: [message]'
+    no-file: '&4Chybějící soubor [file]'
+    no-valid-panels: '&4Nelze najít žádný platný ovládací panel.'
+    no-valid-panels-op: '&4Nelze najít žádný platný ovládací panel. Měl bys jej zkusit
+      importovat použitím /[admin] cp import'
+  commands:
+    admin:
+      help:
+        parameters: ''
+        description: ukáže nápovědu administrátorského příkazu
+      import:
+        parameters: '[overwrite]'
+        description: importuje ovládací panely ze souboru [file]
+    help:
+      parameters: ''
+      description: otevře ovládací panel

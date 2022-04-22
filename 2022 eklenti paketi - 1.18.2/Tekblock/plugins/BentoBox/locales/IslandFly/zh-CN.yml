@@ -1,0 +1,16 @@
+islandfly:
+  fly-outside-alert: ＆c您在岛外，因此飞行模式将在&e [number]＆c秒内被禁用。
+  fly-turning-off-alert: ＆c您不再被允许在这里飞行。在＆e [number]＆c秒内关闭飞行。
+  disable-fly: ＆c您的飞行模式已被禁用。
+  reallowed-fly: ＆a您的苍蝇已被放低
+  enable-fly: ＆a您的飞行模式已启用。
+  cancel-disable: ＆a你回来了，呵呵！飞行加油成功加油！
+  wrong-world: ＆c您不在正确的游戏模式世界中
+  command:
+    description: 让你飞上你的小岛
+    not-allowed-fly: ＆c不允许您在这个岛上飞
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: ＆a切换谁可以在您的岛屿上飞行
+      name: ＆a防蝇

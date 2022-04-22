@@ -1,0 +1,21 @@
+chat:
+  team-chat:
+    description: Alternar el chat de equipo
+    chat-on: '&a Chat de equipo activado'
+    chat-off: '&c Chat de equipo desactivado'
+    syntax: '&6[team] &a[name]&8:  &f[message]'
+    spy:
+      description: Alternar espiar en todos los chats de equipo
+      spy-on: '&a Chat de equipo espía activado'
+      spy-off: '&c Chat de equipo espía desactivado'
+      syntax: '&c[team-chat-spy] &a[name]&8: &f[message]'
+  island-chat:
+    description: Alternar el chat de la isla
+    island-on: '&a Chat de isla activado'
+    island-off: '&c Chat de isla desactivado'
+    syntax: '&6[island] &a[name]&8:  &f[message]'
+    spy:
+      description: Alternar espiar en todos los chats de la isla
+      spy-on: '&a Chat espia de isla activado'
+      spy-off: '&c Chat espia de isla desactivado'
+      syntax: '&c[island-chat-spy] &4[name]&8: &f[message]'

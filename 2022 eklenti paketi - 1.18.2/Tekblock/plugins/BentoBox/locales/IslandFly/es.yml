@@ -1,0 +1,19 @@
+islandfly:
+  cancel-disable: '&a Has vuelto, ¿eh? ¡Combustible a sido rellenado correctamente!'
+  command:
+    description: te permite volar en tu isla
+    only-on-island: '&cSolo puedes volar en tu isla.'
+    not-allowed-fly: '&c No tienes permitido volar en esta isla'
+  disable-fly: '&c Su modo de vuelo ha sido deshabilitado.'
+  enable-fly: '&a Su modo de vuelo ha sido habilitado.'
+  fly-outside-alert: '&c Está fuera de su isla, por lo que el modo de vuelo se desactivará
+    en &e [number] &c segundos.'
+  wrong-world: '&cNo estás en el mundo del modo de juego correcto'
+  fly-turning-off-alert: '&c Ya no puedes volar aquí. Desactivar volar en &e [number]
+    &c segundos.'
+  reallowed-fly: '&a Tu mosca ha sido reajustada'
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a Toggle que puede volar en tu isla'
+      name: '&a Prevención de moscas'

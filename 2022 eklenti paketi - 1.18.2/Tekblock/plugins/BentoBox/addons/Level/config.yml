@@ -1,0 +1,74 @@
+# Level Configuration 2.9.0
+# 
+# 
+# Disabled Game Mode Addons
+# Level will NOT hook into these game mode addons.
+disabled-game-modes: []
+# 
+# When executing level command from console, should a report be shown?
+log-report-to-console: true
+# 
+# Number of concurrent island calculations
+# If your CPU can handle it, you can run parallel island calcs if there are more than one in the queue
+concurrent-island-calcs: 1
+# 
+# Island level calculation timeout in minutes.
+# If an island takes longer that this time to calculate, then the calculation will abort.
+# Generally, calculation should only take a few seconds, so if this ever triggers then something is not right.
+calculation-timeout: 5
+# 
+# Zero island levels on new island or island reset
+# If true, Level will calculate the starter island's level and remove it from any future level calculations.
+# If false, the player's starter island blocks will count towards their level.
+# This will reduce CPU if false.
+zero-new-island-levels: true
+# 
+# Calculate island level on login
+# This silently calculates the player's island level when they login
+# This applies to all islands the player has on the server, e.g., BSkyBlock, AcidIsland
+login: true
+# 
+# Include nether island in level calculations.
+# Warning: Enabling this mid-game will give players with an island a jump in
+# island level. New islands will be correctly zeroed.
+nether: true
+# 
+# Include end island in level calculations.
+# Warning: Enabling this mid-game will give players with an island a jump in
+# island level. New islands will be correctly zeroed.
+end: false
+# 
+# Include chest contents in level calculations.
+# Will count blocks in chests or containers.
+include-chests: false
+# 
+# Underwater block multiplier
+# If blocks are below sea-level, they can have a higher value. e.g. 2x
+# Promotes under-water development if there is a sea. Value can be fractional.
+underwater: 1.0
+# 
+# Value of one island level. Default 100. Minimum value is 1.
+levelcost: 100
+# 
+# Island level calculation formula
+# blocks - the sum total of all block values, less any death penalty
+# level_cost - in a linear equation, the value of one level
+# This formula can include +,=,*,/,sqrt,^,sin,cos,tan. Result will always be rounded to a long integer
+# for example, an alternative non-linear option could be: 3 * sqrt(blocks / level_cost)
+level-calc: blocks / level_cost
+# 
+# Cooldown between level requests in seconds
+levelwait: 60
+# 
+# Death penalty
+# How many block values a player will lose per death.
+# Default value of 100 means that for every death, the player will lose 1 level (if levelcost is 100)
+# Set to zero to not use this feature
+deathpenalty: 30
+# Sum team deaths - if true, all the teams deaths are summed
+# If false, only the leader's deaths counts
+# For other death related settings, see the GameModeAddon's config.yml settings.
+sumteamdeaths: true
+# Shorthand island level
+# Shows large level values rounded down, e.g., 10,345 -> 10k
+shorthand: false

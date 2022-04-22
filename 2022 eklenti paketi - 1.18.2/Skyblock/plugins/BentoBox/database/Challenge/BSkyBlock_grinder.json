@@ -1,0 +1,60 @@
+{
+  "uniqueId": "BSkyBlock_grinder",
+  "friendlyName": "Grinder",
+  "deployed": true,
+  "description": [
+    "Use your mobfarm to collect mob drops"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BONE\n",
+  "order": 4,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "BSkyBlock_competent",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ROTTEN_FLESH\n  amount: 64\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: STRING\n  amount: 32\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ARROW\n  amount: 32\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BONE\n  amount: 32\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GUNPOWDER\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SPIDER_EYE\n  amount: 5\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Exchanging drops will provide some useful materials.",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: REDSTONE\n  amount: 16\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_ORE\n  amount: 5\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: FLINT\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "Some prismarine crystals",
+  "maxTimes": 0,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: REDSTONE\n  amount: 4\n"
+  ],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

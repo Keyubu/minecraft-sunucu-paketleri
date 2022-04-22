@@ -1,0 +1,18 @@
+islandfly:
+  fly-outside-alert: '&c Jesteś poza wyspą, więc tryb latania zostanie wyłączony za
+    &e [number] &c sekund.'
+  fly-turning-off-alert: '&c Nie możesz latać tutaj, więc tryb latania zostanie wyłączony
+    za &e [number] &c sekund.'
+  disable-fly: '&c Twój tryb latania został wyłączony.'
+  reallowed-fly: '&a Twoja mucha została ponownie przyzwolona'
+  enable-fly: '&a Twój tryb latania został włączony.'
+  cancel-disable: '&a Wróciłeś? Paliwo zostało uzupełnione!'
+  wrong-world: '&c Nie jesteś we właściwym świecie trybu gry'
+  command:
+    not-allowed-fly: '&c Nie wolno latać na tej wyspie'
+    description: pozwala latać na swojej wyspie
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a Zmień, kto może latać na twojej wyspie'
+      name: '&a Zapobieganie lotom'

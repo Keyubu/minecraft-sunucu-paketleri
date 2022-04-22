@@ -1,0 +1,128 @@
+# SuperbVote configuration
+# A superb vote plugin made by Tux.
+#
+# https://github.com/minecrafter/SuperbVote/wiki
+
+# Database configuration.
+storage:
+  database: json
+  json:
+    file: votes.json
+  mysql:
+    host: 127.0.0.1
+    username: root
+    password: topsecret
+    database: superbvote
+    table: votes
+    streaks-table: streaks
+    read-only: false
+
+# General vote configuration.
+votes:
+  # At least this many seconds must pass before allowing another vote (per-service). This will apply per service.
+  # Default: 3600 seconds (1 hour)
+  cooldown-per-service: 3600
+
+  # Whether or not to treat fake votes as real votes
+  process-fake-votes: true
+
+# Streaks configuration
+# Important: Streaks does not support JSON storage
+streaks:
+  enabled: false
+  # Fetch streaks almost everywhere to enable %streak%, %streak_days%, and %streak_today_services% placeholders
+  # outside of streak-related commands
+  enable-placeholders: true
+
+  # Use time of last vote from the database to combine with `votes.cooldown-per-service`
+  # Basically turn the `votes.cooldown-per-service` into a database-based cooldown instead of a memory-based one
+  shared-cooldown-per-service: true
+
+  command:
+    # note: will be disabled if streaks are disabled
+    enabled: true
+    use-json-text: true
+    text: |-
+      You currently hold a vote streak of %streak% (%streak_days% days), keep going!
+      You've voted on %streak_today_services% website(s) out of X today.
+
+# Rewards. This is the main section you will need to edit. Ordering is important.
+rewards:
+  # Example of matchers. See https://github.com/minecrafter/SuperbVote/wiki/Configuration#if for a full list of available
+  # matchers.
+  - if:
+      default: true
+    commands:
+    - cc give physical Standart 1 %player%
+    player-message: "&9sunucuyu oyladığınız için ve &3Standart kasa &9anahtarı kazandınız!"
+    broadcast-message: "&d%player% &9sunucuyu oyladı ve &3Standart kasa &9anahtarı kazandı!"
+
+# Whether or not players need to be online to vote. If set, offline player votes are queued for when the player next logs in.
+require-online: true
+
+# Whether we should queue votes if players aren't online. Requires the above option to be set to true.
+# If this is disabled, the user won't get any rewards if they aren't online, even if they login afterwards.
+queue-votes: true
+
+# Broadcast settings:
+broadcast:
+  # Should we broadcast votes at all?
+  enabled: true
+
+  # Should we tell players if they voted?
+  message-player: true
+
+  # Should we broadcast queued votes?
+  queued: true
+
+  antispam:
+    # Should we add a minimum time in between global broadcasts to prevent spam in chat?
+    enabled: false
+
+    # How many seconds should be between broadcasts?
+    time: 120
+
+# Vote command.
+# See http://www.minecraftforum.net/forums/minecraft-discussion/redstone-discussion-and/351959-1-9-json-text-component-for-tellraw-title-books
+# and https://www.minecraftjson.com for json text format
+vote-command:
+  enabled: true
+  use-json-text: false
+  text: |-
+    &r
+    &b&lKeyubu &6Vote
+    &7Sunucumuzu oylarak ödüller kazanabilirsin!
+    &r
+    https://minecraft-mp.com
+    &r
+
+# Vote reminder.
+vote-reminder:
+  message: "&cSunucuyu oylayıp ödüllerini almayı unutma &8> &a/vote"
+  on-join: true
+  repeat: 180
+
+# Controls the /sv <top/leaderboard> command.
+leaderboard:
+  # Supported: text, scoreboard
+  display: text
+
+  # The text format supports pagination.
+  text:
+    per-page: 10
+    header: "&c&m         &r&b Top Voters &r&c&m         &r"
+    entry: "&e%num%. &7%player% (&e%votes%&7 votes)"
+    page: "&7(page %page%/%total%)"
+
+  # Control the scoreboard.
+  scoreboard:
+    title: Top voters
+    max: 10
+
+# Control top player signs.
+top-player-signs:
+  format:
+  - "#%num%"
+  - ""
+  - "%player%"
+  - "&l%votes% &rvotes"

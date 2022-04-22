@@ -1,0 +1,91 @@
+# Game Modes covered by limits
+gamemodes:
+- BSkyBlock
+- AcidIsland
+- CaveBlock
+
+# Permissions
+# Island owners can be given permissions that override all general settings
+# Format is GAME-MODE-NAME.island.limit.MATERIAL.LIMIT
+# example: bskyblock.island.limit.hopper.10
+# permission activates when player logs in.
+#
+# Cooldown for player recount command in seconds
+cooldown: 120
+
+# General block limiting
+# Use this section to limit how many blocks can be added to an island.
+# 0 means the item will be blocked from placement completely.
+# These limits apply to every game mode world
+blocklimits:
+  CACTUS: 8000
+  STICKY_PISTON: 300
+  PISTON: 2500
+  HOPPER: 150
+  TURTLE_EGG: 5
+  POWERED_RAIL: 100
+  REPEATER: 150
+  COMPARATOR: 125
+  TURTLE_EGG: 5
+  BELL: 3
+  BEEHIVE: 3
+  BEE_NEST: 3
+  CHEST: 500
+  BARREL: 500
+  MELON_STEM: 2048
+  PUMPKIN_STEM: 2048
+# This section is for world-specific limits and overrides the general limit
+# Specify each world you want to limit individually (including nether and end worlds)
+# If these worlds are not covered by the game modes above, nothing will happen
+worlds:
+  acidisland_world:
+    MELON_STEM: 512
+    PUMPKIN_STEM: 512
+  caveblock-world:
+    MELON_STEM: 512
+    PUMPKIN_STEM: 512
+
+# Default entity limits within a player's island space (protected area and to island limit).
+# A limit of 5 will allow up to 5 entites in over world, 5 in nether and 5 in the end.
+# Affects all types of creature spawning. Also includes entities like MINECARTS.
+# Note: Only the first 49 limited blocks and entities are shown in the limits GUI.
+entitylimits:
+  MINECART_CHEST: 5
+  MINECART: 5
+  IRON_GOLEM: 5
+  CHICKEN: 30
+  SHEEP: 30
+  COW: 30
+  PIG: 30
+  MUSHROOM_COW: 15
+  MINECART_HOPPER: 15
+  SLIME: 5
+  VINDICATOR: 15
+  PHANTOM: 3
+  ZOMBIE: 5
+  CREEPER: 5
+  SPIDER: 5
+  SKELETON: 5
+  ZOMBIFIED_PIGLIN: 5
+  TURTLE: 5
+  GUARDIAN: 5
+  PUFFERFISH: 5
+  COD: 5
+  AXOLOTL: 10
+  TROPICAL_FISH: 5
+  SALMON: 5
+  SQUID: 5
+  EVOKER: 5
+  FOX: 5
+  WITCH: 5
+  ARMOR_STAND: 8
+  ENDERMAN: 10
+  HUSK: 15
+  STRAY: 15
+  POLAR_BEAR: 10
+  BEE: 10
+  ITEM_FRAME: 50
+  DROWNED: 5
+  ILLUSIONER: 5
+  VILLAGER: 4
+  GLOW_SQUID: 10

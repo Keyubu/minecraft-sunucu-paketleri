@@ -1,0 +1,70 @@
+#OP-protection: Player can only be op'ed if they are in the "allowed-operators" list
+op-protection: false
+allowed-operators:
+  - Player1
+  - Player2
+#If you try to Op someone who isn't in the list
+op-message: "&cThe Player isn't a listed operator!"
+#Players who are operators and are not in the list can't connect and will be deop'ed.
+unauthorized-operator-kick-message: '&cYou are not allowed to be an operator'
+
+#Message if you type a blocked command | Enter none to disable
+blocked-command-message: "&b&lKeyubu &8&l> &cBilinmeyen komut."
+#Message shown if you type /pl | Enter none to disable | Players with the permission plhide.bypass will see the real plugins
+/pl-message: '&b&lKeyubu &8&l> &cBilinmeyen komut.'
+
+#Stay on the newest version to get better features!
+#Enable or disable automatic ingame update notification on join
+update-notify: false
+
+groups:
+  #if no group is set via plhide.group.<group> this will be applied
+  #do not rename the default group!
+  #blocked commands will be automatically removed from the tabcompletion
+  default:
+    commands:
+      - register
+      - login
+      - changepassword
+      - tpa
+      - warp
+      - ob
+      - oneblock
+      - msg
+      - ah
+      - market
+      - satış
+      - sellgui
+      - satışmenüsü
+      - shop
+    #If the value is blacklist, the commands are blocked and invisible
+    #If the value is whitelist, the commands only executable and visible
+    group-mode: whitelist
+    #If a player is in two groups, the group with the higher priority number is used
+    #The minimum value is 0
+    priority: 0
+    #here you can add other groups
+    #The group mode is taken from the main group, in this case the main group is "default"
+    included-groups: []
+
+  #This group for example will remove and block all commands
+  #add permission plhide.group.test to apply this group
+  yetkili:
+    commands:
+      - tp
+      - gm
+      - gamemode
+      - teleport
+      - mute
+      - kick
+      - ban
+      - oba
+      - oneblockadmin
+    group-mode: whitelist
+    priority: 1
+    included-groups:
+      - default
+
+
+#Don't change
+version: "1.3"

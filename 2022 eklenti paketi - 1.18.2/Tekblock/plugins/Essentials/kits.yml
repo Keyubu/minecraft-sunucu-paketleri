@@ -1,0 +1,59 @@
+# EssentialsX new Kit configuration.
+# If you don't have any kits defined in this file, the plugin will try to copy them from the config.yml
+# 
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - itemID[:DataValue/Durability] Amount [Enchantment:Level].. [itemmeta:value]...
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
+# For more information, visit http://wiki.ess3.net/wiki/Kits 86400
+kits:
+  Hediye:
+    delay: -1
+    items:
+    - IRON_SWORD 1 sharpness:1 smite:1 unbreaking:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - CHAINMAIL_HELMET 1 protection:2 unbreaking:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - CHAINMAIL_CHESTPLATE 1 protection:2 unbreaking:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - CHAINMAIL_LEGGINGS 1 protection:2 unbreaking:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - CHAINMAIL_BOOTS 1 protection:2 unbreaking:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - IRON_PICKAXE 1 efficiency:2 unbreaking:1 fortune:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - IRON_SHOVEL 1 efficiency:1 unbreaking:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - IRON_AXE 1 efficiency:1 unbreaking:1 name:&bKeyubu.com_&8[&7Hediye&8]
+    - GLOW_BERRIES 16 name:&bKeyubu.com_&8[&7Hediye&8]
+  Oyuncu:
+    delay: 1800
+    items:
+    - STONE_SWORD 1 sharpness:1 unbreaking:1 name:&eOyuncu_Kiti
+    - LEATHER_HELMET 1 protection:1 unbreaking:1 name:&eOyuncu_Kiti
+    - LEATHER_CHESTPLATE 1 protection:1 unbreaking:1 name:&eOyuncu_Kiti
+    - LEATHER_LEGGINGS 1 protection:1 unbreaking:1 name:&eOyuncu_Kiti
+    - LEATHER_BOOTS 1 protection:1 unbreaking:1 name:&eOyuncu_Kiti
+    - STONE_PICKAXE 1 efficiency:1 unbreaking:1 name:&eOyuncu_Kiti
+    - STONE_SHOVEL 1 efficiency:1 unbreaking:1 name:&eOyuncu_Kiti
+    - STONE_AXE 1 efficiency:1 unbreaking:1 name:&eOyuncu_Kiti
+    - DRIED_KELP 32 name:&eOyuncu_Kiti
+  SkyLord:
+    delay: 360000
+    items:
+    - DIAMOND_SWORD 1 sharpness:1 unbreaking:1 name:&bSkyLord_Kiti
+    - DIAMOND_HELMET 1 protection:2 unbreaking:1 name:&bSkyLord_Kiti
+    - DIAMOND_CHESTPLATE 1 protection:2 unbreaking:1 name:&bSkyLord_Kiti
+    - DIAMOND_LEGGINGS 1 protection:2 unbreaking:1 name:&bSkyLord_Kiti
+    - DIAMOND_BOOTS 1 protection:2 unbreaking:1 name:&bSkyLord_Kiti
+    - DIAMOND_PICKAXE 1 efficiency:2 unbreaking:1 name:&bSkyLord_Kiti
+    - DIAMOND_SHOVEL 1 efficiency:1 unbreaking:1 name:&bSkyLord_Kiti
+    - DIAMOND_AXE 1 efficiency:1 unbreaking:1 name:&bSkyLord_Kiti
+    - RABBIT_STEW 32 name:&bSkyLord_Kiti
+  Rehber:
+    delay: 360000
+    items:
+    - IRON_SWORD 1 sharpness:1 smite:1 unbreaking:1 name:&aRehber_Kiti
+    - CHAINMAIL_HELMET 1 protection:2 unbreaking:1 name:&aRehber_Kiti
+    - CHAINMAIL_CHESTPLATE 1 protection:2 unbreaking:1 name:&aRehber_Kiti
+    - CHAINMAIL_LEGGINGS 1 protection:2 unbreaking:1 name:&aRehber_Kiti
+    - CHAINMAIL_BOOTS 1 protection:2 unbreaking:1 name:&aRehber_Kiti
+    - IRON_PICKAXE 1 efficiency:2 unbreaking:1 fortune:1 name:&aRehber_Kiti
+    - IRON_SHOVEL 1 efficiency:1 unbreaking:1 name:&aRehber_Kiti
+    - IRON_AXE 1 efficiency:1 unbreaking:1 name:&aRehber_Kiti
+    - GLOW_BERRIES 16 name:&aRehber_Kiti

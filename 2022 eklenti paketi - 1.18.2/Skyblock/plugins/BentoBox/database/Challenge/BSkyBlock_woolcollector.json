@@ -1,0 +1,74 @@
+{
+  "uniqueId": "BSkyBlock_woolcollector",
+  "friendlyName": "Wool Collector",
+  "deployed": true,
+  "description": [
+    "Collect all colors of wool."
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: WHITE_WOOL\n",
+  "order": 2,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "BSkyBlock_expert",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: WHITE_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: YELLOW_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: RED_WOOL\n  amount: 8\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: PURPLE_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: PINK_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: ORANGE_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MAGENTA_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: LIME_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: LIGHT_GRAY_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: LIGHT_BLUE_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GREEN_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: GRAY_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: CYAN_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BROWN_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BLUE_WOOL\n  amount: 16\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: BLACK_WOOL\n  amount: 16\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Get some handy items for your wool",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n  amount: 2\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_CAT\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_BLOCKS\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: MUSIC_DISC_STAL\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SHEEP_SPAWN_EGG\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: EMERALD\n  amount: 5\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 10,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "",
+  "maxTimes": 0,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: EMERALD\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SHEEP_SPAWN_EGG\n"
+  ],
+  "repeatMoneyReward": 1,
+  "repeatRewardCommands": []
+}

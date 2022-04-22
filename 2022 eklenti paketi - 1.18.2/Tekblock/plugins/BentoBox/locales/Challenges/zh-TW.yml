@@ -1,0 +1,409 @@
+# ##########################################################################################
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+# ##########################################################################################
+
+# ## Credits ###
+meta:
+  authors: []
+
+challenges:
+  commands:
+    admin:
+      main:
+        parameters: ''
+        description: 打開管理員菜單
+      import:
+        description: 從challenges.yml文件中導入挑戰以及挑戰等級
+        parameters: '[overwrite]'
+      reload:
+        description: 重載挑戰組件
+        parameters: '[hard]'
+      show:
+        description: 在聊天中列出當前世界的所有挑戰
+        parameters: ''
+      defaults:
+        description: 顯示導入/導出插件自帶挑戰的子指令
+        parameters: '[command]'
+      defaults-import:
+        description: 導入插件自帶挑戰
+        parameters: ''
+      defaults-generate:
+        description: 將現有的挑戰導出到default.json文件中。
+        parameters: '[overwrite] - allows to overwrite existing file.'
+      complete:
+        description: 通過指令讓某個玩家完成指定挑戰
+        parameters: <player> <challenge_id>
+    user:
+      main:
+        description: 打開空島挑戰菜單
+        parameters: ''
+      complete:
+        description: 通過指令完成挑戰
+        parameters: <challenge_id> [count]
+  gui:
+    title:
+      admin:
+        gui-title: '&a島嶼挑戰管理'
+        edit-challenge-title: '&a編輯挑戰'
+        edit-level-title: '&a編輯挑戰等級'
+        settings-title: '&a編輯設定'
+        choose-challenge-title: '&a選擇挑戰'
+        choose-level-title: '&a選擇挑戰等級'
+        choose-user-title: '&a選擇玩家'
+        manage-blocks: '&a管理方塊'
+        manage-entities: '&a管理實體'
+        confirm-title: '&a確認'
+        manage-items: '&a管理物品'
+        manage-numbers: '&a數字墊'
+        select-block: '&a選擇方塊'
+        select-challenge: '&a選擇挑戰'
+        select-entity: '&a選擇實體'
+        toggle-environment: '&a切換環境'
+        edit-text-fields: '&a編輯文本字段'
+      challenges: '&a島嶼挑戰'
+      game-modes: '&a選擇游戲模式'
+    buttons:
+      admin:
+        complete: 完成某個玩家的挑戰
+        reset: 重置某個玩家的挑戰
+        create-challenge: 創建新的挑戰
+        create-level: 創建新的挑戰等級
+        edit-challenge: 編輯挑戰
+        edit-level: 編輯挑戰等級
+        delete-challenge: 删除挑戰
+        delete-level: 删除挑戰等級
+        import: 導入ASkyBlock插件的挑戰內容
+        settings: 編輯設定
+        properties: 屬性
+        requirements: 要求
+        rewards: 獎勵
+        challenges: 挑戰
+        type: 挑戰類型
+        deployment: 是否開啓該挑戰
+        icon: 圖標
+        locked-icon: 圖標鎖
+        description: 介紹
+        order: 順序
+        environment: 環境
+        remove-on-complete: 完成後删除該挑戰
+        name: 挑戰名稱
+        required-entities: 檢測的實體
+        remove-entities: 完成任務後是否殺死實體
+        required-blocks: 檢測的方塊
+        remove-blocks: 完成任務後是否删除方塊
+        search-radius: 搜索半徑
+        required-permissions: 需要的權限
+        required-items: 需要的物品
+        remove-items: 完成任務後是否删除物品
+        required-experience: 需要的經驗值
+        remove-experience: 完成任務後是否删除經驗值
+        required-level: 需要的島嶼等級
+        required-money: 需要的金錢
+        remove-money: 完成任務後是否删除金錢
+        reward-text: 獎勵信息
+        reward-items: 物品獎勵
+        reward-experience: 經驗獎勵
+        reward-money: 金錢獎勵
+        reward-commands: 指令獎勵
+        repeatable: 是否可重複挑戰
+        repeat-count: 最大時間
+        repeat-reward-text: 重複獎勵信息
+        repeat-reward-items: 重複物品獎勵
+        repeat-reward-experience: 重複經驗獎勵
+        repeat-reward-money: 重複金錢獎勵
+        repeat-reward-commands: 重複指令獎勵
+        waiver-amount: 豁免金額
+        add-challenge: 添加挑戰
+        remove-challenge: 删除挑戰
+        reset-on-new: 在新的島嶼上重置
+        broadcast: 成功任務後發出廣播
+        remove-completed: 完成任務後删除圖標
+        glow: 完成任務後發光
+        free-at-top: 免費挑戰優先排列
+        line-length: Lore長度
+        toggle-user-list: 用戶列表
+        remove-selected: 删除選定
+        add: 添加
+        show-eggs: 切換視圖模式
+        accept: 接受
+        decline: 拒絕
+        save: 保存
+        cancel: 取消
+        input: 輸入
+        value: 值
+        set: =
+        increase: +
+        reduce: '-'
+        multiply: '*'
+        clear: 清空
+        remove-empty: 删除空欄
+        number: '[number]'
+        level-lore: 等級介紹
+        challenge-lore: 挑戰介紹
+        gui-view-mode: 顯示所有GameModes
+        gui-mode: 挑戰GUI
+        history-store: 挑戰歷史
+        history-lifespan: 歷史LifeSpan
+        island-store: 每個島嶼的商店
+        default-locked-icon: 等級圖標鎖
+        input-mode: 切換輸入模式
+        title-enable: 顯示標題
+        title-showtime: 標題顯示時間
+        default-import: 導入默認挑戰
+        default-export: 導出現有挑戰
+        complete-wipe: 抹除插件數據庫!
+      next: 下一頁
+      previous: 上一頁
+      return: 返回上一級
+    descriptions:
+      admin:
+        save: 保存幷返回上一級菜單
+        cancel: 取消任何操作幷返回上一級菜單
+        input: 打開文本字段輸入
+        set: 設置操作，擊數字會將值更改爲所選數字。
+        increase: 增加操作。 單擊數字將增加所選數字的值。
+        reduce: 减少操作。 單擊數字將减少所選數字的值。
+        multiply: 乘法運算。 單擊數字會將值乘以所選數字。
+        import: 導入ASkyblock挑戰。|右鍵單擊它啓用/禁用覆蓋模式。|將Challenges.yml放在./BentoBox/addons/Challenges文件夾中。
+        complete: 爲某個玩家完成某個挑戰|玩家無法獲得完成獎勵。
+        reset: 重置已完成的玩家挑戰。|右鍵單擊啓用/禁用重置所有功能。
+        create-challenge: 添加新挑戰。|默認情况下，它將在免費挑戰列表中。
+        create-level: 添加新的挑戰等級。
+        edit-challenge: 編輯某個挑戰設定
+        edit-level: 編輯某個挑戰等級設定
+        delete-challenge: 删除某個挑戰
+        delete-level: 删除某個挑戰等級
+        settings: 修改組件設定
+        properties: 修改常規屬性
+        requirements: 修改挑戰需求
+        rewards: 修改挑戰獎勵
+        challenges: 管理挑戰級別 (添加/删除).
+        deployment: 查看某玩家已完成的挑戰
+        icon-challenge: 將在此挑戰的GUI面板中顯示的圖標。
+        icon-level: 將在此級別的GUI面板中顯示的圖標。
+        locked-icon: 如果級別被鎖定，將在GUI面板中顯示的圖標。
+        description: 編輯介紹
+        order: 更改挑戰順序
+        environment: 改變挑戰運作的環境。
+        type: 更改挑戰類型(不同類型的挑戰偵測方式不同)
+        remove-on-complete: 在玩家完成挑戰後是否删除該挑戰圖標于任務面板中
+        name-challenge: 修改挑戰名稱
+        name-level: 修改挑戰等級名稱
+        required-entities: 修改挑戰需要的實體.|實體:|
+        remove-entities: 是否在挑戰結束後删除挑戰需要的實體
+        required-blocks: 修改挑戰需要的方塊.|方塊:|
+        remove-blocks: 是否在挑戰結束後删除任務需求方塊(替換爲空氣)
+        search-radius: 玩家完成挑戰時檢測實體/方塊的範圍(半徑)
+        required-permissions: '玩家需要具有以下權限才能完成挑戰|權限:'
+        required-items: '玩家背包中需要有以下物品才能完成挑戰|物品:'
+        remove-items: 是否在完成挑戰後删除玩家背包中的挑戰需求物品
+        required-experience: 玩家需要有該項目所設置的經驗值才可以完成挑戰
+        remove-experience: 是否在玩家完成挑戰後删除任務需求的經驗值
+        required-level: 玩家需要島嶼等級達到該項目所設置的等級才能完成挑戰.|&c需要 Level 組件.
+        required-money: 玩家需要有該項目所設置的金錢才能完成挑戰.|&c需要經濟前置.
+        remove-money: 是否在玩家完成挑戰後删除任務需求的金錢.|&c需要經濟前置.
+        reward-text: 設置完成任務後的獎勵信息
+        reward-items: '設置完成任務後的物品獎勵.|物品:'
+        reward-experience: 設置完成任務後的經驗獎勵.
+        reward-money: 設置完成任務後的金錢獎勵.|&c需要經濟前置.
+        reward-commands: '設置完成任務後的指令獎勵.|指令:'
+        repeatable: 挑戰是否可以重複
+        repeat-count: 重複挑戰的次數，如果設置爲0則爲無限制
+        repeat-reward-text: 重複挑戰完成後的信息
+        repeat-reward-items: '重複挑戰完成後的物品獎勵.|物品:'
+        repeat-reward-experience: 重複挑戰完成後的經驗獎勵.
+        repeat-reward-money: 重複挑戰完成後的金錢獎勵.|&c需要經濟前置.
+        repeat-reward-commands: '重複挑戰完成後的指令獎勵.||指令:'
+        waiver-amount: 完成該數量的挑戰玩家方能解鎖下一挑戰級別的挑戰
+        reward-text-level: 完成某挑戰級別所有挑戰後發送給玩家的信息
+        add-challenge: 將現有挑戰添加到當前挑戰級別
+        remove-challenge: 從當前級別删除挑戰
+        reset-on-new: 允許/禁止，當玩家重置/踢出島嶼後都會重置挑戰
+        broadcast: 允許/禁止，當玩家完成第一次挑戰後向全服玩家廣播
+        remove-completed: 允許/禁止，在玩家挑戰列表中隱藏已完成的挑戰
+        glow: 允許/禁用，在已完成的挑戰中加上附魔效果
+        free-at-top: 改變免費挑戰的位置，如果爲true免費挑戰會放在前排，如果爲false免費挑戰將放在後排
+        line-length: 修改每條lore的最大長度
+        toggle-user-list: 切換到不同的玩家列表
+        mode-online: 目前在綫的玩家
+        mode-in-world: Players which is in GameMode world.
+        mode-with-island: Players which has island in GameMode.
+        selected: 已選中
+        remove-selected: 删除所選目標|您可以使用鼠標右鍵選擇目標
+        show-eggs: 在Egg模式或Head模式之間切換實體視圖
+        level-lore: 修改挑戰級別介紹的哪些目標是可見的
+        challenge-lore: 修改挑戰介紹的哪些目標是可見的
+        gui-view-mode: 如果玩家輸入/challenges，菜單應該顯示GameModes還是挑戰
+        history-store: 允許啓用/禁用質詢歷史存儲
+        history-lifespan: 允許修改將保存歷史數據的天數| 0表示永久
+        island-store: 啓用/禁用挑戰每個島的數據存儲。如果啓用此選項，整個島嶼團隊的挑戰進度將是相同的。|不會在點擊時轉換數據。進展將會失敗。
+        default-locked-icon: 更改默認鎖定級別圖標。|此級別可以覆蓋此選項。
+        gui-mode: 啓用/禁用單一挑戰GUI。|&2要求服務器重啓。
+        click-to-edit: '&4點擊此處編輯輸入.'
+        edit-text-line: '&6編輯文本!'
+        add-text-line: '&6 添加新的文本!'
+        input-mode: 在聊天和鐵砧輸入模式之間切換。
+        title-enable: 啓用/禁用玩家完成挑戰時顯示的標題消息。
+        title-showtime: 修改標題消息對玩家可見的時間。
+        default-import: 導入插件自帶挑戰
+        default-export: 將現有的挑戰導出至 defaults.json 文件中.
+        complete-wipe: 清空插件數據庫中的所有挑戰，包括玩家的挑戰數據!
+      current-value: '|&6當前值: [value].'
+      enabled: 有效
+      disabled: 禁用
+      type:
+        island: '- 島嶼類型:| (主要通過檢測玩家身邊的方塊和生物)'
+        inventory: '- 庫存類型:| (主要通過檢測玩家的背包物品)'
+        other: '- 其他類型:| (主要通過檢測服務器的其他插件/組件)'
+      the-end: '- 末地'
+      nether: '- 地獄'
+      normal: '- 主世界'
+      entity: '- [entity] : [count]'
+      block: '- [block] : [count]'
+      permission: '- [permission]'
+      item: '- [count] x [item]'
+      item-meta: '  ([meta])'
+      item-enchant: '   - [enchant] [level]'
+      command: '- [command]'
+      level-unlocked: 點擊查看 [level] 級別的挑戰!
+      level-locked: 請完成 [count] 個 [level] 級別的挑戰來解鎖這個挑戰級別!
+    challenge-description:
+      level: '&F挑戰級別: [level]'
+      completed: '&B已完成'
+      completed-times-of: '完成次數: [donetimes] 上限: [maxtimes]'
+      maxed-reached: '完成次數: [donetimes] 上限: [maxtimes]'
+      completed-times: 已完成 [donetimes]
+      warning-items-take: '&c完成此挑戰後，該挑戰的需要物品將會被清空'
+      objects-close-by: '&c任務需求的方塊/生物不能離你太遠!(超出偵測範圍)'
+      warning-entities-kill: '&c完成此挑戰後，該挑戰需要的生物將會被清空'
+      warning-blocks-remove: '&c完成此挑戰後，該挑戰需要的方塊將會被清空'
+      not-repeatable: '&c該挑戰不可重複!'
+      experience-reward: '&6經驗獎勵: [value]'
+      money-reward: '&6金錢獎勵: $[value]'
+      required-experience: '&6所需經驗: [value]'
+      required-money: '&6所需金錢: $[value]'
+      required-island-level: '&6所需島嶼等級: [value]'
+      environment: '所需實體:'
+      reward-items: '&6物品獎勵:'
+      reward-commands: '&6指令獎勵:'
+      required-items: '所需物品:'
+      required-entities: '所需實體:'
+      required-blocks: '所需方塊:'
+    level-description:
+      completed: '&B已完成'
+      completed-challenges-of: '&你已經完成 [number] 個該級別的挑戰，達到了 [max]個挑戰.'
+      waver-amount: '&6可以跳過[value] 個挑戰來解鎖下一個挑戰級別.'
+      experience-reward: '&6經驗獎勵: [value]'
+      money-reward: '&6金錢獎勵: $[value]'
+      reward-items: '&6物品獎勵:'
+      reward-commands: '&6指令獎勵:'
+    item-description:
+      item: '- [count] x [item]'
+      item-meta: '  ([meta])'
+      item-enchant: '   - [enchant] [level]'
+      item-name: '  [name]'
+      item-lore: '  物品Lore:'
+      book-meta: '  [title] by [author]'
+      recipe-count: '  [count] recipes'
+      armor-color: '  [color]'
+      potion-type-extended-upgraded: '   [name]'
+      potion-type-upgraded: '  Upgraded [name]'
+      potion-type-extended: '  Extended [name]'
+      potion-type: '  [name]'
+      custom-effects: '  自定義效果:'
+      potion-effect: '  [effect] x [amplifier] for [duration]t'
+      skull-owner: '  [owner]'
+      egg-meta: '  [mob]'
+      fish-meta: '  [body-color] with [pattern-color] [pattern]'
+    
+    questions:
+      prefix: '&2[SERVER]: '
+      
+      admin:
+        number: Write a number in chat and press enter to accept it and press enter.
+        unique-id: Write object unique name and press enter.
+        challenge-name: Write in chat display name for current challenge.
+        level-name: Write in chat display name for current level.
+  titles:
+    #       Title and subtitle my contain variable in [] that will be replaced with proper message from challenge object.
+    #       [friendlyName] will be replaced with challenge friendly name.
+    #       [level] will be replaced with level friendly name.
+    #       [rewardText] will be replaced with challenge reward text.
+    challenge-title: 完成挑戰
+    challenge-subtitle: '[friendlyName]'
+    #       Title and subtitle my contain variable in [] that will be replaced with proper message from level object.
+    #       [friendlyName] will be replaced with level friendly name.
+    #       [rewardText] will be replaced with level reward text.
+    level-title: 成功挑戰級別
+    level-subtitle: '[friendlyName]'
+  messages:
+    admin:
+      hit-things: 點擊物品將它們添加到所需的事物列表中。 完成後右鍵單擊。
+      you-added: 你在挑戰中添加了一個[thing]
+      challenge-created: '[challenge]&r created!'
+      complete-wipe: '&c希望你有備份，因爲你已經創建了所有Challenges Addon數據庫！'
+      completed: '&2已爲[player]完成挑戰[name]!'
+      already-completed: '&2這個挑戰已經完成'
+    you-completed-challenge: '&2你已經完成了 [value] &r&2挑戰!'
+    you-repeated-challenge: '&2你已經重複完成了 [value] &r&2挑戰!'
+    you-repeated-challenge-multiple: '&2你重複完成了 [value] &r&2挑戰 [count] 次!'
+    you-completed-level: '&2你完成了 [value] &r&2級別!'
+    name-has-completed-challenge: '&5[name] 已完成 [value] &r&5挑戰!'
+    name-has-completed-level: '&5[name] 已完成 [value] &r&5挑戰級別!'
+    import-levels: 開始導入挑戰級別
+    import-challenges: 開始導入挑戰
+    no-levels: '警告: challenges.yml文件中沒有定義挑戰級別'
+    import-number: 導入 [number] 個挑戰
+    load-skipping: '"[value]" 已存在 - 跳過'
+    load-overwriting: 覆蓋 "[value]"
+    load-add: '添加新的對象: [value]'
+    defaults-file-overwrite: defaults.json存在。 它將被覆蓋。
+    defaults-file-completed: defaults.json文件填充了來自[world]的挑戰！
+  errors:
+    no-name: '&c缺少挑戰名稱'
+    unknown-challenge: '&c未知挑戰'
+    unique-id: '&cUniqueID "[id]" 無效.'
+    wrong-icon: '&c給定材料“[value]”無效且不能用作圖標。'
+    not-valid-integer: '&c給定整數“[value]”無效！|值應介于[min]和[max]之間。'
+    not-a-integer: '&c給定值“[value]”不是整數！'
+    not-deployed: '&c未開啓挑戰！'
+    not-on-island: '&c你必須在你的島上做到這一點！'
+    challenge-level-not-available: '&c你沒有解鎖挑戰級別來完成這個挑戰。'
+    not-repeatable: '&c這個挑戰是不可重複的！'
+    wrong-environment: '&c你在錯誤的環境中！'
+    not-enough-items: '&c你沒有足够的[items]來完成這個挑戰!'
+    not-close-enough: '&c你必須站在擁有[number]個任務需求方塊的旁邊.'
+    you-still-need: '&c你還需要 [amount] x [item]'
+    missing-addon: '&c無法完成挑戰。 缺少必需的插件或組件。'
+    incorrect: '&c無法完成挑戰。 要求不正確。'
+    not-enough-money: '&c您的帳戶必須有[value]金錢才能完成挑戰。.'
+    not-enough-experience: '&c必須有[value]EXP才能完成挑戰'
+    island-level: '&c你的島嶼等級需要達到[number]才能完成挑戰'
+    import-no-file: '&c找不到challenge.yml文件導入！'
+    no-load: '&c錯誤：無法加載challenge.yml。 [message]'
+    load-error: '&c錯誤:無法加載 [value].'
+    no-rank: '&c你沒有等級可以做到這一點.'
+    cannot-remove-items: '&c有些物品無法從你的背包中删除!'
+    exist-challenges-or-levels: '&c在你的世界裏已經存在挑戰。 無法繼續!'
+    defaults-file-exist: '&cdefaults.json已經存在。 使用覆蓋模式替換它！'
+    defaults-file-error: '&c創建defaults.json文件時出錯！ 檢查控制台！'
+    no-challenges: '&c當前世界沒有實施挑戰！'
+    no-challenges-admin: '&c當前世界沒有實施挑戰!你應該使用 &5/[label] challenges &c添加他們!'
+    missing-level: '&c挑戰級別[level]未在數據庫中定義. 可能會出現錯誤!'
+    missing-arguments: '&c命令缺少參數.'
+protection:
+  flags:
+    CHALLENGES_ISLAND_PROTECTION:
+      description: |-
+        &5&o切換誰可以
+        &5&o挖槽挑戰
+      name: 挑戰保護
+    CHALLENGES_WORLD_PROTECTION:
+      description: |-
+        &5&o爲玩家啓用/禁用
+        &5&o要求他們在他們的島嶼上
+        &5&o才能完成挑戰.
+      name: 挑戰島嶼限制
+      hint: 請在自己的島嶼完成挑戰!
+version: 11

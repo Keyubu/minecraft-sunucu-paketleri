@@ -1,0 +1,30 @@
+# ##########################################################################################################
+# Este es un archivo YML. Tenga cuidado al editar. Revisa tus ediciones en un verificador de YAML como    #
+# el de http://yaml-online-parser.appspot.com                                                             #
+# ##########################################################################################################
+
+warp:
+  help:
+    description: Teletransportarte hacia el warp del jugador
+    parameters: <name>
+warps:
+  deactivate: '&cViejo cartel a sido desactivado!'
+  error:
+    does-not-exist: '&cOh snap! Ese warp ya no existe!'
+    no-permission: '&CNo tienes permiso para hacer eso!'
+    no-remove: '&CNo puedes quitar ese cartel!'
+    no-warps-yet: '&CNo hay warps disponibles aun'
+    not-enough-level: '&CTu nivel de isla no es lo suficientemente alto!'
+    not-on-island: '&CDebes estar en tu isla para hacer eso!'
+    not-safe: '&cEse warp no es seguro!'
+    your-level-is: '&cTu nivel de isla es solo [level] y debe ser mayor que [required]'
+  help:
+    description: Abre el panel de warps
+  next: '&6Siguiente página'
+  player-warped: '&2[name] teletransportarte a tu warp!'
+  previous: '&6Pagina anterior'
+  sign-removed: '&CCartel removido!'
+  success: '&AExito!'
+  title: Carteles de Warps
+  warpTip: '&6Coloca un cartel con este texto [text] arriba'
+  warpToPlayersSign: '&6Teletransportandote al warp de [player]'

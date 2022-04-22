@@ -1,0 +1,470 @@
+challenges:
+  commands:
+    admin:
+      complete:
+        parameters: <player> <challenge_id>
+        description: 通过指令完成挑战
+      defaults:
+        description: 显示导入/导出插件自带挑战的子指令
+        parameters: '[command]'
+      import:
+        parameters: '[overwrite]'
+        description: 从 challenges.yml 文件中导入挑战|参数覆盖意味着具有相同 ID 的挑战或等级将被覆盖。
+      main:
+        description: 打开管理员菜单
+      reload:
+        description: 重载挑战组件
+        parameters: '[hard]'
+      show:
+        description: 在聊天中列出当前世界的所有挑战
+      defaults-import:
+        description: 导入系统自带挑战
+      defaults-generate:
+        description: 将现有的挑战导出到default.json文件中
+        parameters: '[overwrite] - 允许覆盖已有文件'
+      reset:
+        description: 通过指令重置玩家挑战。若 "challenge_id" 参数设为 all，则将重置该玩家的所有挑战。
+        parameters: <player> <challenge_id>
+      migrate:
+        description: 将参考当前游戏模式世界的挑战数据迁移到新的0.8.0存储格式。
+    user:
+      complete:
+        description: 通过指令完成挑战
+        parameters: <challenge_id> [count]
+      main:
+        description: 打开挑战菜单
+  errors:
+    cannot-remove-items: '&c有些物品无法从你的背包中删除!'
+    challenge-level-not-available: '&c你没有解锁挑战级别来完成这个挑战。'
+    defaults-file-error: '&c创建defaults.json文件时出错！ 检查控制台！'
+    defaults-file-exist: '&cdefaults.json已经存在。 使用覆盖模式替换它！'
+    exist-challenges-or-levels: '&c在你的世界里已经存在挑战。 无法继续!'
+    import-no-file: '&c找不到challenge.yml文件导入！'
+    incorrect: '&c无法完成挑战。 要求不正确。'
+    island-level: '&c你的岛屿等级需要达到[number]才能完成挑战'
+    load-error: '&c错误:无法加载 [value].'
+    missing-addon: '&c无法完成挑战。 缺少必需的插件或组件。'
+    missing-arguments: '&c命令缺少参数.'
+    missing-level: '&c挑战级别[level]未在数据库中定义. 可能会出现错误!'
+    no-challenges: '&c当前世界没有实施挑战！'
+    no-challenges-admin: '&c当前世界没有实施挑战!你应该使用 &5/[label] challenges &c添加他们!'
+    no-load: '&c错误：无法加载challenge.yml。 [message]'
+    no-name: '&c缺少挑战名称'
+    no-rank: '&c你没有等级可以做到这一点.'
+    not-a-integer: '&c给定值“[value]”不是整数！'
+    not-close-enough: '&c你必须站在拥有[number]个任务需求方块的旁边.'
+    not-deployed: '&c未开启挑战！'
+    not-enough-items: '&c你没有足够的[items]来完成这个挑战!'
+    not-enough-money: '&c您的帐户必须有[value]金钱才能完成挑战。.'
+    not-on-island: '&c你必须在你的岛上做到这一点！'
+    not-repeatable: '&c这个挑战是不可重复的！'
+    not-valid-integer: '&c给定整数“[value]”无效！|值应介于[min]和[max]之间。'
+    unique-id: '&cUniqueID "[id]" 无效.'
+    unknown-challenge: '&c未知挑战'
+    wrong-environment: '&c你在错误的环境中！'
+    wrong-icon: '&c给定材料“[value]”无效且不能用作图标。'
+    you-still-need: '&c你还需要 [amount] x [item]'
+    not-enough-experience: '&c必须有[value]经验才能完成挑战'
+    no-multiple-permission: '&c你无权一次完成挑战多次'
+  gui:
+    buttons:
+      admin:
+        accept: 接受
+        add: 添加
+        add-challenge: 添加挑战
+        broadcast: 成功任务后发出广播
+        cancel: 取消
+        challenge-lore: 挑战介绍
+        challenges: 挑战
+        clear: 清空
+        complete: 完成某个玩家的挑战
+        complete-wipe: 抹除插件数据库!
+        create-challenge: 创建新的挑战
+        create-level: 创建新的挑战等级
+        decline: 拒绝
+        default-export: 导出现有挑战
+        default-import: 导入默认挑战
+        default-locked-icon: 等级图标锁
+        delete-challenge: 删除挑战
+        delete-level: 删除挑战等级
+        deployment: 是否开启该挑战
+        description: 介绍
+        edit-challenge: 编辑挑战
+        edit-level: 编辑挑战等级
+        environment: 环境
+        free-at-top: 免费挑战优先排列
+        glow: 完成任务后发光
+        gui-mode: 挑战GUI
+        gui-view-mode: 显示所有GameModes
+        history-store: 挑战历史
+        icon: 图标
+        increase: +
+        input: 输入
+        input-mode: 切换输入模式
+        level-lore: 等级介绍
+        locked-icon: 图标锁
+        multiply: '*'
+        name: 挑战名称
+        number: '[number]'
+        order: 顺序
+        properties: 属性
+        reduce: '-'
+        remove-blocks: 完成任务后是否删除方块
+        remove-challenge: 删除挑战
+        remove-completed: 完成任务后删除图标
+        remove-empty: 删除空栏
+        remove-entities: 完成任务后是否杀死实体
+        remove-experience: 完成任务后是否删除经验值
+        remove-items: 完成任务后是否删除物品
+        remove-money: 完成任务后是否删除金钱
+        remove-on-complete: 完成后删除该挑战
+        remove-selected: 删除选定
+        repeatable: 是否可重复挑战
+        repeat-count: 最大时间
+        repeat-reward-commands: 重复指令奖励
+        repeat-reward-experience: 重复经验奖励
+        repeat-reward-items: 重复物品奖励
+        repeat-reward-money: 重复金钱奖励
+        repeat-reward-text: 重复奖励信息
+        required-blocks: 检测的方块
+        required-entities: 检测的实体
+        required-experience: 需要的经验值
+        required-items: 需要的物品
+        required-level: 需要的岛屿等级
+        required-money: 需要的金钱
+        required-permissions: 需要的权限
+        requirements: 要求
+        reset: 重置某个玩家的挑战
+        reset-on-new: 在新的岛屿上重置
+        reward-commands: 指令奖励
+        reward-experience: 经验奖励
+        reward-items: 物品奖励
+        reward-money: 金钱奖励
+        rewards: 奖励
+        reward-text: 奖励信息
+        save: 保存
+        search-radius: 搜索半径
+        set: =
+        settings: 编辑设定
+        show-eggs: 切换视图模式
+        title-enable: 显示标题
+        title-showtime: 标题显示时间
+        toggle-user-list: 用户列表
+        value: 值
+        waiver-amount: 豁免金额
+        import: 导入ASkyBlock挑战
+        line-length: 物品Lore行长度
+        history-lifespan: 历史生命周期
+        island-store: 逐岛存储
+        library: 网络库
+        download: 已下载的挑战库
+        challenge-wipe: 清空挑战数据库
+        players-wipe: 清空用户数据库
+        visibility-mode: 挑战可见性模式
+        type:
+          island: '&6岛屿类型'
+          inventory: '&6物品栏类型'
+          other: '&6其他类型'
+      next: 下一页
+      previous: 上一页
+      return: 返回上一级
+      value: 完成
+      increase: 增加
+      reduce: 减少
+    challenge-description:
+      completed: '&B已完成'
+      completed-times: 已完成 [donetimes]
+      completed-times-of: '完成次数: [donetimes] 上限: [maxtimes]'
+      environment: '所需实体:'
+      experience-reward: '&6经验奖励: [value]'
+      level: '&F挑战级别: [level]'
+      maxed-reached: '完成次数: [donetimes] 上限: [maxtimes]'
+      money-reward: '&6金钱奖励: $[value]'
+      not-repeatable: '&c该挑战不可重复!'
+      objects-close-by: '&c任务需求的方块/生物不能离你太远!(超出侦测范围)'
+      required-blocks: '所需方块:'
+      required-entities: '所需实体:'
+      required-experience: '&6所需经验: [value]'
+      required-island-level: '&6所需岛屿等级: [value]'
+      required-items: '所需物品:'
+      required-money: '&6所需金钱: $[value]'
+      reward-commands: '&6指令奖励:'
+      reward-items: '&6物品奖励:'
+      warning-blocks-remove: '&c完成此挑战后，该挑战需要的方块将会被清空'
+      warning-entities-kill: '&c完成此挑战后，该挑战需要的生物将会被清空'
+      warning-items-take: '&c完成此挑战后，该挑战的需要物品将会被清空'
+    descriptions:
+      admin:
+        add-challenge: 将现有挑战添加到当前挑战级别
+        add-text-line: '&6 添加新的文本!'
+        broadcast: 允许/禁止，当玩家完成第一次挑战后向全服玩家广播
+        cancel: 取消任何操作并返回上一级菜单
+        challenge-lore: 修改挑战介绍的哪些目标是可见的
+        challenges: 管理挑战级别 (添加/删除).
+        click-to-edit: '&4点击此处编辑输入.'
+        complete: 为某个玩家完成某个挑战|玩家无法获得完成奖励。
+        complete-wipe: 清空插件数据库中的所有挑战，包括玩家的挑战数据!
+        create-challenge: 添加新挑战。|默认情况下，它将在免费挑战列表中。
+        create-level: 添加新的挑战等级。
+        default-export: 将现有的挑战导出至 defaults.json 文件中.
+        default-import: 导入插件自带挑战
+        default-locked-icon: 更改默认锁定级别图标。|此级别可以覆盖此选项。
+        delete-challenge: 删除某个挑战
+        delete-level: 删除某个挑战等级
+        deployment: 查看某玩家已完成的挑战
+        description: 编辑介绍
+        edit-challenge: 编辑某个挑战设定
+        edit-level: 编辑某个挑战等级设定
+        edit-text-line: '&6编辑文本!'
+        environment: 改变挑战运作的环境。
+        free-at-top: 改变免费挑战的位置，如果为true免费挑战会放在前排，如果为false免费挑战将放在后排
+        glow: 允许/禁用，在已完成的挑战中加上附魔效果
+        gui-mode: 启用/禁用单一挑战GUI。|&2要求服务器重启。
+        gui-view-mode: 如果玩家输入/challenges，菜单应该显示GameModes还是挑战
+        icon-challenge: 将在此挑战的GUI面板中显示的图标。
+        icon-level: 将在此级别的GUI面板中显示的图标。
+        import: 导入ASkyblock挑战。|右键单击它启用/禁用覆盖模式。|将Challenges.yml放在./BentoBox/addons/Challenges文件夹中。
+        increase: 增加操作。 单击数字将增加所选数字的值。
+        input: 打开文本字段输入
+        input-mode: 在聊天和铁砧输入模式之间切换。
+        island-store: 启用/禁用挑战每个岛的数据存储。如果启用此选项，整个岛屿团队的挑战进度将是相同的。|不会在点击时转换数据。进展将会失败。
+        level-lore: 修改挑战级别介绍的哪些目标是可见的
+        locked-icon: 如果级别被锁定，将在GUI面板中显示的图标。
+        mode-in-world: 属于游戏模式中的世界的玩家.
+        mode-online: 目前在线的玩家
+        mode-with-island: 属于游戏模式中的岛屿的玩家.
+        multiply: 乘法运算。 单击数字会将值乘以所选数字。
+        name-challenge: 修改挑战名称
+        name-level: 修改挑战等级名称
+        order: 更改挑战顺序
+        properties: 修改常规属性
+        reduce: 减少操作。 单击数字将减少所选数字的值。
+        remove-blocks: 是否在挑战结束后删除任务需求方块(替换为空气)
+        remove-challenge: 从当前级别删除挑战
+        remove-completed: 允许/禁止，在玩家挑战列表中隐藏已完成的挑战
+        remove-entities: 是否在挑战结束后删除挑战需要的实体
+        remove-experience: 是否在玩家完成挑战后删除任务需求的经验值
+        remove-items: 是否在完成挑战后删除玩家背包中的挑战需求物品
+        remove-money: 是否在玩家完成挑战后删除任务需求的金钱.|&c需要经济前置.
+        remove-on-complete: 在玩家完成挑战后是否删除该挑战图标于任务面板中
+        remove-selected: 删除所选目标|您可以使用鼠标右键选择目标
+        repeatable: 挑战是否可以重复
+        repeat-count: 重复挑战的次数，如果设置为0则为无限制
+        repeat-reward-experience: 重复挑战完成后的经验奖励.
+        repeat-reward-items: '重复挑战完成后的物品奖励.|物品:'
+        repeat-reward-money: 重复挑战完成后的金钱奖励.|&c需要经济前置.
+        repeat-reward-text: 重复挑战完成后的信息
+        required-blocks: 修改挑战需要的方块.|方块:|
+        required-entities: 修改挑战需要的实体.|实体:|
+        required-experience: 玩家需要有该项目所设置的经验值才可以完成挑战
+        required-items: '玩家背包中需要有以下物品才能完成挑战|物品:'
+        required-level: 玩家需要岛屿等级达到该项目所设置的等级才能完成挑战.|&c需要 Level 组件.
+        required-money: 玩家需要有该项目所设置的金钱才能完成挑战.|&c需要经济前置.
+        required-permissions: '玩家需要具有以下权限才能完成挑战|权限:'
+        requirements: 修改挑战需求
+        reset: 重置已完成的玩家挑战。|右键单击启用/禁用重置所有功能。
+        reset-on-new: 允许/禁止，当玩家重置/踢出岛屿后都会重置挑战
+        reward-commands: '设置完成任务后的指令奖励.|指令:'
+        reward-experience: 设置完成任务后的经验奖励.
+        reward-items: '设置完成任务后的物品奖励.|物品:'
+        rewards: 修改挑战奖励
+        reward-text: 设置完成任务后的奖励信息
+        reward-text-level: 完成某挑战级别所有挑战后发送给玩家的信息
+        save: 保存并返回上一级菜单
+        search-radius: 玩家完成挑战时检测实体/方块的范围(半径)
+        selected: 已选中
+        set: 设置操作，击数字会将值更改为所选数字。
+        settings: 修改组件设定
+        show-eggs: 在Egg模式或Head模式之间切换实体视图
+        title-enable: 启用/禁用玩家完成挑战时显示的标题消息。
+        title-showtime: 修改标题消息对玩家可见的时间。
+        toggle-user-list: 切换到不同的玩家列表
+        waiver-amount: 完成该数量的挑战玩家方能解锁下一挑战级别的挑战
+        reward-money: 设置完成任务后的金钱奖励.|&c需要经济前置（Vault插件和Economy插件）.
+        repeat-reward-commands: 定义挑战完成后执行的自定义命令。| ***在开始处添加 [SELF] 表示命令将由玩家执行，例如 /kill
+          命令等，否则将被服务器执行。|***字符串 [player] 将被系统替换为完成挑战的玩家名称，例如 /kill [player] 将变成 /kill
+          BONNe1704 等。|命令：
+        line-length: 修改每条lore的最大长度。不会影响已有物品。
+        history-store: 启用/禁用挑战历史存储
+        history-lifespan: 修改保存历史数据的天数|0表示永久
+        library: 打开 GUI 显示所有可用的公开挑战库
+        library-author: 由 &e[author] 创作
+        library-version: '&9创作于 [version] 版本'
+        library-lang: '&a语言: [lang]'
+        library-gamemode: '&a用于 [gamemode] 游戏模式'
+        lore:
+          level: 等级字符串 | 表示翻译 'challenges.gui.challenge-description.level'.
+          status: 状态字符串 | 表示翻译 'challenges.gui.challenge-description.completed'.
+          count: 完成计数字符串 | 表示翻译 'challenges.gui.challenge-description.completed-times',  'challenges.gui.challenge-description.completed-times-of'
+            和 'challenges.gui.challenge-description.maxed-reached'.
+          description: 描述字符串 | 在挑战对象的此处定义 - challenge.description.
+          warnings: '警告字符串 | 表示下列翻译: | ''challenges.gui.challenge-description.warning-items-take''
+            | ''challenges.gui.challenge-description.objects-close-by'' | ''challenges.gui.challenge-description.warning-entities-kill''
+            | ''challenges.gui.challenge-description.warning-blocks-remove''.'
+          environment: 环境字符串 | 于挑战对象此处定义 - challenge.environment.
+          requirements: '需求字符串 | 表示下列翻译: | ''challenges.gui.challenge-description.required-level''
+            | ''challenges.gui.challenge-description.required-money'' | ''challenges.gui.challenge-description.required-experience''
+            |  以及 challenge.requiredItems, challenge.requiredBlocks 或 challenge.requiredEntities.'
+          reward_text: 奖励文本 | 在 challenge.rewardText 和 challenge.repeatRewardText
+            中定义
+          reward_other: '其他奖励字符串 | 表示下列翻译: | ''challenges.gui.challenge-description.experience-reward''
+            | ''challenges.gui.challenge-description.money-reward'' | ''challenges.gui.challenge-description.not-repeatable''.'
+          reward_items: 奖励物品 | 在 challenge.rewardItems 和 challenge.repeatRewardItems
+            中定义的奖励物品
+          reward_commands: 奖励命令 | 在 challenge.rewardCommands 和 challenge.repeatRewardCommands
+            中定义的奖励命令
+          level_status: 状态字符串 | 表示翻译 'challenges.gui.level-description.completed'.
+          challenge_count: 成就完成计数器字符串. | 表示 'challenges.gui.level-description.completed-challenges-of'
+            的翻译
+          unlock_message: 解锁信息文本 | 在挑战等级对象中定义 - challengeLevel.unlockMessage.
+          waiver_amount: 解锁下一等级字符串的可继承的挑战计数器 | 表示翻译 'challenges.gui.level-description.waver-amount'
+          level_reward_text: 奖励文本 | 在 challengeLevel.rewardText 中定义
+          level_reward_other: '其他奖励字符串 | 表示翻译: | ''challenges.gui.level-description.experience-reward''
+            | ''challenges.gui.level-description.money-reward''.'
+          level_reward_items: 奖励物品 | 在 challengeLevel.rewardItems 中定义的物品
+          level_reward_commands: 奖励命令 | 在 challengeLevel.rewardCommands 中定义的完成挑战将会奖励玩家的命令
+        download: 允许手动升级可用的挑战库 | 右击以启用缓存清理
+        download-disabled: GitHub 数据下载器已在 BentoBox 中被禁用。没有它，你不能使用库！
+        challenge-wipe: 完全清空挑战及等级数据库！
+        players-wipe: 完全清空玩家数据库！
+        visibility-mode: 切换未发布的挑战是否应当可见
+      block: '- [block] : [count]'
+      command: '- [command]'
+      current-value: '|&6当前值: [value].'
+      disabled: 禁用
+      enabled: 有效
+      entity: '- [entity] : [count]'
+      item: '- [count] x [item]'
+      item-enchant: '   - [enchant] [level]'
+      item-meta: '  ([meta])'
+      level-locked: 请完成 [count] 个 [level] 级别的挑战来解锁这个挑战级别!
+      level-unlocked: 点击查看 [level] 级别的挑战!
+      nether: '- 地狱'
+      normal: '- 主世界'
+      permission: '- [permission]'
+      the-end: '- 末地'
+      increase-by: '&a为完成计数器增加 [value]'
+      reduce-by: '&c为完成计数器减少 [value]'
+      visibility:
+        visible: 所有挑战对任何人可见
+        hidden: 仅发布的挑战可见
+        toggleable: 切换未发布的挑战的可见性
+      type:
+        island: '&a允许获取玩家附近的方块或怪物'
+        inventory: '&a允许获取玩家物品栏中的物品'
+        other: '&a允许获取其他插件/扩展中的物品'
+    item-description:
+      armor-color: '  [color]'
+      book-meta: '  [title] by [author]'
+      custom-effects: '  自定义效果:'
+      egg-meta: '  [mob]'
+      item: '- [count] x [item]'
+      item-enchant: '   - [enchant] [level]'
+      item-lore: '  物品Lore:'
+      item-meta: '  ([meta])'
+      item-name: '  [name]'
+      potion-effect: '  [effect] x [amplifier] for [duration]t'
+      potion-type: '  [name]'
+      potion-type-extended: '  Extended [name]'
+      potion-type-extended-upgraded: '   [name]'
+      potion-type-upgraded: '  Upgraded [name]'
+      recipe-count: '  [count] recipes'
+      skull-owner: '  [owner]'
+      fish-meta: '[body-color] 以 [pattern-color] [pattern]'
+    level-description:
+      completed: '&B已完成'
+      completed-challenges-of: '&你已经完成 [number] 个该级别的挑战，达到了 [max]个挑战.'
+      experience-reward: '&6经验奖励: [value]'
+      money-reward: '&6金钱奖励: $[value]'
+      reward-commands: '&6指令奖励:'
+      reward-items: '&6物品奖励:'
+      waver-amount: '&6可以跳过[value] 个挑战来解锁下一个挑战级别.'
+    questions:
+      prefix: '&2[SERVER]: '
+      admin:
+        number: 输入一个数字，然后按两次回车。
+        unique-id: 输入不重复的对象名，然后按回车。
+        challenge-name: 输入当前挑战的显示名称，然后按回车。
+        level-name: 输入当前等级的显示名称，然后按回车。
+    title:
+      admin:
+        choose-challenge-title: '&a选择挑战'
+        choose-level-title: '&a选择挑战等级'
+        choose-user-title: '&a选择玩家'
+        confirm-title: '&a确认'
+        edit-challenge-title: '&a编辑挑战'
+        edit-level-title: '&a编辑挑战等级'
+        edit-text-fields: '&a编辑文本字段'
+        manage-blocks: '&a管理方块'
+        manage-entities: '&a管理实体'
+        manage-items: '&a管理物品'
+        manage-numbers: '&a数字垫'
+        select-block: '&a选择方块'
+        select-challenge: '&a选择挑战'
+        select-entity: '&a选择实体'
+        settings-title: '&a编辑设定'
+        toggle-environment: '&a切换环境'
+        gui-title: '&a挑战管理'
+        library-title: '&a可下载的库'
+        lore-add: '&a添加物品Lore'
+        lore-remove: '&a移除物品Lore'
+        lore-edit: '&a编辑物品Lore'
+        type-select: '&a选择挑战类型'
+      challenges: '&6挑战'
+      game-modes: '&6选择游戏模式'
+      multiple-complete: '&6多少次？'
+  messages:
+    admin:
+      already-completed: '&2这个挑战已经完成'
+      challenge-created: '[challenge]&r created!'
+      completed: '&2已为[player]完成挑战[name]!'
+      complete-wipe: '&c希望你有备份，因为你已经创建了所有Challenges Addon数据库！'
+      hit-things: 点击物品将它们添加到所需的事物列表中。 完成后右键单击。
+      you-added: 你在挑战中添加了一个[thing]
+      reset: '&2你刚重设了 [player] 的 [name] 挑战!'
+      reset-all: '&2[player] 的所有挑战都被你重设了!'
+      not-completed: '&2这个挑战还没完成呢!'
+      migrate-start: '&2开始迁移挑战扩展数据.'
+      migrate-end: '&2挑战扩展数据已迁移到新格式.'
+      migrate-not: '&2数据全部有效.'
+      start-downloading: '&5开始下载并导入挑战库'
+      challenge-wipe: '&c希望你已做好备份，因你刚刚从数据库中删除了所有的挑战和等级！'
+      players-wipe: '&c希望你已做好备份，因你刚刚从数据库中删除了所有玩家已完成的挑战！'
+    defaults-file-completed: defaults.json文件填充了来自[world]的挑战！
+    defaults-file-overwrite: defaults.json存在。 它将被覆盖。
+    import-challenges: 开始导入挑战
+    import-levels: 开始导入挑战级别
+    import-number: 导入 [number] 个挑战
+    load-add: '添加新的对象: [value]'
+    load-overwriting: 覆盖 "[value]"
+    load-skipping: '"[value]" 已存在 - 跳过'
+    name-has-completed-challenge: '&5[name] 已完成 [value] &r&5挑战!'
+    name-has-completed-level: '&5[name] 已完成 [value] &r&5挑战级别!'
+    no-levels: '警告: challenges.yml文件中没有定义挑战级别'
+    you-completed-challenge: '&2你已经完成了 [value] &r&2挑战!'
+    you-completed-level: '&2你完成了 [value] &r&2级别!'
+    you-repeated-challenge: '&2你已经重复完成了 [value] &r&2挑战!'
+    you-repeated-challenge-multiple: '&2你重复完成了 [value] &r&2挑战 [count] 次!'
+  titles:
+    challenge-subtitle: '[friendlyName]'
+    challenge-title: 完成挑战
+    level-subtitle: '[friendlyName]'
+    level-title: 成功挑战级别
+protection:
+  flags:
+    CHALLENGES_ISLAND_PROTECTION:
+      name: 挑战保护
+      description: |-
+        &5&o切换谁可以
+        &5&o完成挑战
+    CHALLENGES_WORLD_PROTECTION:
+      description: |-
+        &5&o为玩家启用/禁用
+        &5&o要求他们在他们的岛屿上
+        &5&o才能完成挑战.
+      hint: 请在自己的岛屿完成挑战!
+      name: 挑战岛屿限制
+version: 11
+meta:
+  authors:
+  - BONNe

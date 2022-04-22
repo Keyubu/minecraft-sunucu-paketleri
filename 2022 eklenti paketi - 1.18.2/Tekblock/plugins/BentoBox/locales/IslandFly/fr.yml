@@ -1,0 +1,19 @@
+islandfly:
+  cancel-disable: '&aVous êtes de retour sur votre île ! Vous pouvez continuer à voler.'
+  command:
+    description: vous permet de voler sur votre île
+    only-on-island: '&cVous pouvez uniquement voler sur votre île.'
+    not-allowed-fly: '&c Vous n''êtes pas autorisé à voler sur cette île'
+  disable-fly: '&cVous ne pouvez plus voler.'
+  enable-fly: '&aVous pouvez désormais voler.'
+  fly-outside-alert: '&cVous êtes hors de votre île, vous ne pourrez plus voler dans
+    &e[number]&c secondes.'
+  wrong-world: '&cVous n''êtes pas dans le bon monde de mode de jeu.'
+  fly-turning-off-alert: '&c Vous n''êtes plus autorisé à voler ici. Désactivation
+    de fly en &e [number] &c secondes.'
+  reallowed-fly: '& a Votre mouche a été réaffectée'
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a Toggle qui peut voler sur votre île'
+      name: '&a Prévention des mouches'

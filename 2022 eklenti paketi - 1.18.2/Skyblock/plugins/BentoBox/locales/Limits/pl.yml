@@ -1,0 +1,27 @@
+#
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+block-limits:
+  hit-limit: '&c[material] limitowany do [number]!'
+entity-limits:
+  hit-limit: '&cSpawnowanie [entity] limitowane do [number]!'
+limits:
+  panel-title: Limity wysp
+admin:
+  limits:
+    main:
+      parameters: <gracz>
+      description: pokazuje limity wysp gracza
+    calc:
+      parameters: <gracz>
+      description: ponownie oblicza limity wyspy dla gracza
+      finished: '&aPrzeliczanie zakończone!'
+island:
+  limits:
+    description: pokazuje limity twojej wyspy
+    max-color: '&c'
+    regular-color: '&a'
+    block-limit-syntax: '[number]/[limit]'
+    no-limits: '&cBrak ustawionych limitów.'
+    recount:
+      description: określa limity dla twojej wyspy

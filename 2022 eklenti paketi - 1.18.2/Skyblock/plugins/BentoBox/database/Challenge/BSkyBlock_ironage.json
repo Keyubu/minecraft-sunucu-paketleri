@@ -1,0 +1,61 @@
+{
+  "uniqueId": "BSkyBlock_ironage",
+  "friendlyName": "Iron Age",
+  "deployed": true,
+  "description": [
+    "Craft iron tools and armor"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_INGOT\n",
+  "order": 4,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "BSkyBlock_expert",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_AXE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_HOE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_PICKAXE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_SHOVEL\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_SWORD\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_BOOTS\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_LEGGINGS\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_CHESTPLATE\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_HELMET\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Exchange your iron stuff to some diamonds",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n  amount: 4\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "Exchange your iron stuff to diamond",
+  "maxTimes": 100,
+  "repeatExperienceReward": 5,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n"
+  ],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

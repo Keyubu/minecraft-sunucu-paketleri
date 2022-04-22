@@ -1,0 +1,34 @@
+admin:
+  level:
+    description: aprēķina spēlētāja salas līmeni
+    parameters: <spēlētājs>
+  top:
+    description: rādīt labākās 10 salas
+    display: '&f[rank]. &a[name] &7- &b[level]'
+    unknown-world: '&cNezināma pasaule!'
+    remove:
+      description: noņemt spēlētāju no labāko desmit saraksta
+      parameters: <spēlētājs>
+island:
+  level:
+    calculating: '&aAprēķina līmeni...'
+    cooldown: '&cTev ir jāuzgaida &b[time]&c sekundes, lai vēlreiz aprēķinātu salas
+      līmeni!'
+    deaths: '&c([number] nāves)'
+    description: aprēķina tavas salas līmeni, vai parāda spēlētāja [player] līmeni
+    island-level-is: '&aSalas līmenis ir &b[level]'
+    parameters: '[player]'
+    required-points-to-next-level: '&aNepieciešami [points] punkti, lai sasniegtu
+      nākošo līmeni'
+  top:
+    description: rādīt labākos 10
+    gui-heading: '&6[name]: &B[rank]'
+    gui-title: '&aLabākie 10'
+    island-level: '&BLīmenis [level]'
+    warp-to: '&APārvietoties uz [name] salu.'
+  value:
+    description: rādīt vērtību jebkuram blokam
+    empty-hand: '&cTev nav bloks rokās.'
+    no-value: '&cŠim blokam/priekšmetam nav vērtības.'
+    success: '&7Vērtība šim blokam ir: &e[value]'
+    success-underwater: '&7Vērtība šim blokam zem jūras līmeņa: &e[value]'

@@ -1,0 +1,19 @@
+Locations:
+  '1':
+    Crate: Standart
+    World: world
+    X: -40
+    Y: 93
+    Z: -28
+  '2':
+    Crate: Standart
+    World: world
+    X: -40
+    Y: 93
+    Z: -24
+  '3':
+    Crate: Standart
+    World: world
+    X: -40
+    Y: 93
+    Z: -20

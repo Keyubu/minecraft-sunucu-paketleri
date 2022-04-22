@@ -1,0 +1,240 @@
+#This is the english language file, set "language-file" in the config.yml to "lang-en.yml" to use this file!
+#You can see this site for all color codes ----> https://minecraft.tools/en/color-code.php
+#All variables you can use;
+#!!Please note that all variables only work in the current line they are located!!
+#%shopsection%       = the shopsection that has to be called
+#%amounttopay%       = the amount that the item will cost
+#%playername%        = the player's name
+#%amount%            = the amount of an item
+#%material%          = the material from a item
+#%amounttogive%      = the amount of money that a player received from another player
+#%minimumamount%     = the minimum amount of money you need to pay someone if you use the command
+#%amountofmoney%     = the amount of money that you have on you
+#%location%          = the location of the current item that is called inside shops.yml/sections.yml configuration file
+#%languagefile%      = the current languagefile that's being called
+#%version%           = the version of minecraft that the plugin uses
+#%spawner-type%      = the spawner type that the spawner item has
+#%bought/sold%       = if the item is sold or bought
+#%buy/sell-method%   = the way a player bought/sold an item Ex: Buy-screen or sellall command
+#%fileName%          = the name of the file that's being called
+#%key%               = the name of the key
+#%keys%              = all available keys, do not confuse with %key%
+#%itemLoc%           = the location of the item in a section inside the shops config
+#%price%             = amount of money
+#%action%            = the name of the action
+#%actions%           = the available actions
+#%balance%           = the balance of the player
+#%permsGroup%        = the permissions group
+#%maxInvSize%        = the max size of a inventory screen
+#StartUp/Reload
+shops,yml-not-found: "Shops.ymlが見つかりませんでした。作成しています…"
+shops,yml-created: "Shops.ymlが正常に作成されました！"
+shops,yml-found: "Shops.ymlが見つかりました！"
+sections,yml-not-found: "Sections.ymlが見つかりませんでした。作成しています..."
+sections,yml-created: "Sections.ymlが正常に作成されました！"
+sections,yml-found: "Sections.ymlが見つかりました！"
+updating-shop-settings: "Shopの設定をアップデートしています..."
+adding-new-shop-shops,yml: "%shopsection%という名前の新しいShopをshops.ymlに追加しています..."
+adding-new-shop-sections,yml: "%shopsection%という名前の新しいShopをsections.ymlに追加しています..."
+disabled-due-no-vault: "前提プラグインのVaultが見つからないため無効化されました。Vaultをインストールしてください。"
+disabled-due-no-economy: "economyプラグインが見つからなかったため無効化されました。EssentialsXのようなプラグインをインストールしてください。"
+update-available: "アップデートが利用可能です！"
+done: "完了しました！"
+updating-sections-config: "セクション設定をアップデートしています..."
+debug-mode-enabled: "デバッグモードが有効になりました。"
+economy-provider-null: "EconomyProviderが無効です。"
+successfully-hooked-into-vault: "Vaultに接続しました。"
+language-file-using: "%languagefile%を言語ファイルとして使用中です。"
+cannot-find-language-file: "言語ファイルが見つかりません！"
+minecraft-version-using: "Minecraftはバージョン%version%を実行中です…"
+checking-each-item: "各アイテムの値の整合性を確認中です..."
+loading-items: "全てのアイテムを読み込み中です..."
+could-not-find-valid-version: "このサーバーに、EconomyShopGUIプラグインに対応したバージョンのMinecraftが見つかりませんでした。プラグインはMinecraft内で使用できず、多くのアイテムやメソッドが動作しません。 サポートされているバージョンのMinecraftを使用してください。"
+updating-configs: "新しいバージョンが見つかったため設定を更新しています..."
+creating-backup: "%fileName%からバックアップを作成します。バックアップファイルはEconomyShopGUIプラグインフォルダ内のbackupsフォルダをご確認ください。"
+discounts-feature-unavailable: "permissionsプラグインが見つからなかったため、割引機能は有効にできません。"
+#Main Shop Inventory
+inventory-main-shop-title: "&8&lサーバーショップ"
+profile: "&aプロフィール"
+name: "&6Name"
+money: "&6所持金"
+level: "&6レベル"
+#Buystacks Inventory title
+inventory-buystacks-title: "&8アイテムの&lスタック数&8を選んでください。"
+#HowMuchSell/HowMuchBuy Inventory
+inventory-howmuchsell-title: "&8&l売却する&r&8アイテムの個数を選んでください。"
+inventory-howmuchbuy-title: "&8&l購入する&r&8アイテムの個数を選んでください。"
+plus-one: "&b+1"
+min-one: "&5-1"
+plus-sixteen: "&b+16"
+min-sixteen: "&5-16"
+plus-thirty-two: "&b+32"
+min-thirty-two: "&5-32"
+sell: "&a売却しますか？"
+sell-all: "&c全て売却しますか？"
+buy: "&a購入しますか？"
+buy-stacks: "&cスタック単位で購入しますか？"
+#All Inventory's
+back: "&4戻る"
+cancel: "&4キャンセル"
+#Previous/Next/Current page
+previous-page: "&d前のページ"
+next-page: "&b次のページ"
+current-page: "&7現在のページ:"
+#Shop item lore
+left-click-buy: "&aクリック：購入：&c%amounttopay%"
+right-click-sell: "&6右クリック：売却：&c%amounttopay%"
+item-location-in-shop: "&8セクション：%shopsection%, インデックス：%itemLoc%"
+#Buy/Sell Messages
+pay-confirmation: "&c%amounttopay%&aで&1%amount%&a個の&b%material%を購入しました。"
+sell-confirmation: "&c%amounttopay%&aで&1%amount%&a個の&b%material%を売却しました。"
+sell-confirmation-multiple-items: "&c%amounttopay%で&1%amount%&a個のアイテムを売却しました。"
+no-item-to-be-sold: "&cこのアイテムを所持していません。"
+item-cannot-be-bought: "&cこのアイテムは買えません。"
+item-cannot-be-sold: "&cこのアイテムは売れません。"
+player-made-transaction: "%playername%は%buy/sell-method%を用いて%amountofmoney%で%amount%個の%material%を%bought/sold%うとしています。"
+buy-screen: "購入画面"
+sell-screen: "売却画面"
+buystacks-screen: "スタック単位での購入画面"
+sellall-screen: "GUIでの全売却"
+sellall-command: "コマンドでの全売却"
+bought: "買お"
+sold: "売ろ"
+#CurrencySymbol
+currencysymbol: "$%price%"
+#All commands
+command-disabled-in-world: "&cこのコマンドはこのワールドでは無効になっています。"
+#Edit-shop subcommand descriptions
+editshop-add-item-subcommand-desc: "&aショップにアイテムを追加します。"
+editshop-edit-item-subcommand-desc: "&a現在ショップに存在するアイテムを編集します。"
+editshop-remove-item-subcommand-desc: "&aアイテムをショップから削除します。"
+editshop-add-hand-item-subcommand-desc: "&a手持ちのアイテムをショップに追加します。"
+#Edit-shop subcommand syntaxes
+editshop-add-item-subcommand-syntax: "&a/editshop additem <section> <material> <buy price> <sell price> [displayname]"
+editshop-edit-item-subcommand-syntax: "&a/editshop edititem <section> <item> <action> <key> <value>"
+editshop-remove-item-subcommand-syntax: "&a/editshop deleteitem <section> <item>"
+editshop-add-hand-item-subcommand-syntax: "&a/editshop addhanditem <section> <buy price> <sell price>"
+#Edit-shop command messages
+editshop-adding-item: "&a新しいアイテムをショップに追加しています..."
+editshop-add-item-successful: "&aアイテム'%itemPath%'をショップに追加しました。"
+editshop-editing-item: "&aアイテムをアップデートしています..."
+editshop-edit-item-successful: "&aアイテム'%itemPath%'をアップデートしました。"
+editshop-removing-item: "&aショップからアイテムを削除しています..."
+editshop-remove-item-successful: "&aアイテム'%itemPath%'をショップから削除しました。"
+editshop-reload-shop-to-see-changes: "&aショップの変更を反映するには/sreloadを使用してください。"
+#Edit-shop command errors
+section-does-not-contain-item: "&cセクション'%shopsection%'には、アイテム'%itemLoc%'が含まれていません。"
+no-valid-action: "&c'%action%'は有効なアクションではありません。\n現在は%actions%が利用可能です。"
+no-valid-key: "&c'%key%'は正しいキーではありません。 \n現在は%keys%が利用可能です。"
+action-not-valid-on-key: "&c'%key%'キーで%action%することはできません。"
+edit-item-material-invalid: "&c編集しようとしているアイテム'%material%'が不正です。"
+key-already-defined: "&c'%key%'キーはすでにこのアイテムに定義されています。同じキーを2度追加することはできません。"
+key-is-not-found: "&c'%key%'キーが見つからなかったため、アイテムから削除することができません。"
+no-valid-slot-for-item: "&cアイテムをスロット\"%slot%\"に配置できませんでした。スロットのサイズは1〜%maxShopSize%である必要があります。"
+#Reload Command
+configs-reloaded: "&a設定がリロードされました。"
+#Balance Command
+check-balance: "&b現在&c%amountofmoney%&bを所持しています。"
+check-balance-other-player: "&b%playername%&aは現在&c%amountofmoney%&aを所持しています。"
+#Givemoney Command
+givemoneycommand-example: "&9/givemoney <player> <amount>"
+givemoney-complete: "&aGivemoneyが完了しました。"
+#Pay Command
+minimum-amount: "&cプレイヤーに支払う最低額は%minimumamount%です。"
+payment-complete: "&a支払いが完了しました。"
+player-received-money: "&c%amounttogive%&aを&2%playername%&aから受け取りました！"
+need-player-and-amount: "&9プレイヤーと金額を指定してください。"
+need-amount: "&9金額を指定してください。"
+paycommand-example: "&9/pay <player> <amount>"
+#Player breaks spawner
+default-spawner-name: "&9&l%spawner-type%&rスポナー"
+spawner-broke-and-applied-to-inventory: "&9%spawner-type%&aの採掘に成功しました！このアイテムはインベントリに追加されます。"
+need-silk-touch: "&cこのアイテムを採掘するにはシルクタッチのついたツルハシを使う必要があります。"
+#JoinMessage
+join-message: "&2ようこそ。あなたの残高は&c%balance%です！"
+#Level event
+level-event-message: "&2[Levels] &5はいどうぞ。&c%amount%&5が残高に追加されました。"
+#Item error's
+displayname-null: "表示名が取得できませんでした。"
+item-name-null: "アイテム名が取得できませんでした。"
+need-item-material: "マテリアル値を空白にすることはできません。"
+item-material-null: "アイテムのマテリアル値が取得できませんでした。これがバグだと思われる場合、プラグインページに記載のある私たちのDiscordサーバーにご報告ください。'%material%'"
+item-enchantment-null: "アイテムのエンチャントを取得できませんでした。"
+need-item-enchantment: "エンチャントを空白にすることはできません。"
+item-enchantment-not-supported: "このエンチャントは、現在稼働中のMinecraftではサポートされていません。"
+enchantment-cannot-apply-to-item: "アイテムにエンチャントを適用するには、対象がエンチャントされた本やそのエンチャントに適した道具である必要があります。"
+item-spawnertype-null: "アイテムのスポナータイプを取得できませんでした。"
+need-item-spawnertype: "スポナータイプを空白にすることはできません。"
+material-needs-to-be-spawner: "スポナータイプやエンティティタイプを適用するには、対象がスポナーである必要があります。"
+item-potiontype-null: "アイテムのポーションタイプを取得できませんでした。"
+need-item-potiontype: "ポーションタイプを空白にすることはできません。"
+potiontype-not-supported: "このポーションタイプは、現在稼働中のMinecraftではサポートされていません。"
+material-needs-to-be-potion: "ポーション効果を適用するには、対象がポーションや矢である必要があります。"
+cant-bind-multiple-applyments: "エンチャント/スポナータイプやポーション効果タイプを同時に適用したアイテムを作成することはできません。"
+item-error: "&cアイテムエラー。コンソールを参照してください。"
+material-not-supported: "このアイテムは、現在稼働中のMinecraftではサポートされていません。"
+item-needs-buy-and-sell-value: "ショップ内の全てのアイテムには購入・販売価格が必要です。"
+sell-value-wrong: "販売価格は小数か整数である必要があります。"
+buy-value-wrong: "購入価格は小数か整数である必要があります。"
+option-type-changed: "Shopでスポナーを作成するには'type'オプションを'spawnertype'に変更してください。何を示しているか明瞭化するため、オプションの名称はバージョン2.2で変更されました。"
+option-meta-changed: "Shopで表示名付きのアイテムを作成するには'meta'オプションを'displayname'に変更してください。何を示しているか明瞭化するため、オプションの名称はバージョン2.2で変更されました。"
+cannot-display-shopsection: "アイテムの場所が0〜%maxInvSize%の範囲にある必要があるため、セクション'%shopsection%' を作成できません。"
+need-recipe-material: "レシピを空白にすることはできません。"
+cannot-get-recipe-material: "レシピ本を作成できません。アイテム名にスペルミスがないか、アイテムが存在するかを確認してください。"
+recipe-material-not-supported: "指定されたレシピ本は、現在稼働中のMinecraftではサポートされていません。"
+material-needs-to-be-book: "レシピを適用するには、対象が知恵の本である必要があります。"
+need-skullowner: "指定されたプレイヤー(Skull Owner)がいないため、プレイヤーの頭を作成できません。"
+material-needs-to-be-skull: "スキン(Skull Owner)を適用するには、対象がプレイヤーの頭である必要があります。"
+material-needs-to-be-leather-armor: "色を適用するには、対象が革の防具である必要があります。"
+#Item path
+items-path-in-shops-config: "shops.yml設定でのアイテムパス：%location%"
+items-path-in-sections-config: "sections.yml設定でのアイテムパス：%location%"
+items-path-in-config: "config.yml設定でのアイテムパス：%location%"
+#Compatibility
+ultimatestacker-compatibility-enabled: "スポナープロバイダーはUltimateStackerに設定されています"
+ultimatestacker-not-found: "UltimateStackerが見つかりませんでした"
+could-not-integrate-with-ultimatestacker: "UltimateStackerとの統合に失敗しました"
+ultimatestacker-found: "UltimateStackerが見つかりました。統合しています..."
+using-ultimatestacker-spawners: "UltimateStackerをスポナープロバイダーとして使用しています。"
+wildstacker-compatibility-enabled: "スポナープロバイダーはWildStackerに設定されています"
+wildstacker-not-found: "WildStackerが見つかりませんでした"
+wildstacker-found: "WildStackerが見つかりました。統合しています..."
+could-not-integrate-with-wildstacker: "WildStackerとの統合に失敗しました"
+using-wildstacker-spawners: "WildStackerをスポナープロバイダーとして使用しています。"
+silkspawners-compatibility-enabled: "SilkSpawnersとの互換性が設定で有効になりました。"
+silkspawners-not-found: "SilkSpawnersが見つかりませんでした"
+silkspawners-found: "SilkSpawnersが見つかりました。統合しています..."
+could-not-integrate-with-silkspawners: "SilkSpawnersとの統合に失敗しました"
+using-silkspawners-spawners: "SilkSpawnersをスポナープロバイダーとして使用しています。"
+using-default-spawners: "プラグインデフォルトのスポナーをスポナープロバイダーとして使用しています。"
+#Error's
+cannot-find-discounted-section: "セクション'%section%'に割引を追加できません。セクションが無効であるか、見つかりません。"
+cannot-find-discounted-group: "パーミッショングループ'%permsGroup%'に対する割引を追加できません。パーミッション名にスペルミスがないか、存在するかを確認してください。"
+disabling-plugin: "プラグインを無効化しています..."
+not-spawn-able: "このエンティティタイプ'%spawnertype%'はスポーンできません。"
+real-player: "このコマンドはプレイヤーのみ実行できます。"
+player-not-online: "&cプレイヤーが存在しないかオフラインです。"
+cannot-sell-air: "&c空気を売ることはできません..."
+no-permissions: "&cこの操作を実行する権限がありません！"
+no-permissions-to-open-shop: "&cこのセクションを開く権限がありません。"
+cannot-do-that: "&4それは実行できません！！"
+more-space-needed: "&cインベントリにスペースを確保してからやり直してください。"
+could-not-store-all-items: "&c%amount%個のアイテムがインベントリに追加できませんでした。インベントリがいっぱいです。"
+not-enough-space-inside-inventory: "&4インベントリに十分なスペースがないため、残りのアイテムを地面に投げています。"
+insufficient-money: "&cお金が足りません。"
+canceling-transaction-no-space: "&4インベントリに十分なスペースがないため、取引をキャンセルします。\nインベントリにスペースを確保してからやり直してください。"
+no-items-in-section: "アイテムが見つからなかったため、セクション%shopsection%を開くことができません！"
+no-item-found: "&cアイテムが見つかりませんでした。"
+item-null: "&cアイテムが存在しません。"
+item-cannot-be-sold-to-server: "&cShopでエラーが発生しているため、アイテム(%material%)を販売できません。サーバー管理者にご連絡ください。"
+could-not-save-shops,yml: "&4shops.ymlの変更を保存できませんでした。"
+could-not-save-sections,yml: "&4sections.ymlの変更を保存できませんでした。"
+could-not-save-config: "%fileName%の設定を保存できませんでした。"
+rgb-color-formatted-wrong: "RGBカラーは'0x000000', '#000000'や'000000'のいずれかを%path%.で指定する必要があります。"
+no-shop-found: "&cその名前のセクションが見つかりません！"
+no-valid-amount: "&c不正な数量です"
+restart-plugin: "セクションを開くことができません。プラグインを再起動するか、私たちのDiscordサーバーに参加してサポートを受けてください。"
+could-not-check-for-updates: "&cアップデートを確認できませんでした。"
+cannot-update-config: "&c設定ファイル config.yml をアップデートできませんでした。"
+cannot-read-config: "設定が間違っているため%fileName%の設定を読み取れません。オンラインのYamlパーサーを使用して、問題の原因を特定し解決してください。ご自身で問題が特定できない場合は、私たちのDiscordサーバーに参加してサポートを受けてください。"
+error-occured-while-reloading: "&4プラグインのリロード中にエラーが発生しました。コンソールでエラーメッセージを確認してください。."

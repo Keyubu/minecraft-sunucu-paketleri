@@ -1,0 +1,32 @@
+# ##########################################################################################
+# This is a YML file. Be careful when editing. Check your edits in a YAML checker like    #
+# the one at http://yaml-online-parser.appspot.com                                        #
+# ##########################################################################################
+
+warp:
+  help:
+    description: プレイヤーのワープサインにワープする
+    parameters: <名>
+warps:
+  deactivate: '&c前のワープサインが無効になりました!'
+  error:
+    does-not-exist: '&cそのワープはもう存在しません！'
+    no-permission: '&C許可がありません！'
+    no-remove: '&Cワープサインは外せません！'
+    no-warps-yet: '&C利用可能なワープはまだありません'
+    not-enough-level: '&C島のレベルは十分に高くありません！'
+    not-on-island: '&Cあなたの島にいなければなりません！'
+    not-safe: '&cワープは安全ではありません。!'
+    your-level-is: '&c島レベルはわずか[level]で、[required]より高くなければなりません'
+  help:
+    description: ワープパネルを開く
+  next: '&6次のページ'
+  player-warped: '&2[name]はあなたのワープサインに反った!'
+  previous: '&6前のページ'
+  sign-removed: '&Cワープサインを削除!'
+  success: '&A完了!'
+  title: ワープサイン
+  warpTip: '&6最初の行に[text]と一緒にワープサインを置きます'
+  warpToPlayersSign: '&6[player]のサインに反っている'
+
+

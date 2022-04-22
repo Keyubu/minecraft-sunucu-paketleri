@@ -1,0 +1,155 @@
+# Challenges 0.8.4 Configuration
+# This config file is dynamic and saved when the server is shutdown.
+# You cannot edit it while the server is running because changes will
+# be lost! Use in-game settings GUI or edit when server is offline.
+# 
+commands:
+  # 
+  # Allows to define common challenges command that will open User GUI
+  # with all GameMode selection or Challenges from user world.
+  # This will not affect /{gamemode_user} challenges command.
+  # /!\ In order to apply the changes made to this option, you must restart your server. Reloading BentoBox or the server won't work.
+  user: challenges c
+  # 
+  # Allows to define common challenges command that will open Admin GUI
+  # with all GameMode selection.
+  # This will not affect /{gamemode_admin} challenges command.
+  # /!\ In order to apply the changes made to this option, you must restart your server. Reloading BentoBox or the server won't work.
+  admin: challengesadmin chadmin
+  # 
+  # This enables/disables common command that will be independent from
+  # all GameModes. For admins it will open selection with all GameModes
+  # (unless there is one), but for users it will open GUI that corresponds
+  # to their world (unless it is specified other way in Admin GUI).
+  # /!\ In order to apply the changes made to this option, you must restart your server. Reloading BentoBox or the server won't work.
+  single-gui: false
+  # 
+  # This allows for admins to define which GUI will be opened for admins
+  # when users calls single-gui command.
+  # Acceptable values:
+  #    - CURRENT_WORLD - will open GUI that corresponds to user location.
+  #    - GAMEMODE_LIST - will open GUI with all installed game modes.
+  single-gamemode: CURRENT_WORLD
+history:
+  # 
+  # This indicate if player challenges data history will be stored or not.
+  store-history-data: false
+  # 
+  # This allows to specify an amount of time in days when history data will
+  # be removed. 0 means that data will not be removed.
+  lifespan: 14
+gui-settings:
+  # 
+  # Remove non-repeatable challenges from the challenge GUI when complete.
+  remove-complete-one-time-challenges: false
+  # 
+  # Add enchanted glow to completed challenges
+  add-completed-glow: true
+  # 
+  # This variable allows to choose which Challenges users can see in Challenges GUI.
+  # Valid values are:
+  #     'VISIBLE' - there will be no hidden challenges. All challenges will be viewable in GUI.
+  #     'HIDDEN' - shows only deployed challenges.
+  #     'TOGGLEABLE' - there will be button in GUI that allows users to switch from ALL modes.
+  # TOGGLEABLE - Currently not implemented.
+  undeployed-view-mode: VISIBLE
+  # 
+  # This allows to change default locked level icon. This option may be
+  # overwritten by each challenge level. If challenge level has specified
+  # their locked level icon, then it will be used, instead of this one.
+  locked-level-icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2975
+    type: BOOK
+  # 
+  # This indicate if free challenges must be at the start (true) or at the end (false) of list.
+  free-challenges-first: true
+  # 
+  # This allows to change lore description line length. By default it is 25, but some server
+  # owners may like it to be larger.
+  lore-length: 25
+  # 
+  # This string allows to change element order in Challenge description. Each letter represents
+  # one object from challenge description. If letter is not used, then its represented part
+  # will not be in description. If use any letter that is not recognized, then it will be
+  # ignored. Some strings can be customized via lang file under 'challenges.gui.challenge-description'.
+  # List of values and their meaning: 
+  #  - LEVEL - Level String: '*.level'
+  #  - STATUS - Status String: '*.completed'
+  #  - COUNT - Times String: '*.completed-times', '*.completed-times-of' or '*.maxed-reached'
+  #  - DESCRIPTION - Description String: defined in challenge object - challenge.description
+  #  - WARNINGS - Warning String: '*.warning-items-take', '*.objects-close-by', '*.warning-entities-kill', '*.warning-blocks-remove'
+  #  - ENVIRONMENT - Environment String: defined in challenge object - challenge.environment
+  #  - REQUIREMENTS - Requirement String: '*.required-level', '*.required-money', '*.required-experience' and items, blocks or entities
+  #  - REWARD_TEXT - Reward String: message that is defined in challenge.rewardTest and challenge.repeatRewardText
+  #  - REWARD_OTHER - Reward extra String: '*.experience-reward', '*.money-reward', '*.not-repeatable'
+  #  - REWARD_ITEMS - Reward Items: List of items that will be rewarded.
+  #  - REWARD_COMMANDS - Reward Commands: List of commands that will be rewarded.
+  # Requirement and reward items, blocks and entities that are defined in challenge and can be customized under 'challenges.gui.item-description.*'
+  challenge-lore:
+  - LEVEL
+  - STATUS
+  - COUNT
+  - DESCRIPTION
+  - WARNINGS
+  - ENVIRONMENT
+  - REQUIREMENTS
+  - REWARD_TEXT
+  - REWARD_OTHER
+  - REWARD_ITEMS
+  - REWARD_COMMANDS
+  # 
+  # This string allows to change element order in Level description. Each letter represents
+  # one object from level description. If letter is not used, then its represented part
+  # will not be in description. If use any letter that is not recognized, then it will be
+  # ignored. Some strings can be customized via lang file under 'challenges.gui.level-description'.
+  # List of values and their meaning: 
+  #  - LEVEL_STATUS - Status String: '*.completed'
+  #  - CHALLENGE_COUNT - Count of completed challenges String: '*.completed-challenges-of'
+  #  - UNLOCK_MESSAGE - Description String: defined in level object - challengeLevel.unlockMessage
+  #  - WAIVER_AMOUNT - WaiverAmount String: '*.waver-amount'
+  #  - LEVEL_REWARD_TEXT - Reward String: message that is defined in challengeLevel.rewardText.
+  #  - LEVEL_REWARD_OTHER - Reward extra String: '*.experience-reward', '*.money-reward'
+  #  - LEVEL_REWARD_ITEMS - Reward Items: List of items that will be rewarded.
+  #  - LEVEL_REWARD_COMMANDS - Reward Commands: List of commands that will be rewarded.
+  # Reward items that are defined in challenge level and can be customized under 'challenges.gui.item-description.*'
+  level-lore:
+  - LEVEL_STATUS
+  - CHALLENGE_COUNT
+  - UNLOCK_MESSAGE
+  - WAIVER_AMOUNT
+  - LEVEL_REWARD_TEXT
+  - LEVEL_REWARD_OTHER
+  - LEVEL_REWARD_ITEMS
+  - LEVEL_REWARD_COMMANDS
+# 
+# This indicate if challenges data will be stored per island (true) or per player (false).
+store-island-data: false
+# 
+# Reset Challenges - if this is true, player's challenges will reset when users
+# reset an island or if users are kicked or leave a team. Prevents exploiting the
+# challenges by doing them repeatedly.
+reset-challenges: true
+# 
+# Broadcast 1st time challenge completion messages to all players.
+# Change to false if the spam becomes too much.
+broadcast-messages: true
+title:
+  # 
+  # Shows a title screen for player after completion a challenge or level.
+  # Message can be edited via language settings.
+  show-title: true
+  # 
+  # Integer that represents how long title will be visible for player.
+  title-showtime: 70
+# 
+# Long that represents how frequently (in minutes) challenges addon will save data to database.
+# If this is set to 0, saving will not happen.
+auto-saver: 30
+# 
+# This list stores GameModes in which Challenges addon should not work.
+# To disable addon it is necessary to write its name in new line that starts with -. Example:
+# disabled-gamemodes:
+#  - BSkyBlock
+disabled-gamemodes: []
+configVersion: v3

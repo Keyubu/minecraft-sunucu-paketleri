@@ -1,0 +1,70 @@
+{
+  "uniqueId": "AOneBlock_enderkiller",
+  "friendlyName": "Hostile Zoo",
+  "deployed": true,
+  "description": [
+    "Create hostile mob zoo"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: IRON_BARS\n",
+  "order": 6,
+  "challengeType": "ISLAND",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "AOneBlock_elite",
+  "requirements": {
+    "class": "IslandRequirements",
+    "parameters": {
+      "requiredBlocks": {},
+      "removeBlocks": false,
+      "requiredEntities": {
+        "WITHER_SKELETON": 1,
+        "HUSK": 1,
+        "CREEPER": 1,
+        "SKELETON": 1,
+        "SPIDER": 1,
+        "ZOMBIE": 1,
+        "SLIME": 1,
+        "GHAST": 1,
+        "ZOMBIFIED_PIGLIN": 1,
+        "ENDERMAN": 1,
+        "BLAZE": 1,
+        "MAGMA_CUBE": 1,
+        "WITCH": 1,
+        "ENDERMITE": 1,
+        "PHANTOM": 1,
+        "DROWNED": 1
+      },
+      "removeEntities": false,
+      "searchRadius": 10,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Get some extra diamonds and some shulker boxes",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n  amount: 32\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SHULKER_BOX\n  amount: 5\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": false,
+  "repeatRewardText": "",
+  "maxTimes": 0,
+  "repeatExperienceReward": 0,
+  "repeatItemReward": [],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

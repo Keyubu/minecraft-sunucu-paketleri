@@ -1,0 +1,64 @@
+{
+  "uniqueId": "AOneBlock_engineer",
+  "friendlyName": "Engineer",
+  "deployed": true,
+  "description": [
+    "Create some redstone machines"
+  ],
+  "icon": "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: OBSERVER\n",
+  "order": 6,
+  "challengeType": "INVENTORY",
+  "environment": [],
+  "removeWhenCompleted": false,
+  "level": "AOneBlock_elite",
+  "requirements": {
+    "class": "InventoryRequirements",
+    "parameters": {
+      "requiredItems": [
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: COMPARATOR\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: REPEATER\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: OBSERVER\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: REDSTONE_LAMP\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: HOPPER\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DROPPER\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: PISTON\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: STICKY_PISTON\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DISPENSER\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DAYLIGHT_DETECTOR\n",
+        "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: TRIPWIRE_HOOK\n"
+      ],
+      "takeItems": true,
+      "requiredPermissions": []
+    }
+  },
+  "requiredPermissions": [],
+  "requiredBlocks": {},
+  "removeBlocks": false,
+  "requiredEntities": {},
+  "removeEntities": false,
+  "requiredItems": [],
+  "takeItems": true,
+  "requiredExperience": 0,
+  "takeExperience": false,
+  "requiredMoney": 0,
+  "takeMoney": false,
+  "requiredIslandLevel": 0,
+  "searchRadius": 10,
+  "rewardText": "Get some extra diamonds and some shulker boxes",
+  "rewardItems": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n  amount: 32\n",
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: SHULKER_BOX\n  amount: 2\n"
+  ],
+  "rewardExperience": 50,
+  "rewardMoney": 0,
+  "rewardCommands": [],
+  "repeatable": true,
+  "repeatRewardText": "",
+  "maxTimes": 100,
+  "repeatExperienceReward": 0,
+  "repeatItemReward": [
+    "is:\n  ==: org.bukkit.inventory.ItemStack\n  v: 2975\n  type: DIAMOND\n  amount: 4\n"
+  ],
+  "repeatMoneyReward": 0,
+  "repeatRewardCommands": []
+}

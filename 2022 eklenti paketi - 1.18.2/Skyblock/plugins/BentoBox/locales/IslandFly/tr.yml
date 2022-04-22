@@ -1,0 +1,18 @@
+islandfly:
+  fly-outside-alert: '&c Adanız dışındasınız, böylece uçuş modu &e [number] &c saniye
+    içinde devre dışı bırakılacaktır.'
+  fly-turning-off-alert: '&c Artık burada uçmanıza izin verilmiyor. &e [number] &c
+    saniye içinde sinek kapatılıyor.'
+  disable-fly: '&c Uçuş modunuz devre dışı bırakıldı.'
+  reallowed-fly: '&a Tekrar uçabilirsin'
+  enable-fly: '&a Uçuş modunuz etkinleştirildi.'
+  cancel-disable: '&a Geri döndün, ha! Sinek yakıtı başarıyla dolduruldu!'
+  wrong-world: '&c Doğru oyun modu dünyasında değilsiniz'
+  command:
+    not-allowed-fly: '&c Bu adada uçmanıza izin verilmiyor'
+    description: adanda uçmana izin verir
+protection:
+  flags:
+    ISLAND_FLY_PROTECTION:
+      description: '&a Adanızda kimlerin uçabileceğini aç / kapat'
+      name: '&a Uçuş önleme'
