@@ -37,6 +37,16 @@ groups:
       - sellgui
       - satışmenüsü
       - shop
+      - pay
+      - money
+      - balance
+      - hat
+      - head
+      - kit
+      - kits
+      - warps
+      - baltop
+      - r
     #If the value is blacklist, the commands are blocked and invisible
     #If the value is whitelist, the commands only executable and visible
     group-mode: whitelist
@@ -60,6 +70,7 @@ groups:
       - ban
       - oba
       - oneblockadmin
+      - fly
     group-mode: whitelist
     priority: 1
     included-groups:
