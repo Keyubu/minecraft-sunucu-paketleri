@@ -14,4 +14,28 @@ Sunucunuzun kullanacağı RAM miktarını ayarlamak için;
 Ardından RAM kapasitesini sunucunuzun sahip olduğu RAM kapasitesinin bir altı olarak ayarlayın,
 Örnek: 5GB'lık cihaza sahipseniz, `-Xmx4G -Xms4G`olarak ayarlayın.
 
+## Tekblock ve Skyblock sunucuları için açıklama
+Sunucu tamamen öde ve kazan sistemine karşı (NO P2W), EULA'ya uygun inşaat edilmiştir. VIP veya destek türlerinin özellikleri eklenti paketini kullanacak kişiye bırakılmıştır.
+2 farklı VIP veya destek türü vardır;
+- VIP
+- MVIP
+Şu an için 2 kozmetik özelliği mevcuttur,
+- Renkli yazma ve rol
+- Kafaya eşya takma yetkisi
+
+### Oyuncular bazı komutları giremiyor.
+PL-Hide eklentisinden oyuncuların ve yetkililerin kullanabileceği komutları ayarlayabilirsiniz.
+
+### Oyuncu etiketleri ve yazı renkleri nereden düzenlenir?
+LPC ve LuckPerms eklentilerinden düzeltebilirsiniz.
+
+### Skortablo ve TAB nereden düzeltilir?
+TAB eklentisinden düzeltebilirsiniz.
+
+### Market eşya fiyatlarını nasıl düzeltebilirim?
+EconomyShopGUI > shops.yml içerisinden düzeltebilirsiniz.
+
+### Nasıl sunucu oylama sistemini ayarlarım?
+https://keyubu.com/votifier-spigot-bungeecord-baglantisi-ayarlama/
+
 > 2020 eklenti paketlerinin desteği ve geliştirilmesi durdurulmuştur.
