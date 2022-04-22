@@ -19,6 +19,7 @@ Sunucu tamamen öde ve kazan sistemine karşı (NO P2W), EULA'ya uygun inşaat e
 2 farklı VIP veya destek türü vardır;
 - VIP
 - MVIP
+
 Şu an için 2 kozmetik özelliği mevcuttur,
 - Renkli yazma ve rol
 - Kafaya eşya takma yetkisi
