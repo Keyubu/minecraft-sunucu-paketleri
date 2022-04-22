@@ -11,8 +11,9 @@ Java sürümü 17 olmalıdır, önerilen sürüm için [tıklayın.](https://www
 Sunucunuzun kullanacağı RAM miktarını ayarlamak için;
 - Windows ise **start.bat** dosyasını editör uygulamasıyla açın,
 - Linux ise **start.sh** açın,
+
 Ardından RAM kapasitesini sunucunuzun sahip olduğu RAM kapasitesinin bir altı olarak ayarlayın,
-Örnek: 5GB'lık cihaza sahipseniz, `-Xmx4G -Xms4G`olarak ayarlayın.
+Örnek: 5GB'lık cihaza sahipseniz, `-Xmx4G -Xms4G` olarak ayarlayın.
 
 ## Tekblock ve Skyblock sunucuları için açıklama
 Sunucu tamamen öde ve kazan sistemine karşı (NO P2W), EULA'ya uygun inşaat edilmiştir. VIP veya destek türlerinin özellikleri eklenti paketini kullanacak kişiye bırakılmıştır.
