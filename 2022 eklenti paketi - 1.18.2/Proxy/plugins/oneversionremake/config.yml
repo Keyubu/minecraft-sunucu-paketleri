@@ -1,0 +1,115 @@
+#################################################################################
+# +---------------------------------------------------------------------------+ #
+# |       ____ _    ______                                                    | #
+# |      / __ \ |  / / __ \                               OneVersionRemake    | #
+# |     / / / / | / / /_/ /                                   by Andre_601    | #
+# |    / /_/ /| |/ / _, _/                                                    | #
+# |    \____/ |___/_/ |_|                                                     | #
+# |                                                                           | #
+# |    GitHub: https://github.com/Andre601/OneVersionRemake                   | #
+# |    Spigot: https://spigotmc.org/resources/71727/                          | #
+# |    Wiki:   https://github.com/Andre601/OneVersionRemake/wiki              | #
+# |                                                                           | #
+# +---------------------------------------------------------------------------+ #
+#################################################################################
+#
+# Created with Version 3.10.0
+#
+# +----------------------------------------------------------------------------+
+# |                               Main Settings                                |
+# |                                                                            |
+# | Main Settings for the plugin.                                              |
+# |                                                                            |
+# | https://github.com/Andre601/OneVersionRemake/wiki/Config#settings          |
+# +----------------------------------------------------------------------------+
+Settings:
+  # +--------------------------------------------------------------------------+
+  # | Whether OneVersionRemake should download the latest versions.json on     |
+  # | Proxy (re)start.                                                         |
+  # |                                                                          |
+  # | https://github.com/Andre601/OneVersionRemake/wiki/Config#updateversions  |
+  # +--------------------------------------------------------------------------+
+  UpdateVersions: true
+  # +--------------------------------------------------------------------------+
+  # | URL pointing to the file that contains the different Protocols OVR       |
+  # | should use.                                                              |
+  # |                                                                          |
+  # | https://github.com/Andre601/OneVersionRemake/wiki/Config#versionsurl     |
+  # +--------------------------------------------------------------------------+
+  VersionsUrl: 'https://www.andre601.ch/oneversionremake/protocol_versions.json'
+
+# +----------------------------------------------------------------------------+
+# |                             Protocol Settings                              |
+# |                                                                            |
+# | Protocol Settings for the plugin.                                          |
+# |                                                                            |
+# | https://github.com/Andre601/OneVersionRemake/wiki/Config#protocol          |
+# +----------------------------------------------------------------------------+
+Protocol:
+  # +--------------------------------------------------------------------------+
+  # | The Protocol Versions that should be allowed to join the network.        |
+  # |                                                                          |
+  # | https://github.com/Andre601/OneVersionRemake/wiki/Config#versions        |
+  # +--------------------------------------------------------------------------+
+  Versions:
+    - 758
+  
+  # +--------------------------------------------------------------------------+
+  # | Should OneVersionRemake log denied Logins in the console?                |
+  # |                                                                          |
+  # | https://github.com/Andre601/OneVersionRemake/wiki/Config#logdenial       |
+  # +--------------------------------------------------------------------------+
+  LogDenial: true
+  
+  # +--------------------------------------------------------------------------+
+  # | Should the {version} placeholder only show major MC versions?            |
+  # |                                                                          |
+  # | https://github.com/Andre601/OneVersionRemake/wiki/Config#majoronly       |
+  # +--------------------------------------------------------------------------+
+  MajorOnly: false
+
+# +----------------------------------------------------------------------------+
+# |                                  Messages                                  |
+# |                                                                            |
+# | This section contains all the messages that you can configure.             |
+# |                                                                            |
+# | https://github.com/Andre601/OneVersionRemake/wiki/Config#messages          |
+# +----------------------------------------------------------------------------+
+Messages:
+  # +--------------------------------------------------------------------------+
+  # | Message to display instead of the Player count (<online>/<max>) next to  |
+  # | the ping icon.                                                           |
+  # |                                                                          |
+  # | https://github.com/Andre601/OneVersionRemake/wiki/Config#playercount     |
+  # +--------------------------------------------------------------------------+
+  PlayerCount: '<red>Sürüm <gray>- <green>{version}'
+  
+  # +--------------------------------------------------------------------------+
+  # | Reason to display, when the player gets kicked for using a unsupported   |
+  # | Minecraft Version.                                                       |
+  # |                                                                          |
+  # | https://github.com/Andre601/OneVersionRemake/wiki/Config#kick            |
+  # +--------------------------------------------------------------------------+
+  Kick:
+  - '<bold><gradient:#005CE6:#00d8E6>Keyubu</gradient></bold>'
+  - ''
+  - '<bold><yellow>(!)</bold>'
+  - '<red>Sunucu sürümü <green>{version} <red>olduğundan giriş yapamıyorsun.'
+  - '<red>Sürümünü kontrol edip tekrar dene.'
+  - ''
+  - '<dark_purple>● <blue>Site <gray>- <gold>Keyubu.Com <dark_purple>●'
+
+  # +--------------------------------------------------------------------------+
+  # | Message to show when the player hovers over the player count with his    |
+  # | cursor.                                                                  |
+  # |                                                                          |
+  # | https://github.com/Andre601/OneVersionRemake/wiki/Config#hover           |
+  # +--------------------------------------------------------------------------+
+  Hover: []
+
+  # +--------------------------------------------------------------------------+
+  # | Message to display in the MOTD of the server.                            |
+  # |                                                                          |
+  # | https://github.com/Andre601/OneVersionRemake/wiki/Config#motd            |
+  # +--------------------------------------------------------------------------+
+  Motd: []

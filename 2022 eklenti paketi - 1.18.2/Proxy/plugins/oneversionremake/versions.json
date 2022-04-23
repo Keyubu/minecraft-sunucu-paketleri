@@ -1,0 +1,160 @@
+{
+  "file_version": 1,
+  "protocols": [
+    {
+      "protocol": 758,
+      "name": "1.18.2",
+      "major": "1.18.x"
+    },
+    {
+      "protocol": 757,
+      "name": "1.18.1",
+      "major": "1.18.x"
+    },
+    {
+      "protocol": 756,
+      "name": "1.17.1",
+      "major": "1.17.x"
+    },
+    {
+      "protocol": 755,
+      "name": "1.17",
+      "major": "1.17.x"
+    },
+    {
+      "protocol": 754,
+      "name": "1.16.5",
+      "major": "1.16.x"
+    },
+    {
+      "protocol": 753,
+      "name": "1.16.3",
+      "major": "1.16.x"
+    },
+    {
+      "protocol": 751,
+      "name": "1.16.2",
+      "major": "1.16.x"
+    },
+    {
+      "protocol": 736,
+      "name": "1.16.1",
+      "major": "1.16.x"
+    },
+    {
+      "protocol": 735,
+      "name": "1.16",
+      "major": "1.16.x"
+    },
+    {
+      "protocol": 578,
+      "name": "1.15.2",
+      "major": "1.15.x"
+    },
+    {
+      "protocol": 575,
+      "name": "1.15.1",
+      "major": "1.15.x"
+    },
+    {
+      "protocol": 573,
+      "name": "1.15",
+      "major": "1.15.x"
+    },
+    {
+      "protocol": 498,
+      "name": "1.14.4",
+      "major": "1.14.x"
+    },
+    {
+      "protocol": 490,
+      "name": "1.14.3",
+      "major": "1.14.x"
+    },
+    {
+      "protocol": 485,
+      "name": "1.14.2",
+      "major": "1.14.x"
+    },
+    {
+      "protocol": 480,
+      "name": "1.14.1",
+      "major": "1.14.x"
+    },
+    {
+      "protocol": 477,
+      "name": "1.14",
+      "major": "1.14.x"
+    },
+    {
+      "protocol": 404,
+      "name": "1.13.2",
+      "major": "1.13.x"
+    },
+    {
+      "protocol": 401,
+      "name": "1.13.1",
+      "major": "1.13.x"
+    },
+    {
+      "protocol": 393,
+      "name": "1.13",
+      "major": "1.13.x"
+    },
+    {
+      "protocol": 340,
+      "name": "1.12.2",
+      "major": "1.12.x"
+    },
+    {
+      "protocol": 338,
+      "name": "1.12.1",
+      "major": "1.12.x"
+    },
+    {
+      "protocol": 335,
+      "name": "1.12",
+      "major": "1.12.x"
+    },
+    {
+      "protocol": 316,
+      "name": "1.11.2",
+      "major": "1.11.x"
+    },
+    {
+      "protocol": 315,
+      "name": "1.11",
+      "major": "1.11.x"
+    },
+    {
+      "protocol": 210,
+      "name": "1.10.2",
+      "major": "1.10.x"
+    },
+    {
+      "protocol": 110,
+      "name": "1.9.4",
+      "major": "1.9.x"
+    },
+    {
+      "protocol": 109,
+      "name": "1.9.2",
+      "major": "1.9.x"
+    },
+    {
+      "protocol": 108,
+      "name": "1.9.1",
+      "major": "1.9.x"
+    },
+    {
+      "protocol": 107,
+      "name": "1.9",
+      "major": "1.9.x"
+    },
+    {
+      "protocol": 47,
+      "name": "1.8.4",
+      "major": "1.8.x"
+    }
+  ]
+}

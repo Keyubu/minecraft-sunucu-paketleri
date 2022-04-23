@@ -1,0 +1,105 @@
+# Maintenance Plugin by kennytv
+# Don't remove words inbetween the '%' if you don't exactly know why you're doing it
+noPermission: <red>You do not have the permission to execute that command.
+kickmessage: <bold><aqua>Keyubu</bold><br><br><dark_purple>Sunucu bakıma alınmıştır.<br><br><green>Keyubu.Com
+maintenanceActivated: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gold>Maintenance mode is now activated.
+maintenanceDeactivated: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gold>Maintenance mode is now deactivated.
+alreadyEnabled: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>Maintenance is already enabled!
+alreadyDisabled: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>Maintenance is already disabled!
+endtimerBroadcast: <bold><aqua>Keyubu<bold> <bold><dark_gray>»</bold> <gray>Maintenance mode will be disabled in <gold>%TIME%<gray>.
+endtimerStarted: '<bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <green>Started timer: <gray>Maintenance mode will be deactivated in <gold>%TIME%<gray>.'
+starttimerBroadcast: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gray>Maintenance mode will be enabled in <gold>%TIME%<gray>.
+starttimerStarted: '<bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <green>Started timer: <gray>Maintenance mode will be activated in <gold>%TIME%<gray>.'
+scheduletimerBroadcast: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gray>Maintenance mode will be enabled in <gold>%TIME% <gray>and will last for <gold>%DURATION%<gray>.
+timerAlreadyRunning: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>There is already a timer scheduled!
+timerNotRunning: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>There is currently no running timer.
+timerCancelled: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>The current timer has been disabled.
+timerTooLong: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>The number has to be less than 40320 (28 days)!
+timerMotdDisabled: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>You have to set 'enable-timerspecific-messages' in the config to 'true', if you want to use/edit timerspecific motds.
+motdTimer: '%HOURS%:%MINUTES%:%SECONDS%'
+motdTimerNotRunning: '-'
+joinNotification: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <yellow>%PLAYER% <red>tried to join the server.
+motdList: '<bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gray>List of your maintenance motds:'
+motdListEmpty: 8[<yellow>Maintenance<dark_gray>] <red>You don't have any maintenance motds set!
+reload: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <green>Reloaded config, whitelistedplayers, language file and the maintenance icon.
+removedMotd: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <green>Removed motd number %INDEX%.
+removeMotdError: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>You only have one motd, so you cannot remove any!
+setMotd: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <green>Set line %LINE% of the %INDEX%. maintenance motd to %MOTD%
+setMotdIndexError: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>You currently have %MOTDS% motds, so you have to pick a number between 1 and %NEWAMOUNT%.
+setMotdLineError: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>The second argument has to be the line number (1 or 2)!
+updateDownloading: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <bold><red>Downloading update...
+updateFailed: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <bold><dark_red>Update failed!
+updateFinished: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <bold><green>The update was successful! To prevent issues with tasks and to complete the update, you have to restart the server!
+whitelistedPlayers: '<bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gold>Whitelisted players for maintenance:'
+whitelistedPlayersFormat: <dark_gray>- <yellow>%NAME% <dark_gray>(<gray>%UUID%<dark_gray>)
+whitelistAdded: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <green>Added <aqua>%PLAYER% <green>to the maintenance whitelist!
+whitelistAlreadyAdded: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <aqua>%PLAYER% <red>already is in the maintenance whitelist!
+whitelistRemoved: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <green>Removed <aqua>%PLAYER% <green>from the maintenance whitelist!
+whitelistNotFound: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>This player is not in the maintenance whitelist!
+whitelistEmpty: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>The maintenance whitelist is empty! Use <yellow>/maintenance add \<player/uuid> <red>to add someone!
+playerNotFound: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>No player with this name has played on this server before.
+playerNotFoundUuid: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>No player with that uuid could be found.
+playerNotOnline: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>There is no player online with that name.
+invalidUuid: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>Invalid uuid format!
+
+# Messages for the Bungee/Velocity part, you can ignore them if you use the plugin on Spigot/Sponge
+sentToWaitingServer: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>Bekleme sunucusuna yölendiriliyorsun...
+forceWaitingServer: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>Sunucu bakımdayken bekleme sunucusundan çıkamazsın.
+serverNotFound: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>Bu isimde bir sunucu bulunamadı.
+
+singleTimerAlreadyRunning: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>There is already a timer scheduled for that server!
+singleTimerCancelled: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>The current timer for server <yellow>%SERVER% <red>has been disabled.
+singleTimerNotRunning: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>There is currently no running timer for that server.
+singleEndtimerBroadcast: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gray>Maintenance mode on server %SERVER% will be disabled in <gold>%TIME%<gray>.
+singleStarttimerBroadcast: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gray>Maintenance mode on server %SERVER% will be enabled in <gold>%TIME%<gray>.
+singleScheduletimerBroadcast: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gray>Maintenance mode on server %SERVER% will be enabled in <gold>%TIME% <gray>and will last for <gold>%DURATION%<gray>.
+singleMaintenanceKick: <bold><yellow>%SERVER%</bold><br><br><dark_purple>Sunucu bakıma alınmıştır.<br><br><green>Keyubu.Com
+singleMaintenanceKickComplete: <bold><yellow>%SERVER%</bold><br><br><dark_purple>Sunucu bakıma alınmıştır.<br><br><green>Keyubu.Com
+singleMaintenanceActivated: <bold><yellow>%SERVER%</bold><br><br><dark_purple>Sunucusu bakıma alınmıştır.<br><br><green>Keyubu.Com
+singleMaintenanceDeactivated: <bold><yellow>%SERVER%</bold><br><br><dark_purple>Sunucusunun bakımı bitmiştir.<br><br><green>Keyubu.Com
+singleServerAlreadyEnabled: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>Maintenance is already enabled on server <yellow>%SERVER%<red>!
+singleServerAlreadyDisabled: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>Maintenance is already disabled on server <yellow>%SERVER%<red>!
+singleServerMaintenanceList: '<bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gray>Proxied servers, that have maintenance enabled:'
+singleServerMaintenanceListEmpty: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <gray>There are no proxied servers that are under maintenance.
+
+second: saniye
+seconds: saniye
+minute: dakika
+minutes: dakika
+hour: saat
+hours: saat
+
+helpHeader: <dark_gray>========[ <yellow>%NAME% <dark_gray>| <yellow>%PAGE%/%MAX% <dark_gray>]========
+helpPageNotFound: <bold><aqua>Keyubu</bold> <bold><dark_gray>»</bold> <red>There is no page with that number!
+helpNextPage: <gray>Use <aqua>/maintenance help %PAGE% <gray>to get to the next help window.
+helpAbortTimer: <gold>/maintenance aborttimer <gray>(If running, the current timer will be aborted)
+helpEndtimer: <gold>/maintenance endtimer \<minutes> <gray>(After the given time in minutes, maintenance mode will be disabled)
+helpStarttimer: <gold>/maintenance starttimer \<minutes> <gray>(After the given time in minutes, maintenance mode will be enabled)
+helpScheduleTimer: <gold>/maintenance scheduletimer \<timer minutes> \<maintenance duration> <gray>(After the given time in minutes, maintenance mode will be enabled for the given duration in minutes)
+helpDebug: <gold>/maintenance debug <gray>(Enables some debug logging)
+helpDump: <gold>/maintenance dump <gray>(Dumps some server information, used for bug reports)
+helpHelp: <gold>/maintenance help [page] <gray>(Shows this beautiful help window)
+helpMotd: <gold>/maintenance motd [timer] <gray>(Lists the currently set maintenance motds. If specifying 'timer', the timer motds are shown)
+helpRemoveMotd: <gold>/maintenance removemotd [timer] \<index> <gray>(Removes a maintenance motd. If using 'timer' as an argument, a timerspecific pingmessage will be removed)
+helpSetMotd: <gold>/maintenance setmotd [timer] \<index> \<1/2> \<message> <gray>(Sets a motd for maintenance mode. If using 'timer' as an argument, a timerspecific pingmessage will be set)
+helpReload: <gold>/maintenance reload <gray>(Reloads the config file, whitelist file and the server-icon)
+helpToggle: <gold>/maintenance \<on/off> <gray>(Enables/disables maintenance mode)
+helpUpdate: <gold>/maintenance update <gray>(Remotely downloads the newest version of the plugin onto your server)
+helpWhitelist: <gold>/maintenance whitelist <gray>(Shows all whitelisted players for the maintenance mode)
+helpWhitelistAdd: <gold>/maintenance add \<name/uuid> <gray>(Adds the player to the maintenance whitelist, so they can join the server even though maintenance is enabled)
+helpWhitelistRemove: <gold>/maintenance remove \<name/uuid> <gray>(Removes the player from the maintenance whitelist)
+
+# Messages for the Bungee/Velocity part, you can ignore them if you use the plugin on Spigot/Sponge
+helpAbortSingleTimer: <gold>/maintenance aborttimer [server] <gray>(If running, the current timer will be aborted)
+helpSingleEndtimer: <gold>/maintenance endtimer [server] \<minutes> <gray>(After the given time in minutes, maintenance mode will be disabled)
+helpSingleStarttimer: <gold>/maintenance starttimer [server] \<minutes> <gray>(After the given time in minutes, maintenance mode will be enabled)
+helpSingleScheduleTimer: <gold>/maintenance scheduletimer [server] \<timer minutes> \<maintenance duration> <gray>(After the given time in minutes, maintenance mode will be enabled for the given duration in minutes)
+helpSingleToggle: <gold>/maintenance \<on/off> [server] <gray>(Enables/disables maintenance mode)
+helpStatus: <gold>/maintenance status <gray>(Lists all proxied servers, that are currently under maintenance)
+
+# Messages containing the placeholder "<prefix>" will have it replaced with the following string
+prefix: '<dark_gray>[<yellow>Maintenance<dark_gray>] '
+singleServerMaintenanceListEntry: <dark_grey>- <aqua>%SERVER%
+
+# Used for autoupdating the language file, do not change this value.
+language-version: 1
