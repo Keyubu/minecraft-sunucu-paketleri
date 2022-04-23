@@ -1,0 +1,3 @@
+@echo off
+echo Keyubu Velocity Proxy paketi etkinlestiriliyor...
+java -Xms256M -Xmx1G -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -Dfile.encoding=UTF-8 -Djline.terminal=jline.UnsupportedTerminal -jar Proxy.jar
