@@ -120,7 +120,7 @@ world-settings:
     mob-spawn-range: 6
     max-tnt-per-tick: 10
     chunks-per-tick: 650
-    nerf-spawner-mobs: true
+    nerf-spawner-mobs: false
     enable-zombie-pigmen-portal-spawns: false
     item-despawn-rate: 6000
     arrow-despawn-rate: 350
