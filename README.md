@@ -25,6 +25,10 @@ Sunucu tamamen öde ve kazan sistemine karşı (NO P2W), EULA'ya uygun inşaat e
 - Renkli yazma ve rol
 - Kafaya eşya takma yetkisi
 
+###### Oyuncular market kategorilerine giremiyor.
+`lp group default permission set EconomyShopGUI.shop.all` ile tüm kategorilere girme yetkisi verilebilir veya
+`lp group default permission set EconomyShopGUI.shop.<kategori>` belirli kategorilere girme yetkisi verebilirsiniz.
+
 ###### Oyuncular bazı komutları giremiyor.
 PL-Hide eklentisinden oyuncuların ve yetkililerin kullanabileceği komutları ayarlayabilirsiniz.
 
