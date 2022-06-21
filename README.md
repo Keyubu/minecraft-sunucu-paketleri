@@ -35,6 +35,16 @@ PL-Hide eklentisinden oyuncuların ve yetkililerin kullanabileceği komutları a
 ###### Oyuncu etiketleri ve yazı renkleri nereden düzenlenir?
 LPC ve LuckPerms eklentilerinden düzeltebilirsiniz.
 
+###### Nasıl rol veririm?
+Rolleri görmek için:
+`lp listgroups`
+
+Tek bir rolü oyuncuya tanımlamak için:
+`lp user oyuncu-ismi parent set grup-ismi`
+
+Rolü oyuncuya eklemek için:
+`lp user oyuncu-ismi parent add grup-ismi`
+
 ###### Skortablo ve TAB nereden düzeltilir?
 TAB eklentisinden düzeltebilirsiniz.
 
